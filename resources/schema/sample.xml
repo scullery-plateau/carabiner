@@ -1,0 +1,46 @@
+<!DOCTYPE doc [
+        <!ELEMENT doc (maps,char-mapping,palettes,tiles)>
+        <!ELEMENT maps (map+)>
+        <!ELEMENT map (content,paging)>
+        <!ELEMENT content (#PCDATA)>
+        <!ELEMENT paging (page+)>
+        <!ELEMENT page (from+)>
+        <!ELEMENT from (to?)>
+        <!ATTLIST from
+                x CDATA #REQUIRED
+                y CDATA #REQUIRED
+                w (1|2|3|4|5|6|7|8|9|10) #IMPLIED
+                h (1|2|3|4|5|6|7|8|9|10) #IMPLIED
+                >
+        <!ELEMENT to EMPTY>
+        <!ATTLIST to
+                x CDATA #REQUIRED
+                y CDATA #REQUIRED
+                >
+        <!ELEMENT char-mapping (char-map+)>
+        <!ELEMENT char-map (turn-left|turn-right|flip-down|flip-over)*>
+        <!ATTLIST char-map
+                char CDATA #REQUIRED
+                tile CDATA #REQUIRED
+                palette CDATA #REQUIRED
+                >
+        <!ELEMENT turn-left EMPTY>
+        <!ELEMENT turn-right EMPTY>
+        <!ELEMENT flip-down EMPTY>
+        <!ELEMENT flip-over EMPTY>
+        <!ELEMENT palettes (palette+)>
+        <!ELEMENT palette (color+)>
+        <!ATTLIST palette
+                name CDATA #REQUIRED
+                >
+        <!ELEMENT color (#PCDATA)>
+        <!ELEMENT tiles (tile+)>
+        <!ELEMENT tile (#PCDATA)>
+        <!ATTLIST tile
+                name CDATA #REQUIRED
+                index CDATA #REQUIRED
+                >
+        ]>
+<doc>
+
+</doc>
