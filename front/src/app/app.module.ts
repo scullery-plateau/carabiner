@@ -10,6 +10,7 @@ import { MapsComponent } from './maps/maps.component';
 import { PalettesComponent } from './palettes/palettes.component';
 import { TilesComponent } from './tiles/tiles.component';
 import { CharactersComponent } from './characters/characters.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CharactersComponent } from './characters/characters.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

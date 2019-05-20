@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpritelyComponent implements OnInit {
 
+  private tile = '';
+  private tileIndex = '';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  updateIndex() {
+
+  }
 }

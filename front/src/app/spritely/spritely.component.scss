@@ -1,0 +1,12 @@
+textarea.pixel-canvas {
+
+  &:before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 .5em;
+    margin-right: .5em;
+    color: #888
+  }
+}

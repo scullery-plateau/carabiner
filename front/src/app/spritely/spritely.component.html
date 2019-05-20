@@ -1,3 +1,40 @@
-<p>
-  spritely works!
-</p>
+<div class="card" >
+  <div class="card-header">
+    <h4 class="card-title">Spritely</h4>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-4">
+        <div class="row">
+          <div class="col-12">
+            <label for="tile" class="text-brand">Tile</label>
+            <div class="row">
+              <div class="col-1 text-right" style="margin-right: 0; padding-right: 0;">
+                <ol style="padding-top: 0.5em; margin-right: 0; padding-right: 0;">
+                  <li *ngFor="let n of '?'.repeat(16).split('')" class="text-right" style="margin-right: 0; padding-right: 0;"></li>
+                </ol>
+              </div>
+              <div class="col-11" style="margin-left: 0; padding-left: 0;">
+                <textarea rows="16" cols="16" class="form-control" id="tile" style="margin-left: 0; padding-left: 0;" [(ngModel)]="tile" (change)="updateIndex()"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="tileIndex" class="text-brand">Tile Index</label>
+            <input type="text" class="form-control" id="tileIndex" readonly [(ngModel)]="tileIndex"/>
+          </div>
+          <div class="col-12">
+            <label for="palette" class="text-brand">Palette</label>
+            <ul id="palette">
+              <li *ngFor="let entry of palette | keyvalue">
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+      </div>
+    </div>
+  </div>
+</div>
