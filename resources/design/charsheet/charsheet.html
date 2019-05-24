@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Character Sheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <style type="text/css">
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      .card-body, .card-header {
+        padding: 1em;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid small">
+      <p></p>
+      <div class="card small">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <div class="row">
+                <div class="col-12">
+                  <h1>Dungeons &amp; Dragons</h1>
+                </div>
+                <div class="col-12">
+                  <div class="form-group text-right">
+                    <input id="characterName" class="form-control form-control-sm"/>
+                    <label for="characterName">Character Name</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="form-group">
+                        <input id="classesAndLevels" class="form-control form-control-sm"/>
+                        <label for="classesAndLevels">Classes &amp; Levels</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-group">
+                        <input id="background" class="form-control form-control-sm"/>
+                        <label for="background">Background</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-group">
+                        <input id="playerName" class="form-control form-control-sm"/>
+                        <label for="playerName">Player Name</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-group">
+                        <input id="race" class="form-control form-control-sm"/>
+                        <label for="race">Race</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-group">
+                        <input id="alignment" class="form-control form-control-sm"/>
+                        <label for="alignment">Alignment</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-group">
+                        <input id="experiencePoints" class="form-control form-control-sm"/>
+                        <label for="experiencePoints">Experience Points</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="row">
+                <div class="col-5">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group text-center">
+                                <label for="strength">STRENGTH</label>
+                                <input id="strength" type="number" class="form-control form-control-lg" placeholder="11"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group text-center">
+                                <label for="dexterity">DEXTERITY</label>
+                                <input id="dexterity" type="number" class="form-control form-control-lg" placeholder="11"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group text-center">
+                                <label for="constitution">CONSTITUTION</label>
+                                <input id="constitution" type="number" class="form-control form-control-lg" placeholder="11"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group text-center">
+                                <label for="intelligence">INTELLIGENCE</label>
+                                <input id="intelligence" type="number" class="form-control form-control-lg" placeholder="11"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group text-center">
+                                <label for="wisdom">WISDOM</label>
+                                <input id="wisdom" type="number" class="form-control form-control-lg" placeholder="11"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group text-center">
+                                <label for="charisma">CHARISMA</label>
+                                <input id="charisma" type="number" class="form-control form-control-lg" placeholder="11"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group text-center">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-5">
+                                <input id="inspiration" type="number" class="form-control form-control-sm" placeholder="0"/>
+                              </div>
+                              <div class="col-7">
+                                <label for="inspiration">INSPIRATION</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group text-center">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-5">
+                                <input id="proficiencyBonus" type="number" class="form-control form-control-sm" placeholder="2"/>
+                              </div>
+                              <div class="col-7">
+                                <label for="proficiencyBonus">PROFICIENCY BONUS</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                            <li>
+                              <input id="strengthSaveProficient" name="strengthSave" type="radio" value="proficient"/>
+                              <input id="strengthSaveExpertise" name="strengthSave" type="radio" value="expert"/>
+                              <u>##</u> <label>Strength</label>
+                            </li>
+                            <li>
+                              <input id="dexteritySaveProficient" name="dexteritySave" type="radio" value="proficient"/>
+                              <input id="dexteritySaveExpertise" name="dexteritySave" type="radio" value="expert"/>
+                              <u>##</u> <label>Dexterity</label>
+                            </li>
+                            <li>
+                              <input id="constitutionSaveProficient" name="constitutionSave" type="radio" value="proficient"/>
+                              <input id="constitutionSaveExpertise" name="constitutionSave" type="radio" value="expert"/>
+                              <u>##</u> <label>Constitution</label>
+                            </li>
+                            <li>
+                              <input id="intelligenceSaveProficient" name="intelligenceSave" type="radio" value="proficient"/>
+                              <input id="intelligenceSaveExpertise" name="intelligenceSave" type="radio" value="expert"/>
+                              <u>##</u> <label>Intelligence</label>
+                            </li>
+                            <li>
+                              <input id="wisdomSaveProficient" name="wisdomSave" type="radio" value="proficient"/>
+                              <input id="wisdomSaveExpertise" name="wisdomSave" type="radio" value="expert"/>
+                              <u>##</u> <label>Wisdom</label>
+                            </li>
+                            <li>
+                              <input id="charismaSaveProficient" name="charismaSave" type="radio" value="proficient"/>
+                              <input id="charismaSaveExpertise" name="charismaSave" type="radio" value="expert"/>
+                              <u>##</u> <label>Charisma</label>
+                            </li>
+                          </ul>
+                          <div class="card-sub-title text-center small">SAVING THROWS</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                            <li>
+                              <input id="acrobaticsProficient" name="acrobatics" type="radio" value="proficient"/>
+                              <input id="acrobaticsExpertise" name="acrobatics" type="radio" value="expert"/>
+                              <u>##</u> <label>Acrobatics (DEX)</label>
+                            </li>
+                            <li>
+                              <input id="animalHandlingProficient" name="animalHandling" type="radio" value="proficient"/>
+                              <input id="animalHandlingExpertise" name="animalHandling" type="radio" value="expert"/>
+                              <u>##</u> <label>Animal Handling (WIS)</label>
+                            </li>
+                            <li>
+                              <input id="arcanaProficient" name="arcana" type="radio" value="proficient"/>
+                              <input id="arcanaExpertise" name="arcana" type="radio" value="expert"/>
+                              <u>##</u> <label>Arcana (INT)</label>
+                            </li>
+                            <li>
+                              <input id="athleticsProficient" name="athletics" type="radio" value="proficient"/>
+                              <input id="athleticsExpertise" name="athletics" type="radio" value="expert"/>
+                              <u>##</u> <label>Athletics (STR)</label>
+                            </li>
+                            <li>
+                              <input id="deceptionProficient" name="deception" type="radio" value="proficient"/>
+                              <input id="deceptionExpertise" name="deception" type="radio" value="expert"/>
+                              <u>##</u> <label>Deception (CHA)</label>
+                            </li>
+                            <li>
+                              <input id="historyProficient" name="history" type="radio" value="proficient"/>
+                              <input id="historyExpertise" name="history" type="radio" value="expert"/>
+                              <u>##</u> <label>History (INT)</label>
+                            </li>
+                            <li>
+                              <input id="insightProficient" name="insight" type="radio" value="proficient"/>
+                              <input id="insightExpertise" name="insight" type="radio" value="expert"/>
+                              <u>##</u> <label>Insight (DEX)</label>
+                            </li>
+                            <li>
+                              <input id="intimidationProficient" name="intimidation" type="radio" value="proficient"/>
+                              <input id="intimidationExpertise" name="intimidation" type="radio" value="expert"/>
+                              <u>##</u> <label>Intimidation (CHA)</label>
+                            </li>
+                            <li>
+                              <input id="investigationProficient" name="investigation" type="radio" value="proficient"/>
+                              <input id="investigationExpertise" name="investigation" type="radio" value="expert"/>
+                              <u>##</u> <label>Investigation (INT)</label>
+                            </li>
+                            <li>
+                              <input id="medicineProficient" name="medicine" type="radio" value="proficient"/>
+                              <input id="medicineExpertise" name="medicine" type="radio" value="expert"/>
+                              <u>##</u> <label>Medicine (WIS)</label>
+                            </li>
+                            <li>
+                              <input id="natureProficient" name="nature" type="radio" value="proficient"/>
+                              <input id="natureExpertise" name="nature" type="radio" value="expert"/>
+                              <u>##</u> <label>Nature (INT)</label>
+                            </li>
+                            <li>
+                              <input id="perceptionProficient" name="perception" type="radio" value="proficient"/>
+                              <input id="perceptionExpertise" name="perception" type="radio" value="expert"/>
+                              <u>##</u> <label>Perception (WIS)</label>
+                            </li>
+                            <li>
+                              <input id="performanceProficient" name="performance" type="radio" value="proficient"/>
+                              <input id="performanceExpertise" name="performance" type="radio" value="expert"/>
+                              <u>##</u> <label>Performance (CHA)</label>
+                            </li>
+                            <li>
+                              <input id="persuasionProficient" name="persuasion" type="radio" value="proficient"/>
+                              <input id="persuasionExpertise" name="persuasion" type="radio" value="expert"/>
+                              <u>##</u> <label>Persuasion (CHA)</label>
+                            </li>
+                            <li>
+                              <input id="religionProficient" name="religion" type="radio" value="proficient"/>
+                              <input id="religionExpertise" name="religion" type="radio" value="expert"/>
+                              <u>##</u> <label>Religion (INT)</label>
+                            </li>
+                            <li>
+                              <input id="sleightOfHandProficient" name="sleightOfHand" type="radio" value="proficient"/>
+                              <input id="sleightOfHandExpertise" name="sleightOfHand" type="radio" value="expert"/>
+                              <u>##</u> <label>Sleight Of Hand (DEX)</label>
+                            </li>
+                            <li>
+                              <input id="stealthProficient" name="stealth" type="radio" value="proficient"/>
+                              <input id="stealthExpertise" name="stealth" type="radio" value="expert"/>
+                              <u>##</u> <label>Stealth (DEX)</label>
+                            </li>
+                            <li>
+                              <input id="survivalProficient" name="survival" type="radio" value="proficient"/>
+                              <input id="survivalExpertise" name="survival" type="radio" value="expert"/>
+                              <u>##</u> <label>Survival (WIS)</label>
+                            </li>
+                          </ul>
+                          <div class="card-sub-title text-center small">SKILLS</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="col-12">
+                    <div class="form-group text-center">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <input id="passivePerception" type="number" class="form-control form-control-sm" placeholder="0"/>
+                            </div>
+                            <div class="col-8">
+                              <label for="passivePerception">PASSIVE PERCEPTION</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="form-group text-center">
+                        <textarea id="otherProficienciesAndLanguages" class="form-control form-control-sm"></textarea>
+                        <label for="otherProficienciesAndLanguages">OTHER PROFICIENCIES &amp; LANGUAGES</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        
+                      </div>
+                      <div class="form-group text-center">
+                        <textarea id="spellcasting" class="form-control form-control-sm"></textarea>
+                        <label for="spellcasting">Spellcasting</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="form-group text-center">
+                        <textarea id="equipment" class="form-control form-control-sm"></textarea>
+                        <label for="equipment">Equipment</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="form-group text-center">
+                            <textarea id="personalityTraits" class="form-control form-control-sm"></textarea>
+                            <label for="personalityTraits">Personality Traits</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="form-group text-center">
+                            <textarea id="ideals" class="form-control form-control-sm"></textarea>
+                            <label for="ideals">Ideals</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="form-group text-center">
+                            <textarea id="bonds" class="form-control form-control-sm"></textarea>
+                            <label for="bonds">Bonds</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="form-group text-center">
+                            <textarea id="flaws" class="form-control form-control-sm"></textarea>
+                            <label for="flaws">flaws</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group text-center">
+                        <textarea id="featuresAndTraits" class="form-control form-control-sm"></textarea>
+                        <label for="featuresAndTraits">Features &amp; Traits</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
