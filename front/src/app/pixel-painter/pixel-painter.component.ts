@@ -1,5 +1,6 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
 import {Trigger} from "../trigger";
+import {Range} from "../range";
 
 @Component({
   selector: 'app-pixel-painter',
@@ -10,10 +11,16 @@ export class PixelPainterComponent implements OnInit, OnChanges {
   @ViewChild('myCanvas') canvasRef: ElementRef;
 
   @Input()
-  pixels: number[][];
+  pixels: {};
 
   @Input()
   scale: number;
+
+  @Input()
+  width: number;
+
+  @Input()
+  height: number;
 
   @Input()
   palette: string[];
@@ -41,13 +48,14 @@ export class PixelPainterComponent implements OnInit, OnChanges {
     let scale = this.scale;
     let ctx = this.canvasRef.nativeElement.getContext('2d');
     let palette = this.palette;
-    ctx.clearRect(0, 0, 16 * scale, 16 * scale);
-    this.pixels.forEach((row,y) => {
-      row.forEach((c,x) => {
+    ctx.clearRect(0, 0, this.width * scale, this.height * scale);
+    let pixels = this.pixels;
+    Range.max(this.height).forEach(y => {
+      Range.max(this.width).forEach(x => {
+        let key = x + 'x' + y;
+        let c = pixels[key] || 0;
         if (palette[c]) {
-          console.log(palette[c]);
           ctx.fillStyle = palette[c].toUpperCase();
-          console.log([x * scale, y * scale, scale, scale]);
           ctx.fillRect(x * scale, y * scale, scale, scale);
         }
       })

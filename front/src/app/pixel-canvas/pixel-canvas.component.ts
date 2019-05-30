@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Trigger} from "../trigger";
+import {Range} from "../range";
 
 @Component({
   selector: 'app-pixel-canvas',
@@ -9,10 +10,16 @@ import {Trigger} from "../trigger";
 export class PixelCanvasComponent implements OnInit {
 
   @Input()
-  pixels: number[][];
+  pixels: {};
 
   @Input()
   scale: number;
+
+  @Input()
+  width: number;
+
+  @Input()
+  height: number;
 
   @Input()
   palette: string[];
@@ -26,13 +33,15 @@ export class PixelCanvasComponent implements OnInit {
   @Input()
   trigger: Trigger;
 
+  range = Range;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   setColorForPixel(x:number,y:number) {
-    this.pixels[y][x] = this.colorIndex;
+    this.pixels[x + 'x' + y] = this.colorIndex;
     this.trigger.fire();
   }
 }

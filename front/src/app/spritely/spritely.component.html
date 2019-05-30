@@ -5,52 +5,81 @@
     </div>
     <div class="card-body">
       <div class="row">
-        <div class="col-4">
+        <div class="col-lg-5">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-7">
               <div class="card">
                 <div class="card-body">
-                  <label for="backgroundColor" class="text-brand">Background Color:</label>
-                  <input type="color" id="backgroundColor" class="form-control form-control-sm" formControlName="backgroundColor" value="#fffffe"/>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="width" class="text-brand">Width:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="number" id="width" class="form-control form-control-sm" formControlName="width"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="height" class="text-brand">Height:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="number" id="height" class="form-control form-control-sm" formControlName="height"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="scale" class="text-brand">Scale:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="number" id="scale" class="form-control form-control-sm" formControlName="scale"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="backgroundColor" class="text-brand">Background Color:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="color" id="backgroundColor" class="form-control form-control-sm" formControlName="backgroundColor" value="#fffffe" (change)="setBackground()"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="makeTransparent" class="text-brand">Make Transparent?</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="checkbox" id="makeTransparent" class="form-control form-control-sm" formControlName="makeTransparent" value="#fffffe" (change)="makeTransparent()"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="palette" class="text-brand">Palette: </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <select class="form-control form-control-sm" id="palette" formControlName="selectedPalette">
+                        <ng-container *ngFor="let color of palette; index as i">
+                          <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
+                        </ng-container>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 text-right">
+                      <label for="color" class="text-brand">Color:</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="color" id="color" class="form-control form-control-sm" formControlName="color" value="#000001" (change)="setColor()"/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <button class="btn btn-success btn-sm" (click)="addColor()">Add Color</button>
+                      <button class="btn btn-danger btn-sm" (click)="removeColor()">Remove Color</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <label for="scale" class="text-brand">Scale:</label>
-                  <input type="number" id="scale" class="form-control form-control-sm" formControlName="scale"/>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <label for="palette" class="text-brand">Palette: </label>
-                  <select class="form-control form-control-sm" id="palette" formControlName="selectedPalette">
-                    <option *ngFor="let color of palette; index as i" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-5">
-              <div class="card">
-                <div class="card-body">
-                  <label for="color" class="text-brand">Color:</label>
-                  <button class="btn btn-success btn-sm" (click)="setColorAsTransparent()">Make Transparent</button>
-                  <input type="color" id="color" class="form-control form-control-sm" formControlName="color" value="#000001" (change)="setColor()"/>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <button class="btn btn-primary" (click)="addColor()">Add Color</button>
-                  <button class="btn btn-danger" (click)="removeColor()">Remove Color</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-10">
+            <div class="col-md-5">
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
@@ -59,6 +88,8 @@
                   <app-pixel-painter
                     [pixels]="pixels"
                     [scale]="spritelyForm.value.scale"
+                    [width]="spritelyForm.value.width"
+                    [height]="spritelyForm.value.height"
                     [palette]="palette"
                     [trigger]="trigger"
                   ></app-pixel-painter>
@@ -67,14 +98,16 @@
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-lg-7">
           <div class="card">
             <div class="card-body">
               <div class="row">
                 <app-pixel-canvas
                   class="col-12"
                   [pixels]="pixels"
-                  [scale]="spritelyForm.value.scale"
+                  [scale]="10"
+                  [width]="spritelyForm.value.width"
+                  [height]="spritelyForm.value.height"
                   [palette]="palette"
                   [backgroundColor]="spritelyForm.value.backgroundColor"
                   [colorIndex]="spritelyForm.value.selectedPalette"
