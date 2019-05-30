@@ -1,0 +1,9 @@
+<svg width="100%" height="100%" viewBox="0 0 160 160">
+  <ng-container *ngFor="let pixelrow of pixels; index as y">
+    <ng-container *ngFor="let pixel of pixelrow; index as x">
+      <a href="#/spritely" (click)="setColorForPixel(x, y)">
+        <rect [attr.x]="x * 10" [attr.y]="y * 10" width="10" height="10" [attr.fill]="palette[pixel]||backgroundColor" style="stroke:black;stroke-width:1;"></rect>
+      </a>
+    </ng-container>
+  </ng-container>
+</svg>

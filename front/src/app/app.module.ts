@@ -10,7 +10,9 @@ import { MapsComponent } from './maps/maps.component';
 import { PalettesComponent } from './palettes/palettes.component';
 import { TilesComponent } from './tiles/tiles.component';
 import { CharactersComponent } from './characters/characters.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { PixelCanvasComponent } from './pixel-canvas/pixel-canvas.component';
+import { PixelPainterComponent } from './pixel-painter/pixel-painter.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,14 @@ import {FormsModule} from "@angular/forms";
     MapsComponent,
     PalettesComponent,
     TilesComponent,
-    CharactersComponent
+    CharactersComponent,
+    PixelCanvasComponent,
+    PixelPainterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [],

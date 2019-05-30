@@ -1,0 +1,5 @@
+<canvas #myCanvas style="display:none;" [width]="16 * scale" [height]="16 * scale"></canvas>
+<span style="display:none;">{{palette.join()}}</span>
+<a [href]="imgPath" download="spritely.png">
+  <img class="img-thumbnail" [src]="imgPath" [width]="16 * scale" [height]="16 * scale"/>
+</a>
