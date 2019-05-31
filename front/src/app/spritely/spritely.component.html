@@ -1,21 +1,19 @@
-<form [formGroup]="spritelyForm">
-  <div class="card" >
-    <div class="card-header">
-      <h4 class="card-title">Spritely</h4>
-    </div>
-    <div class="card-body">
+<form [formGroup]="spritelyForm" class="topic">
+  <div class="showcase col-lg-12">
+    <div class="nes-container with-title">
+      <h4 class="title">Spritely</h4>
       <div class="row">
         <div class="col-lg-5">
           <div class="row">
-            <div class="col-md-7">
-              <div class="card">
-                <div class="card-body">
+            <div class="col-md-12">
+              <div class="showcase">
+                <div class="nes-container">
                   <div class="row">
                     <div class="col-sm-6 text-right">
                       <label for="width" class="text-brand">Width:</label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="number" id="width" class="form-control form-control-sm" formControlName="width"/>
+                      <input type="number" id="width" class="nes-input" formControlName="width"/>
                     </div>
                   </div>
                   <div class="row">
@@ -23,7 +21,7 @@
                       <label for="height" class="text-brand">Height:</label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="number" id="height" class="form-control form-control-sm" formControlName="height"/>
+                      <input type="number" id="height" class="nes-input" formControlName="height"/>
                     </div>
                   </div>
                   <div class="row">
@@ -31,7 +29,7 @@
                       <label for="scale" class="text-brand">Scale:</label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="number" id="scale" class="form-control form-control-sm" formControlName="scale"/>
+                      <input type="number" id="scale" class="nes-input" formControlName="scale"/>
                     </div>
                   </div>
                   <div class="row">
@@ -39,15 +37,17 @@
                       <label for="backgroundColor" class="text-brand">Background Color:</label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="color" id="backgroundColor" class="form-control form-control-sm" formControlName="backgroundColor" value="#fffffe" (change)="setBackground()"/>
+                      <input type="color" id="backgroundColor" class="nes-input form-control" formControlName="backgroundColor" value="#fffffe" (change)="setBackground()"/>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
-                      <label for="makeTransparent" class="text-brand">Make Transparent?</label>
-                    </div>
-                    <div class="col-sm-6">
-                      <input type="checkbox" id="makeTransparent" class="form-control form-control-sm" formControlName="makeTransparent" value="#fffffe" (change)="makeTransparent()"/>
+                    <div class="col-sm-12 text-center">
+                      <label for="makeTransparent" class="text-brand">
+                        <input type="checkbox" id="makeTransparent" class="nes-checkbox" formControlName="makeTransparent" (change)="makeTransparent()">
+                        <span>
+                          Make Transparent?
+                        </span>
+                      </label>
                     </div>
                   </div>
                   <div class="row">
@@ -55,11 +55,13 @@
                       <label for="palette" class="text-brand">Palette: </label>
                     </div>
                     <div class="col-sm-6">
-                      <select class="form-control form-control-sm" id="palette" formControlName="selectedPalette">
-                        <ng-container *ngFor="let color of palette; index as i">
-                          <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
-                        </ng-container>
-                      </select>
+                      <div class="nes-input nes-select">
+                        <select id="palette" class="form-control" formControlName="selectedPalette">
+                          <ng-container *ngFor="let color of palette; index as i">
+                            <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
+                          </ng-container>
+                        </select>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -67,22 +69,22 @@
                       <label for="color" class="text-brand">Color:</label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="color" id="color" class="form-control form-control-sm" formControlName="color" value="#000001" (change)="setColor()"/>
+                      <input type="color" id="color" class="nes-input form-control" formControlName="color" value="#000001" (change)="setColor()"/>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12 text-center">
-                      <button class="btn btn-success btn-sm" (click)="addColor()">Add Color</button>
-                      <button class="btn btn-danger btn-sm" (click)="removeColor()">Remove Color</button>
+                      <button class="nes-btn is-success" (click)="addColor()">Add Color</button>
+                      <button class="nes-btn is-error" (click)="removeColor()">Remove Color</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">
+            <div class="col-md-12">
+              <div class="showcase">
+                <div class="nes-container with-title">
+                  <div class="title">
                     <label class="text-brand">Image</label>
                   </div>
                   <app-pixel-painter
@@ -99,8 +101,8 @@
           </div>
         </div>
         <div class="col-lg-7">
-          <div class="card">
-            <div class="card-body">
+          <div class="showcase">
+            <div class="nes-container">
               <div class="row">
                 <app-pixel-canvas
                   class="col-12"
