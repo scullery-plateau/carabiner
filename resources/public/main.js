@@ -46,6 +46,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
+    { path: '', redirectTo: '/spritely', pathMatch: 'full' },
     { path: 'cobblestone', component: _cobblestone_cobblestone_component__WEBPACK_IMPORTED_MODULE_3__["CobblestoneComponent"] },
     { path: 'mastermold', component: _mastermold_mastermold_component__WEBPACK_IMPORTED_MODULE_5__["MastermoldComponent"] },
     { path: 'spritely', component: _spritely_spritely_component__WEBPACK_IMPORTED_MODULE_4__["SpritelyComponent"] },
@@ -73,7 +74,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<header class=\"sticky\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <a class=\"navbar-brand\" href=\"#\">{{title}}</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n</header>\n<p></p>\n<div class=\"container-fluid\">\n  <router-outlet></router-outlet>\n</div>\n<div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\n  <p>Built by Daniel Allen Johnson &copy; 2019</p>\n  <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\n</div>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<header class=\"sticky\">\n  <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n    <a class=\"navbar-brand\" href=\"#\">{{title}}</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n      <ul class=\"navbar-nav\">\n        <!--\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\n        </li>\n        -->\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n</header>\n<p></p>\n<div class=\"container-fluid\">\n  <router-outlet></router-outlet>\n</div>\n<div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\n  <p>Built by Daniel Allen Johnson &copy; 2019</p>\n  <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\n</div>\n"
 
 /***/ }),
 
