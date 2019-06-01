@@ -30,6 +30,12 @@ export class SpritelyComponent implements OnInit {
   ngOnInit() {
   }
 
+  selectColor() {
+    this.spritelyForm.patchValue({
+      color:this.palette[this.spritelyForm.value.selectedPalette]
+    });
+  }
+
   makeTransparent() {
     let t = this.spritelyForm.value.makeTransparent;
     console.log(t);

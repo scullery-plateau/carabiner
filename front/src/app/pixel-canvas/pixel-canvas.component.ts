@@ -41,7 +41,12 @@ export class PixelCanvasComponent implements OnInit {
   }
 
   setColorForPixel(x:number,y:number) {
-    this.pixels[x + 'x' + y] = this.colorIndex;
+    let key = x + 'x' + y;
+    if (this.pixels[key] === this.colorIndex) {
+      delete this.pixels[key];
+    } else {
+      this.pixels[key] = this.colorIndex;
+    }
     this.trigger.fire();
   }
 }
