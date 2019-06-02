@@ -123,6 +123,10 @@ export class SpritelyComponent implements OnInit {
     this.trigger.fire();
   }
 
+  redraw() {
+    this.trigger.fire();
+  }
+
   setColor() {
     this.palette[this.spritelyForm.value.selectedPalette] = this.spritelyForm.value.color;
     this.trigger.fire();
