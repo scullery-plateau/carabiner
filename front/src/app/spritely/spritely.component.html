@@ -1,43 +1,86 @@
 <form [formGroup]="spritelyForm" class="topic">
   <div class="showcase col-lg-12">
     <div class="nes-container with-title">
-      <h4 class="title">Spritely</h4>
+      <div class="title">
+        <label>Spritely </label>
+        <button class="nes-btn is-primary" id="fileTab" onclick="toggleDropDown('fileContainer','fileTab')">File</button>
+        <button class="nes-btn is-primary" id="directionsTab" onclick="toggleDropDown('directionsContainer','directionsTab')">Directions</button>
+      </div>
       <div class="row">
         <div class="col-lg-5">
           <div class="row">
+            <div class="col-md-12 toggle" id="fileContainer">
+              <div class="showcase">
+                <div class="nes-container with-title">
+                  <div class="title">
+                    <label>File</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <input type="file" id="loadFile" class="nes-input" formControlName="loadFile"/>
+                    </div>
+                    <div class="col-sm-3">
+                      <button class="nes-btn is-success" (click)="loadFile()">Load</button>
+                    </div>
+                    <div class="col-sm-9">
+                      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File Name"/>
+                    </div>
+                    <div class="col-sm-3">
+                      <a download [href]="saveFileContent">
+                        <span class="nes-btn is-primary">Save</span>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('fileContainer','fileTab')">^</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 toggle" id="directionsContainer">
+              <div class="showcase">
+                <div class="nes-container with-title">
+                  <div class="title">
+                    <label>Directions</label>
+                    <p><!-- TODO --></p>
+                  </div>
+                  <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('directionsContainer','directionsTab')">^</button>
+                </div>
+              </div>
+            </div>
             <div class="col-md-12">
               <div class="showcase">
                 <div class="nes-container with-title">
-                  <h4 class="title">Controls</h4>
+                  <div class="title">
+                    <label>Controls</label>
+                  </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
+                    <div class="col-sm-5 text-right">
                       <label for="width" class="text-brand">Width:</label>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
                       <input type="number" id="width" class="nes-input" formControlName="width"/>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
+                    <div class="col-sm-5 text-right">
                       <label for="height" class="text-brand">Height:</label>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
                       <input type="number" id="height" class="nes-input" formControlName="height"/>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
+                    <div class="col-sm-5 text-right">
                       <label for="scale" class="text-brand">Scale:</label>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
                       <input type="number" id="scale" class="nes-input" formControlName="scale"/>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
+                    <div class="col-sm-5 text-right">
                       <label for="backgroundColor" class="text-brand">Background Color:</label>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
                       <input type="color" id="backgroundColor" class="nes-input form-control" formControlName="backgroundColor" value="#fffffe" (change)="setBackground()"/>
                     </div>
                   </div>
@@ -52,10 +95,10 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
+                    <div class="col-sm-5 text-right">
                       <label for="palette" class="text-brand">Palette: </label>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
                       <div class="nes-input nes-select">
                         <select id="palette" class="form-control" formControlName="selectedPalette" (change)="selectColor()">
                           <ng-container *ngFor="let color of palette; index as i">
@@ -66,10 +109,10 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 text-right">
+                    <div class="col-sm-5 text-right">
                       <label for="color" class="text-brand">Color:</label>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
                       <input type="color" id="color" class="nes-input form-control" formControlName="color" value="#000001" (change)="setColor()"/>
                     </div>
                   </div>
@@ -77,6 +120,21 @@
                     <div class="col-sm-12 text-center">
                       <button class="nes-btn is-success" (click)="addColor()">Add Color</button>
                       <button class="nes-btn is-error" (click)="removeColor()">Remove Color</button>
+                    </div>
+                  </div>
+                  <p></p>
+                  <div class="row" *ngIf="palette.length > 1">
+                    <div class="col-sm-12 nes-input text-justify palette" [style.margin]="0">
+                      <ng-container *ngFor="let c of palette; index as i">
+                        <span *ngIf="i > 0"
+                          class="palette-item"
+                          [style.color]="c"
+                          [style.backgroundColor]="c"
+                          [style.width]="(100/(palette.length - 1))+'%'"
+                          >
+                          <span class="palette-color">_</span>
+                        </span>
+                      </ng-container>
                     </div>
                   </div>
                 </div>

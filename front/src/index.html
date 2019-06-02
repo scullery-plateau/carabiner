@@ -9,12 +9,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="text/javascript">
-    function toggleDropDown(targetId) {
-      var target = document.getElementById(targetId);
-      if(target.classList.contains("show")) {
-        target.classList.remove("show");
+    function toggleDropDown(targetId,btnId) {
+      let target = document.getElementById(targetId);
+      let btn = document.getElementById(btnId);
+      if(target.style.display == 'none') {
+        target.style.display = 'block';
+        btn.classList.add("is-primary");
       } else {
-        target.classList.add("show");
+        target.style.display = 'none';
+        btn.classList.remove("is-primary");
       }
     }
     function toggleTab(button,menu,tabClass,targetId) {

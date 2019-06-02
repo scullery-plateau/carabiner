@@ -16,7 +16,9 @@ export class SpritelyComponent implements OnInit {
     height:[16],
     color:['#000001'],
     makeTransparent:[false],
-    backgroundColor:['#fffffe']
+    backgroundColor:['#fffffe'],
+    loadFile:[''],
+    saveFile:['']
   });
 
   palette: string[] = [undefined];
@@ -24,6 +26,8 @@ export class SpritelyComponent implements OnInit {
   pixels: {} = {};
 
   trigger: Trigger = new Trigger("redraw-pixels");
+
+  saveFileContent: string;
 
   constructor(private fb: FormBuilder) { }
 

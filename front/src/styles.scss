@@ -17,3 +17,23 @@ input[type="color"].nes-input {
 .nes-select select {
   width: 100%;
 }
+
+.nes-btn.minimize {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.palette {
+  margin: 0;
+  padding: 0;
+}
+
+.palette-item {
+  float:left;
+}
+
+.palette-color {
+  display: block;
+  font-size: 2em
+}
