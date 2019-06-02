@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild} from '@angular/core';
 import {Trigger} from "../trigger";
 import {Range} from "../range";
 
@@ -7,7 +7,7 @@ import {Range} from "../range";
   templateUrl: './pixel-painter.component.html',
   styleUrls: ['./pixel-painter.component.scss']
 })
-export class PixelPainterComponent implements OnInit, OnChanges {
+export class PixelPainterComponent implements OnInit {
   @ViewChild('myCanvas') canvasRef: ElementRef;
 
   @Input()
@@ -36,10 +36,6 @@ export class PixelPainterComponent implements OnInit, OnChanges {
     this.trigger.addListener(e => {
       this.redraw();
     });
-    this.redraw();
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
     this.redraw();
   }
 

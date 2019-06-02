@@ -763,7 +763,7 @@ var PixelCanvasComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<canvas #myCanvas style=\"display:none;\" [width]=\"16 * scale\" [height]=\"16 * scale\"></canvas>\r\n<span style=\"display:none;\">{{palette.join()}}</span>\r\n<a [href]=\"imgPath\" class=\"nes-badge\" download=\"spritely.png\">\r\n  <img class=\"is-primary\" [src]=\"imgPath\" [width]=\"16 * scale\" [height]=\"16 * scale\"/>\r\n</a>\r\n"
+module.exports = "<canvas #myCanvas style=\"display:none;\" [width]=\"16 * scale\" [height]=\"16 * scale\"></canvas>\r\n<span style=\"display:none;\">{{palette.join()}}</span>\r\n<a [href]=\"imgPath\" class=\"nes-btn\" download=\"spritely.png\">\r\n  <img [src]=\"imgPath\" [width]=\"16 * scale\" [height]=\"16 * scale\"/>\r\n</a>\r\n"
 
 /***/ }),
 
@@ -804,9 +804,6 @@ var PixelPainterComponent = /** @class */ (function () {
         this.trigger.addListener(function (e) {
             _this.redraw();
         });
-        this.redraw();
-    };
-    PixelPainterComponent.prototype.ngOnChanges = function (changes) {
         this.redraw();
     };
     PixelPainterComponent.prototype.redraw = function () {
@@ -914,7 +911,7 @@ var Range = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div class=\"showcase col-lg-12\">\r\n    <div class=\"nes-container with-title\">\r\n      <div class=\"title\">\r\n        <label>Spritely </label>\r\n        <button class=\"nes-btn is-primary\" id=\"fileTab\" onclick=\"toggleDropDown('fileContainer','fileTab')\">File</button>\r\n        <button class=\"nes-btn is-primary\" id=\"directionsTab\" onclick=\"toggleDropDown('directionsContainer','directionsTab')\">Directions</button>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-5\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12 toggle\" id=\"fileContainer\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>File</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-9\">\r\n                      <input type=\"file\" id=\"loadFile\" class=\"nes-input\" formControlName=\"loadFile\"/>\r\n                    </div>\r\n                    <div class=\"col-sm-3\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"loadFile()\">Load</button>\r\n                    </div>\r\n                    <div class=\"col-sm-9\">\r\n                      <input type=\"text\" id=\"saveFile\" class=\"nes-input\" formControlName=\"saveFile\" placeholder=\"Save File Name\"/>\r\n                    </div>\r\n                    <div class=\"col-sm-3\">\r\n                      <a download [href]=\"saveFileContent\">\r\n                        <span class=\"nes-btn is-primary\">Save</span>\r\n                      </a>\r\n                    </div>\r\n                  </div>\r\n                  <button class=\"nes-btn is-primary minimize\"  onclick=\"toggleDropDown('fileContainer','fileTab')\">^</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-12 toggle\" id=\"directionsContainer\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Directions</label>\r\n                    <p><!-- TODO --></p>\r\n                  </div>\r\n                  <button class=\"nes-btn is-primary minimize\"  onclick=\"toggleDropDown('directionsContainer','directionsTab')\">^</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Controls</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"width\" class=\"text-brand\">Width:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" id=\"width\" class=\"nes-input\" formControlName=\"width\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"height\" class=\"text-brand\">Height:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" id=\"height\" class=\"nes-input\" formControlName=\"height\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <label for=\"makeTransparent\" class=\"text-brand\">\r\n                        <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                        <span>\r\n                          Make Transparent?\r\n                        </span>\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"palette\" class=\"text-brand\">Palette: </label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <div class=\"nes-input nes-select\">\r\n                        <select id=\"palette\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectColor()\">\r\n                          <ng-container *ngFor=\"let color of palette; index as i\">\r\n                            <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                          </ng-container>\r\n                        </select>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                      <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                    </div>\r\n                  </div>\r\n                  <p></p>\r\n                  <div class=\"row\" *ngIf=\"palette.length > 1\">\r\n                    <div class=\"col-sm-12 nes-input text-justify palette\" [style.margin]=\"0\">\r\n                      <ng-container *ngFor=\"let c of palette; index as i\">\r\n                        <span *ngIf=\"i > 0\"\r\n                          class=\"palette-item\"\r\n                          [style.color]=\"c\"\r\n                          [style.backgroundColor]=\"c\"\r\n                          [style.width]=\"(100/(palette.length - 1))+'%'\"\r\n                          >\r\n                          <span class=\"palette-color\">_</span>\r\n                        </span>\r\n                      </ng-container>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label class=\"text-brand\">Image</label>\r\n                  </div>\r\n                  <app-pixel-painter\r\n                    [pixels]=\"pixels\"\r\n                    [scale]=\"spritelyForm.value.scale\"\r\n                    [width]=\"spritelyForm.value.width\"\r\n                    [height]=\"spritelyForm.value.height\"\r\n                    [palette]=\"palette\"\r\n                    [trigger]=\"trigger\"\r\n                  ></app-pixel-painter>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container\">\r\n              <div class=\"row\">\r\n                <app-pixel-canvas\r\n                  class=\"col-12\"\r\n                  [pixels]=\"pixels\"\r\n                  [scale]=\"10\"\r\n                  [width]=\"spritelyForm.value.width\"\r\n                  [height]=\"spritelyForm.value.height\"\r\n                  [palette]=\"palette\"\r\n                  [backgroundColor]=\"spritelyForm.value.backgroundColor\"\r\n                  [colorIndex]=\"spritelyForm.value.selectedPalette\"\r\n                  [trigger]=\"trigger\"\r\n                ></app-pixel-canvas>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
+module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div class=\"showcase col-lg-12\">\r\n    <div class=\"nes-container with-title\">\r\n      <div class=\"title\">\r\n        <label>Spritely </label>\r\n        <button class=\"nes-btn is-primary\" id=\"fileTab\" onclick=\"toggleDropDown('fileContainer','fileTab')\">File</button>\r\n        <button class=\"nes-btn\" id=\"directionsTab\" onclick=\"toggleDropDown('directionsContainer','directionsTab')\">Directions</button>\r\n      </div>\r\n      <div class=\"row small\">\r\n        <div class=\"col-lg-5\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\" id=\"fileContainer\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>File</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <input type=\"file\" id=\"loadFile\" class=\"nes-input\" (change)=\"loadFile($event)\"/>\r\n                    </div>\r\n                    <div class=\"col-sm-9 text-center\">\r\n                      <input type=\"text\" id=\"saveFile\" class=\"nes-input\" formControlName=\"saveFile\" placeholder=\"File Name\"/>\r\n                    </div>\r\n                    <div class=\"col-sm-3 text-center\">\r\n                      <a *ngIf=\"saveFileContent\" download=\"{{spritelyForm.value.saveFile||'spritelyData.txt'}}\" [href]=\"saveFileContent\">\r\n                        <span class=\"nes-btn is-primary\">Save</span>\r\n                      </a>\r\n                    </div>\r\n                  </div>\r\n                  <button class=\"nes-btn is-primary minimize\"  onclick=\"toggleDropDown('fileContainer','fileTab')\">^</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-12 hide\" id=\"directionsContainer\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Directions</label>\r\n                  </div>\r\n                  <div class=\"nes-balloon from-left\">\r\n                    <p>Spritely is a canvas for pixel art.</p>\r\n                  </div>\r\n                  <div class=\"nes-balloon from-right\">\r\n                    <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>\r\n                  </div>\r\n                  <div class=\"nes-balloon from-left\">\r\n                    <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>\r\n                  </div>\r\n                  <div class=\"nes-balloon from-right\">\r\n                    <p>Deleting a color will unpaint all pixels that matching color</p>\r\n                  </div>\r\n                  <div class=\"nes-balloon from-left\">\r\n                    <p>Unpainting pixels will return them to the background color.</p>\r\n                  </div>\r\n                  <button class=\"nes-btn is-primary minimize\"  onclick=\"toggleDropDown('directionsContainer','directionsTab')\">^</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Palette</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <label for=\"makeTransparent\" class=\"text-brand\">\r\n                        <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                        <span>\r\n                          Make Transparent?\r\n                        </span>\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"palette\" class=\"text-brand\">Palette: </label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <div class=\"nes-input nes-select\">\r\n                        <select id=\"palette\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectColor()\">\r\n                          <ng-container *ngFor=\"let color of palette; index as i\">\r\n                            <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                          </ng-container>\r\n                        </select>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                      <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                    </div>\r\n                  </div>\r\n                  <p></p>\r\n                  <div class=\"row\" *ngIf=\"palette.length > 1\">\r\n                    <div class=\"col-sm-12 nes-input text-justify palette\" [style.margin]=\"0\">\r\n                      <ng-container *ngFor=\"let c of palette; index as i\">\r\n                        <span *ngIf=\"i > 0\"\r\n                          class=\"palette-item\"\r\n                          [style.color]=\"c\"\r\n                          [style.backgroundColor]=\"c\"\r\n                          [style.width]=\"(100/(palette.length - 1))+'%'\"\r\n                          >\r\n                          <span class=\"palette-color\">_</span>\r\n                        </span>\r\n                      </ng-container>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Image</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-3 text-center\">\r\n                      <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n                      <input type=\"number\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\"/>\r\n                    </div>\r\n                    <div class=\"col-sm-9 text-center\">\r\n                      <app-pixel-painter\r\n                        [pixels]=\"pixels\"\r\n                        [scale]=\"spritelyForm.value.scale\"\r\n                        [width]=\"spritelyForm.value.width\"\r\n                        [height]=\"spritelyForm.value.height\"\r\n                        [palette]=\"palette\"\r\n                        [trigger]=\"trigger\"\r\n                      ></app-pixel-painter>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container\">\r\n              <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"width\" class=\"text-brand\">Width:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" id=\"width\" class=\"nes-input\" formControlName=\"width\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"height\" class=\"text-brand\">Height:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" id=\"height\" class=\"nes-input\" formControlName=\"height\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                  <app-pixel-canvas\r\n                    class=\"col-12\"\r\n                    [pixels]=\"pixels\"\r\n                    [scale]=\"10\"\r\n                    [width]=\"spritelyForm.value.width\"\r\n                    [height]=\"spritelyForm.value.height\"\r\n                    [palette]=\"palette\"\r\n                    [backgroundColor]=\"spritelyForm.value.backgroundColor\"\r\n                    [colorIndex]=\"spritelyForm.value.selectedPalette\"\r\n                    [trigger]=\"trigger\"\r\n                  ></app-pixel-canvas>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -943,13 +940,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _trigger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../trigger */ "./src/app/trigger.ts");
+/* harmony import */ var _range__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../range */ "./src/app/range.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
+
 
 
 
 
 var SpritelyComponent = /** @class */ (function () {
-    function SpritelyComponent(fb) {
+    function SpritelyComponent(fb, sanitizer) {
         this.fb = fb;
+        this.sanitizer = sanitizer;
         this.spritelyForm = this.fb.group({
             selectedPalette: [0],
             scale: [5],
@@ -958,7 +960,6 @@ var SpritelyComponent = /** @class */ (function () {
             color: ['#000001'],
             makeTransparent: [false],
             backgroundColor: ['#fffffe'],
-            loadFile: [''],
             saveFile: ['']
         });
         this.palette = [undefined];
@@ -966,6 +967,76 @@ var SpritelyComponent = /** @class */ (function () {
         this.trigger = new _trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"]("redraw-pixels");
     }
     SpritelyComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.trigger.addListener(function (e) {
+            _this.compileSaveData();
+        });
+    };
+    SpritelyComponent.prototype.loadFileData = function (fileData, fileName) {
+        var _this = this;
+        var rows = fileData.split("\r").join("").split("\n").join("|").split("|");
+        var filePalette = rows.shift().split(",");
+        this.palette.splice(0, this.palette.length);
+        filePalette.forEach(function (c) { return _this.palette.push((c == "none") ? undefined : c); });
+        Object.keys(this.pixels).forEach(function (p) {
+            delete _this.pixels[p];
+        });
+        var width = 0;
+        rows.forEach(function (row, y) {
+            width = Math.max(width, row.length);
+            row.split("").forEach(function (p, x) {
+                var c = p.charCodeAt(0) - 97;
+                if (c > 0) {
+                    var key = x + 'x' + y;
+                    _this.pixels[key] = c;
+                }
+            });
+        });
+        var formValues = {
+            width: width,
+            height: rows.length,
+            saveFile: fileName,
+        };
+        if (this.palette[0]) {
+            formValues.makeTransparent = false;
+            formValues.backgroundColor = this.palette[0];
+        }
+        else {
+            formValues.makeTransparent = true;
+        }
+        if (this.palette.length > 1) {
+            formValues.selectedPalette = 1;
+            formValues.color = this.palette[1];
+        }
+        this.spritelyForm.patchValue(formValues);
+        this.trigger.fire();
+    };
+    SpritelyComponent.prototype.loadFile = function ($event) {
+        var inputValue = $event.target;
+        var file = inputValue.files[0];
+        var myReader = new FileReader();
+        var loadData = this.loadFileData;
+        var me = this;
+        myReader.onload = function (e) {
+            // you can perform an action with readed data here
+            loadData.call(me, myReader.result, file.name);
+        };
+        myReader.readAsText(file);
+    };
+    SpritelyComponent.prototype.compileSaveData = function () {
+        var _this = this;
+        console.log(this.palette);
+        var out = [this.palette.map(function (c) { return c ? c : "none"; }).join(",")];
+        _range__WEBPACK_IMPORTED_MODULE_4__["Range"].max(this.spritelyForm.value.height).forEach(function (y) {
+            var row = [];
+            _range__WEBPACK_IMPORTED_MODULE_4__["Range"].max(_this.spritelyForm.value.width).forEach(function (x) {
+                var key = x + 'x' + y;
+                var c = _this.pixels[key] || 0;
+                row.push(c);
+            });
+            out.push(String.fromCharCode.apply(null, row.map(function (c) { return 97 + c; })));
+        });
+        this.saveFileContent = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([out.join("\r\n")], { type: 'text/plain' })));
     };
     SpritelyComponent.prototype.selectColor = function () {
         this.spritelyForm.patchValue({
@@ -985,10 +1056,6 @@ var SpritelyComponent = /** @class */ (function () {
     };
     SpritelyComponent.prototype.setColor = function () {
         this.palette[this.spritelyForm.value.selectedPalette] = this.spritelyForm.value.color;
-        this.trigger.fire();
-    };
-    SpritelyComponent.prototype.setColorAsTransparent = function () {
-        this.palette[this.spritelyForm.value.selectedPalette] = undefined;
         this.trigger.fire();
     };
     SpritelyComponent.prototype.addColor = function () {
@@ -1017,7 +1084,7 @@ var SpritelyComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./spritely.component.html */ "./src/app/spritely/spritely.component.html"),
             styles: [__webpack_require__(/*! ./spritely.component.scss */ "./src/app/spritely/spritely.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["DomSanitizer"]])
     ], SpritelyComponent);
     return SpritelyComponent;
 }());

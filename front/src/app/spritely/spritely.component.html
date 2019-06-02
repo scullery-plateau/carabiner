@@ -4,29 +4,26 @@
       <div class="title">
         <label>Spritely </label>
         <button class="nes-btn is-primary" id="fileTab" onclick="toggleDropDown('fileContainer','fileTab')">File</button>
-        <button class="nes-btn is-primary" id="directionsTab" onclick="toggleDropDown('directionsContainer','directionsTab')">Directions</button>
+        <button class="nes-btn" id="directionsTab" onclick="toggleDropDown('directionsContainer','directionsTab')">Directions</button>
       </div>
-      <div class="row">
+      <div class="row small">
         <div class="col-lg-5">
           <div class="row">
-            <div class="col-md-12 toggle" id="fileContainer">
+            <div class="col-md-12" id="fileContainer">
               <div class="showcase">
                 <div class="nes-container with-title">
                   <div class="title">
                     <label>File</label>
                   </div>
                   <div class="row">
-                    <div class="col-sm-9">
-                      <input type="file" id="loadFile" class="nes-input" formControlName="loadFile"/>
+                    <div class="col-sm-12 text-center">
+                      <input type="file" id="loadFile" class="nes-input" (change)="loadFile($event)"/>
                     </div>
-                    <div class="col-sm-3">
-                      <button class="nes-btn is-success" (click)="loadFile()">Load</button>
+                    <div class="col-sm-9 text-center">
+                      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="File Name"/>
                     </div>
-                    <div class="col-sm-9">
-                      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File Name"/>
-                    </div>
-                    <div class="col-sm-3">
-                      <a download [href]="saveFileContent">
+                    <div class="col-sm-3 text-center">
+                      <a *ngIf="saveFileContent" download="{{spritelyForm.value.saveFile||'spritelyData.txt'}}" [href]="saveFileContent">
                         <span class="nes-btn is-primary">Save</span>
                       </a>
                     </div>
@@ -35,12 +32,26 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12 toggle" id="directionsContainer">
+            <div class="col-md-12 hide" id="directionsContainer">
               <div class="showcase">
                 <div class="nes-container with-title">
                   <div class="title">
                     <label>Directions</label>
-                    <p><!-- TODO --></p>
+                  </div>
+                  <div class="nes-balloon from-left">
+                    <p>Spritely is a canvas for pixel art.</p>
+                  </div>
+                  <div class="nes-balloon from-right">
+                    <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>
+                  </div>
+                  <div class="nes-balloon from-left">
+                    <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>
+                  </div>
+                  <div class="nes-balloon from-right">
+                    <p>Deleting a color will unpaint all pixels that matching color</p>
+                  </div>
+                  <div class="nes-balloon from-left">
+                    <p>Unpainting pixels will return them to the background color.</p>
                   </div>
                   <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('directionsContainer','directionsTab')">^</button>
                 </div>
@@ -50,31 +61,7 @@
               <div class="showcase">
                 <div class="nes-container with-title">
                   <div class="title">
-                    <label>Controls</label>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-5 text-right">
-                      <label for="width" class="text-brand">Width:</label>
-                    </div>
-                    <div class="col-sm-7">
-                      <input type="number" id="width" class="nes-input" formControlName="width"/>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-5 text-right">
-                      <label for="height" class="text-brand">Height:</label>
-                    </div>
-                    <div class="col-sm-7">
-                      <input type="number" id="height" class="nes-input" formControlName="height"/>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-5 text-right">
-                      <label for="scale" class="text-brand">Scale:</label>
-                    </div>
-                    <div class="col-sm-7">
-                      <input type="number" id="scale" class="nes-input" formControlName="scale"/>
-                    </div>
+                    <label>Palette</label>
                   </div>
                   <div class="row">
                     <div class="col-sm-5 text-right">
@@ -144,16 +131,24 @@
               <div class="showcase">
                 <div class="nes-container with-title">
                   <div class="title">
-                    <label class="text-brand">Image</label>
+                    <label>Image</label>
                   </div>
-                  <app-pixel-painter
-                    [pixels]="pixels"
-                    [scale]="spritelyForm.value.scale"
-                    [width]="spritelyForm.value.width"
-                    [height]="spritelyForm.value.height"
-                    [palette]="palette"
-                    [trigger]="trigger"
-                  ></app-pixel-painter>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <label for="scale" class="text-brand">Scale:</label>
+                      <input type="number" id="scale" class="nes-input" formControlName="scale"/>
+                    </div>
+                    <div class="col-sm-9 text-center">
+                      <app-pixel-painter
+                        [pixels]="pixels"
+                        [scale]="spritelyForm.value.scale"
+                        [width]="spritelyForm.value.width"
+                        [height]="spritelyForm.value.height"
+                        [palette]="palette"
+                        [trigger]="trigger"
+                      ></app-pixel-painter>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,17 +158,41 @@
           <div class="showcase">
             <div class="nes-container">
               <div class="row">
-                <app-pixel-canvas
-                  class="col-12"
-                  [pixels]="pixels"
-                  [scale]="10"
-                  [width]="spritelyForm.value.width"
-                  [height]="spritelyForm.value.height"
-                  [palette]="palette"
-                  [backgroundColor]="spritelyForm.value.backgroundColor"
-                  [colorIndex]="spritelyForm.value.selectedPalette"
-                  [trigger]="trigger"
-                ></app-pixel-canvas>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-5 text-right">
+                      <label for="width" class="text-brand">Width:</label>
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="number" id="width" class="nes-input" formControlName="width"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-5 text-right">
+                      <label for="height" class="text-brand">Height:</label>
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="number" id="height" class="nes-input" formControlName="height"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <app-pixel-canvas
+                    class="col-12"
+                    [pixels]="pixels"
+                    [scale]="10"
+                    [width]="spritelyForm.value.width"
+                    [height]="spritelyForm.value.height"
+                    [palette]="palette"
+                    [backgroundColor]="spritelyForm.value.backgroundColor"
+                    [colorIndex]="spritelyForm.value.selectedPalette"
+                    [trigger]="trigger"
+                  ></app-pixel-canvas>
+                </div>
               </div>
             </div>
           </div>

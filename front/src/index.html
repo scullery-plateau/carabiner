@@ -12,12 +12,12 @@
     function toggleDropDown(targetId,btnId) {
       let target = document.getElementById(targetId);
       let btn = document.getElementById(btnId);
-      if(target.style.display == 'none') {
-        target.style.display = 'block';
-        btn.classList.add("is-primary");
-      } else {
-        target.style.display = 'none';
+      if(btn.classList.contains("is-primary")) {
         btn.classList.remove("is-primary");
+        target.classList.add("hide");
+      } else {
+        btn.classList.add("is-primary");
+        target.classList.remove("hide");
       }
     }
     function toggleTab(button,menu,tabClass,targetId) {

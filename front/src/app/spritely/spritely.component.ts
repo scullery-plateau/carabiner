@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import {Trigger} from "../trigger";
 import {Range} from "../range";
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-spritely',
@@ -17,7 +18,6 @@ export class SpritelyComponent implements OnInit {
     color:['#000001'],
     makeTransparent:[false],
     backgroundColor:['#fffffe'],
-    loadFile:[''],
     saveFile:['']
   });
 
@@ -27,11 +27,81 @@ export class SpritelyComponent implements OnInit {
 
   trigger: Trigger = new Trigger("redraw-pixels");
 
-  saveFileContent: string;
+  saveFileContent: any;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer) { }
 
   ngOnInit() {
+    this.trigger.addListener(e => {
+      this.compileSaveData();
+    });
+  }
+
+  private loadFileData(fileData,fileName) {
+    let rows = fileData.split("\r").join("").split("\n").join("|").split("|");
+    let filePalette = rows.shift().split(",");
+    this.palette.splice(0,this.palette.length);
+    filePalette.forEach(c => this.palette.push((c == "none")?undefined:c));
+    Object.keys(this.pixels).forEach(p => {
+      delete this.pixels[p];
+    })
+    let width = 0;
+    rows.forEach((row,y) => {
+      width = Math.max(width,row.length);
+      row.split("").forEach((p,x) => {
+        let c = p.charCodeAt(0) - 97;
+        if (c > 0) {
+          let key = x + 'x' + y;
+          this.pixels[key] = c;
+        }
+      });
+    });
+    let formValues: any = {
+      width:width,
+      height:rows.length,
+      saveFile:fileName,
+    };
+    if (this.palette[0]) {
+      formValues.makeTransparent = false;
+      formValues.backgroundColor = this.palette[0];
+    } else {
+      formValues.makeTransparent = true;
+    }
+    if (this.palette.length > 1) {
+      formValues.selectedPalette = 1;
+      formValues.color = this.palette[1];
+    }
+    this.spritelyForm.patchValue(formValues);
+    this.trigger.fire();
+  }
+
+  loadFile($event) : void {
+    let inputValue = $event.target;
+    let file:File = inputValue.files[0];
+    let myReader:FileReader = new FileReader();
+    let loadData = this.loadFileData;
+    let me = this;
+    myReader.onload = function(e){
+      // you can perform an action with readed data here
+      loadData.call(me, myReader.result,file.name);
+    }
+    myReader.readAsText(file);
+  }
+
+  compileSaveData() {
+    console.log(this.palette);
+    let out = [this.palette.map(c => c?c:"none").join(",")];
+    Range.max(this.spritelyForm.value.height).forEach(y => {
+      let row = [];
+      Range.max(this.spritelyForm.value.width).forEach(x => {
+        let key = x + 'x' + y;
+        let c = this.pixels[key] || 0;
+        row.push(c);
+      })
+      out.push(String.fromCharCode.apply(null,row.map(c => 97 + c)));
+    });
+
+    this.saveFileContent = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([out.join("\r\n")], {type: 'text/plain'})));
   }
 
   selectColor() {
@@ -55,11 +125,6 @@ export class SpritelyComponent implements OnInit {
 
   setColor() {
     this.palette[this.spritelyForm.value.selectedPalette] = this.spritelyForm.value.color;
-    this.trigger.fire();
-  }
-
-  setColorAsTransparent() {
-    this.palette[this.spritelyForm.value.selectedPalette] = undefined;
     this.trigger.fire();
   }
 
