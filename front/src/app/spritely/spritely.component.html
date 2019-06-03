@@ -5,7 +5,7 @@
         <label>Spritely </label>
         <button class="nes-btn" id="fileTab" onclick="toggleDropDown('fileContainer','fileTab')">File</button>
         <button class="nes-btn" id="directionsTab" onclick="toggleDropDown('directionsContainer','directionsTab')">Directions</button>
-        <button class="nes-btn is-primary" id="transformsTab" onclick="toggleDropDown('transformsContainer','transformsTab')">Transforms</button>
+        <button class="nes-btn" id="transformsTab" onclick="toggleDropDown('transformsContainer','transformsTab')">Transforms</button>
       </div>
       <div class="row small">
         <div class="col-lg-5">
@@ -134,7 +134,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12" id="transformsContainer">
+            <div class="col-md-12 hide" id="transformsContainer">
               <div class="showcase">
                 <div class="nes-container with-title">
                   <div class="title">
@@ -163,19 +163,19 @@
                     <label>Image</label>
                   </div>
                   <div class="row">
-                    <div class="col-sm-3 text-center">
+                    <div class="col-lg-4 col-md-6">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <label for="scale" class="text-brand">Scale:</label>
                           <input type="number" min="1" max="20" id="scale" class="nes-input" formControlName="scale" (change)="redraw()"/>
                         </div>
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <label for="imgFile" class="text-brand">Image FileName:</label>
                           <input type="text" id="imgFile" class="nes-input" formControlName="saveFile" placeholder="Image File" (change)="redraw()"/>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-9 text-center">
+                    <div class="col-8 text-right">
                       <app-pixel-painter
                         [pixels]="pixels"
                         [scale]="spritelyForm.value.scale"
