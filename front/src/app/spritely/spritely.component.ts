@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 import {Trigger} from "../trigger";
 import {Range} from "../range";
 import {DomSanitizer} from '@angular/platform-browser';
+import {Transforms} from "./transform";
+import {Point} from "../point"
 
 @Component({
   selector: 'app-spritely',
@@ -29,7 +31,7 @@ export class SpritelyComponent implements OnInit {
 
   saveFileContent: any;
 
-  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer) { }
+  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer, ) { }
 
   ngOnInit() {
     this.trigger.addListener(e => {
@@ -151,6 +153,31 @@ export class SpritelyComponent implements OnInit {
         selectedPalette:len - 1
       })
     }
+    this.trigger.fire();
+  }
+
+  transform(tf:Transforms) {
+    console.log(tf);
+    let width = this.spritelyForm.value.width;
+    let height = this.spritelyForm.value.height;
+    let pixels = this.pixels;
+    let entries = Object.entries(pixels);
+    console.log(entries);
+    let transformed: {} = {};
+    entries.forEach(function(entry: any[]){
+      console.log(entry);
+      console.log(entry[0]);
+      console.log(entry[1]);;
+      let p: string = entry[0];
+      let newP: Point = Point.parse(p)[tf](width,height);
+      if(newP.isIn(width,height)) {
+        transformed[newP.toString()] = entry[1];
+      }
+      delete pixels[p];
+    });
+    Object.entries(transformed).forEach(function(entry:any[]){
+      pixels[entry[0]] = entry[1];
+    })
     this.trigger.fire();
   }
 }

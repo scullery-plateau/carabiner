@@ -3,13 +3,14 @@
     <div class="nes-container with-title">
       <div class="title">
         <label>Spritely </label>
-        <button class="nes-btn is-primary" id="fileTab" onclick="toggleDropDown('fileContainer','fileTab')">File</button>
+        <button class="nes-btn" id="fileTab" onclick="toggleDropDown('fileContainer','fileTab')">File</button>
         <button class="nes-btn" id="directionsTab" onclick="toggleDropDown('directionsContainer','directionsTab')">Directions</button>
+        <button class="nes-btn is-primary" id="transformsTab" onclick="toggleDropDown('transformsContainer','transformsTab')">Transforms</button>
       </div>
       <div class="row small">
         <div class="col-lg-5">
           <div class="row">
-            <div class="col-md-12" id="fileContainer">
+            <div class="col-md-12 hide" id="fileContainer">
               <div class="showcase">
                 <div class="nes-container with-title">
                   <div class="title">
@@ -124,6 +125,28 @@
                       </ng-container>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" id="transformsContainer">
+              <div class="showcase">
+                <div class="nes-container with-title">
+                  <div class="title">
+                    <label>Transforms</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <button class="nes-btn is-warning" (click)="transform('turnLeft')">Turn Left</button>
+                      <button class="nes-btn is-warning" (click)="transform('turnRight')">Turn Right</button>
+                      <button class="nes-btn is-warning" (click)="transform('flipOver')">Flip Over</button>
+                      <button class="nes-btn is-warning" (click)="transform('flipDown')">Flip Down</button>
+                      <button class="nes-btn is-warning" (click)="transform('shiftLeft')">Shift Left</button>
+                      <button class="nes-btn is-warning" (click)="transform('shiftRight')">Shift Right</button>
+                      <button class="nes-btn is-warning" (click)="transform('shiftUp')">Shift Up</button>
+                      <button class="nes-btn is-warning" (click)="transform('shiftDown')">Shift Down</button>
+                    </div>
+                  </div>
+                  <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('transformsContainer','transformsTab')">^</button>
                 </div>
               </div>
             </div>
