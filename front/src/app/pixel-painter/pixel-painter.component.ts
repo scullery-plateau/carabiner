@@ -28,6 +28,9 @@ export class PixelPainterComponent implements OnInit {
   @Input()
   trigger: Trigger;
 
+  @Input()
+  imgFile: string;
+
   imgPath: string;
 
   constructor() { }

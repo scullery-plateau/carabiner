@@ -1,5 +1,5 @@
 <canvas #myCanvas style="display:none;" [width]="16 * scale" [height]="16 * scale"></canvas>
 <span style="display:none;">{{palette.join()}}</span>
-<a [href]="imgPath" class="nes-btn" download="spritely.png">
+<a [href]="imgPath" class="nes-btn" [download]="(imgFile?imgFile:'spritely')+'.png'">
   <img [src]="imgPath" [width]="16 * scale" [height]="16 * scale"/>
 </a>

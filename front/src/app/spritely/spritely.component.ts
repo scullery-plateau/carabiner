@@ -20,7 +20,8 @@ export class SpritelyComponent implements OnInit {
     color:['#000001'],
     makeTransparent:[false],
     backgroundColor:['#fffffe'],
-    saveFile:['']
+    saveFile:[''],
+    imgFile:['']
   });
 
   palette: string[] = [undefined];
@@ -110,6 +111,13 @@ export class SpritelyComponent implements OnInit {
     this.spritelyForm.patchValue({
       color:this.palette[this.spritelyForm.value.selectedPalette]
     });
+  }
+
+  setColorIndex(index: number) {
+    this.spritelyForm.patchValue({
+      selectedPalette:index
+    });
+    this.selectColor();
   }
 
   makeTransparent() {

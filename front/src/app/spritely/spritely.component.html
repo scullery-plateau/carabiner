@@ -17,14 +17,18 @@
                     <label>File</label>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12 text-center">
+                    <div class="col-12">
+                      <label for="loadFile">Load File:</label>
                       <input type="file" id="loadFile" class="nes-input" (change)="loadFile($event)"/>
                     </div>
-                    <div class="col-sm-9 text-center">
-                      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="File Name"/>
+                    <div class="col-12">
+                      <label for="saveFile">Save:</label>
                     </div>
-                    <div class="col-sm-3 text-center">
-                      <a *ngIf="saveFileContent" download="{{spritelyForm.value.saveFile||'spritelyData.txt'}}" [href]="saveFileContent">
+                    <div class="col-9">
+                      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
+                    </div>
+                    <div class="col-3">
+                      <a download="{{spritelyForm.value.saveFile||'spritelyData.txt'}}" [href]="saveFileContent">
                         <span class="nes-btn is-primary">Save</span>
                       </a>
                     </div>
@@ -114,14 +118,16 @@
                   <div class="row" *ngIf="palette.length > 1">
                     <div class="col-sm-12 nes-input text-justify palette" [style.margin]="0">
                       <ng-container *ngFor="let c of palette; index as i">
-                        <span *ngIf="i > 0"
+                        <a *ngIf="i > 0"
                           class="palette-item"
                           [style.color]="c"
                           [style.backgroundColor]="c"
                           [style.width]="(100/(palette.length - 1))+'%'"
+                          href="#/spritely"
+                          (click)="setColorIndex(i)"
                           >
                           <span class="palette-color">_</span>
-                        </span>
+                        </a>
                       </ng-container>
                     </div>
                   </div>
@@ -158,8 +164,16 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-3 text-center">
-                      <label for="scale" class="text-brand">Scale:</label>
-                      <input type="number" id="scale" class="nes-input" formControlName="scale" (change)="redraw()"/>
+                      <div class="row">
+                        <div class="col-12">
+                          <label for="scale" class="text-brand">Scale:</label>
+                          <input type="number" min="1" max="20" id="scale" class="nes-input" formControlName="scale" (change)="redraw()"/>
+                        </div>
+                        <div class="col-12">
+                          <label for="imgFile" class="text-brand">Image FileName:</label>
+                          <input type="text" id="imgFile" class="nes-input" formControlName="saveFile" placeholder="Image File" (change)="redraw()"/>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-sm-9 text-center">
                       <app-pixel-painter
@@ -169,6 +183,7 @@
                         [height]="spritelyForm.value.height"
                         [palette]="palette"
                         [trigger]="trigger"
+                        [imgFile]="spritelyForm.value.imgFile"
                       ></app-pixel-painter>
                     </div>
                   </div>
@@ -187,7 +202,7 @@
                       <label for="width" class="text-brand">Width:</label>
                     </div>
                     <div class="col-sm-7">
-                      <input type="number" id="width" class="nes-input" formControlName="width"/>
+                      <input type="number" min="8" max="64" id="width" class="nes-input" formControlName="width"/>
                     </div>
                   </div>
                 </div>
@@ -197,7 +212,7 @@
                       <label for="height" class="text-brand">Height:</label>
                     </div>
                     <div class="col-sm-7">
-                      <input type="number" id="height" class="nes-input" formControlName="height"/>
+                      <input type="number" min="8" max="64" id="height" class="nes-input" formControlName="height"/>
                     </div>
                   </div>
                 </div>
