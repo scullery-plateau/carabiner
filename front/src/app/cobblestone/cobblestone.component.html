@@ -3,11 +3,36 @@
   <div class="col-12">
     <div class="showcase">
       <div class="nes-container with-title">
-        <h4 class="title">CobbleStone</h4>
-        <app-palettes></app-palettes>
-        <app-tiles></app-tiles>
-        <app-characters></app-characters>
-        <app-maps></app-maps>
+        <div class="title">
+          <h3>CobbleStone</h3>
+          <button class="nes-btn cobblestone-tab-btn is-success" id="paletteAndTileTab" onclick="toggleTab('paletteAndTileContainer','paletteAndTileTab','cobblestone-tab-btn','cobblestone-tab-body')">Palettes &amp; Tiles</button>
+          <button class="nes-btn cobblestone-tab-btn" id="mapTransformsTab" onclick="toggleTab('mapTransformsContainer','mapTransformsTab','cobblestone-tab-btn','cobblestone-tab-body')">Transforms</button>
+          <button class="nes-btn cobblestone-tab-btn" id="mapTab" onclick="toggleTab('mapContainer','mapTab','cobblestone-tab-btn','cobblestone-tab-body')">Map</button>
+        </div>
+        <div class="showcase cobblestone-tab-body" id="paletteAndTileContainer">
+          <div class="nes-container with-title">
+            <div class="title">
+              <h5>Palettes &amp; Tiles</h5>
+            </div>
+
+          </div>
+        </div>
+        <div class="showcase cobblestone-tab-body hide" id="mapTransformsContainer">
+          <div class="nes-container with-title">
+            <div class="title">
+              <h5>Transforms</h5>
+            </div>
+
+          </div>
+        </div>
+        <div class="showcase cobblestone-tab-body hide" id="mapContainer">
+          <div class="nes-container with-title">
+            <div class="title">
+              <h5>Map</h5>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
