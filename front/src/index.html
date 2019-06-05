@@ -34,6 +34,14 @@
       btn.classList.add("is-success");
       target.classList.remove("hide");
     }
+    function openDialog(dialogId) {
+      document.getElementById(dialogId).showModal();
+    }
+    function closeDialog(dialogId,state) {
+      let dialog = document.getElementById(dialogId);
+      dialog.close();
+      dialog.dispatchEvent(new CustomEvent("closeDialog",{state:state}));
+    }
   </script>
 </head>
 <body>
