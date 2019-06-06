@@ -20,8 +20,47 @@
         target.classList.remove("hide");
       }
     }
-    function toggleTab(button,menu,tabClass,targetId) {
-
+    function toggleAccordian(targetId,btnId) {
+      let target = document.getElementById(targetId);
+      let btn = document.getElementById(btnId);
+      if(target.classList.contains("hide")) {
+        target.classList.remove("hide");
+        if (btn) {
+          btn.classList.add("hide");
+        }
+      } else {
+        target.classList.add("hide");
+        if (btn) {
+          btn.classList.remove("hide");
+        }
+      }
+    }
+    function toggleTab(targetId,btnId,tabClass,tabBodyClass) {
+      let tabs = Array.from(document.getElementsByClassName(tabClass));
+      let tabBodies = Array.from(document.getElementsByClassName(tabBodyClass));
+      let target = document.getElementById(targetId);
+      let btn = document.getElementById(btnId);
+      tabs.forEach(tab => {
+        tab.classList.remove("is-success");
+      });
+      tabBodies.forEach(body => {
+        body.classList.add("hide");
+      })
+      btn.classList.add("is-success");
+      target.classList.remove("hide");
+    }
+    function openDialog(dialogId) {
+      document.getElementById(dialogId).showModal();
+    }
+    function closeDialog(dialogId,state) {
+      let dialog = document.getElementById(dialogId);
+      dialog.close();
+      dialog.dispatchEvent(new CustomEvent("closeDialog",{
+        detail:{state:state}
+      }));
+    }
+    Object.prototype.keys = function() {
+      return Object.keys(this);
     }
   </script>
 </head>
