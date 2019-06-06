@@ -100,7 +100,7 @@ export class SpritelyComponent implements OnInit {
         let c = this.pixels[key] || 0;
         row.push(c);
       })
-      let charCodes = row.map((c:number) => (parseInt(c) + 97));
+      let charCodes = row.map((c) => (parseInt(c) + 97));
       out.push(String.fromCharCode.apply(null,charCodes));
     });
     let data = out.join("\r\n");
