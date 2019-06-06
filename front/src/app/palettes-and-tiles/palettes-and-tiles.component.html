@@ -24,7 +24,7 @@
               </div>
               <div class="row">
                 <div class="col-12 text-center">
-                  <button type="button" name="button" class="nes-btn is-success" onclick="openDialog('paletteNameDialog')">Add Tile</button>
+                  <button type="button" name="button" class="nes-btn is-success" onclick="openDialog('paletteNameDialog')">Add Palette</button>
                   <dialog class="nes-dialog is-dark is-rounded" id="paletteNameDialog">
                     <label for="paletteName">Palette Name</label>
                     <input type="text" class="nes-input" id="paletteName" formControlName="paletteName">
@@ -33,7 +33,7 @@
                       <button class="nes-btn is-primary" onclick="closeDialog('paletteNameDialog','confirm')">Confirm</button>
                     </menu>
                   </dialog>
-                  <button type="button" name="button" class="nes-btn is-error" (click)="removePalette()">Remove Tile</button>
+                  <button type="button" name="button" class="nes-btn is-error" (click)="removePalette()">Remove Palette</button>
                 </div>
               </div>
               <div class="row">
@@ -97,7 +97,7 @@
               </div>
               <div class="row">
                 <div class="col-12 text-center">
-                  <button type="button" name="button" class="nes-btn is-success" onclick="openDialog('tileNameDialog')">New Tile</button>
+                  <button type="button" name="button" class="nes-btn is-success" onclick="openDialog('tileNameDialog')">Add Tile</button>
                   <dialog class="nes-dialog is-dark is-rounded" id="tileNameDialog">
                     <label for="tileName">Tile Name</label>
                     <input type="text" class="nes-input" id="tileName" formControlName="tileName"/>
@@ -121,15 +121,22 @@
             <h5>Tile Canvas</h5>
           </div>
           <div class="row">
+            <div class="col-sm-5 text-right">
+              <label for="backgroundColor" class="text-brand">Background Color:</label>
+            </div>
+            <div class="col-sm-7">
+              <input type="color" id="backgroundColor" class="nes-input form-control" formControlName="backgroundColor" value="#fffffe" (change)="setBackground()"/>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-12">
               <app-pixel-canvas
-                class="col-12"
                 [pixels]="(state.tiles[paletteAndTileForm.value.activeTile]||{})"
                 [scale]="10"
                 [width]="16"
                 [height]="16"
                 [palette]="(state.palettes[paletteAndTileForm.value.selectedPalette]||[])"
-                [backgroundColor]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[0]||'#ffffff')"
+                [backgroundColor]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[0]||paletteAndTileForm.value.backgroundColor||'#ffffff')"
                 [colorIndex]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[paletteAndTileForm.value.selectedColor]||'#ffffff')"
                 [trigger]="trigger"
               ></app-pixel-canvas>

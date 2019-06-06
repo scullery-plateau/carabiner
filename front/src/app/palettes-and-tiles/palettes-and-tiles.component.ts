@@ -10,7 +10,7 @@ import {Trigger} from "../trigger"
 export class PalettesAndTilesComponent implements OnInit {
 
   @Input()
-  state: {};
+  state: any;
 
   private paletteAndTileForm: FormGroup = this.fb.group({
     selectedPalette:[''],
@@ -19,7 +19,8 @@ export class PalettesAndTilesComponent implements OnInit {
     color:[''],
     makeTransparent:[false],
     tileName:[''],
-    activeTile:['']
+    activeTile:[''],
+    backgroundColor:['#fffffe']
   });
 
   trigger: Trigger = new Trigger("redraw-tile");
@@ -27,26 +28,31 @@ export class PalettesAndTilesComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    let me = this;
     document.getElementById('tileNameDialog').addEventListener('closeDialog',function(e:CustomEvent) {
       if (e.detail.state == 'confirm') {
-        this.addTile();
+        me.addTile();
       }
-      this.paletteAndTileForm.patchValue({
+      me.paletteAndTileForm.patchValue({
+        activeTile:me.paletteAndTileForm.value.tileName,
         tileName:''
-      })
+      });
     });
     document.getElementById('paletteNameDialog').addEventListener('closeDialog',function(e:CustomEvent) {
       if (e.detail.state == 'confirm') {
-        this.addPalette();
+        me.addPalette();
       }
-      this.paletteAndTileForm.patchValue({
+      me.paletteAndTileForm.patchValue({
+        selectedPalette:me.paletteAndTileForm.value.paletteName,
         paletteName:''
-      })
+      });
     });
   }
 
   addPalette() {
-    // todo
+    if (this.paletteAndTileForm.value.paletteName && !this.state.palettes[this.paletteAndTileForm.value.paletteName]) {
+      this.state.palettes[this.paletteAndTileForm.value.paletteName] = [];
+    }
   }
 
   selectPalette() {
@@ -54,7 +60,9 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   removePalette() {
-    // todo
+    if (this.paletteAndTileForm.value.selectedPalette) {
+      delete this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
+    }
   }
 
   selectColor() {
@@ -62,23 +70,39 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   setColor() {
-    // todo
+    if (this.paletteAndTileForm.value.selectedPalette) {
+      if (this.paletteAndTileForm.value.selectedColor) {
+        this.state.palettes[this.paletteAndTileForm.value.selectedPalette][this.paletteAndTileForm.value.selectedColor] = this.paletteAndTileForm.value.color;
+      }
+    }
   }
 
   makeTransparent() {
-    // todo
+    if (this.paletteAndTileForm.value.selectedPalette) {
+      if (this.paletteAndTileForm.value.selectedColor) {
+        this.state.palettes[this.paletteAndTileForm.value.selectedPalette][this.paletteAndTileForm.value.selectedColor] = null;
+      }
+    }
   }
 
   addColor() {
-    // todo
+    if (this.paletteAndTileForm.value.selectedPalette) {
+      this.state.palettes[this.paletteAndTileForm.value.selectedPalette].push(this.paletteAndTileForm.value.color);
+    }
   }
 
   removeColor() {
-    // todo
+    if (this.paletteAndTileForm.value.selectedPalette) {
+      if (this.paletteAndTileForm.value.selectedColor) {
+        this.state.palettes[this.paletteAndTileForm.value.selectedPalette].splice(this.paletteAndTileForm.value.selectedColor,1);
+      }
+    }
   }
 
   addTile() {
-    // todo
+    if (this.paletteAndTileForm.value.tileName && !this.state.tiles[this.paletteAndTileForm.value.tileName]) {
+      this.state.tiles[this.paletteAndTileForm.value.tileName] = {};
+    }
   }
 
   selectTile() {
@@ -86,6 +110,12 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   removeTile() {
+    if (this.paletteAndTileForm.value.activeTile) {
+      delete this.state.tiles[this.paletteAndTileForm.value.activeTile];
+    }
+  }
+
+  setBackground() {
     // todo
   }
 }
