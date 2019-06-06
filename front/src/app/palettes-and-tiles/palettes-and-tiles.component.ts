@@ -27,32 +27,31 @@ export class PalettesAndTilesComponent implements OnInit {
 
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {
-    let me = this;
-    document.getElementById('tileNameDialog').addEventListener('closeDialog',function(e:CustomEvent) {
-      if (e.detail.state == 'confirm') {
-        me.addTile();
-      }
-      me.paletteAndTileForm.patchValue({
-        activeTile:me.paletteAndTileForm.value.tileName,
-        tileName:''
-      });
-    });
-    document.getElementById('paletteNameDialog').addEventListener('closeDialog',function(e:CustomEvent) {
-      if (e.detail.state == 'confirm') {
-        me.addPalette();
-      }
-      me.paletteAndTileForm.patchValue({
-        selectedPalette:me.paletteAndTileForm.value.paletteName,
-        paletteName:''
-      });
+  ngOnInit() {}
+
+  closeTileDialog(event) {
+    console.log(event);
+    this.paletteAndTileForm.patchValue({
+      activeTile:this.paletteAndTileForm.value.tileName,
+      tileName:''
     });
   }
 
-  addPalette() {
+  closePaletteDialog(event) {
+    console.log(event);
+    this.paletteAndTileForm.patchValue({
+      selectedPalette:this.paletteAndTileForm.value.paletteName,
+      paletteName:''
+    });
+  }
+
+  addPalette(event) {
+    console.log(event);
+    console.log("adding");
     if (this.paletteAndTileForm.value.paletteName && !this.state.palettes[this.paletteAndTileForm.value.paletteName]) {
       this.state.palettes[this.paletteAndTileForm.value.paletteName] = [];
     }
+    console.log("added");
   }
 
   selectPalette() {
@@ -99,7 +98,8 @@ export class PalettesAndTilesComponent implements OnInit {
     }
   }
 
-  addTile() {
+  addTile(event) {
+    console.log(event);
     if (this.paletteAndTileForm.value.tileName && !this.state.tiles[this.paletteAndTileForm.value.tileName]) {
       this.state.tiles[this.paletteAndTileForm.value.tileName] = {};
     }

@@ -11,6 +11,7 @@ import { PixelCanvasComponent } from './pixel-canvas/pixel-canvas.component';
 import { PixelPainterComponent } from './pixel-painter/pixel-painter.component';
 import { PalettesAndTilesComponent } from './palettes-and-tiles/palettes-and-tiles.component';
 import { PaletteDisplayComponent } from './palette-display/palette-display.component';
+import { DialogWrapperComponent } from './dialog-wrapper/dialog-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PaletteDisplayComponent } from './palette-display/palette-display.compo
     PixelCanvasComponent,
     PixelPainterComponent,
     PalettesAndTilesComponent,
-    PaletteDisplayComponent
+    PaletteDisplayComponent,
+    DialogWrapperComponent
   ],
   imports: [
     BrowserModule,
