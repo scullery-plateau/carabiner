@@ -3,13 +3,13 @@
     <div class="nes-container with-title">
       <div class="title">
         <label>Spritely </label>
-        <button class="nes-btn" id="fileTab" onclick="toggleDropDown('fileContainer','fileTab')">File</button>
-        <button class="nes-btn" id="directionsTab" onclick="toggleDropDown('directionsContainer','directionsTab')">Directions</button>
-        <button class="nes-btn" id="transformsTab" onclick="toggleDropDown('transformsContainer','transformsTab')">Transforms</button>
       </div>
       <div class="row small">
         <div class="col-lg-5">
           <div class="row">
+            <div  id="fileTab" class="col-md-12">
+              <button class="nes-btn is-primary nes-accordian" onclick="toggleAccordian('fileContainer','fileTab')">File</button>
+            </div>
             <div class="col-md-12 hide" id="fileContainer">
               <div class="showcase">
                 <div class="nes-container with-title">
@@ -33,9 +33,12 @@
                       </a>
                     </div>
                   </div>
-                  <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('fileContainer','fileTab')">^</button>
+                  <button class="nes-btn is-primary minimize"  onclick="toggleAccordian('fileContainer','fileTab')">^</button>
                 </div>
               </div>
+            </div>
+            <div class="col-md-12" id="directionsTab">
+              <button class="nes-btn is-primary nes-accordian" onclick="toggleAccordian('directionsContainer','directionsTab')">Directions</button>
             </div>
             <div class="col-md-12 hide" id="directionsContainer">
               <div class="showcase">
@@ -58,7 +61,7 @@
                   <div class="nes-balloon from-left">
                     <p>Unpainting pixels will return them to the background color.</p>
                   </div>
-                  <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('directionsContainer','directionsTab')">^</button>
+                  <button class="nes-btn is-primary minimize"  onclick="toggleAccordian('directionsContainer','directionsTab')">^</button>
                 </div>
               </div>
             </div>
@@ -139,6 +142,9 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-12" id="transformersTab">
+              <button class="nes-btn is-primary nes-accordian" id="transformsTab" onclick="toggleAccordian('transformsContainer','transformsTab')">Transforms</button>
+            </div>
             <div class="col-md-12 hide" id="transformsContainer">
               <div class="showcase">
                 <div class="nes-container with-title">
@@ -157,7 +163,7 @@
                       <button class="nes-btn is-warning" (click)="transform('shiftDown')">Shift Down</button>
                     </div>
                   </div>
-                  <button class="nes-btn is-primary minimize"  onclick="toggleDropDown('transformsContainer','transformsTab')">^</button>
+                  <button class="nes-btn is-primary minimize"  onclick="toggleAccordian('transformsContainer','transformsTab')">^</button>
                 </div>
               </div>
             </div>
