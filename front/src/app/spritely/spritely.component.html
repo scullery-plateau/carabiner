@@ -123,22 +123,6 @@
                     [href]="'#/spritely'"
                     [selectFn]="setColorIndex"
                   ></app-palette-display>
-                  <div class="row" *ngIf="palette.length > 1">
-                    <div class="col-sm-12 nes-input text-justify palette" [style.margin]="0">
-                      <ng-container *ngFor="let c of palette; index as i">
-                        <a *ngIf="i > 0"
-                          class="palette-item"
-                          [style.color]="c"
-                          [style.backgroundColor]="c"
-                          [style.width]="(100/(palette.length - 1))+'%'"
-                          href="#/spritely"
-                          (click)="setColorIndex(i)"
-                          >
-                          <span class="palette-color">_</span>
-                        </a>
-                      </ng-container>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

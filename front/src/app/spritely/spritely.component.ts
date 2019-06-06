@@ -92,7 +92,6 @@ export class SpritelyComponent implements OnInit {
   }
 
   compileSaveData() {
-    console.log(this.palette);
     let out = [this.palette.map(c => c?c:"none").join(",")];
     Range.max(this.spritelyForm.value.height).forEach(y => {
       let row = [];
@@ -101,10 +100,11 @@ export class SpritelyComponent implements OnInit {
         let c = this.pixels[key] || 0;
         row.push(c);
       })
-      out.push(String.fromCharCode.apply(null,row.map(c => 97 + c)));
+      let charCodes = row.map((c:number) => (parseInt(c) + 97));
+      out.push(String.fromCharCode.apply(null,charCodes));
     });
-
-    this.saveFileContent = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([out.join("\r\n")], {type: 'text/plain'})));
+    let data = out.join("\r\n");
+    this.saveFileContent = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([data], {type: 'text/plain'})));
   }
 
   selectColor() {
@@ -122,9 +122,7 @@ export class SpritelyComponent implements OnInit {
 
   makeTransparent() {
     let t = this.spritelyForm.value.makeTransparent;
-    console.log(t);
     this.palette[0] = t?undefined:this.spritelyForm.value.backgroundColor;
-    console.log(this.palette);
     this.trigger.fire();
   }
 
@@ -165,17 +163,12 @@ export class SpritelyComponent implements OnInit {
   }
 
   transform(tf:Transforms) {
-    console.log(tf);
     let width = this.spritelyForm.value.width;
     let height = this.spritelyForm.value.height;
     let pixels = this.pixels;
     let entries = Object.entries(pixels);
-    console.log(entries);
     let transformed: {} = {};
     entries.forEach(function(entry: any[]){
-      console.log(entry);
-      console.log(entry[0]);
-      console.log(entry[1]);;
       let p: string = entry[0];
       let newP: Point = Point.parse(p)[tf](width,height);
       if(newP.isIn(width,height)) {
