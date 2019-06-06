@@ -1,0 +1,142 @@
+<form [formGroup]="paletteAndTileForm">
+  <div class="row">
+    <div class="col-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="showcase">
+            <div class="nes-container with-title">
+              <div class="title">
+                <h6>Palettes</h6>
+              </div>
+              <div class="row">
+                <div class="col-sm-5 text-right">
+                  <label for="palettes" class="text-brand">Palettes: </label>
+                </div>
+                <div class="col-sm-7">
+                  <div class="nes-input nes-select">
+                    <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="selectPalette()">
+                      <ng-container *ngFor="let palette of state.palettes.keys()">
+                        <option value="{{palette}}">{{palette}}</option>
+                      </ng-container>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <button type="button" name="button" class="nes-btn is-success" onclick="openDialog('paletteNameDialog')">Add Tile</button>
+                  <dialog class="nes-dialog is-dark is-rounded" id="paletteNameDialog">
+                    <label for="paletteName">Palette Name</label>
+                    <input type="text" class="nes-input" id="paletteName" formControlName="paletteName">
+                    <menu class="dialog-menu text-right">
+                      <button class="nes-btn" onclick="closeDialog('paletteNameDialog','cancel')">Cancel</button>
+                      <button class="nes-btn is-primary" onclick="closeDialog('paletteNameDialog','confirm')">Confirm</button>
+                    </menu>
+                  </dialog>
+                  <button type="button" name="button" class="nes-btn is-error" (click)="removePalette()">Remove Tile</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5 text-right">
+                  <label for="colors" class="text-brand">Colors: </label>
+                </div>
+                <div class="col-sm-7">
+                  <div class="nes-input nes-select">
+                    <select id="colors" class="form-control" formControlName="selectedColor" (change)="selectColor()">
+                      <ng-container *ngFor="let color of state.palettes[paletteAndTileForm.value.selectedPalette]; index as i">
+                        <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
+                      </ng-container>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5 text-right">
+                  <label for="color" class="text-brand">Color:</label>
+                </div>
+                <div class="col-sm-7">
+                  <input type="color" id="color" class="nes-input form-control" formControlName="color" [value]="(state.palettes[paletteAndTileForm.value.selectedPalette]||{})[paletteAndTileForm.value.selectedColor]||'#000001'" (change)="setColor()"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <label for="makeTransparent" class="text-brand">
+                    <input type="checkbox" id="makeTransparent" class="nes-checkbox" formControlName="makeTransparent" (change)="makeTransparent()">
+                    <span>Make Transparent?</span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <button class="nes-btn is-success" (click)="addColor()">Add Color</button>
+                  <button class="nes-btn is-error" (click)="removeColor()">Remove Color</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="showcase">
+            <div class="nes-container with-title">
+              <div class="title">
+                <h6>Tiles</h6>
+              </div>
+              <div class="row">
+                <div class="col-5 text-right">
+                  <label for="activeTile">Active Tile</label>
+                </div>
+                <div class="col-7">
+                  <div class="nes-input nes-select">
+                    <select class="form-control" id="activeTile" formControlName="activeTile" (change)="selectTile()">
+                      <ng-container *ngFor="let tileName of state.tiles.keys()">
+                        <option value="{{tileName}}">{{tileName}}</option>
+                      </ng-container>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <button type="button" name="button" class="nes-btn is-success" onclick="openDialog('tileNameDialog')">New Tile</button>
+                  <dialog class="nes-dialog is-dark is-rounded" id="tileNameDialog">
+                    <label for="tileName">Tile Name</label>
+                    <input type="text" class="nes-input" id="tileName" formControlName="tileName"/>
+                    <menu class="dialog-menu text-right">
+                      <button class="nes-btn" onclick="closeDialog('tileNameDialog','cancel')">Cancel</button>
+                      <button class="nes-btn is-primary" onclick="closeDialog('tileNameDialog','confirm')">Confirm</button>
+                    </menu>
+                  </dialog>
+                  <button type="button" name="button" class="nes-btn is-error" (click)="removeTile()">Remove Tile</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="showcase">
+        <div class="nes-container with-title">
+          <div class="title">
+            <h5>Tile Canvas</h5>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <app-pixel-canvas
+                class="col-12"
+                [pixels]="(state.tiles[paletteAndTileForm.value.activeTile]||{})"
+                [scale]="10"
+                [width]="16"
+                [height]="16"
+                [palette]="(state.palettes[paletteAndTileForm.value.selectedPalette]||[])"
+                [backgroundColor]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[0]||'#ffffff')"
+                [colorIndex]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[paletteAndTileForm.value.selectedColor]||'#ffffff')"
+                [trigger]="trigger"
+              ></app-pixel-canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

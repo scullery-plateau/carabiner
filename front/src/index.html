@@ -40,7 +40,12 @@
     function closeDialog(dialogId,state) {
       let dialog = document.getElementById(dialogId);
       dialog.close();
-      dialog.dispatchEvent(new CustomEvent("closeDialog",{state:state}));
+      dialog.dispatchEvent(new CustomEvent("closeDialog",{
+        detail:{state:state}
+      }));
+    }
+    Object.prototype.keys = function() {
+      return Object.keys(this);
     }
   </script>
 </head>

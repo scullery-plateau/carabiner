@@ -88,7 +88,7 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-5 text-right">
-                      <label for="palette" class="text-brand">Palette: </label>
+                      <label for="palette" class="text-brand">Colors: </label>
                     </div>
                     <div class="col-sm-7">
                       <div class="nes-input nes-select">
@@ -115,6 +115,11 @@
                     </div>
                   </div>
                   <p></p>
+                  <app-palette-display
+                    [palette]="palette"
+                    [href]="'#/spritely'"
+                    [selectFn]="setColorIndex"
+                  ></app-palette-display>
                   <div class="row" *ngIf="palette.length > 1">
                     <div class="col-sm-12 nes-input text-justify palette" [style.margin]="0">
                       <ng-container *ngFor="let c of palette; index as i">

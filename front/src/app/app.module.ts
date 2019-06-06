@@ -9,6 +9,8 @@ import { SpritelyComponent } from './spritely/spritely.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { PixelCanvasComponent } from './pixel-canvas/pixel-canvas.component';
 import { PixelPainterComponent } from './pixel-painter/pixel-painter.component';
+import { PalettesAndTilesComponent } from './palettes-and-tiles/palettes-and-tiles.component';
+import { PaletteDisplayComponent } from './palette-display/palette-display.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PixelPainterComponent } from './pixel-painter/pixel-painter.component';
     MastermoldComponent,
     SpritelyComponent,
     PixelCanvasComponent,
-    PixelPainterComponent
+    PixelPainterComponent,
+    PalettesAndTilesComponent,
+    PaletteDisplayComponent
   ],
   imports: [
     BrowserModule,
