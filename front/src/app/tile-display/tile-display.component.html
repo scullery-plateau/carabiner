@@ -1,0 +1,7 @@
+<svg *ngIf="isValid()" width="100%" height="100%" viewBox="0 0 16 16">
+  <ng-container *ngFor="let y of range.max(16)">
+    <ng-container *ngFor="let x of range.max(16)">
+      <rect [attr.x]="x" [attr.y]="y" [attr.width]="1" [attr.height]="1" [attr.fill]="pixel(x,y)" style="stroke:none;"></rect>
+    </ng-container>
+  </ng-container>
+</svg>

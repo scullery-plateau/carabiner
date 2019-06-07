@@ -1,44 +1,19 @@
 <div class="row"><div class="col-1"><p></p></div></div>
-<div class="row">
-  <div class="col-12">
-    <div class="showcase">
-      <div class="nes-container with-title">
-        <div class="title">
-          <h3>CobbleStone</h3>
-          <button class="nes-btn cobblestone-tab-btn is-success" id="paletteAndTileTab" onclick="toggleTab('paletteAndTileContainer','paletteAndTileTab','cobblestone-tab-btn','cobblestone-tab-body')">Palettes &amp; Tiles</button>
-          <button class="nes-btn cobblestone-tab-btn" id="mapTransformsTab" onclick="toggleTab('mapTransformsContainer','mapTransformsTab','cobblestone-tab-btn','cobblestone-tab-body')">Transforms</button>
-          <button class="nes-btn cobblestone-tab-btn" id="mapTab" onclick="toggleTab('mapContainer','mapTab','cobblestone-tab-btn','cobblestone-tab-body')">Map</button>
-        </div>
-        <div class="showcase cobblestone-tab-body" id="paletteAndTileContainer">
-          <div class="nes-container with-title">
-            <div class="title">
-              <h5>Palettes &amp; Tiles</h5>
-            </div>
-            <app-palettes-and-tiles [state]="state"></app-palettes-and-tiles>
-          </div>
-        </div>
-        <div class="showcase cobblestone-tab-body hide" id="mapTransformsContainer">
-          <div class="nes-container with-title">
-            <div class="title">
-              <h5>Transforms</h5>
-            </div>
-            <div class="row">
-              <!-- transforms ui -->
-            </div>
-          </div>
-        </div>
-        <div class="showcase cobblestone-tab-body hide" id="mapContainer">
-          <div class="nes-container with-title">
-            <div class="title">
-              <h5>Map</h5>
-            </div>
-            <div class="row">
-              <!-- map ui -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<tabbed-panel
+  title="CobbleStone"
+  activeClass="is-success"
+  initActiveIndex="1">
+  <tab-child label="Palettes &amp; Tiles" activeClass="is-success">
+    <app-palettes-and-tiles [state]="state"></app-palettes-and-tiles>
+  </tab-child>
+  <tab-child label="Transforms">
+    <app-transformed-tiles [state]="state"></app-transformed-tiles>
+  </tab-child>
+  <tab-child label="Map">
+    <app-cobblestone-map [state]="state"></app-cobblestone-map>
+  </tab-child>
+  <tab-child label="Paging">
+    <app-map-page-picker [state]="state"></app-map-page-picker>
+  </tab-child>
+</tabbed-panel>
 <div class="row"><div class="col-1"><p></p></div></div>

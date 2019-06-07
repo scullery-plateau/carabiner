@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="col-4">
+    <div class="showcase">
+      <div class="nes-container">
+        <form [formGroup]="transForm">
+          <div class="row">
+            <div class="col-12">
+              
+            </div>
+            <div class="col-12">
+              <button class="nes-btn {{exists()?'is-error':'is-success'}}" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>
+            </div>
+            <div class="col-12">
+              <label for="palettes" class="text-brand">Palettes: </label>
+              <div class="nes-input nes-select">
+                <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="selectPalette()">
+                  <ng-container *ngFor="let palette of state.palettes.keys()">
+                    <option value="{{palette}}">{{palette}}</option>
+                  </ng-container>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="activeTile">Tiles:</label>
+              <div class="nes-input nes-select">
+                <select class="form-control" id="activeTile" formControlName="activeTile" (change)="selectTile()">
+                  <ng-container *ngFor="let tileName of state.tiles.keys()">
+                    <option value="{{tileName}}">{{tileName}}</option>
+                  </ng-container>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="radios" class="item">
+                <label>Flip Over</label>
+                <label><input type="radio" class="nes-radio" name="flipOver" formControlName="flipOver" value="flipOver"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="flipOver" formControlName="flipOver" value=""/><span>No</span></label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="radios" class="item">
+                <label>Flip Down</label>
+                <label><input type="radio" class="nes-radio" name="flipDown" formControlName="flipDown" value="flipDown"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="flipDown" formControlName="flipDown" value=""/><span>No</span></label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="radios" class="item">
+                <label>Turn Right</label>
+                <label><input type="radio" class="nes-radio" name="turnRight" formControlName="turnRight" value="turnRight"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="turnRight" formControlName="turnRight" value=""/><span>No</span></label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="radios" class="item">
+                <label>Turn Left</label>
+                <label><input type="radio" class="nes-radio" name="turnLeft" formControlName="turnLeft" value="turnLeft"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="turnLeft" formControlName="turnLeft" value=""/><span>No</span></label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="showcase">
+      <div class="nes-container">
+
+      </div>
+    </div>
+  </div>
+</div>

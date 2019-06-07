@@ -13,6 +13,12 @@ import { PalettesAndTilesComponent } from './palettes-and-tiles/palettes-and-til
 import { PaletteDisplayComponent } from './palette-display/palette-display.component';
 import { DialogWrapperComponent } from './dialog-wrapper/dialog-wrapper.component';
 import { AccordianComponent } from './accordian/accordian.component';
+import { TransformedTilesComponent } from './transformed-tiles/transformed-tiles.component';
+import { CobblestoneMapComponent } from './cobblestone-map/cobblestone-map.component';
+import { MapPagePickerComponent } from './map-page-picker/map-page-picker.component';
+import { TabbedPanelComponent } from './nes-tabs/tabbed-panel/tabbed-panel.component';
+import { ChildPanelComponent } from './nes-tabs/child-panel/child-panel.component';
+import { TileDisplayComponent } from './tile-display/tile-display.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,13 @@ import { AccordianComponent } from './accordian/accordian.component';
     PalettesAndTilesComponent,
     PaletteDisplayComponent,
     DialogWrapperComponent,
-    AccordianComponent
+    AccordianComponent,
+    TransformedTilesComponent,
+    CobblestoneMapComponent,
+    MapPagePickerComponent,
+    TabbedPanelComponent,
+    ChildPanelComponent,
+    TileDisplayComponent,
   ],
   imports: [
     BrowserModule,
