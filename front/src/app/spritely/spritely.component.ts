@@ -113,11 +113,14 @@ export class SpritelyComponent implements OnInit {
     });
   }
 
-  setColorIndex(index: number) {
-    this.spritelyForm.patchValue({
-      selectedPalette:index
-    });
-    this.selectColor();
+  colorIndexSetter() {
+    let me = this;
+    return function(index) {
+      me.spritelyForm.patchValue({
+        selectedPalette:index
+      });
+      me.selectColor();
+    }
   }
 
   makeTransparent() {

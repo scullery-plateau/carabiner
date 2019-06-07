@@ -29,29 +29,44 @@ export class PalettesAndTilesComponent implements OnInit {
 
   ngOnInit() {}
 
-  closeTileDialog(event) {
-    console.log(event);
-    this.paletteAndTileForm.patchValue({
-      activeTile:this.paletteAndTileForm.value.tileName,
-      tileName:''
-    });
-  }
-
-  closePaletteDialog(event) {
-    console.log(event);
-    this.paletteAndTileForm.patchValue({
-      selectedPalette:this.paletteAndTileForm.value.paletteName,
-      paletteName:''
-    });
-  }
-
-  addPalette(event) {
-    console.log(event);
-    console.log("adding");
-    if (this.paletteAndTileForm.value.paletteName && !this.state.palettes[this.paletteAndTileForm.value.paletteName]) {
-      this.state.palettes[this.paletteAndTileForm.value.paletteName] = [];
+  tileDialogCloser() {
+    let form = this.paletteAndTileForm;
+    return function() {
+      form.patchValue({
+        activeTile:form.value.tileName,
+        tileName:''
+      });
     }
-    console.log("added");
+  }
+
+  tileAdder() {
+    let form = this.paletteAndTileForm;
+    let s = this.state;
+    return function() {
+      if (form.value.tileName && !s.tiles[form.value.tileName]) {
+        s.tiles[form.value.tileName] = {};
+      }
+    }
+  }
+
+  paletteDialogCloser() {
+    let form = this.paletteAndTileForm;
+    return function() {
+      form.patchValue({
+        selectedPalette:form.value.paletteName,
+        paletteName:''
+      });
+    }
+  }
+
+  paletteAdder() {
+    let form = this.paletteAndTileForm;
+    let s = this.state;
+    return function() {
+      if (form.value.paletteName && !s.palettes[form.value.paletteName]) {
+        s.palettes[form.value.paletteName] = [];
+      }
+    }
   }
 
   selectPalette() {
@@ -95,13 +110,6 @@ export class PalettesAndTilesComponent implements OnInit {
       if (this.paletteAndTileForm.value.selectedColor) {
         this.state.palettes[this.paletteAndTileForm.value.selectedPalette].splice(this.paletteAndTileForm.value.selectedColor,1);
       }
-    }
-  }
-
-  addTile(event) {
-    console.log(event);
-    if (this.paletteAndTileForm.value.tileName && !this.state.tiles[this.paletteAndTileForm.value.tileName]) {
-      this.state.tiles[this.paletteAndTileForm.value.tileName] = {};
     }
   }
 

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'dialog-wrapper',
@@ -15,34 +15,32 @@ export class DialogWrapperComponent implements OnInit {
   @Input()
   dialogId: string;
 
-  @Output() onConfirm  = new EventEmitter<any>();
-  @Output() onClose  = new EventEmitter<any>();
+  @Input()
+  dialogConfirm: any;
+
+  @Input()
+  dialogClose: any;
 
   dialog: HTMLDialogElement;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.dialogRef.nativeElement);
-    console.log(document.getElementById(this.dialogId));
     this.dialog = this.dialogRef.nativeElement as HTMLDialogElement;
   }
 
   open() {
-    console.log(document.getElementById(this.dialogId));
     this.dialog.showModal();
   }
 
   confirm() {
-    console.log(document.getElementById(this.dialogId));
-    this.onConfirm.emit(null);
-    this.onClose.emit(null);
+    this.dialogConfirm();
+    this.dialogClose();
     this.dialog.close();
   }
 
   cancel() {
-    console.log(document.getElementById(this.dialogId));
-    this.onClose.emit(null);
+    this.dialogClose();
     this.dialog.close();
   }
 

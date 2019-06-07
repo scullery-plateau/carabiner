@@ -1,0 +1,16 @@
+<div class="row">
+  <div #accordianTab [attr.id]="tabId" [ngClass]="{'col-md-12':true,'hide':(initCollapsed == false)}">
+    <button class="nes-btn is-primary nes-accordian" (click)="expand()">{{label}}</button>
+  </div>
+  <div #accordianContainer [ngClass]="{'col-md-12':true,'hide':initCollapsed}" [attr.id]="containerId">
+    <div class="showcase">
+      <div class="nes-container with-title">
+        <div class="title">
+          <label>{{label}}</label>
+        </div>
+        <ng-content></ng-content>
+        <button class="nes-btn is-primary minimize"  (click)="collapse()">^</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,32 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="text/javascript">
-    function toggleDropDown(targetId,btnId) {
-      let target = document.getElementById(targetId);
-      let btn = document.getElementById(btnId);
-      if(btn.classList.contains("is-primary")) {
-        btn.classList.remove("is-primary");
-        target.classList.add("hide");
-      } else {
-        btn.classList.add("is-primary");
-        target.classList.remove("hide");
-      }
-    }
-    function toggleAccordian(targetId,btnId) {
-      let target = document.getElementById(targetId);
-      let btn = document.getElementById(btnId);
-      if(target.classList.contains("hide")) {
-        target.classList.remove("hide");
-        if (btn) {
-          btn.classList.add("hide");
-        }
-      } else {
-        target.classList.add("hide");
-        if (btn) {
-          btn.classList.remove("hide");
-        }
-      }
-    }
     function toggleTab(targetId,btnId,tabClass,tabBodyClass) {
       let tabs = Array.from(document.getElementsByClassName(tabClass));
       let tabBodies = Array.from(document.getElementsByClassName(tabBodyClass));

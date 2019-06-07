@@ -27,8 +27,8 @@
                   <dialog-wrapper
                     [dialogId]="'paletteNameDialog'"
                     [triggerBtnName]="'Add Palette'"
-                    (onConfirm)="addPalette($event)"
-                    (onClose)="closePaletteDialog($event)">
+                    [dialogConfirm]="paletteAdder()"
+                    [dialogClose]="paletteDialogCloser()">
                     <label for="paletteName">Palette Name</label>
                     <input type="text" class="nes-input" id="paletteName" formControlName="paletteName"/>
                   </dialog-wrapper>
@@ -99,8 +99,8 @@
                   <dialog-wrapper
                     [dialogId]="'tileNameDialog'"
                     [triggerBtnName]="'Add Tile'"
-                    (onConfirm)="addTile($event)"
-                    (onClose)="closeTileDialog($event)">
+                    [dialogConfirm]="tileAdder()"
+                    [dialogClose]="tileDialogCloser()">
                     <label for="tileName">Tile Name</label>
                     <input type="text" class="nes-input" id="tileName" formControlName="tileName"/>
                   </dialog-wrapper>

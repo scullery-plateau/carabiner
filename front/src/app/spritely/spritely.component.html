@@ -6,65 +6,51 @@
       </div>
       <div class="row small">
         <div class="col-lg-5">
+          <accordian
+            [tabId]="'fileTab'"
+            [containerId]="'fileContainer'"
+            [initCollapsed]="true"
+            [label]="'File'">
+            <div class="row">
+              <div class="col-12">
+                <label for="loadFile">Load File:</label>
+                <input type="file" id="loadFile" class="nes-input" (change)="loadFile($event)"/>
+              </div>
+              <div class="col-12">
+                <label for="saveFile">Save:</label>
+              </div>
+              <div class="col-9">
+                <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
+              </div>
+              <div class="col-3">
+                <a download="{{spritelyForm.value.saveFile||'spritelyData.txt'}}" [href]="saveFileContent">
+                  <span class="nes-btn is-primary">Save</span>
+                </a>
+              </div>
+            </div>
+          </accordian>
+          <accordian
+            [tabId]="'directionsTab'"
+            [containerId]="'directionsContainer'"
+            [initCollapsed]="true"
+            [label]="'Directions'">
+            <div class="nes-balloon from-left">
+              <p>Spritely is a canvas for pixel art.</p>
+            </div>
+            <div class="nes-balloon from-right">
+              <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>
+            </div>
+            <div class="nes-balloon from-left">
+              <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>
+            </div>
+            <div class="nes-balloon from-right">
+              <p>Deleting a color will unpaint all pixels that matching color</p>
+            </div>
+            <div class="nes-balloon from-left">
+              <p>Unpainting pixels will return them to the background color.</p>
+            </div>
+          </accordian>
           <div class="row">
-            <div  id="fileTab" class="col-md-12">
-              <button class="nes-btn is-primary nes-accordian" onclick="toggleAccordian('fileContainer','fileTab')">File</button>
-            </div>
-            <div class="col-md-12 hide" id="fileContainer">
-              <div class="showcase">
-                <div class="nes-container with-title">
-                  <div class="title">
-                    <label>File</label>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <label for="loadFile">Load File:</label>
-                      <input type="file" id="loadFile" class="nes-input" (change)="loadFile($event)"/>
-                    </div>
-                    <div class="col-12">
-                      <label for="saveFile">Save:</label>
-                    </div>
-                    <div class="col-9">
-                      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
-                    </div>
-                    <div class="col-3">
-                      <a download="{{spritelyForm.value.saveFile||'spritelyData.txt'}}" [href]="saveFileContent">
-                        <span class="nes-btn is-primary">Save</span>
-                      </a>
-                    </div>
-                  </div>
-                  <button class="nes-btn is-primary minimize"  onclick="toggleAccordian('fileContainer','fileTab')">^</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12" id="directionsTab">
-              <button class="nes-btn is-primary nes-accordian" onclick="toggleAccordian('directionsContainer','directionsTab')">Directions</button>
-            </div>
-            <div class="col-md-12 hide" id="directionsContainer">
-              <div class="showcase">
-                <div class="nes-container with-title">
-                  <div class="title">
-                    <label>Directions</label>
-                  </div>
-                  <div class="nes-balloon from-left">
-                    <p>Spritely is a canvas for pixel art.</p>
-                  </div>
-                  <div class="nes-balloon from-right">
-                    <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>
-                  </div>
-                  <div class="nes-balloon from-left">
-                    <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>
-                  </div>
-                  <div class="nes-balloon from-right">
-                    <p>Deleting a color will unpaint all pixels that matching color</p>
-                  </div>
-                  <div class="nes-balloon from-left">
-                    <p>Unpainting pixels will return them to the background color.</p>
-                  </div>
-                  <button class="nes-btn is-primary minimize"  onclick="toggleAccordian('directionsContainer','directionsTab')">^</button>
-                </div>
-              </div>
-            </div>
             <div class="col-md-12">
               <div class="showcase">
                 <div class="nes-container with-title">
@@ -121,36 +107,31 @@
                   <app-palette-display
                     [palette]="palette"
                     [href]="'#/spritely'"
-                    [selectFn]="setColorIndex"
+                    [selectFn]="colorIndexSetter()"
                   ></app-palette-display>
                 </div>
               </div>
             </div>
-            <div class="col-md-12" id="transformersTab">
-              <button class="nes-btn is-primary nes-accordian" id="transformsTab" onclick="toggleAccordian('transformsContainer','transformsTab')">Transforms</button>
-            </div>
-            <div class="col-md-12 hide" id="transformsContainer">
-              <div class="showcase">
-                <div class="nes-container with-title">
-                  <div class="title">
-                    <label>Transforms</label>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12 text-center">
-                      <button class="nes-btn is-warning" (click)="transform('turnLeft')">Turn Left</button>
-                      <button class="nes-btn is-warning" (click)="transform('turnRight')">Turn Right</button>
-                      <button class="nes-btn is-warning" (click)="transform('flipOver')">Flip Over</button>
-                      <button class="nes-btn is-warning" (click)="transform('flipDown')">Flip Down</button>
-                      <button class="nes-btn is-warning" (click)="transform('shiftLeft')">Shift Left</button>
-                      <button class="nes-btn is-warning" (click)="transform('shiftRight')">Shift Right</button>
-                      <button class="nes-btn is-warning" (click)="transform('shiftUp')">Shift Up</button>
-                      <button class="nes-btn is-warning" (click)="transform('shiftDown')">Shift Down</button>
-                    </div>
-                  </div>
-                  <button class="nes-btn is-primary minimize"  onclick="toggleAccordian('transformsContainer','transformsTab')">^</button>
-                </div>
+          </div>
+          <accordian
+            [tabId]="'transformsTab'"
+            [containerId]="'transformsContainer'"
+            [initCollapsed]="true"
+            [label]="'Transforms'">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <button class="nes-btn is-warning" (click)="transform('turnLeft')">Turn Left</button>
+                <button class="nes-btn is-warning" (click)="transform('turnRight')">Turn Right</button>
+                <button class="nes-btn is-warning" (click)="transform('flipOver')">Flip Over</button>
+                <button class="nes-btn is-warning" (click)="transform('flipDown')">Flip Down</button>
+                <button class="nes-btn is-warning" (click)="transform('shiftLeft')">Shift Left</button>
+                <button class="nes-btn is-warning" (click)="transform('shiftRight')">Shift Right</button>
+                <button class="nes-btn is-warning" (click)="transform('shiftUp')">Shift Up</button>
+                <button class="nes-btn is-warning" (click)="transform('shiftDown')">Shift Down</button>
               </div>
             </div>
+          </accordian>
+          <div class="row">
             <div class="col-md-12">
               <div class="showcase">
                 <div class="nes-container with-title">

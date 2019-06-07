@@ -12,6 +12,7 @@ import { PixelPainterComponent } from './pixel-painter/pixel-painter.component';
 import { PalettesAndTilesComponent } from './palettes-and-tiles/palettes-and-tiles.component';
 import { PaletteDisplayComponent } from './palette-display/palette-display.component';
 import { DialogWrapperComponent } from './dialog-wrapper/dialog-wrapper.component';
+import { AccordianComponent } from './accordian/accordian.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DialogWrapperComponent } from './dialog-wrapper/dialog-wrapper.componen
     PixelPainterComponent,
     PalettesAndTilesComponent,
     PaletteDisplayComponent,
-    DialogWrapperComponent
+    DialogWrapperComponent,
+    AccordianComponent
   ],
   imports: [
     BrowserModule,
