@@ -5,7 +5,7 @@ import {SpritelyComponent} from "./spritely/spritely.component";
 import {MastermoldComponent} from "./mastermold/mastermold.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/cobblestone', pathMatch: 'full' },
+  { path: '', redirectTo: '/spritely', pathMatch: 'full' },
   { path: 'cobblestone', component: CobblestoneComponent },
   { path: 'mastermold', component: MastermoldComponent },
   { path: 'spritely', component: SpritelyComponent },
