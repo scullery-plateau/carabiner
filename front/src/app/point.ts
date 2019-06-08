@@ -11,6 +11,28 @@ export class Point {
     return (this.x >= 0) && (this.x < width) && (this.y >= 0) && (this.y < height);
   }
 
+  min(p:Point) {
+    return new Point(Math.min(this.x,p.x),Math.min(this.y,p.y));
+  }
+
+  max(p:Point) {
+    return new Point(Math.max(this.x,p.x),Math.max(this.y,p.y));
+  }
+
+  plus(p:Point) {
+    return new Point(this.x+p.x,this.y+p.y);
+  }
+
+  minus(p:Point) {
+    let min = this.min(p);
+    let max = this.max(p);
+    return new Point(max.x-min.x,max.y-min.y);
+  }
+
+  equals(p:Point) {
+    return this.x == p.x && this.y == p.y;
+  }
+
   toString() {
     return this.x + 'x' + this.y;
   }

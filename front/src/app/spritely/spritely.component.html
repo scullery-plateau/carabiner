@@ -178,7 +178,7 @@
                       <label for="width" class="text-brand">Width:</label>
                     </div>
                     <div class="col-sm-7">
-                      <input type="number" min="8" max="64" id="width" class="nes-input" formControlName="width"/>
+                      <input type="number" min="8" max="64" id="width" class="nes-input" formControlName="width" (change)="resize()"/>
                     </div>
                   </div>
                 </div>
@@ -188,7 +188,7 @@
                       <label for="height" class="text-brand">Height:</label>
                     </div>
                     <div class="col-sm-7">
-                      <input type="number" min="8" max="64" id="height" class="nes-input" formControlName="height"/>
+                      <input type="number" min="8" max="64" id="height" class="nes-input" formControlName="height" (change)="resize()"/>
                     </div>
                   </div>
                 </div>
@@ -199,8 +199,8 @@
                     class="col-12"
                     [pixels]="pixels"
                     [scale]="10"
-                    [width]="spritelyForm.value.width"
-                    [height]="spritelyForm.value.height"
+                    [width]="min(spritelyForm.value.width,64)"
+                    [height]="min(spritelyForm.value.height,64)"
                     [palette]="palette"
                     [backgroundColor]="spritelyForm.value.backgroundColor"
                     [colorIndex]="spritelyForm.value.selectedPalette"

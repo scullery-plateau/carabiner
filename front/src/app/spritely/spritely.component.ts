@@ -184,4 +184,15 @@ export class SpritelyComponent implements OnInit {
     })
     this.trigger.fire();
   }
+
+  min() {
+    return Math.min.apply(Math,Array.from(arguments));
+  }
+
+  resize(){
+    this.spritelyForm.patchValue({
+      width:Math.min(64,Math.max(8,this.spritelyForm.value.width)),
+      height:Math.min(64,Math.max(8,this.spritelyForm.value.height)),
+    });
+  }
 }
