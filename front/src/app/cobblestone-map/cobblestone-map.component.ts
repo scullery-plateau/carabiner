@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { Range } from "../range";
+import { Point } from "../point";
 
 @Component({
   selector: 'app-cobblestone-map',
@@ -32,15 +33,20 @@ export class CobblestoneMapComponent implements OnInit {
   }
 
   setTile(x:number,y:number) {
-    if (this.state.transforms[this.activeKey]) {
-
+    let key = (new Point(x,y)).toString();
+    if (this.state.map[key]) {
+      delete this.state.map[key];
+    } else {
+      if (this.state.transforms[this.activeKey]) {
+        this.state.map[key] = this.activeKey;
+      }
     }
   }
 
   getTile(x:number,y:number) {
-    return "bg";
+    let p = new Point(x,y);
+    return this.state.map[p.toString()] || "bg";
   }
 
   resize() {}
-
 }
