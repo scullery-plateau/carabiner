@@ -3,7 +3,6 @@
   <ng-container *ngFor="let y of range.max(height)">
     <ng-container *ngFor="let x of range.max(width)">
       <a href="#/spritely"
-        (click)="setColorForPixel(x, y)"
         (mousedown)="initOutline($event)"
         (mouseover)="adjustOutline($event)"
         (mouseup)="completeOutline($event)">

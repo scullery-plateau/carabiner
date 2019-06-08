@@ -2,8 +2,15 @@
 <tabbed-panel
   title="CobbleStone"
   activeClass="is-success"
-  initActiveIndex="1">
-  <tab-child label="Palettes &amp; Tiles" activeClass="is-success">
+  initActiveIndex="0">
+  <tab-child label="File">
+    <file-form
+      [handleLoad]="fileLoader()"
+      [fileContent]="compileSaveData()"
+      [defaultSaveFile]="defaultSaveFile">
+    </file-form>
+  </tab-child>
+  <tab-child label="Palettes &amp; Tiles">
     <app-palettes-and-tiles [state]="state"></app-palettes-and-tiles>
   </tab-child>
   <tab-child label="Transforms">
@@ -12,8 +19,10 @@
   <tab-child label="Map">
     <app-cobblestone-map [state]="state"></app-cobblestone-map>
   </tab-child>
+  <!--
   <tab-child label="Paging">
     <app-map-page-picker [state]="state"></app-map-page-picker>
   </tab-child>
+  -->
 </tabbed-panel>
 <div class="row"><div class="col-1"><p></p></div></div>

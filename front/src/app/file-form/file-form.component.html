@@ -1,0 +1,19 @@
+<form [formGroup]="fileForm">
+  <div class="row">
+    <div class="col-12">
+      <label for="loadFile">Load File:</label>
+      <input type="file" id="loadFile" class="nes-input" (change)="loadFile($event)"/>
+    </div>
+    <div class="col-12">
+      <label for="saveFile">Save:</label>
+    </div>
+    <div class="col-9">
+      <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
+    </div>
+    <div class="col-3">
+      <a [download]="getSaveFileName()" [href]="getSaveFileContent()">
+        <span class="nes-btn is-primary">Save</span>
+      </a>
+    </div>
+  </div>
+</form>

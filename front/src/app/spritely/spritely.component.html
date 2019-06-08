@@ -11,23 +11,11 @@
             [containerId]="'fileContainer'"
             [initCollapsed]="true"
             [label]="'File'">
-            <div class="row">
-              <div class="col-12">
-                <label for="loadFile">Load File:</label>
-                <input type="file" id="loadFile" class="nes-input" (change)="loadFile($event)"/>
-              </div>
-              <div class="col-12">
-                <label for="saveFile">Save:</label>
-              </div>
-              <div class="col-9">
-                <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
-              </div>
-              <div class="col-3">
-                <a download="{{spritelyForm.value.saveFile||'spritelyData.txt'}}" [href]="saveFileContent">
-                  <span class="nes-btn is-primary">Save</span>
-                </a>
-              </div>
-            </div>
+            <file-form
+              [handleLoad]="fileLoader()"
+              [fileContent]="compileSaveData()"
+              [defaultSaveFile]="defaultSaveFile">
+            </file-form>
           </accordian>
           <accordian
             [tabId]="'directionsTab'"
@@ -147,7 +135,7 @@
                         </div>
                         <div class="col-sm-12">
                           <label for="imgFile" class="text-brand">Image FileName:</label>
-                          <input type="text" id="imgFile" class="nes-input" formControlName="saveFile" placeholder="Image File" (change)="redraw()"/>
+                          <input type="text" id="imgFile" class="nes-input" formControlName="imgFile" placeholder="Image File" (change)="redraw()"/>
                         </div>
                       </div>
                     </div>

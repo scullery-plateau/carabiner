@@ -5,7 +5,10 @@
         <form [formGroup]="transForm">
           <div class="row">
             <div class="col-12">
-              
+              <tile-display
+                [state]="state"
+                [key]="currentKey()">
+              </tile-display>
             </div>
             <div class="col-12">
               <button class="nes-btn {{exists()?'is-error':'is-success'}}" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>
@@ -66,7 +69,12 @@
   <div class="col-8">
     <div class="showcase">
       <div class="nes-container">
-
+        <div class="col-3" *ngFor="let key of state.transforms.keys()">
+          <tile-display
+            [state]="state"
+            [key]="key">
+          </tile-display>
+        </div>
       </div>
     </div>
   </div>

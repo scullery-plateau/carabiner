@@ -1,3 +1,67 @@
-<p>
-  cobblestone-map works!
-</p>
+<div class="row">
+  <div class="col-4">
+    <div class="showcase">
+      <div class="nes-container">
+        <div class="col-12" *ngFor="let key of state.transforms.keys()">
+          <button (click)="setActiveTile(key)">
+            <tile-display
+              [state]="state"
+              [key]="key">
+            </tile-display>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="showcase">
+      <div class="nes-container">
+        <form [formGroup]="dimForm">
+          <div class="row">
+            <div class="col-md-4">
+              <label for="width" class="text-brand">Width:</label>
+              <input type="number" min="8" max="64" id="width" class="nes-input" formControlName="width" (change)="resize()"/>
+            </div>
+            <div class="col-md-4">
+              <label for="height" class="text-brand">Height:</label>
+              <input type="number" min="8" max="64" id="height" class="nes-input" formControlName="height" (change)="resize()"/>
+            </div>
+            <div class="col-md-4">
+              <label for="scale" class="text-brand">Scale:</label>
+              <input type="number" min="1" max="4" id="scale" class="nes-input" formControlName="scale" (change)="resize()"/>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-12 map-frame">
+            <svg
+              [attr.width]="dimForm.value.width * dimForm.value.scale * 16"
+              [attr.height]="dimForm.value.height * dimForm.value.scale * 16">
+              <defs>
+                <g id="bg">
+                  <rect
+                    [attr.x]="x * dimForm.value.scale * 16"
+                    [attr.y]="y * dimForm.value.scale * 16"
+                    [attr.width]="dimForm.value.scale * 16"
+                    [attr.height]="dimForm.value.scale * 16"
+                    fill="white"
+                    style="stroke:black;stroke-width:2"/>
+                </g>
+                <ng-container *ngFor="let key of state.transforms.keys()">
+                </ng-container>
+              </defs>
+              <ng-container *ngFor="let y of range.max(dimForm.value.height)">
+                <ng-container *ngFor="let x of range.max(dimForm.value.width)">
+                  <use [attr.href]="'#' + getTile(x,y)"
+                    [attr.x]="x * dimForm.value.scale * 16"
+                    [attr.y]="y * dimForm.value.scale * 16"
+                    (click)="setTile(x,y)"/>
+                </ng-container>
+              </ng-container>
+            </svg>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

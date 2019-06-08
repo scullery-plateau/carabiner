@@ -19,6 +19,7 @@ import { MapPagePickerComponent } from './map-page-picker/map-page-picker.compon
 import { TabbedPanelComponent } from './nes-tabs/tabbed-panel/tabbed-panel.component';
 import { ChildPanelComponent } from './nes-tabs/child-panel/child-panel.component';
 import { TileDisplayComponent } from './tile-display/tile-display.component';
+import { FileFormComponent } from './file-form/file-form.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { TileDisplayComponent } from './tile-display/tile-display.component';
     TabbedPanelComponent,
     ChildPanelComponent,
     TileDisplayComponent,
+    FileFormComponent,
   ],
   imports: [
     BrowserModule,

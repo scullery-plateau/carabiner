@@ -89,6 +89,7 @@ export class PixelCanvasComponent implements OnInit {
     this.initPoint = undefined;
     this.outlineDim = undefined;
     this.startCorner = undefined;
+    this.trigger.fire();
   }
 
   hasOutline() {

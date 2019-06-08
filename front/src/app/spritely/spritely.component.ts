@@ -30,14 +30,21 @@ export class SpritelyComponent implements OnInit {
 
   trigger: Trigger = new Trigger("redraw-pixels");
 
-  saveFileContent: any;
+  defaultSaveFile: string;
 
-  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer, ) { }
+  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer) { }
 
   ngOnInit() {
     this.trigger.addListener(e => {
       this.compileSaveData();
     });
+  }
+
+  fileLoader() {
+    var me = this;
+    return function(fileData,fileName) {
+      return me.loadFileData(fileData,fileName);
+    }
   }
 
   private loadFileData(fileData,fileName) {
@@ -59,10 +66,10 @@ export class SpritelyComponent implements OnInit {
         }
       });
     });
+    this.defaultSaveFile = fileName;
     let formValues: any = {
       width:width,
       height:rows.length,
-      saveFile:fileName,
     };
     if (this.palette[0]) {
       formValues.makeTransparent = false;
@@ -103,8 +110,7 @@ export class SpritelyComponent implements OnInit {
       let charCodes = row.map((c) => (parseInt(c) + 97));
       out.push(String.fromCharCode.apply(null,charCodes));
     });
-    let data = out.join("\r\n");
-    this.saveFileContent = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([data], {type: 'text/plain'})));
+    return out.join("\r\n");
   }
 
   selectColor() {

@@ -3,7 +3,7 @@ import { Range } from '../range'
 import { Point } from '../point'
 
 @Component({
-  selector: 'app-tile-display',
+  selector: 'tile-display',
   templateUrl: './tile-display.component.html',
   styleUrls: ['./tile-display.component.scss']
 })
@@ -21,7 +21,9 @@ export class TileDisplayComponent implements OnInit {
 
   transforms: string[];
 
-  constructor(private range: Range) { }
+  range = Range;
+
+  constructor() { }
 
   ngOnInit() {
     if (this.key) {
