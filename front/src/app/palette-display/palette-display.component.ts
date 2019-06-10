@@ -14,6 +14,9 @@ export class PaletteDisplayComponent implements OnInit {
   href: string;
 
   @Input()
+  showFirst: boolean;
+
+  @Input()
   selectFn: Function;
 
   constructor() { }

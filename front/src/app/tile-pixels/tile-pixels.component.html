@@ -1,7 +1,9 @@
-<ng-container *ngFor="let y of range.max(16)">
-  <ng-container *ngFor="let x of range.max(16)">
-    <rect [attr.x]="x * scale" [attr.y]="y * scale" [attr.width]="scale"
-      [attr.height]="scale" [attr.fill]="pixel(x,y)"
-      style="stroke:none;"></rect>
+<ng-container *ngIf="palette && pixels">
+  <ng-container *ngFor="let y of range.max(16)">
+    <ng-container *ngFor="let x of range.max(16)">
+      <svg:rect [attr.x]="x * scale" [attr.y]="y * scale" [attr.width]="scale"
+        [attr.height]="scale" [attr.fill]="pixel(x,y)"
+        style="stroke:none;"></svg:rect>
+    </ng-container>
   </ng-container>
 </ng-container>

@@ -37,7 +37,7 @@ export class TilePixelsComponent implements OnInit {
       let pixels = this.pixels;
       let temp = this.state.tiles[attrs[0]];
       if (temp) {
-        Object.entries(pixels).forEach((pair) => {
+        Object.entries(temp).forEach((pair) => {
           let pixel = this.transforms.reduce((p,tf) => {
             return p[tf](16,16);
           },Point.parse(pair[0]));

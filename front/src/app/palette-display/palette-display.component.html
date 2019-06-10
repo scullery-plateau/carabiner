@@ -1,11 +1,11 @@
-<div class="row" *ngIf="palette.length > 1">
+<div class="row" *ngIf="palette && (palette.length > (showFirst?0:1))">
   <div class="col-sm-12 nes-input text-justify palette" [style.margin]="0">
     <ng-container *ngFor="let c of palette; index as i">
-      <a *ngIf="i > 0"
+      <a *ngIf="showFirst || i > 0"
         class="palette-item"
         [style.color]="c"
         [style.backgroundColor]="c"
-        [style.width]="(100/(palette.length - 1))+'%'"
+        [style.width]="(100/(palette.length - (showFirst?0:1)))+'%'"
         href="{{href}}"
         (click)="selectFn(i)"
         >

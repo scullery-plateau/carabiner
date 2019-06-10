@@ -39,9 +39,7 @@
               [attr.height]="dimForm.value.height * dimForm.value.scale * 16">
               <defs>
                 <g id="bg">
-                  <rect
-                    [attr.x]="x * dimForm.value.scale * 16"
-                    [attr.y]="y * dimForm.value.scale * 16"
+                  <rect x="0" y="0"
                     [attr.width]="dimForm.value.scale * 16"
                     [attr.height]="dimForm.value.scale * 16"
                     fill="white"
@@ -49,16 +47,23 @@
                 </g>
                 <ng-container *ngFor="let key of state.transforms.keys()">
                   <g [id]="key">
-                    <tile-pixels [state]="state" [key]="key" [scale]="dimForm.value.scale"></tile-pixels>
+                    <ng-container *ngFor="let y of range.max(16)">
+                      <ng-container *ngFor="let x of range.max(16)">
+                        <svg:rect [attr.x]="x * dimForm.value.scale" [attr.y]="y * dimForm.value.scale"
+                          [attr.width]="dimForm.value.scale" [attr.height]="dimForm.value.scale"
+                          [attr.fill]="pixel(x,y)" style="stroke:none;"></svg:rect>
+                      </ng-container>
+                    </ng-container>
                   </g>
                 </ng-container>
               </defs>
               <ng-container *ngFor="let y of range.max(dimForm.value.height)">
                 <ng-container *ngFor="let x of range.max(dimForm.value.width)">
-                  <use [attr.href]="'#' + getTile(x,y)"
+                  <a href="#/cobblestone" (click)="setTile(x,y)">
+                    <use [attr.href]="'#' + getTile(x,y)"
                     [attr.x]="x * dimForm.value.scale * 16"
-                    [attr.y]="y * dimForm.value.scale * 16"
-                    (click)="setTile(x,y)"/>
+                    [attr.y]="y * dimForm.value.scale * 16"/>
+                  </a>
                 </ng-container>
               </ng-container>
             </svg>

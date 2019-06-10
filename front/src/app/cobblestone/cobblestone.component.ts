@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import {CobblestoneService} from "../cobblestone.service";
+import { Trigger } from "../trigger"
 
 @Component({
   selector: 'app-cobblestone',
@@ -18,6 +19,8 @@ export class CobblestoneComponent implements OnInit {
 
   defaultFileName: string;
 
+  loadTrigger: Trigger = new Trigger("on-file-load");
+
   constructor(private fb: FormBuilder, private cobblestoneService: CobblestoneService) { }
 
   ngOnInit() {
@@ -30,13 +33,17 @@ export class CobblestoneComponent implements OnInit {
   fileLoader() {
     var me = this;
     return function(fileData,fileName) {
+      console.log("loading cobblestone file");
       me.defaultFileName = fileName;
       let json = JSON.parse(fileData);
+      console.log(json);
       ['palettes','tiles','transforms','map'].forEach((key) => {
         Object.entries(json[key]).forEach((entry) => {
           me.state[key][entry[0]] = entry[1];
-        })
+        });
       });
+      console.log(me.state);
+      me.loadTrigger.fire();
     }
   }
 

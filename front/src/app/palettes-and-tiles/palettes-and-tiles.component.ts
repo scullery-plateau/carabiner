@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import {Trigger} from "../trigger"
+import {Trigger} from "../trigger";
 
 @Component({
   selector: 'app-palettes-and-tiles',
@@ -12,39 +12,71 @@ export class PalettesAndTilesComponent implements OnInit {
   @Input()
   state: any;
 
+  activePalette: string[];
+
+  activeColorIndex: 0;
+
+  activeTile: {};
+
   private paletteAndTileForm: FormGroup = this.fb.group({
     selectedPalette:[''],
     paletteName:[''],
     selectedColor:[''],
-    color:[''],
+    color:['#000001'],
     makeTransparent:[false],
     tileName:[''],
-    activeTile:[''],
+    selectedTile:[''],
     backgroundColor:['#fffffe']
   });
 
   trigger: Trigger = new Trigger("redraw-tile");
 
+  @Input()
+  loadTrigger: Trigger;
+
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    let me = this;
+    this.loadTrigger.addListener(() => {
+      me.updateFromFile();
+    })
+  }
+
+  updateFromFile() {
+    let patch = {}
+    let paletteNames = this.state.palettes.keys();
+    if (paletteNames.length > 0) {
+      patch.selectedPalette = paletteNames[0];
+    }
+    let tileNames = this.state.tiles.keys();
+    if (tileNames.length > 0) {
+      patch.selectedTile = tileNames[0];
+    }
+    this.paletteAndTileForm.patchValue(patch);
+    this.selectPalette();
+    this.selectTile();
+  }
 
   tileDialogCloser() {
     let form = this.paletteAndTileForm;
     return function() {
       form.patchValue({
-        activeTile:form.value.tileName,
         tileName:''
       });
     }
   }
 
   tileAdder() {
-    let form = this.paletteAndTileForm;
     let s = this.state;
+    let me = this;
     return function() {
-      if (form.value.tileName && !s.tiles[form.value.tileName]) {
-        s.tiles[form.value.tileName] = {};
+      if (me.paletteAndTileForm.value.tileName && !me.state.tiles[me.paletteAndTileForm.value.tileName]) {
+        me.state.tiles[me.paletteAndTileForm.value.tileName] = {};
+        me.paletteAndTileForm.patchValue({
+          selectedTile:me.paletteAndTileForm.value.tileName
+        })
+        me.activeTile = me.state.tiles[me.paletteAndTileForm.value.tileName];
       }
     }
   }
@@ -60,70 +92,96 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   paletteAdder() {
-    let form = this.paletteAndTileForm;
-    let s = this.state;
+    let me = this;
     return function() {
-      if (form.value.paletteName && !s.palettes[form.value.paletteName]) {
-        s.palettes[form.value.paletteName] = [];
+      if (me.paletteAndTileForm.value.paletteName && !me.state.palettes[me.paletteAndTileForm.value.paletteName]) {
+        me.state.palettes[me.paletteAndTileForm.value.paletteName] = [];
+        me.paletteAndTileForm.patchValue({
+          selectedPalette:me.paletteAndTileForm.value.paletteName
+        });
+        me.activePalette = me.state.palettes[me.paletteAndTileForm.value.paletteName];
       }
     }
   }
 
   selectPalette() {
-    // todo
+    this.activePalette = this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
   }
 
   removePalette() {
-    if (this.paletteAndTileForm.value.selectedPalette) {
+    if (this.activePalette) {
       delete this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
+      this.activePalette = undefined;
     }
   }
 
   selectColor() {
-    // todo
+    if (this.activePalette) {
+      this.activeColorIndex = this.paletteAndTileForm.value.selectedColor;
+      this.paletteAndTileForm.patchValue({
+        color:this.activePalette[this.activeColorIndex]
+      });
+    }
+  }
+
+  colorIndexSetter() {
+    let me = this;
+    return function(index) {
+      me.paletteAndTileForm.patchValue({
+        selectedColor:index,
+      });
+      me.selectColor();
+    }
   }
 
   setColor() {
-    if (this.paletteAndTileForm.value.selectedPalette) {
-      if (this.paletteAndTileForm.value.selectedColor) {
-        this.state.palettes[this.paletteAndTileForm.value.selectedPalette][this.paletteAndTileForm.value.selectedColor] = this.paletteAndTileForm.value.color;
+    if (this.activePalette) {
+      if (this.activeColorIndex >= 0) {
+        this.activePalette[this.activeColorIndex] = this.paletteAndTileForm.value.color;
       }
     }
   }
 
   makeTransparent() {
-    if (this.paletteAndTileForm.value.selectedPalette) {
-      if (this.paletteAndTileForm.value.selectedColor) {
-        this.state.palettes[this.paletteAndTileForm.value.selectedPalette][this.paletteAndTileForm.value.selectedColor] = null;
+    if (this.activePalette) {
+      if (this.activeColorIndex >= 0) {
+        this.activePalette[this.activeColorIndex] = null;
       }
     }
   }
 
   addColor() {
-    if (this.paletteAndTileForm.value.selectedPalette) {
-      this.state.palettes[this.paletteAndTileForm.value.selectedPalette].push(this.paletteAndTileForm.value.color);
+    if (this.activePalette) {
+      this.activePalette.push(this.paletteAndTileForm.value.color);
+      this.paletteAndTileForm.patchValue({
+        selectedColor:(this.activePalette.length - 1)
+      })
+      this.selectColor();
     }
   }
 
   removeColor() {
-    if (this.paletteAndTileForm.value.selectedPalette) {
-      if (this.paletteAndTileForm.value.selectedColor) {
-        this.state.palettes[this.paletteAndTileForm.value.selectedPalette].splice(this.paletteAndTileForm.value.selectedColor,1);
+    if (this.activePalette) {
+      if (this.activeColorIndex >= 0) {
+        this.activePalette.splice(this.activeColorIndex,1);
       }
     }
   }
 
   selectTile() {
-    // todo
+    this.activeTile = this.state.tiles[this.paletteAndTileForm.value.selectedTile];
   }
 
   removeTile() {
-    if (this.paletteAndTileForm.value.activeTile) {
-      delete this.state.tiles[this.paletteAndTileForm.value.activeTile];
+    if (this.activeTile) {
+      delete this.state.tiles[this.paletteAndTileForm.value.selectedTile];
     }
   }
 
-  setBackground() {
-    // todo
+  getBackground() {
+    if (this.activePalette && this.activePalette[0]) {
+      return this.activePalette[0]
+    }
+    return this.paletteAndTileForm.value.backgroundColor;
   }
 }

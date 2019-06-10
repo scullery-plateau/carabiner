@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { Range } from "../range";
 import { Point } from "../point";
+import { Trigger } from "../trigger";
 
 @Component({
   selector: 'app-cobblestone-map',
@@ -23,9 +24,16 @@ export class CobblestoneMapComponent implements OnInit {
 
   range = Range;
 
+  @Input()
+  loadTrigger: Trigger;
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+  }
+
+  updateFromFile() {
+
   }
 
   select(key: string) {
@@ -46,6 +54,11 @@ export class CobblestoneMapComponent implements OnInit {
   getTile(x:number,y:number) {
     let p = new Point(x,y);
     return this.state.map[p.toString()] || "bg";
+  }
+
+  pixel(x:number,y:number) {
+    // TODO - MAKE FUNCTIONAL
+    return "none";
   }
 
   resize() {}

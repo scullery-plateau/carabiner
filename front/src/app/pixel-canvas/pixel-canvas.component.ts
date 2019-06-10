@@ -34,6 +34,9 @@ export class PixelCanvasComponent implements OnInit {
   @Input()
   trigger: Trigger;
 
+  @Input()
+  page: string;
+
   range = Range;
 
   constructor() { }

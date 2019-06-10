@@ -28,12 +28,14 @@ export class FileFormComponent implements OnInit {
   }
 
   loadFile(e) {
+    console.log("load file");
     let inputValue = e.target;
     let file:File = inputValue.files[0];
     let myReader:FileReader = new FileReader();
     var me = this;
     myReader.onload = function(e){
       // you can perform an action with readed data here
+      console.log("file onload");
       me.handleLoad(myReader.result,file.name);
     }
     myReader.readAsText(file);

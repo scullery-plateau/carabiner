@@ -11,13 +11,13 @@
     </file-form>
   </tab-child>
   <tab-child label="Palettes &amp; Tiles">
-    <app-palettes-and-tiles [state]="state"></app-palettes-and-tiles>
+    <app-palettes-and-tiles [state]="state" [loadTrigger]="loadTrigger"></app-palettes-and-tiles>
   </tab-child>
   <tab-child label="Transforms">
-    <app-transformed-tiles [state]="state"></app-transformed-tiles>
+    <app-transformed-tiles [state]="state" [loadTrigger]="loadTrigger"></app-transformed-tiles>
   </tab-child>
   <tab-child label="Map">
-    <app-cobblestone-map [state]="state"></app-cobblestone-map>
+    <app-cobblestone-map [state]="state" [loadTrigger]="loadTrigger"></app-cobblestone-map>
   </tab-child>
   <!--
   <tab-child label="Paging">

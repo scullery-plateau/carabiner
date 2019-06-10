@@ -1,25 +1,27 @@
-<svg width="100%" height="100%"
-  [attr.viewBox]="'0 0 ' + (width * scale) + ' ' + (height * scale)">
-  <ng-container *ngFor="let y of range.max(height)">
-    <ng-container *ngFor="let x of range.max(width)">
-      <a href="#/spritely"
-        (mousedown)="initOutline($event)"
-        (mouseover)="adjustOutline($event)"
-        (mouseup)="completeOutline($event)">
-        <rect
-          [attr.alt]="x + 'x' + y"
-          [attr.x]="x * scale"
-          [attr.y]="y * scale"
-          [attr.width]="scale"
-          [attr.height]="scale"
-          [attr.fill]="palette[pixels[x + 'x' + y]]||backgroundColor"
-          style="stroke:black;stroke-width:1;"></rect>
-      </a>
+<ng-container *ngIf="palette && pixels">
+  <svg width="100%" height="100%"
+    [attr.viewBox]="'0 0 ' + (width * scale) + ' ' + (height * scale)">
+    <ng-container *ngFor="let y of range.max(height)">
+      <ng-container *ngFor="let x of range.max(width)">
+        <a [attr.href]="'#/' + page"
+          (mousedown)="initOutline($event)"
+          (mouseover)="adjustOutline($event)"
+          (mouseup)="completeOutline($event)">
+          <rect
+            [attr.alt]="x + 'x' + y"
+            [attr.x]="x * scale"
+            [attr.y]="y * scale"
+            [attr.width]="scale"
+            [attr.height]="scale"
+            [attr.fill]="palette[pixels[x + 'x' + y]]||backgroundColor"
+            style="stroke:black;stroke-width:1;"></rect>
+        </a>
+      </ng-container>
     </ng-container>
-  </ng-container>
-  <ng-container *ngIf="hasOutline()">
-    <rect [attr.x]="startCorner.x * scale" [attr.y]="startCorner.y * scale"
-      [attr.width]="outlineDim.x * scale" [attr.height]="outlineDim.y * scale"
-      fill="none" stroke="red" stroke-width="1"/>
-  </ng-container>
-</svg>
+    <ng-container *ngIf="hasOutline()">
+      <rect [attr.x]="startCorner.x * scale" [attr.y]="startCorner.y * scale"
+        [attr.width]="outlineDim.x * scale" [attr.height]="outlineDim.y * scale"
+        fill="none" stroke="red" stroke-width="1"/>
+    </ng-container>
+  </svg>
+</ng-container>

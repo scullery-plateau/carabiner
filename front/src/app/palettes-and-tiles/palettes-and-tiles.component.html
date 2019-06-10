@@ -1,6 +1,6 @@
 <form [formGroup]="paletteAndTileForm">
   <div class="row">
-    <div class="col-4">
+    <div class="col-lg-4">
       <div class="row">
         <div class="col-12">
           <div class="showcase">
@@ -42,8 +42,8 @@
                 <div class="col-sm-7">
                   <div class="nes-input nes-select">
                     <select id="colors" class="form-control" formControlName="selectedColor" (change)="selectColor()">
-                      <ng-container *ngFor="let color of state.palettes[paletteAndTileForm.value.selectedPalette]; index as i">
-                        <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
+                      <ng-container *ngFor="let color of activePalette; index as i">
+                        <option value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
                       </ng-container>
                     </select>
                   </div>
@@ -54,7 +54,7 @@
                   <label for="color" class="text-brand">Color:</label>
                 </div>
                 <div class="col-sm-7">
-                  <input type="color" id="color" class="nes-input form-control" formControlName="color" [value]="(state.palettes[paletteAndTileForm.value.selectedPalette]||{})[paletteAndTileForm.value.selectedColor]||'#000001'" (change)="setColor()"/>
+                  <input type="color" id="color" class="nes-input form-control" formControlName="color" value="#000001" (change)="setColor()"/>
                 </div>
               </div>
               <div class="row">
@@ -71,6 +71,13 @@
                   <button class="nes-btn is-error" (click)="removeColor()">Remove Color</button>
                 </div>
               </div>
+              <p></p>
+              <app-palette-display
+                [palette]="activePalette"
+                href="#/cobblestone"
+                showFirst="true"
+                [selectFn]="colorIndexSetter()"
+              ></app-palette-display>
             </div>
           </div>
         </div>
@@ -82,11 +89,11 @@
               </div>
               <div class="row">
                 <div class="col-5 text-right">
-                  <label for="activeTile">Active Tile</label>
+                  <label for="selectedTile">Active Tile</label>
                 </div>
                 <div class="col-7">
                   <div class="nes-input nes-select">
-                    <select class="form-control" id="activeTile" formControlName="activeTile" (change)="selectTile()">
+                    <select class="form-control" id="selectedTile" formControlName="selectedTile" (change)="selectTile()">
                       <ng-container *ngFor="let tileName of state.tiles.keys()">
                         <option value="{{tileName}}">{{tileName}}</option>
                       </ng-container>
@@ -112,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-lg-8">
       <div class="showcase">
         <div class="nes-container with-title">
           <div class="title">
@@ -129,14 +136,15 @@
           <div class="row">
             <div class="col-md-12">
               <app-pixel-canvas
-                [pixels]="(state.tiles[paletteAndTileForm.value.activeTile]||{})"
+                [pixels]="activeTile"
                 [scale]="10"
                 [width]="16"
                 [height]="16"
-                [palette]="(state.palettes[paletteAndTileForm.value.selectedPalette]||[])"
-                [backgroundColor]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[0]||paletteAndTileForm.value.backgroundColor||'#ffffff')"
-                [colorIndex]="((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[paletteAndTileForm.value.selectedColor]||'#ffffff')"
+                [palette]="activePalette"
+                [backgroundColor]="getBackground()"
+                [colorIndex]="activeColorIndex"
                 [trigger]="trigger"
+                page="cobblestone"
               ></app-pixel-canvas>
             </div>
           </div>
