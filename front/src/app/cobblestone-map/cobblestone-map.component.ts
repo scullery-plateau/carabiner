@@ -21,7 +21,7 @@ export class CobblestoneMapComponent implements OnInit {
   })
 
   activeKey: string;
-
+  
   range = Range;
 
   @Input()

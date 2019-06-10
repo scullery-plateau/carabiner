@@ -44,14 +44,14 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   updateFromFile() {
-    let patch = {}
+    let patch: {} = {}
     let paletteNames = this.state.palettes.keys();
     if (paletteNames.length > 0) {
-      patch.selectedPalette = paletteNames[0];
+      patch["selectedPalette"] = paletteNames[0];
     }
     let tileNames = this.state.tiles.keys();
     if (tileNames.length > 0) {
-      patch.selectedTile = tileNames[0];
+      patch["selectedTile"] = tileNames[0];
     }
     this.paletteAndTileForm.patchValue(patch);
     this.selectPalette();
