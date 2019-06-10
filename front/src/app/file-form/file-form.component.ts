@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import {DomSanitizer} from '@angular/platform-browser';
+import { DownloadLinkComponent } from '../download-link/download-link.component'
 
 @Component({
   selector: 'file-form',
@@ -9,46 +9,62 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class FileFormComponent implements OnInit {
 
+  @ViewChild(DownloadLinkComponent) dlRef: DownloadLinkComponent;
+
   fileForm: FormGroup = this.fb.group({
     saveFile:['']
   });
 
   @Input()
-  handleLoad: any;
-
-  @Input()
-  fileContent: string;
-
-  @Input()
   defaultSaveFile: string;
 
-  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer) { }
+  @Input()
+  prepareLoadedData: any;
+
+  @Input()
+  fileLoadCallback: any;
+
+  @Input()
+  cancelFileLoad: any;
+
+  @Input()
+  buildSaveData: any;
+
+  loadedFileData: string;
+
+  loadError: any;
+
+  fileContent: string;
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
   }
 
-  loadFile(e) {
-    console.log("load file");
-    let inputValue = e.target;
-    let file:File = inputValue.files[0];
-    let myReader:FileReader = new FileReader();
-    var me = this;
-    myReader.onload = function(e){
-      // you can perform an action with readed data here
-      console.log("file onload");
-      me.handleLoad(myReader.result,file.name);
+  tempDataReader() {
+    let me = this;
+    return function(fileData,fileName) {
+      me.loadedFileData = me.prepareLoadedData(fileData);
+      me.fileForm.patchValue({
+        saveFile:fileName
+      });
     }
-    myReader.readAsText(file);
   }
 
-  getSaveFileName() {
-    return this.fileForm.value.saveFile || this.defaultSaveFile;
+  saveDataPreparer() {
+    let me = this;
+    return function() {
+      me.fileContent = me.buildSaveData();
+    }
   }
 
-  getSaveFileContent() {
-    return this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([this.fileContent], {type: 'text/plain'})));
+  fileLoadConfirmer() {
+    let me = this;
+    return function() {
+      if(!me.loadError) {
+        me.fileLoadCallback(me.loadedFileData);
+      }
+    }
   }
-
-
 
 }

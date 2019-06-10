@@ -21,7 +21,7 @@ export class CobblestoneMapComponent implements OnInit {
   })
 
   activeKey: string;
-  
+
   range = Range;
 
   @Input()
@@ -56,9 +56,12 @@ export class CobblestoneMapComponent implements OnInit {
     return this.state.map[p.toString()] || "bg";
   }
 
-  pixel(x:number,y:number) {
-    // TODO - MAKE FUNCTIONAL
-    return "none";
+  pixel(key:string, x:number,y:number) {
+    let tfTile = this.state.transforms[key];
+    let palette = tfTile.palette;
+    let tile = tfTile.tile;
+    let p = (new Point(x,y)).toString();
+    return palette[tile[p] || 0];
   }
 
   resize() {}

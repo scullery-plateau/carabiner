@@ -21,6 +21,8 @@ import { ChildPanelComponent } from './nes-tabs/child-panel/child-panel.componen
 import { TileDisplayComponent } from './tile-display/tile-display.component';
 import { FileFormComponent } from './file-form/file-form.component';
 import { TilePixelsComponent } from './tile-pixels/tile-pixels.component';
+import { FileLoadInputComponent } from './file-load-input/file-load-input.component';
+import { DownloadLinkComponent } from './download-link/download-link.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { TilePixelsComponent } from './tile-pixels/tile-pixels.component';
     TileDisplayComponent,
     FileFormComponent,
     TilePixelsComponent,
+    FileLoadInputComponent,
+    DownloadLinkComponent,
   ],
   imports: [
     BrowserModule,

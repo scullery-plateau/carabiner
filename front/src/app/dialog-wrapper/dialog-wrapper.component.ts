@@ -13,13 +13,13 @@ export class DialogWrapperComponent implements OnInit {
   triggerBtnName: string;
 
   @Input()
-  dialogId: string;
-
-  @Input()
   dialogConfirm: any;
 
   @Input()
   dialogClose: any;
+
+  @Input()
+  dialogOpen: any;
 
   dialog: HTMLDialogElement;
 
@@ -30,17 +30,26 @@ export class DialogWrapperComponent implements OnInit {
   }
 
   open() {
+    if (this.dialogOpen) {
+      this.dialogOpen();
+    }
     this.dialog.showModal();
   }
 
   confirm() {
-    this.dialogConfirm();
-    this.dialogClose();
+    if (this.dialogConfirm) {
+      this.dialogConfirm();
+    }
+    if (this.dialogClose) {
+      this.dialogClose();
+    }
     this.dialog.close();
   }
 
   cancel() {
-    this.dialogClose();
+    if (this.dialogClose) {
+      this.dialogClose();
+    }
     this.dialog.close();
   }
 

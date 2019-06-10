@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
+import { TileTransformerService } from '../tile-transformer.service'
 import { Trigger } from "../trigger";
 
 @Component({
@@ -28,7 +29,7 @@ export class TransformedTilesComponent implements OnInit {
 
   currentKey: string;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private ttf: TileTransformerService) { }
 
   ngOnInit() {
     let me = this;
@@ -102,7 +103,7 @@ export class TransformedTilesComponent implements OnInit {
     if (key && this.state.transforms[key]) {
       delete this.state.transforms[key];
     } else {
-      this.state.transforms[key] = true;
+      this.state.transforms[key] = this.ttf.buildTransformedTile(this.state,key);
     }
   }
 

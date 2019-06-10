@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TileTransformerService } from '../tile-transformer.service'
 import { Range } from '../range'
 import { Point } from '../point'
 
@@ -21,29 +22,15 @@ export class TileDisplayComponent implements OnInit {
 
   pixels: {} = {};
 
-  transforms: string[];
-
   range = Range;
 
-  constructor() { }
+  constructor(private ttf: TileTransformerService) { }
 
   ngOnInit() {
     if (this.key) {
-      let attrs = this.key.split("_");
-      this.palette = this.state.palettes[attrs[1]];
-      this.transforms = attrs.splice(2);
-      this.pixels = {};
-      let pixels = this.pixels;
-      let temp = this.state.tiles[attrs[0]];
-      if (temp) {
-        Object.entries(temp).forEach((pair) => {
-          let pixel = this.transforms.reduce((p,tf) => {
-            return p[tf](16,16);
-          },Point.parse(pair[0]));
-          let c = pair[1];
-          pixels[pixel.toString()] = c;
-        })
-      }
+      let tfTile = this.ttf.buildTransformedTile(this.state,this.key);
+      this.palette = tfTile.palette;
+      this.pixels = tfTile.tile;
     }
   }
 

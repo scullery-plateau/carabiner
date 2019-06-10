@@ -5,9 +5,10 @@
   initActiveIndex="0">
   <tab-child label="File">
     <file-form
+      [defaultSaveFile]="defaultSaveFile"
       [handleLoad]="fileLoader()"
       [fileContent]="compileSaveData()"
-      [defaultSaveFile]="defaultSaveFile">
+      >
     </file-form>
   </tab-child>
   <tab-child label="Palettes &amp; Tiles">

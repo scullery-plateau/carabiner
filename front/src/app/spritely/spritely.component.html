@@ -12,9 +12,10 @@
             [initCollapsed]="true"
             [label]="'File'">
             <file-form
+              [defaultSaveFile]="defaultSaveFile"
               [handleLoad]="fileLoader()"
               [fileContent]="compileSaveData()"
-              [defaultSaveFile]="defaultSaveFile">
+              >
             </file-form>
           </accordian>
           <accordian
