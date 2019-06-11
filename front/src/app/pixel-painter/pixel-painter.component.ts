@@ -1,6 +1,6 @@
 import {Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild} from '@angular/core';
-import {Trigger} from "../trigger";
-import {Range} from "../range";
+import {Trigger} from "../util/trigger";
+import {Range} from "../util/range";
 
 @Component({
   selector: 'app-pixel-painter',

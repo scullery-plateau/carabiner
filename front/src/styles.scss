@@ -49,3 +49,9 @@ accordian {
 .nes-accordian {
   width: 100%;
 }
+
+@media print {
+  header, footer {
+    display: none;
+  }
+}

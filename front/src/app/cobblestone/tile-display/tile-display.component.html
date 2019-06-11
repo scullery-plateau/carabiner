@@ -1,9 +1,9 @@
 <svg width="100%" height="100%" viewBox="0 0 16 16">
   <ng-container *ngFor="let y of range.max(16)">
     <ng-container *ngFor="let x of range.max(16)">
-      <svg:rect [attr.x]="x * scale" [attr.y]="y * scale" [attr.width]="scale"
+      <rect [attr.x]="x * scale" [attr.y]="y * scale" [attr.width]="scale"
         [attr.height]="scale" [attr.fill]="pixel(x,y)"
-        style="stroke:none;stroke-width:0"></svg:rect>
+        style="stroke:none;stroke-width:0"></rect>
     </ng-container>
   </ng-container>
 </svg>

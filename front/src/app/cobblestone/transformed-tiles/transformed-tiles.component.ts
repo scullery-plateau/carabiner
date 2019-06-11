@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { TileTransformerService } from '../tile-transformer.service'
-import { Trigger } from "../trigger";
+import { Trigger } from "../../util/trigger";
 
 @Component({
   selector: 'app-transformed-tiles',

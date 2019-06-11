@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Trigger} from "../trigger";
-import {Range} from "../range";
-import {Point} from "../point";
+import {Trigger} from "../util/trigger";
+import {Range} from "../util/range";
+import {Point} from "../util/point";
 
 @Component({
   selector: 'app-pixel-canvas',

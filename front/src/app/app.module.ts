@@ -9,20 +9,21 @@ import { SpritelyComponent } from './spritely/spritely.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { PixelCanvasComponent } from './pixel-canvas/pixel-canvas.component';
 import { PixelPainterComponent } from './pixel-painter/pixel-painter.component';
-import { PalettesAndTilesComponent } from './palettes-and-tiles/palettes-and-tiles.component';
-import { PaletteDisplayComponent } from './palette-display/palette-display.component';
-import { DialogWrapperComponent } from './dialog-wrapper/dialog-wrapper.component';
-import { AccordianComponent } from './accordian/accordian.component';
-import { TransformedTilesComponent } from './transformed-tiles/transformed-tiles.component';
-import { CobblestoneMapComponent } from './cobblestone-map/cobblestone-map.component';
-import { MapPagePickerComponent } from './map-page-picker/map-page-picker.component';
-import { TabbedPanelComponent } from './nes-tabs/tabbed-panel/tabbed-panel.component';
-import { ChildPanelComponent } from './nes-tabs/child-panel/child-panel.component';
-import { TileDisplayComponent } from './tile-display/tile-display.component';
-import { FileFormComponent } from './file-form/file-form.component';
-import { TilePixelsComponent } from './tile-pixels/tile-pixels.component';
-import { FileLoadInputComponent } from './file-load-input/file-load-input.component';
-import { DownloadLinkComponent } from './download-link/download-link.component';
+import { PalettesAndTilesComponent } from './cobblestone/palettes-and-tiles/palettes-and-tiles.component';
+import { PaletteDisplayComponent } from './util/palette-display/palette-display.component';
+import { DialogWrapperComponent } from './util/dialog-wrapper/dialog-wrapper.component';
+import { AccordianComponent } from './util/accordian/accordian.component';
+import { TransformedTilesComponent } from './cobblestone/transformed-tiles/transformed-tiles.component';
+import { CobblestoneMapComponent } from './cobblestone/cobblestone-map/cobblestone-map.component';
+import { MapPagePickerComponent } from './cobblestone/map-page-picker/map-page-picker.component';
+import { TabbedPanelComponent } from './util/nes-tabs/tabbed-panel/tabbed-panel.component';
+import { ChildPanelComponent } from './util/nes-tabs/child-panel/child-panel.component';
+import { TileDisplayComponent } from './cobblestone/tile-display/tile-display.component';
+import { FileFormComponent } from './util/file-form/file-form.component';
+import { TilePixelsComponent } from './cobblestone/tile-pixels/tile-pixels.component';
+import { FileLoadInputComponent } from './util/file-load-input/file-load-input.component';
+import { DownloadLinkComponent } from './util/download-link/download-link.component';
+import { TileCanvasComponent } from './cobblestone/tile-canvas/tile-canvas.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { DownloadLinkComponent } from './download-link/download-link.component';
     TilePixelsComponent,
     FileLoadInputComponent,
     DownloadLinkComponent,
+    TileCanvasComponent,
   ],
   imports: [
     BrowserModule,

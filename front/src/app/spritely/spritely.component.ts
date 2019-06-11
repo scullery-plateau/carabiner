@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import {Trigger} from "../trigger";
-import {Range} from "../range";
+import {Trigger} from "../util/trigger";
+import {Range} from "../util/range";
 import {DomSanitizer} from '@angular/platform-browser';
 import {Transforms} from "./transform";
-import {Point} from "../point"
+import {Point} from "../util/point"
 
 @Component({
   selector: 'app-spritely',

@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import { Range } from "../range";
-import { Point } from "../point";
-import { Trigger } from "../trigger";
+import { Range } from "../../util/range";
+import { Point } from "../../util/point";
+import { Trigger } from "../../util/trigger";
 
 @Component({
   selector: 'app-cobblestone-map',

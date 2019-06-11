@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TileTransformerService } from '../tile-transformer.service'
-import { Range } from '../range'
-import { Point } from '../point'
+import { Range } from '../../util/range'
+import { Point } from '../../util/point'
 
 @Component({
   selector: 'tile-display',
