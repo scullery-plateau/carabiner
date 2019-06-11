@@ -164,7 +164,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<header class=\"sticky\">\r\n  <nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\r\n    <a class=\"navbar-brand\" href=\"#\"><h2>{{title}}</h2></a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\r\n        </li>\r\n        <!--\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\r\n        </li>\r\n        -->\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</header>\r\n<p></p>\r\n<div class=\"container-fluid\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\r\n  <p>Built by Daniel Allen Johnson &copy; 2019</p>\r\n  <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\r\n</div>\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<header class=\"sticky\">\r\n  <nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\r\n    <a class=\"navbar-brand\" href=\"#\"><h2>{{title}}</h2></a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\r\n        </li>\r\n        <!--\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\r\n        </li>\r\n        -->\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</header>\r\n<p></p>\r\n<div class=\"container-fluid\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<footer class=\"text-center\" style=\"margin-bottom:0\">\r\n  <p>Built by Daniel Allen Johnson &copy; 2019</p>\r\n  <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -243,6 +243,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nes_tabs_child_panel_child_panel_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./nes-tabs/child-panel/child-panel.component */ "./src/app/nes-tabs/child-panel/child-panel.component.ts");
 /* harmony import */ var _tile_display_tile_display_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./tile-display/tile-display.component */ "./src/app/tile-display/tile-display.component.ts");
 /* harmony import */ var _file_form_file_form_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./file-form/file-form.component */ "./src/app/file-form/file-form.component.ts");
+/* harmony import */ var _tile_pixels_tile_pixels_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./tile-pixels/tile-pixels.component */ "./src/app/tile-pixels/tile-pixels.component.ts");
+/* harmony import */ var _file_load_input_file_load_input_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./file-load-input/file-load-input.component */ "./src/app/file-load-input/file-load-input.component.ts");
+/* harmony import */ var _download_link_download_link_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./download-link/download-link.component */ "./src/app/download-link/download-link.component.ts");
+
+
+
 
 
 
@@ -288,6 +294,9 @@ var AppModule = /** @class */ (function () {
                 _nes_tabs_child_panel_child_panel_component__WEBPACK_IMPORTED_MODULE_19__["ChildPanelComponent"],
                 _tile_display_tile_display_component__WEBPACK_IMPORTED_MODULE_20__["TileDisplayComponent"],
                 _file_form_file_form_component__WEBPACK_IMPORTED_MODULE_21__["FileFormComponent"],
+                _tile_pixels_tile_pixels_component__WEBPACK_IMPORTED_MODULE_22__["TilePixelsComponent"],
+                _file_load_input_file_load_input_component__WEBPACK_IMPORTED_MODULE_23__["FileLoadInputComponent"],
+                _download_link_download_link_component__WEBPACK_IMPORTED_MODULE_24__["DownloadLinkComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -353,7 +362,7 @@ var CobblestoneMap = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"col-4\">\n    <div class=\"showcase\">\n      <div class=\"nes-container\">\n        <div class=\"col-12\" *ngFor=\"let key of state.transforms.keys()\">\n          <button (click)=\"setActiveTile(key)\">\n            <tile-display\n              [state]=\"state\"\n              [key]=\"key\">\n            </tile-display>\n          </button>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-8\">\n    <div class=\"showcase\">\n      <div class=\"nes-container\">\n        <form [formGroup]=\"dimForm\">\n          <div class=\"row\">\n            <div class=\"col-md-4\">\n              <label for=\"width\" class=\"text-brand\">Width:</label>\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\n            </div>\n            <div class=\"col-md-4\">\n              <label for=\"height\" class=\"text-brand\">Height:</label>\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\n            </div>\n            <div class=\"col-md-4\">\n              <label for=\"scale\" class=\"text-brand\">Scale:</label>\n              <input type=\"number\" min=\"1\" max=\"4\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\" (change)=\"resize()\"/>\n            </div>\n          </div>\n        </form>\n        <div class=\"row\">\n          <div class=\"col-12 map-frame\">\n            <svg\n              [attr.width]=\"dimForm.value.width * dimForm.value.scale * 16\"\n              [attr.height]=\"dimForm.value.height * dimForm.value.scale * 16\">\n              <defs>\n                <g id=\"bg\">\n                  <rect\n                    [attr.x]=\"x * dimForm.value.scale * 16\"\n                    [attr.y]=\"y * dimForm.value.scale * 16\"\n                    [attr.width]=\"dimForm.value.scale * 16\"\n                    [attr.height]=\"dimForm.value.scale * 16\"\n                    fill=\"white\"\n                    style=\"stroke:black;stroke-width:2\"/>\n                </g>\n                <ng-container *ngFor=\"let key of state.transforms.keys()\">\n                </ng-container>\n              </defs>\n              <ng-container *ngFor=\"let y of range.max(dimForm.value.height)\">\n                <ng-container *ngFor=\"let x of range.max(dimForm.value.width)\">\n                  <use [attr.href]=\"'#' + getTile(x,y)\"\n                    [attr.x]=\"x * dimForm.value.scale * 16\"\n                    [attr.y]=\"y * dimForm.value.scale * 16\"\n                    (click)=\"setTile(x,y)\"/>\n                </ng-container>\n              </ng-container>\n            </svg>\n          </div>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col-4\">\n    <div class=\"showcase\">\n      <div class=\"nes-container\">\n        <div class=\"col-12\" *ngFor=\"let key of state.transforms.keys()\">\n          <button (click)=\"select(key)\">\n            <tile-display\n              [state]=\"state\"\n              [key]=\"key\">\n            </tile-display>\n          </button>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-8\">\n    <div class=\"showcase\">\n      <div class=\"nes-container\">\n        <form [formGroup]=\"dimForm\">\n          <div class=\"row\">\n            <div class=\"col-md-4\">\n              <label for=\"width\" class=\"text-brand\">Width:</label>\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\n            </div>\n            <div class=\"col-md-4\">\n              <label for=\"height\" class=\"text-brand\">Height:</label>\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\n            </div>\n            <div class=\"col-md-4\">\n              <label for=\"scale\" class=\"text-brand\">Scale:</label>\n              <input type=\"number\" min=\"1\" max=\"4\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\" (change)=\"resize()\"/>\n            </div>\n          </div>\n        </form>\n        <div class=\"row\">\n          <div class=\"col-12 map-frame\">\n            <svg\n              [attr.width]=\"dimForm.value.width * dimForm.value.scale * 16\"\n              [attr.height]=\"dimForm.value.height * dimForm.value.scale * 16\">\n              <defs>\n                <g id=\"bg\">\n                  <rect x=\"0\" y=\"0\"\n                    [attr.width]=\"dimForm.value.scale * 16\"\n                    [attr.height]=\"dimForm.value.scale * 16\"\n                    fill=\"white\"\n                    style=\"stroke:black;stroke-width:2\"/>\n                </g>\n                <ng-container *ngFor=\"let key of state.transforms.keys()\">\n                  <g [id]=\"key\">\n                    <ng-container *ngFor=\"let y of range.max(16)\">\n                      <ng-container *ngFor=\"let x of range.max(16)\">\n                        <svg:rect [attr.x]=\"x * dimForm.value.scale\" [attr.y]=\"y * dimForm.value.scale\"\n                          [attr.width]=\"dimForm.value.scale\" [attr.height]=\"dimForm.value.scale\"\n                          [attr.fill]=\"pixel(key,x,y)\" style=\"stroke:none;\"></svg:rect>\n                      </ng-container>\n                    </ng-container>\n                  </g>\n                </ng-container>\n              </defs>\n              <ng-container *ngFor=\"let y of range.max(dimForm.value.height)\">\n                <ng-container *ngFor=\"let x of range.max(dimForm.value.width)\">\n                  <a href=\"#/cobblestone\" (click)=\"setTile(x,y)\">\n                    <use [attr.href]=\"'#' + getTile(x,y)\"\n                    [attr.x]=\"x * dimForm.value.scale * 16\"\n                    [attr.y]=\"y * dimForm.value.scale * 16\"/>\n                  </a>\n                </ng-container>\n              </ng-container>\n            </svg>\n          </div>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -382,6 +391,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _range__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../range */ "./src/app/range.ts");
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../point */ "./src/app/point.ts");
+/* harmony import */ var _trigger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../trigger */ "./src/app/trigger.ts");
+
+
 
 
 
@@ -398,21 +411,42 @@ var CobblestoneMapComponent = /** @class */ (function () {
     }
     CobblestoneMapComponent.prototype.ngOnInit = function () {
     };
+    CobblestoneMapComponent.prototype.updateFromFile = function () {
+    };
     CobblestoneMapComponent.prototype.select = function (key) {
         this.activeKey = key;
     };
     CobblestoneMapComponent.prototype.setTile = function (x, y) {
-        if (this.state.transforms[this.activeKey]) {
+        var key = (new _point__WEBPACK_IMPORTED_MODULE_4__["Point"](x, y)).toString();
+        if (this.state.map[key]) {
+            delete this.state.map[key];
+        }
+        else {
+            if (this.state.transforms[this.activeKey]) {
+                this.state.map[key] = this.activeKey;
+            }
         }
     };
     CobblestoneMapComponent.prototype.getTile = function (x, y) {
-        return "bg";
+        var p = new _point__WEBPACK_IMPORTED_MODULE_4__["Point"](x, y);
+        return this.state.map[p.toString()] || "bg";
+    };
+    CobblestoneMapComponent.prototype.pixel = function (key, x, y) {
+        var tfTile = this.state.transforms[key];
+        var palette = tfTile.palette;
+        var tile = tfTile.tile;
+        var p = (new _point__WEBPACK_IMPORTED_MODULE_4__["Point"](x, y)).toString();
+        return palette[tile[p] || 0];
     };
     CobblestoneMapComponent.prototype.resize = function () { };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], CobblestoneMapComponent.prototype, "state", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _trigger__WEBPACK_IMPORTED_MODULE_5__["Trigger"])
+    ], CobblestoneMapComponent.prototype, "loadTrigger", void 0);
     CobblestoneMapComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-cobblestone-map',
@@ -546,7 +580,7 @@ var Cobblestone = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<tabbed-panel\r\n  title=\"CobbleStone\"\r\n  activeClass=\"is-success\"\r\n  initActiveIndex=\"0\">\r\n  <tab-child label=\"File\">\r\n    <file-form\r\n      [handleLoad]=\"fileLoader()\"\r\n      [fileContent]=\"compileSaveData()\"\r\n      [defaultSaveFile]=\"defaultSaveFile\">\r\n    </file-form>\r\n  </tab-child>\r\n  <tab-child label=\"Palettes &amp; Tiles\">\r\n    <app-palettes-and-tiles [state]=\"state\"></app-palettes-and-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Transforms\">\r\n    <app-transformed-tiles [state]=\"state\"></app-transformed-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Map\">\r\n    <app-cobblestone-map [state]=\"state\"></app-cobblestone-map>\r\n  </tab-child>\r\n  <!--\r\n  <tab-child label=\"Paging\">\r\n    <app-map-page-picker [state]=\"state\"></app-map-page-picker>\r\n  </tab-child>\r\n  -->\r\n</tabbed-panel>\r\n<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n"
+module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<tabbed-panel\r\n  title=\"CobbleStone\"\r\n  activeClass=\"is-success\"\r\n  initActiveIndex=\"0\">\r\n  <tab-child label=\"File\">\r\n    <file-form\r\n      [defaultSaveFile]=\"defaultSaveFile\"\r\n      [prepareLoadedData]=\"fileLoadHandler\"\r\n      [fileLoadCallback]=\"fileLoadCallback()\"\r\n      [buildSaveData]=\"saveDataCompiler()\"\r\n      >\r\n    </file-form>\r\n  </tab-child>\r\n  <tab-child label=\"Palettes &amp; Tiles\">\r\n    <app-palettes-and-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-palettes-and-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Transforms\">\r\n    <app-transformed-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-transformed-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Map\">\r\n    <app-cobblestone-map [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-cobblestone-map>\r\n  </tab-child>\r\n  <!--\r\n  <tab-child label=\"Paging\">\r\n    <app-map-page-picker [state]=\"state\"></app-map-page-picker>\r\n  </tab-child>\r\n  -->\r\n</tabbed-panel>\r\n<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<div class=\"print-cobblestone\">This will be printed</div>\r\n"
 
 /***/ }),
 
@@ -557,7 +591,7 @@ module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL2NvYmJsZXN0b25lLmNvbXBvbmVudC5zY3NzIn0= */"
+module.exports = "@media screen {\n  .print-cobblestone {\n    display: none; } }\n\n@media print {\n  footer {\n    display: none; }\n  .print-cobblestone {\n    display: block; }\n  tabbed-panel {\n    display: none; }\n  header {\n    display: none; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvQzpcXGNvZGVcXGNhcmFiaW5lclxcZnJvbnQvc3JjXFxhcHBcXGNvYmJsZXN0b25lXFxjb2JibGVzdG9uZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0lBQ0UsYUFBYSxFQUFBLEVBQ2Q7O0FBR0g7RUFDRTtJQUNFLGFBQWEsRUFBQTtFQUVmO0lBQ0UsY0FBYyxFQUFBO0VBRWhCO0lBQ0UsYUFBYSxFQUFBO0VBRWY7SUFDRSxhQUFhLEVBQUEsRUFDZCIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL2NvYmJsZXN0b25lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQG1lZGlhIHNjcmVlbiB7XHJcbiAgLnByaW50LWNvYmJsZXN0b25lIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG59XHJcblxyXG5AbWVkaWEgcHJpbnQge1xyXG4gIGZvb3RlciAge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICB9XHJcbiAgLnByaW50LWNvYmJsZXN0b25lIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuICB0YWJiZWQtcGFuZWwge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICB9XHJcbiAgaGVhZGVyIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -575,6 +609,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _cobblestone_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../cobblestone.service */ "./src/app/cobblestone.service.ts");
+/* harmony import */ var _trigger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../trigger */ "./src/app/trigger.ts");
+
 
 
 
@@ -587,17 +623,37 @@ var CobblestoneComponent = /** @class */ (function () {
             palettes: {},
             tiles: {},
             transforms: {},
-            map: {}
+            map: {},
+            pages: []
         };
+        this.loadTrigger = new _trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"]("on-file-load");
     }
     CobblestoneComponent.prototype.ngOnInit = function () {
     };
-    CobblestoneComponent.prototype.compileSaveData = function () {
-        return JSON.stringify(this.state);
+    CobblestoneComponent.prototype.saveDataCompiler = function () {
+        var me = this;
+        return function () {
+            return JSON.stringify(me.state);
+        };
+    };
+    CobblestoneComponent.prototype.fileLoadHandler = function (fileData) {
+        return JSON.parse(fileData);
+    };
+    CobblestoneComponent.prototype.fileLoadCallback = function () {
+        var me = this;
+        return function (json) {
+            ['palettes', 'tiles', 'transforms', 'map'].forEach(function (key) {
+                Object.entries(json[key]).forEach(function (entry) {
+                    me.state[key][entry[0]] = entry[1];
+                });
+            });
+            me.loadTrigger.fire();
+        };
     };
     CobblestoneComponent.prototype.fileLoader = function () {
         var me = this;
         return function (fileData, fileName) {
+            console.log("loading cobblestone file");
             me.defaultFileName = fileName;
             var json = JSON.parse(fileData);
             ['palettes', 'tiles', 'transforms', 'map'].forEach(function (key) {
@@ -605,6 +661,8 @@ var CobblestoneComponent = /** @class */ (function () {
                     me.state[key][entry[0]] = entry[1];
                 });
             });
+            console.log(me.state);
+            me.loadTrigger.fire();
         };
     };
     CobblestoneComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -629,7 +687,7 @@ var CobblestoneComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" name=\"button\" class=\"nes-btn is-success\" (click)=\"open()\">{{triggerBtnName}}</button>\r\n<dialog #myDialog [attr.id]=\"dialogId\" class=\"nes-dialog is-dark is-rounded\">\r\n  <ng-content></ng-content>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
+module.exports = "<button type=\"button\" name=\"button\" class=\"nes-btn is-success\" (click)=\"open()\">{{triggerBtnName}}</button>\r\n<dialog #myDialog class=\"nes-dialog is-dark is-rounded\">\r\n  <ng-content></ng-content>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
 
 /***/ }),
 
@@ -665,15 +723,24 @@ var DialogWrapperComponent = /** @class */ (function () {
         this.dialog = this.dialogRef.nativeElement;
     };
     DialogWrapperComponent.prototype.open = function () {
+        if (this.dialogOpen) {
+            this.dialogOpen();
+        }
         this.dialog.showModal();
     };
     DialogWrapperComponent.prototype.confirm = function () {
-        this.dialogConfirm();
-        this.dialogClose();
+        if (this.dialogConfirm) {
+            this.dialogConfirm();
+        }
+        if (this.dialogClose) {
+            this.dialogClose();
+        }
         this.dialog.close();
     };
     DialogWrapperComponent.prototype.cancel = function () {
-        this.dialogClose();
+        if (this.dialogClose) {
+            this.dialogClose();
+        }
         this.dialog.close();
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -686,16 +753,16 @@ var DialogWrapperComponent = /** @class */ (function () {
     ], DialogWrapperComponent.prototype, "triggerBtnName", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
-    ], DialogWrapperComponent.prototype, "dialogId", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], DialogWrapperComponent.prototype, "dialogConfirm", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], DialogWrapperComponent.prototype, "dialogClose", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], DialogWrapperComponent.prototype, "dialogOpen", void 0);
     DialogWrapperComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'dialog-wrapper',
@@ -711,6 +778,91 @@ var DialogWrapperComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/download-link/download-link.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/download-link/download-link.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<a #downloadLink [download]=\"getSaveFileName()\" [href]=\"content\"></a>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/download-link/download-link.component.scss":
+/*!************************************************************!*\
+  !*** ./src/app/download-link/download-link.component.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rvd25sb2FkLWxpbmsvZG93bmxvYWQtbGluay5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/download-link/download-link.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/download-link/download-link.component.ts ***!
+  \**********************************************************/
+/*! exports provided: DownloadLinkComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DownloadLinkComponent", function() { return DownloadLinkComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _trigger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../trigger */ "./src/app/trigger.ts");
+
+
+
+
+var DownloadLinkComponent = /** @class */ (function () {
+    function DownloadLinkComponent(sanitizer) {
+        this.sanitizer = sanitizer;
+    }
+    DownloadLinkComponent.prototype.ngOnInit = function () {
+        var me = this;
+        this.saveDataUpdateTrigger.addListener(function (e) {
+            console.log("init download link");
+            me.content = me.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([e.detail], { type: 'text/plain' })));
+        });
+    };
+    DownloadLinkComponent.prototype.invokeDownload = function () {
+        var a = this.dlRef.nativeElement;
+        a.click();
+    };
+    DownloadLinkComponent.prototype.sanitizeContent = function () {
+        return;
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('downloadLink'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])
+    ], DownloadLinkComponent.prototype, "dlRef", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], DownloadLinkComponent.prototype, "getSaveFileName", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"])
+    ], DownloadLinkComponent.prototype, "saveDataUpdateTrigger", void 0);
+    DownloadLinkComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'download-link',
+            template: __webpack_require__(/*! ./download-link.component.html */ "./src/app/download-link/download-link.component.html"),
+            styles: [__webpack_require__(/*! ./download-link.component.scss */ "./src/app/download-link/download-link.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
+    ], DownloadLinkComponent);
+    return DownloadLinkComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/file-form/file-form.component.html":
 /*!****************************************************!*\
   !*** ./src/app/file-form/file-form.component.html ***!
@@ -718,7 +870,7 @@ var DialogWrapperComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"fileForm\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <label for=\"loadFile\">Load File:</label>\n      <input type=\"file\" id=\"loadFile\" class=\"nes-input\" (change)=\"loadFile($event)\"/>\n    </div>\n    <div class=\"col-12\">\n      <label for=\"saveFile\">Save:</label>\n    </div>\n    <div class=\"col-9\">\n      <input type=\"text\" id=\"saveFile\" class=\"nes-input\" formControlName=\"saveFile\" placeholder=\"Save File\"/>\n    </div>\n    <div class=\"col-3\">\n      <a [download]=\"getSaveFileName()\" [href]=\"getSaveFileContent()\">\n        <span class=\"nes-btn is-primary\">Save</span>\n      </a>\n    </div>\n  </div>\n</form>\n"
+module.exports = "<form [formGroup]=\"fileForm\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6 text-center\">\r\n      <dialog-wrapper\r\n        triggerBtnName=\"Load File\"\r\n        [dialogConfirm]=\"fileLoadConfirmer()\"\r\n        [dialogClose]=\"fileLoadCanceler()\">\r\n        <label>Load File:</label>\r\n        <file-load-input [loadedFileCallback]=\"tempDataReader()\" [loadErrorCallback]=\"loadErrorHandler()\"></file-load-input>\r\n        <p *ngIf=\"loadError\" class=\"note nes-text is-error\">{{loadError}}</p>\r\n      </dialog-wrapper>\r\n    </div>\r\n    <div class=\"col-md-6 text-center\">\r\n      <dialog-wrapper\r\n        triggerBtnName=\"Save File\"\r\n        [dialogOpen]=\"saveDialogOpener()\"\r\n        [dialogConfirm]=\"saveDialogConfirmer()\">\r\n        <label for=\"saveFile\">Save:</label>\r\n        <input type=\"text\" id=\"saveFile\" class=\"nes-input\" formControlName=\"saveFile\" placeholder=\"Save File\"/>\r\n        <download-link\r\n          [getSaveFileName]=\"saveFileNameGetter()\"\r\n          [saveDataUpdateTrigger]=\"saveDataUpdateTrigger\"></download-link>\r\n      </dialog-wrapper>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -746,59 +898,187 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _download_link_download_link_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../download-link/download-link.component */ "./src/app/download-link/download-link.component.ts");
+/* harmony import */ var _trigger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../trigger */ "./src/app/trigger.ts");
+
 
 
 
 
 var FileFormComponent = /** @class */ (function () {
-    function FileFormComponent(fb, sanitizer) {
+    function FileFormComponent(fb) {
         this.fb = fb;
-        this.sanitizer = sanitizer;
         this.fileForm = this.fb.group({
             saveFile: ['']
         });
+        this.saveDataUpdateTrigger = new _trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"]("update-save-data");
     }
     FileFormComponent.prototype.ngOnInit = function () {
     };
-    FileFormComponent.prototype.loadFile = function (e) {
-        var inputValue = e.target;
-        var file = inputValue.files[0];
-        var myReader = new FileReader();
+    FileFormComponent.prototype.tempDataReader = function () {
         var me = this;
-        myReader.onload = function (e) {
-            // you can perform an action with readed data here
-            me.handleLoad(myReader.result, file.name);
+        return function (fileData, fileName) {
+            me.loadedFileData = me.prepareLoadedData(fileData);
+            me.fileForm.patchValue({
+                saveFile: fileName
+            });
         };
-        myReader.readAsText(file);
     };
-    FileFormComponent.prototype.getSaveFileName = function () {
-        return this.fileForm.value.saveFile || this.defaultSaveFile;
+    FileFormComponent.prototype.saveDataPreparer = function () {
+        var me = this;
+        return function () {
+            me.fileContent = me.buildSaveData();
+        };
     };
-    FileFormComponent.prototype.getSaveFileContent = function () {
-        return this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([this.fileContent], { type: 'text/plain' })));
+    FileFormComponent.prototype.fileLoadConfirmer = function () {
+        var me = this;
+        return function () {
+            if (!me.loadError) {
+                me.fileLoadCallback(me.loadedFileData);
+            }
+        };
+    };
+    FileFormComponent.prototype.fileLoadCanceler = function () {
+        var me = this;
+        return function () {
+            me.loadedFileData = undefined;
+        };
+    };
+    FileFormComponent.prototype.loadErrorHandler = function () {
+        var me = this;
+        return function (e) {
+            me.loadError = e.message;
+        };
+    };
+    FileFormComponent.prototype.saveDialogOpener = function () {
+        var me = this;
+        return function () {
+            console.log("opening save dialog");
+            me.saveDataUpdateTrigger.fireWithDetail(me.buildSaveData());
+        };
+    };
+    FileFormComponent.prototype.saveDialogConfirmer = function () {
+        var me = this;
+        return function () {
+            me.dlRef.invokeDownload();
+        };
+    };
+    FileFormComponent.prototype.saveFileNameGetter = function () {
+        var me = this;
+        return function () {
+            return me.fileForm.value.saveFile || me.defaultSaveFile;
+        };
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], FileFormComponent.prototype, "handleLoad", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
-    ], FileFormComponent.prototype, "fileContent", void 0);
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_download_link_download_link_component__WEBPACK_IMPORTED_MODULE_3__["DownloadLinkComponent"]),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _download_link_download_link_component__WEBPACK_IMPORTED_MODULE_3__["DownloadLinkComponent"])
+    ], FileFormComponent.prototype, "dlRef", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
     ], FileFormComponent.prototype, "defaultSaveFile", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], FileFormComponent.prototype, "prepareLoadedData", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], FileFormComponent.prototype, "fileLoadCallback", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], FileFormComponent.prototype, "buildSaveData", void 0);
     FileFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'file-form',
             template: __webpack_require__(/*! ./file-form.component.html */ "./src/app/file-form/file-form.component.html"),
             styles: [__webpack_require__(/*! ./file-form.component.scss */ "./src/app/file-form/file-form.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
     ], FileFormComponent);
     return FileFormComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/file-load-input/file-load-input.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/file-load-input/file-load-input.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<input type=\"file\" class=\"nes-input\" (change)=\"loadFile($event)\"/>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/file-load-input/file-load-input.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/file-load-input/file-load-input.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZpbGUtbG9hZC1pbnB1dC9maWxlLWxvYWQtaW5wdXQuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/file-load-input/file-load-input.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/file-load-input/file-load-input.component.ts ***!
+  \**************************************************************/
+/*! exports provided: FileLoadInputComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileLoadInputComponent", function() { return FileLoadInputComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var FileLoadInputComponent = /** @class */ (function () {
+    function FileLoadInputComponent() {
+    }
+    FileLoadInputComponent.prototype.ngOnInit = function () {
+    };
+    FileLoadInputComponent.prototype.loadFile = function (e) {
+        console.log("load file");
+        var inputValue = e.target;
+        var file = inputValue.files[0];
+        var myReader = new FileReader();
+        var me = this;
+        myReader.onload = function (e) {
+            // you can perform an action with readed data here
+            try {
+                me.loadedFileCallback(myReader.result, file.name);
+            }
+            catch (e) {
+                me.loadErrorCallback(e);
+            }
+        };
+        myReader.readAsText(file);
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], FileLoadInputComponent.prototype, "loadedFileCallback", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], FileLoadInputComponent.prototype, "loadErrorCallback", void 0);
+    FileLoadInputComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'file-load-input',
+            template: __webpack_require__(/*! ./file-load-input.component.html */ "./src/app/file-load-input/file-load-input.component.html"),
+            styles: [__webpack_require__(/*! ./file-load-input.component.scss */ "./src/app/file-load-input/file-load-input.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], FileLoadInputComponent);
+    return FileLoadInputComponent;
 }());
 
 
@@ -1073,7 +1353,7 @@ var TabbedPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" *ngIf=\"palette.length > 1\">\r\n  <div class=\"col-sm-12 nes-input text-justify palette\" [style.margin]=\"0\">\r\n    <ng-container *ngFor=\"let c of palette; index as i\">\r\n      <a *ngIf=\"i > 0\"\r\n        class=\"palette-item\"\r\n        [style.color]=\"c\"\r\n        [style.backgroundColor]=\"c\"\r\n        [style.width]=\"(100/(palette.length - 1))+'%'\"\r\n        href=\"{{href}}\"\r\n        (click)=\"selectFn(i)\"\r\n        >\r\n        <span class=\"nes-input palette-color\">_</span>\r\n      </a>\r\n    </ng-container>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row\" *ngIf=\"palette && (palette.length > (showFirst?0:1))\">\r\n  <div class=\"col-sm-12 nes-input text-justify palette\" [style.margin]=\"0\">\r\n    <ng-container *ngFor=\"let c of palette; index as i\">\r\n      <a *ngIf=\"showFirst || i > 0\"\r\n        class=\"palette-item\"\r\n        [style.color]=\"c\"\r\n        [style.backgroundColor]=\"c\"\r\n        [style.width]=\"(100/(palette.length - (showFirst?0:1)))+'%'\"\r\n        href=\"{{href}}\"\r\n        (click)=\"selectFn(i)\"\r\n        >\r\n        <span class=\"nes-input palette-color\">_</span>\r\n      </a>\r\n    </ng-container>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1117,6 +1397,10 @@ var PaletteDisplayComponent = /** @class */ (function () {
     ], PaletteDisplayComponent.prototype, "href", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Boolean)
+    ], PaletteDisplayComponent.prototype, "showFirst", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Function)
     ], PaletteDisplayComponent.prototype, "selectFn", void 0);
     PaletteDisplayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1141,7 +1425,7 @@ var PaletteDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"paletteAndTileForm\">\r\n  <div class=\"row\">\r\n    <div class=\"col-4\">\r\n      <div class=\"row\">\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Palettes</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectPalette()\">\r\n                      <ng-container *ngFor=\"let palette of state.palettes.keys()\">\r\n                        <option value=\"{{palette}}\">{{palette}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [dialogId]=\"'paletteNameDialog'\"\r\n                    [triggerBtnName]=\"'Add Palette'\"\r\n                    [dialogConfirm]=\"paletteAdder()\"\r\n                    [dialogClose]=\"paletteDialogCloser()\">\r\n                    <label for=\"paletteName\">Palette Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"paletteName\" formControlName=\"paletteName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removePalette()\">Remove Palette</button>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"colors\" class=\"text-brand\">Colors: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"colors\" class=\"form-control\" formControlName=\"selectedColor\" (change)=\"selectColor()\">\r\n                      <ng-container *ngFor=\"let color of state.palettes[paletteAndTileForm.value.selectedPalette]; index as i\">\r\n                        <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" [value]=\"(state.palettes[paletteAndTileForm.value.selectedPalette]||{})[paletteAndTileForm.value.selectedColor]||'#000001'\" (change)=\"setColor()\"/>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <label for=\"makeTransparent\" class=\"text-brand\">\r\n                    <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                    <span>Make Transparent?</span>\r\n                  </label>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                  <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Tiles</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-5 text-right\">\r\n                  <label for=\"activeTile\">Active Tile</label>\r\n                </div>\r\n                <div class=\"col-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select class=\"form-control\" id=\"activeTile\" formControlName=\"activeTile\" (change)=\"selectTile()\">\r\n                      <ng-container *ngFor=\"let tileName of state.tiles.keys()\">\r\n                        <option value=\"{{tileName}}\">{{tileName}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [dialogId]=\"'tileNameDialog'\"\r\n                    [triggerBtnName]=\"'Add Tile'\"\r\n                    [dialogConfirm]=\"tileAdder()\"\r\n                    [dialogClose]=\"tileDialogCloser()\">\r\n                    <label for=\"tileName\">Tile Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"tileName\" formControlName=\"tileName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removeTile()\">Remove Tile</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-8\">\r\n      <div class=\"showcase\">\r\n        <div class=\"nes-container with-title\">\r\n          <div class=\"title\">\r\n            <h5>Tile Canvas</h5>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-sm-5 text-right\">\r\n              <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n            </div>\r\n            <div class=\"col-sm-7\">\r\n              <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <app-pixel-canvas\r\n                [pixels]=\"(state.tiles[paletteAndTileForm.value.activeTile]||{})\"\r\n                [scale]=\"10\"\r\n                [width]=\"16\"\r\n                [height]=\"16\"\r\n                [palette]=\"(state.palettes[paletteAndTileForm.value.selectedPalette]||[])\"\r\n                [backgroundColor]=\"((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[0]||paletteAndTileForm.value.backgroundColor||'#ffffff')\"\r\n                [colorIndex]=\"((state.palettes[paletteAndTileForm.value.selectedPalette]||[])[paletteAndTileForm.value.selectedColor]||'#ffffff')\"\r\n                [trigger]=\"trigger\"\r\n              ></app-pixel-canvas>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
+module.exports = "<form [formGroup]=\"paletteAndTileForm\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n      <div class=\"row\">\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Palettes</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectPalette()\">\r\n                      <ng-container *ngFor=\"let palette of state.palettes.keys()\">\r\n                        <option value=\"{{palette}}\">{{palette}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [triggerBtnName]=\"'Add Palette'\"\r\n                    [dialogConfirm]=\"paletteAdder()\"\r\n                    [dialogClose]=\"paletteDialogCloser()\">\r\n                    <label for=\"paletteName\">Palette Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"paletteName\" formControlName=\"paletteName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removePalette()\">Remove Palette</button>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"colors\" class=\"text-brand\">Colors: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"colors\" class=\"form-control\" formControlName=\"selectedColor\" (change)=\"selectColor()\">\r\n                      <ng-container *ngFor=\"let color of activePalette; index as i\">\r\n                        <option value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <label for=\"makeTransparent\" class=\"text-brand\">\r\n                    <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                    <span>Make Transparent?</span>\r\n                  </label>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                  <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                </div>\r\n              </div>\r\n              <p></p>\r\n              <app-palette-display\r\n                [palette]=\"activePalette\"\r\n                href=\"#/cobblestone\"\r\n                showFirst=\"true\"\r\n                [selectFn]=\"colorIndexSetter()\"\r\n              ></app-palette-display>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Tiles</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-5 text-right\">\r\n                  <label for=\"selectedTile\">Active Tile</label>\r\n                </div>\r\n                <div class=\"col-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select class=\"form-control\" id=\"selectedTile\" formControlName=\"selectedTile\" (change)=\"selectTile()\">\r\n                      <ng-container *ngFor=\"let tileName of state.tiles.keys()\">\r\n                        <option value=\"{{tileName}}\">{{tileName}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [triggerBtnName]=\"'Add Tile'\"\r\n                    [dialogConfirm]=\"tileAdder()\"\r\n                    [dialogClose]=\"tileDialogCloser()\">\r\n                    <label for=\"tileName\">Tile Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"tileName\" formControlName=\"tileName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removeTile()\">Remove Tile</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n      <div class=\"showcase\">\r\n        <div class=\"nes-container with-title\">\r\n          <div class=\"title\">\r\n            <h5>Tile Canvas</h5>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-sm-5 text-right\">\r\n              <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n            </div>\r\n            <div class=\"col-sm-7\">\r\n              <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <app-pixel-canvas\r\n                [pixels]=\"activeTile\"\r\n                [scale]=\"10\"\r\n                [width]=\"16\"\r\n                [height]=\"16\"\r\n                [palette]=\"activePalette\"\r\n                [backgroundColor]=\"getBackground()\"\r\n                [colorIndex]=\"activeColorIndex\"\r\n                [trigger]=\"trigger\"\r\n                page=\"cobblestone\"\r\n              ></app-pixel-canvas>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -1181,30 +1465,52 @@ var PalettesAndTilesComponent = /** @class */ (function () {
             selectedPalette: [''],
             paletteName: [''],
             selectedColor: [''],
-            color: [''],
+            color: ['#000001'],
             makeTransparent: [false],
             tileName: [''],
-            activeTile: [''],
+            selectedTile: [''],
             backgroundColor: ['#fffffe']
         });
         this.trigger = new _trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"]("redraw-tile");
     }
-    PalettesAndTilesComponent.prototype.ngOnInit = function () { };
+    PalettesAndTilesComponent.prototype.ngOnInit = function () {
+        var me = this;
+        this.loadTrigger.addListener(function () {
+            me.updateFromFile();
+        });
+    };
+    PalettesAndTilesComponent.prototype.updateFromFile = function () {
+        var patch = {};
+        var paletteNames = this.state.palettes.keys();
+        if (paletteNames.length > 0) {
+            patch["selectedPalette"] = paletteNames[0];
+        }
+        var tileNames = this.state.tiles.keys();
+        if (tileNames.length > 0) {
+            patch["selectedTile"] = tileNames[0];
+        }
+        this.paletteAndTileForm.patchValue(patch);
+        this.selectPalette();
+        this.selectTile();
+    };
     PalettesAndTilesComponent.prototype.tileDialogCloser = function () {
         var form = this.paletteAndTileForm;
         return function () {
             form.patchValue({
-                activeTile: form.value.tileName,
                 tileName: ''
             });
         };
     };
     PalettesAndTilesComponent.prototype.tileAdder = function () {
-        var form = this.paletteAndTileForm;
         var s = this.state;
+        var me = this;
         return function () {
-            if (form.value.tileName && !s.tiles[form.value.tileName]) {
-                s.tiles[form.value.tileName] = {};
+            if (me.paletteAndTileForm.value.tileName && !me.state.tiles[me.paletteAndTileForm.value.tileName]) {
+                me.state.tiles[me.paletteAndTileForm.value.tileName] = {};
+                me.paletteAndTileForm.patchValue({
+                    selectedTile: me.paletteAndTileForm.value.tileName
+                });
+                me.activeTile = me.state.tiles[me.paletteAndTileForm.value.tileName];
             }
         };
     };
@@ -1218,66 +1524,95 @@ var PalettesAndTilesComponent = /** @class */ (function () {
         };
     };
     PalettesAndTilesComponent.prototype.paletteAdder = function () {
-        var form = this.paletteAndTileForm;
-        var s = this.state;
+        var me = this;
         return function () {
-            if (form.value.paletteName && !s.palettes[form.value.paletteName]) {
-                s.palettes[form.value.paletteName] = [];
+            if (me.paletteAndTileForm.value.paletteName && !me.state.palettes[me.paletteAndTileForm.value.paletteName]) {
+                me.state.palettes[me.paletteAndTileForm.value.paletteName] = [];
+                me.paletteAndTileForm.patchValue({
+                    selectedPalette: me.paletteAndTileForm.value.paletteName
+                });
+                me.activePalette = me.state.palettes[me.paletteAndTileForm.value.paletteName];
             }
         };
     };
     PalettesAndTilesComponent.prototype.selectPalette = function () {
-        // todo
+        this.activePalette = this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
     };
     PalettesAndTilesComponent.prototype.removePalette = function () {
-        if (this.paletteAndTileForm.value.selectedPalette) {
+        if (this.activePalette) {
             delete this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
+            this.activePalette = undefined;
         }
     };
     PalettesAndTilesComponent.prototype.selectColor = function () {
-        // todo
+        if (this.activePalette) {
+            this.activeColorIndex = this.paletteAndTileForm.value.selectedColor;
+            this.paletteAndTileForm.patchValue({
+                color: this.activePalette[this.activeColorIndex]
+            });
+        }
+    };
+    PalettesAndTilesComponent.prototype.colorIndexSetter = function () {
+        var me = this;
+        return function (index) {
+            me.paletteAndTileForm.patchValue({
+                selectedColor: index,
+            });
+            me.selectColor();
+        };
     };
     PalettesAndTilesComponent.prototype.setColor = function () {
-        if (this.paletteAndTileForm.value.selectedPalette) {
-            if (this.paletteAndTileForm.value.selectedColor) {
-                this.state.palettes[this.paletteAndTileForm.value.selectedPalette][this.paletteAndTileForm.value.selectedColor] = this.paletteAndTileForm.value.color;
+        if (this.activePalette) {
+            if (this.activeColorIndex >= 0) {
+                this.activePalette[this.activeColorIndex] = this.paletteAndTileForm.value.color;
             }
         }
     };
     PalettesAndTilesComponent.prototype.makeTransparent = function () {
-        if (this.paletteAndTileForm.value.selectedPalette) {
-            if (this.paletteAndTileForm.value.selectedColor) {
-                this.state.palettes[this.paletteAndTileForm.value.selectedPalette][this.paletteAndTileForm.value.selectedColor] = null;
+        if (this.activePalette) {
+            if (this.activeColorIndex >= 0) {
+                this.activePalette[this.activeColorIndex] = null;
             }
         }
     };
     PalettesAndTilesComponent.prototype.addColor = function () {
-        if (this.paletteAndTileForm.value.selectedPalette) {
-            this.state.palettes[this.paletteAndTileForm.value.selectedPalette].push(this.paletteAndTileForm.value.color);
+        if (this.activePalette) {
+            this.activePalette.push(this.paletteAndTileForm.value.color);
+            this.paletteAndTileForm.patchValue({
+                selectedColor: (this.activePalette.length - 1)
+            });
+            this.selectColor();
         }
     };
     PalettesAndTilesComponent.prototype.removeColor = function () {
-        if (this.paletteAndTileForm.value.selectedPalette) {
-            if (this.paletteAndTileForm.value.selectedColor) {
-                this.state.palettes[this.paletteAndTileForm.value.selectedPalette].splice(this.paletteAndTileForm.value.selectedColor, 1);
+        if (this.activePalette) {
+            if (this.activeColorIndex >= 0) {
+                this.activePalette.splice(this.activeColorIndex, 1);
             }
         }
     };
     PalettesAndTilesComponent.prototype.selectTile = function () {
-        // todo
+        this.activeTile = this.state.tiles[this.paletteAndTileForm.value.selectedTile];
     };
     PalettesAndTilesComponent.prototype.removeTile = function () {
-        if (this.paletteAndTileForm.value.activeTile) {
-            delete this.state.tiles[this.paletteAndTileForm.value.activeTile];
+        if (this.activeTile) {
+            delete this.state.tiles[this.paletteAndTileForm.value.selectedTile];
         }
     };
-    PalettesAndTilesComponent.prototype.setBackground = function () {
-        // todo
+    PalettesAndTilesComponent.prototype.getBackground = function () {
+        if (this.activePalette && this.activePalette[0]) {
+            return this.activePalette[0];
+        }
+        return this.paletteAndTileForm.value.backgroundColor;
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], PalettesAndTilesComponent.prototype, "state", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"])
+    ], PalettesAndTilesComponent.prototype, "loadTrigger", void 0);
     PalettesAndTilesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-palettes-and-tiles',
@@ -1300,7 +1635,7 @@ var PalettesAndTilesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"100%\" height=\"100%\"\r\n  [attr.viewBox]=\"'0 0 ' + (width * scale) + ' ' + (height * scale)\">\r\n  <ng-container *ngFor=\"let y of range.max(height)\">\r\n    <ng-container *ngFor=\"let x of range.max(width)\">\r\n      <a href=\"#/spritely\"\r\n        (mousedown)=\"initOutline($event)\"\r\n        (mouseover)=\"adjustOutline($event)\"\r\n        (mouseup)=\"completeOutline($event)\">\r\n        <rect\r\n          [attr.alt]=\"x + 'x' + y\"\r\n          [attr.x]=\"x * scale\"\r\n          [attr.y]=\"y * scale\"\r\n          [attr.width]=\"scale\"\r\n          [attr.height]=\"scale\"\r\n          [attr.fill]=\"palette[pixels[x + 'x' + y]]||backgroundColor\"\r\n          style=\"stroke:black;stroke-width:1;\"></rect>\r\n      </a>\r\n    </ng-container>\r\n  </ng-container>\r\n  <ng-container *ngIf=\"hasOutline()\">\r\n    <rect [attr.x]=\"startCorner.x * scale\" [attr.y]=\"startCorner.y * scale\"\r\n      [attr.width]=\"outlineDim.x * scale\" [attr.height]=\"outlineDim.y * scale\"\r\n      fill=\"none\" stroke=\"red\" stroke-width=\"1\"/>\r\n  </ng-container>\r\n</svg>\r\n"
+module.exports = "<ng-container *ngIf=\"palette && pixels\">\r\n  <svg width=\"100%\" height=\"100%\"\r\n    [attr.viewBox]=\"'0 0 ' + (width * scale) + ' ' + (height * scale)\">\r\n    <ng-container *ngFor=\"let y of range.max(height)\">\r\n      <ng-container *ngFor=\"let x of range.max(width)\">\r\n        <a [attr.href]=\"'#/' + page\"\r\n          (mousedown)=\"initOutline($event)\"\r\n          (mouseover)=\"adjustOutline($event)\"\r\n          (mouseup)=\"completeOutline($event)\">\r\n          <rect\r\n            [attr.alt]=\"x + 'x' + y\"\r\n            [attr.x]=\"x * scale\"\r\n            [attr.y]=\"y * scale\"\r\n            [attr.width]=\"scale\"\r\n            [attr.height]=\"scale\"\r\n            [attr.fill]=\"palette[pixels[x + 'x' + y]]||backgroundColor\"\r\n            style=\"stroke:black;stroke-width:1;\"></rect>\r\n        </a>\r\n      </ng-container>\r\n    </ng-container>\r\n    <ng-container *ngIf=\"hasOutline()\">\r\n      <rect [attr.x]=\"startCorner.x * scale\" [attr.y]=\"startCorner.y * scale\"\r\n        [attr.width]=\"outlineDim.x * scale\" [attr.height]=\"outlineDim.y * scale\"\r\n        fill=\"none\" stroke=\"red\" stroke-width=\"1\"/>\r\n    </ng-container>\r\n  </svg>\r\n</ng-container>\r\n"
 
 /***/ }),
 
@@ -1422,6 +1757,10 @@ var PixelCanvasComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _trigger__WEBPACK_IMPORTED_MODULE_2__["Trigger"])
     ], PixelCanvasComponent.prototype, "trigger", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], PixelCanvasComponent.prototype, "page", void 0);
     PixelCanvasComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-pixel-canvas',
@@ -1671,7 +2010,7 @@ var Range = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div class=\"showcase col-lg-12\">\r\n    <div class=\"nes-container with-title\">\r\n      <div class=\"title\">\r\n        <label>Spritely </label>\r\n      </div>\r\n      <div class=\"row small\">\r\n        <div class=\"col-lg-5\">\r\n          <accordian\r\n            [tabId]=\"'fileTab'\"\r\n            [containerId]=\"'fileContainer'\"\r\n            [initCollapsed]=\"true\"\r\n            [label]=\"'File'\">\r\n            <file-form\r\n              [handleLoad]=\"fileLoader()\"\r\n              [fileContent]=\"compileSaveData()\"\r\n              [defaultSaveFile]=\"defaultSaveFile\">\r\n            </file-form>\r\n          </accordian>\r\n          <accordian\r\n            [tabId]=\"'directionsTab'\"\r\n            [containerId]=\"'directionsContainer'\"\r\n            [initCollapsed]=\"true\"\r\n            [label]=\"'Directions'\">\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Spritely is a canvas for pixel art.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Deleting a color will unpaint all pixels that matching color</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Unpainting pixels will return them to the background color.</p>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Palette</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <label for=\"makeTransparent\" class=\"text-brand\">\r\n                        <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                        <span>\r\n                          Make Transparent?\r\n                        </span>\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"palette\" class=\"text-brand\">Colors: </label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <div class=\"nes-input nes-select\">\r\n                        <select id=\"palette\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectColor()\">\r\n                          <ng-container *ngFor=\"let color of palette; index as i\">\r\n                            <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                          </ng-container>\r\n                        </select>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                      <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                    </div>\r\n                  </div>\r\n                  <p></p>\r\n                  <app-palette-display\r\n                    [palette]=\"palette\"\r\n                    [href]=\"'#/spritely'\"\r\n                    [selectFn]=\"colorIndexSetter()\"\r\n                  ></app-palette-display>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <accordian\r\n            [tabId]=\"'transformsTab'\"\r\n            [containerId]=\"'transformsContainer'\"\r\n            [initCollapsed]=\"true\"\r\n            [label]=\"'Transforms'\">\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-12 text-center\">\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnLeft')\">Turn Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnRight')\">Turn Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipOver')\">Flip Over</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipDown')\">Flip Down</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftLeft')\">Shift Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftRight')\">Shift Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftUp')\">Shift Up</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftDown')\">Shift Down</button>\r\n              </div>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Image</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-lg-4 col-md-6\">\r\n                      <div class=\"row\">\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n                          <input type=\"number\" min=\"1\" max=\"20\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\" (change)=\"redraw()\"/>\r\n                        </div>\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"imgFile\" class=\"text-brand\">Image FileName:</label>\r\n                          <input type=\"text\" id=\"imgFile\" class=\"nes-input\" formControlName=\"imgFile\" placeholder=\"Image File\" (change)=\"redraw()\"/>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"col-8 text-right\">\r\n                      <app-pixel-painter\r\n                        [pixels]=\"pixels\"\r\n                        [scale]=\"spritelyForm.value.scale\"\r\n                        [width]=\"spritelyForm.value.width\"\r\n                        [height]=\"spritelyForm.value.height\"\r\n                        [palette]=\"palette\"\r\n                        [trigger]=\"trigger\"\r\n                        [imgFile]=\"spritelyForm.value.imgFile\"\r\n                      ></app-pixel-painter>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container\">\r\n              <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"width\" class=\"text-brand\">Width:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"height\" class=\"text-brand\">Height:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                  <app-pixel-canvas\r\n                    class=\"col-12\"\r\n                    [pixels]=\"pixels\"\r\n                    [scale]=\"10\"\r\n                    [width]=\"min(spritelyForm.value.width,64)\"\r\n                    [height]=\"min(spritelyForm.value.height,64)\"\r\n                    [palette]=\"palette\"\r\n                    [backgroundColor]=\"spritelyForm.value.backgroundColor\"\r\n                    [colorIndex]=\"spritelyForm.value.selectedPalette\"\r\n                    [trigger]=\"trigger\"\r\n                  ></app-pixel-canvas>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
+module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div class=\"showcase col-lg-12\">\r\n    <div class=\"nes-container with-title\">\r\n      <div class=\"title\">\r\n        <label>Spritely </label>\r\n      </div>\r\n      <div class=\"row small\">\r\n        <div class=\"col-lg-5\">\r\n          <accordian\r\n            [tabId]=\"'fileTab'\"\r\n            [containerId]=\"'fileContainer'\"\r\n            [initCollapsed]=\"true\"\r\n            [label]=\"'File'\">\r\n            <file-form\r\n              [defaultSaveFile]=\"defaultSaveFile\"\r\n              [prepareLoadedData]=\"fileDataReader\"\r\n              [fileLoadCallback]=\"fileLoadCallback()\"\r\n              [buildSaveData]=\"saveDataCompiler()\"\r\n              >\r\n            </file-form>\r\n          </accordian>\r\n          <accordian\r\n            [tabId]=\"'directionsTab'\"\r\n            [containerId]=\"'directionsContainer'\"\r\n            [initCollapsed]=\"true\"\r\n            [label]=\"'Directions'\">\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Spritely is a canvas for pixel art.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Deleting a color will unpaint all pixels that matching color</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Unpainting pixels will return them to the background color.</p>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Palette</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <label for=\"makeTransparent\" class=\"text-brand\">\r\n                        <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                        <span>\r\n                          Make Transparent?\r\n                        </span>\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"palette\" class=\"text-brand\">Colors: </label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <div class=\"nes-input nes-select\">\r\n                        <select id=\"palette\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectColor()\">\r\n                          <ng-container *ngFor=\"let color of palette; index as i\">\r\n                            <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                          </ng-container>\r\n                        </select>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                      <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                    </div>\r\n                  </div>\r\n                  <p></p>\r\n                  <app-palette-display\r\n                    [palette]=\"palette\"\r\n                    [href]=\"'#/spritely'\"\r\n                    [selectFn]=\"colorIndexSetter()\"\r\n                  ></app-palette-display>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <accordian\r\n            [tabId]=\"'transformsTab'\"\r\n            [containerId]=\"'transformsContainer'\"\r\n            [initCollapsed]=\"true\"\r\n            [label]=\"'Transforms'\">\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-12 text-center\">\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnLeft')\">Turn Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnRight')\">Turn Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipOver')\">Flip Over</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipDown')\">Flip Down</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftLeft')\">Shift Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftRight')\">Shift Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftUp')\">Shift Up</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftDown')\">Shift Down</button>\r\n              </div>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Image</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-lg-4 col-md-6\">\r\n                      <div class=\"row\">\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n                          <input type=\"number\" min=\"1\" max=\"20\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\" (change)=\"redraw()\"/>\r\n                        </div>\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"imgFile\" class=\"text-brand\">Image FileName:</label>\r\n                          <input type=\"text\" id=\"imgFile\" class=\"nes-input\" formControlName=\"imgFile\" placeholder=\"Image File\" (change)=\"redraw()\"/>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"col-8 text-right\">\r\n                      <app-pixel-painter\r\n                        [pixels]=\"pixels\"\r\n                        [scale]=\"spritelyForm.value.scale\"\r\n                        [width]=\"spritelyForm.value.width\"\r\n                        [height]=\"spritelyForm.value.height\"\r\n                        [palette]=\"palette\"\r\n                        [trigger]=\"trigger\"\r\n                        [imgFile]=\"spritelyForm.value.imgFile\"\r\n                      ></app-pixel-painter>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container\">\r\n              <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"width\" class=\"text-brand\">Width:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"height\" class=\"text-brand\">Height:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                  <app-pixel-canvas\r\n                    class=\"col-12\"\r\n                    [pixels]=\"pixels\"\r\n                    [scale]=\"10\"\r\n                    [width]=\"min(spritelyForm.value.width,64)\"\r\n                    [height]=\"min(spritelyForm.value.height,64)\"\r\n                    [palette]=\"palette\"\r\n                    [backgroundColor]=\"spritelyForm.value.backgroundColor\"\r\n                    [colorIndex]=\"spritelyForm.value.selectedPalette\"\r\n                    [trigger]=\"trigger\"\r\n                    page=\"spritely\"\r\n                  ></app-pixel-canvas>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -1730,82 +2069,70 @@ var SpritelyComponent = /** @class */ (function () {
         this.trigger = new _trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"]("redraw-pixels");
     }
     SpritelyComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.trigger.addListener(function (e) {
-            _this.compileSaveData();
-        });
     };
-    SpritelyComponent.prototype.fileLoader = function () {
-        var me = this;
-        return function (fileData, fileName) {
-            return me.loadFileData(fileData, fileName);
-        };
-    };
-    SpritelyComponent.prototype.loadFileData = function (fileData, fileName) {
-        var _this = this;
+    SpritelyComponent.prototype.fileDataReader = function (fileData) {
+        var out = {};
         var rows = fileData.split("\r").join("").split("\n").join("|").split("|");
         var filePalette = rows.shift().split(",");
-        this.palette.splice(0, this.palette.length);
-        filePalette.forEach(function (c) { return _this.palette.push((c == "none") ? undefined : c); });
-        Object.keys(this.pixels).forEach(function (p) {
-            delete _this.pixels[p];
+        out.palette.splice(0, out.palette.length);
+        filePalette.forEach(function (c) { return out.palette.push((c == "none") ? undefined : c); });
+        Object.keys(out.pixels).forEach(function (p) {
+            delete out.pixels[p];
         });
-        var width = 0;
+        out.width = 0;
+        out.height = rows.length;
         rows.forEach(function (row, y) {
-            width = Math.max(width, row.length);
+            out.width = Math.max(out.width, row.length);
             row.split("").forEach(function (p, x) {
                 var c = p.charCodeAt(0) - 97;
                 if (c > 0) {
                     var key = x + 'x' + y;
-                    _this.pixels[key] = c;
+                    out.pixels[key] = c;
                 }
             });
         });
-        this.defaultSaveFile = fileName;
-        var formValues = {
-            width: width,
-            height: rows.length,
-        };
-        if (this.palette[0]) {
-            formValues.makeTransparent = false;
-            formValues.backgroundColor = this.palette[0];
-        }
-        else {
-            formValues.makeTransparent = true;
-        }
-        if (this.palette.length > 1) {
-            formValues.selectedPalette = 1;
-            formValues.color = this.palette[1];
-        }
-        this.spritelyForm.patchValue(formValues);
-        this.trigger.fire();
+        return out;
     };
-    SpritelyComponent.prototype.loadFile = function ($event) {
-        var inputValue = $event.target;
-        var file = inputValue.files[0];
-        var myReader = new FileReader();
-        var loadData = this.loadFileData;
+    SpritelyComponent.prototype.fileLoadCallback = function () {
         var me = this;
-        myReader.onload = function (e) {
-            // you can perform an action with readed data here
-            loadData.call(me, myReader.result, file.name);
+        return function (load) {
+            me.palette = load.palette;
+            me.pixels = load.pixels;
+            var formValues = {
+                width: load.width,
+                height: load.length,
+            };
+            if (me.palette[0]) {
+                formValues.makeTransparent = false;
+                formValues.backgroundColor = this.palette[0];
+            }
+            else {
+                formValues.makeTransparent = true;
+            }
+            if (me.palette.length > 1) {
+                formValues.selectedPalette = 1;
+                formValues.color = this.palette[1];
+            }
+            me.spritelyForm.patchValue(formValues);
+            me.trigger.fire();
         };
-        myReader.readAsText(file);
     };
-    SpritelyComponent.prototype.compileSaveData = function () {
-        var _this = this;
-        var out = [this.palette.map(function (c) { return c ? c : "none"; }).join(",")];
-        _range__WEBPACK_IMPORTED_MODULE_4__["Range"].max(this.spritelyForm.value.height).forEach(function (y) {
-            var row = [];
-            _range__WEBPACK_IMPORTED_MODULE_4__["Range"].max(_this.spritelyForm.value.width).forEach(function (x) {
-                var key = x + 'x' + y;
-                var c = _this.pixels[key] || 0;
-                row.push(c);
+    SpritelyComponent.prototype.saveDataCompiler = function () {
+        var me = this;
+        return function () {
+            var out = [me.palette.map(function (c) { return c ? c : "none"; }).join(",")];
+            _range__WEBPACK_IMPORTED_MODULE_4__["Range"].max(me.spritelyForm.value.height).forEach(function (y) {
+                var row = [];
+                _range__WEBPACK_IMPORTED_MODULE_4__["Range"].max(me.spritelyForm.value.width).forEach(function (x) {
+                    var key = x + 'x' + y;
+                    var c = me.pixels[key] || 0;
+                    row.push(c);
+                });
+                var charCodes = row.map(function (c) { return (parseInt(c) + 97); });
+                out.push(String.fromCharCode.apply(null, charCodes));
             });
-            var charCodes = row.map(function (c) { return (parseInt(c) + 97); });
-            out.push(String.fromCharCode.apply(null, charCodes));
-        });
-        return out.join("\r\n");
+            return out.join("\r\n");
+        };
     };
     SpritelyComponent.prototype.selectColor = function () {
         this.spritelyForm.patchValue({
@@ -1907,7 +2234,7 @@ var SpritelyComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg *ngIf=\"isValid()\" width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <ng-container *ngFor=\"let y of range.max(16)\">\r\n    <ng-container *ngFor=\"let x of range.max(16)\">\r\n      <rect [attr.x]=\"x\" [attr.y]=\"y\" [attr.width]=\"1\" [attr.height]=\"1\" [attr.fill]=\"pixel(x,y)\" style=\"stroke:none;\"></rect>\r\n    </ng-container>\r\n  </ng-container>\r\n</svg>\r\n"
+module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <ng-container *ngFor=\"let y of range.max(16)\">\r\n    <ng-container *ngFor=\"let x of range.max(16)\">\r\n      <svg:rect [attr.x]=\"x * scale\" [attr.y]=\"y * scale\" [attr.width]=\"scale\"\r\n        [attr.height]=\"scale\" [attr.fill]=\"pixel(x,y)\"\r\n        style=\"stroke:none;stroke-width:0\"></svg:rect>\r\n    </ng-container>\r\n  </ng-container>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -1934,39 +2261,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TileDisplayComponent", function() { return TileDisplayComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _range__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../range */ "./src/app/range.ts");
-/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../point */ "./src/app/point.ts");
+/* harmony import */ var _tile_transformer_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tile-transformer.service */ "./src/app/tile-transformer.service.ts");
+/* harmony import */ var _range__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../range */ "./src/app/range.ts");
 
 
 
 
 var TileDisplayComponent = /** @class */ (function () {
-    function TileDisplayComponent() {
+    function TileDisplayComponent(ttf) {
+        this.ttf = ttf;
+        this.scale = 1;
         this.pixels = {};
-        this.range = _range__WEBPACK_IMPORTED_MODULE_2__["Range"];
+        this.range = _range__WEBPACK_IMPORTED_MODULE_3__["Range"];
     }
     TileDisplayComponent.prototype.ngOnInit = function () {
-        var _this = this;
         if (this.key) {
-            var attrs = this.key.split("_");
-            this.palette = this.state.palettes[attrs[1]];
-            this.transforms = attrs.splice(2);
-            this.pixels = {};
-            var pixels_1 = this.pixels;
-            var temp = this.state.tiles[attrs[0]];
-            if (temp) {
-                Object.entries(pixels_1).forEach(function (pair) {
-                    var pixel = _this.transforms.reduce(function (p, tf) {
-                        return p[tf](16, 16);
-                    }, _point__WEBPACK_IMPORTED_MODULE_3__["Point"].parse(pair[0]));
-                    var c = pair[1];
-                    pixels_1[pixel.toString()] = c;
-                });
-            }
+            var tfTile = this.ttf.buildTransformedTile(this.state, this.key);
+            this.palette = tfTile.palette;
+            this.pixels = tfTile.tile;
         }
-    };
-    TileDisplayComponent.prototype.isValid = function () {
-        return this.palette && this.pixels;
     };
     TileDisplayComponent.prototype.pixel = function (x, y) {
         return this.palette[this.pixels[x + 'x' + y] || 0];
@@ -1985,9 +2298,155 @@ var TileDisplayComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./tile-display.component.html */ "./src/app/tile-display/tile-display.component.html"),
             styles: [__webpack_require__(/*! ./tile-display.component.scss */ "./src/app/tile-display/tile-display.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_tile_transformer_service__WEBPACK_IMPORTED_MODULE_2__["TileTransformerService"]])
     ], TileDisplayComponent);
     return TileDisplayComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tile-pixels/tile-pixels.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/tile-pixels/tile-pixels.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-container *ngIf=\"palette && pixels\">\n  <ng-container *ngFor=\"let y of range.max(16)\">\n    <ng-container *ngFor=\"let x of range.max(16)\">\n      <svg:rect [attr.x]=\"x * scale\" [attr.y]=\"y * scale\" [attr.width]=\"scale\"\n        [attr.height]=\"scale\" [attr.fill]=\"pixel(x,y)\"\n        style=\"stroke:none;\"></svg:rect>\n    </ng-container>\n  </ng-container>\n</ng-container>\n"
+
+/***/ }),
+
+/***/ "./src/app/tile-pixels/tile-pixels.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/tile-pixels/tile-pixels.component.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RpbGUtcGl4ZWxzL3RpbGUtcGl4ZWxzLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/tile-pixels/tile-pixels.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/tile-pixels/tile-pixels.component.ts ***!
+  \******************************************************/
+/*! exports provided: TilePixelsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TilePixelsComponent", function() { return TilePixelsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _range__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../range */ "./src/app/range.ts");
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../point */ "./src/app/point.ts");
+
+
+
+
+var TilePixelsComponent = /** @class */ (function () {
+    function TilePixelsComponent() {
+        this.pixels = {};
+        this.range = _range__WEBPACK_IMPORTED_MODULE_2__["Range"];
+    }
+    TilePixelsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        if (this.key) {
+            var attrs = this.key.split("_");
+            this.palette = this.state.palettes[attrs[1]];
+            this.transforms = attrs.splice(2);
+            this.pixels = {};
+            var pixels_1 = this.pixels;
+            var temp = this.state.tiles[attrs[0]];
+            if (temp) {
+                Object.entries(temp).forEach(function (pair) {
+                    var pixel = _this.transforms.reduce(function (p, tf) {
+                        return p[tf](16, 16);
+                    }, _point__WEBPACK_IMPORTED_MODULE_3__["Point"].parse(pair[0]));
+                    var c = pair[1];
+                    pixels_1[pixel.toString()] = c;
+                });
+            }
+        }
+    };
+    TilePixelsComponent.prototype.pixel = function (x, y) {
+        return this.palette[this.pixels[x + 'x' + y] || 0];
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], TilePixelsComponent.prototype, "state", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], TilePixelsComponent.prototype, "key", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], TilePixelsComponent.prototype, "scale", void 0);
+    TilePixelsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'tile-pixels',
+            template: __webpack_require__(/*! ./tile-pixels.component.html */ "./src/app/tile-pixels/tile-pixels.component.html"),
+            styles: [__webpack_require__(/*! ./tile-pixels.component.scss */ "./src/app/tile-pixels/tile-pixels.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], TilePixelsComponent);
+    return TilePixelsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tile-transformer.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/tile-transformer.service.ts ***!
+  \*********************************************/
+/*! exports provided: TileTransformerService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TileTransformerService", function() { return TileTransformerService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./point */ "./src/app/point.ts");
+
+
+
+var TileTransformerService = /** @class */ (function () {
+    function TileTransformerService() {
+    }
+    TileTransformerService.prototype.buildTransformedTile = function (state, key) {
+        var out = {};
+        var attrs = key.split("_");
+        out.palette = state.palettes[attrs[1]];
+        var transforms = attrs.splice(2);
+        out.tile = {};
+        var pixels = out["tile"];
+        var temp = state.tiles[attrs[0]];
+        if (temp) {
+            Object.entries(temp).forEach(function (pair) {
+                var pixel = transforms.reduce(function (p, tf) {
+                    return p[tf](16, 16);
+                }, _point__WEBPACK_IMPORTED_MODULE_2__["Point"].parse(pair[0]));
+                var c = pair[1];
+                pixels[pixel.toString()] = c;
+            });
+        }
+        return out;
+    };
+    TileTransformerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], TileTransformerService);
+    return TileTransformerService;
 }());
 
 
@@ -2021,7 +2480,7 @@ var Tile = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-4\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <form [formGroup]=\"transForm\">\r\n          <div class=\"row\">\r\n            <div class=\"col-12\">\r\n              <tile-display\r\n                [state]=\"state\"\r\n                [key]=\"currentKey()\">\r\n              </tile-display>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <button class=\"nes-btn {{exists()?'is-error':'is-success'}}\" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectPalette()\">\r\n                  <ng-container *ngFor=\"let palette of state.palettes.keys()\">\r\n                    <option value=\"{{palette}}\">{{palette}}</option>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"activeTile\">Tiles:</label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select class=\"form-control\" id=\"activeTile\" formControlName=\"activeTile\" (change)=\"selectTile()\">\r\n                  <ng-container *ngFor=\"let tileName of state.tiles.keys()\">\r\n                    <option value=\"{{tileName}}\">{{tileName}}</option>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Flip Over</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipOver\" formControlName=\"flipOver\" value=\"flipOver\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipOver\" formControlName=\"flipOver\" value=\"\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Flip Down</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipDown\" formControlName=\"flipDown\" value=\"flipDown\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipDown\" formControlName=\"flipDown\" value=\"\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Turn Right</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnRight\" formControlName=\"turnRight\" value=\"turnRight\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnRight\" formControlName=\"turnRight\" value=\"\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Turn Left</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnLeft\" formControlName=\"turnLeft\" value=\"turnLeft\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnLeft\" formControlName=\"turnLeft\" value=\"\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-8\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <div class=\"col-3\" *ngFor=\"let key of state.transforms.keys()\">\r\n          <tile-display\r\n            [state]=\"state\"\r\n            [key]=\"key\">\r\n          </tile-display>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-4\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <form [formGroup]=\"transForm\">\r\n          <div class=\"row\">\r\n            <div class=\"col-12\" *ngIf=\"currentKey\">\r\n              <tile-display\r\n                [state]=\"state\"\r\n                [key]=\"currentKey\">\r\n              </tile-display>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <button class=\"nes-btn {{exists()?'is-error':'is-success'}}\" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"updateCurrentKey()\">\r\n                  <ng-container *ngFor=\"let palette of state.palettes.keys()\">\r\n                    <option value=\"{{palette}}\">{{palette}}</option>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"selectedTile\">Tiles:</label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select class=\"form-control\" id=\"selectedTile\" formControlName=\"selectedTile\" (change)=\"updateCurrentKey()\">\r\n                  <ng-container *ngFor=\"let tileName of state.tiles.keys()\">\r\n                    <option value=\"{{tileName}}\">{{tileName}}</option>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Flip Over</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipOver\" formControlName=\"flipOver\" value=\"flipOver\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipOver\" formControlName=\"flipOver\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Flip Down</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipDown\" formControlName=\"flipDown\" value=\"flipDown\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flipDown\" formControlName=\"flipDown\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Turn Right</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnRight\" formControlName=\"turnRight\" value=\"turnRight\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnRight\" formControlName=\"turnRight\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radios\" class=\"item\">\r\n                <label>Turn Left</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnLeft\" formControlName=\"turnLeft\" value=\"turnLeft\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turnLeft\" formControlName=\"turnLeft\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-8\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-3\" *ngFor=\"let key of state.transforms.keys()\">\r\n            <button (click)=\"setCurrentKey(key)\">\r\n              <tile-display\r\n                [state]=\"state\"\r\n                [key]=\"key\">\r\n              </tile-display>\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2049,29 +2508,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../tile-transformer.service */ "./src/app/tile-transformer.service.ts");
+/* harmony import */ var _trigger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../trigger */ "./src/app/trigger.ts");
+
+
 
 
 
 var TransformedTilesComponent = /** @class */ (function () {
-    function TransformedTilesComponent(fb) {
+    function TransformedTilesComponent(fb, ttf) {
         this.fb = fb;
+        this.ttf = ttf;
         this.transForm = this.fb.group({
             selectedPalette: [''],
-            activeTile: [''],
+            selectedTile: [''],
             flipOver: [''],
             flipDown: [''],
             turnRight: [''],
             turnLeft: ['']
         });
+        this.displayTrigger = new _trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"]("update-tile-display");
     }
     TransformedTilesComponent_1 = TransformedTilesComponent;
     TransformedTilesComponent.prototype.ngOnInit = function () {
+        var me = this;
+        this.loadTrigger.addListener(function () {
+            me.updateFromFile();
+        });
     };
-    TransformedTilesComponent.prototype.currentKey = function () {
-        var palette = this.state.palettes[this.transForm.value.selectedPalette];
+    TransformedTilesComponent.prototype.updateFromFile = function () {
+        var patch = {};
+        var paletteNames = this.state.palettes.keys();
+        if (paletteNames.length > 0) {
+            patch["selectedPalette"] = paletteNames[0];
+        }
+        var tileNames = this.state.tiles.keys();
+        if (tileNames.length > 0) {
+            patch["selectedTile"] = tileNames[0];
+        }
+        this.transForm.patchValue(patch);
+        this.updateCurrentKey();
+        console.log("updated from file");
+    };
+    TransformedTilesComponent.prototype.getCurrentKey = function () {
+        console.log("getting current key");
+        var paletteName = this.transForm.value.selectedTile;
+        var palette = this.state.palettes[paletteName];
         if (palette) {
-            var tile = this.state.tiles[this.transForm.value.activeTile];
+            console.log("palette");
+            console.log(palette);
+            var tileName = this.transForm.value.selectedTile;
+            var tile = this.state.tiles[tileName];
             if (tile) {
+                console.log("tile");
+                console.log(tile);
                 var values_1 = this.transForm.value;
                 var tfs = TransformedTilesComponent_1.tfLabels.map(function (label) {
                     return values_1[label];
@@ -2079,23 +2569,32 @@ var TransformedTilesComponent = /** @class */ (function () {
                     return tf.length > 0;
                 });
                 tfs.sort();
-                return [tile, palette].concat(tfs).join("_");
+                var key = [tileName, paletteName].concat(tfs).join("_");
+                console.log("key");
+                console.log(key);
+                return key;
             }
         }
     };
+    TransformedTilesComponent.prototype.updateCurrentKey = function () {
+        this.currentKey = this.getCurrentKey();
+        console.log("updated current key");
+        console.log(this.currentKey);
+    };
+    TransformedTilesComponent.prototype.setCurrentKey = function () {
+    };
     TransformedTilesComponent.prototype.exists = function () {
-        var key = this.currentKey();
-        if (key) {
-            return this.state.transforms[key];
+        if (this.currentKey) {
+            return this.state.transforms[this.currentKey];
         }
     };
     TransformedTilesComponent.prototype.toggle = function () {
-        var key = this.currentKey();
-        if (key) {
+        var key = this.currentKey;
+        if (key && this.state.transforms[key]) {
             delete this.state.transforms[key];
         }
         else {
-            this.state.transforms[key] = [];
+            this.state.transforms[key] = this.ttf.buildTransformedTile(this.state, key);
         }
     };
     var TransformedTilesComponent_1;
@@ -2104,13 +2603,17 @@ var TransformedTilesComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], TransformedTilesComponent.prototype, "state", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"])
+    ], TransformedTilesComponent.prototype, "loadTrigger", void 0);
     TransformedTilesComponent = TransformedTilesComponent_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-transformed-tiles',
             template: __webpack_require__(/*! ./transformed-tiles.component.html */ "./src/app/transformed-tiles/transformed-tiles.component.html"),
             styles: [__webpack_require__(/*! ./transformed-tiles.component.scss */ "./src/app/transformed-tiles/transformed-tiles.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__["TileTransformerService"]])
     ], TransformedTilesComponent);
     return TransformedTilesComponent;
 }());
@@ -2140,6 +2643,9 @@ var Trigger = /** @class */ (function () {
         this.listeners.push(fn);
         this.elem.addEventListener(this.eventName, fn);
         return len;
+    };
+    Trigger.prototype.fireWithDetail = function (detail) {
+        this.elem.dispatchEvent(new CustomEvent(this.eventName, { detail: detail }));
     };
     Trigger.prototype.fire = function () {
         this.elem.dispatchEvent(new Event(this.eventName));
