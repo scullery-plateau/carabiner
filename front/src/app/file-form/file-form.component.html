@@ -1,25 +1,25 @@
 <form [formGroup]="fileForm">
   <div class="row">
-    <div class="col-lg-12 text-center">
+    <div class="col-md-6 text-center">
       <dialog-wrapper
         triggerBtnName="Load File"
         [dialogConfirm]="fileLoadConfirmer()"
-        [dialogClose]="() => {loadedFileData = undefined}">
+        [dialogClose]="fileLoadCanceler()">
         <label>Load File:</label>
-        <file-load-input [loadedFileCallback]="tempDataReader()" [loadErrorCallback]="(e) => {loadError = e.message}"></file-load-input>
+        <file-load-input [loadedFileCallback]="tempDataReader()" [loadErrorCallback]="loadErrorHandler()"></file-load-input>
         <p *ngIf="loadError" class="note nes-text is-error">{{loadError}}</p>
       </dialog-wrapper>
     </div>
-    <div class="col-lg-12 text-center">
+    <div class="col-md-6 text-center">
       <dialog-wrapper
         triggerBtnName="Save File"
-        [dialogOpen]="() => {fileContent = buildSaveData()}"
-        [dialogConfirm]="() => {dlRef.invokeDownload()}">
+        [dialogOpen]="saveDialogOpener()"
+        [dialogConfirm]="saveDialogConfirmer()">
         <label for="saveFile">Save:</label>
         <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
-        <doanload-link
-          [getSaveFileName]="() => {fileForm.value.saveFile || defaultSaveFile}"
-          [getSaveFileContent]="() => {fileContent}"></doanload-link>
+        <download-link
+          [getSaveFileName]="saveFileNameGetter()"
+          [saveDataUpdateTrigger]="saveDataUpdateTrigger"></download-link>
       </dialog-wrapper>
     </div>
   </div>

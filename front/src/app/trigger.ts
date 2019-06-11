@@ -14,6 +14,10 @@ export class Trigger {
     return len;
   }
 
+  fireWithDetail(detail) {
+    this.elem.dispatchEvent(new CustomEvent(this.eventName,{detail:detail}));
+  }
+
   fire() {
     this.elem.dispatchEvent(new Event(this.eventName));
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
+import { Trigger } from '../trigger';
 
 @Component({
   selector: 'download-link',
@@ -14,23 +15,27 @@ export class DownloadLinkComponent implements OnInit {
   getSaveFileName: any;
 
   @Input()
-  getSaveFileContent: any;
+  saveDataUpdateTrigger: Trigger;
 
   content: any;
 
   constructor(private sanitizer:DomSanitizer) { }
 
   ngOnInit() {
+    let me = this;
+    this.saveDataUpdateTrigger.addListener(function(e){
+      console.log("init download link");
+      me.content = me.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([e.detail], {type: 'text/plain'})));
+    })
   }
 
   invokeDownload() {
     let a = this.dlRef.nativeElement as HTMLAnchorElement;
-    this.content = this.sanitizeContent();
     a.click();
   }
 
   sanitizeContent() {
-    return this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([this.getSaveFileContent()], {type: 'text/plain'})));
+    return
   }
 
 }

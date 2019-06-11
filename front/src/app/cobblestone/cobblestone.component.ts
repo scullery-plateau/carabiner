@@ -14,20 +14,42 @@ export class CobblestoneComponent implements OnInit {
     palettes:{},
     tiles:{},
     transforms:{},
-    map:{}
+    map:{},
+    pages:[]
   };
 
   defaultFileName: string;
 
   loadTrigger: Trigger = new Trigger("on-file-load");
 
+
+
   constructor(private fb: FormBuilder, private cobblestoneService: CobblestoneService) { }
 
   ngOnInit() {
   }
 
-  compileSaveData() {
-    return JSON.stringify(this.state);
+  saveDataCompiler() {
+    let me = this;
+    return function() {
+      return JSON.stringify(me.state);
+    }
+  }
+
+  fileLoadHandler(fileData) {
+    return JSON.parse(fileData);
+  }
+
+  fileLoadCallback() {
+    let me = this;
+    return function(json) {
+      ['palettes','tiles','transforms','map'].forEach((key) => {
+        Object.entries(json[key]).forEach((entry) => {
+          me.state[key][entry[0]] = entry[1];
+        });
+      });
+      me.loadTrigger.fire();
+    }
   }
 
   fileLoader() {
@@ -36,7 +58,6 @@ export class CobblestoneComponent implements OnInit {
       console.log("loading cobblestone file");
       me.defaultFileName = fileName;
       let json = JSON.parse(fileData);
-      console.log(json);
       ['palettes','tiles','transforms','map'].forEach((key) => {
         Object.entries(json[key]).forEach((entry) => {
           me.state[key][entry[0]] = entry[1];

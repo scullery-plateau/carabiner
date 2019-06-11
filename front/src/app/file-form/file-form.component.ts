@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { DownloadLinkComponent } from '../download-link/download-link.component'
+import { Trigger } from '../trigger'
 
 @Component({
   selector: 'file-form',
@@ -25,9 +26,6 @@ export class FileFormComponent implements OnInit {
   fileLoadCallback: any;
 
   @Input()
-  cancelFileLoad: any;
-
-  @Input()
   buildSaveData: any;
 
   loadedFileData: string;
@@ -35,6 +33,8 @@ export class FileFormComponent implements OnInit {
   loadError: any;
 
   fileContent: string;
+
+  saveDataUpdateTrigger: Trigger = new Trigger("update-save-data");
 
   constructor(private fb: FormBuilder) { }
 
@@ -67,4 +67,39 @@ export class FileFormComponent implements OnInit {
     }
   }
 
+  fileLoadCanceler() {
+    let me = this;
+    return function() {
+      me.loadedFileData = undefined;
+    }
+  }
+
+  loadErrorHandler() {
+    let me = this;
+    return function(e) {
+      me.loadError = e.message;
+    }
+  }
+
+  saveDialogOpener() {
+    let me = this;
+    return function() {
+      console.log("opening save dialog")
+      me.saveDataUpdateTrigger.fireWithDetail(me.buildSaveData());
+    }
+  }
+
+  saveDialogConfirmer() {
+    let me = this;
+    return function() {
+      me.dlRef.invokeDownload();
+    }
+  }
+
+  saveFileNameGetter() {
+    let me = this;
+    return function() {
+      return me.fileForm.value.saveFile || me.defaultSaveFile;
+    }
+  }
 }

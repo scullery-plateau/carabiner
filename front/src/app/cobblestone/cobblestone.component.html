@@ -6,8 +6,9 @@
   <tab-child label="File">
     <file-form
       [defaultSaveFile]="defaultSaveFile"
-      [handleLoad]="fileLoader()"
-      [fileContent]="compileSaveData()"
+      [prepareLoadedData]="fileLoadHandler"
+      [fileLoadCallback]="fileLoadCallback()"
+      [buildSaveData]="saveDataCompiler()"
       >
     </file-form>
   </tab-child>
@@ -27,3 +28,4 @@
   -->
 </tabbed-panel>
 <div class="row"><div class="col-1"><p></p></div></div>
+<div class="print-cobblestone">This will be printed</div>

@@ -35,82 +35,73 @@ export class SpritelyComponent implements OnInit {
   constructor(private fb: FormBuilder, private sanitizer:DomSanitizer) { }
 
   ngOnInit() {
-    this.trigger.addListener(e => {
-      this.compileSaveData();
-    });
   }
 
-  fileLoader() {
-    var me = this;
-    return function(fileData,fileName) {
-      return me.loadFileData(fileData,fileName);
-    }
-  }
-
-  private loadFileData(fileData,fileName) {
+  fileDataReader(fileData) {
+    let out: any = {};
     let rows = fileData.split("\r").join("").split("\n").join("|").split("|");
     let filePalette = rows.shift().split(",");
-    this.palette.splice(0,this.palette.length);
-    filePalette.forEach(c => this.palette.push((c == "none")?undefined:c));
-    Object.keys(this.pixels).forEach(p => {
-      delete this.pixels[p];
+    out.palette.splice(0,out.palette.length);
+    filePalette.forEach(c => out.palette.push((c == "none")?undefined:c));
+    Object.keys(out.pixels).forEach(p => {
+      delete out.pixels[p];
     })
-    let width = 0;
+    out.width = 0;
+    out.height = rows.length;
     rows.forEach((row,y) => {
-      width = Math.max(width,row.length);
+      out.width = Math.max(out.width,row.length);
       row.split("").forEach((p,x) => {
         let c = p.charCodeAt(0) - 97;
         if (c > 0) {
           let key = x + 'x' + y;
-          this.pixels[key] = c;
+          out.pixels[key] = c;
         }
       });
     });
-    this.defaultSaveFile = fileName;
-    let formValues: any = {
-      width:width,
-      height:rows.length,
-    };
-    if (this.palette[0]) {
-      formValues.makeTransparent = false;
-      formValues.backgroundColor = this.palette[0];
-    } else {
-      formValues.makeTransparent = true;
-    }
-    if (this.palette.length > 1) {
-      formValues.selectedPalette = 1;
-      formValues.color = this.palette[1];
-    }
-    this.spritelyForm.patchValue(formValues);
-    this.trigger.fire();
+
+    return out;
   }
 
-  loadFile($event) : void {
-    let inputValue = $event.target;
-    let file:File = inputValue.files[0];
-    let myReader:FileReader = new FileReader();
-    let loadData = this.loadFileData;
+  fileLoadCallback() {
     let me = this;
-    myReader.onload = function(e){
-      // you can perform an action with readed data here
-      loadData.call(me, myReader.result,file.name);
+    return function(load) {
+      me.palette = load.palette;
+      me.pixels = load.pixels;
+      let formValues: any = {
+        width:load.width,
+        height:load.length,
+      };
+      if (me.palette[0]) {
+        formValues.makeTransparent = false;
+        formValues.backgroundColor = this.palette[0];
+      } else {
+        formValues.makeTransparent = true;
+      }
+      if (me.palette.length > 1) {
+        formValues.selectedPalette = 1;
+        formValues.color = this.palette[1];
+      }
+      me.spritelyForm.patchValue(formValues);
+      me.trigger.fire();
     }
-    myReader.readAsText(file);
   }
 
-  compileSaveData() {
-    let out = [this.palette.map(c => c?c:"none").join(",")];
-    Range.max(this.spritelyForm.value.height).forEach(y => {
-      let row = [];
-      Range.max(this.spritelyForm.value.width).forEach(x => {
-        let key = x + 'x' + y;
-        let c = this.pixels[key] || 0;
-        row.push(c);
-      })
-      let charCodes = row.map((c) => (parseInt(c) + 97));
-      out.push(String.fromCharCode.apply(null,charCodes));
-    });
-    return out.join("\r\n");
+  saveDataCompiler() {
+    let me = this;
+    return function() {
+      let out = [me.palette.map(c => c?c:"none").join(",")];
+      Range.max(me.spritelyForm.value.height).forEach(y => {
+        let row = [];
+        Range.max(me.spritelyForm.value.width).forEach(x => {
+          let key = x + 'x' + y;
+          let c = me.pixels[key] || 0;
+          row.push(c);
+        })
+        let charCodes = row.map((c) => (parseInt(c) + 97));
+        out.push(String.fromCharCode.apply(null,charCodes));
+      });
+      return out.join("\r\n");
+    }
   }
 
   selectColor() {

@@ -13,8 +13,9 @@
             [label]="'File'">
             <file-form
               [defaultSaveFile]="defaultSaveFile"
-              [handleLoad]="fileLoader()"
-              [fileContent]="compileSaveData()"
+              [prepareLoadedData]="fileDataReader"
+              [fileLoadCallback]="fileLoadCallback()"
+              [buildSaveData]="saveDataCompiler()"
               >
             </file-form>
           </accordian>
