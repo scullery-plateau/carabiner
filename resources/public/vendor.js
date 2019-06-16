@@ -23806,7 +23806,7 @@ function getCtypeForTag(tag) {
     switch (tag.toLowerCase()) {
         case 'br':
             return 'lb';
-        case 'img':
+        case 'carabiner.common.img':
             return 'image';
         default:
             return "x-" + tag;
@@ -24113,7 +24113,7 @@ function getTypeForTag(tag) {
         case 'i':
         case 'u':
             return 'fmt';
-        case 'img':
+        case 'carabiner.common.img':
             return 'image';
         case 'a':
             return 'link';

@@ -2,7 +2,7 @@
   (:require
     [clojure.xml :as xml]
     [clojure.java.io :as io]
-    [carabiner.img :as img]
+    [carabiner.common.img :as img]
     [clojure.edn :as edn])
   (:import (java.util Base64)
            (java.io ByteArrayOutputStream ByteArrayInputStream)))
