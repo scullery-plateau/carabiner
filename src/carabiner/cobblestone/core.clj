@@ -1,6 +1,6 @@
 (ns carabiner.cobblestone.core)
 
-(defn load-file [load-data]
+(defn load-cobblestone-file [load-data]
   ;; todo
   )
 

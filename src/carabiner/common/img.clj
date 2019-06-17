@@ -1,6 +1,8 @@
 (ns carabiner.common.img
+  (:require [carabiner.common.base64 :as b64]
+            [clojure.xml :as xml])
   (:import (org.apache.batik.transcoder.image PNGTranscoder JPEGTranscoder)
-           (java.io InputStream OutputStream)
+           (java.io InputStream OutputStream ByteArrayInputStream ByteArrayOutputStream)
            (org.apache.batik.transcoder TranscoderInput TranscoderOutput)))
 
 (def ^:private types {:jpeg [(JPEGTranscoder.) {} {:height  [PNGTranscoder/KEY_HEIGHT float]
@@ -20,3 +22,15 @@
     (.transcode transcoder
                 (TranscoderInput. input)
                 (TranscoderOutput. out))))
+
+(defn svg-to-bytes [svg]
+  (let [xml (with-out-str (xml/emit svg))
+        in-stream (ByteArrayInputStream. (.getBytes xml))
+        out (ByteArrayOutputStream.)]
+    (rasterize :png {} in-stream out)
+    (.flush out)
+    (.toByteArray out)))
+
+(defn svg-to-64 [svg]
+  (b64/encode-stream (ByteArrayInputStream. (svg-to-bytes svg))))
+

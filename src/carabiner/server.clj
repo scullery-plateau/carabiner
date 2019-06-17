@@ -14,7 +14,7 @@
             [carabiner.spritely.schema :as spc]
             [carabiner.cobblestone.core :as cb]
             [carabiner.cobblestone.schema :as cbs]
-            ))
+            [carabiner.common.img :as img]))
 
 (defn- build-svg [code]
   (let [docs (j2e (json/parse-string code keyword))
@@ -24,7 +24,7 @@
 (defn- build-img [code]
   (let [docs (j2e (json/parse-string code keyword))
         svgs (core/build-svgs-from-tile-docs docs)]
-    (map core/svg-to-64 (vals svgs))))
+    (map img/svg-to-64 (vals svgs))))
 
 (defn apply-headers [response headers]
   (reduce-kv #(resp/header %1 %2 %3) response headers))
@@ -84,29 +84,29 @@
                       :responses  {200 {:schema s/Any}}
                       :handler    (build-download-handler func content-type header-fn)}}))))
 
-(defn build-downloadable [path schema compressor-fn downloader-fn content-type]
-  (api/context
-    path []
-    (sweet/resource
-      {:description ""
-       :post        {:summary    ""
-                     :parameters {:body-params schema}
-                     :consumes   ["application/json"]
-                     :produces   ["text/plain"]
-                     :responses  {200 {:schema s/Str}}
-                     :handler    (fn [{body :body}]
-                                   (let [args (json/parse-string (slurp body) keyword)]
-                                     (http/content-type
-                                       (http/ok (compressor-fn args))
-                                       "text/plain")))}
-       :get         {:summary    ""
-                     :parameters {:query-params {:base64 s/Str}}
-                     :produces   [content-type]
-                     :responses  {200 {:schema s/Any}}
-                     :handler    (fn [{{:keys [base64]} :query-params}]
-                                   (http/content-type
-                                     (http/ok (downloader-fn base64))
-                                     content-type))}})))
+(defn build-downloadable
+  ([path schema compressor-fn downloader-fn content-type]
+    (build-downloadable path schema compressor-fn downloader-fn content-type default-header-fn))
+  ([path schema compressor-fn downloader-fn content-type header-fn]
+   (api/context
+     path []
+     (sweet/resource
+       {:description ""
+        :post        {:summary    ""
+                      :parameters {:body-params schema}
+                      :consumes   ["application/json"]
+                      :produces   ["text/plain"]
+                      :responses  {200 {:schema s/Str}}
+                      :handler    (fn [{body :body}]
+                                    (let [args (json/parse-string (slurp body) keyword)]
+                                      (http/content-type
+                                        (http/ok (compressor-fn args))
+                                        "text/plain")))}
+        :get         {:summary    ""
+                      :parameters {:query-params {:base64 s/Str}}
+                      :produces   [content-type]
+                      :responses  {200 {:schema s/Any}}
+                      :handler    (build-download-handler downloader-fn content-type header-fn)}}))))
 
 (defn build-app []
   (-> {:swagger
@@ -122,14 +122,14 @@
         (api/context
           "/spritely" []
           :tags ["spritely"]
-          (build-route "/load" sp/load-file spc/SpritelyData)
+          (build-route "/load" sp/load-spritely-file spc/SpritelyData)
           (build-compressor "/save" sp/compress-data spc/SpritelyData)
           (build-download "/savedata" sp/build-save-file "text/plain")
           (build-download "/saveimg" sp/build-image "image/png"))
         (api/context
           "/cobblestone" []
           :tags ["cobblestone"]
-          (build-route "/load" cb/load-file cbs/CobblestoneData)
+          (build-route "/load" cb/load-cobblestone-file cbs/CobblestoneData)
           (build-downloadable "/tile" cbs/TileData cb/compress-data cb/build-tile-image "image/png")
           (build-compressor "/save" cb/compress-data cbs/CobblestoneData)
           (build-download "/data" cb/build-save-file "text/plain")
@@ -138,8 +138,7 @@
         (sweet/GET "/" [] (resp/redirect "/index.html")))
       (sweet/routes
         (route/resources "/")
-        (route/not-found "404 Not Found")))
-  )
+        (route/not-found "404 Not Found"))))
 
 (defn -main [& [port]]
   (let [my-app (build-app)
