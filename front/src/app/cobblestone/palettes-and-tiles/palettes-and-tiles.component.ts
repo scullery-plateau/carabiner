@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import {Trigger} from "../trigger";
+import {Trigger} from "../../util/trigger";
 
 @Component({
   selector: 'app-palettes-and-tiles',

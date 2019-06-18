@@ -13,6 +13,9 @@ export class DialogWrapperComponent implements OnInit {
   triggerBtnName: string;
 
   @Input()
+  allowConfirm: boolean = true;
+
+  @Input()
   dialogConfirm: any;
 
   @Input()

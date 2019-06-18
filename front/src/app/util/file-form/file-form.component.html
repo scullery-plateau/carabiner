@@ -13,13 +13,16 @@
     <div class="col-md-6 text-center">
       <dialog-wrapper
         triggerBtnName="Save File"
+        [allowConfirm]="readyToSave"
         [dialogOpen]="saveDialogOpener()"
         [dialogConfirm]="saveDialogConfirmer()">
         <label for="saveFile">Save:</label>
         <input type="text" id="saveFile" class="nes-input" formControlName="saveFile" placeholder="Save File"/>
         <download-link
           [getSaveFileName]="saveFileNameGetter()"
-          [saveDataUpdateTrigger]="saveDataUpdateTrigger"></download-link>
+          [saveDataUpdateTrigger]="saveDataUpdateTrigger"
+          [pathPrefix]="saveRoute">
+        </download-link>
       </dialog-wrapper>
     </div>
   </div>

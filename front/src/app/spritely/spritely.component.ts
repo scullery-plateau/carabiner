@@ -1,10 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import {Trigger} from "../util/trigger";
+
+import {Observable, of} from "rxjs";
+
+import {Point} from "../util/point";
 import {Range} from "../util/range";
-import {DomSanitizer} from '@angular/platform-browser';
+import {Trigger} from "../util/trigger";
+
+import {SpritelyData} from "./spritely-data";
+import {SpritelyFileService} from "./spritely-file.service";
 import {Transforms} from "./transform";
-import {Point} from "../util/point"
 
 @Component({
   selector: 'app-spritely',
@@ -32,34 +37,13 @@ export class SpritelyComponent implements OnInit {
 
   defaultSaveFile: string;
 
-  constructor(private fb: FormBuilder, private sanitizer:DomSanitizer) { }
+  constructor(private fb: FormBuilder, private sfs: SpritelyFileService) { }
 
   ngOnInit() {
   }
 
-  fileDataReader(fileData) {
-    let out: any = {};
-    let rows = fileData.split("\r").join("").split("\n").join("|").split("|");
-    let filePalette = rows.shift().split(",");
-    out.palette.splice(0,out.palette.length);
-    filePalette.forEach(c => out.palette.push((c == "none")?undefined:c));
-    Object.keys(out.pixels).forEach(p => {
-      delete out.pixels[p];
-    })
-    out.width = 0;
-    out.height = rows.length;
-    rows.forEach((row,y) => {
-      out.width = Math.max(out.width,row.length);
-      row.split("").forEach((p,x) => {
-        let c = p.charCodeAt(0) - 97;
-        if (c > 0) {
-          let key = x + 'x' + y;
-          out.pixels[key] = c;
-        }
-      });
-    });
-
-    return out;
+  fileDataReader(fileData): Observable<SpritelyData> {
+    return this.sfs.parseLoadData(fileData);
   }
 
   fileLoadCallback() {
@@ -73,7 +57,7 @@ export class SpritelyComponent implements OnInit {
       };
       if (me.palette[0]) {
         formValues.makeTransparent = false;
-        formValues.backgroundColor = this.palette[0];
+        formValues.backgroundColor = me.palette[0];
       } else {
         formValues.makeTransparent = true;
       }
@@ -88,19 +72,13 @@ export class SpritelyComponent implements OnInit {
 
   saveDataCompiler() {
     let me = this;
-    return function() {
-      let out = [me.palette.map(c => c?c:"none").join(",")];
-      Range.max(me.spritelyForm.value.height).forEach(y => {
-        let row = [];
-        Range.max(me.spritelyForm.value.width).forEach(x => {
-          let key = x + 'x' + y;
-          let c = me.pixels[key] || 0;
-          row.push(c);
-        })
-        let charCodes = row.map((c) => (parseInt(c) + 97));
-        out.push(String.fromCharCode.apply(null,charCodes));
+    return function(): Observable<string> {
+      return this.sfs.compressSaveData({
+        pixels:me.pixels,
+        palette:me.palette,
+        width:me.spritelyForm.value.width,
+        height:me.spritelyForm.value.height
       });
-      return out.join("\r\n");
     }
   }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import {CobblestoneService} from "../cobblestone.service";
 import { Trigger } from "../util/trigger"
 
 @Component({
@@ -22,9 +21,7 @@ export class CobblestoneComponent implements OnInit {
 
   loadTrigger: Trigger = new Trigger("on-file-load");
 
-
-
-  constructor(private fb: FormBuilder, private cobblestoneService: CobblestoneService) { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
   }

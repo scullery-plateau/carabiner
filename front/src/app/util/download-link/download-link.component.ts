@@ -17,6 +17,9 @@ export class DownloadLinkComponent implements OnInit {
   @Input()
   saveDataUpdateTrigger: Trigger;
 
+  @Input()
+  pathPrefix: string;
+
   content: any;
 
   constructor(private sanitizer:DomSanitizer) { }
@@ -25,17 +28,14 @@ export class DownloadLinkComponent implements OnInit {
     let me = this;
     this.saveDataUpdateTrigger.addListener(function(e){
       console.log("init download link");
-      me.content = me.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(new Blob([e.detail], {type: 'text/plain'})));
+      let a = me.dlRef.nativeElement as HTMLAnchorElement;
+      a.href = me.pathPrefix + e.detail;
     })
   }
 
   invokeDownload() {
     let a = this.dlRef.nativeElement as HTMLAnchorElement;
     a.click();
-  }
-
-  sanitizeContent() {
-    return
   }
 
 }

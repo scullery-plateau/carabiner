@@ -28,33 +28,35 @@ export class FileFormComponent implements OnInit {
   @Input()
   buildSaveData: any;
 
-  loadedFileData: string;
+  @Input()
+  saveRoute:any;
+
+  loadedFileData: any;
 
   loadError: any;
 
-  fileContent: string;
-
   saveDataUpdateTrigger: Trigger = new Trigger("update-save-data");
+
+  readyToSave: boolean = false;
 
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    let me = this;
+    this.saveDataUpdateTrigger.addListener(function(e){
+      me.readyToSave = true;
+    })
   }
 
   tempDataReader() {
     let me = this;
     return function(fileData,fileName) {
-      me.loadedFileData = me.prepareLoadedData(fileData);
-      me.fileForm.patchValue({
-        saveFile:fileName
+      me.prepareLoadedData(fileData).subscribe((data) => {
+        me.loadedFileData = data;
+        me.fileForm.patchValue({
+          saveFile:fileName
+        });
       });
-    }
-  }
-
-  saveDataPreparer() {
-    let me = this;
-    return function() {
-      me.fileContent = me.buildSaveData();
     }
   }
 
@@ -85,7 +87,9 @@ export class FileFormComponent implements OnInit {
     let me = this;
     return function() {
       console.log("opening save dialog")
-      me.saveDataUpdateTrigger.fireWithDetail(me.buildSaveData());
+      me.buildSaveData().subscribe((detail) => {
+        me.saveDataUpdateTrigger.fireWithDetail(detail);
+      })
     }
   }
 
