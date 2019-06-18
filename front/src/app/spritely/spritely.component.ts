@@ -82,6 +82,19 @@ export class SpritelyComponent implements OnInit {
     }
   }
 
+  saveRouteBuilder() {
+    let me = this;
+    return function(filename,base64): string {
+      let args: any = {
+        base64:base64,
+      };
+      if (filename) {
+        args.filename = filename;
+      }
+      return "/spritely/savedata?" + (new URLSearchParams(args)).toString();
+    }
+  }
+
   selectColor() {
     this.spritelyForm.patchValue({
       color:this.palette[this.spritelyForm.value.selectedPalette]

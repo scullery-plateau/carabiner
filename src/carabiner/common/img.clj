@@ -13,7 +13,7 @@
                                                             :width   [JPEGTranscoder/KEY_WIDTH float]}]})
 
 (defn rasterize [type opts ^InputStream input ^OutputStream out]
-  (when-not
+  (when-not (contains? types type)
     (throw (IllegalArgumentException. (str "'" type "' is not a valid type."))))
   (let [[transcoder default-opts hints-map] (types type)]
     (doseq [[option value] (merge default-opts opts)]

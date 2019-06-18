@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import { DownloadLinkComponent } from '../download-link/download-link.component'
 import { Trigger } from '../trigger'
+import { DownloadLink } from "../download-link";
 
 @Component({
   selector: 'file-form',
@@ -9,8 +9,6 @@ import { Trigger } from '../trigger'
   styleUrls: ['./file-form.component.scss']
 })
 export class FileFormComponent implements OnInit {
-
-  @ViewChild(DownloadLinkComponent) dlRef: DownloadLinkComponent;
 
   fileForm: FormGroup = this.fb.group({
     saveFile:['']
@@ -38,6 +36,8 @@ export class FileFormComponent implements OnInit {
   saveDataUpdateTrigger: Trigger = new Trigger("update-save-data");
 
   readyToSave: boolean = false;
+
+  downloadLink: DownloadLink = new DownloadLink();
 
   constructor(private fb: FormBuilder) { }
 
@@ -87,16 +87,20 @@ export class FileFormComponent implements OnInit {
     let me = this;
     return function() {
       console.log("opening save dialog")
-      me.buildSaveData().subscribe((detail) => {
-        me.saveDataUpdateTrigger.fireWithDetail(detail);
-      })
     }
   }
 
   saveDialogConfirmer() {
     let me = this;
     return function() {
-      me.dlRef.invokeDownload();
+      me.buildSaveData().subscribe((detail) => {
+        let filename = me.fileForm.value.saveFile;
+        if (filename) {
+          me.downloadLink.setFileName(filename);
+        }
+        me.downloadLink.setPath(me.saveRoute(filename,detail));
+        me.downloadLink.invokeDownload();
+      });
     }
   }
 
