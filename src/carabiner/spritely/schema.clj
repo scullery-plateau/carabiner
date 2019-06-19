@@ -9,4 +9,6 @@
 
 (s/defschema SpritelyData
   {:pixels {Coordinate s/Int}
-   :palette [PaletteColor]})
+   :palette [PaletteColor]
+   :width s/Int
+   :height s/Int})

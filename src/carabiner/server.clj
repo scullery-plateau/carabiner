@@ -47,29 +47,46 @@
                                         (http/ok (func args))
                                         "application/json")))}}))))
 
+(defn build-post [func schema]
+  {:post        {:summary    ""
+                 :parameters {:body-params schema}
+                 :consumes   ["application/json"]
+                 :produces   ["text/plain"]
+                 :responses  {200 {:schema s/Str}}
+                 :handler    (fn [{obj :body-params}]
+                               (http/content-type
+                                 (http/ok (func obj))
+                                 "text/plain"))}})
+
+
 (defn build-compressor [path func schema]
   (api/context
     path []
     (sweet/resource
-      {:description ""
-       :post        {:summary    ""
-                     :parameters {:body-params schema}
-                     :consumes   ["application/json"]
-                     :produces   ["text/plain"]
-                     :responses  {200 {:schema s/Str}}
-                     :handler    (fn [{obj :body-params}]
-                                   (http/content-type
-                                     (http/ok (func obj))
-                                     "text/plain"))}})))
+      (merge
+        {:description ""}
+        (build-post func schema)))))
 
-(defn default-header-fn [_] {})
+(defn default-header-fn [_ _] {})
+
+(defn download-file-headers [{:keys [filename]} response-body]
+  (merge
+    {"Content-Length" (count response-body)}
+    (if-not (empty? filename) {"Content-Disposition" (str "filename=" filename)} {})))
 
 (defn build-download-handler [base-func content-type header-fn]
   (fn [{:keys [query-params]}]
     (let [result (base-func query-params)]
       (-> (http/ok result)
           (http/content-type content-type)
-          (apply-headers (header-fn result))))))
+          (apply-headers (header-fn query-params result))))))
+
+(defn build-get [func content-type header-fn]
+  {:get {:summary    ""
+         :parameters {:query-params {:base64 s/Str (s/optional-key :filename) s/Str}}
+         :produces   [content-type]
+         :responses  {200 {:schema s/Any}}
+         :handler    (build-download-handler func content-type header-fn)}})
 
 (defn build-download
   ([path func content-type] (build-download path func content-type default-header-fn))
@@ -77,12 +94,9 @@
    (api/context
      path []
      (sweet/resource
-       {:description ""
-        :get         {:summary    ""
-                      :parameters {:query-params {:base64 s/Str}}
-                      :produces   [content-type]
-                      :responses  {200 {:schema s/Any}}
-                      :handler    (build-download-handler func content-type header-fn)}}))))
+       (merge
+         {:description ""}
+         (build-get func content-type header-fn))))))
 
 (defn build-downloadable
   ([path schema compressor-fn downloader-fn content-type]
@@ -91,22 +105,10 @@
    (api/context
      path []
      (sweet/resource
-       {:description ""
-        :post        {:summary    ""
-                      :parameters {:body-params schema}
-                      :consumes   ["application/json"]
-                      :produces   ["text/plain"]
-                      :responses  {200 {:schema s/Str}}
-                      :handler    (fn [{body :body}]
-                                    (let [args (json/parse-string (slurp body) keyword)]
-                                      (http/content-type
-                                        (http/ok (compressor-fn args))
-                                        "text/plain")))}
-        :get         {:summary    ""
-                      :parameters {:query-params {:base64 s/Str}}
-                      :produces   [content-type]
-                      :responses  {200 {:schema s/Any}}
-                      :handler    (build-download-handler downloader-fn content-type header-fn)}}))))
+       (merge
+         {:description ""}
+         (build-post compressor-fn schema)
+         (build-get downloader-fn content-type header-fn))))))
 
 (defn build-app []
   (-> {:swagger
@@ -124,17 +126,17 @@
           :tags ["spritely"]
           (build-route "/load" sp/load-spritely-file spc/SpritelyData)
           (build-compressor "/save" sp/compress-data spc/SpritelyData)
-          (build-download "/savedata" sp/build-save-file "text/plain")
-          (build-download "/saveimg" sp/build-image "image/png"))
+          (build-download "/savedata" sp/build-save-file "text/plain" download-file-headers)
+          (build-download "/saveimg" sp/build-image "image/png" download-file-headers))
         (api/context
           "/cobblestone" []
           :tags ["cobblestone"]
           (build-route "/load" cb/load-cobblestone-file cbs/CobblestoneData)
-          (build-downloadable "/tile" cbs/TileData cb/compress-data cb/build-tile-image "image/png")
+          (build-downloadable "/tile" cbs/TileData cb/compress-data cb/build-tile-image "image/png" download-file-headers)
           (build-compressor "/save" cb/compress-data cbs/CobblestoneData)
-          (build-download "/data" cb/build-save-file "text/plain")
-          (build-download "/map" cb/build-map-image "image/png")
-          (build-download "/print" cb/build-printable "application/pdf"))
+          (build-download "/data" cb/build-save-file "text/plain" download-file-headers)
+          (build-download "/map" cb/build-map-image "image/png" download-file-headers)
+          (build-download "/print" cb/build-printable "application/pdf" download-file-headers))
         (sweet/GET "/" [] (resp/redirect "/index.html")))
       (sweet/routes
         (route/resources "/")

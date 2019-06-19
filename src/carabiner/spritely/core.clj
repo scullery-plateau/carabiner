@@ -73,16 +73,10 @@
 
 (defn build-image [{:keys [base64 scale]}]
   (let [file-data (b64/decode-to-string base64)
-        max-x (atom 0)
-        max-y (atom 0)
         use-per-coord (fn [out x y ch]
-                        (swap! max-x #(Math/max ^int x ^int %))
-                        (swap! max-y #(Math/max ^int y ^int %))
                         (conj out [:use {:x (* scale x) :y (* scale y) :href ch}]))
-        final-fn (fn [pixels palette]
+        final-fn (fn [width height pixels palette]
                    (let [indexed (map vector (range) palette)
-                         width (inc @max-x)
-                         height (inc @max-y)
                          bg (-> indexed first second)
                          defs (map
                                (fn [[i c]]
@@ -93,7 +87,10 @@
                                     pixels
                                     (into [(rect width height bg nil)] pixels))]
                      (into
-                       [:svg {:width width :height height}
+                       [:svg
+                        {:width width
+                         :height height
+                         :namespace "http://www.w3.org/2000/svg"}
                         (into [:defs] defs)]
                        full-img)))
         svg (parse-file
