@@ -1,0 +1,153 @@
+{:compendium
+ {:type
+  {:feat
+   {:type
+    {:name {:type :string},
+     :prerequisite {:type :string},
+     :text {:type :string, :collection true},
+     :modifier {:type :string, :optional true, :collection true},
+     :proficiency {:type :string, :optional true}},
+    :collection true},
+   :spell
+   {:type
+    {:school {:type :string, :optional true},
+     :name {:type :string},
+     :time {:type :string},
+     :duration {:type :string},
+     :level {:type :long},
+     :components {:type :string},
+     :ritual {:type :string},
+     :roll {:type :string, :optional true, :collection true},
+     :classes {:type :string},
+     :range {:type :string},
+     :text {:type :string, :collection true}},
+    :collection true},
+   :race
+   {:type
+    {:proficiency {:type :string},
+     :speed {:type :long},
+     :ability {:type :string},
+     :name {:type :string},
+     :size {:type :string},
+     :spellAbility {:type :string},
+     :trait
+     {:type
+      {:name {:type :string},
+       :text {:type :string, :collection true},
+       :special {:type :string, :optional true}},
+      :collection true},
+     :modifier {:type :string, :optional true}},
+    :collection true},
+   :item
+   {:type
+    {:modifier {:type :string, :optional true, :collection true},
+     :ac {:type :long, :optional true},
+     :property {:type :string, :optional true},
+     :name {:type :string},
+     :value {:type :string, :optional true},
+     :type {:type :string},
+     :dmg2 {:type :string, :optional true},
+     :magic {:type :long, :optional true},
+     :dmg1 {:type :string, :optional true},
+     :strength {:type :string, :optional true},
+     :weight {:type :string},
+     :roll {:type :string, :optional true, :collection true},
+     :dmgType {:type :string, :optional true},
+     :stealth {:type :string, :optional true},
+     :range {:type :string, :optional true},
+     :text {:type :string, :collection true},
+     :detail {:type :string, :optional true}},
+    :collection true},
+   :&auto_indent {:type :string},
+   :background
+   {:type
+    {:proficiency {:type :string},
+     :name {:type :string},
+     :trait
+     {:type
+      {:name {:type :string}, :text {:type :string, :collection true}},
+      :collection true}},
+    :collection true},
+   :monster
+   {:type
+    {:senses {:type :string},
+     :conditionImmune {:type :string},
+     :skill {:type :string},
+     :ac {:type :string},
+     :int {:type :string},
+     :slots {:type :string},
+     :speed {:type :string},
+     :name {:type :string},
+     :alignment {:type :string},
+     :cha {:type :string},
+     :cr {:type :string},
+     :resist {:type :string},
+     :spells {:type :string},
+     :type {:type :string},
+     :save {:type :string},
+     :size {:type :string},
+     :passive {:type :string},
+     :immune {:type :string},
+     :str {:type :long},
+     :trait
+     {:type
+      {:name {:type :string},
+       :text {:type :string, :collection true},
+       :attack {:type :string, :optional true, :collection true}},
+      :collection true},
+     :con {:type :long},
+     :dex {:type :long},
+     :vulnerable {:type :string},
+     :action
+     {:type
+      {:name {:type :string},
+       :attack {:type :string, :optional true, :collection true},
+       :text {:type :string, :collection true}},
+      :optional true,
+      :collection true},
+     :environment {:type :string, :optional true},
+     :legendary
+     {:type
+      {:name {:type :string},
+       :attack {:type :string, :optional true, :collection true},
+       :text {:type :string, :collection true}},
+      :optional true,
+      :collection true},
+     :hp {:type :string},
+     :wis {:type :long},
+     :languages {:type :string},
+     :reaction
+     {:type
+      {:name {:type :string},
+       :attack {:type :string, :optional true},
+       :text {:type :string, :collection true}},
+      :optional true}},
+    :collection true},
+   :&version {:type :long},
+   :class
+   {:type
+    {:wealth {:type :string, :optional true},
+     :proficiency {:type :string},
+     :weapons {:type :string, :optional true},
+     :name {:type :string},
+     :tools {:type :string, :optional true},
+     :numSkills {:type :string},
+     :autolevel
+     {:type
+      {:slots {:type :string, :optional true},
+       :&scoreImprovement {:type :string, :optional true},
+       :&level {:type :long},
+       :feature
+       {:type
+        {:proficiency {:type :string, :optional true},
+         :name {:type :string},
+         :&optional {:type :string, :optional true},
+         :text {:type :string, :collection true},
+         :special {:type :string, :optional true},
+         :modifier {:type :string, :optional true, :collection true}},
+        :optional true}},
+      :collection true},
+     :spellAbility {:type :string},
+     :armor {:type :string, :optional true},
+     :hd {:type :long}},
+    :collection true}}}}
