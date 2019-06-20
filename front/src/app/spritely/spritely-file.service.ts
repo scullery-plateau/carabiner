@@ -14,7 +14,7 @@ export class SpritelyFileService {
     return this.client.post<SpritelyData>("/spritely/load",loadData);
   }
 
-  compressSaveData(saveData: SpritelyData): Observable<string> {
-    return this.client.post<string>("/spritely/save",saveData);
+  compressSaveData(saveData: SpritelyData): Observable<Object> {
+    return this.client.post("/spritely/save",saveData);
   }
 }

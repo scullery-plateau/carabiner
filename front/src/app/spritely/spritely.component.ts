@@ -42,8 +42,11 @@ export class SpritelyComponent implements OnInit {
   ngOnInit() {
   }
 
-  fileDataReader(fileData): Observable<SpritelyData> {
-    return this.sfs.parseLoadData(fileData);
+  fileDataReader() {
+    let me = this;
+    return function(fileData): Observable<SpritelyData> {
+      return me.sfs.parseLoadData(fileData);
+    }
   }
 
   fileLoadCallback() {
@@ -53,7 +56,7 @@ export class SpritelyComponent implements OnInit {
       me.pixels = load.pixels;
       let formValues: any = {
         width:load.width,
-        height:load.length,
+        height:load.height,
       };
       if (me.palette[0]) {
         formValues.makeTransparent = false;
@@ -63,7 +66,7 @@ export class SpritelyComponent implements OnInit {
       }
       if (me.palette.length > 1) {
         formValues.selectedPalette = 1;
-        formValues.color = this.palette[1];
+        formValues.color = me.palette[1];
       }
       me.spritelyForm.patchValue(formValues);
       me.trigger.fire();
@@ -72,8 +75,8 @@ export class SpritelyComponent implements OnInit {
 
   saveDataCompiler() {
     let me = this;
-    return function(): Observable<string> {
-      return this.sfs.compressSaveData({
+    return function(): Observable<Object> {
+      return me.sfs.compressSaveData({
         pixels:me.pixels,
         palette:me.palette,
         width:me.spritelyForm.value.width,

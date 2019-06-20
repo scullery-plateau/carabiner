@@ -7,23 +7,23 @@
       <div class="row small">
         <div class="col-lg-5">
           <accordian
-            [tabId]="'fileTab'"
-            [containerId]="'fileContainer'"
+            tabId="fileTab"
+            containerId="fileContainer"
             [initCollapsed]="true"
-            [label]="'File'">
+            label="File">
             <file-form
               [defaultSaveFile]="defaultSaveFile"
-              [prepareLoadedData]="fileDataReader"
+              [prepareLoadedData]="fileDataReader()"
               [fileLoadCallback]="fileLoadCallback()"
               [buildSaveData]="saveDataCompiler()"
               [saveRoute]="saveRouteBuilder()">
             </file-form>
           </accordian>
           <accordian
-            [tabId]="'directionsTab'"
-            [containerId]="'directionsContainer'"
+            tabId="directionsTab"
+            containerId="directionsContainer"
             [initCollapsed]="true"
-            [label]="'Directions'">
+            label="Directions">
             <div class="nes-balloon from-left">
               <p>Spritely is a canvas for pixel art.</p>
             </div>
@@ -104,10 +104,10 @@
             </div>
           </div>
           <accordian
-            [tabId]="'transformsTab'"
-            [containerId]="'transformsContainer'"
+            tabId="transformsTab"
+            containerId="transformsContainer"
             [initCollapsed]="true"
-            [label]="'Transforms'">
+            label="Transforms">
             <div class="row">
               <div class="col-sm-12 text-center">
                 <button class="nes-btn is-warning" (click)="transform('turnLeft')">Turn Left</button>

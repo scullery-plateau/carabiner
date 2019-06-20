@@ -23,7 +23,6 @@ import { TileDisplayComponent } from './cobblestone/tile-display/tile-display.co
 import { FileFormComponent } from './util/file-form/file-form.component';
 import { TilePixelsComponent } from './cobblestone/tile-pixels/tile-pixels.component';
 import { FileLoadInputComponent } from './util/file-load-input/file-load-input.component';
-import { DownloadLinkComponent } from './util/download-link/download-link.component';
 import { TileCanvasComponent } from './cobblestone/tile-canvas/tile-canvas.component';
 
 @NgModule({
@@ -47,7 +46,6 @@ import { TileCanvasComponent } from './cobblestone/tile-canvas/tile-canvas.compo
     FileFormComponent,
     TilePixelsComponent,
     FileLoadInputComponent,
-    DownloadLinkComponent,
     TileCanvasComponent,
   ],
   imports: [
