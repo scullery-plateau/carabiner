@@ -5,4 +5,4 @@
         [attrs content] (if (map? (first content))
                           [(first content) (rest content)]
                           [{} content])]
-    {:tag tag :attrs attrs :content (map expand content)}))
+    {:tag tag :attrs attrs :content (mapv expand content)}))

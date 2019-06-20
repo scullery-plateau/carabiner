@@ -14,7 +14,8 @@
             [carabiner.spritely.schema :as spc]
             [carabiner.cobblestone.core :as cb]
             [carabiner.cobblestone.schema :as cbs]
-            [carabiner.common.img :as img]))
+            [carabiner.common.img :as img])
+  (:import (java.io ByteArrayInputStream)))
 
 (defn- build-svg [code]
   (let [docs (j2e (json/parse-string code keyword))
@@ -52,7 +53,7 @@
                  :parameters {:body-params schema}
                  :consumes   ["application/json"]
                  :produces   ["text/plain"]
-                 :responses  {200 {:schema s/Str}}
+                 :responses  {200 {}}
                  :handler    (fn [{obj :body-params}]
                                (http/content-type
                                  (http/ok (func obj))
@@ -69,46 +70,50 @@
 
 (defn default-header-fn [_ _] {})
 
-(defn download-file-headers [{:keys [filename]} response-body]
+(defn download-file-headers [content-type {:keys [filename]} response-body]
   (merge
-    {"Content-Length" (count response-body)}
+    {"Content-Length" (count response-body)
+     "Content-Type" content-type}
     (if-not (empty? filename) {"Content-Disposition" (str "filename=" filename)} {})))
 
 (defn build-download-handler [base-func content-type header-fn]
   (fn [{:keys [query-params]}]
     (let [result (base-func query-params)]
-      (-> (http/ok result)
-          (http/content-type content-type)
-          (apply-headers (header-fn query-params result))))))
+      (-> (http/ok (ByteArrayInputStream. result))
+          (apply-headers (header-fn content-type query-params result))))))
 
-(defn build-get [func content-type header-fn]
+(defn build-get [func content-type addl-params header-fn]
   {:get {:summary    ""
-         :parameters {:query-params {:base64 s/Str (s/optional-key :filename) s/Str}}
+         :parameters {:query-params (merge {:base64 s/Str (s/optional-key :filename) s/Str} addl-params)}
          :produces   [content-type]
-         :responses  {200 {:schema s/Any}}
+         :responses  {200 {}}
          :handler    (build-download-handler func content-type header-fn)}})
 
 (defn build-download
-  ([path func content-type] (build-download path func content-type default-header-fn))
+  ([path func content-type] (build-download path func content-type {} default-header-fn))
   ([path func content-type header-fn]
+   (build-download path func content-type {} header-fn))
+  ([path func content-type addl-params header-fn]
    (api/context
      path []
      (sweet/resource
        (merge
          {:description ""}
-         (build-get func content-type header-fn))))))
+         (build-get func content-type addl-params header-fn))))))
 
 (defn build-downloadable
   ([path schema compressor-fn downloader-fn content-type]
-    (build-downloadable path schema compressor-fn downloader-fn content-type default-header-fn))
+    (build-downloadable path schema compressor-fn downloader-fn content-type {} default-header-fn))
   ([path schema compressor-fn downloader-fn content-type header-fn]
+   (build-downloadable path schema compressor-fn downloader-fn content-type {} header-fn))
+  ([path schema compressor-fn downloader-fn content-type addl-params header-fn]
    (api/context
      path []
      (sweet/resource
        (merge
          {:description ""}
          (build-post compressor-fn schema)
-         (build-get downloader-fn content-type header-fn))))))
+         (build-get downloader-fn content-type addl-params header-fn))))))
 
 (defn build-app []
   (-> {:swagger
@@ -127,7 +132,7 @@
           (build-route "/load" sp/load-spritely-file spc/SpritelyData)
           (build-compressor "/save" sp/compress-data spc/SpritelyData)
           (build-download "/savedata" sp/build-save-file "text/plain" download-file-headers)
-          (build-download "/saveimg" sp/build-image "image/png" download-file-headers))
+          (build-download "/saveimg" sp/build-image "image/png" {:scale s/Int} download-file-headers))
         (api/context
           "/cobblestone" []
           :tags ["cobblestone"]

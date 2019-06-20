@@ -4,8 +4,7 @@
             [carabiner.common.img :as img]
             [carabiner.common.xml :as x]
             [clojure.string :as str]
-            [clojure.pprint :as pp])
-  (:import (java.net URLEncoder URLDecoder)))
+            [clojure.pprint :as pp]))
 
 (defn parse-file [file-data accumulator per-coord-fn final-fn]
   (let [lines (s/split-lines file-data)
@@ -19,9 +18,10 @@
                      (fn [pix [x ch]]
                        (swap! max-x #(Math/max ^int x ^int %))
                        (swap! max-y #(Math/max ^int y ^int %))
-                       (if (> (int ch) 97)
-                         (per-coord-fn pix x y ch)
-                         pix))
+                       (let [c (- (int ch) 97)]
+                         (if (> c 0)
+                           (per-coord-fn pix x y c (nth palette c))
+                           pix)))
                      out (mapv vector (range) row)))
                  accumulator (mapv vector (range) rows))]
     (final-fn (inc @max-x) (inc @max-y) pixels palette)))
@@ -30,10 +30,8 @@
   (parse-file
     file-data
     {}
-    (fn [out x y ch]
-      (assoc out
-        (str x "x" y)
-        (- (int ch) 97)))
+    (fn [out x y c _]
+      (assoc out (str x "x" y) c))
     (fn [width height pixels palette]
       {:width width
        :height height
@@ -41,7 +39,6 @@
        :pixels pixels})))
 
 (defn json2file [{:keys [palette pixels width height]}]
-  (pp/pprint pixels)
   (str/join
     "\r\n"
     (reduce
@@ -64,34 +61,30 @@
   (b64/encode-string (json2file json)))
 
 (defn build-save-file [{:keys [base64]}]
-  (b64/decode-to-string base64))
+  (.getBytes (b64/decode-to-string base64)))
 
-(defn rect [w h c id]
-  (let [attrs {:x 0 :y 0 :width w :height h :fill c :stroke "none" :stroke-width 0}
-        attrs (if (nil? id) attrs (merge attrs {:id id}))]
-    [:rect attrs]))
+(defn rect [w h s c]
+  [:rect {:x 0 :y 0 :width (* w s) :height (* h s) :fill c :stroke "none" :stroke-width 0}])
+
+(defn pixel [x y s c]
+  [:rect {:x (* x s) :y (* y s) :width s :height s :fill c :stroke "none" :stroke-width 0}])
+
 
 (defn build-image [{:keys [base64 scale]}]
   (let [file-data (b64/decode-to-string base64)
-        use-per-coord (fn [out x y ch]
-                        (conj out [:use {:x (* scale x) :y (* scale y) :href ch}]))
+        use-per-coord (fn [out x y ci c]
+                        (conj out (pixel x y scale c)))
         final-fn (fn [width height pixels palette]
                    (let [indexed (map vector (range) palette)
                          bg (-> indexed first second)
-                         defs (map
-                               (fn [[i c]]
-                                 (let [id (char (+ 97 i))]
-                                   (rect scale scale c id)))
-                               (rest indexed))
                          full-img (if (= "none" bg)
                                     pixels
-                                    (into [(rect width height bg nil)] pixels))]
+                                    (into [(rect width height scale bg)] (vec pixels)))]
                      (into
                        [:svg
-                        {:width width
-                         :height height
-                         :namespace "http://www.w3.org/2000/svg"}
-                        (into [:defs] defs)]
+                        {:width (* scale width)
+                         :height (* scale height)
+                         :xmlns "http://www.w3.org/2000/svg"}]
                        full-img)))
         svg (parse-file
               file-data []
