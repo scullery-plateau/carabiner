@@ -1,7 +1,6 @@
 (ns carabiner.common.img
   (:require [carabiner.common.base64 :as b64]
-            [clojure.xml :as xml]
-            [dali.io :as dali])
+            [clojure.xml :as xml])
   (:import (org.apache.batik.transcoder.image PNGTranscoder JPEGTranscoder)
            (java.io InputStream OutputStream ByteArrayInputStream ByteArrayOutputStream)
            (org.apache.batik.transcoder TranscoderInput TranscoderOutput)))
@@ -34,4 +33,3 @@
 
 (defn svg-to-64 [svg]
   (b64/encode-stream (ByteArrayInputStream. (svg-to-bytes svg))))
-
