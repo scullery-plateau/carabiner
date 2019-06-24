@@ -25,6 +25,6 @@
 
 (s/def ::space-or-valid-char (s/and char? ch/space-or-valid-char?))
 
-(def transforms #{:flip-over :flip-down :turn-left :turn-right})
+(def transforms #{"flip-over" "flip-down" "turn-left" "turn-right"})
 
 (s/def ::transform transforms)

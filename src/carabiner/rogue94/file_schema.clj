@@ -1,7 +1,8 @@
 (ns carabiner.rogue94.file-schema
   (:require [clojure.spec.alpha :as s]
             [carabiner.rogue94.common-schema :as common]
-            [carabiner.rogue94.char-index :as ch]))
+            [carabiner.rogue94.char-index :as ch]
+            [carabiner.rogue94.validation :as v]))
 
 (s/def ::single-char-mapping
   (s/and
@@ -21,7 +22,7 @@
     vector?
     (s/cat
       :name ::common/entity-name
-      :palette ::common/palette)))
+      :palette (s/+ ::common/color))))
 
 (s/def ::palettes
   (s/and
@@ -36,7 +37,8 @@
   (s/and vector?
     (s/cat
       :tile-name ::common/entity-name
-      :pixels (s/+ ::pixel-row))))
+      :pixels (s/+ ::pixel-row))
+     v/tile-size))
 
 (s/def ::art
   (s/and vector?
@@ -46,12 +48,21 @@
 
 (s/def ::map-row
   (s/and string?
-    (partial every? ch/space-or-valid-char?)))
+    (partial every? ch/valid-char?)))
+
+(s/def ::first-page
+  (s/and vector?
+    (s/cat
+      :from-x int?
+      :from-y int?
+      :from-dim (s/?
+                  (s/cat
+                    :from-width int?
+                    :from-height int?)))))
 
 (s/def ::paging-row
   (s/and vector?
-         (s/cat :label #{"from:"}
-                :from-x int?
+         (s/cat :from-x int?
                 :from-y int?
                 :from-dim (s/?
                             (s/cat
@@ -59,18 +70,23 @@
                               :from-height int?))
                 :to (s/?
                       (s/cat
-                        :to-label #{"to:"}
+                        :to-label #{">"}
                         :to-x int?
                         :to-y int?)))))
 
-(s/def ::map-and-paging
+(s/def ::map
   (s/and vector?
-         (s/cat :map (s/+ ::map-row)
-                :paging (s/* ::paging-row))))
+         (s/coll-of ::map-row)))
+
+(s/def ::paging
+  (s/and vector?
+         (s/cat :first-page ::first-page
+                :pages (s/* ::paging-row))))
 
 (s/def ::full-map
   (s/and vector?
-    (s/cat :map-and-paging ::map-and-paging
+    (s/cat :map ::map
+           :paging ::paging
            :mapping ::mapping
            :palettes ::palettes
            :tiles (s/+ ::tile))))

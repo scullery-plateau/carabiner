@@ -17,3 +17,8 @@
       (every? (in-range (count palette)) indicies)
       (every? (in-range width) xs)
       (every? (in-range height) ys))))
+
+(defn tile-size [{:keys [pixels]}]
+  (and
+    (= 16 (count pixels))
+    (every? #(= 16 (count %)) pixels)))

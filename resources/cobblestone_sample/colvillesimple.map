@@ -1,50 +1,51 @@
-      788888888889
-      4..........6
-      4..........6
-      4..........6
-      4..........6
-      4..........6
-      4..........6
-      4..........6
-      4..........6
-      1222Z..C2223
-        4..6
-        4..6
-        4..6
-        1=23
-        7S888889
-        4......6
-        4......6
-        4......6
-        4......6
-        4......6
-        4......6
-        4......6
-        12Z..C23
-         4..6
-         4..6
-  78888889   4..6
-  4......6   4..6
-  4......6   4..6
-7888Q......E88888Q..6
-4...............**..6
-4...............**..6
-4^^CZ......C222222223
-4^^64......6
-4^^64......6
+..........788888888889
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........4,,,,,,,,,,6
+..........1222Z,,C2223
+..............4,,6
+..............4,,6
+..............4,,6
+..............1=23
+..............7S888889
+..............4,,,,,,6
+..............4,,,,,,6
+..............4,,,,,,6
+..............4,,,,,,6
+..............4,,,,,,6
+..............4,,,,,,6
+..............4,,,,,,6
+..............12Z,,C23
+................4,,6
+................4,,6
+....78888889....4,,6
+....4,,,,,,6....4,,6
+....4,,,,,,6....4,,6
+7888Q,,,,,,E8888Q,,6
+4,,,,,,,,,,,,,,**,,6
+4,,,,,,,,,,,,,,**,,6
+4^^CZ,,,,,,C22222223
+4^^64,,,,,,6
+4^^64,,,,,,6
 4^^612222223
 4^^6
 4^^6
 Q--E
-from 11 0
-from 19 0
-from 0 28 to 4 0
-from 4 25
-from 15 14
-from 12 23
-from 15 10 4 4 to 0 0
 
-. stone-tile floor
+10 0
+18 0
+0 28 > 4 0
+4 25
+14 14
+12 23
+14 10 4 4 > 0 0
+
+, stone-tile floor
 ^ stairs stairs
 - front-door door
 * stone-tile floor flip-over
@@ -122,7 +123,7 @@ dbbbddbbbbddbbbd
 dbbddddbbddddbbd
 dddddddddddddddd
 
-wall
+brick-wall
 aaaaaaaaaaaaaaaa
 bdcbbbbbbdcbbbbb
 ddcbddbdddcbddbd
@@ -137,6 +138,7 @@ bdcbbbbbbdcbbbbb
 ddcdddddddcddddd
 cccccccccccccccc
 dddddcdddddddcdd
+cccccccccccccccc
 cccccccccccccccc
 
 brick-corner
@@ -158,18 +160,19 @@ addddcbddcbdcccc
 abdddcbddcbdcdcc
 
 brick-edge
-aabddcbddcbdcdccc
-aabbdcddddcbdcdcc
-bbabdcccccbdccccc
-dbbabcbdddbdcdccc
-dddbacbddcbdcdccc
-cccccbbddccccdccc
-dddddbaddcddcdccc
-ddddddbadcbdcdccc
-dddddcddacbdcdccc
-cccccccccdbdcdccc
-bdcbbbbbbbadcdccc
-ddcddddddddbcdccc
-ccccccccccccdbccc
-dddddcdddddddbccc
-ccccccccccccccccc
+aabddcbddcbdcdcc
+aabbdcddddcbdcdc
+bbabdcccccbdcccc
+dbbabcbdddbdcdcc
+dddbacbddcbdcdcc
+cccccbbddccccdcc
+dddddbaddcddcdcc
+ddddddbadcbdcdcc
+dddddcddacbdcdcc
+cccccccccdbdcdcc
+bdcbbbbbbbadcdcc
+ddcddddddddbcdcc
+ccccccccccccdbcc
+dddddcdddddddbcc
+cccccccccccccccc
+cccccccccccccccc
