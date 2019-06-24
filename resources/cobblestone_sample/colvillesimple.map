@@ -1,31 +1,31 @@
-           788888888889
-           4..........6
-           4..........6
-           4..........6
-           4..........6
-           4..........6
-           4..........6
-           4..........6
-           4..........6
-           1222Z..C2223
-               4..6
-               4..6
-               4..6
-               1=23
-               7S888889
-               4......6
-               4......6
-               4......6
-               4......6
-               4......6
-               4......6
-               4......6
-               12Z..C23
-                 4..6
-                 4..6
-    78888889     4..6
-    4......6     4..6
-    4......6     4..6
+      788888888889
+      4..........6
+      4..........6
+      4..........6
+      4..........6
+      4..........6
+      4..........6
+      4..........6
+      4..........6
+      1222Z..C2223
+        4..6
+        4..6
+        4..6
+        1=23
+        7S888889
+        4......6
+        4......6
+        4......6
+        4......6
+        4......6
+        4......6
+        4......6
+        12Z..C23
+         4..6
+         4..6
+  78888889   4..6
+  4......6   4..6
+  4......6   4..6
 7888Q......E88888Q..6
 4...............**..6
 4...............**..6
@@ -36,39 +36,39 @@
 4^^6
 4^^6
 Q--E
-from: 11 0
-from: 19 0 to: 2
-from: 0 28 to: 2 4 0
-from: 4 25 to: 3
-from: 15 14 to: 4
-from: 12 23 to: 5
-from: 15 10 4 4 to: 5 0 0
+from 11 0
+from 19 0
+from 0 28 to 4 0
+from 4 25
+from 15 14
+from 12 23
+from 15 10 4 4 to 0 0
 
-".": stone-tile, floor
-"^": stairs, stairs
-"-": front-door, door
-"*": stone-tile, floor, flipover
-"8": brick-wall, wall
-"4": brick-wall, wall, turnleft
-"6": brick-wall, wall, turnright
-"2": brick-wall, wall, flipdown
-"7": brick-corner, wall
-"9": brick-corner, wall, flipover
-"1": brick-corner, wall, flipdown
-"3": brick-corner, wall, flipdown, flipover
-"Q": brick-edge, wall
-"E": brick-edge, wall, flipover
-"Z": brick-edge, wall, flipdown
-"C": brick-edge, wall, flipover, flipdown
-"S": brick-wall, wall, flipover
-"=": front-door, floor
+. stone-tile floor
+^ stairs stairs
+- front-door door
+* stone-tile floor flip-over
+8 brick-wall wall
+4 brick-wall wall turn-left
+6 brick-wall wall turn-right
+2 brick-wall wall flip-down
+7 brick-corner wall
+9 brick-corner wall flip-over
+1 brick-corner wall flip-down
+3 brick-corner wall flip-down flip-over
+Q brick-edge wall
+E brick-edge wall flip-over
+Z brick-edge wall flip-down
+C brick-edge wall flip-over flip-down
+S brick-wall wall flip-over
+= front-door floor
 
-floor: lightgrey, slategrey, darkslategrey, black
-stairs: lightgrey, darkslategrey
-door: white, mediumpurple, indigo, black
-wall: palegoldenrod, darkgoldenrod, black, saddlebrown
+floor lightgrey slategrey darkslategrey black
+stairs lightgrey darkslategrey
+door white mediumpurple indigo black
+wall palegoldenrod darkgoldenrod black saddlebrown
 
-"stone-tile"
+stone-tile
 aaaaaaaaaaaaaaaa
 aaccccccacccccaa
 acbbbbbcacccccca
@@ -86,7 +86,7 @@ accccccacaaaaaca
 aacccccaccccccaa
 aaaaaaaaaaaaaaaa
 
-"stairs"
+stairs
 aaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaa
 bbbbbbbbbbbbbbbb
@@ -104,7 +104,7 @@ bbbaaaaaaaaaabbb
 bbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbb
 
-"front-door"
+front-door
 daaaaaaaaaaaaaad
 daaaaaaaaaaaaaad
 daaaaaaaaaaaaaad
@@ -122,7 +122,7 @@ dbbbddbbbbddbbbd
 dbbddddbbddddbbd
 dddddddddddddddd
 
-"wall"
+wall
 aaaaaaaaaaaaaaaa
 bdcbbbbbbdcbbbbb
 ddcbddbdddcbddbd
@@ -139,7 +139,7 @@ cccccccccccccccc
 dddddcdddddddcdd
 cccccccccccccccc
 
-"brick-corner"
+brick-corner
 aaaaaaaaaaaaaaaa
 abbbbbbbbdcbbbbb
 abcccdddddcbddbd
@@ -150,14 +150,14 @@ abdddcccbbbbdcbd
 abdddcccdddddcdd
 abdddcbdccdddcdd
 abbddcbdcccccccc
-abdddc6bbbbbbbbb
+abdddcccccccbbbb
 abdddcdddcccdddd
 abbddcbddcbccccc
 acccccbddcbdccdd
 addddcbddcbdcccc
 abdddcbddcbdcdcc
 
-"brick-edge"
+brick-edge
 aabddcbddcbdcdccc
 aabbdcddddcbdcdcc
 bbabdcccccbdccccc

@@ -1,6 +1,6 @@
 (ns carabiner.schema
   (:require [clojure.spec.alpha :as spec]
-            [carabiner.color :as color]
+            [carabiner.rogue94.color :as color]
             [carabiner.validation :as validate]))
 
 (def ^:private hex-color-pattern #"[#][a-fA-F0-9]{6}")
@@ -10,10 +10,8 @@
 (spec/def ::css-color (set (keys color/css)))
 
 (spec/def ::color
-  (spec/or
-    :hex ::hex-color
-    :css ::css-color
-    ))
+  (spec/or :hex ::hex-color
+           :css ::css-color))
 
 (def ^:private map-name-pattern #"/w+")
 

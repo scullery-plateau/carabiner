@@ -137,11 +137,11 @@
           "/cobblestone" []
           :tags ["cobblestone"]
           (build-route "/load" cb/load-cobblestone-file cbs/CobblestoneData)
-          (build-downloadable "/tile" cbs/TileData cb/compress-data cb/build-tile-image "image/png" download-file-headers)
+          (build-downloadable "/tile" cbs/TileData cb/compress-tile cb/build-tile-image "image/png" download-file-headers)
           (build-compressor "/save" cb/compress-data cbs/CobblestoneData)
           (build-download "/data" cb/build-save-file "text/plain" download-file-headers)
           (build-download "/map" cb/build-map-image "image/png" download-file-headers)
-          (build-download "/print" cb/build-printable "application/pdf" download-file-headers))
+          (build-download "/print" cb/build-printable "text/html" download-file-headers))
         (sweet/GET "/" [] (resp/redirect "/index.html")))
       (sweet/routes
         (route/resources "/")
