@@ -1,6 +1,5 @@
 (ns carabiner.common.img
-  (:require [carabiner.common.base64 :as b64]
-            [carabiner.common.xml :as x])
+  (:require [carabiner.common.base64 :as b64])
   (:import (org.apache.batik.transcoder.image PNGTranscoder JPEGTranscoder)
            (java.io InputStream OutputStream ByteArrayInputStream ByteArrayOutputStream)
            (org.apache.batik.transcoder TranscoderInput TranscoderOutput)))

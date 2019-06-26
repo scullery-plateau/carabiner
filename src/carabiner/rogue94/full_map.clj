@@ -135,6 +135,7 @@
 
 (defn full-map-to-printable [{:keys [paging] my-map :map :as full-map}]
   (let [compiled (compile-mapping (select-keys full-map [:mapping :palettes :tiles]))
+        [width height] (coords/dim-coords my-map)
         pages (reduce
                 (fn [out {:keys [from-width from-height from-x from-y to-x to-y] page-num :page}]
                   (let [page (get out page-num {})]
@@ -160,8 +161,13 @@
      (into
        [:body
         [:div {:class "defs"}
-         [:svg {:width 0 :height 0}
-          (build-defs scale compiled)]]]
+         (build-tiles
+           tile-size my-map
+           [:svg
+            {:width "8in"
+             :height "10in"
+             :viewBox (str/join " " [0 0 (* tile-size width) (* tile-size height)])}
+            (build-defs scale compiled)] false)]]
        (mapv
          (fn [page]
            [:div {:class "page"}

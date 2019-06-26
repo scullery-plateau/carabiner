@@ -21,8 +21,7 @@
         printable (fm/full-map-to-printable result)]
     (spit "resources/cobblestone_sample/printable.html" (x/to-xml (x/expand printable)))
     (is (= nil error))
-    (is (= nil json-error))
-    ))
+    (is (= nil json-error))))
 
 (deftest test-parsing-to-json-colville-simple-img
   (let [filedata (slurp "resources/cobblestone_sample/colvillesimple.map")
@@ -37,12 +36,10 @@
         x-pand (x/expand img)
         xml (x/to-xml x-pand)
         _ (spit "resources/cobblestone_sample/img.svg" xml)
-        img-bytes (img/svg-to-bytes xml)
-        ]
+        img-bytes (img/svg-to-bytes xml)]
     (io/copy (ByteArrayInputStream. img-bytes) (io/file "resources/cobblestone_sample/colville.png"))
     (is (= nil error))
-    (is (= nil json-error))
-    ))
+    (is (= nil json-error))))
 
 (deftest test-parsing-to-json-door-tile
   (let [filedata (slurp "resources/cobblestone_sample/door-tile.art")
@@ -54,5 +51,4 @@
         json-error (s/explain-data ::json/art result)]
     (is (= nil error))
     (is (= nil json-error))
-    (pp/pprint json-error)
-    ))
+    (pp/pprint json-error)))
