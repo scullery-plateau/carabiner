@@ -5,6 +5,8 @@
             [carabiner.rogue94.char-index :as ch]
             [carabiner.rogue94.coords :as coords]))
 
+(def print-style (slurp "resources/publishing/print.css"))
+
 (defn full-map-file-to-json [[my-map paging mapping palettes & tiles]]
   (let [paging (mapv
                  (fn [s]
@@ -157,9 +159,9 @@
         tile-size (* 16 scale)]
     [:html
      [:head
-      [:link {:rel "stylesheet" :type "text/css" :href "../publishing/print.css"}]]
+      [:style print-style]]
      (into
-       [:body
+       [:body {:onload "print()"}
         [:div {:class "defs"}
          (build-tiles
            tile-size my-map

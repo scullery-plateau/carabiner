@@ -1,10 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <html>
 <head>
-<link rel='stylesheet' type='text/css' href='../publishing/print.css'>
-</link>
+<style>
+@media screen {
+    svg {
+        margin: 0.25in 0.25in 0.75in 0.25in;
+        border: 1px solid black;
+    }
+    .page, .defs {
+        width: 816px;
+        height: 1056px;
+        padding: 0;
+        background-color: white;
+        margin: 0.25in;
+        float: left;
+    }
+    body {
+        text-align: center;
+        background-color: gray;
+    }
+}
+@media print {
+    svg {
+        margin: 0.23in 0.23in 0.23in 0.23in;
+        border: 1px solid black;
+    }
+    .defs {
+        max-width: 8in;
+        max-height: 10in;
+        padding: 0;
+        margin: 0;
+    }
+    .page {
+        padding: 0;
+        margin: 0;
+        page-break-before: always;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+    }
+    @page {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+</style>
 </head>
-<body>
+<body onload='print()'>
 <div class='defs'>
 <svg width='8in' height='10in' viewBox='0 0 2112 3648'>
 <defs>
