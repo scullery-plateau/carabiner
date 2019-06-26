@@ -1,5 +1,6 @@
 (ns carabiner.common.xml
-  (:require [clojure.string :as str]))
+  (:require [clojure.string :as str]
+            [clojure.xml :as xml]))
 
 (defn expand [[tag & content]]
   (let [content (if (nil? content) [] content)
@@ -16,3 +17,6 @@
                   (update attrs :class str " " class-str)
                   (assoc attrs :class class-str)))]
     {:tag tag :attrs attrs :content (mapv #(if (vector? %) (expand %) %) content)}))
+
+(defn to-xml [expanded]
+  (with-out-str (xml/emit expanded)))

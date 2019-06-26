@@ -1,7 +1,6 @@
 (ns carabiner.rogue94.common-schema
   (:require [clojure.spec.alpha :as s]
             [carabiner.rogue94.color :as color]
-            [carabiner.rogue94.validation :as v]
             [carabiner.rogue94.char-index :as ch]))
 
 (def ^:private hex-color-pattern #"[#][a-fA-F0-9]{6}")
@@ -12,8 +11,11 @@
 
 (s/def ::color
   (s/or
+    :none #{"none"}
     :hex ::hex-color
     :css ::css-color))
+
+(s/def ::index (s/and int? (partial <= 0)))
 
 (s/def ::palette (s/and vector? (s/coll-of ::color)))
 

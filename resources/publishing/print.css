@@ -1,0 +1,31 @@
+@media screen {
+    svg {
+        margin: 0.25in 0.25in 0.75in 0.25in;
+    }
+    .page {
+        width: 816px;
+        height: 1056px;
+        padding: 0;
+        background-color: white;
+        margin: 0.25in;
+        float: left;
+    }
+    body {
+        text-align: center;
+        background-color: gray;
+    }
+}
+@media print {
+    svg {
+        margin: 0.2in 0.2in 0.2in 0.2in;
+    }
+    .page {
+        padding: 0;
+        margin: 0;
+        page-break-before: always;
+    }
+    @page {
+        padding: 0;
+        margin: 0;
+    }
+}

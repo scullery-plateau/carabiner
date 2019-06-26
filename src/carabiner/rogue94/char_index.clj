@@ -3,6 +3,8 @@
 
 (def ^:private my-chars "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+-=`;:'\"[]{}\\|,.<>/?")
 
+(def names (mapv #(str/replace (Character/getName (int %)) #" " "_") my-chars))
+
 (defn ^char to-char [^long index]
   (nth my-chars index))
 

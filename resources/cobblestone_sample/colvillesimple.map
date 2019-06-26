@@ -20,8 +20,8 @@
 ..............4,,,,,,6
 ..............4,,,,,,6
 ..............4,,,,,,6
+..............4,,,,,,6
 ..............12Z,,C23
-................4,,6
 ................4,,6
 ....78888889....4,,6
 ....4,,,,,,6....4,,6
@@ -42,27 +42,27 @@ Q--E
 0 28 > 4 0
 4 25
 14 14
-12 23
+12 24
 14 10 4 4 > 0 0
 
 , stone-tile floor
-^ stairs stairs
+^ stairs stairs flip-down
 - front-door door
-* stone-tile floor flip-over
+* stone-tile floor flip-down
 8 brick-wall wall
 4 brick-wall wall turn-left
 6 brick-wall wall turn-right
 2 brick-wall wall flip-down
 7 brick-corner wall
-9 brick-corner wall flip-over
-1 brick-corner wall flip-down
+9 brick-corner wall turn-right
+1 brick-corner wall turn-left
 3 brick-corner wall flip-down flip-over
 Q brick-edge wall
-E brick-edge wall flip-over
-Z brick-edge wall flip-down
+E brick-edge wall turn-right
+Z brick-edge wall turn-left
 C brick-edge wall flip-over flip-down
 S brick-wall wall flip-over
-= front-door floor
+= front-door floor flip-down
 
 floor lightgrey slategrey darkslategrey black
 stairs lightgrey darkslategrey
@@ -161,7 +161,7 @@ abdddcbddcbdcdcc
 
 brick-edge
 aabddcbddcbdcdcc
-aabbdcddddcbdcdc
+aabbdcdddcbdcdcc
 bbabdcccccbdcccc
 dbbabcbdddbdcdcc
 dddbacbddcbdcdcc
