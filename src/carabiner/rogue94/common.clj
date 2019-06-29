@@ -24,6 +24,8 @@
 
 (defmethod resolve-color :hex [[_ color]] color)
 
+(defmethod resolve-color :none [[_ color]] "none")
+
 (defn coordinate-map [rows indicies]
   (reduce
     (fn [retval [row y]]
