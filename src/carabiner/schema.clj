@@ -3,7 +3,7 @@
 
 (s/defschema ImgDownloadArgs
   {:base64 s/Str
-   :scale s/Str
+   :scale s/Int
    (s/optional-key :filename) s/Str})
 
 (s/defschema DownloadArgs
