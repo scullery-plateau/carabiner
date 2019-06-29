@@ -6,7 +6,8 @@
             [clojure.java.io :as io]
             [clojure.pprint :as pp]
             [clojure.string :as str])
-  (:import (java.io ByteArrayInputStream)))
+  (:import (java.io ByteArrayInputStream)
+           (clojure.lang ExceptionInfo)))
 
 (comment
   (deftest test-load-file
@@ -36,7 +37,7 @@
       (pp/pprint lines)))
 
   (deftest test-base64-roundtrip
-    (let [expected ["#000000,#ff0000,#00ff00,#0000ff,#ff00ff,#ffff00" "aaaaa" "abaea" "aafaa" "acada" "aaaaa"]
+    (let [expected ["#000000 #ff0000 #00ff00 #0000ff #ff00ff #ffff00" "aaaaa" "abaea" "aafaa" "acada" "aaaaa"]
           palette ["#000000" "#ff0000" "#00ff00" "#0000ff" "#ff00ff" "#ffff00"]
           pixels {"1x1" 1 "1x3" 2 "3x3" 3 "3x1" 4 "2x2" 5}
           args {:palette palette :pixels pixels :width 5 :height 5}
@@ -45,19 +46,15 @@
           lines (str/split-lines (String. out))
           ]
       (is (every? true? (mapv #(= %1 %2) expected lines)))
-      (pp/pprint lines)))
+      (pp/pprint lines))))
 
-  (deftest test-save-file-image
-    (let [base64 "IzAwMDAwMCwjZmYwMDAwLCMwMGZmMDAsIzAwMDBmZg0KYWFhYWFhYWFhYWFhYWFhYQ0KYWFhYWFhYWFhYWFhYWFhYQ0KYWFhYmJiYmFhYWFhYWFhYQ0KYWFhYmJiYmFhYWFhYWFhYQ0KYWFhYmJiYmFhYWFhYWFhYQ0KYWFhYmJiYmFhYWNjY2NhYQ0KYWFhYWFhYWFhYWNjY2NhYQ0KYWFhYWFhYWFhYWNjY2NhYQ0KYWFhYWFhYWFhYWNjY2NhYQ0KYWFhYWFhYWFhYWFhYWFhYQ0KYWFhYWFkZGRkYWFhYWFhYQ0KYWFhYWFkZGRkYWFhYWFhYQ0KYWFhYWFkZGRkYWFhYWFhYQ0KYWFhYWFkZGRkYWFhYWFhYQ0KYWFhYWFhYWFhYWFhYWFhYQ0KYWFhYWFhYWFhYWFhYWFhYQ=="
+(deftest test-save-file-image
+  (try
+    (let [base64 "I0ZGRkZGRiAjOTM3MERCICM0QjAwODIgIzAwMDAwMA0KZGFhYWFhYWFhYWFhYWFhZA0KZGFhYWFhYWFhYWFhYWFhZA0KZGFhYWFhYWFhYWFhYWFhZA0KZGJiYmJiYmJiYmJiYmJiZA0KZGJjY2NjY2NjY2NjY2NiZA0KZGJjY2NjY2NjY2NjY2NiZA0KZGJjY2NjY2NjY2NjY2NiZA0KZGJjY2NjY2NjY2NjY2NiZA0KZGJjY2NjY2NjY2NjY2NiZA0KZGJjY2NjY2NjY2NjY2NiZA0KZGJjY2FhY2NjY2FhY2NiZA0KZGJjYWJiYWNjYWJiYWNiZA0KZGJhYmJiYmFhYmJiYmFiZA0KZGJiYmRkYmJiYmRkYmJiZA0KZGJiZGRkZGJiZGRkZGJiZA0KZGRkZGRkZGRkZGRkZGRkZA=="
           scale 5
-          args {:base64 base64 :scale scale}
-          write-results (fn [filename]
-                          (spit filename (with-out-str (pp/pprint (build-image args)))))]
-      (with-redefs [x/expand identity
-                    img/svg-to-bytes identity]
-        (write-results "resources/test/svgmin.edn"))
-      (with-redefs [img/svg-to-bytes identity]
-        (write-results "resources/test/svgfull.edn"))
-      (with-redefs [img/rasterize #(io/copy %3 %4)]
-        (io/copy (ByteArrayInputStream. (build-image args)) (io/file "resources/test/svgfull.xml")))
-      (io/copy (ByteArrayInputStream. (build-image args)) (io/file "resources/test/testimg.png")))))
+          args {:base64 base64 :scale scale}]
+      (io/copy (ByteArrayInputStream. (build-image args)) (io/file "resources/test/testimg.png")))
+    (catch ExceptionInfo e
+      (pp/pprint (.getData e)))
+    (catch Exception e
+      (pp/pprint e))))

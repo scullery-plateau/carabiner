@@ -1,12 +1,14 @@
 (ns carabiner.rogue94.coords
-  (:require [clojure.string :as str]))
+  (:require [clojure.string :as str]
+            [clojure.pprint :as pp])
+  (:import (clojure.lang Keyword)))
 
-(defn parse [^String coord]
+(defn parse [^Keyword coord]
   (map #(Integer/parseInt %)
-    (str/split coord #"x")))
+    (str/split (name coord) #"x")))
 
 (defn from-ints [^long x ^long y]
-  (str x "x" y))
+  (keyword (str x "x" y)))
 
 (defn from-json [{:keys [^long x ^long y]}]
   (from-ints x y))

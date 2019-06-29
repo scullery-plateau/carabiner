@@ -3,16 +3,17 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.10.0"]
-                 [http-kit "2.2.0"]
-                 [environ "1.0.0"]
+  :dependencies [[org.clojure/clojure "1.10.1"]
+                 [http-kit "2.3.0"]
+                 [environ "1.1.0"]
                  [metosin/compojure-api "1.1.11"]
-                 [ring/ring-mock "0.3.2"]
+                 [ring/ring-mock "0.4.0"]
                  [hiccup "1.0.5"]
                  [org.clojars.pallix/batik "1.7.0"]]
   :min-lein-version "2.0.0"
   :main carabiner.server
-  :plugins [[environ/environ.lein "0.3.1"]]
+  :plugins [[environ/environ.lein "0.3.1"]
+            [lein-ancient "0.6.15"]]
   :hooks [environ.leiningen.hooks]
   :uberjar-name "carabiner.jar"
   :resource-paths ["resources"]

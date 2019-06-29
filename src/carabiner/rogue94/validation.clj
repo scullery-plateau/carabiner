@@ -8,7 +8,7 @@
       (> max value))))
 
 (defn art-coordinates-valid?
-  [{:keys [palette pixels width height]}]
+  [{:keys [palette pixels width height] :or {width 16 height 16}}]
   (let [indicies (set (vals pixels))
         coords (map rc/parse (keys pixels))
         xs (set (map first coords))

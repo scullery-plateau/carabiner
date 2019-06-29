@@ -1,11 +1,11 @@
 (ns carabiner.rogue94.common
   (:require [clojure.string :as str]
-            [carabiner.rogue94.file-schema :as fs]
-            [carabiner.rogue94.color :as color]
+            [carabiner.common.color :as color]
             [carabiner.rogue94.coords :as coords]
             [clojure.spec.alpha :as s]
             [carabiner.rogue94.char-index :as ch]
-            [clojure.set :as set])
+            [clojure.set :as set]
+            [clojure.pprint :as pp])
   (:import (clojure.lang ExceptionInfo)))
 
 (defn validate [obj schema]
@@ -61,16 +61,24 @@
     (pixelate my-map width height identity ".")))
 
 (defn pixelate-tile [my-map]
-  (pixelate my-map 16 16 ch/to-char "a"))
+  (pixelate my-map 16 16 ch/to-char 0))
 
 (defn pixelate-art [my-map width height]
-  (pixelate my-map width height ch/to-char "a"))
+  (pixelate my-map width height ch/to-char 0))
+
+
 
 (defn file-prep [text]
   (let [lines (str/split-lines text)
         trimmed (mapv str/trim lines)
         all-blocks (partition-by empty? trimmed)
-        blocks (filter #(not= % (list "")) all-blocks)]
+        filtered (filter #(not= % (list "")) all-blocks)
+        blocks (map
+                 #(map
+                    (fn [row]
+                      (if-not (nil? (str/index-of row " "))
+                         (str/split row #" ")
+                         row)) %) filtered)]
     (mapv vec blocks)))
 
 (defn rect

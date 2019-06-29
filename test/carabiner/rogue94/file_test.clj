@@ -11,6 +11,16 @@
   (:import (clojure.lang ExceptionInfo)
            (java.io ByteArrayInputStream)))
 
+(deftest test-parsing-to-json-colville-simple
+  (let [filedata (slurp "resources/cobblestone_sample/colvillesimple.map")
+        {:keys [result error]} (try
+                                 {:result (core/parse-file-to-json filedata)}
+                                 (catch ExceptionInfo e
+                                   {:error (.getData e)}))
+        json-error (s/explain-data ::json/full-map result)]
+    (is (= nil error))
+    (is (= nil json-error))))
+
 (deftest test-parsing-to-json-colville-simple-html
   (let [filedata (slurp "resources/cobblestone_sample/colvillesimple.map")
         {:keys [result error]} (try

@@ -7,7 +7,6 @@
             [clojure.edn :as edn]
             [clojure.set :as set]
             [clojure.pprint :as pp]
-            [clj-htmltopdf.core :as pdf]
             [carabiner.common.xml :as x]
             [hiccup.core :as hiccup])
   (:import (clojure.lang ExceptionInfo)
@@ -216,45 +215,3 @@
 
 (defn style-link [style]
   [:link {:href style :rel "stylesheet"}])
-
-(defn stylize [style]
-  [:style (slurp style)])
-
-(deftest test-item-types
-  (let [edn (-> "resources/data/compressed.edn"
-                (slurp)
-                (edn/read-string))
-        items (filter #(= "A" (:type %)) (get-in edn [:compendium :item]))
-        page   [:div.container
-                (into [:div.row]
-                      (mapv item-template items))]
-        out (ByteArrayOutputStream.)
-        w (io/writer out)]
-    (pp/pprint page w)
-    (.flush w)
-    (.close w)
-    (.flush out)
-    (.close out)
-    (spit "resources/data/itempage.edn" (String. (.toByteArray out)))
-    (let [webpage [:html
-                   (into
-                     [:head
-                      [:title "Fight Club Five Items"]]
-                     (mapv stylize styles))
-                   [:body page]]
-          xml (x/expand webpage)
-          xml-writer (io/writer "resources/data/itempagefull.edn")
-          _ (pp/pprint xml xml-writer)
-          _ (.flush xml-writer)
-          _ (.close xml-writer)
-          html (with-out-str (xml/emit-element xml))
-          hiccup-html (hiccup/html webpage)
-          pdf-out (ByteArrayOutputStream.)]
-      (spit "itempage.html" html)
-      (spit "hiccup.html" hiccup-html)
-      (pdf/->pdf webpage pdf-out pdf-config)
-      (io/copy
-        (ByteArrayInputStream. (.toByteArray pdf-out ))
-        (io/file "resources/data/itempage.pdf"))
-      )
-    ))

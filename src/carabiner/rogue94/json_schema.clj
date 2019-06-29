@@ -1,11 +1,13 @@
 (ns carabiner.rogue94.json-schema
   (:require [carabiner.rogue94.validation :as v]
             [clojure.spec.alpha :as s]
-            [carabiner.rogue94.common-schema :as common]))
+            [carabiner.rogue94.common-schema :as common]
+            [carabiner.common.regex :as r]))
 
-(def ^:private coord-pattern #"\d+[x]\d+")
 
-(s/def ::coord (partial re-matches coord-pattern))
+(s/def ::coord
+  (s/and keyword?
+         #(re-matches r/coord-pattern (name %))))
 
 (s/def ::height ::common/index)
 
@@ -13,9 +15,15 @@
 
 (s/def ::pixels (s/map-of ::coord ::common/index))
 
+(s/def ::single-tile
+  (s/and
+    (s/keys :req-un [::common/palette ::pixels])
+    v/art-coordinates-valid?))
+
 (s/def ::art
   (s/and
-    (s/keys :req-un [::common/palette ::pixels ::width ::height])
+    (s/keys :req-un [::common/palette ::pixels]
+            :opt-un [::width ::height])
     v/art-coordinates-valid?))
 
 (s/def ::map (s/map-of ::coord ::common/valid-char))
@@ -56,8 +64,7 @@
             ::common/palette))
 
 (s/def ::tiles
-  (s/map-of ::common/entity-name
-            (s/map-of ::coord ::common/index)))
+  (s/map-of ::common/entity-name ::pixels))
 
 (s/def ::full-map
   (s/keys :req-un [::palettes ::tiles ::mapping ::paging ::map]))

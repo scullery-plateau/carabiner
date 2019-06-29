@@ -6,7 +6,7 @@
   (.encodeToString (Base64/getEncoder) (.getBytes to-encode)))
 
 (defn ^String decode-to-string [^String to-decode]
-  (String. (.decode (Base64/getDecoder) ^String to-decode)))
+  (String. (.decode (Base64/getDecoder) to-decode)))
 
 (defn ^String encode-stream [^ByteArrayOutputStream to-encode]
   (.encodeToString (Base64/getEncoder) (.toByteArray to-encode)))
