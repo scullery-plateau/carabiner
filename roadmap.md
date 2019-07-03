@@ -5,11 +5,6 @@
 #### Backend
 * Integration Testing of Endpoints (e2e)
 
-#### Front End Phase 1
-* Redesign download workflow
-* Implement new workflow as component using new endpoints
-* Redesign Pixel Painter to draw SVG and use download workflow component
-
 #### Front End Phase 2
 * Redesign layout
 * Mobile layout
