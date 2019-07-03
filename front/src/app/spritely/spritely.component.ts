@@ -75,7 +75,7 @@ export class SpritelyComponent implements OnInit {
 
   saveDataCompiler() {
     let me = this;
-    return function(): Observable<Object> {
+    return function(): Observable<String> {
       return me.sfs.compressSaveData({
         pixels:me.pixels,
         palette:me.palette,

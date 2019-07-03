@@ -29,13 +29,13 @@ export class TabbedPanelComponent implements OnInit, AfterContentInit {
   }
 
   ngAfterContentInit() {
-    this.children.toArray()[this.activeIndex].hide = false;
+    this.children.toArray()[this.activeIndex].show = true;
   }
 
   select(index: number) {
-    this.children.toArray()[this.activeIndex].hide = true;
+    this.children.toArray()[this.activeIndex].show = false;
     this.activeIndex = index;
-    this.children.toArray()[this.activeIndex].hide = false;
+    this.children.toArray()[this.activeIndex].show = true;
   }
 
 }

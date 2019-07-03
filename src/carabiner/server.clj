@@ -45,7 +45,7 @@
         :parameters {:body-params schema}
         :consumes   ["application/json"]
         :produces   ["text/plain"]
-        :responses  {200 {}}
+        :responses  {200 {:schema s/Str}}
         :handler    (fn [{obj :body-params}]
                       (http/content-type
                         (http/ok (func obj))
