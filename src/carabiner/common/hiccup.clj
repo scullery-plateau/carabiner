@@ -5,7 +5,7 @@
 (defn to-text [hml]
   (-> hml
       (x/expand)
-      (x/to-xml)))
+      (x/toXml)))
 
 (defn to-img [hml]
   (-> hml

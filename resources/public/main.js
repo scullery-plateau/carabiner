@@ -228,6 +228,70 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/cobblestone/cobblestone-file.service.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/cobblestone/cobblestone-file.service.ts ***!
+  \*********************************************************/
+/*! exports provided: CobblestoneFileService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobblestoneFileService", function() { return CobblestoneFileService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _util_download_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/download-link */ "./src/app/util/download-link.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+
+var CobblestoneFileService = /** @class */ (function () {
+    function CobblestoneFileService(client) {
+        this.client = client;
+        this.downloader = new _util_download_link__WEBPACK_IMPORTED_MODULE_2__["DownloadLink"]();
+    }
+    CobblestoneFileService.prototype.parseLoadData = function (loadData) {
+        return this.client.post("/cobblestone/load", loadData);
+    };
+    CobblestoneFileService.prototype.downloadImage = function (saveData, scale, fileName) {
+        var _this = this;
+        this.client.post("/spritely/save", saveData).subscribe(function (base64) {
+            var args = {
+                base64: base64,
+                filename: fileName,
+                scale: scale
+            };
+            _this.downloader.setFileName(fileName);
+            _this.downloader.setPath("/spritely/saveimg?" + (new URLSearchParams(args)).toString());
+            _this.downloader.invokeDownload();
+        });
+    };
+    CobblestoneFileService.prototype.downloaddata = function (saveData, fileName) {
+        var _this = this;
+        this.client.post("/spritely/save", saveData).subscribe(function (base64) {
+            var args = {
+                base64: base64,
+                filename: fileName,
+            };
+            _this.downloader.setFileName(fileName);
+            _this.downloader.setPath("/spritely/savedata?" + (new URLSearchParams(args)).toString());
+            _this.downloader.invokeDownload();
+        });
+    };
+    CobblestoneFileService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]])
+    ], CobblestoneFileService);
+    return CobblestoneFileService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/cobblestone/cobblestone-map/cobblestone-map.component.html":
 /*!****************************************************************************!*\
   !*** ./src/app/cobblestone/cobblestone-map/cobblestone-map.component.html ***!
@@ -342,7 +406,7 @@ var CobblestoneMapComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<tabbed-panel\r\n  title=\"CobbleStone\"\r\n  activeClass=\"is-success\"\r\n  [initActiveIndex]=\"0\">\r\n  <tab-child label=\"File\">\r\n    <file-form\r\n      [defaultSaveFile]=\"defaultSaveFile\"\r\n      [prepareLoadedData]=\"fileLoadHandler\"\r\n      [fileLoadCallback]=\"fileLoadCallback()\"\r\n      [buildSaveData]=\"saveDataCompiler()\"\r\n      >\r\n    </file-form>\r\n  </tab-child>\r\n  <tab-child label=\"Palettes &amp; Tiles\">\r\n    <app-palettes-and-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-palettes-and-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Transforms\">\r\n    <app-transformed-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-transformed-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Map\">\r\n    <app-cobblestone-map [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-cobblestone-map>\r\n  </tab-child>\r\n  <!--\r\n  <tab-child label=\"Paging\">\r\n    <app-map-page-picker [state]=\"state\"></app-map-page-picker>\r\n  </tab-child>\r\n  -->\r\n</tabbed-panel>\r\n<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<div class=\"print-cobblestone\">This will be printed</div>\r\n"
+module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<tabbed-panel\r\n  title=\"CobbleStone\"\r\n  activeClass=\"is-success\"\r\n  [initActiveIndex]=\"0\">\r\n  <tab-child label=\"File\">\r\n    <file-form\r\n      [defaultSaveFile]=\"defaultSaveFile\"\r\n      [prepareLoadedData]=\"fileLoadHandler()\"\r\n      [fileLoadCallback]=\"fileLoadCallback()\"\r\n      [invokeDownload]=\"dataDownloader()\"\r\n      >\r\n    </file-form>\r\n  </tab-child>\r\n  <tab-child label=\"Palettes &amp; Tiles\">\r\n    <app-palettes-and-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-palettes-and-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Transforms\">\r\n    <app-transformed-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-transformed-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Map\">\r\n    <app-cobblestone-map [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-cobblestone-map>\r\n  </tab-child>\r\n  <!--\r\n  <tab-child label=\"Paging\">\r\n    <app-map-page-picker [state]=\"state\"></app-map-page-picker>\r\n  </tab-child>\r\n  -->\r\n</tabbed-panel>\r\n<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<div class=\"print-cobblestone\">This will be printed</div>\r\n"
 
 /***/ }),
 
@@ -371,57 +435,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _util_trigger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/trigger */ "./src/app/util/trigger.ts");
+/* harmony import */ var _cobblestone_file_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cobblestone-file.service */ "./src/app/cobblestone/cobblestone-file.service.ts");
+
 
 
 
 
 var CobblestoneComponent = /** @class */ (function () {
-    function CobblestoneComponent(fb) {
+    function CobblestoneComponent(fb, cfs) {
         this.fb = fb;
+        this.cfs = cfs;
         this.state = {
             palettes: {},
             tiles: {},
             transforms: {},
+            mapping: {},
             map: {},
-            pages: []
+            paging: []
         };
         this.loadTrigger = new _util_trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"]("on-file-load");
     }
     CobblestoneComponent.prototype.ngOnInit = function () {
     };
-    CobblestoneComponent.prototype.saveDataCompiler = function () {
+    CobblestoneComponent.prototype.fileLoadHandler = function () {
         var me = this;
-        return function () {
-            return JSON.stringify(me.state);
+        return function (fileData) {
+            return me.cfs.parseLoadData(fileData);
         };
-    };
-    CobblestoneComponent.prototype.fileLoadHandler = function (fileData) {
-        return JSON.parse(fileData);
     };
     CobblestoneComponent.prototype.fileLoadCallback = function () {
         var me = this;
         return function (json) {
-            ['palettes', 'tiles', 'transforms', 'map'].forEach(function (key) {
+            ['palettes', 'tiles', 'mapping', 'map'].forEach(function (key) {
                 Object.entries(json[key]).forEach(function (entry) {
                     me.state[key][entry[0]] = entry[1];
                 });
+            });
+            json.paging.forEach(function (page) {
+                me.state['paging'].push(page);
             });
             me.loadTrigger.fire();
         };
     };
-    CobblestoneComponent.prototype.fileLoader = function () {
+    CobblestoneComponent.prototype.saveData = function () {
+        return {
+            palettes: this.state['palettes'],
+            tiles: this.state['tiles'],
+            mapping: this.state['mapping'],
+            map: this.state['map'],
+            paging: this.state['paging'],
+        };
+    };
+    CobblestoneComponent.prototype.dataDownloader = function () {
         var me = this;
-        return function (fileData, fileName) {
-            console.log("loading cobblestone file");
-            me.defaultFileName = fileName;
-            var json = JSON.parse(fileData);
-            ['palettes', 'tiles', 'transforms', 'map'].forEach(function (key) {
-                Object.entries(json[key]).forEach(function (entry) {
-                    me.state[key][entry[0]] = entry[1];
-                });
-            });
-            console.log(me.state);
-            me.loadTrigger.fire();
+        return function (filename) {
+            me.cfs.downloaddata(me.saveData(), filename);
         };
     };
     CobblestoneComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -430,7 +498,7 @@ var CobblestoneComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./cobblestone.component.html */ "./src/app/cobblestone/cobblestone.component.html"),
             styles: [__webpack_require__(/*! ./cobblestone.component.scss */ "./src/app/cobblestone/cobblestone.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _cobblestone_file_service__WEBPACK_IMPORTED_MODULE_4__["CobblestoneFileService"]])
     ], CobblestoneComponent);
     return CobblestoneComponent;
 }());
@@ -1489,15 +1557,10 @@ __webpack_require__.r(__webpack_exports__);
 var SpritelyFileService = /** @class */ (function () {
     function SpritelyFileService(client) {
         this.client = client;
-        this.imgPath = "/spritely/saveimg?";
-        this.dataPath = "/spritely/savedata?";
         this.downloader = new _util_download_link__WEBPACK_IMPORTED_MODULE_3__["DownloadLink"]();
     }
     SpritelyFileService.prototype.parseLoadData = function (loadData) {
         return this.client.post("/spritely/load", loadData);
-    };
-    SpritelyFileService.prototype.compressSaveData = function (saveData) {
-        return this.client.post("/spritely/save", saveData);
     };
     SpritelyFileService.prototype.downloadImage = function (saveData, scale, fileName) {
         var _this = this;
@@ -1508,7 +1571,7 @@ var SpritelyFileService = /** @class */ (function () {
                 scale: scale
             };
             _this.downloader.setFileName(fileName);
-            _this.downloader.setPath(_this.imgPath + (new URLSearchParams(args)).toString());
+            _this.downloader.setPath("/spritely/saveimg?" + (new URLSearchParams(args)).toString());
             _this.downloader.invokeDownload();
         });
     };
@@ -1520,7 +1583,7 @@ var SpritelyFileService = /** @class */ (function () {
                 filename: fileName,
             };
             _this.downloader.setFileName(fileName);
-            _this.downloader.setPath(_this.dataPath + (new URLSearchParams(args)).toString());
+            _this.downloader.setPath("/spritely/savedata?" + (new URLSearchParams(args)).toString());
             _this.downloader.invokeDownload();
         });
     };
@@ -2157,6 +2220,7 @@ var FileLoadInputComponent = /** @class */ (function () {
                 me.loadedFileCallback(myReader.result, file.name);
             }
             catch (e) {
+                console.log(e);
                 me.loadErrorCallback(e);
             }
         };

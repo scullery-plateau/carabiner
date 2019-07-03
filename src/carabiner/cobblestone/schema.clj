@@ -21,12 +21,13 @@
    (s/optional-key :transforms) #{Transform}})
 
 (s/defschema Page
-  {:from-x s/Int
-   :from-y s/Int
-   :to-x s/Int
-   :to-y s/Int
+  {:fromX s/Int
+   :fromY s/Int
+   :toX s/Int
+   :toY s/Int
    :width s/Int
-   :height s/Int})
+   :height s/Int
+   :page s/Int})
 
 (s/defschema CobblestoneData
   {:palettes {EntityName cs/Palette}

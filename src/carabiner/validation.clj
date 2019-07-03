@@ -3,20 +3,20 @@
             [clojure.string :as str]))
 
 (defn verify-page-layout [indexed-chars mapped-spaces
-                          {from-x :x from-y :y :keys [dim] page :p
-                           {to-x :x to-y :y :or {to-x 0 to-y 0}} :to}]
-  (let [{:keys [w h] :or {w (- 8 to-x) h (- 10 to-y)}} dim]
+                          {fromX :x fromY :y :keys [dim] page :p
+                           {toX :x toY :y :or {toX 0 toY 0}} :to}]
+  (let [{:keys [w h] :or {w (- 8 toX) h (- 10 toY)}} dim]
     (when (and
-            (> 8 (+ w to-x))
-            (> 10 (+ h to-y)))
+            (> 8 (+ w toX))
+            (> 10 (+ h toY)))
       (let [selection-coords (set
                                (for
                                  [x (range w)
-                                  fx (+ from-x x)
-                                  tx (+ to-x x)
+                                  fx (+ fromX x)
+                                  tx (+ toX x)
                                   y (range h)
-                                  fy (+ from-y y)
-                                  ty (+ to-y y)
+                                  fy (+ fromY y)
+                                  ty (+ toY y)
                                   :let [z {:fx fx :fy fy :tx tx :ty ty}]
                                   :when (contains? indexed-chars {:x fx :y fy})]
                                  z))]

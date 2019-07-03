@@ -6,9 +6,9 @@
   <tab-child label="File">
     <file-form
       [defaultSaveFile]="defaultSaveFile"
-      [prepareLoadedData]="fileLoadHandler"
+      [prepareLoadedData]="fileLoadHandler()"
       [fileLoadCallback]="fileLoadCallback()"
-      [buildSaveData]="saveDataCompiler()"
+      [invokeDownload]="dataDownloader()"
       >
     </file-form>
   </tab-child>
