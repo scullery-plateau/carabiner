@@ -15,8 +15,7 @@
               [defaultSaveFile]="defaultSaveFile"
               [prepareLoadedData]="fileDataReader()"
               [fileLoadCallback]="fileLoadCallback()"
-              [buildSaveData]="saveDataCompiler()"
-              [saveRoute]="saveRouteBuilder()">
+              [invokeDownload]="dataDownloader()">
             </file-form>
           </accordian>
           <accordian
@@ -133,11 +132,11 @@
                       <div class="row">
                         <div class="col-sm-12">
                           <label for="scale" class="text-brand">Scale:</label>
-                          <input type="number" min="1" max="20" id="scale" class="nes-input" formControlName="scale" (change)="redraw()"/>
+                          <input type="number" min="1" max="20" id="scale" class="nes-input" formControlName="scale"/>
                         </div>
                         <div class="col-sm-12">
                           <label for="imgFile" class="text-brand">Image FileName:</label>
-                          <input type="text" id="imgFile" class="nes-input" formControlName="imgFile" placeholder="Image File" (change)="redraw()"/>
+                          <input type="text" id="imgFile" class="nes-input" formControlName="imgFile" placeholder="Image File"/>
                         </div>
                       </div>
                     </div>
@@ -148,8 +147,7 @@
                         [width]="spritelyForm.value.width"
                         [height]="spritelyForm.value.height"
                         [palette]="palette"
-                        [trigger]="trigger"
-                        [imgFile]="spritelyForm.value.imgFile"
+                        [download]="imgDownloader()"
                       ></app-pixel-painter>
                     </div>
                   </div>
@@ -194,7 +192,6 @@
                     [palette]="palette"
                     [backgroundColor]="spritelyForm.value.backgroundColor"
                     [colorIndex]="spritelyForm.value.selectedPalette"
-                    [trigger]="trigger"
                     page="spritely"
                   ></app-pixel-canvas>
                 </div>

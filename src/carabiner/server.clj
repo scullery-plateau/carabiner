@@ -51,8 +51,6 @@
                         (http/ok (func obj))
                         "text/plain"))}})))
 
-(defn default-header-fn [_ _] {})
-
 (defn download-file-headers [content-type {:keys [filename]} response-body]
   (merge
     {"Content-Length" (count response-body)

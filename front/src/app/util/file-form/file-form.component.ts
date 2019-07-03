@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { Trigger } from '../trigger'
 import { DownloadLink } from "../download-link";
+import {SpritelyFileService} from "../../spritely/spritely-file.service";
 
 @Component({
   selector: 'file-form',
@@ -29,6 +30,9 @@ export class FileFormComponent implements OnInit {
   @Input()
   saveRoute:any;
 
+  @Input()
+  invokeDownload:any;
+
   loadedFileData: any;
 
   loadError: any;
@@ -39,7 +43,7 @@ export class FileFormComponent implements OnInit {
 
   downloadLink: DownloadLink = new DownloadLink();
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private sf: SpritelyFileService) { }
 
   ngOnInit() {
     let me = this;
@@ -93,21 +97,7 @@ export class FileFormComponent implements OnInit {
   saveDialogConfirmer() {
     let me = this;
     return function() {
-      me.buildSaveData().subscribe((detail) => {
-        let filename = me.fileForm.value.saveFile;
-        if (filename) {
-          me.downloadLink.setFileName(filename);
-        }
-        me.downloadLink.setPath(me.saveRoute(filename,detail));
-        me.downloadLink.invokeDownload();
-      });
-    }
-  }
-
-  saveFileNameGetter() {
-    let me = this;
-    return function() {
-      return me.fileForm.value.saveFile || me.defaultSaveFile;
+      me.invokeDownload(me.fileForm.value.saveFile);
     }
   }
 }
