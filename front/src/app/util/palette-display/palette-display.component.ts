@@ -19,9 +19,24 @@ export class PaletteDisplayComponent implements OnInit {
   @Input()
   selectFn: Function;
 
+  @Input()
+  setColorFn: Function;
+
+  activeIndex: number;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  select(index:number):void {
+    this.selectFn(index);
+    this.activeIndex = index;
+  }
+
+  setColor(index:number):void {
+    this.select(index);
+    this.setColorFn(index);
   }
 
 }

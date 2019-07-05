@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 
 import {Observable, of} from "rxjs";
@@ -21,6 +21,8 @@ export class SpritelyComponent implements OnInit {
 
   @ViewChild(PixelPendingComponent) pending: PixelPendingComponent;
 
+  @ViewChild('colorPicker') colorInputRef: ElementRef;
+
   spritelyForm: FormGroup = this.fb.group({
     selectedPalette:[0],
     scale:[5],
@@ -40,9 +42,14 @@ export class SpritelyComponent implements OnInit {
 
   defaultSaveFile: string;
 
+  colorInput: HTMLInputElement;
+
+  startingColors: string[] = ["#000000","#ff0000","#00ff00","#0000ff","#ffff00","#ff00ff","#00ffff","#ffffff"];
+
   constructor(private fb: FormBuilder, private sfs: SpritelyFileService) { }
 
   ngOnInit() {
+    this.colorInput = this.colorInputRef.nativeElement as HTMLInputElement;
   }
 
   fileDataReader() {
@@ -120,6 +127,17 @@ export class SpritelyComponent implements OnInit {
     }
   }
 
+  colorSetter() {
+    let me = this;
+    return function(index) {
+      me.spritelyForm.patchValue({
+        selectedPalette:index
+      });
+      me.selectColor();
+      me.colorInput.click();
+    }
+  }
+
   makeTransparent() {
     let t = this.spritelyForm.value.makeTransparent;
     this.palette[0] = t?undefined:this.spritelyForm.value.backgroundColor;
@@ -134,7 +152,7 @@ export class SpritelyComponent implements OnInit {
   }
 
   addColor() {
-    this.palette.push(this.spritelyForm.value.color);
+    this.palette.push(this.startingColors[(this.palette.length % this.startingColors.length)]);
     this.spritelyForm.patchValue({selectedPalette:(this.palette.length-1)});
   }
 
