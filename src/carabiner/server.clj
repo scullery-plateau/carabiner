@@ -1,18 +1,17 @@
 (ns carabiner.server
   (:require [compojure.api.sweet :as sweet]
             [compojure.api.core :as api]
+            [compojure.route :as route]
             [ring.util.http-response :as http]
             [ring.util.response :as resp]
-            [compojure.route :as route]
             [environ.core :refer [env]]
             [org.httpkit.server :as server]
-            [carabiner.json :refer [j2e]]
-            [carabiner.spritely.core :as sp]
-            [carabiner.cobblestone.core :as cb]
+            [schema.core :as s]
             [carabiner.schema :as cs]
             [carabiner.common.schema :as ccs]
-            [carabiner.cobblestone.schema :as cbs]
-            [schema.core :as s])
+            [carabiner.spritely.core :as sp]
+            [carabiner.cobblestone.core :as cb]
+            [carabiner.cobblestone.schema :as cbs])
   (:import (java.io ByteArrayInputStream)))
 
 (defn apply-headers [response headers]

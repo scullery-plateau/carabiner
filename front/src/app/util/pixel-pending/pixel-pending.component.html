@@ -1,0 +1,34 @@
+<dialog #pendingDialog  class="nes-dialog is-dark is-rounded">
+  <div class="row">
+    <div class="col-12">
+      {{label}} pending ...
+    </div>
+    <div class="col-12">
+      <svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="20" height="20" fill="white">
+          <animate id="anim1" attributeType="XML" attributeName="fill" from="white" to="black" begin="0s; anim2.end" dur="1s" repeatCount=""/>
+          <animate id="anim2" attributeType="XML" attributeName="fill" from="black" to="white" begin="anim1.end" dur="1s" repeatCount=""/>
+        </rect>
+      </svg>
+      <svg width="40" height="40" viewBox="0 0 40 40" version="1.1"
+           xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="20" height="20" fill="white">
+          <animate id="anim3" attributeType="XML" attributeName="fill" from="white" to="red" begin="0.5s; anim4.end" dur="1s" repeatCount=""/>
+          <animate id="anim4" attributeType="XML" attributeName="fill" from="red" to="white" begin="anim3.end" dur="1s" repeatCount=""/>
+        </rect>
+      </svg>
+      <svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="20" height="20" fill="white">
+          <animate id="anim5" attributeType="XML" attributeName="fill" from="white" to="green" begin="1s; anim6.end" dur="1s" repeatCount=""/>
+          <animate id="anim6" attributeType="XML" attributeName="fill" from="green" to="white" begin="anim5.end" dur="1s" repeatCount=""/>
+        </rect>
+      </svg>
+      <svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="20" height="20" fill="white">
+          <animate id="anim7" attributeType="XML" attributeName="fill" from="white" to="blue" begin="1.5s; anim8.end" dur="1s" repeatCount=""/>
+          <animate id="anim8" attributeType="XML" attributeName="fill" from="blue" to="white" begin="anim7.end" dur="1s" repeatCount=""/>
+        </rect>
+      </svg>
+    </div>
+  </div>
+</dialog>

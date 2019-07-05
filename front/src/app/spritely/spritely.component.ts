@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 
 import {Observable, of} from "rxjs";
@@ -10,6 +10,7 @@ import {Trigger} from "../util/trigger";
 import {SpritelyData} from "./spritely-data";
 import {SpritelyFileService} from "./spritely-file.service";
 import {Transforms} from "./transform";
+import {PixelPendingComponent} from "../util/pixel-pending/pixel-pending.component";
 
 @Component({
   selector: 'app-spritely',
@@ -17,6 +18,9 @@ import {Transforms} from "./transform";
   styleUrls: ['./spritely.component.scss']
 })
 export class SpritelyComponent implements OnInit {
+
+  @ViewChild(PixelPendingComponent) pending: PixelPendingComponent;
+
   spritelyForm: FormGroup = this.fb.group({
     selectedPalette:[0],
     scale:[5],
@@ -83,14 +87,20 @@ export class SpritelyComponent implements OnInit {
   dataDownloader() {
     let me = this;
     return function(filename) {
-      me.sfs.downloaddata(me.saveData(),filename);
+      me.pending.block();
+      me.sfs.downloaddata(me.saveData(),filename,
+      () => { me.pending.complete(); });
     }
   }
 
   imgDownloader() {
     let me = this;
     return function() {
-      me.sfs.downloadImage(me.saveData(),me.spritelyForm.value.scale,me.spritelyForm.value.imgFile);
+      me.pending.block();
+      me.sfs.downloadImage(me.saveData(),
+        me.spritelyForm.value.scale,
+        me.spritelyForm.value.imgFile,
+        () => { me.pending.complete(); });
     }
   }
 
