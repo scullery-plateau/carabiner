@@ -18,12 +18,11 @@
   (.getBytes (b64/decode-to-string base64)))
 
 (defn build-image [{:keys [scale] :as args}]
-  (let [file-bytes (build-save-file args)
-        file-text (String. file-bytes)
-        file-blocks (c/file-prep file-text)
-        block (first file-blocks)
-        json (art/art-file-to-json block)
-        svg (art/art-json-to-svg scale json)
-        img-bytes (hml/to-img svg)
-        ]
-    img-bytes))
+  (->> args
+       (build-save-file)
+       (String.)
+       (c/file-prep)
+       (first)
+       (art/art-file-to-json)
+       (art/art-json-to-svg scale)
+       (hml/to-img)))
