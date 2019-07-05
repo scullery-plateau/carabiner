@@ -18,5 +18,5 @@
                   (assoc attrs :class class-str)))]
     {:tag tag :attrs attrs :content (mapv #(if (vector? %) (expand %) %) content)}))
 
-(defn toXml [expanded]
+(defn to-xml [expanded]
   (with-out-str (xml/emit expanded)))
