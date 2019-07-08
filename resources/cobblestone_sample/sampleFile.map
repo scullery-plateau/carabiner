@@ -1,131 +1,79 @@
 abcdefgh
 ijklmnop
 qrstuvwx
-yzABDF
+yzABCDEF
+GHIJKLMN
+OPQ
 
-78887888
-4...4...
-4...4...
-4^^C4...
-4^^64...
-4^^64...
-4^^64...
-4^^64...
-4^^64...
-Q--E1222
+0 0
 
-88888889
-.......6
-.......6
-.......6
-.......6
-.......6
-.......6
-.......6
-.......6
-Z..C2223
+\a block stone
+\b brick-corner brick
+\c brick-edge brick
+\d brick-wall brick
+\e broken-floor sand
+\f bubble-tile shiny
+\g cave-corner sand
+\h cave-edge sand
+\i cave-floor sand
+\j cave-wall sand
+\k floral-stone sand
+\l shiny-tile shiny
+\m shuttered-door door
+\n stairs stairs
+\o stair-down door
+\p stair-up door
+\q standing-brazier lantern
+\r statue door
+\s stone-corner stone
+\t stone-edge stone
+\u stone-floor stone
+\v stone-tile stone
+\w stone-wall stone
+\x tile-floor stairs
+\y wall-braziers brazier
+\z wet-floor shallow
+\A half-door half-door
+\B stair-door door
+\C pendant pendant
+\D scroll scroll
+\E half-heart heart
+\F heart heart
+\G heart-10 heart
+\H heart-25 heart
+\I mana-one mana
+\J mana-two mana
+\K mana-three mana
+\L mana-four mana
+\M mana-five mana
+\N mana-six mana
+\O mana-seven mana
+\P mana-eight mana
+\Q mana-nine mana
 
-7S888889
-4......6
-4......6
-4......6
-4......6
-4......6
-4......6
-4......6
-12Z..C23
-
-88888889
-+++++++6
-+++++++6
-2222Z**6
-4..64**6
-4..64++6
-4..64++6
-1=234++6
-    4++6
-
-78Q++E89
-4++++++6
-4++++++6
-4++++++6
-4++++++6
-4++++++6
-4++++++6
-4++++++6
-4++++++6
-12Z++C23
-
-".": stone-tile, floor
-"+": stone-tile, floor, turnleft
-"^": stairs, stairs, flipdown
-"-": front-door, door
-"*": stone-tile, floor, flipover
-"8": brick-wall, wall
-"4": brick-wall, wall, turnleft
-"6": brick-wall, wall, turnright
-"2": brick-wall, wall, flipdown
-"7": brick-corner, wall
-"9": brick-corner, wall, flipover
-"1": brick-corner, wall, flipdown
-"3": brick-corner, wall, flipdown, flipover
-"Q": brick-edge, wall
-"E": brick-edge, wall, flipover
-"Z": brick-edge, wall, flipdown
-"C": brick-edge, wall, flipover, flipdown
-"S": brick-wall, wall, flipover
-"=": stone-tile, floor
-"a": block, stone
-"b": brick-corner, brick
-"c": brick-edge, brick
-"d": brick-wall, brick
-"e": broken-floor, sand
-"f": bubble-tile, shiny
-"g": cave-corner, sand
-"h": cave-edge, sand
-"i": cave-floor, sand
-"j": cave-wall, sand
-"k": floral-stone, sand
-"l": shiny-tile, shiny
-"m": shuttered-door, door
-"n": stairs, stairs
-"o": stair-down, door
-"p": stair-up, door
-"q": standing-brazier, lantern
-"r": statue, door
-"s": stone-corner, stone
-"t": stone-edge, stone
-"u": stone-floor, stone
-"v": stone-tile, stone
-"w": stone-wall, stone
-"x": tile-floor, stairs
-"y": wall-braziers, brazier
-"z": wet-floor, shallow
-"A": half-door, half-door
-"B": stair-door, door
-"D": pendant, pendant
-"F": scroll, scroll
-
-floor: lightgrey, slategrey, darkslategrey, black
-stairs: lightgrey, darkslategrey
-door: white, mediumpurple, indigo, black
-wall: palegoldenrod, darkgoldenrod, black, saddlebrown
-shallow: lightblue, blue
-block: mediumpurple, indigo, black
-half-door: white, orangered, maroon, palegoldenrod, darkgoldenrod, saddlebrown, mediumpurple, indigo, black
-black-border: none, black
-sand: white, tan, brown, black
-shiny: lightblue, blue, indigo, black
-stone: lightgreen, green, darkgreen, black
-brick: white, pink, black, purple
-red-border: none, red
-lantern: white, orangered, maroon, black, darkgoldenrod, saddlebrown
-blue-border: none, blue
-brazier: white, orangered, maroon, palegoldenrod, darkgoldenrod, saddlebrown, black
-green-border: none, green
+floor lightgrey slategrey darkslategrey black
+stairs lightgrey darkslategrey
+door white mediumpurple indigo black
+wall palegoldenrod darkgoldenrod black saddlebrown
+shallow lightblue blue
+block mediumpurple indigo black
+half-door white orangered maroon palegoldenrod darkgoldenrod saddlebrown mediumpurple indigo black
+black-border none black
+sand white tan brown black
+shiny lightblue blue indigo black
+stone lightgreen green darkgreen black
+brick white pink black purple
+red-border none red
+lantern white orangered maroon black darkgoldenrod saddlebrown
+blue-border none blue
+brazier white orangered maroon palegoldenrod darkgoldenrod saddlebrown black
+green-border none green
+pendant none black white gold lightgreen green
+scroll none black orange gold white
+heart none black white red darkred
+mana none black white darkgreen
 
 stone-tile
-"abc"
 aaaaaaaaaaaaaaaa
 aaccccccacccccaa
 acbbbbbcacccccca
@@ -144,7 +92,6 @@ aacccccaccccccaa
 aaaaaaaaaaaaaaaa
 
 stairs
-"ab"
 aaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaa
 bbbbbbbbbbbbbbbb
@@ -163,7 +110,6 @@ bbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbb
 
 front-door
-"abcd"
 daaaaaaaaaaaaaad
 daaaaaaaaaaaaaad
 daaaaaaaaaaaaaad
@@ -182,7 +128,6 @@ dbbddddbbddddbbd
 dddddddddddddddd
 
 brick-wall
-"abcd"
 aaaaaaaaaaaaaaaa
 bdcbbbbbbdcbbbbb
 ddcbddbdddcbddbd
@@ -201,7 +146,6 @@ cccccccccccccccc
 cccccccccccccccc
 
 brick-corner
-"abcd"
 aaaaaaaaaaaaaaaa
 abbbbbbbbdcbbbbb
 abcccdddddcbddbd
@@ -220,7 +164,6 @@ addddcbddcbdcccc
 abdddcbddcbdcdcc
 
 brick-edge
-"abcd"
 aabddcbddcbdcdcc
 aabbdcdddcbdcdcc
 bbabdcccccbdcccc
@@ -239,7 +182,6 @@ cccccccccccccccc
 cccccccccccccccc
 
 bubble-tile
-"abc"
 bbbaaaaaaaaaabbb
 bbaabbbbbbbbaabb
 baabaaaabbbbbaab
@@ -258,7 +200,6 @@ bbaabbbbbbbbaabb
 bbbaaaaaaaaaabbb
 
 block
-"abc"
 cccccccccccccccc
 caabbbbbbbbbbbbc
 cbbabbbbbbbbbccc
@@ -277,7 +218,6 @@ ccccccccccccccac
 cccccccccccccccc
 
 broken-floor
-"abc"
 aabaaabaaaabaaaa
 aabbbbbaaaaabaab
 bbbaaabaaaaaccba
@@ -296,7 +236,6 @@ abbaabbbaaaaaaab
 aaaaaaabaaaaaaaa
 
 cave-wall
-"abcd"
 abccccccdbbbcccd
 aabbcccccdbbccdd
 baabbcccccdccddc
@@ -315,7 +254,6 @@ aabbcccccdbbccdd
 aabccddddbbbbccd
 
 cave-edge
-"abcd"
 dccbbbbddcccbaab
 ddccbbdcccbbaaba
 cddccdcccbbbaaaa
@@ -334,7 +272,6 @@ bbcddddccddccddc
 dbbbbcddddcbbcdd
 
 cave-floor
-"abcd"
 bbbbbccbbbcbbbbb
 bbcbcabdbbbbbbbb
 bbbbccddbbbbbbbb
@@ -352,7 +289,6 @@ bbbcddcbbbcbcdbb
 bbbbbbbbbbbddcbb
 
 cave-corner
-"abcd"
 bbbaaaaaaabbbbaa
 bbbaabbbaaabbaab
 bbaaabccbbaaaabc
@@ -371,7 +307,6 @@ aabbccccdbcccddc
 aabccdddbbbcccdd
 
 floral-stone
-"ab"
 aabbbbbaaaabaaaa
 aabbbbbaaaaabaaa
 babaaabaaababbbb
@@ -390,7 +325,6 @@ bbaaabbbbbbbbaab
 abaaabbbbbbaaaaa
 
 half-door
-"abcdefghi"
 bccccccbiaaaaaaa
 ccbbbbcciaaaaaaa
 cbbaabbciaaaaaaa
@@ -409,7 +343,6 @@ iiiiiiiiiggiiiig
 iiiiiiiiiiiiiiii
 
 shiny-tile
-"abc"
 aaaaaaaaaaaaaaaa
 aabbbbbbbbbbbbaa
 abbbbabbaaabbbba
@@ -428,7 +361,6 @@ aaccccccccccccaa
 aaaaaaaaaaaaaaaa
 
 shuttered-door
-"abcd"
 daaaaaaaaaaaaaad
 daaaaaaaaaaaaaad
 daaaaaaaaaaaaaad
@@ -447,7 +379,6 @@ dbbddddbbddddbbd
 dddddddddddddddd
 
 standing-brazier
-"abcdef"
 acddddddddddddca
 cdaaaadaddaaaadc
 daaaadaadadbaaad
@@ -466,7 +397,6 @@ dadeeeeeeeeeedad
 ddfddddddddddfdd
 
 stair-down
-"abcd"
 cccccccccccccccc
 caaaaaaaaaaaaaac
 cadccccccdddddac
@@ -485,7 +415,6 @@ caaaaaaaaaaaaaac
 cccccccccccccccc
 
 stair-door
-"abcd"
 aaaaaaaaaaaaaaaa
 bbbbbbbbbbbbbbbb
 bbcddddddddddcbb
@@ -504,7 +433,6 @@ bdaaaaaaaabddddb
 dddddddddddddddd
 
 stair-up
-"abcd"
 ccccccccccdddddd
 caaaaaaaaadbbbbd
 cabbbbdddddbbbbd
@@ -523,7 +451,6 @@ caaaaaaaaaaaaaac
 cccccccccccccccc
 
 statue
-"abcd"
 bbbbbddddddbdddd
 bbdddcbaabcdddbb
 bdaadbbaabbdaadb
@@ -542,7 +469,6 @@ bdabbcddddcbbadb
 bddddddddddddddb
 
 stone-wall
-"abcd"
 aaaaaaaaaaaaaaaa
 bccccccccccccccc
 cbbccccccbbccccc
@@ -560,7 +486,6 @@ cccccccccccccccc
 dddddddddddddddd
 
 stone-floor
-"abcd"
 bcaabaabbcaabaaa
 abcaaacbbbcaaaaa
 aabcccbaaabcabaa
@@ -579,7 +504,6 @@ aaabaabbbbaaaabc
 caaaaaabbaaaaaab
 
 stone-edge
-"abcd"
 aacccccccdbcccd
 aabccccccdcbccd
 cbabcccccdcbccd
@@ -597,7 +521,6 @@ cccccccccccccbd
 ddddddddddddddd
 
 stone-corner
-"abcd"
 aaaaaaaaaaaaaaaa
 abbbbbbbbbbbbbbb
 abddcccccbbccccc
@@ -616,7 +539,6 @@ abbccccccdbccddd
 abcccccccdbcccdd
 
 tile-floor
-"ab"
 aaaaaaaabbbbbbbb
 aaaaaaaabbbbbbbb
 aaaaaaaabbbbbbbb
@@ -634,7 +556,6 @@ bbbbbbbbaaaaaaaa
 bbbbbbbbaaaaaaaa
 
 wall-braziers
-"abcdefg"
 bccccccbbccccccb
 ccbbbbccccbbbbcc
 cbbaabbccbbaabbc
@@ -653,7 +574,6 @@ gggggggggggggggg
 gggggggggggggggg
 
 wet-floor
-"ab"
 bbbbbbbbbbbbbbbb
 baabbbbbbaabbbbb
 bbbbbbbbbbbbbbbb
@@ -670,10 +590,8 @@ bbbbbbbbbbbbbbbb
 bbbbaabbbbbbaabb
 bbbbbbbbbbbbbbbb
 
-pendant: none, black, white, gold, lightgreen, green
 
 pendant
-"abcdef"
 aaabbbaaabbbaaaa
 aabcddbabddcbaaa
 abcbbbcbdbbbcbaa
@@ -691,10 +609,7 @@ aaaaabffffbaaaaa
 aaaaaabbbbaaaaaa
 aaaaaaaaaaaaaaaa
 
-scroll: none, black, orange, gold, white
-
 scroll
-"abcde"
 aaaaaaaaaaaaaaaa
 aaaaabbbbaaaaaaa
 aaaabcdddbaaaaaa
@@ -713,10 +628,7 @@ bcdbbddeeddbaaaa
 abcddddddbbaaaaa
 aabbbbbbbaaaaaaa
 
-heart: none, black, white, red, darkred
-
 half-heart
-"abcde"
 aaabbbaaaabbbaaa
 aabcccbaabcccbaa
 abcbbbcbbcbbbcba
@@ -735,7 +647,6 @@ aaaaaaabbaaaaaaa
 aaaaaaaaaaaaaaaa
 
 heart
-"abcde"
 aaabbbaaaabbbaaa
 aabcccbaabcccbaa
 abcdddcbbcdddcba
@@ -754,7 +665,6 @@ aaaaaaabbaaaaaaa
 aaaaaaaaaaaaaaaa
 
 heart-10
-"abcd"
 aaabbbaaaabbbaaa
 aabcccbaabcccbaa
 abcdddcbbcdddcba
@@ -773,7 +683,6 @@ aaaaaaabbaaaaaaa
 aaaaaaaaaaaaaaaa
 
 heart-25
-"abcd"
 aaabbbaaaabbbaaa
 aabcccbaabcccbaa
 abcdddcbbcdddcba
@@ -791,10 +700,7 @@ aaaaaabccbaaaaaa
 aaaaaaabbaaaaaaa
 aaaaaaaaaaaaaaaa
 
-mana: none, black, white, darkgreen
-
 mana-one
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -813,7 +719,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-two
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -832,7 +737,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-three
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -851,7 +755,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-four
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -870,7 +773,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-five
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -889,7 +791,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-six
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -908,7 +809,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-three
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -927,7 +827,6 @@ aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
 mana-eight
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -945,9 +844,7 @@ aaabcddddddcbaaa
 aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
 
-
 mana-nine
-"abcd"
 aaaaaabbbbaaaaaa
 aaaabbccccbbaaaa
 aaabccddddccbaaa
@@ -964,20 +861,3 @@ aabcddddddddcbaa
 aaabcddddddcbaaa
 aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-j
