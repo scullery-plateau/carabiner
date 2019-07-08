@@ -7,49 +7,49 @@ OPQ
 
 0 0
 
-\a block stone
-\b brick-corner brick
-\c brick-edge brick
-\d brick-wall brick
-\e broken-floor sand
-\f bubble-tile shiny
-\g cave-corner sand
-\h cave-edge sand
-\i cave-floor sand
-\j cave-wall sand
-\k floral-stone sand
-\l shiny-tile shiny
-\m shuttered-door door
-\n stairs stairs
-\o stair-down door
-\p stair-up door
-\q standing-brazier lantern
-\r statue door
-\s stone-corner stone
-\t stone-edge stone
-\u stone-floor stone
-\v stone-tile stone
-\w stone-wall stone
-\x tile-floor stairs
-\y wall-braziers brazier
-\z wet-floor shallow
-\A half-door half-door
-\B stair-door door
-\C pendant pendant
-\D scroll scroll
-\E half-heart heart
-\F heart heart
-\G heart-10 heart
-\H heart-25 heart
-\I mana-one mana
-\J mana-two mana
-\K mana-three mana
-\L mana-four mana
-\M mana-five mana
-\N mana-six mana
-\O mana-seven mana
-\P mana-eight mana
-\Q mana-nine mana
+a block stone
+b brick-corner brick
+c brick-edge brick
+d brick-wall brick
+e broken-floor sand
+f bubble-tile shiny
+g cave-corner sand
+h cave-edge sand
+i cave-floor sand
+j cave-wall sand
+k floral-stone sand
+l shiny-tile shiny
+m shuttered-door door
+n stairs stairs
+o stair-down door
+p stair-up door
+q standing-brazier lantern
+r statue door
+s stone-corner stone
+t stone-edge stone
+u stone-floor stone
+v stone-tile stone
+w stone-wall stone
+x tile-floor stairs
+y wall-braziers brazier
+z wet-floor shallow
+A half-door half-door
+B stair-door door
+C pendant pendant
+D scroll scroll
+E half-heart heart
+F heart heart
+G heart-10 heart
+H heart-25 heart
+I mana-one mana
+J mana-two mana
+K mana-three mana
+L mana-four mana
+M mana-five mana
+N mana-six mana
+O mana-seven mana
+P mana-eight mana
+Q mana-nine mana
 
 floor lightgrey slategrey darkslategrey black
 stairs lightgrey darkslategrey
@@ -614,7 +614,6 @@ aaaaaabbbbaaaaaa
 aaaaaaaaaaaaaaaa
 
 scroll
-aaaaaaaaaaaaaaaa
 aaaaabbbbaaaaaaa
 aaaabcdddbaaaaaa
 aaabcddeedbabbaa

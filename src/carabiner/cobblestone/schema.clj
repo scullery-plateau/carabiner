@@ -4,13 +4,17 @@
             [carabiner.common.schema :as cs]
             [carabiner.rogue94.char-index :as ch]))
 
+(s/defschema CharKey
+  (s/constrained s/Keyword
+    #(and (= 1 (count (name %))) (ch/valid-char? (first (name %))))))
+
 (s/defschema TileChar
-  (s/constrained s/Any
-    #(and (char? %) (ch/valid-char? %))))
+  (s/constrained s/Str
+    #(and (= 1 (count %)) (ch/valid-char? (first %)))))
 
 (s/defschema EntityName
-  (s/constrained s/Str
-    (partial re-matches r/name-pattern)))
+  (s/constrained s/Keyword
+    #(re-matches r/name-pattern (name %))))
 
 (s/defschema Transform
   (apply s/enum cs/transforms))
@@ -32,6 +36,6 @@
 (s/defschema CobblestoneData
   {:palettes {EntityName cs/Palette}
    :tiles    {EntityName cs/Pixels}
-   :mapping  {TileChar SingleMapping}
+   :mapping  {CharKey SingleMapping}
    :paging   [Page]
    :map      {cs/Coordinate TileChar}})
