@@ -120,5 +120,5 @@
     (server/run-server my-app {
       :port port
       :join? false
-      :max-line 65535
+      :max-line 131072
       })))
