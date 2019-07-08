@@ -287,6 +287,7 @@ bcbcabcbbbbccbbb
 bbbdbcdbbbcabcbb
 bbbcddcbbbcbcdbb
 bbbbbbbbbbbddcbb
+aaaaaaaaaaaaaaaa
 
 cave-corner
 bbbaaaaaaabbbbaa
@@ -484,6 +485,7 @@ cccccbbccccccbbc
 ddccccccddcccccc
 cccccccccccccccc
 dddddddddddddddd
+dddddddddddddddd
 
 stone-floor
 bcaabaabbcaabaaa
@@ -504,21 +506,22 @@ aaabaabbbbaaaabc
 caaaaaabbaaaaaab
 
 stone-edge
-aacccccccdbcccd
-aabccccccdcbccd
-cbabcccccdcbccd
-ccbabcccddbcccd
-cccbabccddbcccd
-ccccbabccdbcccd
-cccccbabcdbcdcd
-ccccccbacdbcdcd
-cccddcccadbcccd
-dddddddddcbcccd
-bbbbbccbbbacccd
-cccccbbccccbccd
-ddccccccccccbcd
-cccccccccccccbd
-ddddddddddddddd
+aacccccccdbcccdd
+aabccccccdcbccdd
+cbabcccccdcbccdd
+ccbabcccddbcccdd
+cccbabccddbcccdd
+ccccbabccdbcccdd
+cccccbabcdbcdcdd
+ccccccbacdbcdcdd
+cccddcccadbcccdd
+dddddddddcbcccdd
+bbbbbccbbbacccdd
+cccccbbccccbccdd
+ddccccccccccbcdd
+cccccccccccccbdd
+dddddddddddddddd
+dddddddddddddddd
 
 stone-corner
 aaaaaaaaaaaaaaaa
@@ -539,6 +542,7 @@ abbccccccdbccddd
 abcccccccdbcccdd
 
 tile-floor
+aaaaaaaabbbbbbbb
 aaaaaaaabbbbbbbb
 aaaaaaaabbbbbbbb
 aaaaaaaabbbbbbbb
@@ -588,6 +592,7 @@ bbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbb
 bbbbaabbbbbbaabb
+bbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbb
 
 

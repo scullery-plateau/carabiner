@@ -1,5 +1,6 @@
 (ns carabiner.server
-  (:require [compojure.api.sweet :as sweet]
+  (:require [clojure.spec.alpha :as spec]
+            [compojure.api.sweet :as sweet]
             [compojure.api.core :as api]
             [compojure.route :as route]
             [ring.util.http-response :as http]
@@ -30,9 +31,20 @@
                       :responses  {200 {:schema schema}}
                       :handler    (fn [{body :body}]
                                     (let [args (slurp body)]
+                                    (try
                                       (http/content-type
                                         (http/ok (func args))
-                                        "application/json")))}}))))
+                                        "application/json")
+                                    (catch ExceptionInfo e
+                                      (if (= "Errors parsing rogue94 full-map." (.getMessage e))
+                                      (http/content-type
+                                        (http/bad-request {
+                                          :message (.getMessage e)
+                                          :problems (mapv #(select-keys % [:path :pred :val]) (:spec/problems (.getData e)))
+                                          })
+                                        "application/json")
+                                        (throw e)
+                                        )))))}}))))
 
 (defn build-compressor [path func schema]
   (api/context
