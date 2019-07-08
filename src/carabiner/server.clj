@@ -117,4 +117,8 @@
 (defn -main [& [port]]
   (let [my-app (build-app)
         port (Integer. ^int (or port (env :port) 5000))]
-    (server/run-server my-app {:port port :join? false})))
+    (server/run-server my-app {
+      :port port
+      :join? false
+      :max-line 65535
+      })))
