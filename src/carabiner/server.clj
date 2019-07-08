@@ -42,7 +42,7 @@
                                         (http/bad-request {
                                           :message (.getMessage e)
                                           ;:problems (mapv #(select-keys % [:path :pred :val]) (:spec/problems (.getData e)))
-                                          :problems (.getData e)
+                                          :problems (:spec/problems (.getData e))
                                           })
                                         "application/json")
                                         (throw e)
