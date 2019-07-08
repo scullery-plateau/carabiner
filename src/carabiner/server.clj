@@ -13,7 +13,8 @@
             [carabiner.spritely.core :as sp]
             [carabiner.cobblestone.core :as cb]
             [carabiner.cobblestone.schema :as cbs])
-  (:import (java.io ByteArrayInputStream)))
+  (:import (java.io ByteArrayInputStream)
+           (clojure.lang ExceptionInfo)))
 
 (defn apply-headers [response headers]
   (reduce-kv #(resp/header %1 %2 %3) response headers))
