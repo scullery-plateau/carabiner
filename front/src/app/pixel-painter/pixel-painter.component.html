@@ -1,5 +1,19 @@
-<canvas #myCanvas style="display:none;" [width]="16 * scale" [height]="16 * scale"></canvas>
-<span style="display:none;">{{palette.join()}}</span>
-<a [href]="imgPath" class="nes-btn" [download]="(imgFile?imgFile:'spritely')+'.png'">
-  <img [src]="imgPath" [width]="16 * scale" [height]="16 * scale"/>
-</a>
+<button class="nes-btn" (click)="download()">
+  <svg [attr.width]="width * scale" [attr.height]="height * scale">
+    <rect [attr.width]="width * scale" [attr.height]="height * scale"
+          [attr.fill]="palette[0]||'none'" stroke="none" stroke-width="0"></rect>
+    <ng-container *ngFor="let y of range.max(height)">
+      <ng-container *ngFor="let x of range.max(width)">
+        <rect
+          *ngIf="pixels[x + 'x' + y]"
+          [attr.alt]="x + 'x' + y"
+          [attr.x]="x * scale"
+          [attr.y]="y * scale"
+          [attr.width]="scale"
+          [attr.height]="scale"
+          [attr.fill]="palette[pixels[x + 'x' + y]]"
+          style="stroke:none;stroke-width:0;"></rect>
+      </ng-container>
+    </ng-container>
+  </svg>
+</button>

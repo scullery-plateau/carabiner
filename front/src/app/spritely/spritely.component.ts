@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 
 import {Observable, of} from "rxjs";
@@ -10,6 +10,7 @@ import {Trigger} from "../util/trigger";
 import {SpritelyData} from "./spritely-data";
 import {SpritelyFileService} from "./spritely-file.service";
 import {Transforms} from "./transform";
+import {PixelPendingComponent} from "../util/pixel-pending/pixel-pending.component";
 
 @Component({
   selector: 'app-spritely',
@@ -17,6 +18,11 @@ import {Transforms} from "./transform";
   styleUrls: ['./spritely.component.scss']
 })
 export class SpritelyComponent implements OnInit {
+
+  @ViewChild(PixelPendingComponent) pending: PixelPendingComponent;
+
+  @ViewChild('colorPicker') colorInputRef: ElementRef;
+
   spritelyForm: FormGroup = this.fb.group({
     selectedPalette:[0],
     scale:[5],
@@ -25,7 +31,6 @@ export class SpritelyComponent implements OnInit {
     color:['#000001'],
     makeTransparent:[false],
     backgroundColor:['#fffffe'],
-    saveFile:[''],
     imgFile:['']
   });
 
@@ -37,9 +42,14 @@ export class SpritelyComponent implements OnInit {
 
   defaultSaveFile: string;
 
+  colorInput: HTMLInputElement;
+
+  startingColors: string[] = ["#000000","#ff0000","#00ff00","#0000ff","#ffff00","#ff00ff","#00ffff","#ffffff"];
+
   constructor(private fb: FormBuilder, private sfs: SpritelyFileService) { }
 
   ngOnInit() {
+    this.colorInput = this.colorInputRef.nativeElement as HTMLInputElement;
   }
 
   fileDataReader() {
@@ -69,32 +79,35 @@ export class SpritelyComponent implements OnInit {
         formValues.color = me.palette[1];
       }
       me.spritelyForm.patchValue(formValues);
-      me.trigger.fire();
     }
   }
 
-  saveDataCompiler() {
+  saveData(): any {
+    return {
+      pixels:this.pixels,
+      palette:this.palette,
+      width:this.spritelyForm.value.width,
+      height:this.spritelyForm.value.height
+    };
+  }
+
+  dataDownloader() {
     let me = this;
-    return function(): Observable<Object> {
-      return me.sfs.compressSaveData({
-        pixels:me.pixels,
-        palette:me.palette,
-        width:me.spritelyForm.value.width,
-        height:me.spritelyForm.value.height
-      });
+    return function(filename) {
+      me.pending.block();
+      me.sfs.downloaddata(me.saveData(),filename,
+      () => { me.pending.complete(); });
     }
   }
 
-  saveRouteBuilder() {
+  imgDownloader() {
     let me = this;
-    return function(filename,base64): string {
-      let args: any = {
-        base64:base64,
-      };
-      if (filename) {
-        args.filename = filename;
-      }
-      return "/spritely/savedata?" + (new URLSearchParams(args)).toString();
+    return function() {
+      me.pending.block();
+      me.sfs.downloadImage(me.saveData(),
+        me.spritelyForm.value.scale,
+        me.spritelyForm.value.imgFile,
+        () => { me.pending.complete(); });
     }
   }
 
@@ -114,28 +127,32 @@ export class SpritelyComponent implements OnInit {
     }
   }
 
+  colorSetter() {
+    let me = this;
+    return function(index) {
+      me.spritelyForm.patchValue({
+        selectedPalette:index
+      });
+      me.selectColor();
+      me.colorInput.click();
+    }
+  }
+
   makeTransparent() {
     let t = this.spritelyForm.value.makeTransparent;
     this.palette[0] = t?undefined:this.spritelyForm.value.backgroundColor;
-    this.trigger.fire();
   }
 
   setBackground() {
     this.palette[0] = this.spritelyForm.value.backgroundColor;
-    this.trigger.fire();
-  }
-
-  redraw() {
-    this.trigger.fire();
   }
 
   setColor() {
     this.palette[this.spritelyForm.value.selectedPalette] = this.spritelyForm.value.color;
-    this.trigger.fire();
   }
 
   addColor() {
-    this.palette.push(this.spritelyForm.value.color);
+    this.palette.push(this.startingColors[(this.palette.length % this.startingColors.length)]);
     this.spritelyForm.patchValue({selectedPalette:(this.palette.length-1)});
   }
 
@@ -153,7 +170,6 @@ export class SpritelyComponent implements OnInit {
         selectedPalette:len - 1
       })
     }
-    this.trigger.fire();
   }
 
   transform(tf:Transforms) {
@@ -173,7 +189,6 @@ export class SpritelyComponent implements OnInit {
     Object.entries(transformed).forEach(function(entry:any[]){
       pixels[entry[0]] = entry[1];
     })
-    this.trigger.fire();
   }
 
   min() {

@@ -11,3 +11,5 @@ pom.xml.asc
 .hgignore
 .hg/
 /.idea
+resources/cobblestone_sample/img.svg
+resources/cobblestone_sample/img-svg.html

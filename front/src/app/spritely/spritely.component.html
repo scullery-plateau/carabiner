@@ -1,4 +1,12 @@
 <form [formGroup]="spritelyForm" class="topic">
+  <div style="display: none">
+    <select id="palette" class="form-control" formControlName="selectedPalette" (change)="selectColor()">
+      <ng-container *ngFor="let color of palette; index as i">
+        <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
+      </ng-container>
+    </select>
+    <input #colorPicker type="color" id="color" class="nes-input form-control" formControlName="color" value="#000001" (change)="setColor()"/>
+  </div>
   <div class="showcase col-lg-12">
     <div class="nes-container with-title">
       <div class="title">
@@ -15,15 +23,14 @@
               [defaultSaveFile]="defaultSaveFile"
               [prepareLoadedData]="fileDataReader()"
               [fileLoadCallback]="fileLoadCallback()"
-              [buildSaveData]="saveDataCompiler()"
-              [saveRoute]="saveRouteBuilder()">
+              [invokeDownload]="dataDownloader()">
             </file-form>
           </accordian>
           <accordian
             tabId="directionsTab"
             containerId="directionsContainer"
             [initCollapsed]="true"
-            label="Directions">
+            label="Help">
             <div class="nes-balloon from-left">
               <p>Spritely is a canvas for pixel art.</p>
             </div>
@@ -65,28 +72,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-5 text-right">
-                      <label for="palette" class="text-brand">Colors: </label>
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="nes-input nes-select">
-                        <select id="palette" class="form-control" formControlName="selectedPalette" (change)="selectColor()">
-                          <ng-container *ngFor="let color of palette; index as i">
-                            <option *ngIf="i > 0" value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
-                          </ng-container>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-5 text-right">
-                      <label for="color" class="text-brand">Color:</label>
-                    </div>
-                    <div class="col-sm-7">
-                      <input type="color" id="color" class="nes-input form-control" formControlName="color" value="#000001" (change)="setColor()"/>
-                    </div>
-                  </div>
+                  <hr/>
                   <div class="row">
                     <div class="col-sm-12 text-center">
                       <button class="nes-btn is-success" (click)="addColor()">Add Color</button>
@@ -94,11 +80,6 @@
                     </div>
                   </div>
                   <p></p>
-                  <app-palette-display
-                    [palette]="palette"
-                    [href]="'#/spritely'"
-                    [selectFn]="colorIndexSetter()"
-                  ></app-palette-display>
                 </div>
               </div>
             </div>
@@ -133,11 +114,11 @@
                       <div class="row">
                         <div class="col-sm-12">
                           <label for="scale" class="text-brand">Scale:</label>
-                          <input type="number" min="1" max="20" id="scale" class="nes-input" formControlName="scale" (change)="redraw()"/>
+                          <input type="number" min="1" max="20" id="scale" class="nes-input" formControlName="scale"/>
                         </div>
                         <div class="col-sm-12">
                           <label for="imgFile" class="text-brand">Image FileName:</label>
-                          <input type="text" id="imgFile" class="nes-input" formControlName="imgFile" placeholder="Image File" (change)="redraw()"/>
+                          <input type="text" id="imgFile" class="nes-input" formControlName="imgFile" placeholder="Image File"/>
                         </div>
                       </div>
                     </div>
@@ -148,8 +129,7 @@
                         [width]="spritelyForm.value.width"
                         [height]="spritelyForm.value.height"
                         [palette]="palette"
-                        [trigger]="trigger"
-                        [imgFile]="spritelyForm.value.imgFile"
+                        [download]="imgDownloader()"
                       ></app-pixel-painter>
                     </div>
                   </div>
@@ -182,7 +162,16 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-md-12">
+                  <app-palette-display
+                    [palette]="palette"
+                    [href]="'#/spritely'"
+                    [selectFn]="colorIndexSetter()"
+                    [setColorFn]="colorSetter()"
+                  ></app-palette-display>
+                </div>
               </div>
+              <hr/>
               <div class="row">
                 <div class="col-md-12">
                   <app-pixel-canvas
@@ -194,7 +183,6 @@
                     [palette]="palette"
                     [backgroundColor]="spritelyForm.value.backgroundColor"
                     [colorIndex]="spritelyForm.value.selectedPalette"
-                    [trigger]="trigger"
                     page="spritely"
                   ></app-pixel-canvas>
                 </div>
@@ -206,3 +194,4 @@
     </div>
   </div>
 </form>
+<pixel-pending label="Download"></pixel-pending>

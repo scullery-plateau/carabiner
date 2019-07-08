@@ -28,16 +28,16 @@
 
 (s/def ::map (s/map-of ::coord ::common/valid-char))
 
-(s/def ::from-x ::common/index)
+(s/def ::fromX ::common/index)
 
-(s/def ::from-y ::common/index)
+(s/def ::fromY ::common/index)
 
-(s/def ::to-x ::common/index)
+(s/def ::toX ::common/index)
 
-(s/def ::to-y ::common/index)
+(s/def ::toY ::common/index)
 
 (s/def ::page-mapping
-  (s/keys :key-un [::from-x ::from-y ::to-x ::to-y ::width ::height]))
+  (s/keys :key-un [::fromX ::fromY ::toX ::toY ::width ::height]))
 
 (s/def ::paging
   (s/and vector?

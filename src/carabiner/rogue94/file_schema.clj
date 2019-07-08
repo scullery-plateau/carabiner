@@ -53,8 +53,8 @@
 (s/def ::first-page
   (s/and vector?
     (s/cat
-      :from-x ::common/index
-      :from-y ::common/index
+      :fromX ::common/index
+      :fromY ::common/index
       :from-dim (s/?
                   (s/cat
                     :from-width ::common/index
@@ -62,8 +62,8 @@
 
 (s/def ::paging-row
   (s/and vector?
-         (s/cat :from-x ::common/index
-                :from-y ::common/index
+         (s/cat :fromX ::common/index
+                :fromY ::common/index
                 :from-dim (s/?
                             (s/cat
                               :from-width ::common/index
@@ -71,8 +71,8 @@
                 :to (s/?
                       (s/cat
                         :to-label #{">"}
-                        :to-x ::common/index
-                        :to-y ::common/index)))))
+                        :toX ::common/index
+                        :toY ::common/index)))))
 
 (s/def ::map
   (s/and vector?

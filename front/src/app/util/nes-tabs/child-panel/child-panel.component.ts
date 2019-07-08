@@ -11,6 +11,7 @@ export class ChildPanelComponent implements OnInit {
   label: string;
 
   hide: boolean = true;
+  show: boolean = false;
 
   constructor() { }
 

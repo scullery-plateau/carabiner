@@ -30,14 +30,13 @@
                       out []]
                  (if (empty? pages)
                    out
-                   (let [{:keys [from-x from-y from-dim to]} (first pages)
+                   (let [{:keys [fromX fromY from-dim to]} (first pages)
                          page-number (if to prev-page-number (inc prev-page-number))
-                         {:keys [to-x to-y] :or {to-x 0 to-y 0}} to
-                         {:keys [from-width from-height] :or {from-width (- 8 to-x) from-height (- 10 to-y)}} from-dim
-                         page {:from-x from-x :from-y from-y :width from-width
-                               :height from-height :to-x to-x :to-y to-y :page page-number}]
-                     (recur page-number (rest pages) (conj out page)))))
-        ]
+                         {:keys [toX toY] :or {toX 0 toY 0}} to
+                         {:keys [from-width from-height] :or {from-width (- 8 toX) from-height (- 10 toY)}} from-dim
+                         page {:fromX fromX :fromY fromY :width from-width
+                               :height from-height :toX toX :toY toY :page page-number}]
+                     (recur page-number (rest pages) (conj out page)))))]
     {:map      (c/coordinate-map my-map map-chars)
      :paging   paging
      :mapping  char-map
@@ -47,17 +46,17 @@
 (defn full-map-json-to-file [{:keys [paging mapping palettes tiles] my-map :map}]
   (let [my-map (c/pixelate-map my-map)
         paging (mapv
-                 (fn [{:keys [from-x from-y width height to-x to-y]}]
-                   (let [temp-w (- 8 to-x)
-                         temp-h (- 10 to-y)
+                 (fn [{:keys [fromX fromY width height toX toY]}]
+                   (let [temp-w (- 8 toX)
+                         temp-h (- 10 toY)
                          dim (if (or (< width temp-w)
                                      (< height temp-h))
                                [width height])
-                         to (if (or (< 0 to-x)
-                                    (< 0 to-y))
-                              [">" to-x to-y]
+                         to (if (or (< 0 toX)
+                                    (< 0 toY))
+                              [">" toX toY]
                               [])]
-                     (str/join " " (concat [from-x from-y] dim to))))
+                     (str/join " " (concat [fromX fromY] dim to))))
                  paging)
         mapping (mapv
                   (fn [[my-char {:keys [tile-name palette-name transforms]}]]
@@ -134,13 +133,13 @@
   (let [compiled (compile-mapping (select-keys full-map [:mapping :palettes :tiles]))
         [width height] (coords/dim-coords my-map)
         pages (reduce
-                (fn [out {:keys [width height from-x from-y to-x to-y] page-num :page}]
+                (fn [out {:keys [width height fromX fromY toX toY] page-num :page}]
                   (let [page (get out page-num {})]
                     (->>
                       (for [x (range width )
                             y (range height)]
-                        (let [from (coords/from-ints (+ x from-x) (+ y from-y))
-                              to (coords/from-ints (+ x to-x ) (+ y to-y ))
+                        (let [from (coords/from-ints (+ x fromX) (+ y fromY))
+                              to (coords/from-ints (+ x toX ) (+ y toY ))
                               my-char (get my-map from)]
                           (if my-char [to my-char] [])))
                       (filter not-empty)

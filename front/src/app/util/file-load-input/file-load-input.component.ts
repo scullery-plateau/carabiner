@@ -29,6 +29,7 @@ export class FileLoadInputComponent implements OnInit {
       try {
         me.loadedFileCallback(myReader.result,file.name);
       } catch(e) {
+        console.log(e);
         me.loadErrorCallback(e);
       }
     }

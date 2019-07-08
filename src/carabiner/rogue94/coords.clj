@@ -32,13 +32,16 @@
     (let [[x y] (parse coord)]
       (transform tf w h x y))))
 
-(defn tile-transformer [& tfs]
-  (let [transform (apply comp (map #(coord-transformer % 16 16) tfs))]
-    (fn [tile]
+(defn art-transformer [width height & tfs]
+  (let [transform (apply comp (map #(coord-transformer % width height) tfs))]
+    (fn [art]
       (reduce-kv
         #(assoc %1 (transform %2) %3)
         {}
-        tile))))
+        art))))
+
+(defn tile-transformer [& tfs]
+  (apply art-transformer 16 16 tfs))
 
 (defn transform-tile [tile & tfs]
   ((apply tile-transformer tfs) tile))

@@ -24,6 +24,7 @@ import { FileFormComponent } from './util/file-form/file-form.component';
 import { TilePixelsComponent } from './cobblestone/tile-pixels/tile-pixels.component';
 import { FileLoadInputComponent } from './util/file-load-input/file-load-input.component';
 import { TileCanvasComponent } from './cobblestone/tile-canvas/tile-canvas.component';
+import { PixelPendingComponent } from './util/pixel-pending/pixel-pending.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { TileCanvasComponent } from './cobblestone/tile-canvas/tile-canvas.compo
     TilePixelsComponent,
     FileLoadInputComponent,
     TileCanvasComponent,
+    PixelPendingComponent,
   ],
   imports: [
     BrowserModule,

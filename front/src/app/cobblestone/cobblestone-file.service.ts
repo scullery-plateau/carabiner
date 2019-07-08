@@ -1,23 +1,24 @@
 import { Injectable } from '@angular/core';
-import {Observable} from "rxjs";
-import {SpritelyData} from "./spritely-data";
-import {HttpClient} from "@angular/common/http";
 import {DownloadLink} from "../util/download-link";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+import {SpritelyData} from "../spritely/spritely-data";
+import {CobblestoneData} from "./model/cobblestone-data";
 
 @Injectable({
   providedIn: 'root'
 })
-export class SpritelyFileService {
+export class CobblestoneFileService {
 
   downloader: DownloadLink = new DownloadLink();
 
   constructor(private client: HttpClient) { }
 
-  parseLoadData(loadData: string): Observable<SpritelyData> {
-    return this.client.post<SpritelyData>("/spritely/load",loadData);
+  parseLoadData(loadData: string): Observable<CobblestoneData> {
+    return this.client.post<CobblestoneData>("/cobblestone/load",loadData);
   }
 
-  downloadImage(saveData: SpritelyData, scale: number, fileName: string, after: (() => void) = (() => {})): void {
+  downloadImage(saveData: CobblestoneData, scale: number, fileName: string): void {
     this.client.post<String>("/spritely/save",saveData).subscribe((base64) => {
       let args: any = {
         base64:base64,
@@ -27,11 +28,10 @@ export class SpritelyFileService {
       this.downloader.setFileName(fileName);
       this.downloader.setPath("/spritely/saveimg?" + (new URLSearchParams(args)).toString());
       this.downloader.invokeDownload();
-      after();
     });
   }
 
-  downloaddata(saveData: SpritelyData, fileName: string, after: (() => void) = (() => {})): void {
+  downloaddata(saveData: SpritelyData, fileName: string): void {
     this.client.post<String>("/spritely/save",saveData).subscribe((base64) => {
       let args: any = {
         base64:base64,
@@ -40,7 +40,7 @@ export class SpritelyFileService {
       this.downloader.setFileName(fileName);
       this.downloader.setPath("/spritely/savedata?" + (new URLSearchParams(args)).toString());
       this.downloader.invokeDownload();
-      after();
     });
   }
+
 }

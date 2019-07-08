@@ -32,9 +32,6 @@ export class PixelCanvasComponent implements OnInit {
   colorIndex: number;
 
   @Input()
-  trigger: Trigger;
-
-  @Input()
   page: string;
 
   range = Range;
@@ -51,7 +48,6 @@ export class PixelCanvasComponent implements OnInit {
     } else {
       this.pixels[key] = this.colorIndex;
     }
-    this.trigger.fire();
   }
 
   doOutline:boolean = false;
@@ -92,7 +88,6 @@ export class PixelCanvasComponent implements OnInit {
     this.initPoint = undefined;
     this.outlineDim = undefined;
     this.startCorner = undefined;
-    this.trigger.fire();
   }
 
   hasOutline() {

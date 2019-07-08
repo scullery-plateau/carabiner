@@ -3,14 +3,12 @@
     <div class="showcase">
       <div class="nes-container with-title">
         <div class="title">
-          <h3>{{title}}</h3>
+          <h4 style="display: inline;">&nbsp;{{title}}&nbsp;</h4>
           <ng-container *ngFor="let child of children; index as i">
             <button class="nes-btn nes-tab-btn {{(activeIndex == i) ? activeClass : ''}}" (click)="select(i)">{{child.label}}</button>
           </ng-container>
         </div>
-        <ng-container *ngFor="let child of children; index as i">
-          <ng-content></ng-content>
-        </ng-container>
+        <ng-content></ng-content>
       </div>
     </div>
   </div>

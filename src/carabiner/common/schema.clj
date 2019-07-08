@@ -25,4 +25,5 @@
   {:pixels Pixels
    :palette Palette
    (s/optional-key :width) s/Int
-   (s/optional-key :height) s/Int})
+   (s/optional-key :height) s/Int
+   (s/optional-key :transforms) [(apply s/enum transforms)]})
