@@ -7,6 +7,11 @@
       (x/expand)
       (x/to-xml)))
 
+(defn to-html [hml]
+  (-> hml
+      (x/expand)
+      (x/to-html)))
+
 (defn to-img [hml]
   (-> hml
       (to-text)

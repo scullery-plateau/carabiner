@@ -38,7 +38,7 @@
        (img/svg-to-64)))
 
 (defn json-to-print [json]
-  (hml/to-text
+  (hml/to-html
     (fm/full-map-to-printable json)))
 
 (defn build-map-image

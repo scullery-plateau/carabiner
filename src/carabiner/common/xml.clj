@@ -20,3 +20,7 @@
 
 (defn to-xml [expanded]
   (with-out-str (xml/emit expanded)))
+
+(defn to-html [expanded]
+  (str "<!DOCTYPE html>"
+  (with-out-str (xml/emit-element expanded))))
