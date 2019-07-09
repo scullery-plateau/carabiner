@@ -24,7 +24,7 @@
 (defn json-to-img64 [{:keys [art scale]}]
   (->> art
        (art/art-json-to-svg scale)
-       (hml/to-img)
+       (hml/to-text)
        (img/svg-to-64)))
 
 (defn build-image [{:keys [scale] :as args}]
