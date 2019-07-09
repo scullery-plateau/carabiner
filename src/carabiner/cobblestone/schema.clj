@@ -39,3 +39,7 @@
    :mapping  {CharKey SingleMapping}
    :paging   [Page]
    :map      {cs/Coordinate TileChar}})
+
+(s/defschema ScaledCobblestoneData
+  {:scale s/Int
+   :full-map CobblestoneData})

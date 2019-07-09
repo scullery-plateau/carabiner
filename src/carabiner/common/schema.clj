@@ -27,3 +27,7 @@
    (s/optional-key :width) s/Int
    (s/optional-key :height) s/Int
    (s/optional-key :transforms) [(apply s/enum transforms)]})
+
+(s/defschema ScaledArt
+  {:art Art
+   :scale s/Int})

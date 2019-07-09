@@ -99,6 +99,8 @@
           :tags ["spritely"]
           (build-route "/load" sp/load-spritely-file ccs/Art)
           (build-compressor "/save" sp/compress-data ccs/Art)
+          (build-compressor "/rawdata" sp/json-to-data ccs/Art)
+          (build-compressor "/img64" sp/json-to-img64 ccs/ScaledArt)
           (build-download "/savedata" sp/build-save-file "text/plain" cs/DownloadArgs download-file-headers)
           (build-download "/saveimg" sp/build-image "image/png" cs/ImgDownloadArgs download-file-headers))
         (api/context
@@ -106,6 +108,9 @@
           :tags ["cobblestone"]
           (build-route "/load" cb/load-cobblestone-file cbs/CobblestoneData)
           (build-compressor "/save" cb/compress-data cbs/CobblestoneData)
+          (build-compressor "/rawdata" cb/json-to-data cbs/CobblestoneData)
+          (build-compressor "/img64" cb/json-to-img64 cbs/ScaledCobblestoneData)
+          (build-compressor "/html" cb/json-to-print cbs/CobblestoneData)
           (build-download "/data" cb/build-save-file "text/plain" cs/DownloadArgs download-file-headers)
           (build-download "/map" cb/build-map-image "image/png" cs/ImgDownloadArgs download-file-headers)
           (build-download "/print" cb/build-printable "text/html" cs/DownloadArgs download-file-headers))

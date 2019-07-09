@@ -3,7 +3,7 @@
             [carabiner.rogue94.full-map :as fm]
             [carabiner.common.base64 :as b64]
             [carabiner.common.hiccup :as hml]
-            )
+            [carabiner.common.img :as img])
   (:import (clojure.lang ExceptionInfo)))
 
 (defn load-cobblestone-file
@@ -27,6 +27,18 @@
   (-> base64
       (b64/decode-to-string)
       (.getBytes)))
+
+(defn json-to-data [json]
+  (fm/full-map-json-to-file json))
+
+(defn json-to-img64 [{:keys [full-map scale]}]
+  (->> full-map
+       (fm/full-map-json-to-svg scale)
+       (hml/to-img)
+       (img/svg-to-64)))
+
+(defn json-to-print [json]
+  (fm/full-map-to-printable json))
 
 (defn build-map-image
   "takes the map data base64 and returns the png image data as bytes"

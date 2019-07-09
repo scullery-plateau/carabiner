@@ -22,12 +22,16 @@
                 (TranscoderInput. input)
                 (TranscoderOutput. out))))
 
-(defn svg-to-bytes [xml]
-  (let [in-stream (ByteArrayInputStream. (.getBytes xml))
+(defn- svg-to-stream ^ByteArrayOutputStream [^String svg] {}
+  (let [in-stream (ByteArrayInputStream. (.getBytes svg))
         out (ByteArrayOutputStream.)]
     (rasterize :png {} in-stream out)
     (.flush out)
-    (.toByteArray out)))
+    out))
+
+(defn svg-to-bytes [svg]
+  (.toByteArray (svg-to-stream svg)))
 
 (defn svg-to-64 [svg]
-  (b64/encode-stream (ByteArrayInputStream. (svg-to-bytes svg))))
+  (b64/encode-stream  (svg-to-stream svg)))
+
