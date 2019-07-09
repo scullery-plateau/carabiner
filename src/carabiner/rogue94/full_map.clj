@@ -3,7 +3,8 @@
             [carabiner.rogue94.file-schema :as fs]
             [clojure.string :as str]
             [carabiner.rogue94.char-index :as ch]
-            [carabiner.rogue94.coords :as coords]))
+            [carabiner.rogue94.coords :as coords]
+            [clojure.pprint :as pp]))
 
 (def print-style (slurp "resources/publishing/print.css"))
 
@@ -130,6 +131,7 @@
        (build-defs scale compiled)] false)))
 
 (defn full-map-to-printable [{:keys [paging] my-map :map :as full-map}]
+  (pp/pprint full-map)
   (let [compiled (compile-mapping (select-keys full-map [:mapping :palettes :tiles]))
         [width height] (coords/dim-coords my-map)
         pages (reduce

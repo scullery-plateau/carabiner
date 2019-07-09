@@ -34,7 +34,7 @@
 (defn json-to-img64 [{:keys [full-map scale]}]
   (->> full-map
        (fm/full-map-json-to-svg scale)
-       (hml/to-img)
+       (hml/to-text)
        (img/svg-to-64)))
 
 (defn json-to-print [json]
