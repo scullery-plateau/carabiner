@@ -22,8 +22,4 @@
 
 (s/def ::valid-char (s/and char? ch/valid-char?))
 
-(s/def ::char-key (s/and keyword? () ch/valid-char?))
-
-(s/def ::char-str (s/and string? ch/valid-char?))
-
 (s/def ::transform cs/transforms)

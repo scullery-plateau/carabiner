@@ -13,6 +13,10 @@
     #(and (= 1 (count %)) (ch/valid-char? (first %)))))
 
 (s/defschema EntityName
+  (s/constrained s/Str
+    (partial re-matches r/name-pattern)))
+
+(s/defschema EntityKey
   (s/constrained s/Keyword
     #(re-matches r/name-pattern (name %))))
 
@@ -34,8 +38,8 @@
    :page s/Int})
 
 (s/defschema CobblestoneData
-  {:palettes {EntityName cs/Palette}
-   :tiles    {EntityName cs/Pixels}
+  {:palettes {EntityKey cs/Palette}
+   :tiles    {EntityKey cs/Pixels}
    :mapping  {CharKey SingleMapping}
    :paging   [Page]
    :map      {cs/Coordinate TileChar}})

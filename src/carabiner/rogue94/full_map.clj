@@ -23,8 +23,8 @@
         {:keys [paging mapping palettes tiles] my-map :map} valid
         char-map (reduce #(assoc %1 (keyword (str (:char %2))) (update (dissoc %2 :char) :transforms set)) {} mapping)
         map-chars (set (keys char-map))
-        palettes (reduce #(assoc %1 (:name %2) (mapv c/resolve-color (:palette %2))) {} palettes)
-        tiles (reduce #(assoc %1 (:tile-name %2) (c/coordinate-tile (:pixels %2))) {} tiles)
+        palettes (reduce #(assoc %1 (keyword (:name %2)) (mapv c/resolve-color (:palette %2))) {} palettes)
+        tiles (reduce #(assoc %1 (keyword (:tile-name %2)) (c/coordinate-tile (:pixels %2))) {} tiles)
         paging (loop [prev-page-number -1
                       pages (cons (:first-page paging) (:pages paging))
                       out []]
@@ -86,8 +86,8 @@
 (defn compile-mapping [{:keys [mapping palettes tiles]}]
   (reduce-kv
     (fn [out my-char {:keys [palette-name tile-name transforms]}]
-      (let [palette (get palettes palette-name)
-            tile (get tiles tile-name)
+      (let [palette (get palettes (keyword palette-name))
+            tile (get tiles (keyword tile-name))
             char-name (nth ch/names (ch/to-int (first (name my-char))))
             transform (apply coords/tile-transformer transforms)]
         (assoc
