@@ -2026,7 +2026,7 @@ var DownloadLink = /** @class */ (function () {
         this.link.target = "_blank";
     }
     DownloadLink.prototype.setFileName = function (fileName) {
-        //this.link.download = fileName;
+        this.link.download = fileName;
     };
     DownloadLink.prototype.setPath = function (href) {
         this.link.href = href;
