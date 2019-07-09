@@ -32,7 +32,7 @@ export class SpritelyFileService {
   downloaddata(saveData: SpritelyData, fileName: string, after: (() => void) = (() => {})): void {
     this.client.post<String>("/spritely/rawdata",saveData).subscribe((rawdata) => {
       this.downloader.setFileName(fileName);
-      this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.toString()));
+      this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.split("\n").join("\r\n")));
       this.downloader.invokeDownload();
       after();
     });

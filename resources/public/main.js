@@ -272,7 +272,7 @@ var CobblestoneFileService = /** @class */ (function () {
         var _this = this;
         this.client.post("/cobblestone/save", saveData).subscribe(function (rawdata) {
             _this.downloader.setFileName(fileName);
-            _this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.toString()));
+            _this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.split("\n").join("\r\n")));
             _this.downloader.invokeDownload();
         });
     };
@@ -1577,7 +1577,7 @@ var SpritelyFileService = /** @class */ (function () {
         if (after === void 0) { after = (function () { }); }
         this.client.post("/spritely/rawdata", saveData).subscribe(function (rawdata) {
             _this.downloader.setFileName(fileName);
-            _this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.toString()));
+            _this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.split("\n").join("\r\n")));
             _this.downloader.invokeDownload();
             after();
         });
