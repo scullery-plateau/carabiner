@@ -13,3 +13,5 @@ pom.xml.asc
 /.idea
 resources/cobblestone_sample/img.svg
 resources/cobblestone_sample/img-svg.html
+resources/data/compressed.edn
+resources/cobblestone_sample/printable.html

@@ -38,7 +38,8 @@
        (img/svg-to-64)))
 
 (defn json-to-print [json]
-  (fm/full-map-to-printable json))
+  (hml/to-text
+    (fm/full-map-to-printable json)))
 
 (defn build-map-image
   "takes the map data base64 and returns the png image data as bytes"
