@@ -131,7 +131,6 @@
        (build-defs scale compiled)] false)))
 
 (defn full-map-to-printable [{:keys [paging] my-map :map :as full-map}]
-  (pp/pprint full-map)
   (let [compiled (compile-mapping (select-keys full-map [:mapping :palettes :tiles]))
         [width height] (coords/dim-coords my-map)
         pages (reduce
@@ -149,15 +148,15 @@
                       (assoc out page-num))))
                 {}
                 paging)
-        _ (println (keys pages))
         pages (mapv (partial get pages) (range (count (keys pages))))
         scale 6
         tile-size (* 16 scale)]
     [:html
      [:head
+      [:title "Print Your Map"]
       [:style print-style]]
      (into
-       [:body {:onload "print()"}
+       [:body
         [:div {:class "defs"}
          (build-tiles
            tile-size my-map
