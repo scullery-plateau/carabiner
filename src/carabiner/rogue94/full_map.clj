@@ -21,7 +21,7 @@
         full-map (into [my-map paging mapping palettes] tiles)
         valid (c/validate full-map ::fs/full-map)
         {:keys [paging mapping palettes tiles] my-map :map} valid
-        char-map (reduce #(assoc %1 (:char %2) (update (dissoc %2 :char) :transforms set)) {} mapping)
+        char-map (reduce #(assoc %1 (keyword (str (:char %2))) (update (dissoc %2 :char) :transforms set)) {} mapping)
         map-chars (set (keys char-map))
         palettes (reduce #(assoc %1 (:name %2) (mapv c/resolve-color (:palette %2))) {} palettes)
         tiles (reduce #(assoc %1 (:tile-name %2) (c/coordinate-tile (:pixels %2))) {} tiles)
@@ -88,7 +88,7 @@
     (fn [out my-char {:keys [palette-name tile-name transforms]}]
       (let [palette (get palettes palette-name)
             tile (get tiles tile-name)
-            char-name (nth ch/names (ch/to-int my-char))
+            char-name (nth ch/names (ch/to-int (first (name my-char))))
             transform (apply coords/tile-transformer transforms)]
         (assoc
           out

@@ -17,7 +17,7 @@
           (s/explain-data schema obj))))
     conformed))
 
-(defmulti resolve-color #(first %))
+(defmulti resolve-color first)
 
 (defmethod resolve-color :css [[_ color]]
   (name (get color/css (keyword color))))
@@ -26,7 +26,7 @@
 
 (defmethod resolve-color :none [[_ color]] "none")
 
-(defn coordinate-map [rows indicies]
+(defn coordinate [rows indicies]
   (reduce
     (fn [retval [row y]]
       (reduce
@@ -37,10 +37,15 @@
         retval (mapv vector row (range))))
     {} (mapv vector rows (range))))
 
+(defn coordinate-map [my-map map-chars]
+  (let [rows (mapv #(str/split % #"") my-map)
+        values (set (mapv name map-chars))]
+    (coordinate rows values)))
+
 (defn coordinate-tile [tile]
   (let [rows (map (partial map ch/to-int) tile)
         values (set/difference (set (flatten rows)) #{0})]
-    (coordinate-map rows values)))
+    (coordinate rows values)))
 
 (defn pixelate [pixel-map width height value-fn default]
   (reduce
