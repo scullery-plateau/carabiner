@@ -7,7 +7,7 @@ export class DownloadLink {
   }
 
   setFileName(fileName: string) {
-    this.link.download = fileName;
+    //this.link.download = fileName;
   }
 
   setPath(href: string) {

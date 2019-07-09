@@ -18,27 +18,21 @@ export class SpritelyFileService {
   }
 
   downloadImage(saveData: SpritelyData, scale: number, fileName: string, after: (() => void) = (() => {})): void {
-    this.client.post<String>("/spritely/save",saveData).subscribe((base64) => {
-      let args: any = {
-        base64:base64,
-        filename:fileName,
-        scale:scale
-      };
+    this.client.post<String>("/spritely/img64",{
+      "art":saveData,
+      "scale":scale
+    }).subscribe((base64) => {
       this.downloader.setFileName(fileName);
-      this.downloader.setPath("/spritely/saveimg?" + (new URLSearchParams(args)).toString());
+      this.downloader.setPath("data:image/png;base64," + base64);
       this.downloader.invokeDownload();
       after();
     });
   }
 
   downloaddata(saveData: SpritelyData, fileName: string, after: (() => void) = (() => {})): void {
-    this.client.post<String>("/spritely/save",saveData).subscribe((base64) => {
-      let args: any = {
-        base64:base64,
-        filename:fileName,
-      };
+    this.client.post<String>("/spritely/rawdata",saveData).subscribe((rawdata) => {
       this.downloader.setFileName(fileName);
-      this.downloader.setPath("/spritely/savedata?" + (new URLSearchParams(args)).toString());
+      this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.toString()));
       this.downloader.invokeDownload();
       after();
     });

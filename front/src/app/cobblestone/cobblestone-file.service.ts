@@ -19,26 +19,20 @@ export class CobblestoneFileService {
   }
 
   downloadImage(saveData: CobblestoneData, scale: number, fileName: string): void {
-    this.client.post<String>("/spritely/save",saveData).subscribe((base64) => {
-      let args: any = {
-        base64:base64,
-        filename:fileName,
-        scale:scale
-      };
+    this.client.post<String>("/cobblestone/save",{
+      "scale":scale,
+      "full-map":saveData
+    }).subscribe((base64) => {
       this.downloader.setFileName(fileName);
-      this.downloader.setPath("/spritely/saveimg?" + (new URLSearchParams(args)).toString());
+      this.downloader.setPath("data:image/png;base64," + base64);
       this.downloader.invokeDownload();
     });
   }
 
   downloaddata(saveData: SpritelyData, fileName: string): void {
-    this.client.post<String>("/spritely/save",saveData).subscribe((base64) => {
-      let args: any = {
-        base64:base64,
-        filename:fileName,
-      };
+    this.client.post<String>("/cobblestone/save",saveData).subscribe((rawdata) => {
       this.downloader.setFileName(fileName);
-      this.downloader.setPath("/spritely/savedata?" + (new URLSearchParams(args)).toString());
+      this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.toString()));
       this.downloader.invokeDownload();
     });
   }
