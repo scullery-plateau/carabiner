@@ -9,7 +9,8 @@
             [schema.core :as s]
             [carabiner.cobblestone.schema :as ccs]
             [carabiner.common.schema :as cs]
-            )
+            [carabiner.common.hiccup :as hml]
+            [cheshire.core :as json])
   (:import (clojure.lang ExceptionInfo)
            (java.io ByteArrayInputStream)))
 
@@ -22,6 +23,8 @@
     (is (= nil error))
     (try
       (s/validate ccs/CobblestoneData result)
+      (spit "resources/cobblestone_sample/colvillesimple.json"
+            (json/generate-string result {:pretty true}))
       (catch ExceptionInfo e
         (pp/pprint (.getData e))
         (is false)))))
@@ -32,8 +35,10 @@
                                  {:result (core/parse-file-to-json filedata)}
                                  (catch ExceptionInfo e
                                    {:error (.getData e)}))
-        printable (fm/full-map-to-printable result)]
-    (spit "resources/cobblestone_sample/printable.html" (x/to-xml (x/expand printable)))
+        printable (fm/full-map-to-printable result)
+        w (io/writer "resources/cobblestone_sample/printable.edn")]
+    (pp/pprint printable w)
+    (spit "resources/cobblestone_sample/printable.html" (hml/to-html printable))
     (is (= nil error))
     (try
       (s/validate ccs/CobblestoneData result)
@@ -68,7 +73,6 @@
                                  {:result (core/parse-file-to-json filedata)}
                                  (catch ExceptionInfo e
                                    {:error (.getData e)}))]
-    (pp/pprint result)
     (is (= nil error))
     (try
       (s/validate cs/Art result)

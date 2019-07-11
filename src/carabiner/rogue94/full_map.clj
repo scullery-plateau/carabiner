@@ -27,17 +27,19 @@
         palettes (reduce #(assoc %1 (keyword (:name %2)) (mapv c/resolve-color (:palette %2))) {} palettes)
         tiles (reduce #(assoc %1 (keyword (:tile-name %2)) (c/coordinate-tile (:pixels %2))) {} tiles)
         paging (loop [prev-page-number -1
+                      panel-number 0
                       pages (cons (:first-page paging) (:pages paging))
                       out []]
                  (if (empty? pages)
                    out
                    (let [{:keys [fromX fromY from-dim to]} (first pages)
                          page-number (if to prev-page-number (inc prev-page-number))
+                         next-panel-number (if (= page-number prev-page-number) (inc panel-number) 0)
                          {:keys [toX toY] :or {toX 0 toY 0}} to
                          {:keys [from-width from-height] :or {from-width (- 8 toX) from-height (- 10 toY)}} from-dim
-                         page {:fromX fromX :fromY fromY :width from-width
-                               :height from-height :toX toX :toY toY :page page-number}]
-                     (recur page-number (rest pages) (conj out page)))))]
+                         page {:fromX fromX :fromY fromY :width from-width :height from-height
+                               :toX toX :toY toY :page page-number :panel next-panel-number}]
+                     (recur page-number next-panel-number (rest pages) (conj out page)))))]
     {:map      (c/coordinate-map my-map map-chars)
      :paging   paging
      :mapping  char-map
@@ -108,16 +110,31 @@
     [:defs]
     compiled))
 
-(defn build-tiles [tile-size my-map init outline-tile?]
-  (reduce-kv
-    (fn [out coord my-char]
-      (let [char-name (nth ch/names (ch/to-int my-char))
-            [x y] (map (partial * tile-size) (coords/parse coord))]
-        (conj out [:rect {:x      x :y y :width tile-size :height tile-size
-                          :fill   (str "url(#" char-name ")") :stroke "black"
-                          :stroke-width (if outline-tile? 1 0)}])))
-    init
-    my-map))
+(def panel-colors
+  ["black" "red" "green" "blue" "yellow" "magenta" "cyan" "gray"])
+
+(defn panel-outline [panel-index]
+  (nth panel-colors panel-index))
+
+(defn build-tiles
+  ([tile-size my-map init outline-tile?]
+   (build-tiles tile-size my-map [] init outline-tile?))
+  ([tile-size my-map panels init outline-tile?]
+   (reduce
+     (fn [out {:keys [toX toY width height panel]}]
+       (let [[x y w h] (mapv (partial * tile-size) [toX toY width height])]
+         (conj out [:rect {:x x :y y :width w :height h :fill "none"
+                           :stroke (panel-outline panel) :stroke-width 3}])))
+     (reduce-kv
+       (fn [out coord my-char]
+         (let [char-name (nth ch/names (ch/to-int my-char))
+               [x y] (map (partial * tile-size) (coords/parse coord))]
+           (conj out [:rect {:x      x :y y :width tile-size :height tile-size
+                             :fill   (str "url(#" char-name ")") :stroke "black"
+                             :stroke-width (if outline-tile? 1 0)}])))
+       init
+       my-map)
+     panels)))
 
 (defn full-map-json-to-svg [scale {my-map :map :as full-map}]
   (let [tile-size (* 16 scale)
@@ -134,17 +151,18 @@
   (let [compiled (compile-mapping (select-keys full-map [:mapping :palettes :tiles]))
         [width height] (coords/dim-coords my-map)
         pages (reduce
-                (fn [out {:keys [width height fromX fromY toX toY] page-num :page}]
-                  (let [page (get out page-num {})]
+                (fn [out {:keys [width height fromX fromY toX toY] page-num :page :as full-panel}]
+                  (let [{:keys [tiles panels]} (get out page-num {:tiles {} :panels []})]
                     (->>
-                      (for [x (range width )
+                      (for [x (range width)
                             y (range height)]
                         (let [from (coords/from-ints (+ x fromX) (+ y fromY))
                               to (coords/from-ints (+ x toX ) (+ y toY ))
                               my-char (get my-map from)]
                           (if my-char [to my-char] [])))
                       (filter not-empty)
-                      (into page)
+                      (into tiles)
+                      (assoc {} :panels (conj panels full-panel) :tiles)
                       (assoc out page-num))))
                 {}
                 paging)
@@ -164,11 +182,30 @@
             {:width "8in"
              :height "10in"
              :viewBox (str/join " " [0 0 (* tile-size width) (* tile-size height)])}
-            (build-defs scale compiled)] false)]]
+            (build-defs scale compiled)] false)]
+        [:div {:class "page"}
+         (reduce
+           (fn [outlist {:keys [panels]}]
+               (reduce
+                 (fn [out {:keys [fromX fromY width height panel page]}]
+                   (let [[x y w h] (mapv (partial * tile-size) [fromX fromY width height])]
+                     (conj out
+                       [:rect {:x x :y y :width w :height h :stroke (panel-outline panel)
+                               :fill "none" :stroke-width scale}]
+                       [:text {:x (+ x (/ w 2)) :y (+ y (/ h 2))
+                               :alignment-baseline "middle"
+                               :text-anchor "middle"
+                               :style (str "font-size:" tile-size)} (str page)])))
+                 outlist panels))
+           [:svg
+            {:width "8in"
+             :height "10in"
+             :viewBox (str/join " " [0 0 (* tile-size width) (* tile-size height)])}]
+           pages)]]
        (mapv
-         (fn [page]
+         (fn [{:keys [tiles panels]}]
            [:div {:class "page"}
-            (build-tiles tile-size page
+            (build-tiles tile-size tiles panels
               [:svg {:width (* 8 tile-size)
                      :height (* 10 tile-size)}]
               true)])

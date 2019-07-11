@@ -6,11 +6,8 @@
             [clojure.string :as str]
             [clojure.edn :as edn]
             [clojure.set :as set]
-            [clojure.pprint :as pp]
-            [carabiner.common.xml :as x]
-            [hiccup.core :as hiccup])
-  (:import (clojure.lang ExceptionInfo)
-           (java.io ByteArrayOutputStream ByteArrayInputStream)))
+            [clojure.pprint :as pp])
+  (:import (clojure.lang ExceptionInfo)))
 
 (defn attr [key]
   (keyword (str "&" (name key))))

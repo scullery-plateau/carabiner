@@ -35,7 +35,8 @@
    :toY s/Int
    :width s/Int
    :height s/Int
-   :page s/Int})
+   :page s/Int
+   :panel s/Int})
 
 (s/defschema CobblestoneData
   {:palettes {EntityKey cs/Palette}
