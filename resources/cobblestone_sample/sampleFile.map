@@ -3,7 +3,11 @@ ijklmnop
 qrstuvwx
 yzABCDEF
 GHIJKLMN
-OPQ
+OPQRSTUV
+WXYZ`~!@
+#$%
+^&*[]{}1
+23456789
 
 0 0
 
@@ -27,29 +31,61 @@ q standing-brazier lantern
 r statue door
 s stone-corner stone
 t stone-edge stone
-u stone-floor stone
-v stone-tile stone
-w stone-wall stone
+u stone-wall stone
+v stone-floor stone
+w stone-tile stone
 x tile-floor stairs
-y wall-braziers brazier
-z wet-floor shallow
-A half-door half-door
-B stair-door door
-C pendant pendant
-D scroll scroll
-E half-heart heart
-F heart heart
-G heart-10 heart
-H heart-25 heart
-I mana-one mana
-J mana-two mana
-K mana-three mana
-L mana-four mana
-M mana-five mana
-N mana-six mana
-O mana-seven mana
-P mana-eight mana
-Q mana-nine mana
+y floral-patch grass
+z sand-tile sand
+A tall-grass grass
+B sandy-patch sand
+C thick-tile door
+D marble-tile door
+E organic-corner grass
+F organic-side grass
+G organic-path grass
+H thin-grass grass
+I stoney-patch stone
+J wall-braziers brazier
+K wet-floor shallow
+L half-door half-door
+M stair-door door
+N tunic sprite-red-4
+O tome sprite-blue-4
+P chest chest
+Q potion potion-green
+R cloak sprite-red-4
+S gauntlet gauntlet
+T boot sprite-red-4
+U pendant pendant
+V scroll scroll
+W shovel shovel
+X staff sprite-blue-4
+Y wand1 sprite-red-4
+Z wand2 sprite-blue-4
+` whip sprite-red-4
+~ shield shovel
+! bow-and-arrow bow-and-arrow
+@ broadsword sprite-red-blue-5
+# short-sword sprite-blue-4
+$ crystal sprite-red-5
+% spell-fire sprite-red-5
+^ spell-vortex sprite-blue-4
+& spell-lightning sprite-blue-4
+* spell-wave sprite-blue-4
+[ half-heart heart
+] heart heart
+{ heart-10 heart
+} heart-25 heart
+1 mana-one mana
+2 mana-two mana
+3 mana-three mana
+4 mana-four mana
+5 mana-five mana
+6 mana-six mana
+7 mana-seven mana
+8 mana-eight mana
+9 mana-nine mana
 
 floor lightgrey slategrey darkslategrey black
 stairs lightgrey darkslategrey
@@ -63,6 +99,7 @@ sand white tan brown black
 shiny lightblue blue indigo black
 stone lightgreen green darkgreen black
 brick white pink black purple
+grass white lightgreen darkgreen
 red-border none red
 lantern white orangered maroon black darkgoldenrod saddlebrown
 blue-border none blue
@@ -72,6 +109,17 @@ pendant none black white gold lightgreen green
 scroll none black orange gold white
 heart none black white red darkred
 mana none black white darkgreen
+chest white yellow tan brown black
+potion-red none white tan brown grey pink red darkred black
+potion-blue none white tan brown grey cyan blue darkblue black
+potion-green none white tan brown grey lightgreen green darkgreen black
+sprite-red-4 none white red black
+sprite-blue-4 none white blue black
+gauntlet none white lightgrey slategrey darkgoldenrod black
+shovel none brown grey black
+bow-and-arrow none white tan brown blue indigo black
+sprite-red-blue-5 none white red blue black
+sprite-red-5 none white red darkred black
 
 stone-tile
 aaaaaaaaaaaaaaaa
@@ -541,6 +589,204 @@ abbccccccdbcddcc
 abbccccccdbccddd
 abcccccccdbcccdd
 
+floral-patch
+bbbbbbbbbbbbbbbb
+bbbaaabbbbbcbbbb
+babaaababbcbbbbb
+baacccaabccbbbbb
+baacccaabccbcccb
+bcacccacbcbcccbb
+bbcaaacbbbbccbbb
+bbbcccbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbcbbbbbaaabbb
+bbbbbcbbabaaabab
+bbbbbccbaacccaab
+bcccbccbaacccaab
+bbcccbcbcacccacb
+bbbccbbbbcaaacbb
+bbbbbbbbbbcccbbb
+
+sand-tile
+abbbbbbaabbbbbba
+bbbbbbbbbbbbbbbb
+bbbbcbbbbbbbcbbb
+bbbbbbbbbbbbbbbb
+bcbbbbbbbcbbbbbb
+bbbbbabbbbbbbabb
+bbbbbbbbbbbbbbbb
+abbbbbbaabbbbbba
+abbbbbbaabbbbbba
+bbbbbbbbbbbbbbbb
+bbbbcbbbbbbbcbbb
+bbbbbbbbbbbbbbbb
+bcbbbbbbbcbbbbbb
+bbbbbabbbbbbbabb
+bbbbbbbbbbbbbbbb
+abbbbbbaabbbbbba
+
+tall-grass
+bcccbbccbccbccab
+bbcbbcccbcbbcabc
+cbbcccacccbcbabc
+acbccabcccbcbbcb
+baccbbcbabbbccbb
+babcbbccbaccbbcc
+cbbcbccbcbbcbcca
+ccbcbcbcccbcbcab
+abcccbbcabcccbbc
+cabccbbccabccbbc
+cbabcbcccbbbcbcc
+ccbbcccaccbbccac
+bcbbccabcbcbccac
+bbcbcbbccbbccbbc
+bbcbcbcbcbbccbbc
+cbcccccbbcbccbcc
+
+thick-tile
+aaaaaaaaaaaaaaaa
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+aaaaaaacaaaaaaac
+acccccccaccccccc
+aaaaaaaaaaaaaaaa
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+abbbbbbcabbbbbbc
+aaaaaaacaaaaaaac
+acccccccaccccccc
+
+marble-tile
+aaaaaaaaaaaaaaaa
+abbbbbbcabbbbbbc
+abbcbbbcabbcbbbc
+abbbbbbcabbbbbbc
+acbbbbbcacbbbbbc
+abbbbcbcabbbbcbc
+aaaaaaacaaaaaaac
+acccccccaccccccc
+aaaaaaaaaaaaaaaa
+abbbbbbcabbbbbbc
+abbcbbbcabbcbbbc
+abbbbbbcabbbbbbc
+acbbbbbcacbbbbbc
+abbbbcbcabbbbcbc
+aaaaaaacaaaaaaac
+acccccccaccccccc
+
+organic-side
+aaaaaaaaaaaaaaaa
+cbaaaabccbaaaabc
+bcbaabcbbcbaabcb
+bbccccbbbbccccbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+
+organic-corner
+aaaaaaaaaaaaaaaa
+cbaaaabccbaaaaaa
+bcbaabcbbcccbaaa
+bbccccbbbbbbcbaa
+bbbbbbbbbbbbbcaa
+bbbbbbbbbbbbbcaa
+bbbbbbbbbbbbbcba
+bbbbbbbbbbbbbbca
+bbbbbbbbbbbbbbca
+bbbcbbbbbbbbbcba
+bbcbbbbbbbbbcbaa
+bccbbbbbbbbbcaaa
+bccbcccbbbbbcaaa
+bcbcccbbbbbbcbaa
+bbbccbbbbbbbbcba
+bbbbbbbbbbbbbbca
+
+organic-path
+aaaaaaaaaaaaaaaa
+cbaaaabccbaaaabc
+bcbaabcbbcbaabcb
+bbccccbbbbccccbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbb
+bbccccbbbbccccbb
+bcbaabcbbcbaabcb
+cbaaaabccbaaaabc
+aaaaaaaaaaaaaaaa
+
+thin-grass
+aaaaaaaaaaaaaaaa
+aabaaaaaaaaaaaaa
+aabbaabaaaaaaaaa
+aaababbaaaaaaaaa
+bbaaabaaaaaaaaaa
+abbaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaabaaaaa
+aaaaaaaaaabbaaba
+aaaaaaaaaaababba
+aaaaaaaabbaaabaa
+aaaaaaaaabbaaaaa
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaa
+
+sandy-patch
+bbbabbbabbbabbba
+acbbbabbacbbbabb
+bbaabbbbbbaabbbb
+abbbbabaabbbbaba
+bbbabbbcbbbabbbc
+babbbbbbbabbbbbb
+bbbbacabbbbbacab
+ababbcbbababbcbb
+bbbabbbabbbabbba
+acbbbabbacbbbabb
+bbaabbbbbbaabbbb
+abbbbabaabbbbaba
+bbbabbbcbbbabbbc
+babbbbbbbabbbbbb
+bbbbacabbbbbacab
+ababbcbbababbcbb
+
+stoney-patch
+aacccaaaaaaaaaaa
+acbbccaaaaaaaaaa
+cbbbbccaaaaaaaaa
+cbcbbccaaaacccaa
+cccbcccaaacbbcca
+acccccaaaacbccca
+aaaaaaaaaabcccba
+aaaaaaaaaaaaaaaa
+aaaaaaaaaacccaaa
+aaaaaaaaacbbccaa
+aaaaaaaacbbbbcca
+aaacccaacbcbbcca
+aacbbccacccbccca
+aacbcccaacccccaa
+aabcccbaaaaaaaaa
+aaaaaaaaaaaaaaaa
+
 tile-floor
 aaaaaaaabbbbbbbb
 aaaaaaaabbbbbbbb
@@ -570,10 +816,10 @@ ccbbbbccccbbbbcc
 bccccccbbccccccb
 gddddddggddddddg
 geeeeeeggeeeeeeg
+gggggggggggggggg
 fgeddegffgeddegf
 fgeddegffgeddegf
 fggeeggffggeeggf
-gggggggggggggggg
 gggggggggggggggg
 gggggggggggggggg
 
@@ -714,7 +960,7 @@ bcdddddccdddddcb
 bcddddcdcdddddcb
 bcddddddcdddddcb
 bcddddddcdddddcb
-abcddddcccddddcb
+abcddddcccdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -732,7 +978,7 @@ bcdddddddcddddcb
 bcdddddddcddddcb
 bcddddccccddddcb
 bcddddcdddddddcb
-abcdddccccddddcb
+abcdddccccdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -750,7 +996,7 @@ bcdddddddcddddcb
 bcddddccccddddcb
 bcdddddddcddddcb
 bcdddddddcddddcb
-abcdddccccddddcb
+abcdddccccdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -768,7 +1014,7 @@ bcddddddccddddcb
 bcdddddcdcddddcb
 bcddddccccddddcb
 bcdddddddcddddcb
-abcddddddcddddcb
+abcddddddcdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -786,7 +1032,7 @@ bcddddcdddddddcb
 bcddddccccddddcb
 bcdddddddcddddcb
 bcdddddddcddddcb
-abcdddccccddddcb
+abcdddccccdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -804,7 +1050,7 @@ bcddddcdddddddcb
 bcddddccccddddcb
 bcddddcddcddddcb
 bcddddcddcddddcb
-abcdddccccddddcb
+abcdddccccdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -822,7 +1068,7 @@ bcdddddddcddddcb
 bcddddddcdddddcb
 bcdddddcddddddcb
 bcddddcdddddddcb
-abcdddcdddddddcb
+abcdddcddddddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -840,7 +1086,7 @@ bcddddcddcddddcb
 bcddddccccddddcb
 bcddddcddcddddcb
 bcddddcddcddddcb
-abcdddccccddddcb
+abcdddccccdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
@@ -858,9 +1104,387 @@ bcddddcddcddddcb
 bcddddccccddddcb
 bcdddddddcddddcb
 bcdddddddcddddcb
-abcddddddcddddcb
+abcddddddcdddcba
 abcddddddddddcba
 aabcddddddddcbaa
 aaabcddddddcbaaa
 aaaabbccccbbaaaa
 aaaaaabbbbaaaaaa
+
+tunic
+aaaaaaaaaaaaaaaa
+aaaaaaddddaaaaaa
+aaaaddccccddaaaa
+aaddccddddccddaa
+adccdbddddbdccda
+dcccdbddddbdcccd
+ccccdbddddbdcccc
+cccccdbddbdccccc
+dccdccdbbdccdccd
+adcdcccddcccdcda
+aadccccccccccdaa
+aadbbddddddbbdaa
+aadddbbbbbbdddaa
+aadccddddddccdaa
+aadddccccccdddaa
+aaaaddddddddaaaa
+
+tome
+aaadddddddddddaa
+aadccccccccccdaa
+adcccccccccccdaa
+adcccbbbbbbccdaa
+adcccbbbbbbccdaa
+adcccccccccccdaa
+adcccccccccccdaa
+adcccccccccccdaa
+adcccdcdcdcdcdaa
+adcccccccccccdaa
+adcccccccccccdaa
+adccddddddddddaa
+adcddbbbbbbbdaaa
+adccddddddddddaa
+aadccccccccccdaa
+aaaddddddddddaaa
+
+chest
+eeeeeeeeeeeeeeee
+ebedadebbedadebe
+ebededebbededebe
+eaeccceaaeccceae
+eaeccceaaeccceae
+eaedddeaaedddeae
+ebedadebbedadebe
+ebededebbededebe
+ebedddebbedddebe
+ebedddebbedddebe
+ebeeeeebbeeeeebe
+ebbbbbaaaabbbbbe
+ebeddebeebeddebe
+ebeeeeeeeeeeeebe
+ebbbbbbbbbbbbbbe
+eeeeeeeeeeeeeeee
+
+potion
+aaaaaaiiiiaaaaaa
+aaaaaicccciaaaaa
+aaaaicccccciaaaa
+aaaibdccccdeiaaa
+aaaibbddddbeiaaa
+aaaaibbbbeeiaaaa
+aaaibbiiiiieiaaa
+aaibbihhhhhieiaa
+aaibbbbhhhfheiaa
+aaibibgggffgeiaa
+aaibibggfffgeiaa
+aaibibhhhhfgeiaa
+aaibhhhhhhhheiaa
+aaaibbhhhhbeiaaa
+aaaaiibbbbiiaaaa
+aaaaaaiiiiaaaaaa
+
+cloak
+aaaaaadaaaaaaaaa
+aaaaadcdaaaaddda
+aaaadcccddddcccd
+aaaadccccccccbbd
+aaaaddcccccbbdda
+aaadcdbccbbddcbd
+aaadccdbbddccbda
+aaadcccddccccbda
+aaadcccccccccbda
+addccccdcccccbda
+dcccccdcccccccbd
+dbcccdbbccccccbd
+adbbbddbccccccbd
+aadddadbbcccbbda
+aaaaaaadbbbbddaa
+aaaaaaaaddddaaaa
+
+gauntlet
+aaafaaffaaaaaaaa
+aafcffdcfaaaaaaa
+aafcccfdcffaaaaa
+aafdfffdffdfaaaa
+aaafdccfdcfcfaaa
+afffddcffffdfaaa
+fccfdffebbbfdfaa
+fdccfeeffffeffaa
+afdcdffccccfefaa
+afddcddddffcfaaa
+affddfdcfbbffaaa
+aafffdcfebfbfaaa
+aaafddcfeefbfaaa
+aaafdddfeefefaaa
+aaaaffddeeffaaaa
+aaaaaaffffaaaaaa
+
+boot
+adaaaddddaaaaaaa
+dcdddccccdaaaaaa
+dcccccbccdaaaaaa
+dccbbbcccdaaaaaa
+dcccccccdaaaaaaa
+ddddddddcdaaaaaa
+dcdbbbdccdaaaaaa
+dccdddcbcdaaaaaa
+dcccccbcbdaaaaaa
+adcccccbdcddaaaa
+adccccbdbcccdaaa
+dcdccccccbbccdaa
+dcccccccccccccda
+dcccdcccccccccda
+adddadddddddddaa
+aaaaaaaaaaaaaaaa
+
+shovel
+aaaaaaaaaaaddaaa
+aaaaaaaaaadbbdaa
+aaaaaaaaadbbbbda
+aaaaaaaaaadbbcbd
+aaaadaaaadbbbbbd
+aaadcdaadbbcdbda
+aadccdadbbcdadaa
+adccccdbbcdaaaaa
+adcccdbbbdaaaaaa
+dccccdbbddaaaaaa
+dcccccddcddaaaaa
+dcdcdccccccdaaaa
+dcddccccccdaaaaa
+dccddccccdaaaaaa
+adcccccddaaaaaaa
+aadddddaaaaaaaaa
+
+staff
+aaaddddaaaaaaaaa
+aadccccdaaaaaaaa
+adccccccdaaaaaaa
+dcccddcccdaaaaaa
+dccdaadccdaaaaaa
+dccdaadccdaaaaaa
+dcccdadbcdaaaaaa
+dccccdbcccdaaaaa
+adccddbcccdaaaaa
+aaddaadccbcdaaaa
+aaaaaaaddcccdaaa
+aaaaaaaaadcccdaa
+aaaaaaaaaadcccda
+aaaaaaaaaaadcccd
+aaaaaaaaaaaadccd
+aaaaaaaaaaaaadda
+
+wand1
+aaaaaaaaaadddaaa
+aaaaaaaaadcccdaa
+aaaaaaaadcccbcda
+aaaaaaadccbccccd
+aaaaaadbdccbcccd
+aaaaadbdbcccbbcd
+aaaaadbdbdccccda
+aaaaaadbdbbdcdaa
+aaaaadbbbddbdaaa
+aaaadbbbdbbdaaaa
+aaadcdbddddaaaaa
+aadccbdaaaaaaaaa
+adccbdaaaaaaaaaa
+dccbdaaaaaaaaaaa
+dcbdaaaaaaaaaaaa
+addaaaaaaaaaaaaa
+
+wand2
+aaaaaaaaaaddddda
+aaaaaaaaadcccccd
+aaaaaaaaddbcccbd
+aaaaaaaddcbcccbd
+aaaaaadbdccbbbcd
+aaaaadbdbcccbccd
+aaaaadbdbdcbcdda
+aaaaaadbdbbddaaa
+aaaaadbbbddbdaaa
+aaaadbbbdbbdaaaa
+aaadbdbdaddaaaaa
+aadbccdaaaaaaaaa
+adbccdaaaaaaaaaa
+dbccdaaaaaaaaaaa
+dccdaaaaaaaaaaaa
+addaaaaaaaaaaaaa
+
+whip
+aaaaaaaaaaadddda
+aaaaaaaaaadbbbbd
+aaaaaaaaaaaddbbd
+aaaaaaaaaaddbdbd
+aaaaaaaaadbdbdbd
+aaaaaaaaadbddada
+aaaaaaadddddaaaa
+aaaaaaddbbbdaaaa
+aaaaadbbdddaaaaa
+aaaadbbbdaaaaaaa
+aaadcbbdaaaaaaaa
+aadccbdaaaaaaaaa
+adccbdaaaaaaaaaa
+dccbdaaaaaaaaaaa
+dcbdaaaaaaaaaaaa
+addaaaaaaaaaaaaa
+
+shield
+aaaaaaddddaaaaaa
+aaaaddbbbbddaaaa
+aaadbbbbbbbbdaaa
+aadbbccccccbbdaa
+aadbccccccccbdaa
+adbccccccccccbda
+adbccbccccbccbda
+adbccbbccbbccbda
+adbccdbbbbdccbda
+adbcccbbbbcccbda
+aadbccdbbdccbdaa
+aadbcccddcccbdaa
+aaadbccccccbdaaa
+aaaadbbccbbdaaaa
+aaaaaddbbddaaaaa
+aaaaaaaddaaaaaaa
+
+bow-and-arrow
+aaaaaaaaaaaaaaaa
+aaaaaaaaaaggggaa
+aaggggggagcccbga
+agddddbdggggccga
+gdgggdddddgcgcga
+agbaaggddgcggcga
+aaabaaaggcgdggaa
+aaaabaagcgddgaaa
+aaaaabgcggdddgaa
+aaggggcgaagddgaa
+ageegcgbaagddgaa
+gffgcggabaagdgaa
+aggcgegaabagdgaa
+aaagfegaaabgdgaa
+aaagfgaaaagdgaaa
+aaaagaaaaaagaaaa
+
+broadsword
+aaaaaaaaaaaaeeee
+aaaaaaaaaaaeddde
+aaaaaaaaaaeddbde
+aaaaaaaaaeddbdde
+aaaaaaaaeddbddea
+aaaaaaaaedbddeaa
+aaaaaaaeddddeaaa
+aaaeeeecddeeaaaa
+aaebbbeedeaaaaaa
+aaaebcbeeaaaaaaa
+aaaecccbeaaaaaaa
+aaebecbbeaaaaaaa
+aebbbeebeaaaaaaa
+ebbbeaaeaaaaaaaa
+ebbeaaaaaaaaaaaa
+eeeaaaaaaaaaaaaa
+
+short-sword
+aaaaaaaaaaaaaddd
+aaaaaaaaaaaadbbd
+aaaaaaaaaaadbbbd
+aaaaaaaaaadbbbda
+aaaaaaaaadbbbdaa
+aaaaaaaadbbbdaaa
+aaaaaaadbbbdaaaa
+aaaaaadbbbdaaaaa
+aaadadbbbdaaaaaa
+aadbdbbbdaaaaaaa
+aadcbdbdaaaaaaaa
+aaddcbdaaaaaaaaa
+adccdcbdaaaaaaaa
+dcccdddaaaaaaaaa
+dccdaaaaaaaaaaaa
+dddaaaaaaaaaaaaa
+
+crystal
+aaaaaaaaaaaaaaaa
+aaaaaaeeeeaaaaaa
+aaaaeebbbbeeaaaa
+aaaebbccccbbeaaa
+aaebdcccccccbeaa
+aaebdccccbbcbeaa
+aebddcccbbbbcbea
+aebeddcccbbccbea
+aebedbdcccccdbea
+aebebddddcbddbea
+aaebeeddddbebeaa
+aaebeebedeeebeaa
+aaaebbebeebbeaaa
+aaaaeebbbbeeaaaa
+aaaaaaeeeeaaaaaa
+aaaaaaaaaaaaaaaa
+
+spell-fire
+aaaaaeeeeeeaaaaa
+aaaeebbbbbbeeaaa
+aaebbeedeeebbeaa
+aebcedccdddccbea
+aebedcbbdecccbea
+ebedcbbeecbccdbe
+ebedbbbcbbccddbe
+ebddbbbbbbeddcbe
+ebedbbbbbcebedbe
+ebedcbbbbbbbedbe
+ebedebbbbbbcedbe
+aebccecbbbcedbea
+aebcccceeeedcbea
+aaebbddccddbbeaa
+aaaeebbbbbbeeaaa
+aaaaaeeeeeeaaaaa
+
+spell-vortex
+aaaaaaddddaaaaaa
+aaaaddbbbbddaaaa
+aaadbbbbccbbdaaa
+aadbcbbcccccbdaa
+adbccbbccccccbda
+adbccbcccbbbbbda
+dbcccbcbbccbbbbd
+dbccccbbbbcccbbd
+dbbcccbbbbccccbd
+dbbbbccbbcbcccbd
+adbbbbbcccbccbda
+adbccccccbbccbda
+aadbcccccbbcbdaa
+aaadbbccbbbbdaaa
+aaaaddbbbbddaaaa
+aaaaaaddddaaaaaa
+
+spell-lightning
+aaaaaaddddaaaaaa
+aaaaddbbbbddaaaa
+aaadbbcbccbbdaaa
+aadbcccbccccbdaa
+adbcccbbcccccbda
+adbcccbbcccccbda
+dbcccbbbccccccbd
+dbcccbbbbbbbccbd
+dbccbbbbbbbcccbd
+dbccccccbbbcccbd
+adbcccccbbcccbda
+adbcccccbbcccbda
+aadbccccbcccbdaa
+aaadbbccbcbbdaaa
+aaaaddbbbbddaaaa
+aaaaaaddddaaaaaa
+
+spell-wave
+aaaaaaddddaaaaaa
+aaaaddbbbbddaaaa
+aaadbbccccbbdaaa
+aadbccccccccbdaa
+adbccccccccccbda
+adbccccccccccbda
+dbccbccccbbcccbd
+dbcbbbccbbbbcbbd
+dbbcbbbbccbbbcbd
+dbcccbbccccbccbd
+adbccccccccccbda
+adbccccccccccbda
+aadbccccccccbdaa
+aaadbbccccbbdaaa
+aaaaddbbbbddaaaa
+aaaaaaddddaaaaaa

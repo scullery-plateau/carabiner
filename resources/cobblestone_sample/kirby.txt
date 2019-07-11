@@ -1,0 +1,17 @@
+none #000001 #ff0080 #ff80ff
+aabbabbbbbaaaaaa
+abddbdddddbbaaaa
+bddbddddddddbaaa
+bdddddbdbddddbaa
+bdddddbdbddddbaa
+bdddddbdbdddddba
+bdddccdddccddddb
+bddddddbdddddddb
+abdddddbdddddddb
+abddddddddddbbba
+abdddddddddbcccb
+aabdddddddbccccb
+aabbddddddbccccb
+abccbbdddbccccba
+bcccccbbbbbccbaa
+abbbbbbaaabbbaaa
