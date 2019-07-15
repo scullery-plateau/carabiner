@@ -5,10 +5,13 @@
         <form [formGroup]="transForm">
           <div class="row">
             <div class="col-12" *ngIf="currentKey">
-              <tile-display
-                [state]="state"
-                [key]="currentKey">
-              </tile-display>
+              <pixel-painter
+                [pixels]="selectedTile"
+                [palette]="selectedPalette"
+                [width]="16"
+                [height]="16"
+                [scale]="2">
+              </pixel-painter>
             </div>
             <div class="col-12">
               <button class="nes-btn {{exists()?'is-error':'is-success'}}" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>
@@ -34,31 +37,31 @@
               </div>
             </div>
             <div class="col-12">
-              <div id="radios" class="item">
+              <div id="radio-flip-over" class="item">
                 <label>Flip Over</label>
-                <label><input type="radio" class="nes-radio" name="flipOver" formControlName="flipOver" value="flipOver" (change)="updateCurrentKey()"/><span>Yes</span></label>
-                <label><input type="radio" class="nes-radio" name="flipOver" formControlName="flipOver" value="" (change)="updateCurrentKey()"/><span>No</span></label>
+                <label><input type="radio" class="nes-radio" name="flip-over" formControlName="flip-over" value="flip-over" (change)="updateCurrentKey()"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="flip-over" formControlName="flip-over" value="" (change)="updateCurrentKey()"/><span>No</span></label>
               </div>
             </div>
             <div class="col-12">
-              <div id="radios" class="item">
+              <div id="radio-flip-down" class="item">
                 <label>Flip Down</label>
-                <label><input type="radio" class="nes-radio" name="flipDown" formControlName="flipDown" value="flipDown" (change)="updateCurrentKey()"/><span>Yes</span></label>
-                <label><input type="radio" class="nes-radio" name="flipDown" formControlName="flipDown" value="" (change)="updateCurrentKey()"/><span>No</span></label>
+                <label><input type="radio" class="nes-radio" name="flip-down" formControlName="flip-down" value="flip-down" (change)="updateCurrentKey()"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="flip-down" formControlName="flip-down" value="" (change)="updateCurrentKey()"/><span>No</span></label>
               </div>
             </div>
             <div class="col-12">
-              <div id="radios" class="item">
+              <div id="radio-turn-right" class="item">
                 <label>Turn Right</label>
-                <label><input type="radio" class="nes-radio" name="turnRight" formControlName="turnRight" value="turnRight" (change)="updateCurrentKey()"/><span>Yes</span></label>
-                <label><input type="radio" class="nes-radio" name="turnRight" formControlName="turnRight" value="" (change)="updateCurrentKey()"/><span>No</span></label>
+                <label><input type="radio" class="nes-radio" name="turn-right" formControlName="turn-right" value="turn-right" (change)="updateCurrentKey()"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="turn-right" formControlName="turn-right" value="" (change)="updateCurrentKey()"/><span>No</span></label>
               </div>
             </div>
             <div class="col-12">
-              <div id="radios" class="item">
+              <div id="radio-turn-left" class="item">
                 <label>Turn Left</label>
-                <label><input type="radio" class="nes-radio" name="turnLeft" formControlName="turnLeft" value="turnLeft" (change)="updateCurrentKey()"/><span>Yes</span></label>
-                <label><input type="radio" class="nes-radio" name="turnLeft" formControlName="turnLeft" value="" (change)="updateCurrentKey()"/><span>No</span></label>
+                <label><input type="radio" class="nes-radio" name="turn-left" formControlName="turn-left" value="turn-left" (change)="updateCurrentKey()"/><span>Yes</span></label>
+                <label><input type="radio" class="nes-radio" name="turn-left" formControlName="turn-left" value="" (change)="updateCurrentKey()"/><span>No</span></label>
               </div>
             </div>
           </div>
@@ -72,10 +75,13 @@
         <div class="row">
           <div class="col-3" *ngFor="let key of state.transforms.keys()">
             <button (click)="setCurrentKey(key)">
-              <tile-display
-                [state]="state"
-                [key]="key">
-              </tile-display>
+              <pixel-painter
+                [pixels]="tileFrom(key)"
+                [palette]="paletteFrom(key)"
+                [width]="16"
+                [height]="16"
+                [scale]="2">
+              </pixel-painter>
             </button>
           </div>
         </div>

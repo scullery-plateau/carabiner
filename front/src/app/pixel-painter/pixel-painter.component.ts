@@ -2,7 +2,7 @@ import {Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild} from '@a
 import {Range} from "../util/range";
 
 @Component({
-  selector: 'app-pixel-painter',
+  selector: 'pixel-painter',
   templateUrl: './pixel-painter.component.html',
   styleUrls: ['./pixel-painter.component.scss']
 })
@@ -23,9 +23,6 @@ export class PixelPainterComponent implements OnInit {
 
   @Input()
   palette: string[];
-
-  @Input()
-  download: any;
 
   range = Range;
 

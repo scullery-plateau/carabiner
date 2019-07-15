@@ -8,6 +8,39 @@ export class TileTransformerService {
 
   constructor() { }
 
+  static tfLabels = ["flip-over", "flip-down", "turn-right", "turn-left"];
+
+  buildKey(state: any, mapping: {
+    tileName: string,
+    paletteName: string,
+    transforms?: string[]
+  } = {}) {
+    mapping.transforms = mapping.transforms = [];
+    console.log("getting current key");
+    let palette = state.palettes[mapping.paletteName];
+    if (palette) {
+      console.log("palette");
+      console.log(palette);
+      let tile = state.tiles[mapping.tileName];
+      if (tile) {
+        console.log("tile");
+        console.log(tile);
+        let values = this.transForm.value;
+        var tfs = TileTransformerService.tfLabels.map((label) => {
+          return values[label];
+        }).filter((tf) => {
+          return tf.length > 0;
+        });
+        tfs.sort();
+        let key = [mapping.tileName,mapping.paletteName].concat(tfs).join("_");
+        console.log("key");
+        console.log(key);
+        return key;
+      }
+    }
+
+  }
+
   buildTransformedTile(state: any, key: string) {
     let out: any = {};
     let attrs = key.split("_");

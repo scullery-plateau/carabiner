@@ -100,15 +100,12 @@ export class SpritelyComponent implements OnInit {
     }
   }
 
-  imgDownloader() {
-    let me = this;
-    return function() {
-      me.pending.block();
-      me.sfs.downloadImage(me.saveData(),
-        me.spritelyForm.value.scale,
-        me.spritelyForm.value.imgFile,
-        () => { me.pending.complete(); });
-    }
+  downloadImage() {
+    this.pending.block();
+    this.sfs.downloadImage(this.saveData(),
+      this.spritelyForm.value.scale,
+      this.spritelyForm.value.imgFile,
+      () => { this.pending.complete(); });
   }
 
   selectColor() {

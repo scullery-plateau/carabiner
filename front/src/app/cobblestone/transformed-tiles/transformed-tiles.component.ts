@@ -14,20 +14,22 @@ export class TransformedTilesComponent implements OnInit {
   state: any;
 
   transForm: FormGroup = this.fb.group({
-    selectedPalette:[''],
-    selectedTile:[''],
-    flipOver:[''],
-    flipDown:[''],
-    turnRight:[''],
-    turnLeft:['']
+    paletteName:[''],
+    tileName:[''],
+    "flip-over":[''],
+    "flip-down":[''],
+    "turn-right":[''],
+    "turn-left":['']
   });
 
   @Input()
   loadTrigger: Trigger;
 
-  displayTrigger: Trigger = new Trigger("update-tile-display");
-
   currentKey: string;
+
+  selectedPalette: string[];
+
+  selectedTile: any;
 
   constructor(private fb: FormBuilder, private ttf: TileTransformerService) { }
 
@@ -53,11 +55,9 @@ export class TransformedTilesComponent implements OnInit {
     console.log("updated from file")
   }
 
-  static tfLabels = ["flipOver", "flipDown", "turnRight", "turnLeft"];
-
   getCurrentKey() {
     console.log("getting current key");
-    let paletteName = this.transForm.value.selectedTile
+    let paletteName = this.transForm.value.selectedPalette;
     let palette = this.state.palettes[paletteName];
     if (palette) {
       console.log("palette");
@@ -88,8 +88,20 @@ export class TransformedTilesComponent implements OnInit {
     console.log(this.currentKey);
   }
 
-  setCurrentKey() {
-
+  setCurrentKey(key: string) {
+    this.currentKey = key;
+    let tfTile = this.ttf.buildTransformedTile(this.state,key);
+    this.selectedPalette = tfTile.palette;
+    this.selectedTile = tfTile.tile;
+    let args = key.split("_");
+    let values = {
+      selectedPalette:args[1],
+      selectedTile:args[0]
+    };
+    TileTransformerService.tfLabels.forEach((label) => {
+      values[label] = (args.indexOf(label) > 0);
+    });
+    this.transForm.patchValue(values);
   }
 
   exists() {
@@ -107,4 +119,15 @@ export class TransformedTilesComponent implements OnInit {
     }
   }
 
+  tileFrom(key: string) {
+    if (key && this.state.transforms[key]) {
+      return this.state.transforms[key].tile;
+    }
+  }
+
+  paletteFrom(key: string) {
+    if (key && this.state.transforms[key]) {
+      return this.state.transforms[key].palette;
+    }
+  }
 }

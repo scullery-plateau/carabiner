@@ -123,14 +123,15 @@
                       </div>
                     </div>
                     <div class="col-8 text-right">
-                      <app-pixel-painter
-                        [pixels]="pixels"
-                        [scale]="spritelyForm.value.scale"
-                        [width]="spritelyForm.value.width"
-                        [height]="spritelyForm.value.height"
-                        [palette]="palette"
-                        [download]="imgDownloader()"
-                      ></app-pixel-painter>
+                      <button class="nes-btn" (click)="downloadImage()">
+                        <pixel-painter
+                          [pixels]="pixels"
+                          [scale]="spritelyForm.value.scale"
+                          [width]="spritelyForm.value.width"
+                          [height]="spritelyForm.value.height"
+                          [palette]="palette"
+                        ></pixel-painter>
+                      </button>
                     </div>
                   </div>
                 </div>

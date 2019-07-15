@@ -5,6 +5,7 @@ import {Observable} from "rxjs";
 import {SpritelyData} from "../spritely/spritely-data";
 import {CobblestoneFileService} from "./cobblestone-file.service";
 import {CobblestoneData} from "./model/cobblestone-data";
+import {TileTransformerService} from "./tile-transformer.service";
 
 @Component({
   selector: 'app-cobblestone',
@@ -26,7 +27,7 @@ export class CobblestoneComponent implements OnInit {
 
   loadTrigger: Trigger = new Trigger("on-file-load");
 
-  constructor(private fb: FormBuilder, private cfs: CobblestoneFileService) { }
+  constructor(private fb: FormBuilder, private cfs: CobblestoneFileService, private ttf: TileTransformerService) { }
 
   ngOnInit() {
   }
@@ -48,6 +49,11 @@ export class CobblestoneComponent implements OnInit {
       });
       json.paging.forEach((page) => {
         me.state['paging'].push(page)
+      });
+      me.state['mapping'].forEach((mapping) => {
+        mapping.transforms.sort();
+        let key = me.ttf.buildKey(me.state,mapping);
+        me.state.transforms[key] =
       });
       me.loadTrigger.fire();
     }

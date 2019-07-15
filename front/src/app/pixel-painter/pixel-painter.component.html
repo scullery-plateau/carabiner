@@ -1,19 +1,17 @@
-<button class="nes-btn" (click)="download()">
-  <svg [attr.width]="width * scale" [attr.height]="height * scale">
-    <rect [attr.width]="width * scale" [attr.height]="height * scale"
-          [attr.fill]="palette[0]||'none'" stroke="none" stroke-width="0"></rect>
-    <ng-container *ngFor="let y of range.max(height)">
-      <ng-container *ngFor="let x of range.max(width)">
-        <rect
-          *ngIf="pixels[x + 'x' + y]"
-          [attr.alt]="x + 'x' + y"
-          [attr.x]="x * scale"
-          [attr.y]="y * scale"
-          [attr.width]="scale"
-          [attr.height]="scale"
-          [attr.fill]="palette[pixels[x + 'x' + y]]"
-          style="stroke:none;stroke-width:0;"></rect>
-      </ng-container>
+<svg [attr.width]="width * scale" [attr.height]="height * scale">
+  <rect *ngIf="palette[0]" [attr.width]="width * scale" [attr.height]="height * scale"
+        [attr.fill]="palette[0]" stroke="none" stroke-width="0"></rect>
+  <ng-container *ngFor="let y of range.max(height)">
+    <ng-container *ngFor="let x of range.max(width)">
+      <rect
+        *ngIf="pixels[x + 'x' + y]"
+        [attr.alt]="x + 'x' + y"
+        [attr.x]="x * scale"
+        [attr.y]="y * scale"
+        [attr.width]="scale"
+        [attr.height]="scale"
+        [attr.fill]="palette[pixels[x + 'x' + y]]"
+        style="stroke:none;stroke-width:0;"></rect>
     </ng-container>
-  </svg>
-</button>
+  </ng-container>
+</svg>
