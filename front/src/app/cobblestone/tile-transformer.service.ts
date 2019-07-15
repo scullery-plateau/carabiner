@@ -25,9 +25,8 @@ export class TileTransformerService {
       if (tile) {
         console.log("tile");
         console.log(tile);
-        let values = this.transForm.value;
         var tfs = TileTransformerService.tfLabels.map((label) => {
-          return values[label];
+          return mapping[label];
         }).filter((tf) => {
           return tf.length > 0;
         });
