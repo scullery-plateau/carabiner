@@ -91,7 +91,7 @@
     (fn [out my-char {:keys [palette-name tile-name transforms]}]
       (let [palette (get palettes (keyword palette-name))
             tile (get tiles (keyword tile-name))
-            char-name (nth ch/names (ch/to-int (first (name my-char))))
+            char-name (ch/char-name (first (name my-char)))
             transform (apply coords/tile-transformer transforms)]
         (assoc
           out
@@ -127,7 +127,7 @@
                            :stroke (panel-outline panel) :stroke-width 3}])))
      (reduce-kv
        (fn [out coord my-char]
-         (let [char-name (nth ch/names (ch/to-int my-char))
+         (let [char-name (ch/char-name my-char)
                [x y] (map (partial * tile-size) (coords/parse coord))]
            (conj out [:rect {:x      x :y y :width tile-size :height tile-size
                              :fill   (str "url(#" char-name ")") :stroke "black"

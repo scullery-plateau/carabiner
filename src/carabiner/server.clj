@@ -12,7 +12,8 @@
             [carabiner.common.schema :as ccs]
             [carabiner.spritely.core :as sp]
             [carabiner.cobblestone.core :as cb]
-            [carabiner.cobblestone.schema :as cbs])
+            [carabiner.cobblestone.schema :as cbs]
+            [carabiner.rogue94.char-index :as ch])
   (:import (java.io ByteArrayInputStream)
            (clojure.lang ExceptionInfo)))
 
@@ -114,6 +115,15 @@
           (build-download "/data" cb/build-save-file "text/plain" cs/DownloadArgs download-file-headers)
           (build-download "/map" cb/build-map-image "image/png" cs/ImgDownloadArgs download-file-headers)
           (build-download "/print" cb/build-printable "text/html" cs/DownloadArgs download-file-headers))
+        (api/context
+          "/rogue94/charnames" []
+          (sweet/resource
+            {:description ""
+             :get         {:summary    ""
+                           :parameters {:query-params {}}
+                           :responses  {200 {:schema {s/Str s/Str}}}
+                           :handler    (fn [_]
+                                         (http/ok ch/name-map))}}))
         (sweet/GET "/" [] (resp/redirect "/index.html")))
       (sweet/routes
         (route/resources "/")

@@ -17,6 +17,9 @@
               <button class="nes-btn {{exists()?'is-error':'is-success'}}" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>
             </div>
             <div class="col-12">
+
+            </div>
+            <div class="col-12">
               <label for="palettes" class="text-brand">Palettes: </label>
               <div class="nes-input nes-select">
                 <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="updateCurrentKey()">

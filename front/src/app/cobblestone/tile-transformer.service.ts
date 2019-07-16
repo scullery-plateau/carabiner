@@ -16,28 +16,19 @@ export class TileTransformerService {
     transforms?: string[]
   } = {}) {
     mapping.transforms = mapping.transforms = [];
-    console.log("getting current key");
     let palette = state.palettes[mapping.paletteName];
     if (palette) {
-      console.log("palette");
-      console.log(palette);
       let tile = state.tiles[mapping.tileName];
       if (tile) {
-        console.log("tile");
-        console.log(tile);
         var tfs = TileTransformerService.tfLabels.map((label) => {
           return mapping[label];
         }).filter((tf) => {
           return tf.length > 0;
         });
         tfs.sort();
-        let key = [mapping.tileName,mapping.paletteName].concat(tfs).join("_");
-        console.log("key");
-        console.log(key);
-        return key;
+        return [mapping.tileName,mapping.paletteName].concat(tfs).join("_");
       }
     }
-
   }
 
   buildTransformedTile(state: any, key: string) {

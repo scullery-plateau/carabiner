@@ -53,7 +53,7 @@ export class CobblestoneComponent implements OnInit {
       me.state['mapping'].forEach((mapping) => {
         mapping.transforms.sort();
         let key = me.ttf.buildKey(me.state,mapping);
-        me.state.transforms[key] =
+        me.state['transforms'][key] = me.ttf.buildTransformedTile(me.state,key);
       });
       me.loadTrigger.fire();
     }
