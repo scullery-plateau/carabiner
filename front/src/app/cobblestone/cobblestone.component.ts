@@ -6,6 +6,8 @@ import {SpritelyData} from "../spritely/spritely-data";
 import {CobblestoneFileService} from "./cobblestone-file.service";
 import {CobblestoneData} from "./model/cobblestone-data";
 import {TileTransformerService} from "./tile-transformer.service";
+import {TransformedTile} from "./model/TransformedTile";
+import {CobblestoneAppState} from "./model/cobblestone-app-state";
 
 @Component({
   selector: 'app-cobblestone',
@@ -14,14 +16,7 @@ import {TileTransformerService} from "./tile-transformer.service";
 })
 export class CobblestoneComponent implements OnInit {
 
-  private state: {} = {
-    palettes:{},
-    tiles:{},
-    transforms:{},
-    mapping:{},
-    map:{},
-    paging:[]
-  };
+  private state: CobblestoneAppState = new CobblestoneAppState();
 
   defaultFileName: string;
 
@@ -41,32 +36,14 @@ export class CobblestoneComponent implements OnInit {
 
   fileLoadCallback() {
     let me = this;
-    return function(json) {
-      ['palettes','tiles','mapping','map'].forEach((key) => {
-        Object.entries(json[key]).forEach((entry) => {
-          me.state[key][entry[0]] = entry[1];
-        });
-      });
-      json.paging.forEach((page) => {
-        me.state['paging'].push(page)
-      });
-      me.state['mapping'].forEach((mapping) => {
-        mapping.transforms.sort();
-        let key = me.ttf.buildKey(me.state,mapping);
-        me.state['transforms'][key] = me.ttf.buildTransformedTile(me.state,key);
-      });
+    return function(json:CobblestoneData) {
+      me.state.loadData(json);
       me.loadTrigger.fire();
     }
   }
 
-  saveData(): any {
-    return {
-      palettes:this.state['palettes'],
-      tiles:this.state['tiles'],
-      mapping:this.state['mapping'],
-      map:this.state['map'],
-      paging:this.state['paging'],
-    };
+  saveData(): CobblestoneData {
+    return this.state.getData();
   }
 
   dataDownloader() {

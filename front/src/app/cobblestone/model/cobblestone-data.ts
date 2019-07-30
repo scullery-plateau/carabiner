@@ -1,9 +1,10 @@
 import {CobblestonePage} from "./cobblestone-page";
+import {TransformedTile} from "./TransformedTile";
 
 export class CobblestoneData {
-  palettes:{};
+  palettes:Map<string,string[]>;
   tiles:{};
-  mapping:{};
+  mapping:Map<string,TransformedTile>;
   map:{};
   paging:CobblestonePage[];
 }

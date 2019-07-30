@@ -29,7 +29,7 @@ export class CobblestoneFileService {
     });
   }
 
-  downloaddata(saveData: SpritelyData, fileName: string): void {
+  downloaddata(saveData: CobblestoneData, fileName: string): void {
     this.client.post<String>("/cobblestone/save",saveData).subscribe((rawdata) => {
       this.downloader.setFileName(fileName);
       this.downloader.setPath("data:text/plain;," + encodeURIComponent(rawdata.split("\n").join("\r\n")));

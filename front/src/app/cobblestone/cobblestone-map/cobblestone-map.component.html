@@ -2,14 +2,15 @@
   <div class="col-4">
     <div class="showcase">
       <div class="nes-container">
-        <div class="col-12" *ngFor="let key of state.transforms.keys()">
-          <button (click)="select(key)">
-            <tile-display
-              [state]="state"
-              [key]="key">
-            </tile-display>
-          </button>
-        </div>
+        <ng-container *ngIf="state.transforms">
+          <ng-container *ngFor="let key of state.transforms.keys()">
+            <div class="col-12">
+              <button (click)="select(key)">
+
+              </button>
+            </div>
+          </ng-container>
+        </ng-container>
       </div>
     </div>
   </div>
@@ -37,33 +38,15 @@
             <svg
               [attr.width]="dimForm.value.width * dimForm.value.scale * 16"
               [attr.height]="dimForm.value.height * dimForm.value.scale * 16">
-              <defs>
-                <g id="bg">
-                  <rect x="0" y="0"
-                    [attr.width]="dimForm.value.scale * 16"
-                    [attr.height]="dimForm.value.scale * 16"
-                    fill="white"
-                    style="stroke:black;stroke-width:2"/>
-                </g>
-                <ng-container *ngFor="let key of state.transforms.keys()">
-                  <g [id]="key">
-                    <ng-container *ngFor="let y of range.max(16)">
-                      <ng-container *ngFor="let x of range.max(16)">
-                        <svg:rect [attr.x]="x * dimForm.value.scale" [attr.y]="y * dimForm.value.scale"
-                          [attr.width]="dimForm.value.scale" [attr.height]="dimForm.value.scale"
-                          [attr.fill]="pixel(key,x,y)" style="stroke:none;"></svg:rect>
-                      </ng-container>
-                    </ng-container>
-                  </g>
-                </ng-container>
-              </defs>
-              <ng-container *ngFor="let y of range.max(dimForm.value.height)">
-                <ng-container *ngFor="let x of range.max(dimForm.value.width)">
-                  <a href="#/cobblestone" (click)="setTile(x,y)">
-                    <use [attr.href]="'#' + getTile(x,y)"
-                    [attr.x]="x * dimForm.value.scale * 16"
-                    [attr.y]="y * dimForm.value.scale * 16"/>
-                  </a>
+              <ng-container *ngIf="state.map">
+                <ng-container *ngFor="let y of range.max(dimForm.value.height)">
+                  <ng-container *ngFor="let x of range.max(dimForm.value.width)">
+                    <a href="#/cobblestone" (click)="setTile(x,y)">
+                      <rect [attr.href]="'url(#' + getTile(x,y) + ')'"
+                            [attr.x]="x * dimForm.value.scale * 16"
+                            [attr.y]="y * dimForm.value.scale * 16"/>
+                    </a>
+                  </ng-container>
                 </ng-container>
               </ng-container>
             </svg>

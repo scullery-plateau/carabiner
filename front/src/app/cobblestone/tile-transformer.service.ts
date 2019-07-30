@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Point } from '../util/point';
+import {Transform} from "./model/transform";
+import {TransformedTile} from "./model/TransformedTile";
 
 @Injectable({
   providedIn: 'root'
@@ -8,27 +10,37 @@ export class TileTransformerService {
 
   constructor() { }
 
-  static tfLabels = ["flip-over", "flip-down", "turn-right", "turn-left"];
+  parseKeyToForm(key: string): {} {
+    let tile = TransformedTile.parse(key);
+    let out: {
+      selectedPalette?:string,
+      selectedTile?:string,
+      "flip-over"?:boolean,
+      "flip-down"?:boolean,
+      "turn-right"?:boolean,
+      "turn-left"?:boolean
+    } = {};
+    out.selectedPalette = tile.paletteName;
+    out.selectedTile = tile.tileName;
+    Object.values(Transform).forEach(tf => {
+      out[tf] = (tile.transforms.indexOf(tf) >= 0);
+    });
+    return out;
+  }
 
-  buildKey(state: any, mapping: {
-    tileName: string,
-    paletteName: string,
-    transforms?: string[]
-  } = {}) {
-    mapping.transforms = mapping.transforms = [];
-    let palette = state.palettes[mapping.paletteName];
-    if (palette) {
-      let tile = state.tiles[mapping.tileName];
-      if (tile) {
-        var tfs = TileTransformerService.tfLabels.map((label) => {
-          return mapping[label];
-        }).filter((tf) => {
-          return tf.length > 0;
-        });
-        tfs.sort();
-        return [mapping.tileName,mapping.paletteName].concat(tfs).join("_");
-      }
-    }
+  printFormKey(formValue: {
+    selectedPalette?:string,
+    selectedTile?:string,
+    "flip-over"?:boolean,
+    "flip-down"?:boolean,
+    "turn-right"?:boolean,
+    "turn-left"?:boolean
+  } = {}): string {
+    var tfs = Object.values(Transform).filter((tf) => {
+      return formValue[tf];
+    });
+    tfs.sort();
+    return [formValue.selectedTile,formValue.selectedPalette].concat(tfs).join("_");
   }
 
   buildTransformedTile(state: any, key: string) {

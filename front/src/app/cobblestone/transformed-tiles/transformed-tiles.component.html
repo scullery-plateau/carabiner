@@ -23,8 +23,10 @@
               <label for="palettes" class="text-brand">Palettes: </label>
               <div class="nes-input nes-select">
                 <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="updateCurrentKey()">
-                  <ng-container *ngFor="let palette of state.palettes.keys()">
-                    <option value="{{palette}}">{{palette}}</option>
+                  <ng-container *ngIf="state.palettes">
+                    <ng-container *ngFor="let palette of state.palettes.keys()">
+                      <option value="{{palette}}">{{palette}}</option>
+                    </ng-container>
                   </ng-container>
                 </select>
               </div>
@@ -33,8 +35,10 @@
               <label for="selectedTile">Tiles:</label>
               <div class="nes-input nes-select">
                 <select class="form-control" id="selectedTile" formControlName="selectedTile" (change)="updateCurrentKey()">
-                  <ng-container *ngFor="let tileName of state.tiles.keys()">
-                    <option value="{{tileName}}">{{tileName}}</option>
+                  <ng-container *ngIf="state.tiles">
+                    <ng-container *ngFor="let tileName of state.tiles.keys()">
+                      <option value="{{tileName}}">{{tileName}}</option>
+                    </ng-container>
                   </ng-container>
                 </select>
               </div>
@@ -76,17 +80,15 @@
     <div class="showcase">
       <div class="nes-container">
         <div class="row">
-          <div class="col-3" *ngFor="let key of state.transforms.keys()">
-            <button (click)="setCurrentKey(key)">
-              <pixel-painter
-                [pixels]="tileFrom(key)"
-                [palette]="paletteFrom(key)"
-                [width]="16"
-                [height]="16"
-                [scale]="2">
-              </pixel-painter>
-            </button>
-          </div>
+          <ng-container *ngIf="state.transforms">
+            <ng-container *ngFor="let key of state.transforms.keys()">
+              <div class="col-3" >
+                <button (click)="setCurrentKey(key)">
+
+                </button>
+              </div>
+            </ng-container>
+          </ng-container>
         </div>
       </div>
     </div>

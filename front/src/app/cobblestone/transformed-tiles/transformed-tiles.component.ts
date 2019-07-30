@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { TileTransformerService } from '../tile-transformer.service'
 import { Trigger } from "../../util/trigger";
+import {Transform} from "../model/transform";
 
 @Component({
   selector: 'app-transformed-tiles',
@@ -14,8 +15,8 @@ export class TransformedTilesComponent implements OnInit {
   state: any;
 
   transForm: FormGroup = this.fb.group({
-    paletteName:[''],
-    tileName:[''],
+    selectedPalette:[''],
+    selectedTile:[''],
     "flip-over":[''],
     "flip-down":[''],
     "turn-right":[''],
@@ -30,6 +31,8 @@ export class TransformedTilesComponent implements OnInit {
   selectedPalette: string[];
 
   selectedTile: any;
+
+  static tfLabels: string[] = ["flip-over", "flip-down", "turn-right", "turn-left"];
 
   constructor(private fb: FormBuilder, private ttf: TileTransformerService) { }
 
@@ -57,29 +60,7 @@ export class TransformedTilesComponent implements OnInit {
 
   getCurrentKey() {
     console.log("getting current key");
-    let paletteName = this.transForm.value.selectedPalette;
-    let palette = this.state.palettes[paletteName];
-    if (palette) {
-      console.log("palette");
-      console.log(palette);
-      let tileName = this.transForm.value.selectedTile;
-      let tile = this.state.tiles[tileName];
-      if (tile) {
-        console.log("tile");
-        console.log(tile);
-        let values = this.transForm.value;
-        var tfs = TransformedTilesComponent.tfLabels.map((label) => {
-          return values[label];
-        }).filter((tf) => {
-          return tf.length > 0;
-        });
-        tfs.sort();
-        let key = [tileName,paletteName].concat(tfs).join("_");
-        console.log("key");
-        console.log(key);
-        return key;
-      }
-    }
+    return this.ttf.printFormKey(this.transForm.value);
   }
 
   updateCurrentKey() {
@@ -98,7 +79,7 @@ export class TransformedTilesComponent implements OnInit {
       selectedPalette:args[1],
       selectedTile:args[0]
     };
-    TileTransformerService.tfLabels.forEach((label) => {
+    Object.values(Transform).forEach((label) => {
       values[label] = (args.indexOf(label) > 0);
     });
     this.transForm.patchValue(values);
@@ -116,18 +97,6 @@ export class TransformedTilesComponent implements OnInit {
       delete this.state.transforms[key];
     } else {
       this.state.transforms[key] = this.ttf.buildTransformedTile(this.state,key);
-    }
-  }
-
-  tileFrom(key: string) {
-    if (key && this.state.transforms[key]) {
-      return this.state.transforms[key].tile;
-    }
-  }
-
-  paletteFrom(key: string) {
-    if (key && this.state.transforms[key]) {
-      return this.state.transforms[key].palette;
     }
   }
 }

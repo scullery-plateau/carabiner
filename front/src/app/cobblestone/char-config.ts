@@ -1,4 +1,4 @@
-import {Transform} from "./transform";
+import {Transform} from "./model/transform";
 
 export class CharConfig {
   tileName: string;

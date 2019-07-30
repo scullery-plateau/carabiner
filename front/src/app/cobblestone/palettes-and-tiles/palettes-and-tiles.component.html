@@ -15,8 +15,10 @@
                 <div class="col-sm-7">
                   <div class="nes-input nes-select">
                     <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="selectPalette()">
-                      <ng-container *ngFor="let palette of state.palettes.keys()">
-                        <option value="{{palette}}">{{palette}}</option>
+                      <ng-container *ngIf="state.palettes">
+                        <ng-container *ngFor="let palette of state.palettes.keys()">
+                          <option value="{{palette}}">{{palette}}</option>
+                        </ng-container>
                       </ng-container>
                     </select>
                   </div>
@@ -93,8 +95,10 @@
                 <div class="col-7">
                   <div class="nes-input nes-select">
                     <select class="form-control" id="selectedTile" formControlName="selectedTile" (change)="selectTile()">
-                      <ng-container *ngFor="let tileName of state.tiles.keys()">
-                        <option value="{{tileName}}">{{tileName}}</option>
+                      <ng-container *ngIf="state.tiles">\
+                        <ng-container *ngFor="let tileName of state.tiles.keys()">
+                          <option value="{{tileName}}">{{tileName}}</option>
+                        </ng-container>
                       </ng-container>
                     </select>
                   </div>

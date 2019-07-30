@@ -3,14 +3,14 @@
 
 (def ^:private my-chars "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+-=`;:'\"[]{}\\|,.<>/?")
 
-(defn- get-name [^char my-char]
+(defn- get-name [^Character my-char]
   (str/replace (Character/getName (int my-char)) #" " "_"))
 
 (def names (mapv get-name my-chars))
 
 (def name-map (reduce #(assoc %1 (str %2) (get-name %2)) {} my-chars))
 
-(defn char-name [^char my-char]
+(defn char-name [^Character my-char]
   (get name-map my-char))
 
 (defn ^char to-char [^long index]
