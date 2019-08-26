@@ -3,8 +3,12 @@ import {TransformedTile} from "./TransformedTile";
 
 export class CobblestoneData {
   palettes:Map<string,string[]>;
-  tiles:{};
-  mapping:Map<string,TransformedTile>;
-  map:{};
+  tiles:Map<string,Map<string,number>>;
+  mapping:Map<string,{
+    "palette-name"?:string,
+    "tile-name"?:string,
+    "transforms"?:string[]
+  }>;
+  map:Map<string,string>;
   paging:CobblestonePage[];
 }

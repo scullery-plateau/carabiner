@@ -5,27 +5,28 @@
         <form [formGroup]="transForm">
           <div class="row">
             <div class="col-12" *ngIf="currentKey">
-              <pixel-painter
-                [pixels]="selectedTile"
-                [palette]="selectedPalette"
-                [width]="16"
-                [height]="16"
-                [scale]="2">
-              </pixel-painter>
+              <tf-tile-disp [tf]="buildTile(currentKey)"></tf-tile-disp>
             </div>
             <div class="col-12">
               <button class="nes-btn {{exists()?'is-error':'is-success'}}" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>
             </div>
             <div class="col-12">
-
+              <label for="chars" class="text-brand">Chars: </label>
+              <div class="nes-input nes-select">
+                <select id="chars" class="form-control" formControlName="selectedChar">
+                  <ng-container *ngFor="let aChar of unusedChars">
+                    <option value="{{aChar}}">{{aChar}}</option>
+                  </ng-container>
+                </select>
+              </div>
             </div>
             <div class="col-12">
               <label for="palettes" class="text-brand">Palettes: </label>
               <div class="nes-input nes-select">
                 <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="updateCurrentKey()">
                   <ng-container *ngIf="state.palettes">
-                    <ng-container *ngFor="let palette of state.palettes.keys()">
-                      <option value="{{palette}}">{{palette}}</option>
+                    <ng-container *ngFor="let palette of state.palettes | keyvalue">
+                      <option value="{{palette.key}}">{{palette.key}}</option>
                     </ng-container>
                   </ng-container>
                 </select>
@@ -36,8 +37,8 @@
               <div class="nes-input nes-select">
                 <select class="form-control" id="selectedTile" formControlName="selectedTile" (change)="updateCurrentKey()">
                   <ng-container *ngIf="state.tiles">
-                    <ng-container *ngFor="let tileName of state.tiles.keys()">
-                      <option value="{{tileName}}">{{tileName}}</option>
+                    <ng-container *ngFor="let tile of state.tiles | keyvalue">
+                      <option value="{{tile.key}}">{{tile.key}}</option>
                     </ng-container>
                   </ng-container>
                 </select>
@@ -79,17 +80,17 @@
   <div class="col-8">
     <div class="showcase">
       <div class="nes-container">
-        <div class="row">
-          <ng-container *ngIf="state.transforms">
-            <ng-container *ngFor="let key of state.transforms.keys()">
+        <ng-container *ngIf="state.transforms">
+          <div class="row">
+            <ng-container *ngFor="let tf of state.transforms | keyvalue">
               <div class="col-3" >
-                <button (click)="setCurrentKey(key)">
-
+                <button (click)="setCurrentKey(tf.key)">
+                  <tf-tile-disp [tf]="buildTile(tf.key)"></tf-tile-disp>
                 </button>
               </div>
             </ng-container>
-          </ng-container>
-        </div>
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>

@@ -18,11 +18,13 @@ export class CobblestoneComponent implements OnInit {
 
   private state: CobblestoneAppState = new CobblestoneAppState();
 
-  defaultFileName: string;
-
   loadTrigger: Trigger = new Trigger("on-file-load");
 
-  constructor(private fb: FormBuilder, private cfs: CobblestoneFileService, private ttf: TileTransformerService) { }
+  transformTrigger: Trigger = new Trigger("on-transforms-updated");
+
+  constructor(private fb: FormBuilder,
+              private cfs: CobblestoneFileService,
+              private ttf: TileTransformerService) { }
 
   ngOnInit() {
   }
@@ -37,7 +39,7 @@ export class CobblestoneComponent implements OnInit {
   fileLoadCallback() {
     let me = this;
     return function(json:CobblestoneData) {
-      me.state.loadData(json);
+      me.state.loadData(json,me.ttf);
       me.loadTrigger.fire();
     }
   }

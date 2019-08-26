@@ -8,18 +8,22 @@
       [defaultSaveFile]="defaultSaveFile"
       [prepareLoadedData]="fileLoadHandler()"
       [fileLoadCallback]="fileLoadCallback()"
-      [invokeDownload]="dataDownloader()"
-      >
+      [invokeDownload]="dataDownloader()">
     </file-form>
   </tab-child>
   <tab-child label="Palettes &amp; Tiles">
     <app-palettes-and-tiles [state]="state" [loadTrigger]="loadTrigger"></app-palettes-and-tiles>
   </tab-child>
   <tab-child label="Transforms">
-    <app-transformed-tiles [state]="state" [loadTrigger]="loadTrigger"></app-transformed-tiles>
+    <app-transformed-tiles
+      [state]="state" [scale]="scale"
+      [loadTrigger]="loadTrigger"
+      [transformTrigger]="transformTrigger"
+    ></app-transformed-tiles>
   </tab-child>
   <tab-child label="Map">
-    <app-cobblestone-map [state]="state" [loadTrigger]="loadTrigger"></app-cobblestone-map>
+    <app-cobblestone-map [state]="state" [scale]="scale" [loadTrigger]="loadTrigger"
+                         [transformTrigger]="transformTrigger"></app-cobblestone-map>
   </tab-child>
   <!--
   <tab-child label="Paging">
@@ -28,4 +32,3 @@
   -->
 </tabbed-panel>
 <div class="row"><div class="col-1"><p></p></div></div>
-<div class="print-cobblestone">This will be printed</div>

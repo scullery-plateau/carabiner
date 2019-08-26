@@ -12,6 +12,9 @@ export class PalettesAndTilesComponent implements OnInit {
   @Input()
   state: any;
 
+  @Input()
+  scale: number;
+
   activePalette: string[];
 
   activeColorIndex: 0;
@@ -44,7 +47,7 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   updateFromFile() {
-    let patch: {} = {}
+    let patch: {} = {};
     let paletteNames = this.state.palettes.keys();
     if (paletteNames.length > 0) {
       patch["selectedPalette"] = paletteNames[0];
@@ -68,14 +71,13 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   tileAdder() {
-    let s = this.state;
     let me = this;
     return function() {
       if (me.paletteAndTileForm.value.tileName && !me.state.tiles[me.paletteAndTileForm.value.tileName]) {
         me.state.tiles[me.paletteAndTileForm.value.tileName] = {};
         me.paletteAndTileForm.patchValue({
           selectedTile:me.paletteAndTileForm.value.tileName
-        })
+        });
         me.activeTile = me.state.tiles[me.paletteAndTileForm.value.tileName];
       }
     }
@@ -105,7 +107,7 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   selectPalette() {
-    this.activePalette = this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
+    this.activePalette = this.state.palettes.get(this.paletteAndTileForm.value.selectedPalette);
   }
 
   removePalette() {
@@ -169,7 +171,7 @@ export class PalettesAndTilesComponent implements OnInit {
   }
 
   selectTile() {
-    this.activeTile = this.state.tiles[this.paletteAndTileForm.value.selectedTile];
+    this.activeTile = this.state.tiles.get(this.paletteAndTileForm.value.selectedTile);
   }
 
   removeTile() {
@@ -180,7 +182,7 @@ export class PalettesAndTilesComponent implements OnInit {
 
   getBackground() {
     if (this.activePalette && this.activePalette[0]) {
-      return this.activePalette[0]
+      return this.activePalette[0];
     }
     return this.paletteAndTileForm.value.backgroundColor;
   }

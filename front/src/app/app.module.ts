@@ -19,13 +19,12 @@ import { CobblestoneMapComponent } from './cobblestone/cobblestone-map/cobblesto
 import { MapPagePickerComponent } from './cobblestone/map-page-picker/map-page-picker.component';
 import { TabbedPanelComponent } from './util/nes-tabs/tabbed-panel/tabbed-panel.component';
 import { ChildPanelComponent } from './util/nes-tabs/child-panel/child-panel.component';
-import { TileDisplayComponent } from './cobblestone/tile-display/tile-display.component';
 import { FileFormComponent } from './util/file-form/file-form.component';
-import { TilePixelsComponent } from './cobblestone/tile-pixels/tile-pixels.component';
 import { FileLoadInputComponent } from './util/file-load-input/file-load-input.component';
-import { TileCanvasComponent } from './cobblestone/tile-canvas/tile-canvas.component';
 import { PixelPendingComponent } from './util/pixel-pending/pixel-pending.component';
 import { TransformedTileDefComponent } from './cobblestone/transformed-tile-def/transformed-tile-def.component';
+import { TransformedTileDisplayComponent } from './cobblestone/transformed-tile-display/transformed-tile-display.component';
+import { TransformedTileRefComponent } from './cobblestone/transformed-tile-ref/transformed-tile-ref.component';
 
 @NgModule({
   declarations: [
@@ -44,13 +43,12 @@ import { TransformedTileDefComponent } from './cobblestone/transformed-tile-def/
     MapPagePickerComponent,
     TabbedPanelComponent,
     ChildPanelComponent,
-    TileDisplayComponent,
     FileFormComponent,
-    TilePixelsComponent,
     FileLoadInputComponent,
-    TileCanvasComponent,
     PixelPendingComponent,
     TransformedTileDefComponent,
+    TransformedTileDisplayComponent,
+    TransformedTileRefComponent,
   ],
   imports: [
     BrowserModule,

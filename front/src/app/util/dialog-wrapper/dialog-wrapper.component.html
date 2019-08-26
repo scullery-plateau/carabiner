@@ -3,6 +3,7 @@
   <ng-content></ng-content>
   <menu class="dialog-menu text-right">
     <button class="nes-btn" (click)="cancel()">Cancel</button>
-    <button class="nes-btn is-primary {{allowConfirm?'':'is-disabled'}}" [disabled]="!allowConfirm" (click)="confirm()">Confirm</button>
+    <button class="nes-btn is-primary {{allowConfirm?'':'is-disabled'}}"
+            [disabled]="!allowConfirm" (click)="confirm()">Confirm</button>
   </menu>
 </dialog>

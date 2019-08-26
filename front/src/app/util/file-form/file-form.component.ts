@@ -56,6 +56,7 @@ export class FileFormComponent implements OnInit {
     let me = this;
     return function(fileData,fileName) {
       me.prepareLoadedData(fileData).subscribe((data) => {
+        console.log(data);
         me.loadedFileData = data;
         me.fileForm.patchValue({
           saveFile:fileName

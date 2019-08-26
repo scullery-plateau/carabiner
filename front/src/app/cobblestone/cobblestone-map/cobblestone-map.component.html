@@ -1,11 +1,15 @@
+<tf-tile-def
+  [state]="state"
+  [transformTrigger]="transformTrigger"
+></tf-tile-def>
 <div class="row">
   <div class="col-4">
     <div class="showcase">
       <div class="nes-container">
         <ng-container *ngIf="state.transforms">
-          <ng-container *ngFor="let key of state.transforms.keys()">
+          <ng-container *ngFor="let tf of state.transforms | keyvalue">
             <div class="col-12">
-              <button (click)="select(key)">
+              <button (click)="select(tf.key)">
 
               </button>
             </div>

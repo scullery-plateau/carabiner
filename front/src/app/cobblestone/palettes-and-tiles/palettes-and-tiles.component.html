@@ -16,8 +16,8 @@
                   <div class="nes-input nes-select">
                     <select id="palettes" class="form-control" formControlName="selectedPalette" (change)="selectPalette()">
                       <ng-container *ngIf="state.palettes">
-                        <ng-container *ngFor="let palette of state.palettes.keys()">
-                          <option value="{{palette}}">{{palette}}</option>
+                        <ng-container *ngFor="let palette of state.palettes | keyvalue">
+                          <option value="{{palette.key}}">{{palette.key}}</option>
                         </ng-container>
                       </ng-container>
                     </select>
@@ -41,8 +41,7 @@
                   <label for="colors" class="text-brand">Colors: </label>
                 </div>
                 <div class="col-sm-7">
-                  <div class="nes-input nes-select">
-                    <select id="colors" class="form-control" formControlName="selectedColor" (change)="selectColor()">
+                  <div class="nes-input nes-select"><select id="colors" class="form-control" formControlName="selectedColor" (change)="selectColor()">
                       <ng-container *ngFor="let color of activePalette; index as i">
                         <option value="{{i}}">{{i}} - {{color||'Transparent'}}</option>
                       </ng-container>
@@ -51,7 +50,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-5 text-right">
+                <div class="col-sm-5 text-right">a
                   <label for="color" class="text-brand">Color:</label>
                 </div>
                 <div class="col-sm-7">
@@ -95,9 +94,9 @@
                 <div class="col-7">
                   <div class="nes-input nes-select">
                     <select class="form-control" id="selectedTile" formControlName="selectedTile" (change)="selectTile()">
-                      <ng-container *ngIf="state.tiles">\
-                        <ng-container *ngFor="let tileName of state.tiles.keys()">
-                          <option value="{{tileName}}">{{tileName}}</option>
+                      <ng-container *ngIf="state.tiles">
+                        <ng-container *ngFor="let tile of state.tiles | keyvalue">
+                          <option value="{{tile.key}}">{{tile.key}}</option>
                         </ng-container>
                       </ng-container>
                     </select>

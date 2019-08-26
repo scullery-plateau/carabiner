@@ -1,4 +1,4 @@
-<svg [attr.width]="width * scale" [attr.height]="height * scale">
+<svg *ngIf="palette && pixels" [attr.width]="width * scale" [attr.height]="height * scale">
   <rect *ngIf="palette[0]" [attr.width]="width * scale" [attr.height]="height * scale"
         [attr.fill]="palette[0]" stroke="none" stroke-width="0"></rect>
   <ng-container *ngFor="let y of range.max(height)">

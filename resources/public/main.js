@@ -152,14 +152,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cobblestone_map_page_picker_map_page_picker_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./cobblestone/map-page-picker/map-page-picker.component */ "./src/app/cobblestone/map-page-picker/map-page-picker.component.ts");
 /* harmony import */ var _util_nes_tabs_tabbed_panel_tabbed_panel_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./util/nes-tabs/tabbed-panel/tabbed-panel.component */ "./src/app/util/nes-tabs/tabbed-panel/tabbed-panel.component.ts");
 /* harmony import */ var _util_nes_tabs_child_panel_child_panel_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./util/nes-tabs/child-panel/child-panel.component */ "./src/app/util/nes-tabs/child-panel/child-panel.component.ts");
-/* harmony import */ var _cobblestone_tile_display_tile_display_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./cobblestone/tile-display/tile-display.component */ "./src/app/cobblestone/tile-display/tile-display.component.ts");
-/* harmony import */ var _util_file_form_file_form_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./util/file-form/file-form.component */ "./src/app/util/file-form/file-form.component.ts");
-/* harmony import */ var _cobblestone_tile_pixels_tile_pixels_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./cobblestone/tile-pixels/tile-pixels.component */ "./src/app/cobblestone/tile-pixels/tile-pixels.component.ts");
-/* harmony import */ var _util_file_load_input_file_load_input_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./util/file-load-input/file-load-input.component */ "./src/app/util/file-load-input/file-load-input.component.ts");
-/* harmony import */ var _cobblestone_tile_canvas_tile_canvas_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./cobblestone/tile-canvas/tile-canvas.component */ "./src/app/cobblestone/tile-canvas/tile-canvas.component.ts");
-/* harmony import */ var _util_pixel_pending_pixel_pending_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./util/pixel-pending/pixel-pending.component */ "./src/app/util/pixel-pending/pixel-pending.component.ts");
-/* harmony import */ var _cobblestone_transformed_tile_def_transformed_tile_def_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./cobblestone/transformed-tile-def/transformed-tile-def.component */ "./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.ts");
-
+/* harmony import */ var _util_file_form_file_form_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./util/file-form/file-form.component */ "./src/app/util/file-form/file-form.component.ts");
+/* harmony import */ var _util_file_load_input_file_load_input_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./util/file-load-input/file-load-input.component */ "./src/app/util/file-load-input/file-load-input.component.ts");
+/* harmony import */ var _util_pixel_pending_pixel_pending_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./util/pixel-pending/pixel-pending.component */ "./src/app/util/pixel-pending/pixel-pending.component.ts");
+/* harmony import */ var _cobblestone_transformed_tile_def_transformed_tile_def_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./cobblestone/transformed-tile-def/transformed-tile-def.component */ "./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.ts");
+/* harmony import */ var _cobblestone_transformed_tile_display_transformed_tile_display_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./cobblestone/transformed-tile-display/transformed-tile-display.component */ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.ts");
+/* harmony import */ var _cobblestone_transformed_tile_ref_transformed_tile_ref_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./cobblestone/transformed-tile-ref/transformed-tile-ref.component */ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.ts");
 
 
 
@@ -208,13 +206,12 @@ var AppModule = /** @class */ (function () {
                 _cobblestone_map_page_picker_map_page_picker_component__WEBPACK_IMPORTED_MODULE_18__["MapPagePickerComponent"],
                 _util_nes_tabs_tabbed_panel_tabbed_panel_component__WEBPACK_IMPORTED_MODULE_19__["TabbedPanelComponent"],
                 _util_nes_tabs_child_panel_child_panel_component__WEBPACK_IMPORTED_MODULE_20__["ChildPanelComponent"],
-                _cobblestone_tile_display_tile_display_component__WEBPACK_IMPORTED_MODULE_21__["TileDisplayComponent"],
-                _util_file_form_file_form_component__WEBPACK_IMPORTED_MODULE_22__["FileFormComponent"],
-                _cobblestone_tile_pixels_tile_pixels_component__WEBPACK_IMPORTED_MODULE_23__["TilePixelsComponent"],
-                _util_file_load_input_file_load_input_component__WEBPACK_IMPORTED_MODULE_24__["FileLoadInputComponent"],
-                _cobblestone_tile_canvas_tile_canvas_component__WEBPACK_IMPORTED_MODULE_25__["TileCanvasComponent"],
-                _util_pixel_pending_pixel_pending_component__WEBPACK_IMPORTED_MODULE_26__["PixelPendingComponent"],
-                _cobblestone_transformed_tile_def_transformed_tile_def_component__WEBPACK_IMPORTED_MODULE_27__["TransformedTileDefComponent"],
+                _util_file_form_file_form_component__WEBPACK_IMPORTED_MODULE_21__["FileFormComponent"],
+                _util_file_load_input_file_load_input_component__WEBPACK_IMPORTED_MODULE_22__["FileLoadInputComponent"],
+                _util_pixel_pending_pixel_pending_component__WEBPACK_IMPORTED_MODULE_23__["PixelPendingComponent"],
+                _cobblestone_transformed_tile_def_transformed_tile_def_component__WEBPACK_IMPORTED_MODULE_24__["TransformedTileDefComponent"],
+                _cobblestone_transformed_tile_display_transformed_tile_display_component__WEBPACK_IMPORTED_MODULE_25__["TransformedTileDisplayComponent"],
+                _cobblestone_transformed_tile_ref_transformed_tile_ref_component__WEBPACK_IMPORTED_MODULE_26__["TransformedTileRefComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -228,6 +225,45 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/char-index.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/cobblestone/char-index.service.ts ***!
+  \***************************************************/
+/*! exports provided: CharIndexService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CharIndexService", function() { return CharIndexService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+-=`;:'\"[]{}\\|,.<>/?";
+var CharIndexService = /** @class */ (function () {
+    function CharIndexService() {
+    }
+    CharIndexService.prototype.getAll = function () {
+        return chars.split("");
+    };
+    CharIndexService.prototype.getUnused = function (used) {
+        return chars.split("").filter(function (ch) {
+            return (used.indexOf(ch) == -1);
+        });
+    };
+    CharIndexService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], CharIndexService);
+    return CharIndexService;
 }());
 
 
@@ -299,7 +335,7 @@ var CobblestoneFileService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-4\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <ng-container *ngIf=\"state.transforms\">\r\n          <ng-container *ngFor=\"let key of state.transforms.keys()\">\r\n            <div class=\"col-12\">\r\n              <button (click)=\"select(key)\">\r\n\r\n              </button>\r\n            </div>\r\n          </ng-container>\r\n        </ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-8\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <form [formGroup]=\"dimForm\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n              <label for=\"width\" class=\"text-brand\">Width:</label>\r\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n              <label for=\"height\" class=\"text-brand\">Height:</label>\r\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n              <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n              <input type=\"number\" min=\"1\" max=\"4\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\" (change)=\"resize()\"/>\r\n            </div>\r\n          </div>\r\n        </form>\r\n        <div class=\"row\">\r\n          <div class=\"col-12 map-frame\">\r\n            <svg\r\n              [attr.width]=\"dimForm.value.width * dimForm.value.scale * 16\"\r\n              [attr.height]=\"dimForm.value.height * dimForm.value.scale * 16\">\r\n              <ng-container *ngIf=\"state.map\">\r\n                <ng-container *ngFor=\"let y of range.max(dimForm.value.height)\">\r\n                  <ng-container *ngFor=\"let x of range.max(dimForm.value.width)\">\r\n                    <a href=\"#/cobblestone\" (click)=\"setTile(x,y)\">\r\n                      <rect [attr.href]=\"'url(#' + getTile(x,y) + ')'\"\r\n                            [attr.x]=\"x * dimForm.value.scale * 16\"\r\n                            [attr.y]=\"y * dimForm.value.scale * 16\"/>\r\n                    </a>\r\n                  </ng-container>\r\n                </ng-container>\r\n              </ng-container>\r\n            </svg>\r\n          </div>\r\n          </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<tf-tile-def\r\n  [state]=\"state\"\r\n  [transformTrigger]=\"transformTrigger\"\r\n></tf-tile-def>\r\n<div class=\"row\">\r\n  <div class=\"col-4\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <ng-container *ngIf=\"state.transforms\">\r\n          <ng-container *ngFor=\"let tf of state.transforms | keyvalue\">\r\n            <div class=\"col-12\">\r\n              <button (click)=\"select(tf.key)\">\r\n\r\n              </button>\r\n            </div>\r\n          </ng-container>\r\n        </ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-8\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <form [formGroup]=\"dimForm\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n              <label for=\"width\" class=\"text-brand\">Width:</label>\r\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n              <label for=\"height\" class=\"text-brand\">Height:</label>\r\n              <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n              <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n              <input type=\"number\" min=\"1\" max=\"4\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\" (change)=\"resize()\"/>\r\n            </div>\r\n          </div>\r\n        </form>\r\n        <div class=\"row\">\r\n          <div class=\"col-12 map-frame\">\r\n            <svg\r\n              [attr.width]=\"dimForm.value.width * dimForm.value.scale * 16\"\r\n              [attr.height]=\"dimForm.value.height * dimForm.value.scale * 16\">\r\n              <ng-container *ngIf=\"state.map\">\r\n                <ng-container *ngFor=\"let y of range.max(dimForm.value.height)\">\r\n                  <ng-container *ngFor=\"let x of range.max(dimForm.value.width)\">\r\n                    <a href=\"#/cobblestone\" (click)=\"setTile(x,y)\">\r\n                      <rect [attr.href]=\"'url(#' + getTile(x,y) + ')'\"\r\n                            [attr.x]=\"x * dimForm.value.scale * 16\"\r\n                            [attr.y]=\"y * dimForm.value.scale * 16\"/>\r\n                    </a>\r\n                  </ng-container>\r\n                </ng-container>\r\n              </ng-container>\r\n            </svg>\r\n          </div>\r\n          </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -382,8 +418,16 @@ var CobblestoneMapComponent = /** @class */ (function () {
     ], CobblestoneMapComponent.prototype, "state", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], CobblestoneMapComponent.prototype, "scale", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _util_trigger__WEBPACK_IMPORTED_MODULE_5__["Trigger"])
     ], CobblestoneMapComponent.prototype, "loadTrigger", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _util_trigger__WEBPACK_IMPORTED_MODULE_5__["Trigger"])
+    ], CobblestoneMapComponent.prototype, "transformTrigger", void 0);
     CobblestoneMapComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-cobblestone-map',
@@ -406,7 +450,7 @@ var CobblestoneMapComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<tabbed-panel\r\n  title=\"CobbleStone\"\r\n  activeClass=\"is-success\"\r\n  [initActiveIndex]=\"0\">\r\n  <tab-child label=\"File\">\r\n    <file-form\r\n      [defaultSaveFile]=\"defaultSaveFile\"\r\n      [prepareLoadedData]=\"fileLoadHandler()\"\r\n      [fileLoadCallback]=\"fileLoadCallback()\"\r\n      [invokeDownload]=\"dataDownloader()\"\r\n      >\r\n    </file-form>\r\n  </tab-child>\r\n  <tab-child label=\"Palettes &amp; Tiles\">\r\n    <app-palettes-and-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-palettes-and-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Transforms\">\r\n    <app-transformed-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-transformed-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Map\">\r\n    <app-cobblestone-map [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-cobblestone-map>\r\n  </tab-child>\r\n  <!--\r\n  <tab-child label=\"Paging\">\r\n    <app-map-page-picker [state]=\"state\"></app-map-page-picker>\r\n  </tab-child>\r\n  -->\r\n</tabbed-panel>\r\n<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<div class=\"print-cobblestone\">This will be printed</div>\r\n"
+module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n<tabbed-panel\r\n  title=\"CobbleStone\"\r\n  activeClass=\"is-success\"\r\n  [initActiveIndex]=\"0\">\r\n  <tab-child label=\"File\">\r\n    <file-form\r\n      [defaultSaveFile]=\"defaultSaveFile\"\r\n      [prepareLoadedData]=\"fileLoadHandler()\"\r\n      [fileLoadCallback]=\"fileLoadCallback()\"\r\n      [invokeDownload]=\"dataDownloader()\">\r\n    </file-form>\r\n  </tab-child>\r\n  <tab-child label=\"Palettes &amp; Tiles\">\r\n    <app-palettes-and-tiles [state]=\"state\" [loadTrigger]=\"loadTrigger\"></app-palettes-and-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Transforms\">\r\n    <app-transformed-tiles\r\n      [state]=\"state\" [scale]=\"scale\"\r\n      [loadTrigger]=\"loadTrigger\"\r\n      [transformTrigger]=\"transformTrigger\"\r\n    ></app-transformed-tiles>\r\n  </tab-child>\r\n  <tab-child label=\"Map\">\r\n    <app-cobblestone-map [state]=\"state\" [scale]=\"scale\" [loadTrigger]=\"loadTrigger\"\r\n                         [transformTrigger]=\"transformTrigger\"></app-cobblestone-map>\r\n  </tab-child>\r\n  <!--\r\n  <tab-child label=\"Paging\">\r\n    <app-map-page-picker [state]=\"state\"></app-map-page-picker>\r\n  </tab-child>\r\n  -->\r\n</tabbed-panel>\r\n<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\n"
 
 /***/ }),
 
@@ -452,6 +496,7 @@ var CobblestoneComponent = /** @class */ (function () {
         this.ttf = ttf;
         this.state = new _model_cobblestone_app_state__WEBPACK_IMPORTED_MODULE_6__["CobblestoneAppState"]();
         this.loadTrigger = new _util_trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"]("on-file-load");
+        this.transformTrigger = new _util_trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"]("on-transforms-updated");
     }
     CobblestoneComponent.prototype.ngOnInit = function () {
     };
@@ -464,7 +509,7 @@ var CobblestoneComponent = /** @class */ (function () {
     CobblestoneComponent.prototype.fileLoadCallback = function () {
         var me = this;
         return function (json) {
-            me.state.loadData(json);
+            me.state.loadData(json, me.ttf);
             me.loadTrigger.fire();
         };
     };
@@ -483,7 +528,9 @@ var CobblestoneComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./cobblestone.component.html */ "./src/app/cobblestone/cobblestone.component.html"),
             styles: [__webpack_require__(/*! ./cobblestone.component.scss */ "./src/app/cobblestone/cobblestone.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _cobblestone_file_service__WEBPACK_IMPORTED_MODULE_4__["CobblestoneFileService"], _tile_transformer_service__WEBPACK_IMPORTED_MODULE_5__["TileTransformerService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            _cobblestone_file_service__WEBPACK_IMPORTED_MODULE_4__["CobblestoneFileService"],
+            _tile_transformer_service__WEBPACK_IMPORTED_MODULE_5__["TileTransformerService"]])
     ], CobblestoneComponent);
     return CobblestoneComponent;
 }());
@@ -567,21 +614,24 @@ __webpack_require__.r(__webpack_exports__);
 var TransformedTile = /** @class */ (function () {
     function TransformedTile() {
     }
+    TransformedTile.prototype.unparse = function () {
+        var _this = this;
+        var tfs = Object.values(_transform__WEBPACK_IMPORTED_MODULE_0__["Transform"]).filter(function (tf) {
+            return _this.transformations.indexOf(tf) >= 0;
+        });
+        tfs.sort();
+        return [this.tileName, this.paletteName].concat(tfs).join("_");
+    };
     TransformedTile.parse = function (key) {
         var out = new TransformedTile();
         var fields = key.split("_");
         out.tileName = fields[0];
         out.paletteName = fields[1];
-        return out;
-    };
-    TransformedTile.prototype.toString = function () {
-        var _this = this;
-        this.transforms = this.transforms = [];
-        var tfs = Object.values(_transform__WEBPACK_IMPORTED_MODULE_0__["Transform"]).filter(function (tf) {
-            return _this.transforms.indexOf(tf) >= 0;
+        var tfs = fields.splice(2);
+        out.transformations = Object.values(_transform__WEBPACK_IMPORTED_MODULE_0__["Transform"]).filter(function (tf) {
+            return tfs.indexOf(tf) >= 0;
         });
-        tfs.sort();
-        return [this.tileName, this.paletteName].concat(tfs).join("_");
+        return out;
     };
     return TransformedTile;
 }());
@@ -600,41 +650,104 @@ var TransformedTile = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobblestoneAppState", function() { return CobblestoneAppState; });
+/* harmony import */ var _TransformedTile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TransformedTile */ "./src/app/cobblestone/model/TransformedTile.ts");
+/* harmony import */ var _cobblestone_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cobblestone-data */ "./src/app/cobblestone/model/cobblestone-data.ts");
+/* harmony import */ var _transform__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./transform */ "./src/app/cobblestone/model/transform.ts");
+
+
+
 var CobblestoneAppState = /** @class */ (function () {
     function CobblestoneAppState() {
+        this.palettes = new Map();
+        this.tiles = new Map();
+        this.mapping = new Map();
+        this.transforms = new Map();
+        this.map = new Map();
+        this.paging = [];
     }
-    CobblestoneAppState.prototype.loadData = function (data) {
+    CobblestoneAppState.prototype.loadData = function (data, ttf) {
         var _this = this;
-        ['palettes', 'tiles', 'mapping', 'map'].forEach(function (key) {
-            Object.entries(data[key]).forEach(function (entry) {
-                _this[key][entry[0]] = entry[1];
+        console.log(data);
+        this.palettes = new Map();
+        Object.entries(data.palettes).forEach(function (entry) {
+            _this.palettes.set(entry[0], entry[1]);
+        });
+        this.tiles = new Map();
+        Object.entries(data.tiles).forEach(function (entry) {
+            _this.tiles.set(entry[0], entry[1]);
+        });
+        this.mapping = new Map();
+        Object.entries(data.mapping).forEach(function (entry) {
+            var tfTile = new _TransformedTile__WEBPACK_IMPORTED_MODULE_0__["TransformedTile"]();
+            tfTile.tileName = entry[1]["tile-name"];
+            tfTile.paletteName = entry[1]["palette-name"];
+            console.log(entry);
+            var tfs = entry[1]["transforms"] || [];
+            console.log(tfs);
+            tfTile.transformations = Object.values(_transform__WEBPACK_IMPORTED_MODULE_2__["Transform"]).filter(function (tf) {
+                return tfs.indexOf(tf) >= 0;
             });
+            console.log(tfTile.transformations);
+            console.log(tfTile);
+            console.log(tfTile.unparse());
+            _this.mapping.set(entry[0], tfTile);
         });
+        this.map = new Map();
+        Object.entries(data.map).forEach(function (entry) {
+            _this.map.set(entry[0], entry[1]);
+        });
+        this.paging = [];
         data.paging.forEach(function (page) {
-            _this['paging'].push(page);
+            _this.paging.push(page);
         });
-        Object.entries(this['mapping']).forEach(function (entry) {
-            var myChar = entry[0];
-            var mapping = entry[1];
-            mapping.transforms.sort();
-            var key = mapping.toString();
-            if (_this['transforms'][key]) {
-                var oldChar = _this['transforms'][key];
-                delete _this['mapping'][oldChar];
+        this.mapping.forEach(function (mapping, myChar) {
+            mapping.transformations.sort();
+            var key = ttf.parseMappingToKey(mapping);
+            if (_this.transforms.has(key)) {
+                var oldChar = _this.transforms.get(key);
+                _this.mapping.delete(oldChar);
             }
-            _this['transforms'][key] = myChar;
+            _this.transforms.set(key, myChar);
         });
+        console.log(this);
     };
     CobblestoneAppState.prototype.getData = function () {
-        return {
-            palettes: this['palettes'],
-            tiles: this['tiles'],
-            mapping: this['mapping'],
-            map: this['map'],
-            paging: this['paging'],
-        };
+        var data = new _cobblestone_data__WEBPACK_IMPORTED_MODULE_1__["CobblestoneData"]();
+        data.paging = this.paging;
+        data.palettes = this.palettes;
+        data.tiles = this.tiles;
+        data.map = this.map;
+        data.mapping = new Map();
+        this.mapping.forEach(function (tfTile, myChar) {
+            data.mapping.set(myChar, {
+                "palette-name": tfTile.paletteName,
+                "tile-name": tfTile.tileName,
+                "transforms": tfTile.transformations.map(function (tf) { return tf; })
+            });
+        });
+        return data;
     };
     return CobblestoneAppState;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/model/cobblestone-data.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/cobblestone/model/cobblestone-data.ts ***!
+  \*******************************************************/
+/*! exports provided: CobblestoneData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobblestoneData", function() { return CobblestoneData; });
+var CobblestoneData = /** @class */ (function () {
+    function CobblestoneData() {
+    }
+    return CobblestoneData;
 }());
 
 
@@ -669,7 +782,7 @@ var Transform;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"paletteAndTileForm\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n      <div class=\"row\">\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Palettes</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectPalette()\">\r\n                      <ng-container *ngIf=\"state.palettes\">\r\n                        <ng-container *ngFor=\"let palette of state.palettes.keys()\">\r\n                          <option value=\"{{palette}}\">{{palette}}</option>\r\n                        </ng-container>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [triggerBtnName]=\"'Add Palette'\"\r\n                    [dialogConfirm]=\"paletteAdder()\"\r\n                    [dialogClose]=\"paletteDialogCloser()\">\r\n                    <label for=\"paletteName\">Palette Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"paletteName\" formControlName=\"paletteName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removePalette()\">Remove Palette</button>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"colors\" class=\"text-brand\">Colors: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"colors\" class=\"form-control\" formControlName=\"selectedColor\" (change)=\"selectColor()\">\r\n                      <ng-container *ngFor=\"let color of activePalette; index as i\">\r\n                        <option value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <label for=\"makeTransparent\" class=\"text-brand\">\r\n                    <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                    <span>Make Transparent?</span>\r\n                  </label>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                  <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                </div>\r\n              </div>\r\n              <p></p>\r\n              <app-palette-display\r\n                [palette]=\"activePalette\"\r\n                href=\"#/cobblestone\"\r\n                showFirst=\"true\"\r\n                [selectFn]=\"colorIndexSetter()\"\r\n              ></app-palette-display>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Tiles</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-5 text-right\">\r\n                  <label for=\"selectedTile\">Active Tile</label>\r\n                </div>\r\n                <div class=\"col-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select class=\"form-control\" id=\"selectedTile\" formControlName=\"selectedTile\" (change)=\"selectTile()\">\r\n                      <ng-container *ngIf=\"state.tiles\">\\\r\n                        <ng-container *ngFor=\"let tileName of state.tiles.keys()\">\r\n                          <option value=\"{{tileName}}\">{{tileName}}</option>\r\n                        </ng-container>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [triggerBtnName]=\"'Add Tile'\"\r\n                    [dialogConfirm]=\"tileAdder()\"\r\n                    [dialogClose]=\"tileDialogCloser()\">\r\n                    <label for=\"tileName\">Tile Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"tileName\" formControlName=\"tileName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removeTile()\">Remove Tile</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n      <div class=\"showcase\">\r\n        <div class=\"nes-container with-title\">\r\n          <div class=\"title\">\r\n            <h5>Tile Canvas</h5>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-sm-5 text-right\">\r\n              <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n            </div>\r\n            <div class=\"col-sm-7\">\r\n              <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <app-pixel-canvas\r\n                [pixels]=\"activeTile\"\r\n                [scale]=\"10\"\r\n                [width]=\"16\"\r\n                [height]=\"16\"\r\n                [palette]=\"activePalette\"\r\n                [backgroundColor]=\"getBackground()\"\r\n                [colorIndex]=\"activeColorIndex\"\r\n                page=\"cobblestone\"\r\n              ></app-pixel-canvas>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
+module.exports = "<form [formGroup]=\"paletteAndTileForm\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n      <div class=\"row\">\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Palettes</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectPalette()\">\r\n                      <ng-container *ngIf=\"state.palettes\">\r\n                        <ng-container *ngFor=\"let palette of state.palettes | keyvalue\">\r\n                          <option value=\"{{palette.key}}\">{{palette.key}}</option>\r\n                        </ng-container>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [triggerBtnName]=\"'Add Palette'\"\r\n                    [dialogConfirm]=\"paletteAdder()\"\r\n                    [dialogClose]=\"paletteDialogCloser()\">\r\n                    <label for=\"paletteName\">Palette Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"paletteName\" formControlName=\"paletteName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removePalette()\">Remove Palette</button>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">\r\n                  <label for=\"colors\" class=\"text-brand\">Colors: </label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <div class=\"nes-input nes-select\"><select id=\"colors\" class=\"form-control\" formControlName=\"selectedColor\" (change)=\"selectColor()\">\r\n                      <ng-container *ngFor=\"let color of activePalette; index as i\">\r\n                        <option value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-5 text-right\">a\r\n                  <label for=\"color\" class=\"text-brand\">Color:</label>\r\n                </div>\r\n                <div class=\"col-sm-7\">\r\n                  <input type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <label for=\"makeTransparent\" class=\"text-brand\">\r\n                    <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                    <span>Make Transparent?</span>\r\n                  </label>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-12 text-center\">\r\n                  <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                  <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                </div>\r\n              </div>\r\n              <p></p>\r\n              <app-palette-display\r\n                [palette]=\"activePalette\"\r\n                href=\"#/cobblestone\"\r\n                showFirst=\"true\"\r\n                [selectFn]=\"colorIndexSetter()\"\r\n              ></app-palette-display>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-12\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container with-title\">\r\n              <div class=\"title\">\r\n                <h6>Tiles</h6>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-5 text-right\">\r\n                  <label for=\"selectedTile\">Active Tile</label>\r\n                </div>\r\n                <div class=\"col-7\">\r\n                  <div class=\"nes-input nes-select\">\r\n                    <select class=\"form-control\" id=\"selectedTile\" formControlName=\"selectedTile\" (change)=\"selectTile()\">\r\n                      <ng-container *ngIf=\"state.tiles\">\r\n                        <ng-container *ngFor=\"let tile of state.tiles | keyvalue\">\r\n                          <option value=\"{{tile.key}}\">{{tile.key}}</option>\r\n                        </ng-container>\r\n                      </ng-container>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                  <dialog-wrapper\r\n                    [triggerBtnName]=\"'Add Tile'\"\r\n                    [dialogConfirm]=\"tileAdder()\"\r\n                    [dialogClose]=\"tileDialogCloser()\">\r\n                    <label for=\"tileName\">Tile Name</label>\r\n                    <input type=\"text\" class=\"nes-input\" id=\"tileName\" formControlName=\"tileName\"/>\r\n                  </dialog-wrapper>\r\n                  <button type=\"button\" name=\"button\" class=\"nes-btn is-error\" (click)=\"removeTile()\">Remove Tile</button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n      <div class=\"showcase\">\r\n        <div class=\"nes-container with-title\">\r\n          <div class=\"title\">\r\n            <h5>Tile Canvas</h5>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-sm-5 text-right\">\r\n              <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n            </div>\r\n            <div class=\"col-sm-7\">\r\n              <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <app-pixel-canvas\r\n                [pixels]=\"activeTile\"\r\n                [scale]=\"10\"\r\n                [width]=\"16\"\r\n                [height]=\"16\"\r\n                [palette]=\"activePalette\"\r\n                [backgroundColor]=\"getBackground()\"\r\n                [colorIndex]=\"activeColorIndex\"\r\n                page=\"cobblestone\"\r\n              ></app-pixel-canvas>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -746,7 +859,6 @@ var PalettesAndTilesComponent = /** @class */ (function () {
         };
     };
     PalettesAndTilesComponent.prototype.tileAdder = function () {
-        var s = this.state;
         var me = this;
         return function () {
             if (me.paletteAndTileForm.value.tileName && !me.state.tiles[me.paletteAndTileForm.value.tileName]) {
@@ -780,7 +892,7 @@ var PalettesAndTilesComponent = /** @class */ (function () {
         };
     };
     PalettesAndTilesComponent.prototype.selectPalette = function () {
-        this.activePalette = this.state.palettes[this.paletteAndTileForm.value.selectedPalette];
+        this.activePalette = this.state.palettes.get(this.paletteAndTileForm.value.selectedPalette);
     };
     PalettesAndTilesComponent.prototype.removePalette = function () {
         if (this.activePalette) {
@@ -836,7 +948,7 @@ var PalettesAndTilesComponent = /** @class */ (function () {
         }
     };
     PalettesAndTilesComponent.prototype.selectTile = function () {
-        this.activeTile = this.state.tiles[this.paletteAndTileForm.value.selectedTile];
+        this.activeTile = this.state.tiles.get(this.paletteAndTileForm.value.selectedTile);
     };
     PalettesAndTilesComponent.prototype.removeTile = function () {
         if (this.activeTile) {
@@ -855,6 +967,10 @@ var PalettesAndTilesComponent = /** @class */ (function () {
     ], PalettesAndTilesComponent.prototype, "state", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], PalettesAndTilesComponent.prototype, "scale", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _util_trigger__WEBPACK_IMPORTED_MODULE_3__["Trigger"])
     ], PalettesAndTilesComponent.prototype, "loadTrigger", void 0);
     PalettesAndTilesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -866,243 +982,6 @@ var PalettesAndTilesComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
     ], PalettesAndTilesComponent);
     return PalettesAndTilesComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-canvas/tile-canvas.component.html":
-/*!********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-canvas/tile-canvas.component.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  tile-canvas works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-canvas/tile-canvas.component.scss":
-/*!********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-canvas/tile-canvas.component.scss ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL3RpbGUtY2FudmFzL3RpbGUtY2FudmFzLmNvbXBvbmVudC5zY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-canvas/tile-canvas.component.ts":
-/*!******************************************************************!*\
-  !*** ./src/app/cobblestone/tile-canvas/tile-canvas.component.ts ***!
-  \******************************************************************/
-/*! exports provided: TileCanvasComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TileCanvasComponent", function() { return TileCanvasComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _tile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tile */ "./src/app/cobblestone/tile.ts");
-
-
-
-var TileCanvasComponent = /** @class */ (function () {
-    function TileCanvasComponent() {
-    }
-    TileCanvasComponent.prototype.ngOnInit = function () {
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _tile__WEBPACK_IMPORTED_MODULE_2__["Tile"])
-    ], TileCanvasComponent.prototype, "tile", void 0);
-    TileCanvasComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-tile-canvas',
-            template: __webpack_require__(/*! ./tile-canvas.component.html */ "./src/app/cobblestone/tile-canvas/tile-canvas.component.html"),
-            styles: [__webpack_require__(/*! ./tile-canvas.component.scss */ "./src/app/cobblestone/tile-canvas/tile-canvas.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], TileCanvasComponent);
-    return TileCanvasComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-display/tile-display.component.html":
-/*!**********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-display/tile-display.component.html ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <ng-container *ngFor=\"let y of range.max(16)\">\r\n    <ng-container *ngFor=\"let x of range.max(16)\">\r\n      <rect [attr.x]=\"x * scale\" [attr.y]=\"y * scale\" [attr.width]=\"scale\"\r\n        [attr.height]=\"scale\" [attr.fill]=\"pixel(x,y)\"\r\n        style=\"stroke:none;stroke-width:0\"></rect>\r\n    </ng-container>\r\n  </ng-container>\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-display/tile-display.component.scss":
-/*!**********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-display/tile-display.component.scss ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL3RpbGUtZGlzcGxheS90aWxlLWRpc3BsYXkuY29tcG9uZW50LnNjc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-display/tile-display.component.ts":
-/*!********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-display/tile-display.component.ts ***!
-  \********************************************************************/
-/*! exports provided: TileDisplayComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TileDisplayComponent", function() { return TileDisplayComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _tile_transformer_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tile-transformer.service */ "./src/app/cobblestone/tile-transformer.service.ts");
-/* harmony import */ var _util_range__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/range */ "./src/app/util/range.ts");
-
-
-
-
-var TileDisplayComponent = /** @class */ (function () {
-    function TileDisplayComponent(ttf) {
-        this.ttf = ttf;
-        this.scale = 1;
-        this.pixels = {};
-        this.range = _util_range__WEBPACK_IMPORTED_MODULE_3__["Range"];
-    }
-    TileDisplayComponent.prototype.ngOnInit = function () {
-        if (this.key) {
-            var tfTile = this.ttf.buildTransformedTile(this.state, this.key);
-            this.palette = tfTile.palette;
-            this.pixels = tfTile.tile;
-        }
-    };
-    TileDisplayComponent.prototype.pixel = function (x, y) {
-        return this.palette[this.pixels[x + 'x' + y] || 0];
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], TileDisplayComponent.prototype, "state", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
-    ], TileDisplayComponent.prototype, "key", void 0);
-    TileDisplayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'tile-display',
-            template: __webpack_require__(/*! ./tile-display.component.html */ "./src/app/cobblestone/tile-display/tile-display.component.html"),
-            styles: [__webpack_require__(/*! ./tile-display.component.scss */ "./src/app/cobblestone/tile-display/tile-display.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_tile_transformer_service__WEBPACK_IMPORTED_MODULE_2__["TileTransformerService"]])
-    ], TileDisplayComponent);
-    return TileDisplayComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-pixels/tile-pixels.component.html":
-/*!********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-pixels/tile-pixels.component.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<ng-container *ngIf=\"palette && pixels\">\r\n  <ng-container *ngFor=\"let y of range.max(16)\">\r\n    <ng-container *ngFor=\"let x of range.max(16)\">\r\n      <svg:rect [attr.x]=\"x * scale\" [attr.y]=\"y * scale\" [attr.width]=\"scale\"\r\n        [attr.height]=\"scale\" [attr.fill]=\"pixel(x,y)\"\r\n        style=\"stroke:none;\"></svg:rect>\r\n    </ng-container>\r\n  </ng-container>\r\n</ng-container>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-pixels/tile-pixels.component.scss":
-/*!********************************************************************!*\
-  !*** ./src/app/cobblestone/tile-pixels/tile-pixels.component.scss ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL3RpbGUtcGl4ZWxzL3RpbGUtcGl4ZWxzLmNvbXBvbmVudC5zY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/cobblestone/tile-pixels/tile-pixels.component.ts":
-/*!******************************************************************!*\
-  !*** ./src/app/cobblestone/tile-pixels/tile-pixels.component.ts ***!
-  \******************************************************************/
-/*! exports provided: TilePixelsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TilePixelsComponent", function() { return TilePixelsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _util_range__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/range */ "./src/app/util/range.ts");
-/* harmony import */ var _util_point__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/point */ "./src/app/util/point.ts");
-
-
-
-
-var TilePixelsComponent = /** @class */ (function () {
-    function TilePixelsComponent() {
-        this.pixels = {};
-        this.range = _util_range__WEBPACK_IMPORTED_MODULE_2__["Range"];
-    }
-    TilePixelsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        if (this.key) {
-            var attrs = this.key.split("_");
-            this.palette = this.state.palettes[attrs[1]];
-            this.transforms = attrs.splice(2);
-            this.pixels = {};
-            var pixels_1 = this.pixels;
-            var temp = this.state.tiles[attrs[0]];
-            if (temp) {
-                Object.entries(temp).forEach(function (pair) {
-                    var pixel = _this.transforms.reduce(function (p, tf) {
-                        return p[tf](16, 16);
-                    }, _util_point__WEBPACK_IMPORTED_MODULE_3__["Point"].parse(pair[0]));
-                    var c = pair[1];
-                    pixels_1[pixel.toString()] = c;
-                });
-            }
-        }
-    };
-    TilePixelsComponent.prototype.pixel = function (x, y) {
-        return this.palette[this.pixels[x + 'x' + y] || 0];
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], TilePixelsComponent.prototype, "state", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
-    ], TilePixelsComponent.prototype, "key", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
-    ], TilePixelsComponent.prototype, "scale", void 0);
-    TilePixelsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'tile-pixels',
-            template: __webpack_require__(/*! ./tile-pixels.component.html */ "./src/app/cobblestone/tile-pixels/tile-pixels.component.html"),
-            styles: [__webpack_require__(/*! ./tile-pixels.component.scss */ "./src/app/cobblestone/tile-pixels/tile-pixels.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], TilePixelsComponent);
-    return TilePixelsComponent;
 }());
 
 
@@ -1129,16 +1008,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var tfs = {
+    "turn-left": "turnLeft",
+    "turn-right": "turnRight",
+    "flip-down": "flipDown",
+    "flip-over": "flipOver"
+};
 var TileTransformerService = /** @class */ (function () {
     function TileTransformerService() {
     }
+    TileTransformerService.prototype.parseMappingToKey = function (tfTile) {
+        var tfs = Object.values(_model_transform__WEBPACK_IMPORTED_MODULE_3__["Transform"]).filter(function (tf) {
+            return tfTile.transformations.indexOf(tf) >= 0;
+        });
+        tfs.sort();
+        return [tfTile.tileName, tfTile.paletteName].concat(tfs).join("_");
+    };
     TileTransformerService.prototype.parseKeyToForm = function (key) {
         var tile = _model_TransformedTile__WEBPACK_IMPORTED_MODULE_4__["TransformedTile"].parse(key);
         var out = {};
         out.selectedPalette = tile.paletteName;
         out.selectedTile = tile.tileName;
         Object.values(_model_transform__WEBPACK_IMPORTED_MODULE_3__["Transform"]).forEach(function (tf) {
-            out[tf] = (tile.transforms.indexOf(tf) >= 0);
+            out[tf] = (tile.transformations.indexOf(tf) >= 0);
         });
         return out;
     };
@@ -1151,23 +1043,46 @@ var TileTransformerService = /** @class */ (function () {
         return [formValue.selectedTile, formValue.selectedPalette].concat(tfs).join("_");
     };
     TileTransformerService.prototype.buildTransformedTile = function (state, key) {
-        var out = {};
-        var attrs = key.split("_");
-        out.palette = state.palettes[attrs[1]];
-        var transforms = attrs.splice(2);
-        out.tile = {};
-        var pixels = out["tile"];
-        var temp = state.tiles[attrs[0]];
-        if (temp) {
-            Object.entries(temp).forEach(function (pair) {
-                var pixel = transforms.reduce(function (p, tf) {
-                    return p[tf](16, 16);
-                }, _util_point__WEBPACK_IMPORTED_MODULE_2__["Point"].parse(pair[0]));
-                var c = pair[1];
-                pixels[pixel.toString()] = c;
-            });
+        console.log("building tracking");
+        if (state.transforms) {
+            var myChar = state.transforms.get(key);
+            console.log("my char");
+            console.log(myChar);
+            if (myChar) {
+                var tf_1 = {
+                    key: key,
+                    pixels: []
+                };
+                var mapping_1 = state.mapping.get(myChar);
+                console.log(mapping_1);
+                var palette_1 = state.palettes.get(mapping_1.paletteName);
+                console.log(palette_1);
+                var tile = state.tiles.get(mapping_1.tileName);
+                console.log(tile);
+                if (palette_1 && tile) {
+                    if (palette_1[0]) {
+                        tf_1.bg = palette_1[0];
+                    }
+                    Object.entries(tile).forEach(function (entry) {
+                        var coord = entry[0];
+                        var colorIndex = entry[1];
+                        var point = mapping_1.transformations.reduce(function (p, tf) {
+                            return p[tfs[tf]](16, 16);
+                        }, _util_point__WEBPACK_IMPORTED_MODULE_2__["Point"].parse(coord));
+                        var pixel = {
+                            x: point.x,
+                            y: point.y,
+                            fill: palette_1[colorIndex]
+                        };
+                        tf_1.pixels.push(pixel);
+                    });
+                    console.log(tf_1);
+                    return tf_1;
+                }
+            }
+            console.log();
+            return null;
         }
-        return out;
     };
     TileTransformerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -1182,45 +1097,6 @@ var TileTransformerService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/cobblestone/tile.ts":
-/*!*************************************!*\
-  !*** ./src/app/cobblestone/tile.ts ***!
-  \*************************************/
-/*! exports provided: Tile */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Tile", function() { return Tile; });
-/* harmony import */ var _util_range__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/range */ "./src/app/util/range.ts");
-
-var Tile = /** @class */ (function () {
-    function Tile() {
-        this.pixels = _util_range__WEBPACK_IMPORTED_MODULE_0__["Range"].max(16).map(function () { return "a".repeat(16); });
-    }
-    Tile.parse = function (data) {
-        var out = new Tile();
-        var temp = data.split("\r").join("").split("\n");
-        _util_range__WEBPACK_IMPORTED_MODULE_0__["Range"].max(16).forEach(function (n) {
-            var row = temp[n].substr(0, 16);
-            var suffix = "a".repeat(Math.max(0, 16 - row.length));
-            out[n] = temp[n];
-        });
-        return out;
-    };
-    Tile.prototype.get = function (x, y) {
-        return 97 - this.pixels[y].charCodeAt(x);
-    };
-    Tile.prototype.set = function (x, y, c) {
-        var temp = this.pixels[y].split("");
-    };
-    return Tile;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.html":
 /*!**************************************************************************************!*\
   !*** ./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.html ***!
@@ -1228,7 +1104,7 @@ var Tile = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"0\" height=\"0\">\n  <defs>\n    <ng-container *ngFor=\"let key of state['transforms'].keys()\">\n      <ng-template let-pixels=\"getPixels(key)\" let-palette=\"getPalette(key)\">\n        <pattern [attr.id]=\"key\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n          <rect *ngIf=\"palette[0]\" [attr.width]=\"width * scale\" [attr.height]=\"height * scale\"\n                [attr.fill]=\"palette[0]\" stroke=\"none\" stroke-width=\"0\"></rect>\n          <ng-container *ngFor=\"let y of range.max(height)\">\n            <ng-container *ngFor=\"let x of range.max(width)\">\n              <rect\n                *ngIf=\"pixels[x + 'x' + y]\"\n                [attr.alt]=\"x + 'x' + y\"\n                [attr.x]=\"x * scale\"\n                [attr.y]=\"y * scale\"\n                [attr.width]=\"scale\"\n                [attr.height]=\"scale\"\n                [attr.fill]=\"palette[pixels[x + 'x' + y]]\"\n                style=\"stroke:none;stroke-width:0;\"></rect>\n            </ng-container>\n          </ng-container>\n        </pattern>\n\n      </ng-template>\n    </ng-container>\n  </defs>\n</svg>\n"
+module.exports = "<svg width=\"0\" height=\"0\">\n  <defs>\n    <ng-container *ngFor=\"let tf of currentTransforms\">\n      <pattern [attr.id]=\"tf.key\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n        <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\n              [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\n        <ng-container *ngFor=\"let pixel of tf.pixels\">\n          <rect\n            [attr.alt]=\"pixel.x + 'x' + pixel.y\"\n            [attr.x]=\"pixel.x\"\n            [attr.y]=\"pixel.y\"\n            [attr.width]=\"1\"\n            [attr.height]=\"1\"\n            [attr.fill]=\"pixel.fill\"\n            style=\"stroke:none;stroke-width:0;\"></rect>\n        </ng-container>\n      </pattern>\n    </ng-container>\n  </defs>\n</svg>\n"
 
 /***/ }),
 
@@ -1255,21 +1131,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TransformedTileDefComponent", function() { return TransformedTileDefComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _model_TransformedTile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../model/TransformedTile */ "./src/app/cobblestone/model/TransformedTile.ts");
+/* harmony import */ var _util_trigger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/trigger */ "./src/app/util/trigger.ts");
+/* harmony import */ var _tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../tile-transformer.service */ "./src/app/cobblestone/tile-transformer.service.ts");
+
 
 
 
 var TransformedTileDefComponent = /** @class */ (function () {
-    function TransformedTileDefComponent() {
+    function TransformedTileDefComponent(ttf) {
+        this.ttf = ttf;
+        this.currentTransforms = [];
     }
     TransformedTileDefComponent.prototype.ngOnInit = function () {
+        var me = this;
+        this.transformTrigger.addListener(function () {
+            me.updateTransforms();
+        });
     };
-    TransformedTileDefComponent.prototype.getPalette = function (key) {
-        var tfTile = _model_TransformedTile__WEBPACK_IMPORTED_MODULE_2__["TransformedTile"].parse(key);
-        return this.state.palettes[tfTile.paletteName];
-    };
-    TransformedTileDefComponent.prototype.getPixels = function (key) {
-        return null;
+    TransformedTileDefComponent.prototype.updateTransforms = function () {
+        var _this = this;
+        this.currentTransforms = [];
+        this.state.transforms.forEach(function (v, k) {
+            var tf = _this.ttf.buildTransformedTile(_this.state, k);
+            if (tf) {
+                _this.currentTransforms.push(tf);
+            }
+        });
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
@@ -1277,17 +1164,137 @@ var TransformedTileDefComponent = /** @class */ (function () {
     ], TransformedTileDefComponent.prototype, "state", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
-    ], TransformedTileDefComponent.prototype, "scale", void 0);
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _util_trigger__WEBPACK_IMPORTED_MODULE_2__["Trigger"])
+    ], TransformedTileDefComponent.prototype, "transformTrigger", void 0);
     TransformedTileDefComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'tf-tile-def',
             template: __webpack_require__(/*! ./transformed-tile-def.component.html */ "./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.html"),
             styles: [__webpack_require__(/*! ./transformed-tile-def.component.scss */ "./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__["TileTransformerService"]])
     ], TransformedTileDefComponent);
     return TransformedTileDefComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.html ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<svg *ngIf=\"tf\" width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\n  <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\n        [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\n  <ng-container *ngFor=\"let pixel of tf.pixels\">\n    <rect\n      [attr.alt]=\"pixel.x + 'x' + pixel.y\"\n      [attr.x]=\"pixel.x\"\n      [attr.y]=\"pixel.y\"\n      [attr.width]=\"1\"\n      [attr.height]=\"1\"\n      [attr.fill]=\"pixel.fill\"\n      style=\"stroke:none;stroke-width:0;\"></rect>\n  </ng-container>\n</svg>\n"
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.scss":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.scss ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL3RyYW5zZm9ybWVkLXRpbGUtZGlzcGxheS90cmFuc2Zvcm1lZC10aWxlLWRpc3BsYXkuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.ts":
+/*!********************************************************************************************!*\
+  !*** ./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.ts ***!
+  \********************************************************************************************/
+/*! exports provided: TransformedTileDisplayComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TransformedTileDisplayComponent", function() { return TransformedTileDisplayComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var TransformedTileDisplayComponent = /** @class */ (function () {
+    function TransformedTileDisplayComponent() {
+    }
+    TransformedTileDisplayComponent.prototype.ngOnInit = function () {
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], TransformedTileDisplayComponent.prototype, "tf", void 0);
+    TransformedTileDisplayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'tf-tile-disp',
+            template: __webpack_require__(/*! ./transformed-tile-display.component.html */ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.html"),
+            styles: [__webpack_require__(/*! ./transformed-tile-display.component.scss */ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], TransformedTileDisplayComponent);
+    return TransformedTileDisplayComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.html":
+/*!**************************************************************************************!*\
+  !*** ./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.html ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\n  <rect height=\"16\" width=\"16\" stroke=\"none\" [attr.fill]=\"'url(#' + key + ')'\"></rect>\n</svg>\n"
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.scss":
+/*!**************************************************************************************!*\
+  !*** ./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.scss ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvYmJsZXN0b25lL3RyYW5zZm9ybWVkLXRpbGUtcmVmL3RyYW5zZm9ybWVkLXRpbGUtcmVmLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.ts":
+/*!************************************************************************************!*\
+  !*** ./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.ts ***!
+  \************************************************************************************/
+/*! exports provided: TransformedTileRefComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TransformedTileRefComponent", function() { return TransformedTileRefComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var TransformedTileRefComponent = /** @class */ (function () {
+    function TransformedTileRefComponent() {
+    }
+    TransformedTileRefComponent.prototype.ngOnInit = function () {
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], TransformedTileRefComponent.prototype, "key", void 0);
+    TransformedTileRefComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'tf-tile-ref',
+            template: __webpack_require__(/*! ./transformed-tile-ref.component.html */ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.html"),
+            styles: [__webpack_require__(/*! ./transformed-tile-ref.component.scss */ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], TransformedTileRefComponent);
+    return TransformedTileRefComponent;
 }());
 
 
@@ -1301,7 +1308,7 @@ var TransformedTileDefComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-4\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <form [formGroup]=\"transForm\">\r\n          <div class=\"row\">\r\n            <div class=\"col-12\" *ngIf=\"currentKey\">\r\n              <pixel-painter\r\n                [pixels]=\"selectedTile\"\r\n                [palette]=\"selectedPalette\"\r\n                [width]=\"16\"\r\n                [height]=\"16\"\r\n                [scale]=\"2\">\r\n              </pixel-painter>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <button class=\"nes-btn {{exists()?'is-error':'is-success'}}\" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>\r\n            </div>\r\n            <div class=\"col-12\">\r\n\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"updateCurrentKey()\">\r\n                  <ng-container *ngIf=\"state.palettes\">\r\n                    <ng-container *ngFor=\"let palette of state.palettes.keys()\">\r\n                      <option value=\"{{palette}}\">{{palette}}</option>\r\n                    </ng-container>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"selectedTile\">Tiles:</label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select class=\"form-control\" id=\"selectedTile\" formControlName=\"selectedTile\" (change)=\"updateCurrentKey()\">\r\n                  <ng-container *ngIf=\"state.tiles\">\r\n                    <ng-container *ngFor=\"let tileName of state.tiles.keys()\">\r\n                      <option value=\"{{tileName}}\">{{tileName}}</option>\r\n                    </ng-container>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-flip-over\" class=\"item\">\r\n                <label>Flip Over</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-over\" formControlName=\"flip-over\" value=\"flip-over\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-over\" formControlName=\"flip-over\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-flip-down\" class=\"item\">\r\n                <label>Flip Down</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-down\" formControlName=\"flip-down\" value=\"flip-down\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-down\" formControlName=\"flip-down\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-turn-right\" class=\"item\">\r\n                <label>Turn Right</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-right\" formControlName=\"turn-right\" value=\"turn-right\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-right\" formControlName=\"turn-right\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-turn-left\" class=\"item\">\r\n                <label>Turn Left</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-left\" formControlName=\"turn-left\" value=\"turn-left\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-left\" formControlName=\"turn-left\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-8\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <div class=\"row\">\r\n          <ng-container *ngIf=\"state.transforms\">\r\n            <ng-container *ngFor=\"let key of state.transforms.keys()\">\r\n              <div class=\"col-3\" >\r\n                <button (click)=\"setCurrentKey(key)\">\r\n\r\n                </button>\r\n              </div>\r\n            </ng-container>\r\n          </ng-container>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-4\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <form [formGroup]=\"transForm\">\r\n          <div class=\"row\">\r\n            <div class=\"col-12\" *ngIf=\"currentKey\">\r\n              <tf-tile-disp [tf]=\"buildTile(currentKey)\"></tf-tile-disp>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <button class=\"nes-btn {{exists()?'is-error':'is-success'}}\" (click)=toggle()>{{exists()?'Remove':'Add'}}</button>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"chars\" class=\"text-brand\">Chars: </label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select id=\"chars\" class=\"form-control\" formControlName=\"selectedChar\">\r\n                  <ng-container *ngFor=\"let aChar of unusedChars\">\r\n                    <option value=\"{{aChar}}\">{{aChar}}</option>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"palettes\" class=\"text-brand\">Palettes: </label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select id=\"palettes\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"updateCurrentKey()\">\r\n                  <ng-container *ngIf=\"state.palettes\">\r\n                    <ng-container *ngFor=\"let palette of state.palettes | keyvalue\">\r\n                      <option value=\"{{palette.key}}\">{{palette.key}}</option>\r\n                    </ng-container>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <label for=\"selectedTile\">Tiles:</label>\r\n              <div class=\"nes-input nes-select\">\r\n                <select class=\"form-control\" id=\"selectedTile\" formControlName=\"selectedTile\" (change)=\"updateCurrentKey()\">\r\n                  <ng-container *ngIf=\"state.tiles\">\r\n                    <ng-container *ngFor=\"let tile of state.tiles | keyvalue\">\r\n                      <option value=\"{{tile.key}}\">{{tile.key}}</option>\r\n                    </ng-container>\r\n                  </ng-container>\r\n                </select>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-flip-over\" class=\"item\">\r\n                <label>Flip Over</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-over\" formControlName=\"flip-over\" value=\"flip-over\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-over\" formControlName=\"flip-over\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-flip-down\" class=\"item\">\r\n                <label>Flip Down</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-down\" formControlName=\"flip-down\" value=\"flip-down\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"flip-down\" formControlName=\"flip-down\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-turn-right\" class=\"item\">\r\n                <label>Turn Right</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-right\" formControlName=\"turn-right\" value=\"turn-right\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-right\" formControlName=\"turn-right\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div id=\"radio-turn-left\" class=\"item\">\r\n                <label>Turn Left</label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-left\" formControlName=\"turn-left\" value=\"turn-left\" (change)=\"updateCurrentKey()\"/><span>Yes</span></label>\r\n                <label><input type=\"radio\" class=\"nes-radio\" name=\"turn-left\" formControlName=\"turn-left\" value=\"\" (change)=\"updateCurrentKey()\"/><span>No</span></label>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-8\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container\">\r\n        <ng-container *ngIf=\"state.transforms\">\r\n          <div class=\"row\">\r\n            <ng-container *ngFor=\"let tf of state.transforms | keyvalue\">\r\n              <div class=\"col-3\" >\r\n                <button (click)=\"setCurrentKey(tf.key)\">\r\n                  <tf-tile-disp [tf]=\"buildTile(tf.key)\"></tf-tile-disp>\r\n                </button>\r\n              </div>\r\n            </ng-container>\r\n          </div>\r\n        </ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1331,7 +1338,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../tile-transformer.service */ "./src/app/cobblestone/tile-transformer.service.ts");
 /* harmony import */ var _util_trigger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/trigger */ "./src/app/util/trigger.ts");
-/* harmony import */ var _model_transform__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../model/transform */ "./src/app/cobblestone/model/transform.ts");
+/* harmony import */ var _char_index_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../char-index.service */ "./src/app/cobblestone/char-index.service.ts");
+/* harmony import */ var _model_TransformedTile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../model/TransformedTile */ "./src/app/cobblestone/model/TransformedTile.ts");
+
 
 
 
@@ -1339,10 +1348,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var TransformedTilesComponent = /** @class */ (function () {
-    function TransformedTilesComponent(fb, ttf) {
+    function TransformedTilesComponent(fb, ttf, cis) {
         this.fb = fb;
         this.ttf = ttf;
+        this.cis = cis;
         this.transForm = this.fb.group({
+            selectedChar: [''],
             selectedPalette: [''],
             selectedTile: [''],
             "flip-over": [''],
@@ -1355,45 +1366,42 @@ var TransformedTilesComponent = /** @class */ (function () {
         var me = this;
         this.loadTrigger.addListener(function () {
             me.updateFromFile();
+            me.transformTrigger.fire();
+        });
+        this.transformTrigger.addListener(function () {
+            var tmp = [];
+            me.state.transforms.forEach(function (v, k) {
+                tmp.push(v);
+            });
+            me.unusedChars = me.cis.getUnused(tmp.join(""));
         });
     };
     TransformedTilesComponent.prototype.updateFromFile = function () {
         var patch = {};
-        var paletteNames = this.state.palettes.keys();
+        var paletteNames = [];
+        this.state.palettes.forEach(function (v, k) { return paletteNames.push(k); });
         if (paletteNames.length > 0) {
             patch["selectedPalette"] = paletteNames[0];
         }
-        var tileNames = this.state.tiles.keys();
+        var tileNames = [];
+        this.state.tiles.forEach(function (v, k) { return tileNames.push(k); });
         if (tileNames.length > 0) {
             patch["selectedTile"] = tileNames[0];
         }
         this.transForm.patchValue(patch);
         this.updateCurrentKey();
-        console.log("updated from file");
-    };
-    TransformedTilesComponent.prototype.getCurrentKey = function () {
-        console.log("getting current key");
-        return this.ttf.printFormKey(this.transForm.value);
     };
     TransformedTilesComponent.prototype.updateCurrentKey = function () {
-        this.currentKey = this.getCurrentKey();
-        console.log("updated current key");
-        console.log(this.currentKey);
+        this.setCurrentKey(this.ttf.printFormKey(this.transForm.value));
     };
     TransformedTilesComponent.prototype.setCurrentKey = function (key) {
         this.currentKey = key;
-        var tfTile = this.ttf.buildTransformedTile(this.state, key);
-        this.selectedPalette = tfTile.palette;
-        this.selectedTile = tfTile.tile;
-        var args = key.split("_");
-        var values = {
-            selectedPalette: args[1],
-            selectedTile: args[0]
-        };
-        Object.values(_model_transform__WEBPACK_IMPORTED_MODULE_5__["Transform"]).forEach(function (label) {
-            values[label] = (args.indexOf(label) > 0);
-        });
-        this.transForm.patchValue(values);
+        this.transForm.patchValue(this.ttf.parseKeyToForm(key));
+        this.selectedPalette = this.state.palettes[this.transForm.value.selectedPalette];
+        this.selectedTile = this.state.palettes[this.transForm.value.selectedTile];
+    };
+    TransformedTilesComponent.prototype.buildTile = function (key) {
+        return this.ttf.buildTransformedTile(this.state, key);
     };
     TransformedTilesComponent.prototype.exists = function () {
         if (this.currentKey) {
@@ -1403,28 +1411,41 @@ var TransformedTilesComponent = /** @class */ (function () {
     TransformedTilesComponent.prototype.toggle = function () {
         var key = this.currentKey;
         if (key && this.state.transforms[key]) {
+            var myChar = this.state.transforms[key];
             delete this.state.transforms[key];
+            delete this.state.mapping[myChar];
         }
         else {
-            this.state.transforms[key] = this.ttf.buildTransformedTile(this.state, key);
+            this.state.transforms[key] = this.transForm.value.selectedChar;
+            this.state.mapping[this.transForm.value.selectedChar] = _model_TransformedTile__WEBPACK_IMPORTED_MODULE_6__["TransformedTile"].parse(this.ttf.printFormKey(this.transForm.value));
         }
+        this.transformTrigger.fire();
     };
-    TransformedTilesComponent.tfLabels = ["flip-over", "flip-down", "turn-right", "turn-left"];
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], TransformedTilesComponent.prototype, "state", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], TransformedTilesComponent.prototype, "scale", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _util_trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"])
     ], TransformedTilesComponent.prototype, "loadTrigger", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _util_trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"])
+    ], TransformedTilesComponent.prototype, "transformTrigger", void 0);
     TransformedTilesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-transformed-tiles',
             template: __webpack_require__(/*! ./transformed-tiles.component.html */ "./src/app/cobblestone/transformed-tiles/transformed-tiles.component.html"),
             styles: [__webpack_require__(/*! ./transformed-tiles.component.scss */ "./src/app/cobblestone/transformed-tiles/transformed-tiles.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__["TileTransformerService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            _tile_transformer_service__WEBPACK_IMPORTED_MODULE_3__["TileTransformerService"],
+            _char_index_service__WEBPACK_IMPORTED_MODULE_5__["CharIndexService"]])
     ], TransformedTilesComponent);
     return TransformedTilesComponent;
 }());
@@ -1636,7 +1657,7 @@ var PixelCanvasComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg [attr.width]=\"width * scale\" [attr.height]=\"height * scale\">\r\n  <rect *ngIf=\"palette[0]\" [attr.width]=\"width * scale\" [attr.height]=\"height * scale\"\r\n        [attr.fill]=\"palette[0]\" stroke=\"none\" stroke-width=\"0\"></rect>\r\n  <ng-container *ngFor=\"let y of range.max(height)\">\r\n    <ng-container *ngFor=\"let x of range.max(width)\">\r\n      <rect\r\n        *ngIf=\"pixels[x + 'x' + y]\"\r\n        [attr.alt]=\"x + 'x' + y\"\r\n        [attr.x]=\"x * scale\"\r\n        [attr.y]=\"y * scale\"\r\n        [attr.width]=\"scale\"\r\n        [attr.height]=\"scale\"\r\n        [attr.fill]=\"palette[pixels[x + 'x' + y]]\"\r\n        style=\"stroke:none;stroke-width:0;\"></rect>\r\n    </ng-container>\r\n  </ng-container>\r\n</svg>\r\n"
+module.exports = "<svg *ngIf=\"palette && pixels\" [attr.width]=\"width * scale\" [attr.height]=\"height * scale\">\r\n  <rect *ngIf=\"palette[0]\" [attr.width]=\"width * scale\" [attr.height]=\"height * scale\"\r\n        [attr.fill]=\"palette[0]\" stroke=\"none\" stroke-width=\"0\"></rect>\r\n  <ng-container *ngFor=\"let y of range.max(height)\">\r\n    <ng-container *ngFor=\"let x of range.max(width)\">\r\n      <rect\r\n        *ngIf=\"pixels[x + 'x' + y]\"\r\n        [attr.alt]=\"x + 'x' + y\"\r\n        [attr.x]=\"x * scale\"\r\n        [attr.y]=\"y * scale\"\r\n        [attr.width]=\"scale\"\r\n        [attr.height]=\"scale\"\r\n        [attr.fill]=\"palette[pixels[x + 'x' + y]]\"\r\n        style=\"stroke:none;stroke-width:0;\"></rect>\r\n    </ng-container>\r\n  </ng-container>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -2091,7 +2112,7 @@ var AccordianComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" name=\"button\" class=\"nes-btn is-success\" (click)=\"open()\">{{triggerBtnName}}</button>\r\n<dialog #myDialog class=\"nes-dialog is-dark is-rounded\">\r\n  <ng-content></ng-content>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary {{allowConfirm?'':'is-disabled'}}\" [disabled]=\"!allowConfirm\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
+module.exports = "<button type=\"button\" name=\"button\" class=\"nes-btn is-success\" (click)=\"open()\">{{triggerBtnName}}</button>\r\n<dialog #myDialog class=\"nes-dialog is-dark is-rounded\">\r\n  <ng-content></ng-content>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary {{allowConfirm?'':'is-disabled'}}\"\r\n            [disabled]=\"!allowConfirm\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
 
 /***/ }),
 
@@ -2285,6 +2306,7 @@ var FileFormComponent = /** @class */ (function () {
         var me = this;
         return function (fileData, fileName) {
             me.prepareLoadedData(fileData).subscribe(function (data) {
+                console.log(data);
                 me.loadedFileData = data;
                 me.fileForm.patchValue({
                     saveFile: fileName
@@ -2483,7 +2505,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var ChildPanelComponent = /** @class */ (function () {
     function ChildPanelComponent() {
-        this.hide = true;
         this.show = false;
     }
     ChildPanelComponent.prototype.ngOnInit = function () {

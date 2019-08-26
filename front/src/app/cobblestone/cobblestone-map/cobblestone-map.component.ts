@@ -14,11 +14,16 @@ export class CobblestoneMapComponent implements OnInit {
   @Input()
   state: any;
 
+  @Input()
+  scale: number;
+
+
+
   dimForm: FormGroup = this.fb.group({
     width:[8],
     height:[10],
     scale:[3]
-  })
+  });
 
   activeKey: string;
 
@@ -26,6 +31,9 @@ export class CobblestoneMapComponent implements OnInit {
 
   @Input()
   loadTrigger: Trigger;
+
+  @Input()
+  transformTrigger: Trigger;
 
   constructor(private fb: FormBuilder) { }
 

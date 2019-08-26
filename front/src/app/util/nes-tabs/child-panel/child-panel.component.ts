@@ -10,7 +10,6 @@ export class ChildPanelComponent implements OnInit {
   @Input()
   label: string;
 
-  hide: boolean = true;
   show: boolean = false;
 
   constructor() { }
