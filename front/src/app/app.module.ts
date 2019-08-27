@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +25,7 @@ import { PixelPendingComponent } from './util/pixel-pending/pixel-pending.compon
 import { TransformedTileDefComponent } from './cobblestone/transformed-tile-def/transformed-tile-def.component';
 import { TransformedTileDisplayComponent } from './cobblestone/transformed-tile-display/transformed-tile-display.component';
 import { TransformedTileRefComponent } from './cobblestone/transformed-tile-ref/transformed-tile-ref.component';
+import {HttpMockRequestInterceptor} from "./mock/http-mock-request-interceptor";
 
 @NgModule({
   declarations: [
@@ -57,7 +58,11 @@ import { TransformedTileRefComponent } from './cobblestone/transformed-tile-ref/
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: HttpMockRequestInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -23,12 +23,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
+              "src/styles.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true
           },
           "configurations": {
+            "mock": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.mock.ts"
+                }
+              ]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -61,6 +69,9 @@
             "browserTarget": "front:build"
           },
           "configurations": {
+            "mock": {
+              "browserTarget": "front:build:mock"
+            },
             "production": {
               "browserTarget": "front:build:production"
             }
