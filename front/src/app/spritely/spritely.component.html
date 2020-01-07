@@ -12,7 +12,7 @@
       <div class="title">
         <label>Spritely </label>
       </div>
-      <div class="row small">
+      <div class="d-flex flex-row small">
         <div class="col-lg-5">
           <accordian
             tabId="fileTab"
@@ -176,7 +176,6 @@
               <div class="row">
                 <div class="col-md-12">
                   <app-pixel-canvas
-                    class="col-12"
                     [pixels]="pixels"
                     [scale]="10"
                     [width]="min(spritelyForm.value.width,64)"

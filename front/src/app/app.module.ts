@@ -26,6 +26,8 @@ import { TransformedTileDefComponent } from './cobblestone/transformed-tile-def/
 import { TransformedTileDisplayComponent } from './cobblestone/transformed-tile-display/transformed-tile-display.component';
 import { TransformedTileRefComponent } from './cobblestone/transformed-tile-ref/transformed-tile-ref.component';
 import {HttpMockRequestInterceptor} from "./mock/http-mock-request-interceptor";
+import { ConfirmCancelDialogComponent } from './util/confirm-cancel-dialog/confirm-cancel-dialog.component';
+import { OkayDialogComponent } from './util/okay-dialog/okay-dialog.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import {HttpMockRequestInterceptor} from "./mock/http-mock-request-interceptor";
     TransformedTileDefComponent,
     TransformedTileDisplayComponent,
     TransformedTileRefComponent,
+    ConfirmCancelDialogComponent,
+    OkayDialogComponent,
   ],
   imports: [
     BrowserModule,

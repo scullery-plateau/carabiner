@@ -30,12 +30,13 @@ input[type="color"].nes-input {
 }
 
 .palette-item {
+  margin: 1%;
   float:left;
 }
 
 .palette-color {
   display: block;
-  font-size: 2em
+  font-size: 2em;
 }
 
 .hide {

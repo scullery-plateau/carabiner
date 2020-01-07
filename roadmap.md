@@ -22,34 +22,33 @@
   * Paging UI
 * wire up new endpoints
 
-### HexAtlas
-> overland topography hex-map designer / publisher
-* Concept & init design
+### Outfitter
+> character art digital paper dolls
+* harvest art from FH10
+* initial UI design
 
 ### MasterMold
 > paper mini designer / publisher
 * Concept & Impl
   * standing vs flat
+    * use "Hero Kids" for template
   * sizes
-  
-### Opolis
-> city designer / publisher
-* concept & design
 
-### Artificer
+### Artificer 5e
 > document / artifact publisher
 * FCF / Walter compliance
 * doc design / template design
 * full data model of 5e
 
-### Questographer 
-> Quest / adventure builder integrates other apps 
-> to help dungeon masters design their adventures
-* use artificer data model
-* use cobblestone maps & mastermold flat minis
-* how to model social encounters?
+### Artificer X
+> Structured data / template publisher
+* xml / xslt import
+* print or download results
 
-### My RPG 
-> play Questographer quests as text-based adventures
-* use artificer data model & templates
-* display cobblestone maps & mastermold flat minis ala Roll20 
+### HexAtlas
+> overland topography hex-map designer / publisher
+* Concept & init design
+
+### *General Use*
+* Google SSO
+* Google Drive for storage option

@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<data><races><race>
+    <name>Githzerai</name>
+    <size>M</size>
+    <speed>30</speed>
+    <ability>Int 1, Wis 2</ability>
+    <spellAbility>Wisdom</spellAbility>
+    <proficiency>
+    </proficiency>
+    <trait>
+      <name>Languages</name>
+      <text>You can speak, read, and write Common and Gith.</text>
+      <text>
+      </text>
+      <text>Source: Mordenkainen's Tome of Foes, p. 96</text>
+    </trait>
+    <trait>
+      <name>Mental Discipline</name>
+      <text>You have advantage on saving throws against the charmed and frightened conditions. Under the tutelage of monastic masters, githzerai learn to govern their own minds.</text>
+      <text>
+      </text>
+      <text>Source: Mordenkainen's Tome of Foes, p. 96</text>
+    </trait>
+    <trait>
+      <name>Githzerai Psionics</name>
+      <text>You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait.</text>
+      <text>	When you reach 3rd level, you can cast the shield spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the detect thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.</text>
+      <text>	Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don’t require components.</text>
+      <text>
+      </text>
+      <text>Source: Mordenkainen's Tome of Foes, p. 96</text>
+    </trait>
+  </race></races><monsters><monster>
+    <name>Githzerai Anarch</name>
+    <size>M</size>
+    <type>humanoid (gith)</type>
+    <alignment>lawful neutral</alignment>
+    <ac>20 ()</ac>
+    <hp>144 (17d8+68)</hp>
+    <speed>30 ft., fly 40 ft. (hover)</speed>
+    <str>16</str>
+    <dex>21</dex>
+    <con>18</con>
+    <int>18</int>
+    <wis>20</wis>
+    <cha>14</cha>
+    <save>Str +8, Dex +10, Int +9, Wis +10</save>
+    <skill>Arcana +9, Insight +10, Perception +10</skill>
+    <resist>
+    </resist>
+    <vulnerable>
+    </vulnerable>
+    <immune>
+    </immune>
+    <conditionImmune>
+    </conditionImmune>
+    <senses>
+    </senses>
+    <passive>20</passive>
+    <languages>Gith</languages>
+    <cr>16</cr>
+    <trait>
+      <name>Source</name>
+      <text>Mordenkainen's Tome of Foes, p. 207</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>The anarch's innate spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It can innately cast the following spells, requiring no components:</text>
+      <text>
+      </text>
+      <text>At will: mage hand (the hand is invisible)</text>
+      <text>
+      </text>
+      <text>3/day each: feather fall, jump, see invisibility, shield, telekinesis </text>
+      <text>
+      </text>
+      <text>1/day each: globe of invulnerability, plane shift, teleportation circle, wall of force.</text>
+    </trait>
+    <trait>
+      <name>Psychic Defense</name>
+      <text>While the anarch is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The githzerai makes three unarmed strikes.</text>
+    </action>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 13 (3d8) psychic damage.</text>
+      <attack>Unarmed Strike|8|2d8+4+3d8</attack>
+    </action>
+    <action>
+      <name>Temporal Strike (Recharge 6)</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage plus 52 (8d12) psychic damage. The target must succeed on a DC 16 Wisdom saving throw or move 1 round forward in time. A target moved forward in time vanishes for the duration. When the effect ends, the target reappears in the space it left or in an unoccupied space nearest to that space if it's occupied.</text>
+      <attack>Temporal Strike|8|2d8+4+8d12</attack>
+    </action>
+    <action>
+      <name>Lair Actions</name>
+      <text>An anarch can use lair actions. On initiative count 20 (losing initiative ties), the anarch can take a lair action to cause one of the following effects; the anarch can't use the same effect two rounds in a row:</text>
+      <text>
+      </text>
+      <text>• The anarch casts the lightning bolt spell (at 5th level), but the anarch can change the damage type from lightning to cold, fire, psychic, radiant, or thunder. If the spell deals damage other than fire or lightning, it doesn't ignite flammable objects.</text>
+      <text>
+      </text>
+      <text>• The anarch casts the creation spell (as a 9th-level spell) using the unformed substance of Limbo instead of shadow material. If used in Limbo, the object remains until the anarch's concentration is broken, regardless of its composition. If the anarch moves more than 120 feet from the object, its concentration breaks.</text>
+      <text>
+      </text>
+      <text>• The anarch can magically move an object it can see within 150 feet of it by making a Wisdom check with advantage. The DC depends on the object's size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <text>The anarch can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The anarch regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Strike</name>
+      <text>The anarch makes one unarmed strike.</text>
+    </legendary>
+    <legendary>
+      <name>Teleport</name>
+      <text>The anarch magically teleports, along with any equipment it is wearing and carrying, to an unoccupied space it can see within 30 feet of it.</text>
+    </legendary>
+    <legendary>
+      <name>Change Gravity (Costs 3 Actions)</name>
+      <text>The anarch casts the reverse gravity spell. The spell has the normal effect, except that the anarch can orient the area in any direction and creatures and objects fall toward the end of the area.</text>
+    </legendary>
+    <spells>mage hand, feather fall, jump, see invisibility, shield, telekinesis, globe of invulnerability, plane shift, teleportation circle, wall of force</spells>
+    <slots>
+    </slots>
+  </monster><monster>
+    <name>Githzerai Enlightened</name>
+    <size>M</size>
+    <type>humanoid (gith)</type>
+    <alignment>lawful neutral
+</alignment>
+    <ac>18 ()</ac>
+    <hp>112 (15d8+45)</hp>
+    <speed>30 ft.</speed>
+    <str>14</str>
+    <dex>19</dex>
+    <con>16</con>
+    <int>17</int>
+    <wis>19</wis>
+    <cha>13</cha>
+    <save>Str +6, Dex +8, Int +7, Wis +8</save>
+    <skill>Arcana +7, Insight +8, Perception +8</skill>
+    <resist>
+    </resist>
+    <vulnerable>
+    </vulnerable>
+    <immune>
+    </immune>
+    <conditionImmune>
+    </conditionImmune>
+    <senses>
+    </senses>
+    <passive>18</passive>
+    <languages>Gith</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Source</name>
+      <text>Mordenkainen's Tome of Foes, p. 208</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>The githzerai's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components:</text>
+      <text>
+      </text>
+      <text>At will: mage hand (the hand is invisible)</text>
+      <text>
+      </text>
+      <text>3/day each: blur, expeditious retreat, feather fall, jump, see invisibility, shield </text>
+      <text>
+      </text>
+      <text>1/day each: haste, plane shift, teleport.</text>
+    </trait>
+    <trait>
+      <name>Psychic Defense</name>
+      <text>While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The githzerai makes three unarmed strikes.</text>
+    </action>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 13 (3d8) psychic damage.</text>
+      <attack>Unarmed Strike|8|2d8+4+3d8</attack>
+    </action>
+    <action>
+      <name>Temporal Strike (Recharge 6)</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage plus 52 (8d12) psychic damage. The target must succeed on a DC 16 Wisdom saving throw or move 1 round forward in time. A target moved forward in time vanishes for the duration. When the effect ends, the target reappears in the space it left or in an unoccupied space nearest to that space if it's occupied.</text>
+      <attack>Temporal Strike|8|2d8+4+8d12</attack>
+    </action>
+    <spells>mage hand, blur, expeditious retreat, feather fall, jump, see invisibility, shield, haste, plane shift, teleport</spells>
+    <slots>
+    </slots>
+  </monster><monster>
+    <name>Githzerai Monk</name>
+    <size>M</size>
+    <type>humanoid (gith)</type>
+    <alignment>lawful neutral</alignment>
+    <ac>14</ac>
+    <hp>38 (7d8+7)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str>
+    <dex>15</dex>
+    <con>12</con>
+    <int>13</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <save>Str +3, Dex +4, Int +3, Wis +4</save>
+    <skill>Insight +4, Perception +4</skill>
+    <resist>
+    </resist>
+    <vulnerable>
+    </vulnerable>
+    <immune>
+    </immune>
+    <conditionImmune>
+    </conditionImmune>
+    <senses>
+    </senses>
+    <passive>14</passive>
+    <languages>Gith</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Source</name>
+      <text>Monster Manual, p. 161</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components: </text>
+      <text>
+      </text>
+      <text>	At will: mage hand (the hand is invisible)</text>
+      <text>	3/day each: feather fall, jump, see invisibility, shield</text>
+    </trait>
+    <trait>
+      <name>Psychic Defense</name>
+      <text>While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The githzerai makes two unarmed strikes.</text>
+    </action>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) bludgeoning damage plus 9 (2d8) psychic damage. This is a magic weapon attack.</text>
+      <attack>Unarmed Strike|4|1d8+2+2d8</attack>
+    </action>
+    <spells>mage hand, feather fall, jump, see invisibility, shield</spells>
+    <slots>
+    </slots>
+    <environment>
+    </environment>
+  </monster><monster>
+    <name>Githzerai Zerth</name>
+    <size>M</size>
+    <type>humanoid (gith)</type>
+    <alignment>lawful neutral</alignment>
+    <ac>17</ac>
+    <hp>84 (13d8+26)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>18</dex>
+    <con>15</con>
+    <int>16</int>
+    <wis>17</wis>
+    <cha>12</cha>
+    <save>Str +4, Dex +7, Int +6, Wis +6</save>
+    <skill>Arcana +6, Insight +6, Perception +6</skill>
+    <resist>
+    </resist>
+    <vulnerable>
+    </vulnerable>
+    <immune>
+    </immune>
+    <conditionImmune>
+    </conditionImmune>
+    <senses>
+    </senses>
+    <passive>16</passive>
+    <languages>Gith</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Source</name>
+      <text>Monster Manual, p. 161</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components: </text>
+      <text>
+      </text>
+      <text>	At will: mage hand (the hand is invisible)</text>
+      <text>	3/day each: feather fall, jump, see invisibility, shield</text>
+    </trait>
+    <trait>
+      <name>Psychic Defense</name>
+      <text>While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The githzerai makes two unarmed strikes.</text>
+    </action>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) bludgeoning damage plus 13 (3d8) psychic damage. This is a magic weapon attack.</text>
+      <attack>Unarmed Strike|7|2d6+4+3d8</attack>
+    </action>
+    <spells>mage hand, feather fall, jump, see invisibility, shield</spells>
+    <slots>
+    </slots>
+    <environment>
+    </environment>
+  </monster></monsters></data>

@@ -6,14 +6,15 @@
     <ng-container *ngFor="let c of palette; index as i">
       <a *ngIf="showFirst || i > 0"
         class="palette-item"
-        [style.color]="c"
-        [style.backgroundColor]="c"
-        [style.width]="(100/(palette.length - (showFirst?0:1)))+'%'"
+        [style.width]="((100/(palette.length - (showFirst?0:1))) - 2)+'%'"
         href="{{href}}"
         (click)="select(i)"
         (dblclick)="setColor(i)"
         >
-        <span class="nes-input palette-color {{(activeIndex == i)?'is-error':''}}">_</span>
+        <span class="nes-input palette-color {{(activeIndex == i)?'is-error':''}}"
+              [style.color]="c"
+              [style.backgroundColor]="c"
+        >_</span>
       </a>
     </ng-container>
   </div>

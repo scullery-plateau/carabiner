@@ -1,0 +1,1301 @@
+<?xml version="1.0"?>
+<characters>
+  <character proficiencyBonus="3" maxDex="0" improvedInitiative="0">
+    <health currentHealth="71" maxHealth="71" currentTempHP="0"/>
+    <armor armorBonus="16" shieldBonus="2" miscArmorBonus="1" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-543" subraceCode="1" backgroundCode="3" featCode="6" multiclassFeatures="4,1,0,1,0,0,2,9,-1,0,0" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;5&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="14" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="13" save-proficient="false" bonus="0"/>
+      <ability label="con" score="19" save-proficient="true" bonus="0"/>
+      <ability label="int" score="9" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="10" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="7" side-count="10"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Noble Feature:&#10;&#x2022; You can secure an audience with a local noble&#10;Class Features:&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Fighting Style - Archery: +2 to attack with ranged weapons&#10;&#x2022; Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding&#10;&#x2022; Gain advantage on survival and Int checks concerning your chosen creature type, and you know a language spoken by those creatures&#10;&#x2022; Gain advantage on Wis and Int checks concerning your chosen terrain, and bonuses while traveling through that terrain (see rules)&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Champion&#10;&#x2022; Crit on 19&#10;&#x2022; You can sacrifice a spell slot as an action to determine if certain creature types are within 1 mile (6 miles if favored terrain) (see rules)&#10;&#x2022; Big Game Hunter - You can use a reaction to attack a creature of at least Large size that attacks you&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;" special-items="One type of gaming set&#10;" languages="Common&#10;Extra Language&#10;One Extra Language&#10;" equiptment="martial weapon&#10;shield&#10;light crossbow + 20 bolts OR two hand axes&#10;dungeoneer's pack OR explorer's pack&#10;set of fine clothes&#10;signet ring&#10;scroll of pedigree&#10;purse&#10;chain mail&#10;" blank1="" classes1="Fighter 4, Ranger 3" race="Human" background="Noble" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Baron Crispian Dale" classes2="Fighter 4, Ranger 3" code1="0" code2="0" code3="0" code4="25" code5="0"/>
+  </character>
+  <character proficiencyBonus="4" maxDex="10" improvedInitiative="0">
+    <health currentHealth="43" maxHealth="43" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="35" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="4"/>
+    <coded raceCode="-543" subraceCode="1" backgroundCode="3" featCode="" multiclassFeatures="6,6,0,1,0,3" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;4&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="11" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="12" save-proficient="false" bonus="0"/>
+      <ability label="con" score="8" save-proficient="false" bonus="0"/>
+      <ability label="int" score="10" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="16" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="11" side-count="8"/>
+    </hit-dice>
+    <notes features="Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Meditating 4 hours counts as 8 hours of rest&#10;&#x2022; Perception proficiency&#10;&#x2022; Can hide while lightly obscured by natural phenomena&#10;&#x2022; Longsword, shortsword, shortbow, longbow proficiency&#10;Noble Feature:&#10;&#x2022; You can secure an audience with a local noble&#10;Class Features:&#10;&#x2022; Understand a secret druid language&#10;&#x2022; You can shapeshift into the form of a beast as an action (see rules)&#10;&#x2022; Druid Archetype: Land&#10;&#x2022; You know an extra druid cantrip&#10;&#x2022; Regain half your level worth of spell slots during a short rest (once per day)&#10;&#x2022; Forest - Gain bonus known spells&#10;&#x2022; You are unaffected by nonmagical difficult terrain or plants and gain advantage vs magical plants that effect movement&#10;&#x2022; War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack&#10;&#x2022; You are immune to poison and disease, and to effects by elementals or fey that frighten or charm&#10;" armor-proficiencies="Light Armor, Medium Armor, Shields&#10;" weapon-proficiencies="Longswords, Shortswords, Shortbows, Longbows&#10;Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears&#10;" special-items="Herbalism Kit&#10;One type of gaming set&#10;" languages="Common, Elvish&#10;Druidic&#10;One Extra Language&#10;" equiptment="wooden shield OR simple weapon&#10;scimitar OR simple melee weapon&#10;leather armor&#10;explorer's pack&#10;druidic focus&#10;set of fine clothes&#10;signet ring&#10;scroll of pedigree&#10;purse&#10;" blank1="" classes1="Druid 11" race="Wood Elf" background="Noble" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Baroness Azani" classes2="Druid 11" code1="0" code2="0" code3="0" code4="25" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="2" improvedInitiative="0">
+    <health currentHealth="12" maxHealth="65" currentTempHP="0"/>
+    <armor armorBonus="15" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="17" save-proficient="false" bonus="0"/>
+      <ability label="con" score="14" save-proficient="true" bonus="0"/>
+      <ability label="int" score="11" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="12" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="15" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="10"/>
+      <hit-die number-of="3" side-count="8"/>
+    </hit-dice>
+    <notes features="Tiefling Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Gain fire resistance&#10;&#x2022; Can cast the thaumaturgy cantrip. At 3rd level, hellish rebuke (1/day). At 5th level, darkness (1/day) (use Cha for DCs)&#10;Criminal Feature:&#10;&#x2022; You know someone who can connect you with other criminals&#10;Fighter Features:&#10;&#x2022; Fighting Style - Dueling: +2 damage when using a single one-handed weapon&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Take an extra action once between rests&#10;Rogue Features:&#10;&#x2022; Double proficiency with chosen skills&#10;&#x2022; Sneak Attack (2d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; Double proficiency with chosen skills (Deception,Intimidation)&#10;&#x2022; Fighter Archetype: Eldritch Knight&#10;&#x2022; Form a magical bond with a weapon (see rules)&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Alert: You don't grant advantage vs hidden creatures, you are never surprised, and you gain +5 to initiative&#10;&#x2022; Rogue Archetype: Assassin&#10;&#x2022; You are proficient with poisoner's kits and disguise kits&#10;&#x2022; You always crit surprised creatures and you have advantage vs creatures who haven't acted&#10;&#x2022; You can make two attacks on your turn&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;Light Armor&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;" special-items="One type of gaming set&#10;Thieves' Tools&#10;Thieves' Tools&#10;Disguise kit&#10;Poisoner's kit&#10;" languages="Common&#10;Infernal&#10;Thieves' Cant&#10;" equiptment="chain mail&#10;rapier&#10;martial weapon&#10;handaxe (2)&#10;dungeoneer's pack&#10;crowbar&#10;set of dark common clothes&#10;hood&#10;belt pouch&#10;&#10;circlet of blasting - cast scorching ray w/ +5 to attack once per day&#10;ring of spell storing - holds 5 levels of spells: Dimension Door, Arms Of Hadar" blank1="" classes1="Fighter 5, Rogue 3" race="Tiefling" background="Criminal" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Corzo" classes2="Fighter 5, Rogue 3" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="0" improvedInitiative="0">
+    <health currentHealth="50" maxHealth="50" currentTempHP="0"/>
+    <armor armorBonus="16" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="5"/>
+    <speed baseSpeed="30" speedMiscMod="10"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="14" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="14" save-proficient="false" bonus="0"/>
+      <ability label="con" score="12" save-proficient="true" bonus="0"/>
+      <ability label="int" score="9" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="15" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="10"/>
+      <hit-die number-of="3" side-count="8"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Noble Feature:&#10;&#x2022; You can secure an audience with a local noble&#10;Fighter Features:&#10;&#x2022; Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con&#10;Monk Features:&#10;&#x2022; Add Wis mod to AC when not wearing armor or using a shield&#10;&#x2022; When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action&#10;&#x2022; You gain a reservoir of energy (ki points = monk level) which is restored during a rest&#10;&#x2022; You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dodge&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump&#10;&#x2022; When you are not in armor or using a shield your speed improves by 10 feet&#10;&#x2022; When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)&#10;&#x2022; Monk Archetype: Hand&#10;&#x2022; When you hit a creature with a Flurry of Blows attack you can inflict an additional effect (see rules)&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Knight&#10;&#x2022; Three allies within 60ft heal your level in hp when you second wind&#10;&#x2022; Mounted Combatant: You can redirect an attack against your mount to yourself, you gain advantage vs unmounted foes, and your mount gains Evasion&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;Light Armor, Shortswords&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;Improvised Weapons&#10;Unarmed Strikes&#10;" special-items="One type of gaming set&#10;" languages="Common&#10;Extra Language&#10;One Extra Language&#10;" equiptment="chain mail&#10;longsword&#10;greatsword&#10;handaxe (2)&#10;explorer's pack&#10;set of fine clothes&#10;signet ring&#10;scroll of pedigree&#10;purse&#10;" blank1="" classes1="Fighter 4, Monk 3" race="Human" background="Noble" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Countless Carolinia" classes2="Fighter 4, Monk 3" code1="0" code2="0" code3="0" code4="25" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="0" improvedInitiative="0">
+    <health currentHealth="39" maxHealth="39" currentTempHP="0"/>
+    <armor armorBonus="16" shieldBonus="0" miscArmorBonus="1" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="15" save-proficient="false" bonus="0"/>
+      <ability label="con" score="12" save-proficient="false" bonus="0"/>
+      <ability label="int" score="16" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="14" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="10" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="10"/>
+    </hit-dice>
+    <notes features="Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Meditating 4 hours counts as 8 hours of rest&#10;&#x2022; Perception proficiency&#10;&#x2022; Longsword, shortsword, shortbow, longbow proficiency&#10;&#x2022; Gain 1 wizard cantrip&#10;Cloistered Scholar Feature:&#10;&#x2022; You have information about your cloister and you can use its library. Other libraries are also more likely to admit you.&#10;Paladin Features:&#10;&#x2022; As an action, detect the location of any celestial, fiend or undead and any consecrated or desecrated place or object within 60 feet (1 + Cha mod per day)&#10;&#x2022; Gain a reservoir of healing power (25hp), and as an action, you can heal a creature you touch by draining that power. You can also cure one poison or disease from the creature by sacrificing 5hp from the reservoir&#10;&#x2022; Fighting Style - Dueling: +2 damage when using a single one-handed weapon&#10;&#x2022; You can sacrifice a spell slot to deal (1 + spell level)d8 radiant damage plus 1d8 extra damage vs undead/fiends, when you hit with a melee weapon attack&#10;&#x2022; Gain immunity to disease&#10;&#x2022; Paladin Archetype: Crown&#10;&#x2022; Champion Challenge (see rules)&#10;&#x2022; Turn the Tide (see rules)&#10;&#x2022; Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding&#10;&#x2022; You can make two attacks on your turn&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;" weapon-proficiencies="Longsword&#10;Shortsword&#10;Shortbow&#10;Longbow&#10;Simple Weapons, Martial Weapons&#10;" special-items="" languages="Common&#10;Elvish&#10;Extra Language&#10;Two Extra Languages&#10;" equiptment="chain mail&#10;rapier&#10;rapier&#10;dagger&#10;priest's pack&#10;holy symbol&#10;scholar's robes&#10;writing kit&#10;research book (borrowed)&#10;pouch&#10;" blank1="" classes1="Paladin 5" race="High Elf" background="Cloistered Scholar" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Devinshire Poe" classes2="Paladin 5" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="2" maxHealth="38" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="1" unarmoredDefense="5"/>
+    <speed baseSpeed="30" speedMiscMod="10"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="21" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="14" save-proficient="true" bonus="0"/>
+      <ability label="con" score="15" save-proficient="false" bonus="0"/>
+      <ability label="int" score="8" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="15" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="10" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="8"/>
+    </hit-dice>
+    <notes features="Goliath Features:&#10;&#x2022; Athletics proficiency&#10;&#x2022; As a reaction, you can reduce damage you would take by 1d12 + Con (1/rest)&#10;&#x2022; You can lift, drag, push, and carry weight as if one size larger&#10;&#x2022; You are adapted to cold climates and high altitudes (see rules)&#10;Criminal Feature:&#10;&#x2022; You know someone who can connect you with other criminals&#10;Monk Features:&#10;&#x2022; Add Wis mod to AC when not wearing armor or using a shield&#10;&#x2022; When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action&#10;&#x2022; You gain a reservoir of energy (ki points = monk level) which is restored during a rest&#10;&#x2022; You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dodge&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump&#10;&#x2022; When you are not in armor or using a shield your speed improves by 10 feet&#10;&#x2022; When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)&#10;&#x2022; Monk Archetype: Death&#10;&#x2022; Gain Wis mod + monk level temp hp when you down an adjacent foe&#10;&#x2022; You can use a reaction to reduce fall damage by 5 x Monk level&#10;&#x2022; Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con&#10;&#x2022; You can make two attacks on your turn&#10;&#x2022; You can spend 1 ki point when you hit a creature with a melee attack to force it to make a Con save or be stunned for a round&#10;" armor-proficiencies="" weapon-proficiencies="Simple Weapons, Shortswords&#10;Improvised Weapons&#10;Unarmed Strikes&#10;" special-items="One type of gaming set&#10;Thieves' Tools&#10;One type of artisan's tools OR one musical instrument&#10;" languages="Common&#10;Giant&#10;" equiptment="greatclub&#10;dart (10)&#10;unarmed strike&#10;dungeoneer's pack&#10;crowbar&#10;set of dark common clothes&#10;hood&#10;belt pouch&#10;&#10;wand of the web - 7 charges / use 1 to cast web" blank1="" classes1="Monk 5" race="Goliath" background="Criminal" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Drago" classes2="Monk 5" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="59" maxHealth="59" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="10" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="16" save-proficient="true" bonus="0"/>
+      <ability label="con" score="15" save-proficient="false" bonus="0"/>
+      <ability label="int" score="13" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="12" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="9" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="8" side-count="8"/>
+    </hit-dice>
+    <notes features="Elf Features:&#10;&#x2022; Within 120 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Meditating 4 hours counts as 8 hours of rest&#10;&#x2022; Perception proficiency&#10;&#x2022; While in direct sunlight, you have disadvantage on attack rolls and perception checks&#10;&#x2022; Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)&#10;&#x2022; Rapier, shortsword, and hand crossbow proficiency&#10;Folk Hero Feature:&#10;&#x2022; Commoners are willing to shelter you from some troubles&#10;Rogue Features:&#10;&#x2022; Double proficiency with chosen skills&#10;&#x2022; Sneak Attack (4d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; Double proficiency with chosen skills/tools (Stealth,Thieves' Tools)&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Rogue Archetype: Assassin&#10;&#x2022; You are proficient with poisoner's kits and disguise kits&#10;&#x2022; You always crit surprised creatures and you have advantage vs creatures who haven't acted&#10;&#x2022; Magic Initiate: You gain two cantrips and a first level spell which you can cast 1/day from a single spellcasting class&#10;&#x2022; You can use a reaction to take half damage when hit by a foe that you see&#10;&#x2022; Double proficiency with chosen skills (Investigation,Sleight of Hand)&#10;&#x2022; When you would make a Dex save for half damage, you take no damage if you pass or half damage if you do not&#10;&#x2022; Sharpshooter: Your ranged attacks ignore &#xBD; and &#xBE; cover, don't have disadvantage from long range, and you can take -5 to a ranged attack for +10 damage&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Rapier&#10;Shortsword&#10;Hand Crossbow&#10;Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="One type of artisan's tools&#10;Vehicles (land)&#10;Thieves' Tools&#10;Disguise kit&#10;Poisoner's kit&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;Thieves' Cant&#10;" equiptment="leather armor&#10;rapier&#10;shortbow&#10;dagger (2)&#10;arrows (20)&#10;dungeoneer's pack&#10;thieves' tools&#10;set of artisan's tools&#10;shovel&#10;iron pot&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Rogue 8" race="Dark Elf" background="Folk Hero" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Drizzt" classes2="Rogue 8" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="45" maxHealth="45" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="10"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-543" subraceCode="0" backgroundCode="8" featCode="35" multiclassFeatures="3,1,2,1,0,5,4,7,0,0,0" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;5&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="13" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="13" save-proficient="false" bonus="0"/>
+      <ability label="con" score="10" save-proficient="true" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="3" side-count="10"/>
+      <hit-die number-of="4" side-count="8"/>
+    </hit-dice>
+    <notes features="Dragonborn Features:&#10;&#x2022; Silver Dragon&#10;&#x2022; You can breathe a 15 ft cone of Cold(once between rests), dealing 3d6 Cold damage, Con save for half damage (DC 11). DC = 8 + Con mod + prof&#10;&#x2022; You resist Cold damage&#10;Guild Artisan Feature:&#10;&#x2022; While you are in good standing with your guild, your guild can gain you access to powerful politicians&#10;Class Features:&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Fighting Style - Two-Weapon Fighting: Add ability modifier to off-hand damage&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Eldritch Knight&#10;&#x2022; Form a magical bond with a weapon (see rules)&#10;&#x2022; When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action&#10;&#x2022; You gain a reservoir of energy (ki points = monk level) which is restored during a rest&#10;&#x2022; You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dodge&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump&#10;&#x2022; When you are not in armor or using a shield your speed improves by 10 feet&#10;&#x2022; When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)&#10;&#x2022; Monk Archetype: Hand&#10;&#x2022; When you hit a creature with a Flurry of Blows attack you can inflict an additional effect (see rules)&#10;&#x2022; You can use a reaction to reduce fall damage by 5 x Monk level&#10;&#x2022; Skilled: You gain three skill or tool proficiencies&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;" special-items="One type of artisan's tools&#10;" languages="Common&#10;Draconic&#10;One Extra Language&#10;" equiptment="two martial weapons&#10;light crossbow + 20 bolts OR two hand axes&#10;dungeoneer's pack OR explorer's pack&#10;set of artisan's tools of your choice&#10;letter of introduction&#10;set of bone dice OR deck of cards&#10;set of traveler's clothes&#10;belt pouch&#10;leather armor&#10;" blank1="" classes1="Fighter 3, Monk 4" race="Dragonborn" background="Guild Artisan" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Dr Zana Haranthi" classes2="Fighter 3, Monk 4" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="56" maxHealth="56" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="14" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="11" save-proficient="true" bonus="0"/>
+      <ability label="con" score="15" save-proficient="false" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="9" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="15" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="3" side-count="8"/>
+      <hit-die number-of="4" side-count="10"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Noble Feature:&#10;&#x2022; You can secure an audience with a local noble&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;&#x2022; Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con&#10;Fighter Features:&#10;&#x2022; Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Knight&#10;&#x2022; Three allies within 60ft heal your level in hp when you second wind&#10;&#x2022; Gain half your proficiency bonus on ability checks you aren't proficient in&#10;&#x2022; You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest&#10;&#x2022; Double proficiency with chosen skills (History,Insight)&#10;&#x2022; Bard Archetype: Valor&#10;&#x2022; You are proficient with martial weapons. medium armor, and shields&#10;&#x2022; Allies can use your Bardic Inspiration on weapon damage rolls and as a reaction to increase their AC against one attack&#10;&#x2022; Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con&#10;" armor-proficiencies="Light Armor&#10;Light Armor, Medium Armor, Shields&#10;Medium Armor&#10;Shields&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;Simple Weapons, Martial Weapons&#10;Martial Weapons&#10;Improvised Weapons&#10;Unarmed Strikes&#10;" special-items="One type of gaming set&#10;Any three musical instruments&#10;" languages="Common&#10;Extra Language&#10;One Extra Language&#10;" equiptment="leather armor&#10;longsword&#10;dagger&#10;diplomat's pouch&#10;any musical instrument&#10;set of fine clothes&#10;signet ring&#10;scroll of pedigree&#10;purse&#10;" blank1="" classes1="Bard 3, Fighter 4" race="Human" background="Noble" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Duke Halifax" classes2="Bard 3, Fighter 4" code1="0" code2="0" code3="0" code4="25" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="26" maxHealth="26" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="35" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="9" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="13" save-proficient="false" bonus="0"/>
+      <ability label="con" score="15" save-proficient="true" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="11" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="17" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="6"/>
+    </hit-dice>
+    <notes features="Half-Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;Urchin Feature:&#10;&#x2022; Your party can travel through a city twice as fast when not in combat&#10;Sorcerer Features:&#10;&#x2022; Sorcerer Archetype: Storm&#10;&#x2022; You know Primordial&#10;&#x2022; You can fly 10ft without provoking as a bonus action when you cast a non-cantrip spell&#10;&#x2022; You have a max of 4 sorcery points used to alter spells and regain spell slots&#10;&#x2022; Empowered Spell: You can reroll up to Cha mod damage dice for 1 sorcery point and can use this with other metamagic&#10;&#x2022; Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con&#10;" armor-proficiencies="" weapon-proficiencies="Daggers, Darts, Slings, Quarterstaffs, Light Crossbows&#10;" special-items="Disguise kit&#10;Thieves' tools&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;Primordial&#10;" equiptment="club&#10;dagger (2)&#10;arcane focus&#10;explorer's pack&#10;small knife&#10;map of your home city&#10;pet mouse&#10;token of your parents&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Sorcerer 4" race="Variant" background="Urchin" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Dylan" classes2="Sorcerer 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="18" maxHealth="18" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="9" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="14" save-proficient="false" bonus="0"/>
+      <ability label="con" score="11" save-proficient="false" bonus="0"/>
+      <ability label="int" score="15" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="6"/>
+    </hit-dice>
+    <notes features="Half-Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)&#10;Cloistered Scholar Feature:&#10;&#x2022; You have information about your cloister and you can use its library. Other libraries are also more likely to admit you.&#10;Wizard Features:&#10;&#x2022; Regain half your level (min 1) worth of spell slots during a short rest (once per day)&#10;&#x2022; Wizard Archetype: Evocation&#10;&#x2022; Half gold/time cost to copy school spells&#10;&#x2022; Exclude 1 + spell level creatures from your evocations&#10;&#x2022; Skilled: You gain three skill or tool proficiencies&#10;" armor-proficiencies="" weapon-proficiencies="Daggers, Darts, Slings, Quarterstaffs, Light Crossbows&#10;" special-items="" languages="Common&#10;Elvish&#10;Extra Language&#10;Two Extra Languages&#10;" equiptment="quarterstaff&#10;arcane focus&#10;scholar's pack&#10;spellbook&#10;scholar's robes&#10;writing kit&#10;research book (borrowed)&#10;pouch&#10;" blank1="" classes1="Wizard 4" race="Variant" background="Cloistered Scholar" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Gail" classes2="Wizard 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="31" maxHealth="31" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="4"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="9" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="11" save-proficient="false" bonus="0"/>
+      <ability label="con" score="14" save-proficient="false" bonus="0"/>
+      <ability label="int" score="12" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="17" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="8"/>
+    </hit-dice>
+    <notes features="Half-Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)&#10;Urchin Feature:&#10;&#x2022; Your party can travel through a city twice as fast when not in combat&#10;Druid Features:&#10;&#x2022; Understand a secret druid language&#10;&#x2022; You can shapeshift into the form of a beast as an action (see rules)&#10;&#x2022; Druid Archetype: Moon&#10;&#x2022; You can wild shape as a bonus action, and can use up a spell slot to regain 1d8 hp per spell slot level as a bonus action while wild shaped&#10;&#x2022; You can wild shape into beasts of CR equal to your druid level/3 (min 1)&#10;&#x2022; Crossbow Expert: You don't have disadvantage from adjacent enemies on ranged attacks, you can load crossbows faster, and you can make a bonus action attack with a hand crossbow after attacking with a one-handed weapon&#10;" armor-proficiencies="Light Armor, Medium Armor, Shields&#10;" weapon-proficiencies="Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears&#10;" special-items="Disguise kit&#10;Thieves' tools&#10;Herbalism Kit&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;Druidic&#10;" equiptment="leather armor&#10;crossbow, light&#10;quarterstaff&#10;explorer's pack&#10;druidic focus&#10;small knife&#10;map of your home city&#10;pet mouse&#10;token of your parents&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Druid 4" race="Variant" background="Urchin" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Gavin" classes2="Druid 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="37" maxHealth="37" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="0" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="12" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="15" save-proficient="true" bonus="0"/>
+      <ability label="con" score="10" save-proficient="false" bonus="0"/>
+      <ability label="int" score="14" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="11" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="13" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="true"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="8"/>
+      <hit-die number-of="2" side-count="6"/>
+    </hit-dice>
+    <notes features="Dwarf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Advantage on saves vs poison, poison damage resistance&#10;&#x2022; Double proficiency bonus to History checks concerning stonework (even if not proficient)&#10;&#x2022; Battleaxe, handaxe, throwing hammer, warhammer proficiency&#10;&#x2022; Gain 1 extra hit point per level&#10;Criminal Feature:&#10;&#x2022; You know someone who can connect you with other criminals&#10;Rogue Features:&#10;&#x2022; Double proficiency with chosen skills&#10;&#x2022; Sneak Attack (2d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; Double proficiency with chosen skills (Deception,Persuasion)&#10;Wizard Features:&#10;&#x2022; Regain half your level (min 1) worth of spell slots during a short rest (once per day)&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Rogue Archetype: Mastermind&#10;&#x2022; You gain fluency with two languages and proficiency with a gaming set, disguise kit, and forger's set&#10;&#x2022; Can make yourself sound like a local&#10;&#x2022; Use help action on targets within 30ft as a bonus action&#10;&#x2022; Magic Initiate: You gain two cantrips and a first level spell which you can cast 1/day from a single spellcasting class&#10;&#x2022; Wizard Archetype: Illusion&#10;&#x2022; Half gold/time cost to copy school spells&#10;&#x2022; You can cast minor illusion, and can have both visual and auditory effects&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Battleaxe&#10;Handaxe&#10;Throwing Hammer&#10;Warhammer&#10;Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="Smith's Tools OR Brewer's Supplies OR Mason's Tools&#10;One type of gaming set&#10;Thieves' Tools&#10;Thieves' Tools&#10;Disguise kit&#10;Forgery kit&#10;One gaming set&#10;" languages="Common&#10;Dwarvish&#10;Thieves' Cant&#10;Two Extra Languages&#10;" equiptment="rapier&#10;shortbow&#10;dagger (2)&#10;arrows (20)&#10;burglar's pack&#10;thieves' tools&#10;crowbar&#10;set of dark common clothes&#10;hood&#10;belt pouch&#10;" blank1="" classes1="Rogue 4, Wizard 2" race="Hill Dwarf" background="Criminal" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Hanseld" classes2="Rogue 4, Wizard 2" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="58" maxHealth="58" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-543" subraceCode="0" backgroundCode="2" featCode="27" multiclassFeatures="5,2,3,2,0,14,17" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;11&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="10" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="15" save-proficient="true" bonus="0"/>
+      <ability label="con" score="10" save-proficient="false" bonus="0"/>
+      <ability label="int" score="13" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="11" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="12" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="true"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="8"/>
+      <hit-die number-of="3" side-count="6"/>
+    </hit-dice>
+    <notes features="Dwarf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Advantage on saves vs poison, poison damage resistance&#10;&#x2022; Double proficiency bonus to History checks concerning stonework (even if not proficient)&#10;&#x2022; Battleaxe, handaxe, throwing hammer, warhammer proficiency&#10;Gain 1 extra hit point per level&#10;Folk Hero Feature:&#10;&#x2022; Commoners are willing to shelter you from some trouble&#10;Class Features:&#10;&#x2022; Double proficiency with chosen skills/tools (Deception, Persuasion)&#10;&#x2022; Sneak Attack (3d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Rogue Archetype: Mastermind&#10;&#x2022; You gain fluency with two languages and proficiency with a gaming set, disguise kit, and forger's set&#10;&#x2022; Can make yourself sound like a local&#10;&#x2022; Use help action on targets within 30ft as a bonus action&#10;&#x2022; Observant: You gain +5 to passive perception and investigation, can read lips, and gain +1 to either Int or Wis&#10;&#x2022; You can use a reaction to take half damage when hit by a foe that you see&#10;Wizard Features:&#10;&#x2022; Regain half your level (min 1) worth of spell slots during a short rest (once per day)&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Wizard Archetype: Illusion&#10;&#x2022; Half gold/time cost to copy school spells&#10;&#x2022; You can cast minor illusion, and can have both visual and auditory effects&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Battleaxes, Handaxes, Throwing Hammers, Warhammers&#10;Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="Smith's Tools OR Brewer's Supplies OR Mason's Tools&#10;Thieves' Tools&#10;One type of artisan's tools&#10;Vehicles (land)&#10;Disguise kit&#10;Forgery kit&#10;One gaming set&#10;" languages="Common, Dwarvish&#10;" equiptment="leather armor&#10;daggers (2)&#10;thieves' tools&#10;rapier OR shortsword&#10;shortbow + 20 arrows OR shortsword&#10;burglar's pack OR dungeoneer's pack OR explorer's pack&#10;set of artisan's tools&#10;shovel&#10;iron pot&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Rogue 5, Wizard 3" race="Hill Dwarf" background="Folk Hero" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Hanseld" classes2="Rogue 5, Wizard 3" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="20" maxHealth="20" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="0" subraceCode="0" backgroundCode="2" featCode="" multiclassFeatures="3,3,7,0,0" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="12" save-proficient="false" bonus="0"/>
+      <ability label="con" score="12" save-proficient="false" bonus="0"/>
+      <ability label="int" score="15" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="15" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="13" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="3" side-count="6"/>
+    </hit-dice>
+    <notes features="Dwarf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Advantage on saves vs poison, poison damage resistance&#10;&#x2022; Double proficiency bonus to History checks concerning stonework (even if not proficient)&#10;&#x2022; Battleaxe, handaxe, throwing hammer, warhammer proficiency&#10;Gain 1 extra hit point per level&#10;Folk Hero Feature:&#10;&#x2022; Commoners are willing to shelter you from some trouble&#10;Class Features:&#10;&#x2022; Regain half your level (min 1) worth of spell slots during a short rest (once per day)&#10;&#x2022; Wizard Archetype: Transmutation&#10;&#x2022; Half gold/time cost to copy school spells&#10;&#x2022; You can alter the composition of objects (see rules)&#10;" armor-proficiencies="" weapon-proficiencies="Battleaxes, Handaxes, Throwing Hammers, Warhammers&#10;Daggers, Darts, Slings, Quarterstaffs, Light Crossbows&#10;" special-items="Smith's Tools OR Brewer's Supplies OR Mason's Tools&#10;One type of artisan's tools&#10;Vehicles (land)&#10;" languages="Common, Dwarvish&#10;" equiptment="spellbook&#10;quarterstaff OR dagger&#10;component pouch OR arcane focus&#10;scholar's pack OR explorer's pack&#10;set of artisan's tools&#10;shovel&#10;iron pot&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Wizard 3" race="Hill Dwarf" background="Folk Hero" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Harbin Wester" classes2="Wizard 3" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="40" maxHealth="40" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="9" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="15" save-proficient="true" bonus="0"/>
+      <ability label="con" score="12" save-proficient="false" bonus="0"/>
+      <ability label="int" score="13" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="8"/>
+      <hit-die number-of="1" side-count="10"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Folk Hero Feature:&#10;&#x2022; Commoners are willing to shelter you from some troubles&#10;Rogue Features:&#10;&#x2022; Double proficiency with chosen skills&#10;&#x2022; Sneak Attack (3d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; Double proficiency with chosen skills/tools (Sleight of Hand,Thieves' Tools)&#10;&#x2022; Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Rogue Archetype: Thief&#10;&#x2022; You can use an object, use thieves' tools, or sleight of hand as a Cunning Action&#10;&#x2022; You can climb at full speed and jump Dex mod feet further&#10;&#x2022; Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con&#10;&#x2022; You can use a reaction to take half damage when hit by a foe that you see&#10;Fighter Features:&#10;&#x2022; Fighting Style - Two-Weapon Fighting: Add ability modifier to off-hand damage&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;" armor-proficiencies="Light Armor&#10;Light Armor, Medium Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;Improvised Weapons&#10;Unarmed Strikes&#10;Simple Weapons, Martial Weapons&#10;" special-items="One type of artisan's tools&#10;Vehicles (land)&#10;Thieves' Tools&#10;" languages="Common&#10;Extra Language&#10;Thieves' Cant&#10;" equiptment="rapier&#10;shortbow&#10;dagger (2)&#10;arrows (20)&#10;burglar's pack&#10;thieves' tools&#10;set of artisan's tools&#10;shovel&#10;iron pot&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Rogue 5, Fighter 1" race="Human" background="Folk Hero" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Hitch" classes2="Rogue 5, Fighter 1" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="0" improvedInitiative="0">
+    <health currentHealth="7" maxHealth="44" currentTempHP="0"/>
+    <armor armorBonus="18" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="15" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="12" save-proficient="false" bonus="0"/>
+      <ability label="con" score="15" save-proficient="false" bonus="0"/>
+      <ability label="int" score="8" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="15" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="10" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="10"/>
+    </hit-dice>
+    <notes features="Goliath Features:&#10;&#x2022; Athletics proficiency&#10;&#x2022; As a reaction, you can reduce damage you would take by 1d12 + Con (1/rest)&#10;&#x2022; You can lift, drag, push, and carry weight as if one size larger&#10;&#x2022; You are adapted to cold climates and high altitudes (see rules)&#10;Criminal Feature:&#10;&#x2022; You know someone who can connect you with other criminals&#10;Paladin Features:&#10;&#x2022; As an action, detect the location of any celestial, fiend or undead and any consecrated or desecrated place or object within 60 feet (1 + Cha mod per day)&#10;&#x2022; Gain a reservoir of healing power (25hp), and as an action, you can heal a creature you touch by draining that power. You can also cure one poison or disease from the creature by sacrificing 5hp from the reservoir&#10;&#x2022; Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice&#10;&#x2022; You can sacrifice a spell slot to deal (1 + spell level)d8 radiant damage plus 1d8 extra damage vs undead/fiends, when you hit with a melee weapon attack&#10;&#x2022; Gain immunity to disease&#10;&#x2022; Paladin Archetype: Vengeance&#10;&#x2022; Abjure Enemy: 1 action - Choose one seen creature w/in 60 ft. That creature must make a Wisdom save unless it is immune to being frightened. On a failed save, the target is frightened for 1 minute or until it takes damage. While frightened, target's speed is reduced to 0.&#10;On a successful save, target's speed is halved for 1 minute or until it takes damage.&#10;&#x2022; Vow of Enmity: Bonus Action - Choose one seen creature within 10 ft. Your attack rolls against the target have advantage for the next minute or until the creature falls to 0 hp.&#10;&#x2022; War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack&#10;&#x2022; You can make two attacks on your turn&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;" special-items="One type of gaming set&#10;Thieves' Tools&#10;" languages="Common&#10;Giant&#10;" equiptment="chain mail&#10;battleaxe&#10;warhammer&#10;javelin (5)&#10;priest's pack&#10;holy symbol&#10;crowbar&#10;set of dark common clothes&#10;hood&#10;belt pouch&#10;&#10;Cape Of The Mountebank - cast Dimension Door once per dawn" blank1="" classes1="Paladin 5" race="Goliath" background="Criminal" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Krug" classes2="Paladin 5" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="37" maxHealth="37" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="5"/>
+    <speed baseSpeed="30" speedMiscMod="10"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-543" subraceCode="0" backgroundCode="5" featCode="" multiclassFeatures="2,7,-1,0,0" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;8&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="12" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="12" save-proficient="true" bonus="0"/>
+      <ability label="con" score="14" save-proficient="true" bonus="0"/>
+      <ability label="int" score="10" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="6" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="8"/>
+    </hit-dice>
+    <notes features="Dragonborn Features:&#10;&#x2022; Brass Dragon&#10;&#x2022; You can breathe a 30 ft line of Fire(once between rests), dealing 2d6 Fire damage, Dex save for half damage (DC 11). DC = 8 + Con mod + prof&#10;&#x2022; You resist Fire damage&#10;Soldier Feature:&#10;&#x2022; You have influence within your former army/organization&#10;Class Features:&#10;&#x2022; Add Wis mod to AC when not wearing armor or using a shield&#10;&#x2022; When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action&#10;&#x2022; You gain a reservoir of energy (ki points = monk level) which is restored during a rest&#10;&#x2022; You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dodge&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump&#10;&#x2022; When you are not in armor or using a shield your speed improves by 10 feet&#10;&#x2022; When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)&#10;&#x2022; Monk Archetype: Hand&#10;&#x2022; When you hit a creature with a Flurry of Blows attack you can inflict an additional effect (see rules)&#10;&#x2022; You can use a reaction to reduce fall damage by 5 x Monk level&#10;&#x2022; Resilient: You gain proficiency with one save and +1 to that ability&#10;" armor-proficiencies="" weapon-proficiencies="Simple Weapons, Shortswords&#10;" special-items="Cook's Utensils&#10;One type of gaming set&#10;Vehicles (land)&#10;" languages="Common&#10;Draconic&#10;" equiptment="quarterstaff&#10;ten darts&#10;explorer's pack&#10;rank insignia&#10;trophy&#10;set of bone dice&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Monk 4" race="Dragonborn" background="Soldier" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Lantheon Vaazrus" classes2="Monk 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="2" improvedInitiative="0">
+    <health currentHealth="52" maxHealth="52" currentTempHP="0"/>
+    <armor armorBonus="14" shieldBonus="2" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="5"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="4"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="12" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="9" save-proficient="false" bonus="0"/>
+      <ability label="con" score="12" save-proficient="false" bonus="0"/>
+      <ability label="int" score="13" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="16" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Medicine" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="7" side-count="8"/>
+    </hit-dice>
+    <notes features="Dwarf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Advantage on saves vs poison, poison damage resistance&#10;&#x2022; Double proficiency bonus to History checks concerning stonework (even if not proficient)&#10;&#x2022; Battleaxe, handaxe, throwing hammer, warhammer proficiency&#10;&#x2022; Gain 1 extra hit point per level&#10;Acolyte Feature:&#10;&#x2022; Receive aid from those who share your faith&#10;Cleric Features:&#10;&#x2022; Cleric Archetype: Forge&#10;&#x2022; Proficiency Heavy Armor, Smith's Tools&#10;&#x2022; You can make a nonmagical weapon or armor a +1 magic item until you die or take a long rest, once after a long rest&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;&#x2022; Turn Undead (see rules)&#10;&#x2022; Artisan's Blessing (see rules)&#10;&#x2022; Squat Nimbleness: You have advantage on grapple escape attempts, +5 feet to speed, gain Athletics or Acrobatics proficiency, and +1 Str or Dex&#10;&#x2022; Gain half your proficiency bonus on ability checks you aren't proficient in&#10;&#x2022; You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest&#10;&#x2022; Double proficiency with chosen skills (Insight,Religion)&#10;&#x2022; Bard Archetype: Lore&#10;&#x2022; You are proficient in three additional skills&#10;&#x2022; You can spend a use of Bardic Inspiration as a reaction to give a creature within 60 feet a penalty on an attack roll, damage roll, or ability check&#10;" armor-proficiencies="Light Armor, Medium Armor, Shields&#10;Heavy Armor&#10;Light Armor&#10;" weapon-proficiencies="Battleaxe&#10;Handaxe&#10;Throwing Hammer&#10;Warhammer&#10;Simple Weapons&#10;" special-items="Smith's Tools OR Brewer's Supplies OR Mason's Tools&#10;Smith's Tools&#10;One musical instrument&#10;" languages="Common&#10;Dwarvish&#10;Two Extra Languages&#10;" equiptment="scale mail&#10;shield&#10;mace&#10;light crossbow&#10;bolts (20)&#10;priest's pouch&#10;holy symbol&#10;holy symbol&#10;prayer book&#10;stick of incense (5)&#10;vestments&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Cleric 4, Bard 3" race="Hill Dwarf" background="Acolyte" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Molly" classes2="Cleric 4, Bard 3" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="46" maxHealth="46" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="13" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="12" save-proficient="true" bonus="0"/>
+      <ability label="con" score="13" save-proficient="false" bonus="0"/>
+      <ability label="int" score="15" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="8" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="true"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="6"/>
+      <hit-die number-of="4" side-count="8"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Haunted One Feature:&#10;&#x2022; Commoners will do what they can to help you&#10;Wizard Features:&#10;&#x2022; Regain half your level (min 1) worth of spell slots during a short rest (once per day)&#10;&#x2022; Prodigy: You gain one language, one skill proficiency, one skill double proficiency, and one tool proficiency&#10;&#x2022; Double proficiency with chosen skills (Arcana)&#10;Warlock Features:&#10;&#x2022; Warlock Archetype: Old One&#10;&#x2022; The spells dissonant whispers and hideous laughter are added to the warlock spell list for you&#10;&#x2022; You can telepathically communicate with any creature that knows any language within 30 feet&#10;&#x2022; Wizard Archetype: Transmutation&#10;&#x2022; Half gold/time cost to copy school spells&#10;&#x2022; You can alter the composition of objects (see rules)&#10;&#x2022; War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack&#10;&#x2022; Forceful Cantrip: You can push creatures you hit with eldritch blast ten feet&#10;&#x2022; Mage Armor Expert: You don't use a spell slot when casting mage armor on yourself&#10;&#x2022; Tome: You can cast three cantrips from any class (see rules)&#10;&#x2022; The spells detect thoughts and phantasmal force are added to the warlock spell list for you&#10;&#x2022; Resilient: You gain proficiency with one save and +1 to that ability&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Daggers, Darts, Slings, Quarterstaffs, Light Crossbows&#10;Simple Weapons&#10;" special-items="One tool proficiency&#10;" languages="Common&#10;Extra Language&#10;One Exotic Language&#10;One extra language&#10;" equiptment="dagger&#10;arcane focus&#10;scholar's pack&#10;spellbook&#10;set of common clothes&#10;monster hunter's pack&#10;important trinket&#10;" blank1="" classes1="Wizard 4, Warlock 4" race="Human" background="Haunted One" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Munro" classes2="Wizard 4, Warlock 4" code1="0" code2="0" code3="0" code4="0" code5="0"/>
+  </character>
+  <character proficiencyBonus="4" maxDex="10" improvedInitiative="0">
+    <health currentHealth="1" maxHealth="56" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="9" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="13" save-proficient="false" bonus="0"/>
+      <ability label="con" score="12" save-proficient="true" bonus="0"/>
+      <ability label="int" score="15" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="12" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="6" side-count="6"/>
+      <hit-die number-of="4" side-count="8"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Haunted One Feature:&#10;&#x2022; Commoners will do what they can to help you&#10;Wizard Features:&#10;&#x2022; Regain half your level (min 1) worth of spell slots during a short rest (once per day)&#10;&#x2022; Elemental Adept: Your spells that deal one of acid/cold/fire/lightning/thunder ignore resistance, and you can treat rolled 1s as 2s for those spells&#10;Warlock Features:&#10;&#x2022; Warlock Archetype: Undead&#10;&#x2022; The spells false life and ray of sickness are added to the warlock spell list for you&#10;&#x2022; You know spare the dying&#10;&#x2022; You repel attacks by undead (see rules)&#10;&#x2022; Wizard Archetype: Evocation&#10;&#x2022; Half gold/time cost to copy school spells&#10;&#x2022; Exclude 1 + spell level creatures from your evocations&#10;&#x2022; Grasping Eldritch Blast: Your eldritch blast can pull targets 10 feet&#10;&#x2022; Mage Armor Expert: You don't use a spell slot when casting mage armor on yourself&#10;&#x2022; War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack&#10;&#x2022; Tome: You can cast three cantrips from any class (see rules)&#10;&#x2022; The spells blindness/deafness and silence are added to the warlock spell list for you&#10;&#x2022; Resilient: You gain proficiency with one save and +1 to that ability&#10;&#x2022; Your cantrips deal half damage on a save&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Daggers, Darts, Slings, Quarterstaffs, Light Crossbows&#10;Simple Weapons&#10;" special-items="" languages="Common&#10;Extra Language&#10;One Exotic Language&#10;" equiptment="dagger&#10;arcane focus&#10;scholar's pack&#10;spellbook&#10;set of common clothes&#10;monster hunter's pack&#10;important trinket&#10;" blank1="" classes1="Wizard 6, Warlock 4" race="" background="" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Munro Andelmaus" classes2="Wizard 6, Warlock 4" code1="0" code2="0" code3="0" code4="0" code5="0"/>
+  </character>
+  <character proficiencyBonus="4" maxDex="0" improvedInitiative="0">
+    <health currentHealth="73" maxHealth="73" currentTempHP="0"/>
+    <armor armorBonus="17" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="15" save-proficient="true" bonus="0"/>
+      <ability label="con" score="14" save-proficient="false" bonus="0"/>
+      <ability label="int" score="15" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="10" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="10" side-count="8"/>
+    </hit-dice>
+    <notes features="Elf Features:&#10;&#x2022; Within 120 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Meditating 4 hours counts as 8 hours of rest&#10;&#x2022; Perception proficiency&#10;&#x2022; While in direct sunlight, you have disadvantage on attack rolls and perception checks&#10;&#x2022; Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)&#10;&#x2022; Rapier, shortsword, and hand crossbow proficiency&#10;Criminal Feature:&#10;&#x2022; You know someone who can connect you with other criminals&#10;Rogue Features:&#10;&#x2022; Double proficiency with chosen skills&#10;&#x2022; Sneak Attack (1d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; Double proficiency with chosen skills (Deception,Stealth)&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Rogue Archetype: Arcane Trickster&#10;&#x2022; Special abilities with mage hand (see rules)&#10;&#x2022; Dark Elf Magic: 1/day you can cast dispel magic and levitate, and can at will cast detect magic&#10;Warlock Features:&#10;&#x2022; Warlock Archetype: Hexblade&#10;&#x2022; The spells shield and wrathful smite are added to the warlock spell list for you&#10;&#x2022; 1/rest as a bonus action you can curse a creature for 1 minute, healing level + Cha mod hp when it dies, critting it on a 19, and dealing it proficiency bonus extra damage&#10;&#x2022; Gain martial weapon, shield, and medium armor proficiency&#10;&#x2022; You can use Charisma for attack and damage rolls with your pact weapons and one one-handed weapon you choose at the start of each day&#10;&#x2022; Disguise Self Expert: You don't use a spell slot when casting disguise self&#10;&#x2022; Potent Cantrip: Your eldritch blast does Cha mod extra damage&#10;&#x2022; Blade: You gain the ability to conjure a magical weapon (see rules)&#10;&#x2022; The spells blur and branding smite are added to the warlock spell list for you&#10;&#x2022; Elven Accuracy: You can reroll a Dex, Int, Wis, or Cha attack, and +1 Dex, Int, Wis, or Cha&#10;&#x2022; You can use a reaction to take half damage when hit by a foe that you see&#10;&#x2022; Double proficiency with chosen skills (Athletics,Intimidation)&#10;" armor-proficiencies="Light Armor&#10;Light Armor&#10;Medium Armor&#10;Shields&#10;" weapon-proficiencies="Rapier&#10;Shortsword&#10;Hand Crossbow&#10;Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;Simple Weapons&#10;Martial Weapons&#10;" special-items="One type of gaming set&#10;Thieves' Tools&#10;Thieves' Tools&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;Thieves' Cant&#10;" equiptment="leather armor&#10;rapier&#10;shortbow&#10;dagger (2)&#10;arrows (20)&#10;burglar's pack&#10;thieves' tools&#10;crowbar&#10;set of dark common clothes&#10;hood&#10;belt pouch&#10;" blank1="" classes1="Rogue 6, Warlock 4" race="Dark Elf" background="Criminal" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Osciril" classes2="Rogue 6, Warlock 4" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="38" maxHealth="38" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="17" save-proficient="false" bonus="0"/>
+      <ability label="con" score="14" save-proficient="true" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="10"/>
+    </hit-dice>
+    <notes features="Tabaxi Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; You can double your speed for a turn when you move but must spend a turn not moving before using this again&#10;&#x2022; You can claw as an unarmed attack for 1d4 slashing damage and can climb with a 20 speed&#10;Barbarian Tribe Member Feature:&#10;&#x2022; You can forage for twice as much food and water while in the wilderness and have knowledge of barbarian lands&#10;Fighter Features:&#10;&#x2022; Fighting Style - Archery: +2 to attack with ranged weapons&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Battle Master&#10;&#x2022; Gain four superiority dice (d8) to spend on maneuvers&#10;&#x2022; One artisan's tools proficiency&#10;&#x2022; Riposte: You can use a reaction when missed by a melee attack to make a melee attack back and deal Superiority Die extra damage&#10;&#x2022; Lunge: You can cause your next melee attack to have 5 extra feet of range and deal Superiority Die extra damage&#10;&#x2022; Evade: You can gain Superiority Die to AC while moving&#10;&#x2022; Martial Adept: You gain a superiority die and two battle master maneuvers&#10;&#x2022; Cleave: You can cause one creature adjacent to one you hit with a melee weapon to take Superiority Die damage if the same attack roll would hit&#10;&#x2022; Feint: You can spend a bonus action to grant your next attack against an adjacent foe advantage and Superiority Die extra damage&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;" special-items="One type of artisan's tools or musical instrument&#10;One artisan's tools proficiency&#10;" languages="Common&#10;Extra Language&#10;One Extra Language&#10;" equiptment="leather armor&#10;longbow&#10;rapier&#10;whip&#10;handaxe (2)&#10;arrows (20)&#10;dungeoneer's pack&#10;set of traveler's clothes&#10;hunting trap&#10;tattoos or totem&#10;pouch&#10;" blank1="" classes1="Fighter 4" race="Tabaxi" background="Barbarian Tribe Member" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Otaku" classes2="Fighter 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="52" maxHealth="52" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="16" save-proficient="true" bonus="0"/>
+      <ability label="con" score="10" save-proficient="false" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="13" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="16" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="7" side-count="8"/>
+    </hit-dice>
+    <notes features="Halfling Features:&#10;&#x2022; Can reroll a natural 1&#10;&#x2022; Advantage on saves vs frightened&#10;&#x2022; Can move through larger creatures' spaces&#10;&#x2022; Can hide while obscured by larger creatures&#10;Entertainer Feature:&#10;&#x2022; Your performances tend to make people like you, and you can always find somewhere to perform&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;Cleric Features:&#10;&#x2022; Cleric Archetype: Trickery&#10;&#x2022; You can touch an ally as an action to grant it advantage on stealth checks for one hour or until you use this ability again&#10;&#x2022; Gain half your proficiency bonus on ability checks you aren't proficient in&#10;&#x2022; You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest&#10;&#x2022; Turn Undead (see rules)&#10;&#x2022; Invoke Duplicity (see rules)&#10;&#x2022; Double proficiency with chosen skills (Performance,Stealth)&#10;&#x2022; Bard Archetype: Glamour&#10;&#x2022; You can spend a use of Bardic Inspiration as a bonus action to allow Cha mod creatures within 60 feet that can see you to move their speed without provoking as a reaction and grant them 5 temp hp (see rules)&#10;&#x2022; Once per rest you can attempt to charm up to Cha mod creatures in your audience (see rules)&#10;&#x2022; Tough: You gain 2 extra hp per level&#10;" armor-proficiencies="Light Armor&#10;Light Armor, Medium Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="Disguise kit&#10;One type of musical instrument&#10;Any three musical instruments&#10;" languages="Common&#10;Halfling&#10;" equiptment="leather armor&#10;rapier&#10;dagger&#10;entertainer's pack&#10;any musical instrument&#10;one musical instrument of your choice&#10;a favor from an admirer&#10;costume&#10;belt pouch&#10;" blank1="" classes1="Bard 4, Cleric 3" race="Lightfoot Halfling" background="Entertainer" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Piper " classes2="Bard 4, Cleric 3" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="0" improvedInitiative="0">
+    <health currentHealth="49" maxHealth="49" currentTempHP="0"/>
+    <armor armorBonus="16" shieldBonus="2" miscArmorBonus="1" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-543" subraceCode="0" backgroundCode="5" featCode="" multiclassFeatures="3,1,1,1,3,5,2,9,13" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;7&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="14" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="11" save-proficient="false" bonus="0"/>
+      <ability label="con" score="16" save-proficient="true" bonus="0"/>
+      <ability label="int" score="16" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="10" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="10"/>
+    </hit-dice>
+    <notes features="&#x2022; Fighting Style - Two-Weapon Fighting: Add ability modifier to off-hand damage&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Battle Master&#10;&#x2022; Gain four superiority dice (d8) to spend on maneuvers&#10;&#x2022; One artisan's tools proficiency&#10;&#x2022; Distract: You can cause one creature you hit to take Superiority Die extra damage and grant advantage to the next attack against it this round from someone else&#10;&#x2022; Parry: You can use a reaction to take Superiority Die + Dex mod less damage from a melee attack&#10;&#x2022; Riposte: You can use a reaction when missed by a melee attack to make a melee attack back and deal Superiority Die extra damage&#10;&#x2022; Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding&#10;&#x2022; You can make two attacks on your turn&#10;" armor-proficiencies="" weapon-proficiencies="" special-items="One type of artisan's tools&#10;" languages="" equiptment="chain mail&#10;" blank1="" classes1="Fighter 5" race="" background="" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Piper Rixi" classes2="Fighter 5" code1="0" code2="0" code3="0" code4="0" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="49" maxHealth="49" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="3"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="15" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="10" save-proficient="true" bonus="0"/>
+      <ability label="con" score="14" save-proficient="false" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="8" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="17" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="8"/>
+      <hit-die number-of="2" side-count="12"/>
+    </hit-dice>
+    <notes features="Dragonborn Features:&#10;&#x2022; Silver Dragon&#10;&#x2022; You can breathe a 15 ft cone of cold (once between rests), dealing 2d6 cold damage, Dex save for half damage. DC = 8 + Con mod + prof&#10;&#x2022; You resist cold damage&#10;Entertainer Feature:&#10;&#x2022; Your performances tend to make people like you, and you can always find somewhere to perform&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;Barbarian Features:&#10;&#x2022; 2/day you gain advantage on Str checks and saves, deal +2 damage on strength based melee attacks, and resistance vs bludgeoning, piercing, and slashing damage&#10;&#x2022; Add Con mod to AC when not wearing armor&#10;&#x2022; Gain half your proficiency bonus on ability checks you aren't proficient in&#10;&#x2022; You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest&#10;&#x2022; Double proficiency with chosen skills (Acrobatics,Performance)&#10;&#x2022; Bard Archetype: Valor&#10;&#x2022; You are proficient with martial weapons. medium armor, and shields&#10;&#x2022; Allies can use your Bardic Inspiration on weapon damage rolls and as a reaction to increase their AC against one attack&#10;&#x2022; You can gain advantage on Str based melee attacks by granting advantage to attacks against you for the round&#10;&#x2022; You gain advantage on Dex saves vs things you can see&#10;&#x2022; Actor: You gain advantage on deception and performance checks to impersonate someone else, you can imitate the sounds or speech of another creature, and you gain +1 Cha&#10;" armor-proficiencies="Light Armor&#10;Shields&#10;Medium Armor&#10;Shields&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;Simple Weapons, Martial Weapons&#10;Martial Weapons&#10;" special-items="Disguise kit&#10;One type of musical instrument&#10;Any three musical instruments&#10;" languages="Common&#10;Draconic&#10;" equiptment="leather armor&#10;longsword&#10;dagger&#10;entertainer's pack&#10;any musical instrument&#10;one musical instrument of your choice&#10;a favor from an admirer&#10;costume&#10;belt pouch&#10;" blank1="" classes1="Bard 4, Barbarian 2" race="Dragonborn" background="Entertainer" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Rupert" classes2="Bard 4, Barbarian 2" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="9" maxHealth="9" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="35" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="14" save-proficient="true" bonus="0"/>
+      <ability label="con" score="12" save-proficient="false" bonus="0"/>
+      <ability label="int" score="15" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="10" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="17" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="1" side-count="8"/>
+    </hit-dice>
+    <notes features="Half-Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;Noble Feature:&#10;&#x2022; You can secure an audience with a local noble&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="One type of gaming set&#10;Any three musical instruments&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;One Extra Language&#10;" equiptment="leather armor&#10;unarmed strike&#10;dagger&#10;diplomat's pouch&#10;any musical instrument&#10;set of fine clothes&#10;signet ring&#10;scroll of pedigree&#10;purse&#10;" blank1="" classes1="Bard 1" race="Variant" background="Noble" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Simon Dale" classes2="Bard 1" code1="0" code2="0" code3="0" code4="25" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="0" improvedInitiative="0">
+    <health currentHealth="49" maxHealth="49" currentTempHP="0"/>
+    <armor armorBonus="16" shieldBonus="2" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="14" save-proficient="true" bonus="0"/>
+      <ability label="dex" score="10" save-proficient="false" bonus="0"/>
+      <ability label="con" score="16" save-proficient="true" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="10" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="13" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="5" side-count="10"/>
+    </hit-dice>
+    <notes features="Halfling Features:&#10;&#x2022; Can reroll a natural 1&#10;&#x2022; Advantage on saves vs frightened&#10;&#x2022; Can move through larger creatures' spaces&#10;&#x2022; Advantage on saves vs poison, poison damage resistance&#10;Folk Hero Feature:&#10;&#x2022; Commoners are willing to shelter you from some troubles&#10;Fighter Features:&#10;&#x2022; Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Champion&#10;&#x2022; Crit on 19&#10;&#x2022; Grappler: You can restrain a grappled foe as an action, you gain advantage on attacks vs foe you grapple, and you can grapple creatures one size larger&#10;&#x2022; You can make two attacks on your turn&#10;" armor-proficiencies="Light Armor, Medium Armor, Heavy Armor, Shields&#10;" weapon-proficiencies="Simple Weapons, Martial Weapons&#10;" special-items="One type of artisan's tools&#10;Vehicles (land)&#10;" languages="Common&#10;Halfling&#10;" equiptment="chain mail&#10;shield&#10;greatsword&#10;light crossbow&#10;bolts (20)&#10;dungeoneer's pack&#10;set of artisan's tools&#10;shovel&#10;iron pot&#10;set of common clothes&#10;belt pouch&#10;" blank1="" classes1="Fighter 5" race="Stout Halfling" background="Folk Hero" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Skip" classes2="Fighter 5" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="3" maxDex="10" improvedInitiative="0">
+    <health currentHealth="39" maxHealth="39" currentTempHP="0"/>
+    <armor armorBonus="10" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="25" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="3"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="15" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="12" save-proficient="true" bonus="0"/>
+      <ability label="con" score="10" save-proficient="false" bonus="0"/>
+      <ability label="int" score="13" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="11" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Arcana" proficient="false" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="true"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="6" side-count="8"/>
+    </hit-dice>
+    <notes features="Dwarf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Advantage on saves vs poison, poison damage resistance&#10;&#x2022; Double proficiency bonus to History checks concerning stonework (even if not proficient)&#10;&#x2022; Battleaxe, handaxe, throwing hammer, warhammer proficiency&#10;&#x2022; Gain 1 extra hit point per level&#10;Faction Agent Feature:&#10;&#x2022; Your faction has secret agents you can contact for information or support&#10;Rogue Features:&#10;&#x2022; Double proficiency with chosen skills&#10;&#x2022; Sneak Attack (3d6)&#10;&#x2022; Understand a secret language&#10;&#x2022; Double proficiency with chosen skills (Deception,Persuasion)&#10;&#x2022; You can dash, disengage, or hide as a bonus action&#10;&#x2022; Rogue Archetype: Thief&#10;&#x2022; You can use an object, use thieves' tools, or sleight of hand as a Cunning Action&#10;&#x2022; You can climb at full speed and jump Dex mod feet further&#10;&#x2022; Skilled: You gain three skill or tool proficiencies&#10;&#x2022; You can use a reaction to take half damage when hit by a foe that you see&#10;&#x2022; Double proficiency with chosen skills (Insight,Stealth)&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Battleaxe&#10;Handaxe&#10;Throwing Hammer&#10;Warhammer&#10;Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="Smith's Tools OR Brewer's Supplies OR Mason's Tools&#10;Thieves' Tools&#10;" languages="Common&#10;Dwarvish&#10;Two Extra Languages&#10;Thieves' Cant&#10;" equiptment="rapier&#10;shortbow&#10;dagger (2)&#10;arrows (20)&#10;burglar's pack&#10;thieves' tools&#10;Emblem or badge&#10;faction book&#10;set of common clothes&#10;pouch&#10;" blank1="" classes1="Rogue 6" race="Hill Dwarf" background="Faction Agent" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Tobish" classes2="Rogue 6" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="23" maxHealth="23" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="-1" subraceCode="-1" backgroundCode="-1" featCode="" multiclassFeatures="" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="9" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="13" save-proficient="true" bonus="0"/>
+      <ability label="con" score="11" save-proficient="false" bonus="0"/>
+      <ability label="int" score="15" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="12" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="16" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="4" side-count="8"/>
+    </hit-dice>
+    <notes features="Half-Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;&#x2022; Two extra skill proficiencies of your choosing&#10;Cloistered Scholar Feature:&#10;&#x2022; You have information about your cloister and you can use its library. Other libraries are also more likely to admit you.&#10;Bard Features:&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;&#x2022; Gain half your proficiency bonus on ability checks you aren't proficient in&#10;&#x2022; You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest&#10;&#x2022; Double proficiency with chosen skills (History,Performance)&#10;&#x2022; Bard Archetype: Lore&#10;&#x2022; You are proficient in three additional skills&#10;&#x2022; You can spend a use of Bardic Inspiration as a reaction to give a creature within 60 feet a penalty on an attack roll, damage roll, or ability check&#10;&#x2022; Spell Sniper: Your spells ignore &#xBD; and &#xBE; cover, your ranged attack roll spells have doubled range, and you gain one attack roll cantrip (see rules)&#10;" armor-proficiencies="Light Armor&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;" special-items="Any three musical instruments&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;Two Extra Languages&#10;" equiptment="leather armor&#10;club&#10;dagger&#10;entertainer's pack&#10;any musical instrument&#10;scholar's robes&#10;writing kit&#10;research book (borrowed)&#10;pouch&#10;" blank1="" classes1="Bard 4" race="Variant" background="Cloistered Scholar" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Tom" classes2="Bard 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="5" maxDex="10" improvedInitiative="0">
+    <health currentHealth="83" maxHealth="83" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="10"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="5"/>
+    <coded raceCode="3" subraceCode="1" backgroundCode="7" featCode="19,35,41,24" multiclassFeatures="10,5,0,6,0,1,16,1,2,10,16,5,1,0,1,0,2" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;2&#x22A0;3&#x22A0;4&#x22A0;5&#x22A0;2&#x22A0;2&#x22A0;&#x22A0;2&#x22A0;10&#x22A0;5&#x22A0;1&#x22A0;&#x22A0;1&#x22A0;0"/>
+    <abilities>
+      <ability label="str" score="11" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="16" save-proficient="true" bonus="0"/>
+      <ability label="con" score="10" save-proficient="false" bonus="0"/>
+      <ability label="int" score="10" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="8" save-proficient="false" bonus="0"/>
+      <ability label="cha" score="15" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Sleight Of Hand" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Medicine" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="10" side-count="8"/>
+      <hit-die number-of="5" side-count="10"/>
+    </hit-dice>
+    <notes features="Human Features:&#10;&#x2022; One extra skill proficiency of your choosing&#10;&#x2022; One bonus feat of your choosing&#10;Entertainer Feature:&#10;&#x2022; Your performances tend to make people like you, and you can always find somewhere to perform&#10;Class Features:&#10;&#x2022; Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)&#10;&#x2022; Lucky: You can reroll a d20 roll you make or an attack against you 3/day&#10;&#x2022; Heal 1d10 + level hit points as a bonus action (once between rests)&#10;&#x2022; Fighting Style - Dueling: +2 damage when using a single one-handed weapon&#10;&#x2022; Gain half your proficiency bonus on ability checks you aren't proficient in&#10;&#x2022; Song of Rest: You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest&#10;&#x2022; Bard Archetype: Lore&#10;&#x2022; You are proficient in three additional skills&#10;&#x2022; You can spend a use of Bardic Inspiration as a reaction to give a creature within 60 feet a penalty on an attack roll, damage roll, or ability check&#10;Double proficiency with chosen skills (Acrobatics, Sleight of Hand, Insight, Performance)&#10;&#x2022; Take an extra action once between rests&#10;&#x2022; Fighter Archetype: Champion&#10;&#x2022; Crit on 19&#10;&#x2022; Skilled: You gain three skill or tool proficiencies&#10;&#x2022; Inspiration improves to d8&#10;&#x2022; Regain Bardic Inspiration with short rest&#10;&#x2022; You can perform as an action to give yourself and allies who can hear you advantage on saves vs charm and frightened for one round&#10;&#x2022; You can learn two more spells from any class&#10;&#x2022; Weapon Master: You gain four weapon proficiencies and +1 to either Str or Dex&#10;&#x2022; Mobile: You gain +10 to speed, ignore difficult terrain when you dash, and you don't provoke from creatures you've attacked that turn&#10;&#x2022; Rest healing bonus improves to 1d8&#10;&#x2022; Inspiration improves to d10&#10;&#x2022; Two additional double proficient skills&#10;&#x2022; You can learn two spells from any class&#10;&#x2022; You can make two attacks on your turn&#10;" armor-proficiencies="Light Armor&#10;Medium Armor&#10;Shields&#10;" weapon-proficiencies="Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords&#10;Martial Weapons&#10;Any four weapons&#10;" special-items="Any three musical instruments&#10;Disguise kit&#10;One type of musical instrument&#10;" languages="Common&#10;Extra Language&#10;" equiptment="rapier OR longsword OR simple weapon&#10;dagger&#10;leather armor&#10;diplomat's pouch OR entertainer's pouch&#10;lute OR any musical instrument&#10;one musical instrument of your choice&#10;a favor from an admirer&#10;costume&#10;belt pouch&#10;" blank1="" classes1="Bard 10, Fighter 5" race="Human" background="Entertainer" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="William Of Waterdeep" classes2="Bard 10, Fighter 5" code1="0" code2="0" code3="0" code4="15" code5="0"/>
+  </character>
+  <character proficiencyBonus="4" maxDex="2" improvedInitiative="0">
+    <health currentHealth="87" maxHealth="87" currentTempHP="0"/>
+    <armor armorBonus="14" shieldBonus="2" miscArmorBonus="1" unarmoredDefense="0"/>
+    <speed baseSpeed="30" speedMiscMod="10"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="4"/>
+    <coded raceCode="4" subraceCode="0" backgroundCode="5" featCode="6,8" multiclassFeatures="8,0,0,0,0,4,7,4,0,0" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;3&#x22A0;3&#x22A0;4&#x22A0;5&#x22A0;3&#x22A0;2&#x22A0;&#x22A0;1&#x22A0;0&#x22A0;8&#x22A0;4&#x22A0;&#x22A0;4&#x22A0;0"/>
+    <abilities>
+      <ability label="str" score="12" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="14" save-proficient="false" bonus="0"/>
+      <ability label="con" score="14" save-proficient="false" bonus="0"/>
+      <ability label="int" score="12" save-proficient="false" bonus="0"/>
+      <ability label="wis" score="15" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="11" save-proficient="true" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="true"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="true" bonus="0" expertise="true"/>
+      <skill label="Religion" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="false" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="12" side-count="8"/>
+    </hit-dice>
+    <notes features="Dragonborn Features:&#10;&#x2022; Bronze Dragon&#10;&#x2022; You can breathe a 30 ft line of Lightning(once between rests), dealing 4d6 Lightning damage, Dex save for half damage (DC 14). DC = 8 + Con mod + prof&#10;&#x2022; You resist Lightning damage&#10;Soldier Feature:&#10;&#x2022; You have influence within your former army/organization&#10;Class Features:&#10;&#x2022; Cleric Archetype: Knowledge&#10;&#x2022; Two extra languages, two knowledge skills with double proficiency bonus&#10;&#x2022; Turn Undead (see rules)&#10;&#x2022; Knowledge of the Ages (see rules)&#10;&#x2022; Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding&#10;&#x2022; When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action&#10;&#x2022; You gain a reservoir of energy (ki points = monk level) which is restored during a rest&#10;&#x2022; You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dodge&#10;&#x2022; You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump&#10;&#x2022; When you are not in armor or using a shield your speed improves by 10 feet&#10;&#x2022; When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)&#10;&#x2022; Monk Archetype: Light&#10;&#x2022; You can make a spell attack with 30ft range and radiant damage equal to your unarmed strike. When you use this attack you can expend a ki point and bonus action to repeat the attack twice&#10;&#x2022; Kill CR &#xBD; undead that fail save vs turning&#10;&#x2022; Additional divinity per rest&#10;&#x2022; Read Thoughts (see rules)&#10;&#x2022; CR 1 undead can now be killed&#10;&#x2022; Cleric cantrips deal Wis mod extra damage&#10;&#x2022; Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con&#10;&#x2022; You can use a reaction to reduce fall damage by 5 x Monk level&#10;" armor-proficiencies="Light Armor, Medium Armor, Shields&#10;" weapon-proficiencies="Simple Weapons&#10;Shortswords&#10;" special-items="One type of gaming set&#10;Vehicles (land)&#10;" languages="Common&#10;Draconic&#10;Two Extra Languages&#10;" equiptment="mace&#10;shield&#10;holy symbol&#10;light crossbow + 20 bolts OR one simple weapon&#10;priest's pack OR explorer's pack&#10;rank insignia&#10;trophy&#10;set of bone dice OR deck of cards&#10;set of common clothes&#10;belt pouch&#10;scale mail&#10;" blank1="" classes1="Cleric 8, Monk 4" race="Dragonborn" background="Soldier" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Zarkanan Rangoth" classes2="Cleric 8, Monk 4" code1="0" code2="0" code3="0" code4="10" code5="0"/>
+  </character>
+  <character proficiencyBonus="2" maxDex="10" improvedInitiative="0">
+    <health currentHealth="8" maxHealth="8" currentTempHP="0"/>
+    <armor armorBonus="11" shieldBonus="0" miscArmorBonus="0" unarmoredDefense="0"/>
+    <speed baseSpeed="35" speedMiscMod="0"/>
+    <spell miscSpellAttackBonus="0" miscSpellDCBonus="0" castingStatCode="4"/>
+    <coded raceCode="-543" subraceCode="2" backgroundCode="3" featCode="" multiclassFeatures="1,6,-1,0,0" classResource="-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;-1&#x22A0;1&#x22A0;2&#x22A0;1000&#x22A0;3&#x22A0;4&#x22A0;5"/>
+    <abilities>
+      <ability label="str" score="8" save-proficient="false" bonus="0"/>
+      <ability label="dex" score="9" save-proficient="false" bonus="0"/>
+      <ability label="con" score="10" save-proficient="false" bonus="0"/>
+      <ability label="int" score="14" save-proficient="true" bonus="0"/>
+      <ability label="wis" score="9" save-proficient="true" bonus="0"/>
+      <ability label="cha" score="14" save-proficient="false" bonus="0"/>
+    </abilities>
+    <skills>
+      <skill label="Athletics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Acrobatics" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Sleight Of Hand" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Stealth" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Arcana" proficient="true" bonus="0" expertise="false"/>
+      <skill label="History" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Investigation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Nature" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Religion" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Animal Handling" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Insight" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Medicine" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Perception" proficient="true" bonus="0" expertise="false"/>
+      <skill label="Survival" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Deception" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Intimidation" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Performance" proficient="false" bonus="0" expertise="false"/>
+      <skill label="Persuasion" proficient="true" bonus="0" expertise="false"/>
+    </skills>
+    <hit-dice>
+      <hit-die number-of="1" side-count="8"/>
+    </hit-dice>
+    <notes features="Half-Elf Features:&#10;&#x2022; Within 60 feet of you, treat dim light as bright, darkness as dim light&#10;&#x2022; Immune to magical sleep, advantage on saves vs charmed&#10;Noble Feature:&#10;&#x2022; You can secure an audience with a local noble&#10;Class Features:&#10;&#x2022; Understand a secret druid language&#10;" armor-proficiencies="Light Armor, Medium Armor, Shields&#10;" weapon-proficiencies="Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears&#10;" special-items="Herbalism Kit&#10;One type of gaming set&#10;" languages="Common&#10;Elvish&#10;Extra Language&#10;Druidic&#10;One Extra Language&#10;" equiptment="wooden shield OR simple weapon&#10;scimitar OR simple melee weapon&#10;leather armor&#10;explorer's pack&#10;druidic focus&#10;set of fine clothes&#10;signet ring&#10;scroll of pedigree&#10;purse&#10;" blank1="" classes1="Druid 1" race="Half-Elf" background="Noble" blank2="" blank3="" blank4="" blank5="" blank6="" character-name="Zathustra Dale" classes2="Druid 1" code1="0" code2="0" code3="0" code4="25" code5="0"/>
+  </character>
+</characters>

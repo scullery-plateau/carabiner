@@ -1,0 +1,2635 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='charJsonSimple.xsl'?>
+<characters>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>71</currentHealth>
+    <maxHealth>71</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>16</armorBonus>
+    <shieldBonus>2</shieldBonus>
+    <miscArmorBonus>1</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>1</subraceCode>
+    <backgroundCode>3</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode>6</featCode>
+    <classData>Fighter⊡Champion⊡4⊡-1⊠Ranger⊡Hunter⊡3⊡1⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡⊡1⊡1⊡0⊡2⊡0⊡0⊡303⊡0⊟Dual Wielder⊟fighting style⊡Archery⊟⊟⊟Human⊟Human Variant⊟Entertainer⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures>4,1,0,1,0,0,2,9,-1,0,0</multiclassFeatures>
+    <weaponList>4⊠Greatsword⊠5 feet⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠2⊠6⊠Longsword⊠5 feet⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Light Crossbow⊠80/320⊠1⊠1⊠0⊠2⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Handaxe⊠20/60⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>14⊠13⊠19⊠9⊠13⊠10⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠1⊠3⊠false⊠1⊟Hunter's Mark⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Hail Of Thorns⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Longstrider⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Noble Feature:
+• You can secure an audience with a local noble
+Class Features:
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Fighting Style - Archery: +2 to attack with ranged weapons
+• Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding
+• Gain advantage on survival and Int checks concerning your chosen creature type, and you know a language spoken by those creatures
+• Gain advantage on Wis and Int checks concerning your chosen terrain, and bonuses while traveling through that terrain (see rules)
+• Take an extra action once between rests
+• Fighter Archetype: Champion
+• Crit on 19
+• You can sacrifice a spell slot as an action to determine if certain creature types are within 1 mile (6 miles if favored terrain) (see rules)
+• Big Game Hunter - You can use a reaction to attack a creature of at least Large size that attacks you
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+⊠Simple Weapons, Martial Weapons
+⊠One type of gaming set
+⊠Common
+Extra Language
+One Extra Language
+⊠martial weapon
+shield
+light crossbow + 20 bolts OR two hand axes
+dungeoneer's pack OR explorer's pack
+set of fine clothes
+signet ring
+scroll of pedigree
+purse
+chain mail
+⊠⊠Fighter 4, Ranger 3⊠Human⊠Noble⊠⊠⊠⊠⊠⊠Baron Crispian Dale⊠Fighter 4, Ranger 3⊠0⊠0⊠0⊠25⊠0⊠0</noteList>
+    <hitDiceList>1⊠7⊠10⊠7</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠5⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>43</currentHealth>
+    <maxHealth>43</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>4</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>4</castingStatCode>
+    <offenseAbilityDisplay>1</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>35</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>1</subraceCode>
+    <backgroundCode>3</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Druid⊡Circle of the Land⊡11⊡0⊟Circle Spells - Forest⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Wild Shape⊡⊡2⊡2⊡0⊡2⊡0⊡0⊡303⊡0⊟War Caster⊟⊟⊟⊟Elf⊟Wood Elf⊟Entertainer⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures>6,6,0,1,0,3</multiclassFeatures>
+    <weaponList>2⊠Scimitar⊠5 feet⊠2⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>11⊠12⊠8⊠10⊠16⊠11⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡3⊡3⊡2⊡1⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡true⊡true⊡true⊡true⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠11⊠false⊠0⊟Guidance⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Resistance⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Mending⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Produce Flame⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Cure Wounds⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Healing Word⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Fog Cloud⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Faerie Fire⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Barkskin *⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Spider Climb *⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Enhance Ability⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Pass Without A Trace⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Lesser Restoration⊟⊟⊟⊟⊟⊟true⊟0⊡3⊟Call Lightning *⊟⊟⊟⊟⊟⊟true⊟0⊡3⊟Plant Growth *⊟⊟⊟⊟⊟⊟true⊟0⊡3⊟Dispel Magic⊟⊟⊟⊟⊟⊟true⊟0⊡3⊟Protection From Energy⊟⊟⊟⊟⊟⊟true⊟0⊡3⊟Wind Wall⊟⊟⊟⊟⊟⊟true⊟0⊡4⊟Divination *⊟⊟⊟⊟⊟⊟true⊟0⊡4⊟Freedom of Movement *⊟⊟⊟⊟⊟⊟true⊟0⊡4⊟Hallucinatory Terrain⊟⊟⊟⊟⊟⊟true⊟0⊡4⊟Stone Skin⊟⊟⊟⊟⊟⊟true⊟0⊡4⊟Wall Of Fire⊟⊟⊟⊟⊟⊟true⊟0⊡5⊟Commune with Nature *⊟⊟⊟⊟⊟⊟true⊟0⊡5⊟Tree Stride *⊟⊟⊟⊟⊟⊟true⊟0⊡5⊟Antilife Shell⊟⊟⊟⊟⊟⊟true⊟0⊡5⊟Greater Restoration⊟⊟⊟⊟⊟⊟true⊟0⊡6⊟Heal⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Meditating 4 hours counts as 8 hours of rest
+• Perception proficiency
+• Can hide while lightly obscured by natural phenomena
+• Longsword, shortsword, shortbow, longbow proficiency
+Noble Feature:
+• You can secure an audience with a local noble
+Class Features:
+• Understand a secret druid language
+• You can shapeshift into the form of a beast as an action (see rules)
+• Druid Archetype: Land
+• You know an extra druid cantrip
+• Regain half your level worth of spell slots during a short rest (once per day)
+• Forest - Gain bonus known spells
+• You are unaffected by nonmagical difficult terrain or plants and gain advantage vs magical plants that effect movement
+• War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack
+• You are immune to poison and disease, and to effects by elementals or fey that frighten or charm
+⊠Light Armor, Medium Armor, Shields
+⊠Longswords, Shortswords, Shortbows, Longbows
+Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears
+⊠Herbalism Kit
+One type of gaming set
+⊠Common, Elvish
+Druidic
+One Extra Language
+⊠wooden shield OR simple weapon
+scimitar OR simple melee weapon
+leather armor
+explorer's pack
+druidic focus
+set of fine clothes
+signet ring
+scroll of pedigree
+purse
+⊠⊠Druid 11⊠Wood Elf⊠Noble⊠⊠⊠⊠⊠⊠Baroness Azani⊠Druid 11⊠0⊠0⊠0⊠25⊠0⊠0</noteList>
+    <hitDiceList>1⊠11⊠8⊠11</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠4⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>5</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>12</currentHealth>
+    <maxHealth>65</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>15</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>2</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Fighter⊡Eldritch Knight⊡5⊡2⊠Rogue⊡Assassin⊡3⊡-1⊟⊠Extra Attack⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡Act. Surge⊡1⊡1⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡Sneak Atk⊡2⊡2⊡6⊡2⊡0⊡0⊡303⊡0⊟⊠Alert⊟expertise⊡Intimidation⊡Deception⊠fighting style⊡Dueling⊟⊟⊟Tiefling⊟Tiefling⊟Criminal⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠2⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟2</classData>
+    <multiclassFeatures/>
+    <weaponList>4⊠Rapier of Wounding⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠2⊠1⊠8⊠1⊠4⊠Handaxe⊠20/60⊠1102⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Boom Stick⊠40/100⊠2101⊠1⊠0⊠0⊠0⊠0⊠true⊠false⊠3⊠1⊠8⊠1⊠8⊠2⊠6⊠Dagger of Venom (DC 15)⊠20/60⊠1101⊠1⊠1⊠0⊠0⊠0⊠true⊠true⊠2⊠1⊠4⊠2⊠15</weaponList>
+    <abilityScores>8⊠17⊠14⊠11⊠12⊠15⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠true⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠2⊠5⊠false⊠0⊟Friends⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Blade Ward⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Shield⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Chromatic Orb⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Color Spray⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Thunderwave⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Tiefling Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Gain fire resistance
+• Can cast the thaumaturgy cantrip. At 3rd level, hellish rebuke (1/day). At 5th level, darkness (1/day) (use Cha for DCs)
+Criminal Feature:
+• You know someone who can connect you with other criminals
+Fighter Features:
+• Fighting Style - Dueling: +2 damage when using a single one-handed weapon
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Take an extra action once between rests
+Rogue Features:
+• Double proficiency with chosen skills
+• Sneak Attack (2d6)
+• Understand a secret language
+• Double proficiency with chosen skills (Deception,Intimidation)
+• Fighter Archetype: Eldritch Knight
+• Form a magical bond with a weapon (see rules)
+• You can dash, disengage, or hide as a bonus action
+• Alert: You don't grant advantage vs hidden creatures, you are never surprised, and you gain +5 to initiative
+• Rogue Archetype: Assassin
+• You are proficient with poisoner's kits and disguise kits
+• You always crit surprised creatures and you have advantage vs creatures who haven't acted
+• You can make two attacks on your turn
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+Light Armor
+⊠Simple Weapons, Martial Weapons
+⊠One type of gaming set
+Thieves' Tools
+Thieves' Tools
+Disguise kit
+Poisoner's kit
+⊠Common
+Infernal
+Thieves' Cant
+⊠chain mail
+rapier
+martial weapon
+handaxe (2)
+dungeoneer's pack
+crowbar
+set of dark common clothes
+hood
+belt pouch
+
+circlet of blasting - cast scorching ray w/ +5 to attack once per day
+ring of spell storing - holds 5 levels of spells: Dimension Door, Arms Of Hadar⊠⊠Fighter 5, Rogue 3⊠Tiefling⊠Criminal⊠⊠⊠⊠⊠⊠Corzo⊠Fighter 5, Rogue 3⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>2⊠5⊠10⊠5⊠3⊠8⊠3</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>50</currentHealth>
+    <maxHealth>50</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>16</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>10</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>5</unarmoredDefense>
+    <featCode/>
+    <classData>Fighter⊡Purple Dragon Knight⊡4⊡-1⊠Monk⊡Way of the Open Hand⊡3⊡-1⊟⊠Unarmored Defense⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Ki Points⊡⊡3⊡3⊡0⊡1⊡0⊡0⊡-1⊡0⊠Action Surge⊡Act. Surge⊡1⊡1⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Tavern Brawler⊠Mounted Combatant⊟fighting style⊡Great Weapon Fighting⊟⊠monk⊟⊠monk⊟Human⊟Human Variant⊟Noble⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟4⊟3</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Longsword⊠5 feet⊠1102⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Greatsword⊠5 feet⊠1202⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠2⊠6⊠Handaxe⊠20/60⊠1102⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>14⊠14⊠12⊠9⊠15⊠11⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Noble Feature:
+• You can secure an audience with a local noble
+Fighter Features:
+• Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con
+Monk Features:
+• Add Wis mod to AC when not wearing armor or using a shield
+• When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action
+• You gain a reservoir of energy (ki points = monk level) which is restored during a rest
+• You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action
+• You can use a bonus action and spend 1 ki point to Dodge
+• You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump
+• When you are not in armor or using a shield your speed improves by 10 feet
+• When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)
+• Monk Archetype: Hand
+• When you hit a creature with a Flurry of Blows attack you can inflict an additional effect (see rules)
+• Take an extra action once between rests
+• Fighter Archetype: Knight
+• Three allies within 60ft heal your level in hp when you second wind
+• Mounted Combatant: You can redirect an attack against your mount to yourself, you gain advantage vs unmounted foes, and your mount gains Evasion
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+Light Armor, Shortswords
+⊠Simple Weapons, Martial Weapons
+Improvised Weapons
+Unarmed Strikes
+⊠One type of gaming set
+⊠Common
+Extra Language
+One Extra Language
+⊠chain mail
+longsword
+greatsword
+handaxe (2)
+explorer's pack
+set of fine clothes
+signet ring
+scroll of pedigree
+purse
+⊠⊠Fighter 4, Monk 3⊠Human⊠Noble⊠⊠⊠⊠⊠⊠Countless Carolinia⊠Fighter 4, Monk 3⊠0⊠0⊠0⊠25⊠0⊠0</noteList>
+    <hitDiceList>2⊠4⊠10⊠4⊠3⊠8⊠3</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>39</currentHealth>
+    <maxHealth>39</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>16</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>1</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Paladin⊡Oath of the Crown⊡5⊡1⊟⊠Extra Attack⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Lay on Hands⊡Lay Hands⊡25⊡25⊡0⊡2⊡0⊡0⊡303⊡0⊠Channel Divinity⊡Channel Div⊡1⊡1⊡0⊡1⊡0⊡0⊡-1⊡0⊟⊠Dual Wielder⊟fighting style⊡Dueling⊟⊟⊟Elf⊟High Elf⊟Cloistered Scholar⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠2⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟3</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>8⊠15⊠12⊠16⊠14⊠10⊠false⊠false⊠false⊠false⊠true⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠1⊠5⊠false⊠0⊟Message⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Command *⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Compelled Duel *⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Shield Of Faith⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Warding Bond *⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Zone of Truth *⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Aid⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Meditating 4 hours counts as 8 hours of rest
+• Perception proficiency
+• Longsword, shortsword, shortbow, longbow proficiency
+• Gain 1 wizard cantrip
+Cloistered Scholar Feature:
+• You have information about your cloister and you can use its library. Other libraries are also more likely to admit you.
+Paladin Features:
+• As an action, detect the location of any celestial, fiend or undead and any consecrated or desecrated place or object within 60 feet (1 + Cha mod per day)
+• Gain a reservoir of healing power (25hp), and as an action, you can heal a creature you touch by draining that power. You can also cure one poison or disease from the creature by sacrificing 5hp from the reservoir
+• Fighting Style - Dueling: +2 damage when using a single one-handed weapon
+• You can sacrifice a spell slot to deal (1 + spell level)d8 radiant damage plus 1d8 extra damage vs undead/fiends, when you hit with a melee weapon attack
+• Gain immunity to disease
+• Paladin Archetype: Crown
+• Champion Challenge (see rules)
+• Turn the Tide (see rules)
+• Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding
+• You can make two attacks on your turn
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+⊠Longsword
+Shortsword
+Shortbow
+Longbow
+Simple Weapons, Martial Weapons
+⊠⊠Common
+Elvish
+Extra Language
+Two Extra Languages
+⊠chain mail
+rapier
+rapier
+dagger
+priest's pack
+holy symbol
+scholar's robes
+writing kit
+research book (borrowed)
+pouch
+⊠⊠Paladin 5⊠High Elf⊠Cloistered Scholar⊠⊠⊠⊠⊠⊠Devinshire Poe⊠Paladin 5⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠5⊠10⊠5</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>2</currentHealth>
+    <maxHealth>38</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>1</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>10</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>5</unarmoredDefense>
+    <featCode/>
+    <classData>Monk⊡Way of the Long Death⊡5⊡-1⊟⊠Unarmored Defense⊠Extra Attack⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Ki Points⊡⊡5⊡5⊡0⊡1⊡0⊡0⊡303⊡0⊟⊠Tavern Brawler⊟⊟⊠monk⊟⊠monk⊟Goliath⊟⊟Criminal⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟6⊟-1</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Greatclub⊠5 feet⊠1200⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Dart⊠30/120⊠2101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Unarmed strike⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>21⊠14⊠15⊠8⊠15⊠10⊠true⊠true⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Goliath Features:
+• Athletics proficiency
+• As a reaction, you can reduce damage you would take by 1d12 + Con (1/rest)
+• You can lift, drag, push, and carry weight as if one size larger
+• You are adapted to cold climates and high altitudes (see rules)
+Criminal Feature:
+• You know someone who can connect you with other criminals
+Monk Features:
+• Add Wis mod to AC when not wearing armor or using a shield
+• When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action
+• You gain a reservoir of energy (ki points = monk level) which is restored during a rest
+• You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action
+• You can use a bonus action and spend 1 ki point to Dodge
+• You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump
+• When you are not in armor or using a shield your speed improves by 10 feet
+• When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)
+• Monk Archetype: Death
+• Gain Wis mod + monk level temp hp when you down an adjacent foe
+• You can use a reaction to reduce fall damage by 5 x Monk level
+• Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con
+• You can make two attacks on your turn
+• You can spend 1 ki point when you hit a creature with a melee attack to force it to make a Con save or be stunned for a round
+⊠⊠Simple Weapons, Shortswords
+Improvised Weapons
+Unarmed Strikes
+⊠One type of gaming set
+Thieves' Tools
+One type of artisan's tools OR one musical instrument
+⊠Common
+Giant
+⊠greatclub
+dart (10)
+unarmed strike
+dungeoneer's pack
+crowbar
+set of dark common clothes
+hood
+belt pouch
+
+wand of the web - 7 charges / use 1 to cast web⊠⊠Monk 5⊠Goliath⊠Criminal⊠⊠⊠⊠⊠⊠Drago⊠Monk 5⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>1⊠5⊠8⊠5</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>59</currentHealth>
+    <maxHealth>59</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Rogue⊡Assassin⊡8⊡-1⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡Sneak Atk⊡4⊡4⊡6⊡2⊡0⊡0⊡303⊡1⊟⊠Magic Initiate⊠Sharpshooter⊟expertise⊡Thieves' Tools⊡Stealth⊡Sleight of Hand⊡Investigation⊟⊟⊟Elf⊟Dark Elf⊟Folk Hero⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Shortbow⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>10⊠16⊠15⊠13⊠12⊠9⊠false⊠true⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠true⊠false⊠false⊠true⊠false⊠false⊠true⊠true⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠true⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠-1⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Elf Features:
+• Within 120 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Meditating 4 hours counts as 8 hours of rest
+• Perception proficiency
+• While in direct sunlight, you have disadvantage on attack rolls and perception checks
+• Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)
+• Rapier, shortsword, and hand crossbow proficiency
+Folk Hero Feature:
+• Commoners are willing to shelter you from some troubles
+Rogue Features:
+• Double proficiency with chosen skills
+• Sneak Attack (4d6)
+• Understand a secret language
+• Double proficiency with chosen skills/tools (Stealth,Thieves' Tools)
+• You can dash, disengage, or hide as a bonus action
+• Rogue Archetype: Assassin
+• You are proficient with poisoner's kits and disguise kits
+• You always crit surprised creatures and you have advantage vs creatures who haven't acted
+• Magic Initiate: You gain two cantrips and a first level spell which you can cast 1/day from a single spellcasting class
+• You can use a reaction to take half damage when hit by a foe that you see
+• Double proficiency with chosen skills (Investigation,Sleight of Hand)
+• When you would make a Dex save for half damage, you take no damage if you pass or half damage if you do not
+• Sharpshooter: Your ranged attacks ignore ½ and ¾ cover, don't have disadvantage from long range, and you can take -5 to a ranged attack for +10 damage
+⊠Light Armor
+⊠Rapier
+Shortsword
+Hand Crossbow
+Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠One type of artisan's tools
+Vehicles (land)
+Thieves' Tools
+Disguise kit
+Poisoner's kit
+⊠Common
+Elvish
+Extra Language
+Thieves' Cant
+⊠leather armor
+rapier
+shortbow
+dagger (2)
+arrows (20)
+dungeoneer's pack
+thieves' tools
+set of artisan's tools
+shovel
+iron pot
+set of common clothes
+belt pouch
+⊠⊠Rogue 8⊠Dark Elf⊠Folk Hero⊠⊠⊠⊠⊠⊠Drizzt⊠Rogue 8⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠8⊠8⊠8</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>45</currentHealth>
+    <maxHealth>45</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>10</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>0</subraceCode>
+    <backgroundCode>8</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode>35</featCode>
+    <classData>Fighter⊡Eldritch Knight⊡3⊡2⊠Monk⊡Way of the Open Hand⊡4⊡-1⊟Unarmored Defense⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡⊡1⊡1⊡0⊡2⊡0⊡0⊡303⊡0⊠Ki Points⊡⊡4⊡4⊡0⊡2⊡0⊡0⊡-1⊡0⊟Skilled⊟fighting style⊡Two-Weapon Fighting⊟monk⊟monk⊟Dragonborn⊟⊟Outlander⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟4⊟1⊟0</classData>
+    <multiclassFeatures>3,1,2,1,0,5,4,7,0,0,0</multiclassFeatures>
+    <weaponList>6⊠Greatsword⊠5 feet⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠2⊠6⊠Light Crossbow⊠80/320⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Rapier⊠5 feet⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Unarmed⊠Melee⊠0⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Crossbow, Hand⊠30/120⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>13⊠13⊠10⊠12⊠13⊠11⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠false⊠true⊠true⊠true⊠false⊠false⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠2⊠3⊠false⊠0⊟Dancing Lights⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Light⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Mage Armor⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Shield⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Burning Hands⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Dragonborn Features:
+• Silver Dragon
+• You can breathe a 15 ft cone of Cold(once between rests), dealing 3d6 Cold damage, Con save for half damage (DC 11). DC = 8 + Con mod + prof
+• You resist Cold damage
+Guild Artisan Feature:
+• While you are in good standing with your guild, your guild can gain you access to powerful politicians
+Class Features:
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Fighting Style - Two-Weapon Fighting: Add ability modifier to off-hand damage
+• Take an extra action once between rests
+• Fighter Archetype: Eldritch Knight
+• Form a magical bond with a weapon (see rules)
+• When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action
+• You gain a reservoir of energy (ki points = monk level) which is restored during a rest
+• You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action
+• You can use a bonus action and spend 1 ki point to Dodge
+• You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump
+• When you are not in armor or using a shield your speed improves by 10 feet
+• When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)
+• Monk Archetype: Hand
+• When you hit a creature with a Flurry of Blows attack you can inflict an additional effect (see rules)
+• You can use a reaction to reduce fall damage by 5 x Monk level
+• Skilled: You gain three skill or tool proficiencies
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+⊠Simple Weapons, Martial Weapons
+⊠One type of artisan's tools
+⊠Common
+Draconic
+One Extra Language
+⊠two martial weapons
+light crossbow + 20 bolts OR two hand axes
+dungeoneer's pack OR explorer's pack
+set of artisan's tools of your choice
+letter of introduction
+set of bone dice OR deck of cards
+set of traveler's clothes
+belt pouch
+leather armor
+⊠⊠Fighter 3, Monk 4⊠Dragonborn⊠Guild Artisan⊠⊠⊠⊠⊠⊠Dr Zana Haranthi⊠Fighter 3, Monk 4⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>2⊠3⊠10⊠3⊠4⊠8⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠5⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>56</currentHealth>
+    <maxHealth>56</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Bard⊡College of Valor⊡3⊡0⊠Fighter⊡Purple Dragon Knight⊡4⊡-1⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Inspiration⊡⊡2⊡2⊡6⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡Act. Surge⊡1⊡1⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Durable⊠Tavern Brawler⊟expertise⊡Insight⊡History⊠fighting style⊡Great Weapon Fighting⊟⊟⊟Human⊟Human Variant⊟Noble⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟4⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Longsword⊠5 feet⊠1102⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Dagger⊠20/60⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Shortsword⊠5 feet⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>14⊠11⊠15⊠12⊠9⊠15⊠false⊠true⊠false⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠true⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠3⊠false⊠0⊟Blade Ward⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Vicious Mockery⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Unseen Servant⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Detect Magic⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Sleep⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Charm Person⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Hold Person⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟See Invisibility⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Noble Feature:
+• You can secure an audience with a local noble
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+• Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con
+Fighter Features:
+• Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Take an extra action once between rests
+• Fighter Archetype: Knight
+• Three allies within 60ft heal your level in hp when you second wind
+• Gain half your proficiency bonus on ability checks you aren't proficient in
+• You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest
+• Double proficiency with chosen skills (History,Insight)
+• Bard Archetype: Valor
+• You are proficient with martial weapons. medium armor, and shields
+• Allies can use your Bardic Inspiration on weapon damage rolls and as a reaction to increase their AC against one attack
+• Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con
+⊠Light Armor
+Light Armor, Medium Armor, Shields
+Medium Armor
+Shields
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+Simple Weapons, Martial Weapons
+Martial Weapons
+Improvised Weapons
+Unarmed Strikes
+⊠One type of gaming set
+Any three musical instruments
+⊠Common
+Extra Language
+One Extra Language
+⊠leather armor
+longsword
+dagger
+diplomat's pouch
+any musical instrument
+set of fine clothes
+signet ring
+scroll of pedigree
+purse
+⊠⊠Bard 3, Fighter 4⊠Human⊠Noble⊠⊠⊠⊠⊠⊠Duke Halifax⊠Bard 3, Fighter 4⊠0⊠0⊠0⊠25⊠0⊠0</noteList>
+    <hitDiceList>2⊠3⊠8⊠3⊠4⊠10⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>26</currentHealth>
+    <maxHealth>26</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>35</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Sorcerer⊡Storm Sorcery⊡4⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sorcery Points⊡Sorcery Pts⊡4⊡4⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Durable⊟metamagic⊡Empowered Spell⊟⊟⊟Half-Elf⊟Half-Elf Variant⊟Urchin⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Club⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>9⊠13⊠15⊠12⊠11⊠17⊠false⊠false⊠true⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠4⊠false⊠⊟</spellList>
+    <noteList>Half-Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+Urchin Feature:
+• Your party can travel through a city twice as fast when not in combat
+Sorcerer Features:
+• Sorcerer Archetype: Storm
+• You know Primordial
+• You can fly 10ft without provoking as a bonus action when you cast a non-cantrip spell
+• You have a max of 4 sorcery points used to alter spells and regain spell slots
+• Empowered Spell: You can reroll up to Cha mod damage dice for 1 sorcery point and can use this with other metamagic
+• Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con
+⊠⊠Daggers, Darts, Slings, Quarterstaffs, Light Crossbows
+⊠Disguise kit
+Thieves' tools
+⊠Common
+Elvish
+Extra Language
+Primordial
+⊠club
+dagger (2)
+arcane focus
+explorer's pack
+small knife
+map of your home city
+pet mouse
+token of your parents
+set of common clothes
+belt pouch
+⊠⊠Sorcerer 4⊠Variant⊠Urchin⊠⊠⊠⊠⊠⊠Dylan⊠Sorcerer 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠4⊠6⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>18</currentHealth>
+    <maxHealth>18</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Wizard⊡School of Evocation⊡4⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Skilled⊟⊟⊟⊟Half-Elf⊟Half-Elf Variant⊟Cloistered Scholar⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>1⊠Quarterstaff⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>9⊠14⊠11⊠15⊠13⊠14⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠true⊠true⊠true⊠false⊠true⊠true⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠4⊠false⊠⊟</spellList>
+    <noteList>Half-Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)
+Cloistered Scholar Feature:
+• You have information about your cloister and you can use its library. Other libraries are also more likely to admit you.
+Wizard Features:
+• Regain half your level (min 1) worth of spell slots during a short rest (once per day)
+• Wizard Archetype: Evocation
+• Half gold/time cost to copy school spells
+• Exclude 1 + spell level creatures from your evocations
+• Skilled: You gain three skill or tool proficiencies
+⊠⊠Daggers, Darts, Slings, Quarterstaffs, Light Crossbows
+⊠⊠Common
+Elvish
+Extra Language
+Two Extra Languages
+⊠quarterstaff
+arcane focus
+scholar's pack
+spellbook
+scholar's robes
+writing kit
+research book (borrowed)
+pouch
+⊠⊠Wizard 4⊠Variant⊠Cloistered Scholar⊠⊠⊠⊠⊠⊠Gail⊠Wizard 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠4⊠6⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>31</currentHealth>
+    <maxHealth>31</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>4</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Druid⊡Circle of the Moon⊡4⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Wild Shape⊡⊡2⊡2⊡0⊡1⊡0⊡0⊡303⊡0⊟⊠Crossbow Expert⊟⊟⊟⊟Half-Elf⊟Half-Elf Variant⊟Urchin⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Crossbow, light⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Quarterstaff⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>9⊠11⊠14⊠12⊠13⊠17⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠4⊠false⊠⊟</spellList>
+    <noteList>Half-Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)
+Urchin Feature:
+• Your party can travel through a city twice as fast when not in combat
+Druid Features:
+• Understand a secret druid language
+• You can shapeshift into the form of a beast as an action (see rules)
+• Druid Archetype: Moon
+• You can wild shape as a bonus action, and can use up a spell slot to regain 1d8 hp per spell slot level as a bonus action while wild shaped
+• You can wild shape into beasts of CR equal to your druid level/3 (min 1)
+• Crossbow Expert: You don't have disadvantage from adjacent enemies on ranged attacks, you can load crossbows faster, and you can make a bonus action attack with a hand crossbow after attacking with a one-handed weapon
+⊠Light Armor, Medium Armor, Shields
+⊠Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears
+⊠Disguise kit
+Thieves' tools
+Herbalism Kit
+⊠Common
+Elvish
+Extra Language
+Druidic
+⊠leather armor
+crossbow, light
+quarterstaff
+explorer's pack
+druidic focus
+small knife
+map of your home city
+pet mouse
+token of your parents
+set of common clothes
+belt pouch
+⊠⊠Druid 4⊠Variant⊠Urchin⊠⊠⊠⊠⊠⊠Gavin⊠Druid 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠4⊠8⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>37</currentHealth>
+    <maxHealth>37</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>0</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Rogue⊡Mastermind⊡4⊡-1⊠Wizard⊡School of Illusion⊡2⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡Sneak Atk⊡2⊡2⊡6⊡2⊡0⊡0⊡303⊡1⊟⊠Magic Initiate⊟expertise⊡Persuasion⊡Deception⊟⊟⊟Dwarf⊟Hill Dwarf⊟Criminal⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟1⊟1⊟1⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Shortbow⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>12⊠15⊠10⊠14⊠11⊠13⊠false⊠true⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠true⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠-1⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠2⊠false⊠⊟</spellList>
+    <noteList>Dwarf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Advantage on saves vs poison, poison damage resistance
+• Double proficiency bonus to History checks concerning stonework (even if not proficient)
+• Battleaxe, handaxe, throwing hammer, warhammer proficiency
+• Gain 1 extra hit point per level
+Criminal Feature:
+• You know someone who can connect you with other criminals
+Rogue Features:
+• Double proficiency with chosen skills
+• Sneak Attack (2d6)
+• Understand a secret language
+• Double proficiency with chosen skills (Deception,Persuasion)
+Wizard Features:
+• Regain half your level (min 1) worth of spell slots during a short rest (once per day)
+• You can dash, disengage, or hide as a bonus action
+• Rogue Archetype: Mastermind
+• You gain fluency with two languages and proficiency with a gaming set, disguise kit, and forger's set
+• Can make yourself sound like a local
+• Use help action on targets within 30ft as a bonus action
+• Magic Initiate: You gain two cantrips and a first level spell which you can cast 1/day from a single spellcasting class
+• Wizard Archetype: Illusion
+• Half gold/time cost to copy school spells
+• You can cast minor illusion, and can have both visual and auditory effects
+⊠Light Armor
+⊠Battleaxe
+Handaxe
+Throwing Hammer
+Warhammer
+Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠Smith's Tools OR Brewer's Supplies OR Mason's Tools
+One type of gaming set
+Thieves' Tools
+Thieves' Tools
+Disguise kit
+Forgery kit
+One gaming set
+⊠Common
+Dwarvish
+Thieves' Cant
+Two Extra Languages
+⊠rapier
+shortbow
+dagger (2)
+arrows (20)
+burglar's pack
+thieves' tools
+crowbar
+set of dark common clothes
+hood
+belt pouch
+⊠⊠Rogue 4, Wizard 2⊠Hill Dwarf⊠Criminal⊠⊠⊠⊠⊠⊠Hanseld⊠Rogue 4, Wizard 2⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>2⊠4⊠8⊠4⊠2⊠6⊠2</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>58</currentHealth>
+    <maxHealth>58</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>1</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>0</subraceCode>
+    <backgroundCode>2</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode>27</featCode>
+    <classData>Rogue⊡Mastermind⊡5⊡-1⊠Wizard⊡School of Illusion⊡3⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡⊡3⊡3⊡6⊡2⊡0⊡0⊡303⊡1⊟Observant⊟expertise⊡Deception⊡Persuasion⊟⊟⊟Dwarf⊟Hill Dwarf⊟Criminal⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟1⊟1⊟1⊟0</classData>
+    <multiclassFeatures>5,2,3,2,0,14,17</multiclassFeatures>
+    <weaponList>4⊠Rapier⊠5 feet⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Shortsword⊠5 feet⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Shortbow⊠80/320⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>10⊠15⊠10⊠13⊠11⊠12⊠false⊠true⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠true⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠3⊠false⊠⊟</spellList>
+    <noteList>Dwarf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Advantage on saves vs poison, poison damage resistance
+• Double proficiency bonus to History checks concerning stonework (even if not proficient)
+• Battleaxe, handaxe, throwing hammer, warhammer proficiency
+Gain 1 extra hit point per level
+Folk Hero Feature:
+• Commoners are willing to shelter you from some trouble
+Class Features:
+• Double proficiency with chosen skills/tools (Deception, Persuasion)
+• Sneak Attack (3d6)
+• Understand a secret language
+• You can dash, disengage, or hide as a bonus action
+• Rogue Archetype: Mastermind
+• You gain fluency with two languages and proficiency with a gaming set, disguise kit, and forger's set
+• Can make yourself sound like a local
+• Use help action on targets within 30ft as a bonus action
+• Observant: You gain +5 to passive perception and investigation, can read lips, and gain +1 to either Int or Wis
+• You can use a reaction to take half damage when hit by a foe that you see
+Wizard Features:
+• Regain half your level (min 1) worth of spell slots during a short rest (once per day)
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Wizard Archetype: Illusion
+• Half gold/time cost to copy school spells
+• You can cast minor illusion, and can have both visual and auditory effects
+⊠Light Armor
+⊠Battleaxes, Handaxes, Throwing Hammers, Warhammers
+Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠Smith's Tools OR Brewer's Supplies OR Mason's Tools
+Thieves' Tools
+One type of artisan's tools
+Vehicles (land)
+Disguise kit
+Forgery kit
+One gaming set
+⊠Common, Dwarvish
+⊠leather armor
+daggers (2)
+thieves' tools
+rapier OR shortsword
+shortbow + 20 arrows OR shortsword
+burglar's pack OR dungeoneer's pack OR explorer's pack
+set of artisan's tools
+shovel
+iron pot
+set of common clothes
+belt pouch
+⊠⊠Rogue 5, Wizard 3⊠Hill Dwarf⊠Folk Hero⊠⊠⊠⊠⊠⊠Hanseld⊠Rogue 5, Wizard 3⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>2⊠5⊠8⊠5⊠3⊠6⊠3</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠11⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>20</currentHealth>
+    <maxHealth>20</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>1</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>0</raceCode>
+    <subraceCode>0</subraceCode>
+    <backgroundCode>2</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <multiclassFeatures>3,3,7,0,0</multiclassFeatures>
+    <weaponList>2⊠Quarterstaff⊠5 feet⊠0⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>8⊠12⊠12⊠15⊠15⊠13⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>0⊠4⊠2⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠3⊠false⊠0⊠Ray Of Frost⊠⊠⊠⊠⊠⊠true⊠0⊠0⊠Shocking Grasp⊠⊠⊠⊠⊠⊠true⊠0</spellList>
+    <noteList>Dwarf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Advantage on saves vs poison, poison damage resistance
+• Double proficiency bonus to History checks concerning stonework (even if not proficient)
+• Battleaxe, handaxe, throwing hammer, warhammer proficiency
+Gain 1 extra hit point per level
+Folk Hero Feature:
+• Commoners are willing to shelter you from some trouble
+Class Features:
+• Regain half your level (min 1) worth of spell slots during a short rest (once per day)
+• Wizard Archetype: Transmutation
+• Half gold/time cost to copy school spells
+• You can alter the composition of objects (see rules)
+⊠⊠Battleaxes, Handaxes, Throwing Hammers, Warhammers
+Daggers, Darts, Slings, Quarterstaffs, Light Crossbows
+⊠Smith's Tools OR Brewer's Supplies OR Mason's Tools
+One type of artisan's tools
+Vehicles (land)
+⊠Common, Dwarvish
+⊠spellbook
+quarterstaff OR dagger
+component pouch OR arcane focus
+scholar's pack OR explorer's pack
+set of artisan's tools
+shovel
+iron pot
+set of common clothes
+belt pouch
+⊠⊠Wizard 3⊠Hill Dwarf⊠Folk Hero⊠⊠⊠⊠⊠⊠Harbin Wester⊠Wizard 3⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠3⊠6⊠3</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>40</currentHealth>
+    <maxHealth>40</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Rogue⊡Thief⊡5⊡-1⊠Fighter⊡⊡1⊡-1⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡Sneak Atk⊡3⊡3⊡6⊡2⊡0⊡0⊡303⊡0⊟⊠Durable⊠Tavern Brawler⊟expertise⊡Thieves' Tools⊡Sleight of Hand⊠fighting style⊡Two-Weapon Fighting⊟⊟⊟Human⊟Human Variant⊟Folk Hero⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟4⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Shortbow⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>9⊠15⊠12⊠13⊠13⊠14⊠false⊠true⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠true⊠true⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Folk Hero Feature:
+• Commoners are willing to shelter you from some troubles
+Rogue Features:
+• Double proficiency with chosen skills
+• Sneak Attack (3d6)
+• Understand a secret language
+• Double proficiency with chosen skills/tools (Sleight of Hand,Thieves' Tools)
+• Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con
+• You can dash, disengage, or hide as a bonus action
+• Rogue Archetype: Thief
+• You can use an object, use thieves' tools, or sleight of hand as a Cunning Action
+• You can climb at full speed and jump Dex mod feet further
+• Tavern Brawler: Your unarmed strikes deal d4 damage, you are proficient in unarmed strikes and improvised weapons, can make a grapple as a bonus action after hitting with one, and +1 to either Str or Con
+• You can use a reaction to take half damage when hit by a foe that you see
+Fighter Features:
+• Fighting Style - Two-Weapon Fighting: Add ability modifier to off-hand damage
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+⊠Light Armor
+Light Armor, Medium Armor, Shields
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+Improvised Weapons
+Unarmed Strikes
+Simple Weapons, Martial Weapons
+⊠One type of artisan's tools
+Vehicles (land)
+Thieves' Tools
+⊠Common
+Extra Language
+Thieves' Cant
+⊠rapier
+shortbow
+dagger (2)
+arrows (20)
+burglar's pack
+thieves' tools
+set of artisan's tools
+shovel
+iron pot
+set of common clothes
+belt pouch
+⊠⊠Rogue 5, Fighter 1⊠Human⊠Folk Hero⊠⊠⊠⊠⊠⊠Hitch⊠Rogue 5, Fighter 1⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>2⊠5⊠8⊠5⊠1⊠10⊠1</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>7</currentHealth>
+    <maxHealth>44</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>18</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Paladin⊡Oath of Vengeance⊡5⊡1⊟⊠Extra Attack⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Lay on Hands⊡Lay Hands⊡25⊡25⊡0⊡2⊡0⊡0⊡303⊡0⊠Channel Divinity⊡Channel Div⊡1⊡1⊡0⊡1⊡0⊡0⊡-1⊡0⊟⊠War Caster⊟fighting style⊡Great Weapon Fighting⊟⊟⊟Goliath⊟⊟Criminal⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟3</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Battleaxe⊠5 feet⊠1102⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Warhammer⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Javelin⊠30/120⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>15⊠12⊠15⊠8⊠15⊠10⊠false⊠false⊠false⊠false⊠true⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠1⊠5⊠false⊠1⊟Bane⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Hunter’s Mark⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Hold Person⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Misty Step⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Goliath Features:
+• Athletics proficiency
+• As a reaction, you can reduce damage you would take by 1d12 + Con (1/rest)
+• You can lift, drag, push, and carry weight as if one size larger
+• You are adapted to cold climates and high altitudes (see rules)
+Criminal Feature:
+• You know someone who can connect you with other criminals
+Paladin Features:
+• As an action, detect the location of any celestial, fiend or undead and any consecrated or desecrated place or object within 60 feet (1 + Cha mod per day)
+• Gain a reservoir of healing power (25hp), and as an action, you can heal a creature you touch by draining that power. You can also cure one poison or disease from the creature by sacrificing 5hp from the reservoir
+• Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice
+• You can sacrifice a spell slot to deal (1 + spell level)d8 radiant damage plus 1d8 extra damage vs undead/fiends, when you hit with a melee weapon attack
+• Gain immunity to disease
+• Paladin Archetype: Vengeance
+• Abjure Enemy: 1 action - Choose one seen creature w/in 60 ft. That creature must make a Wisdom save unless it is immune to being frightened. On a failed save, the target is frightened for 1 minute or until it takes damage. While frightened, target's speed is reduced to 0.
+On a successful save, target's speed is halved for 1 minute or until it takes damage.
+• Vow of Enmity: Bonus Action - Choose one seen creature within 10 ft. Your attack rolls against the target have advantage for the next minute or until the creature falls to 0 hp.
+• War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack
+• You can make two attacks on your turn
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+⊠Simple Weapons, Martial Weapons
+⊠One type of gaming set
+Thieves' Tools
+⊠Common
+Giant
+⊠chain mail
+battleaxe
+warhammer
+javelin (5)
+priest's pack
+holy symbol
+crowbar
+set of dark common clothes
+hood
+belt pouch
+
+Cape Of The Mountebank - cast Dimension Door once per dawn⊠⊠Paladin 5⊠Goliath⊠Criminal⊠⊠⊠⊠⊠⊠Krug⊠Paladin 5⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>1⊠5⊠10⊠5</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>37</currentHealth>
+    <maxHealth>37</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>1</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>10</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>0</subraceCode>
+    <backgroundCode>5</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>5</unarmoredDefense>
+    <featCode/>
+    <classData>Monk⊡Way of the Open Hand⊡4⊡-1⊟Unarmored Defense⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Ki Points⊡⊡4⊡4⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Resilient⊟⊟monk⊟monk⊟Dragonborn⊟⊟Guild Artisan⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟4⊟1⊟0</classData>
+    <multiclassFeatures>2,7,-1,0,0</multiclassFeatures>
+    <weaponList>3⊠Monk Unarmed Strike⊠5 feet⊠0⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Shortsword⊠5 feet⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dart⊠20/60⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>12⊠12⊠14⊠10⊠6⊠11⊠true⊠true⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Dragonborn Features:
+• Brass Dragon
+• You can breathe a 30 ft line of Fire(once between rests), dealing 2d6 Fire damage, Dex save for half damage (DC 11). DC = 8 + Con mod + prof
+• You resist Fire damage
+Soldier Feature:
+• You have influence within your former army/organization
+Class Features:
+• Add Wis mod to AC when not wearing armor or using a shield
+• When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action
+• You gain a reservoir of energy (ki points = monk level) which is restored during a rest
+• You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action
+• You can use a bonus action and spend 1 ki point to Dodge
+• You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump
+• When you are not in armor or using a shield your speed improves by 10 feet
+• When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)
+• Monk Archetype: Hand
+• When you hit a creature with a Flurry of Blows attack you can inflict an additional effect (see rules)
+• You can use a reaction to reduce fall damage by 5 x Monk level
+• Resilient: You gain proficiency with one save and +1 to that ability
+⊠⊠Simple Weapons, Shortswords
+⊠Cook's Utensils
+One type of gaming set
+Vehicles (land)
+⊠Common
+Draconic
+⊠quarterstaff
+ten darts
+explorer's pack
+rank insignia
+trophy
+set of bone dice
+set of common clothes
+belt pouch
+⊠⊠Monk 4⊠Dragonborn⊠Soldier⊠⊠⊠⊠⊠⊠Lantheon Vaazrus⊠Monk 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠4⊠8⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠8⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>52</currentHealth>
+    <maxHealth>52</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>14</armorBonus>
+    <shieldBonus>2</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>2</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>4</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>5</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Cleric⊡Forge Domain⊡4⊡0⊠Bard⊡College of Lore⊡3⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Inspiration⊡⊡2⊡2⊡6⊡2⊡0⊡0⊡-1⊡0⊠Channel Divinity⊡Channel Div⊡1⊡1⊡0⊡1⊡0⊡0⊡303⊡0⊟⊠Squat Nimbleness⊟expertise⊡Religion⊡Insight⊟⊟⊟Dwarf⊟Hill Dwarf⊟Acolyte⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟1⊟1⊟1⊟2</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Mace⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Crossbow, light⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8</weaponList>
+    <abilityScores>12⊠9⊠12⊠13⊠16⊠14⊠false⊠false⊠false⊠false⊠true⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠false⊠true⊠false⊠true⊠false⊠false⊠true⊠false⊠true⊠true⊠false⊠false⊠false⊠true⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡3⊡1⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠7⊠false⊠1⊟Identify⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Searing Smite⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Heat Metal⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Magic Weapon⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Dwarf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Advantage on saves vs poison, poison damage resistance
+• Double proficiency bonus to History checks concerning stonework (even if not proficient)
+• Battleaxe, handaxe, throwing hammer, warhammer proficiency
+• Gain 1 extra hit point per level
+Acolyte Feature:
+• Receive aid from those who share your faith
+Cleric Features:
+• Cleric Archetype: Forge
+• Proficiency Heavy Armor, Smith's Tools
+• You can make a nonmagical weapon or armor a +1 magic item until you die or take a long rest, once after a long rest
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+• Turn Undead (see rules)
+• Artisan's Blessing (see rules)
+• Squat Nimbleness: You have advantage on grapple escape attempts, +5 feet to speed, gain Athletics or Acrobatics proficiency, and +1 Str or Dex
+• Gain half your proficiency bonus on ability checks you aren't proficient in
+• You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest
+• Double proficiency with chosen skills (Insight,Religion)
+• Bard Archetype: Lore
+• You are proficient in three additional skills
+• You can spend a use of Bardic Inspiration as a reaction to give a creature within 60 feet a penalty on an attack roll, damage roll, or ability check
+⊠Light Armor, Medium Armor, Shields
+Heavy Armor
+Light Armor
+⊠Battleaxe
+Handaxe
+Throwing Hammer
+Warhammer
+Simple Weapons
+⊠Smith's Tools OR Brewer's Supplies OR Mason's Tools
+Smith's Tools
+One musical instrument
+⊠Common
+Dwarvish
+Two Extra Languages
+⊠scale mail
+shield
+mace
+light crossbow
+bolts (20)
+priest's pouch
+holy symbol
+holy symbol
+prayer book
+stick of incense (5)
+vestments
+set of common clothes
+belt pouch
+⊠⊠Cleric 4, Bard 3⊠Hill Dwarf⊠Acolyte⊠⊠⊠⊠⊠⊠Molly⊠Cleric 4, Bard 3⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>1⊠7⊠8⊠7</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>46</currentHealth>
+    <maxHealth>46</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Wizard⊡School of Transmutation⊡4⊡0⊠Warlock⊡The Great Old One⊡4⊡3⊟⊠Pact of the Tome⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Prodigy⊠War Caster⊠Resilient⊟pact boon⊡Pact of the Tome⊠eldritch invocations⊡Repelling Blast⊡Armor of Shadows⊠expertise⊡Arcana⊟⊟⊟Human⊟Human Variant⊟Haunted One⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Dagger⊠20/60⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Quarterstaff⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>13⊠12⊠13⊠15⊠8⊠14⊠false⊠true⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠true⊠true⊠true⊠true⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡5⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠-1⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠4⊠false⊠⊟</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Haunted One Feature:
+• Commoners will do what they can to help you
+Wizard Features:
+• Regain half your level (min 1) worth of spell slots during a short rest (once per day)
+• Prodigy: You gain one language, one skill proficiency, one skill double proficiency, and one tool proficiency
+• Double proficiency with chosen skills (Arcana)
+Warlock Features:
+• Warlock Archetype: Old One
+• The spells dissonant whispers and hideous laughter are added to the warlock spell list for you
+• You can telepathically communicate with any creature that knows any language within 30 feet
+• Wizard Archetype: Transmutation
+• Half gold/time cost to copy school spells
+• You can alter the composition of objects (see rules)
+• War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack
+• Forceful Cantrip: You can push creatures you hit with eldritch blast ten feet
+• Mage Armor Expert: You don't use a spell slot when casting mage armor on yourself
+• Tome: You can cast three cantrips from any class (see rules)
+• The spells detect thoughts and phantasmal force are added to the warlock spell list for you
+• Resilient: You gain proficiency with one save and +1 to that ability
+⊠Light Armor
+⊠Daggers, Darts, Slings, Quarterstaffs, Light Crossbows
+Simple Weapons
+⊠One tool proficiency
+⊠Common
+Extra Language
+One Exotic Language
+One extra language
+⊠dagger
+arcane focus
+scholar's pack
+spellbook
+set of common clothes
+monster hunter's pack
+important trinket
+⊠⊠Wizard 4, Warlock 4⊠Human⊠Haunted One⊠⊠⊠⊠⊠⊠Munro⊠Wizard 4, Warlock 4⊠0⊠0⊠0⊠0⊠0⊠0</noteList>
+    <hitDiceList>2⊠4⊠6⊠4⊠4⊠8⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>1</currentHealth>
+    <maxHealth>56</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>4</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Wizard⊡School of Evocation⊡6⊡0⊠Warlock⊡The Undying⊡4⊡3⊟⊠Pact of the Tome⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Elemental Adept⊠War Caster⊠Resilient⊟pact boon⊡Pact of the Tome⊠eldritch invocations⊡Grasp of Hadar⊡Armor of Shadows⊟⊟⊟Human⊟Human Variant⊟Haunted One⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Claw⊠5 ft⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Rotting Gaze⊠30⊠2008⊠3⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠3⊠6⊠Dark Insight⊠30⊠2010⊠3⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>9⊠13⊠12⊠15⊠12⊠14⊠false⊠false⊠true⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠false⊠false⊠true⊠true⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡5⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠-1⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠6⊠false⊠0⊟Spare the Dying⊟⊟⊟⊟⊟⊟false⊟0⊡</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Haunted One Feature:
+• Commoners will do what they can to help you
+Wizard Features:
+• Regain half your level (min 1) worth of spell slots during a short rest (once per day)
+• Elemental Adept: Your spells that deal one of acid/cold/fire/lightning/thunder ignore resistance, and you can treat rolled 1s as 2s for those spells
+Warlock Features:
+• Warlock Archetype: Undead
+• The spells false life and ray of sickness are added to the warlock spell list for you
+• You know spare the dying
+• You repel attacks by undead (see rules)
+• Wizard Archetype: Evocation
+• Half gold/time cost to copy school spells
+• Exclude 1 + spell level creatures from your evocations
+• Grasping Eldritch Blast: Your eldritch blast can pull targets 10 feet
+• Mage Armor Expert: You don't use a spell slot when casting mage armor on yourself
+• War Caster: You gain advantage on concentration vs damage, can still cast while holding weapons, and can cast a single target 1 action spell as an opportunity attack
+• Tome: You can cast three cantrips from any class (see rules)
+• The spells blindness/deafness and silence are added to the warlock spell list for you
+• Resilient: You gain proficiency with one save and +1 to that ability
+• Your cantrips deal half damage on a save
+⊠Light Armor
+⊠Daggers, Darts, Slings, Quarterstaffs, Light Crossbows
+Simple Weapons
+⊠⊠Common
+Extra Language
+One Exotic Language
+⊠dagger
+arcane focus
+scholar's pack
+spellbook
+set of common clothes
+monster hunter's pack
+important trinket
+⊠⊠Wizard 6, Warlock 4⊠⊠⊠⊠⊠⊠⊠⊠Munro Andelmaus⊠Wizard 6, Warlock 4⊠0⊠0⊠0⊠0⊠0⊠0</noteList>
+    <hitDiceList>2⊠6⊠6⊠6⊠4⊠8⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>73</currentHealth>
+    <maxHealth>73</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>17</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>4</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Rogue⊡Arcane Trickster⊡6⊡2⊠Warlock⊡The Hexblade⊡4⊡3⊟⊠Pact of the Blade⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡Sneak Atk⊡3⊡3⊡6⊡2⊡0⊡0⊡303⊡1⊟⊠Drow High Magic⊠Elven Accuracy⊟pact boon⊡Pact of the Blade⊠eldritch invocations⊡Mask of Many Faces⊡Agonizing Blast⊠expertise⊡Stealth⊡Deception⊡Intimidation⊡Athletics⊟⊟⊟Elf⊟Dark Elf⊟Criminal⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟4⊟2⊟0⊟1⊟1⊟3</classData>
+    <multiclassFeatures/>
+    <weaponList>4⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Shortbow⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Crossbow, hand⊠30/120⊠2101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>8⊠15⊠14⊠15⊠10⊠14⊠false⊠true⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠true⊠true⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡3⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠-1⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠2⊠6⊠false⊠⊟</spellList>
+    <noteList>Elf Features:
+• Within 120 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Meditating 4 hours counts as 8 hours of rest
+• Perception proficiency
+• While in direct sunlight, you have disadvantage on attack rolls and perception checks
+• Can cast the dancing lights cantrip. At 3rd level, faerie fire (1/day). At 5th level, darkness (1/day) (use Cha for DCs)
+• Rapier, shortsword, and hand crossbow proficiency
+Criminal Feature:
+• You know someone who can connect you with other criminals
+Rogue Features:
+• Double proficiency with chosen skills
+• Sneak Attack (1d6)
+• Understand a secret language
+• Double proficiency with chosen skills (Deception,Stealth)
+• You can dash, disengage, or hide as a bonus action
+• Rogue Archetype: Arcane Trickster
+• Special abilities with mage hand (see rules)
+• Dark Elf Magic: 1/day you can cast dispel magic and levitate, and can at will cast detect magic
+Warlock Features:
+• Warlock Archetype: Hexblade
+• The spells shield and wrathful smite are added to the warlock spell list for you
+• 1/rest as a bonus action you can curse a creature for 1 minute, healing level + Cha mod hp when it dies, critting it on a 19, and dealing it proficiency bonus extra damage
+• Gain martial weapon, shield, and medium armor proficiency
+• You can use Charisma for attack and damage rolls with your pact weapons and one one-handed weapon you choose at the start of each day
+• Disguise Self Expert: You don't use a spell slot when casting disguise self
+• Potent Cantrip: Your eldritch blast does Cha mod extra damage
+• Blade: You gain the ability to conjure a magical weapon (see rules)
+• The spells blur and branding smite are added to the warlock spell list for you
+• Elven Accuracy: You can reroll a Dex, Int, Wis, or Cha attack, and +1 Dex, Int, Wis, or Cha
+• You can use a reaction to take half damage when hit by a foe that you see
+• Double proficiency with chosen skills (Athletics,Intimidation)
+⊠Light Armor
+Light Armor
+Medium Armor
+Shields
+⊠Rapier
+Shortsword
+Hand Crossbow
+Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+Simple Weapons
+Martial Weapons
+⊠One type of gaming set
+Thieves' Tools
+Thieves' Tools
+⊠Common
+Elvish
+Extra Language
+Thieves' Cant
+⊠leather armor
+rapier
+shortbow
+dagger (2)
+arrows (20)
+burglar's pack
+thieves' tools
+crowbar
+set of dark common clothes
+hood
+belt pouch
+⊠⊠Rogue 6, Warlock 4⊠Dark Elf⊠Criminal⊠⊠⊠⊠⊠⊠Osciril⊠Rogue 6, Warlock 4⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>1⊠10⊠8⊠10</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>38</currentHealth>
+    <maxHealth>38</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Fighter⊡Battle Master⊡4⊡-1⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡Act. Surge⊡1⊡1⊡0⊡2⊡0⊡0⊡-1⊡0⊠Superiority Dice⊡Superiority⊡5⊡5⊡8⊡1⊡0⊡0⊡303⊡0⊟⊠Martial Adept⊟combat superiority maneuvers⊡Riposte⊡Lunging Attack⊡Evasive Footwork⊡Sweeping Attack⊡Feinting Attack⊠fighting style⊡Archery⊟⊟⊟Tabaxi⊟⊟Uthgardt Tribe Member⊟0⊠0⊠2⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>4⊠Longbow⊠150/600⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Whip⊠10 feet⊠1102⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Crossbow, light⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8</weaponList>
+    <abilityScores>8⊠17⊠14⊠12⊠13⊠11⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Tabaxi Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• You can double your speed for a turn when you move but must spend a turn not moving before using this again
+• You can claw as an unarmed attack for 1d4 slashing damage and can climb with a 20 speed
+Barbarian Tribe Member Feature:
+• You can forage for twice as much food and water while in the wilderness and have knowledge of barbarian lands
+Fighter Features:
+• Fighting Style - Archery: +2 to attack with ranged weapons
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Take an extra action once between rests
+• Fighter Archetype: Battle Master
+• Gain four superiority dice (d8) to spend on maneuvers
+• One artisan's tools proficiency
+• Riposte: You can use a reaction when missed by a melee attack to make a melee attack back and deal Superiority Die extra damage
+• Lunge: You can cause your next melee attack to have 5 extra feet of range and deal Superiority Die extra damage
+• Evade: You can gain Superiority Die to AC while moving
+• Martial Adept: You gain a superiority die and two battle master maneuvers
+• Cleave: You can cause one creature adjacent to one you hit with a melee weapon to take Superiority Die damage if the same attack roll would hit
+• Feint: You can spend a bonus action to grant your next attack against an adjacent foe advantage and Superiority Die extra damage
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+⊠Simple Weapons, Martial Weapons
+⊠One type of artisan's tools or musical instrument
+One artisan's tools proficiency
+⊠Common
+Extra Language
+One Extra Language
+⊠leather armor
+longbow
+rapier
+whip
+handaxe (2)
+arrows (20)
+dungeoneer's pack
+set of traveler's clothes
+hunting trap
+tattoos or totem
+pouch
+⊠⊠Fighter 4⊠Tabaxi⊠Barbarian Tribe Member⊠⊠⊠⊠⊠⊠Otaku⊠Fighter 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠4⊠10⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>52</currentHealth>
+    <maxHealth>52</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Bard⊡College of Glamour⊡4⊡0⊠Cleric⊡Trickery Domain⊡3⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Inspiration⊡⊡3⊡3⊡6⊡2⊡0⊡0⊡-1⊡0⊠Channel Divinity⊡Channel Div⊡1⊡1⊡0⊡1⊡0⊡0⊡303⊡0⊟⊠Tough⊟expertise⊡Stealth⊡Performance⊟⊟⊟Halfling⊟Lightfoot Halfling⊟Entertainer⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟2⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Rapier⊠5 feet⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>8⊠16⊠10⊠12⊠13⊠16⊠false⊠true⊠false⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠true⊠true⊠true⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡3⊡1⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠7⊠false⊠1⊟Charm Person⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Disguise Self⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Mirror Image⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Pass Without Trace⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Halfling Features:
+• Can reroll a natural 1
+• Advantage on saves vs frightened
+• Can move through larger creatures' spaces
+• Can hide while obscured by larger creatures
+Entertainer Feature:
+• Your performances tend to make people like you, and you can always find somewhere to perform
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+Cleric Features:
+• Cleric Archetype: Trickery
+• You can touch an ally as an action to grant it advantage on stealth checks for one hour or until you use this ability again
+• Gain half your proficiency bonus on ability checks you aren't proficient in
+• You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest
+• Turn Undead (see rules)
+• Invoke Duplicity (see rules)
+• Double proficiency with chosen skills (Performance,Stealth)
+• Bard Archetype: Glamour
+• You can spend a use of Bardic Inspiration as a bonus action to allow Cha mod creatures within 60 feet that can see you to move their speed without provoking as a reaction and grant them 5 temp hp (see rules)
+• Once per rest you can attempt to charm up to Cha mod creatures in your audience (see rules)
+• Tough: You gain 2 extra hp per level
+⊠Light Armor
+Light Armor, Medium Armor, Shields
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠Disguise kit
+One type of musical instrument
+Any three musical instruments
+⊠Common
+Halfling
+⊠leather armor
+rapier
+dagger
+entertainer's pack
+any musical instrument
+one musical instrument of your choice
+a favor from an admirer
+costume
+belt pouch
+⊠⊠Bard 4, Cleric 3⊠Lightfoot Halfling⊠Entertainer⊠⊠⊠⊠⊠⊠Piper ⊠Bard 4, Cleric 3⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>1⊠7⊠8⊠7</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>49</currentHealth>
+    <maxHealth>49</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>16</armorBonus>
+    <shieldBonus>2</shieldBonus>
+    <miscArmorBonus>1</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>0</subraceCode>
+    <backgroundCode>5</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Fighter⊡Battle Master⊡5⊡-1⊟⊠Extra Attack⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡⊡1⊡1⊡0⊡2⊡0⊡0⊡-1⊡0⊠Superiority Dice⊡⊡4⊡4⊡8⊡2⊡0⊡0⊡303⊡0⊟Dual Wielder⊟combat superiority maneuvers⊡Distracting Strike⊡Parry⊡Riposte⊠fighting style⊡Two-Weapon Fighting⊟⊟⊟Halfling⊟Lightfoot Halfling⊟Guild Artisan⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures>3,1,1,1,3,5,2,9,13</multiclassFeatures>
+    <weaponList>4⊠Greatsword⊠5 feet⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠2⊠6⊠Longsword⊠5 feet⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Light Crossbow⊠80/320⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Handaxe⊠20/60⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6</weaponList>
+    <abilityScores>14⊠11⊠16⊠16⊠10⊠11⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>• Fighting Style - Two-Weapon Fighting: Add ability modifier to off-hand damage
+• Take an extra action once between rests
+• Fighter Archetype: Battle Master
+• Gain four superiority dice (d8) to spend on maneuvers
+• One artisan's tools proficiency
+• Distract: You can cause one creature you hit to take Superiority Die extra damage and grant advantage to the next attack against it this round from someone else
+• Parry: You can use a reaction to take Superiority Die + Dex mod less damage from a melee attack
+• Riposte: You can use a reaction when missed by a melee attack to make a melee attack back and deal Superiority Die extra damage
+• Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding
+• You can make two attacks on your turn
+⊠⊠⊠One type of artisan's tools
+⊠⊠chain mail
+⊠⊠Fighter 5⊠⊠⊠⊠⊠⊠⊠⊠Piper Rixi⊠Fighter 5⊠0⊠0⊠0⊠0⊠0⊠0</noteList>
+    <hitDiceList>1⊠5⊠10⊠5</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠7⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>49</currentHealth>
+    <maxHealth>49</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>3</unarmoredDefense>
+    <featCode/>
+    <classData>Bard⊡College of Valor⊡4⊡0⊠Barbarian⊡⊡2⊡-1⊟⊠Unarmored Defense⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Inspiration⊡⊡3⊡3⊡6⊡2⊡0⊡0⊡-1⊡0⊠Rage⊡⊡2⊡2⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Actor⊟expertise⊡Performance⊡Acrobatics⊟⊟⊟Dragonborn⊟⊟Entertainer⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Longsword⊠5 feet⊠1102⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Dagger⊠20/60⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>15⊠10⊠14⊠12⊠8⊠17⊠false⊠true⊠false⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠4⊠false⊠0⊟Friends ⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Mage Hand⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Thunderclap⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Earth Tremor⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Faerie Fire⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Longstrider⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Thunderwave⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Enthrall⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Hold Person⊟⊟⊟⊟⊟⊟true⊟0⊡2⊟Shatter⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Dragonborn Features:
+• Silver Dragon
+• You can breathe a 15 ft cone of cold (once between rests), dealing 2d6 cold damage, Dex save for half damage. DC = 8 + Con mod + prof
+• You resist cold damage
+Entertainer Feature:
+• Your performances tend to make people like you, and you can always find somewhere to perform
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+Barbarian Features:
+• 2/day you gain advantage on Str checks and saves, deal +2 damage on strength based melee attacks, and resistance vs bludgeoning, piercing, and slashing damage
+• Add Con mod to AC when not wearing armor
+• Gain half your proficiency bonus on ability checks you aren't proficient in
+• You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest
+• Double proficiency with chosen skills (Acrobatics,Performance)
+• Bard Archetype: Valor
+• You are proficient with martial weapons. medium armor, and shields
+• Allies can use your Bardic Inspiration on weapon damage rolls and as a reaction to increase their AC against one attack
+• You can gain advantage on Str based melee attacks by granting advantage to attacks against you for the round
+• You gain advantage on Dex saves vs things you can see
+• Actor: You gain advantage on deception and performance checks to impersonate someone else, you can imitate the sounds or speech of another creature, and you gain +1 Cha
+⊠Light Armor
+Shields
+Medium Armor
+Shields
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+Simple Weapons, Martial Weapons
+Martial Weapons
+⊠Disguise kit
+One type of musical instrument
+Any three musical instruments
+⊠Common
+Draconic
+⊠leather armor
+longsword
+dagger
+entertainer's pack
+any musical instrument
+one musical instrument of your choice
+a favor from an admirer
+costume
+belt pouch
+⊠⊠Bard 4, Barbarian 2⊠Dragonborn⊠Entertainer⊠⊠⊠⊠⊠⊠Rupert⊠Bard 4, Barbarian 2⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>2⊠4⊠8⊠4⊠2⊠12⊠2</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>9</currentHealth>
+    <maxHealth>9</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>35</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Bard⊡⊡1⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Inspiration⊡⊡3⊡3⊡6⊡2⊡0⊡0⊡303⊡0⊟⊟⊟⊟⊟Half-Elf⊟Half-Elf Variant⊟Noble⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Unarmed strike⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠1⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>8⊠14⊠12⊠15⊠10⊠17⊠false⊠true⊠false⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠1⊠false⊠0⊟Minor Illusion⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Vicious Mockery⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Silent Image⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Speak With Animals⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Unseen Servant⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Feather Fall⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Half-Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+Noble Feature:
+• You can secure an audience with a local noble
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+⊠Light Armor
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠One type of gaming set
+Any three musical instruments
+⊠Common
+Elvish
+Extra Language
+One Extra Language
+⊠leather armor
+unarmed strike
+dagger
+diplomat's pouch
+any musical instrument
+set of fine clothes
+signet ring
+scroll of pedigree
+purse
+⊠⊠Bard 1⊠Variant⊠Noble⊠⊠⊠⊠⊠⊠Simon Dale⊠Bard 1⊠0⊠0⊠0⊠25⊠0⊠0</noteList>
+    <hitDiceList>1⊠1⊠8⊠1</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>49</currentHealth>
+    <maxHealth>49</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>16</armorBonus>
+    <shieldBonus>2</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>0</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Fighter⊡Champion⊡5⊡-1⊟⊠Extra Attack⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Action Surge⊡Act. Surge⊡1⊡1⊡0⊡2⊡0⊡0⊡303⊡0⊟⊠Grappler⊟fighting style⊡Great Weapon Fighting⊟⊟⊟Halfling⊟Stout Halfling⊟Folk Hero⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟3</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Greatsword⊠5 feet⊠1202⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠2⊠6⊠Crossbow, light⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8</weaponList>
+    <abilityScores>14⊠10⊠16⊠12⊠10⊠13⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Halfling Features:
+• Can reroll a natural 1
+• Advantage on saves vs frightened
+• Can move through larger creatures' spaces
+• Advantage on saves vs poison, poison damage resistance
+Folk Hero Feature:
+• Commoners are willing to shelter you from some troubles
+Fighter Features:
+• Fighting Style - Great Weapon Fighting: Reroll 1's and 2's on two-handed melee weapon damage dice
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Take an extra action once between rests
+• Fighter Archetype: Champion
+• Crit on 19
+• Grappler: You can restrain a grappled foe as an action, you gain advantage on attacks vs foe you grapple, and you can grapple creatures one size larger
+• You can make two attacks on your turn
+⊠Light Armor, Medium Armor, Heavy Armor, Shields
+⊠Simple Weapons, Martial Weapons
+⊠One type of artisan's tools
+Vehicles (land)
+⊠Common
+Halfling
+⊠chain mail
+shield
+greatsword
+light crossbow
+bolts (20)
+dungeoneer's pack
+set of artisan's tools
+shovel
+iron pot
+set of common clothes
+belt pouch
+⊠⊠Fighter 5⊠Stout Halfling⊠Folk Hero⊠⊠⊠⊠⊠⊠Skip⊠Fighter 5⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠5⊠10⊠5</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>39</currentHealth>
+    <maxHealth>39</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>10</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>3</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>3</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>25</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Rogue⊡Thief⊡6⊡-1⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Sneak Attack⊡Sneak Atk⊡3⊡3⊡6⊡2⊡0⊡0⊡303⊡0⊟⊠Skilled⊟expertise⊡Persuasion⊡Deception⊡Stealth⊡Insight⊟⊟⊟Dwarf⊟Hill Dwarf⊟Faction Agent⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟1⊟1⊟1⊟0</classData>
+    <multiclassFeatures/>
+    <weaponList>3⊠Rapier⊠5 feet⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Shortbow⊠80/320⊠2201⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Dagger⊠20/60⊠1101⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>15⊠12⊠10⊠13⊠11⊠14⊠false⊠true⊠false⊠true⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠true⊠true⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠true⊠false⊠true⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠-1⊠0⊠false⊠⊟</spellList>
+    <noteList>Dwarf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Advantage on saves vs poison, poison damage resistance
+• Double proficiency bonus to History checks concerning stonework (even if not proficient)
+• Battleaxe, handaxe, throwing hammer, warhammer proficiency
+• Gain 1 extra hit point per level
+Faction Agent Feature:
+• Your faction has secret agents you can contact for information or support
+Rogue Features:
+• Double proficiency with chosen skills
+• Sneak Attack (3d6)
+• Understand a secret language
+• Double proficiency with chosen skills (Deception,Persuasion)
+• You can dash, disengage, or hide as a bonus action
+• Rogue Archetype: Thief
+• You can use an object, use thieves' tools, or sleight of hand as a Cunning Action
+• You can climb at full speed and jump Dex mod feet further
+• Skilled: You gain three skill or tool proficiencies
+• You can use a reaction to take half damage when hit by a foe that you see
+• Double proficiency with chosen skills (Insight,Stealth)
+⊠Light Armor
+⊠Battleaxe
+Handaxe
+Throwing Hammer
+Warhammer
+Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠Smith's Tools OR Brewer's Supplies OR Mason's Tools
+Thieves' Tools
+⊠Common
+Dwarvish
+Two Extra Languages
+Thieves' Cant
+⊠rapier
+shortbow
+dagger (2)
+arrows (20)
+burglar's pack
+thieves' tools
+Emblem or badge
+faction book
+set of common clothes
+pouch
+⊠⊠Rogue 6⊠Hill Dwarf⊠Faction Agent⊠⊠⊠⊠⊠⊠Tobish⊠Rogue 6⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>1⊠6⊠8⊠6</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>23</currentHealth>
+    <maxHealth>23</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-1</raceCode>
+    <subraceCode>-1</subraceCode>
+    <backgroundCode>-1</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Bard⊡College of Lore⊡4⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡-1⊡0⊠Inspiration⊡⊡3⊡3⊡6⊡2⊡0⊡0⊡303⊡0⊟⊠Spell Sniper⊟expertise⊡Performance⊡History⊟⊟⊟Half-Elf⊟Half-Elf Variant⊟Cloistered Scholar⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟1</classData>
+    <multiclassFeatures/>
+    <weaponList>2⊠Club⊠5 feet⊠1100⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Dagger⊠20/60⊠1101⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>9⊠13⊠11⊠15⊠12⊠16⊠false⊠true⊠false⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠true⊠false⊠true⊠true⊠true⊠false⊠true⊠false⊠true⊠false⊠true⊠false⊠true⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡4⊡3⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠4⊠false⊠⊟</spellList>
+    <noteList>Half-Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+• Two extra skill proficiencies of your choosing
+Cloistered Scholar Feature:
+• You have information about your cloister and you can use its library. Other libraries are also more likely to admit you.
+Bard Features:
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+• Gain half your proficiency bonus on ability checks you aren't proficient in
+• You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest
+• Double proficiency with chosen skills (History,Performance)
+• Bard Archetype: Lore
+• You are proficient in three additional skills
+• You can spend a use of Bardic Inspiration as a reaction to give a creature within 60 feet a penalty on an attack roll, damage roll, or ability check
+• Spell Sniper: Your spells ignore ½ and ¾ cover, your ranged attack roll spells have doubled range, and you gain one attack roll cantrip (see rules)
+⊠Light Armor
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+⊠Any three musical instruments
+⊠Common
+Elvish
+Extra Language
+Two Extra Languages
+⊠leather armor
+club
+dagger
+entertainer's pack
+any musical instrument
+scholar's robes
+writing kit
+research book (borrowed)
+pouch
+⊠⊠Bard 4⊠Variant⊠Cloistered Scholar⊠⊠⊠⊠⊠⊠Tom⊠Bard 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠4⊠8⊠4</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>83</currentHealth>
+    <maxHealth>83</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>5</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>5</castingStatCode>
+    <offenseAbilityDisplay>1</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>10</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>3</raceCode>
+    <subraceCode>1</subraceCode>
+    <backgroundCode>7</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode>19,35,41,24</featCode>
+    <multiclassFeatures>10,5,0,6,0,1,16,1,2,10,16,5,1,0,1,0,2</multiclassFeatures>
+    <weaponList>2⊠Rapier⊠5 feet⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Dagger⊠20/60⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4</weaponList>
+    <abilityScores>11⊠16⊠10⊠10⊠8⊠15⊠false⊠true⊠false⊠false⊠false⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠true⊠true⊠false⊠true⊠false⊠true⊠false⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>0⊠4⊠3⊠3⊠3⊠2⊠0⊠0⊠0⊠0⊠true⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠10⊠false</spellList>
+    <noteList>Human Features:
+• One extra skill proficiency of your choosing
+• One bonus feat of your choosing
+Entertainer Feature:
+• Your performances tend to make people like you, and you can always find somewhere to perform
+Class Features:
+• Inspire an ally within 60 feet, giving them a bonus 1d6 on one ability check, attack roll, or save (Cha mod per day)
+• Lucky: You can reroll a d20 roll you make or an attack against you 3/day
+• Heal 1d10 + level hit points as a bonus action (once between rests)
+• Fighting Style - Dueling: +2 damage when using a single one-handed weapon
+• Gain half your proficiency bonus on ability checks you aren't proficient in
+• Song of Rest: You can perform during a short rest to cause any ally or yourself to gain an additional 1d6 hp (once) if healed during the rest
+• Bard Archetype: Lore
+• You are proficient in three additional skills
+• You can spend a use of Bardic Inspiration as a reaction to give a creature within 60 feet a penalty on an attack roll, damage roll, or ability check
+Double proficiency with chosen skills (Acrobatics, Sleight of Hand, Insight, Performance)
+• Take an extra action once between rests
+• Fighter Archetype: Champion
+• Crit on 19
+• Skilled: You gain three skill or tool proficiencies
+• Inspiration improves to d8
+• Regain Bardic Inspiration with short rest
+• You can perform as an action to give yourself and allies who can hear you advantage on saves vs charm and frightened for one round
+• You can learn two more spells from any class
+• Weapon Master: You gain four weapon proficiencies and +1 to either Str or Dex
+• Mobile: You gain +10 to speed, ignore difficult terrain when you dash, and you don't provoke from creatures you've attacked that turn
+• Rest healing bonus improves to 1d8
+• Inspiration improves to d10
+• Two additional double proficient skills
+• You can learn two spells from any class
+• You can make two attacks on your turn
+⊠Light Armor
+Medium Armor
+Shields
+⊠Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords
+Martial Weapons
+Any four weapons
+⊠Any three musical instruments
+Disguise kit
+One type of musical instrument
+⊠Common
+Extra Language
+⊠rapier OR longsword OR simple weapon
+dagger
+leather armor
+diplomat's pouch OR entertainer's pouch
+lute OR any musical instrument
+one musical instrument of your choice
+a favor from an admirer
+costume
+belt pouch
+⊠⊠Bard 10, Fighter 5⊠Human⊠Entertainer⊠⊠⊠⊠⊠⊠William Of Waterdeep⊠Bard 10, Fighter 5⊠0⊠0⊠0⊠15⊠0⊠0</noteList>
+    <hitDiceList>2⊠10⊠8⊠10⊠5⊠10⊠5</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠2⊠3⊠4⊠5⊠2⊠2⊠⊠2⊠10⊠5⊠1⊠⊠1⊠0</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>87</currentHealth>
+    <maxHealth>87</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>14</armorBonus>
+    <shieldBonus>2</shieldBonus>
+    <miscArmorBonus>1</miscArmorBonus>
+    <maxDex>2</maxDex>
+    <proficiencyBonus>4</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>4</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>30</baseSpeed>
+    <speedMiscMod>10</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>4</raceCode>
+    <subraceCode>0</subraceCode>
+    <backgroundCode>5</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode>6,8</featCode>
+    <multiclassFeatures>8,0,0,0,0,4,7,4,0,0</multiclassFeatures>
+    <weaponList>3⊠Light Crossbow⊠80/320⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8⊠Scimitar⊠5 feet⊠2⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠6⊠Rapier⊠5 feet⊠1⊠1⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8</weaponList>
+    <abilityScores>12⊠14⊠14⊠12⊠15⊠11⊠false⊠false⊠false⊠false⊠true⊠true⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>true⊠false⊠false⊠false⊠true⊠true⊠false⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>0⊠4⊠3⊠3⊠2⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠true⊠true⊠true⊠false⊠false⊠false⊠false⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠8⊠false⊠1⊠Command⊠⊠⊠⊠⊠⊠true⊠0⊠1⊠Identify⊠⊠⊠⊠⊠⊠true⊠0⊠2⊠Augury⊠⊠⊠⊠⊠⊠true⊠0⊠2⊠Suggestion⊠⊠⊠⊠⊠⊠true⊠0⊠3⊠Nondetection⊠⊠⊠⊠⊠⊠true⊠0⊠3⊠Speak with Dead⊠⊠⊠⊠⊠⊠true⊠0⊠4⊠Arcane Eye⊠⊠⊠⊠⊠⊠true⊠0⊠4⊠Confusion⊠⊠⊠⊠⊠⊠true⊠0</spellList>
+    <noteList>Dragonborn Features:
+• Bronze Dragon
+• You can breathe a 30 ft line of Lightning(once between rests), dealing 4d6 Lightning damage, Dex save for half damage (DC 14). DC = 8 + Con mod + prof
+• You resist Lightning damage
+Soldier Feature:
+• You have influence within your former army/organization
+Class Features:
+• Cleric Archetype: Knowledge
+• Two extra languages, two knowledge skills with double proficiency bonus
+• Turn Undead (see rules)
+• Knowledge of the Ages (see rules)
+• Dual Wielder: You can draw/stow two weapons per round, you can dual wield non-light weapons, and you gain +1 AC while dual wielding
+• When unarmed or using monk weapons, can use dex for attack and damage rolls, unarmed strikes deal more damage (d4), and can make an unarmed attack as a bonus action after normal attack action
+• You gain a reservoir of energy (ki points = monk level) which is restored during a rest
+• You can use a bonus action and spend 1 ki point to make two unarmed strikes right after using the attack action
+• You can use a bonus action and spend 1 ki point to Dodge
+• You can use a bonus action and spend 1 ki point to Dash or Disengage and double the distance you can jump
+• When you are not in armor or using a shield your speed improves by 10 feet
+• When you are hit by a ranged weapon attack you can use a reaction to reduce the damage by 1d10 + Dex mod + Monk level, and you can catch and throw the weapon if you would take 0 damage (see rules)
+• Monk Archetype: Light
+• You can make a spell attack with 30ft range and radiant damage equal to your unarmed strike. When you use this attack you can expend a ki point and bonus action to repeat the attack twice
+• Kill CR ½ undead that fail save vs turning
+• Additional divinity per rest
+• Read Thoughts (see rules)
+• CR 1 undead can now be killed
+• Cleric cantrips deal Wis mod extra damage
+• Durable: You always regain at least 2x Con mod from a hit die and you gain +1 Con
+• You can use a reaction to reduce fall damage by 5 x Monk level
+⊠Light Armor, Medium Armor, Shields
+⊠Simple Weapons
+Shortswords
+⊠One type of gaming set
+Vehicles (land)
+⊠Common
+Draconic
+Two Extra Languages
+⊠mace
+shield
+holy symbol
+light crossbow + 20 bolts OR one simple weapon
+priest's pack OR explorer's pack
+rank insignia
+trophy
+set of bone dice OR deck of cards
+set of common clothes
+belt pouch
+scale mail
+⊠⊠Cleric 8, Monk 4⊠Dragonborn⊠Soldier⊠⊠⊠⊠⊠⊠Zarkanan Rangoth⊠Cleric 8, Monk 4⊠0⊠0⊠0⊠10⊠0⊠0</noteList>
+    <hitDiceList>1⊠12⊠8⊠12</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠3⊠3⊠4⊠5⊠3⊠2⊠⊠1⊠0⊠8⊠4⊠⊠4⊠0</classResource>
+  </character>
+  <character>
+    <version>1</version>
+    <initMiscMod>0</initMiscMod>
+    <improvedInitiative>0</improvedInitiative>
+    <currentHealth>8</currentHealth>
+    <maxHealth>8</maxHealth>
+    <currentTempHP>0</currentTempHP>
+    <armorBonus>11</armorBonus>
+    <shieldBonus>0</shieldBonus>
+    <miscArmorBonus>0</miscArmorBonus>
+    <maxDex>10</maxDex>
+    <proficiencyBonus>2</proficiencyBonus>
+    <miscSpellAttackBonus>0</miscSpellAttackBonus>
+    <miscSpellDCBonus>0</miscSpellDCBonus>
+    <castingStatCode>4</castingStatCode>
+    <offenseAbilityDisplay>0</offenseAbilityDisplay>
+    <deathSaveSuccesses>0</deathSaveSuccesses>
+    <deathSaveFailures>0</deathSaveFailures>
+    <showDeathSaves>true</showDeathSaves>
+    <baseSpeed>35</baseSpeed>
+    <speedMiscMod>0</speedMiscMod>
+    <movementMode>Speed</movementMode>
+    <raceCode>-543</raceCode>
+    <subraceCode>2</subraceCode>
+    <backgroundCode>3</backgroundCode>
+    <pagePosition0>1</pagePosition0>
+    <pagePosition1>2</pagePosition1>
+    <pagePosition2>3</pagePosition2>
+    <pagePosition3>4</pagePosition3>
+    <pagePosition4>5</pagePosition4>
+    <unarmoredDefense>0</unarmoredDefense>
+    <featCode/>
+    <classData>Druid⊡⊡1⊡0⊟⊟Resource⊡Resource⊡0⊡0⊡0⊡2⊡0⊡0⊡303⊡0⊟⊟⊟⊟⊟Half-Elf⊟⊟Entertainer⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠⊟20⊠20⊠20⊠20⊠20⊠20⊠⊟0⊟2⊟0⊟1⊟1⊟0</classData>
+    <multiclassFeatures>1,6,-1,0,0</multiclassFeatures>
+    <weaponList>2⊠Dagger⊠20/60⊠1⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠4⊠Quarterstaff (2h)⊠5 feet⊠0⊠0⊠0⊠0⊠0⊠0⊠true⊠true⊠1⊠1⊠8</weaponList>
+    <abilityScores>8⊠9⊠10⊠14⊠9⊠14⊠false⊠false⊠false⊠true⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0</abilityScores>
+    <skillInfo>false⊠false⊠false⊠false⊠true⊠true⊠false⊠true⊠false⊠true⊠false⊠false⊠true⊠false⊠false⊠false⊠false⊠true⊠false⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠0⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false⊠false</skillInfo>
+    <spellList>v1.1⊠0⊡2⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠true⊡true⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡false⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡0⊡⊠0⊠1⊠false⊠0⊟Druid Craft⊟⊟⊟⊟⊟⊟true⊟0⊡0⊟Thorn Whip⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Faerie Fire⊟⊟⊟⊟⊟⊟true⊟0⊡1⊟Jump⊟⊟⊟⊟⊟⊟true⊟0⊡</spellList>
+    <noteList>Half-Elf Features:
+• Within 60 feet of you, treat dim light as bright, darkness as dim light
+• Immune to magical sleep, advantage on saves vs charmed
+Noble Feature:
+• You can secure an audience with a local noble
+Class Features:
+• Understand a secret druid language
+⊠Light Armor, Medium Armor, Shields
+⊠Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears
+⊠Herbalism Kit
+One type of gaming set
+⊠Common
+Elvish
+Extra Language
+Druidic
+One Extra Language
+⊠wooden shield OR simple weapon
+scimitar OR simple melee weapon
+leather armor
+explorer's pack
+druidic focus
+set of fine clothes
+signet ring
+scroll of pedigree
+purse
+⊠⊠Druid 1⊠Half-Elf⊠Noble⊠⊠⊠⊠⊠⊠Zathustra Dale⊠Druid 1⊠0⊠0⊠0⊠25⊠0⊠0</noteList>
+    <hitDiceList>1⊠1⊠8⊠1</hitDiceList>
+    <classResource>-1⊠-1⊠-1⊠-1⊠-1⊠-1⊠1⊠2⊠1000⊠3⊠4⊠5</classResource>
+  </character>
+</characters>
