@@ -1,15 +1,40 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+        <style>
+            html, body, pre, code, kbd, samp {
+                font-family: "Press Start 2P";
+            }
+        </style>
         <title>Canvas POC</title>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="shapes.js"></script>
         <script type="text/javascript" src="canvas.js"></script>
+        <script type="text/javascript">
+            window.canvas = new Canvas('tiles','tileNameHere',window.sampleData);
+        </script>
     </head>
-    <body onload="loadCanvas('tileNameHere')">
-        <svg width="100%" height="100%" viewBox="-5 0 170 140">
-            <defs>
-                <pattern id="tileNameHere" patternUnits="userSpaceOnUse" width="160" height="140">
-                </pattern>
-            </defs>
-            <polygon points="0,70 40,0 120,0 160,70 120,140 40,140" fill="url(#tileNameHere)" stroke="black" stroke-width="3"></polygon>
-        </svg>
+    <body onload="canvas.load()">
+        <header><p></p></header>
+        <div class="container">
+            <div class="showcase">
+                <div class="nes-container">
+                    <select id="tiles" class="nes-input" onchange="canvas.update()">
+
+                    </select>
+                    <svg width="100%" height="100%" viewBox="-0.5 0 17 14">
+                        <defs>
+                            <pattern id="tileNameHere" width="16" height="14">
+                            </pattern>
+                        </defs>
+                        <polygon points="0,7 4,0 12,0 16,7 12,14 4,14" fill="url(#tileNameHere)" stroke="black" stroke-width="0.3"></polygon>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <footer><p></p></footer>
     </body>
 </html>
