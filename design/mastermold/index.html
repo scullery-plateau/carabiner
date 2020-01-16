@@ -53,27 +53,41 @@
 </header>
 <p></p>
 <div class="container-fluid">
-    <div class="d-flex">
-        <div class="showcase" id="ctrl">
-            <div class="nes-container d-flex flex-column">
-                <input type="file" id="fileInput" class="nes-input" multiple/>
-                <button class="nes-btn" onclick="mm.addImage()">Add Image</button>
-                <table id="imageList">
-                    <!-- list of images here -->
-                </table>
-            </div>
-        </div>
-        <div class="showcase flex-grow-1">
-            <div class="nes-container d-flex flex-column">
-                <button class="nes-btn" onclick="print()">Print</button>
-                <p></p>
-                <div id="canvas">
-                    <!-- pages of minis here -->
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="showcase" id="ctrl">
+                    <div class="nes-container d-flex">
+                        <input type="file" id="fileInput" class="nes-input" multiple/>
+                        <button class="nes-btn" onclick="mm.addImage()">Add Image</button>
+                    </div>
                 </div>
-                <p></p>
-            </div>
-        </div>
-    </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="showcase" id="ctrl">
+                    <div class="nes-container">
+                        <table id="imageList">
+                            <!-- list of images here -->
+                        </table>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="showcase h-100">
+                    <div class="nes-container h-100">
+                        <button class="nes-btn" onclick="print()">Print</button>
+                        <p></p>
+                        <div id="canvas" class="h-100">
+                            <!-- pages of minis here -->
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>
 <footer>
     <div class="jumbotron text-center" style="margin-bottom:0">
