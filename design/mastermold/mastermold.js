@@ -1,4 +1,5 @@
 (function () {
+    let scale=7;
     let populateUI = function(ui,ids) {
         ids.forEach((id) => {
             ui[id] = document.getElementById(id);
@@ -8,35 +9,35 @@
         return `<tr><td>${img.filename}</td><td><input type="number" min="1" value="1" onchange="mm.updateCount(this,'${img.filename}')"/></td><td><button class="nes-btn is-error" onclick="mm.removeImage('${img.filename}')">X</button></td></tr>`;
     };
     let frameRect = {
-      small:[25,[0,325]],
-      large:[150,[25,175]],
-      steps:[350,100]
+      small:[5,[0,65]],
+      large:[30,[5,35]],
+      steps:[70,20]
     }
     let drawRect = function(x,y,w,h) {
-      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="white" stroke="black" stroke-width="2"></rect>`;
+      return `<rect x="${scale*x}" y="${scale*y}" width="${scale*w}" height="${scale*h}" fill="white" stroke="black" stroke-width="2"></rect>`;
     };
     let drawFrame = function() {
       return "?".repeat(20).split("").map((c,i) => {
-        let x = (i % 2) * frameRect.steps[0];
-        let y = Math.floor(i / 2) * frameRect.steps[1];
+        let x = Math.floor(i / 10) * frameRect.steps[0];
+        let y = (i % 10) * frameRect.steps[1];
         let out = [];
         ["small","large"].forEach((spec) => {
           let width = frameRect[spec][0];
           frameRect[spec][1].forEach((xOff) => {
-            out.push(drawRect(x + xOff,y,width,100));
+            out.push(drawRect(x + xOff,y,width,20));
           });
         });
-        return out;
+        return out.join("");
       });
     };
     let drawImg = function(url,i) {
       let x = (i % 2) * frameRect.steps[0];
       let y = Math.floor(i / 2) * frameRect.steps[1];
-      return `<image href="${url}" x="${x + 55}" y="${y - 20}" width="90" height="140" transform="rotate(90 ${x + 100} ${y + 50})"></image>
-      <image href="${url}" x="${x + 205}" y="${y - 20}" width="90" height="140"  transform="rotate(-90 ${x + 250} ${y + 50})"></image>`;
+      return `<image href="${url}" x="${scale * (x + 11)}" y="${scale * (y - 4)}" width="${scale * 18}" height="${scale * 28}" transform="rotate(90 ${scale * (x + 20)} ${scale * (y + 10)})"></image>
+      <image href="${url}" x="${scale * (x + 41)}" y="${scale * (y - 4)}" width="${scale * 18}" height="${scale * 28}"  transform="rotate(-90 ${scale * (x + 50)} ${scale * (y + 10)})"></image>`;
     };
-    let drawPage = function(page) {
-        return `<div class="page"><svg width="7.5in" height="10in" viewBox="0 0 700 1000">
+    let drawPage = function(page,i) {
+        return `<div class="${i==0?'firstPage':'page'}"><svg width="7in" height="10in" viewBox="0 0 ${scale * 2 * 70} ${scale * 10 * 20}">
 ${drawFrame()}
 ${page.urls.map(drawImg).join("\n")}
 </svg></div>`
@@ -89,7 +90,7 @@ ${page.urls.map(drawImg).join("\n")}
                     urls:urls.splice(0,20)
                 })
             }
-            ui[canvasId].innerHTML = pages.map(drawPage).join("/n");
+            ui[canvasId].innerHTML = pages.map(drawPage).join("");
         };
         this.init = function() {
             populateUI(ui,[fileId,listId,canvasId]);
