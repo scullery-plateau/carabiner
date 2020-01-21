@@ -1,5 +1,6 @@
 (ns carabiner.outfitter.shapes-test
   (:require [clojure.test :refer :all]
+            [carabiner.common.hiccup :as h]
             [carabiner.common.xml :as x]
             [clojure.string :as str]
             [clojure.pprint :as pp])
