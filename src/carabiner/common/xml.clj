@@ -1,6 +1,23 @@
 (ns carabiner.common.xml
   (:require [clojure.string :as str]
-            [clojure.xml :as xml]))
+            [clojure.xml :as xml]
+            [clojure.zip :as zip])
+  (:import (java.io ByteArrayInputStream)))
+
+(defn compress [{:keys [tag attrs content]}]
+  (let [content (or content [])
+        content (map compress content)
+        content (if attrs (cons attrs content) content)]
+    (into [tag] content)))
+
+(defn from-xml [xml-str]
+  (-> xml-str
+      (.getBytes)
+      (ByteArrayInputStream.)
+      (xml/parse)
+      (zip/xml-zip)
+      (first)
+      (compress)))
 
 (defn expand [[tag & content]]
   (let [content (if (nil? content) [] content)
