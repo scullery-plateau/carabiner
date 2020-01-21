@@ -6,24 +6,23 @@
             [clojure.pprint :as pp])
   (:import (java.io File)))
 
-(defn wrap [id content]
-  (into [:div {:id id}] content))
+(defn wrap-svg [^File file]
+  (let [id (first (str/split (.getName file) #"\."))]
+    [:div {:id id :alt id :title id}
+     (x/from-xml (slurp file))]))
 
-(defn build-tree-recurse [file path]
-  (wrap (str/join "/" path)
-    (if (.isDirectory file)
-      (map
-        #(build-tree-recurse % (conj path (.getName %)))
-        (.listFiles file))
-      (let [xml-str (slurp file)]
-        (println path)
-        (vector (x/from-xml xml-str))))))
+(defn build-tree-recurse [^File file ^String dir-name]
+  (let [convo #_(with-out-str (pp/pprint %)) h/to-html
+        children (.listFiles file)]
+    (if (.equals dir-name (.getName file))
+      (spit (File. (.getParentFile file) "compiled.html")
+            (convo
+              [:html
+               [:head [:title "Gallery"]]
+               (into [:body] (map wrap-svg children))]))
+      (doseq [child children]
+        (build-tree-recurse child dir-name)))))
 
 (deftest compile-shapes
-  (let [convo #_(with-out-str (pp/pprint %)) h/to-html
-        root (File. "design/outfitter/items")
-        html [:html
-              [:head [:title "Gallery"]]
-              [:body (build-tree-recurse root [])]]]
-    (spit "design/outfitter/compiled.html"
-          (convo html))))
+  (let [root (File. "design/outfitter/items/common")]
+    (build-tree-recurse root "shapes")))
