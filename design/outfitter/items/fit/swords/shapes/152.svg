@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="46.1px" width="118.9px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 87.5, -63.65)">
+    <path d="M-47.3 72.75 L31.4 101.4 Q21.15 114.5 1.9 107.0 L-53.15 88.85 -47.3 72.75" fill="url(#gradient0)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-82.75 65.0 L-78.15 66.75 -80.15 72.2 -84.75 70.5 -82.75 65.0" fill="url(#gradient1)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-78.15 66.75 Q-68.05 68.75 -52.75 74.6 L-55.6 82.5 Q-71.1 77.1 -80.15 72.2 L-78.15 66.75" fill="url(#gradient2)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-53.15 88.85 Q-56.0 96.75 -63.7 94.55 L-68.95 92.65 Q-91.6 85.0 -86.35 70.35 L-85.55 68.2 -84.8 66.15 -83.95 63.75 Q-82.95 63.35 -82.45 64.25 L-82.75 65.0 -84.75 70.5 Q-89.65 83.45 -68.45 91.2 L-63.3 93.05 Q-57.2 94.7 -54.7 88.5 L-52.85 83.5 -50.0 75.65 -48.75 72.2 Q-45.95 64.2 -38.2 66.4 L-32.95 68.35 Q-32.45 69.3 -33.5 69.8 L-38.6 67.9 Q-44.85 66.2 -47.3 72.75 L-53.15 88.85" fill="url(#gradient3)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-52.75 74.6 L-50.0 75.65 -52.85 83.5 -55.6 82.5 -52.75 74.6" fill="url(#gradient4)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-85.55 68.2 L-87.35 67.55 -87.4 66.45 Q-87.3 65.85 -86.6 65.45 L-84.8 66.15 -85.55 68.2" fill="url(#gradient5)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-63.7 94.55 L-68.95 92.65 Q-91.6 85.0 -86.35 70.35 L-85.55 68.2 -87.35 67.55 -87.4 66.45 -49.8 79.65 -53.15 88.85 Q-56.0 96.75 -63.7 94.55 M-55.6 82.5 Q-71.1 77.1 -80.15 72.2 L-84.75 70.5 Q-89.65 83.45 -68.45 91.2 L-63.3 93.05 Q-57.2 94.7 -54.7 88.5 L-52.85 83.5 -55.6 82.5" fill="#000000" fill-opacity="0.2" fill-rule="evenodd" stroke="none"/>
+    <path d="M2.25 90.8 L-14.6 101.55 -16.85 100.85 0.1 90.0 2.25 90.8 M-16.85 83.85 L-34.4 95.05 -44.15 91.85 -26.3 80.4 -16.85 83.85 M-10.7 86.1 L-6.4 87.65 -23.55 98.6 -28.0 97.15 -10.7 86.1" fill="#ffffff" fill-opacity="0.5019608" fill-rule="evenodd" stroke="none"/>
+  </g>
+  <defs>
+    <linearGradient gradientTransform="matrix(0.0, 0.0226, -0.0516, 0.0, -10.85, 91.25)" gradientUnits="userSpaceOnUse" id="gradient0" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.2509804"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0, 0.0044, -0.004, 0.0, -81.45, 68.6)" gradientUnits="userSpaceOnUse" id="gradient1" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.2509804"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0, 0.0096, -0.0167, 0.0, -66.45, 74.6)" gradientUnits="userSpaceOnUse" id="gradient2" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.2509804"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0, 0.0192, -0.0333, 0.0, -60.05, 79.35)" gradientUnits="userSpaceOnUse" id="gradient3" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.2509804"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0, 0.0054, -0.0034, 0.0, -52.8, 79.05)" gradientUnits="userSpaceOnUse" id="gradient4" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.2509804"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0, 0.0017, -0.0016, 0.0, -86.15, 66.8)" gradientUnits="userSpaceOnUse" id="gradient5" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.2509804"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+</svg>
