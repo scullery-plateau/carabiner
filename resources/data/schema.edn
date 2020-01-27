@@ -1,150 +1,270 @@
-{:compendium
- {:&auto_indent ["text" false false],
-  :&version ["number" false false],
-  :background [:compendium.background false true],
-  :class [:compendium.class false true],
-  :feat [:compendium.feat false true],
-  :item [:compendium.item false true],
-  :monster [:compendium.monster false true],
-  :race [:compendium.race false true],
-  :spell [:compendium.spell false true]},
- :compendium.background
- {:name ["text" false false],
-  :proficiency ["text" false false],
-  :trait [:compendium.background.trait false true]},
- :compendium.background.trait
- {:name ["text" false false], :text ["number" false true]},
- :compendium.class
- {:armor ["text" true false],
-  :autolevel [:compendium.class.autolevel false true],
-  :hd ["number" false false],
-  :name ["text" false false],
-  :numSkills ["number" false false],
-  :proficiency ["text" false false],
-  :spellAbility ["text" false false],
-  :tools ["text" true false],
-  :wealth ["text" true false],
-  :weapons ["text" true false]},
- :compendium.class.autolevel
- {:&level ["number" false false],
-  :&scoreImprovement ["text" true false],
-  :feature [:compendium.class.autolevel.feature true false],
-  :slots [:compendium.class.autolevel.slots true false]},
- :compendium.class.autolevel.feature
- {:&optional ["text" true false],
-  :modifier [:compendium.class.autolevel.feature.modifier true true],
-  :name ["text" false false],
-  :proficiency ["text" true false],
-  :special ["text" true false],
-  :text ["text" false true]},
- :compendium.class.autolevel.feature.modifier
- {:&category ["text" false false],
-  :carabiner.artificer5e.core/CONTENT ["text" false false]},
- :compendium.class.autolevel.slots
- {:&optional ["text" true false],
-  :carabiner.artificer5e.core/CONTENT ["number" false false]},
- :compendium.feat
- {:modifier [:compendium.feat.modifier true true],
-  :name ["text" false false],
-  :prerequisite ["text" false false],
-  :proficiency ["text" true false],
-  :text ["text" false true]},
- :compendium.feat.modifier
- {:&category ["text" false false],
-  :carabiner.artificer5e.core/CONTENT ["text" false false]},
- :compendium.item
- {:ac ["number" true false],
-  :detail ["text" true false],
-  :dmg1 ["text" true false],
-  :dmg2 ["text" true false],
-  :dmgType ["text" true false],
-  :magic ["number" true false],
-  :modifier [:compendium.item.modifier true true],
-  :name ["text" false false],
-  :property ["text" true false],
-  :range ["number" true false],
-  :roll ["text" true true],
-  :stealth ["text" true false],
-  :strength ["number" true false],
-  :text ["text" false true],
-  :type ["text" false false],
-  :value ["number" true false],
-  :weight ["number" false false]},
- :compendium.item.modifier
- {:&category ["text" false false],
-  :carabiner.artificer5e.core/CONTENT ["text" false false]},
- :compendium.monster
- {:ac ["number" false false],
-  :action [:compendium.monster.action true true],
-  :alignment ["text" false false],
-  :cha ["number" false false],
-  :con ["number" false false],
-  :conditionImmune ["text" false false],
-  :cr ["number" false false],
-  :dex ["number" false false],
-  :environment ["text" true false],
-  :hp ["number" false false],
-  :immune ["text" false false],
-  :int ["number" false false],
-  :languages ["text" false false],
-  :legendary [:compendium.monster.legendary true true],
-  :name ["text" false false],
-  :passive ["number" false false],
-  :reaction [:compendium.monster.reaction true false],
-  :resist ["text" false false],
-  :save ["text" false false],
-  :senses ["text" false false],
-  :size ["text" false false],
-  :skill ["text" false false],
-  :slots ["number" false false],
-  :speed ["number" false false],
-  :spells ["text" false false],
-  :str ["number" false false],
-  :trait [:compendium.monster.trait false true],
-  :type ["text" false false],
-  :vulnerable ["text" false false],
-  :wis ["number" false false]},
- :compendium.monster.action
- {:attack ["text" true true],
-  :name ["text" false false],
-  :text ["text" false true]},
- :compendium.monster.legendary
- {:attack ["text" true true],
-  :name ["text" false false],
-  :text ["text" false true]},
- :compendium.monster.reaction
- {:attack ["text" true false],
-  :name ["text" false false],
-  :text ["text" false true]},
- :compendium.monster.trait
- {:attack ["text" true true],
-  :name ["text" false false],
-  :text ["text" false true]},
- :compendium.race
- {:ability ["text" false false],
-  :modifier [:compendium.race.modifier true false],
-  :name ["text" false false],
-  :proficiency ["text" false false],
-  :size ["text" false false],
-  :speed ["number" false false],
-  :spellAbility ["text" false false],
-  :trait [:compendium.race.trait false true]},
- :compendium.race.modifier
- {:&category ["text" false false],
-  :carabiner.artificer5e.core/CONTENT ["text" false false]},
- :compendium.race.trait
- {:name ["text" false false],
-  :special ["text" true false],
-  :text ["text" false true]},
- :compendium.spell
- {:classes ["text" false false],
-  :components ["text" false false],
-  :duration ["number" false false],
-  :level ["number" false false],
-  :name ["text" false false],
-  :range ["number" false false],
-  :ritual ["text" false false],
-  :roll ["text" true true],
-  :school ["text" true false],
-  :text ["text" false true],
-  :time ["number" false false]}}
+{:schema
+ {:compendium
+  {:&auto_indent ["text" false false],
+   :&version ["number" false false],
+   :background [:compendium.background false true],
+   :class [:compendium.class false true],
+   :feat [:compendium.feat false true],
+   :item [:compendium.item false true],
+   :monster [:compendium.monster false true],
+   :race [:compendium.race false true],
+   :spell [:compendium.spell false true]},
+  :compendium.background
+  {:name ["text" false false],
+   :proficiency ["text" false false],
+   :trait [:compendium.background.trait false true]},
+  :compendium.background.trait
+  {:name ["text" false false], :text ["number" false true]},
+  :compendium.class
+  {:armor ["text" true false],
+   :autolevel [:compendium.class.autolevel false true],
+   :hd ["number" false false],
+   :name ["text" false false],
+   :numSkills ["number" false false],
+   :proficiency ["text" false false],
+   :spellAbility ["text" false false],
+   :tools ["text" true false],
+   :wealth ["text" true false],
+   :weapons ["text" true false]},
+  :compendium.class.autolevel
+  {:&level ["number" false false],
+   :&scoreImprovement ["text" true false],
+   :feature [:compendium.class.autolevel.feature true false],
+   :slots [:compendium.class.autolevel.slots true false]},
+  :compendium.class.autolevel.feature
+  {:&optional ["text" true false],
+   :modifier [:compendium.class.autolevel.feature.modifier true true],
+   :name ["text" false false],
+   :proficiency ["text" true false],
+   :special ["text" true false],
+   :text ["text" false true]},
+  :compendium.class.autolevel.feature.modifier
+  {:&category ["text" false false],
+   :carabiner.artificer5e.core/CONTENT ["text" false false]},
+  :compendium.class.autolevel.slots
+  {:&optional ["text" true false],
+   :carabiner.artificer5e.core/CONTENT ["number" false false]},
+  :compendium.feat
+  {:modifier [:compendium.feat.modifier true true],
+   :name ["text" false false],
+   :prerequisite ["text" false false],
+   :proficiency ["text" true false],
+   :text ["text" false true]},
+  :compendium.feat.modifier
+  {:&category ["text" false false],
+   :carabiner.artificer5e.core/CONTENT ["text" false false]},
+  :compendium.item
+  {:ac ["number" true false],
+   :detail ["text" true false],
+   :dmg1 ["text" true false],
+   :dmg2 ["text" true false],
+   :dmgType ["text" true false],
+   :magic ["number" true false],
+   :modifier [:compendium.item.modifier true true],
+   :name ["text" false false],
+   :property ["text" true false],
+   :range ["number" true false],
+   :roll ["text" true true],
+   :stealth ["text" true false],
+   :strength ["number" true false],
+   :text ["text" false true],
+   :type ["text" false false],
+   :value ["number" true false],
+   :weight ["number" false false]},
+  :compendium.item.modifier
+  {:&category ["text" false false],
+   :carabiner.artificer5e.core/CONTENT ["text" false false]},
+  :compendium.monster
+  {:ac ["number" false false],
+   :action [:compendium.monster.action true true],
+   :alignment ["text" false false],
+   :cha ["number" false false],
+   :con ["number" false false],
+   :conditionImmune ["text" false false],
+   :cr ["number" false false],
+   :dex ["number" false false],
+   :environment ["text" true false],
+   :hp ["number" false false],
+   :immune ["text" false false],
+   :int ["number" false false],
+   :languages ["text" false false],
+   :legendary [:compendium.monster.legendary true true],
+   :name ["text" false false],
+   :passive ["number" false false],
+   :reaction [:compendium.monster.reaction true false],
+   :resist ["text" false false],
+   :save ["text" false false],
+   :senses ["text" false false],
+   :size ["text" false false],
+   :skill ["text" false false],
+   :slots ["number" false false],
+   :speed ["number" false false],
+   :spells ["text" false false],
+   :str ["number" false false],
+   :trait [:compendium.monster.trait false true],
+   :type ["text" false false],
+   :vulnerable ["text" false false],
+   :wis ["number" false false]},
+  :compendium.monster.action
+  {:attack ["text" true true],
+   :name ["text" false false],
+   :text ["text" false true]},
+  :compendium.monster.legendary
+  {:attack ["text" true true],
+   :name ["text" false false],
+   :text ["text" false true]},
+  :compendium.monster.reaction
+  {:attack ["text" true false],
+   :name ["text" false false],
+   :text ["text" false true]},
+  :compendium.monster.trait
+  {:attack ["text" true true],
+   :name ["text" false false],
+   :text ["text" false true]},
+  :compendium.race
+  {:ability ["text" false false],
+   :modifier [:compendium.race.modifier true false],
+   :name ["text" false false],
+   :proficiency ["text" false false],
+   :size ["text" false false],
+   :speed ["number" false false],
+   :spellAbility ["text" false false],
+   :trait [:compendium.race.trait false true]},
+  :compendium.race.modifier
+  {:&category ["text" false false],
+   :carabiner.artificer5e.core/CONTENT ["text" false false]},
+  :compendium.race.trait
+  {:name ["text" false false],
+   :special ["text" true false],
+   :text ["text" false true]},
+  :compendium.spell
+  {:classes ["text" false false],
+   :components ["text" false false],
+   :duration ["number" false false],
+   :level ["number" false false],
+   :name ["text" false false],
+   :range ["number" false false],
+   :ritual ["text" false false],
+   :roll ["text" true true],
+   :school ["text" true false],
+   :text ["text" false true],
+   :time ["number" false false]}},
+ :enums
+ {:compendium.class.autolevel.&scoreImprovement #{"YES"},
+  :compendium.class.autolevel.feature.modifier.CONTENT
+  #{"Nature+%0" "Persuasion+%0" "ac +3" "constitution +4" "hp +1"
+    "ranged attacks +1" "speed + 10" "speed +10" "strength +4"
+    "survival + prof"},
+  :compendium.spell.school.CONTENT
+  #{"A" "C" "D" "EN" "EV" "I" "N" "T"},
+  :compendium.spell.ritual.CONTENT #{"NO" "YES"},
+  :compendium.class.autolevel.&level
+  #{"1" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "2" "20" "3"
+    "4" "5" "6" "7" "8" "9"},
+  :compendium.item.modifier.&category
+  #{"ability score" "bonus" "skills"},
+  :compendium.&auto_indent #{"NO"},
+  :compendium.race.modifier.&category #{"bonus"},
+  :compendium.class.armor.CONTENT
+  #{"light and medium armors" "light armor"
+    "light armor, medium armor, heavy armor, shields"
+    "light armor, medium armor, shields"
+    "light armor, medium armor, shields (druids will not wear armor or use shields made of metal)"
+    "light armor, shields" "none"},
+  :compendium.item.dmgType.CONTENT #{"B" "P" "S"},
+  :compendium.race.size.CONTENT #{"M" "S"},
+  :compendium.class.autolevel.slots.&optional #{"YES"},
+  :compendium.race.proficiency.CONTENT
+  #{"Athletics" "Intimidation" "Perception" "Perception, Acrobatics"
+    "Perception, Athletics" "Perception, Intimidation"
+    "Perception, Stealth" "Perception, Survival" "Stealth" "Survival"},
+  :compendium.class.weapons.CONTENT
+  #{"clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears"
+    "daggers, darts, slings, quarterstaffs, light crossbows"
+    "simple weapons"
+    "simple weapons, hand crossbows, longswords, rapiers, shortswords"
+    "simple weapons, martial weapons" "simple weapons, shortswords"},
+  :compendium.class.wealth.CONTENT
+  #{"2d4x10" "3d4x10" "4d4x10" "5d4" "5d4x10"},
+  :compendium.item.stealth.CONTENT #{"1" "YES"},
+  :compendium.item.dmg1.CONTENT
+  #{"0" "1" "1d10" "1d12" "1d4" "1d6" "1d8" "2d10" "2d4" "2d6" "2d8"
+    "3d12"},
+  :compendium.class.autolevel.feature.&optional #{"YES"},
+  :compendium.item.strength.CONTENT #{"10" "13" "15"},
+  :compendium.item.type.CONTENT
+  #{"$" "A" "G" "HA" "LA" "M" "MA" "P" "R" "RD" "RG" "S" "SC" "ST" "W"
+    "WD"},
+  :compendium.item.range.CONTENT
+  #{"100/400" "150/600" "20/60" "25/100" "30/120" "30/90" "40/120"
+    "5/15" "50/150" "50/90" "60/120" "60/150" "80/240" "80/320"},
+  :compendium.&version #{"5"},
+  :compendium.class.name.CONTENT
+  #{"Artificer" "Barbarian" "Bard" "Cleric" "Druid" "Fighter" "Monk"
+    "Mystic" "Paladin" "Ranger" "Ranger (Alternate)"
+    "Ranger (No Spells)" "Ranger (Revised)" "Rogue" "Rune Scribe"
+    "Sorcerer" "Warlock" "Wizard"},
+  :compendium.race.modifier.CONTENT #{"hp +1"},
+  :compendium.race.speed.CONTENT #{"25" "30" "35" "40"},
+  :compendium.race.spellAbility.CONTENT
+  #{"Charisma" "Constitution" "Intelligence" "Wisdom"},
+  :compendium.monster.reaction.attack.CONTENT
+  #{"Barbed Tail|5|1d8+3" "Barbed Tail|6|1d10+4"
+    "Reversal of Fortune| |1d6"},
+  :compendium.item.magic.CONTENT #{"1"},
+  :compendium.class.autolevel.feature.modifier.&category
+  #{"ability score" "bonus" "skills"},
+  :compendium.race.trait.special.CONTENT #{"powerful build"},
+  :compendium.monster.vulnerable.CONTENT
+  #{"bludgeoning" "bludgeoning, fire" "cold" "cold, fire" "fire"
+    "piercing from magic weapons wielded by good creatures" "psychic"
+    "radiant" "thunder"},
+  :compendium.class.tools.CONTENT
+  #{"any one type of artisan's tools or any one musical instrument of your choice"
+    "herbalism kit" "none" "thieves' tools"
+    "thieves' tools, two other tools of your choice"
+    "three musical instruments of your choice"},
+  :compendium.class.numSkills.CONTENT #{"2" "3" "4"},
+  :compendium.class.autolevel.feature.proficiency.CONTENT
+  #{"Arcana" "Performance" "Persuasion" "Wisdom"
+    "constitution, intelligence, wisdom, charisma" "nature, survival"
+    "wisdom"},
+  :compendium.item.dmg2.CONTENT #{"1d10" "1d8" "2d6"},
+  :compendium.class.hd.CONTENT #{"10" "12" "6" "8"},
+  :compendium.item.ac.CONTENT
+  #{"11" "12" "13" "14" "15" "16" "17" "18" "19" "2"},
+  :compendium.spell.time.CONTENT
+  #{"1 action" "1 action or 8 hours" "1 bonus action" "1 hour"
+    "1 minute" "1 reaction"
+    "1 reaction, which you take when a humanoid you can see within 60 feet of you dies"
+    "1 reaction, which you take when you take acid, cold, fire, lightning, or thunder damage"
+    "10 minutes" "12 hours" "24 hours" "8 hours" "None"
+    "part of the Attack action to fire a magic arrow"},
+  :compendium.spell.level.CONTENT
+  #{"0" "1" "2" "3" "4" "5" "6" "7" "8" "9"},
+  :compendium.class.autolevel.feature.special.CONTENT
+  #{"fighting style archery" "fighting style defense"
+    "fighting style dueling" "jack of all trades"
+    "unarmored defense constitution" "unarmored defense wisdom"},
+  :compendium.class.proficiency.CONTENT
+  #{"Constitution, Charisma, Arcana, Deception, Insight, Intimidation, Persuasion, Religion"
+    "Constitution, Intelligence, Arcana, Deception, History, Investigation, Medicine, Nature, Religion, Sleight of Hand"
+    "Dexterity, Charisma, Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival"
+    "Dexterity, Intelligence, Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance. Persuasion, Sleight of Hand, Stealth"
+    "Dexterity, Wisdom, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival"
+    "Intelligence, Wisdom, Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, Survival"
+    "Intelligence, Wisdom, Arcana, History, Insight, Investigation, Medicine, Religion"
+    "Intelligence, Wisdom, Arcana, History, Insight, Medicine, Nature, Perception, Religion"
+    "Strength, Constitution, Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, Survival"
+    "Strength, Constitution, Animal Handling, Athletics, Intimidation, Nature, Perception, Survival"
+    "Strength, Desxterity, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival"
+    "Strength, Dexterity, Acrobatics, Athletics, History, Insight, Religion, Stealth"
+    "Strength, Dexterity, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival"
+    "Wisdom, Charisma, Arcana, Deception, History, Intimidation, Investigation, Nature, Religion"
+    "Wisdom, Charisma, Athletics, Insight, Intimidation, Medicine, Persuasion, Religion"
+    "Wisdom, Charisma, History, Insight, Medicine, Persuasion, Religion"},
+  :compendium.class.spellAbility.CONTENT
+  #{"Charisma" "Dexterity" "Intelligence" "Wisdom"},
+  :compendium.feat.modifier.&category
+  #{"ability score" "bonus" "skills"},
+  :compendium.monster.size.CONTENT #{"G" "H" "L" "M" "S" "T"}}}

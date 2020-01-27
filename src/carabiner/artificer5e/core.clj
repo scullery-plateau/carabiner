@@ -25,14 +25,18 @@
     (map? node) (:tag node)
     :else (throw (IllegalArgumentException.))))
 
-(defn attr-schema [attr-map]
+(defn path-to-keyword [path & tags]
+  (keyword (str/join "." (apply conj path (map name tags)))))
+
+(defn attr-schema [path attr-map]
   (if (empty? attr-map)
     {}
     (reduce-kv
-      #(assoc %1
-         (->> %2 (name) (str "&") (keyword))
-         [(parse-primitive %3) false false])
-      {} attr-map)))
+      (fn [{:keys [schema data]} k v]
+        (let [key (->> k (name) (str "&") (keyword))]
+          {:schema (assoc schema key [(parse-primitive v) false false])
+           :data (assoc data (path-to-keyword path key) (sorted-set v))}))
+      {:schema {} :data {}} attr-map)))
 
 (defn get-superior-type [type-a type-b]
   (let [types (remove nil? (set [type-a type-b]))]
@@ -44,34 +48,26 @@
           (= 1 (count keywords)) (first types)
           :else (merge-primitive (filterv string? types)))))))
 
+(defn build-map-merger [exclusive-fn intersect-default merge-fn]
+  (fn [a b]
+    (let [keys-a (keys a)
+          keys-b (keys b)
+          a-not-b (set/difference (set keys-a) (set keys-b))
+          b-not-a (set/difference (set keys-b) (set keys-a))
+          a-and-b (set/intersection (set keys-a) (set keys-b))]
+      (merge
+        (reduce-kv #(assoc %1 %2 (exclusive-fn %3)) {} (select-keys a a-not-b))
+        (reduce-kv #(assoc %1 %2 (exclusive-fn %3)) {} (select-keys b b-not-a))
+        (reduce #(assoc %1 %2 (merge-fn (get a %2 intersect-default) (get b %2 intersect-default))) {} a-and-b)))))
+
 (defn merge-types [[type-a is-a-optional? is-a-multiple?] [type-b is-b-optional? is-b-multiple?]]
   [(get-superior-type type-a type-b)
    (or is-a-optional? is-b-optional?)
    (or is-a-multiple? is-b-multiple?)])
 
-(defn merge-properties [a b]
-  (let [keys-a (keys a)
-        keys-b (keys b)
-        a-not-b (set/difference (set keys-a) (set keys-b))
-        b-not-a (set/difference (set keys-b) (set keys-a))
-        a-and-b (set/intersection (set keys-a) (set keys-b))]
-    (merge
-      (reduce-kv #(assoc %1 %2 (update %3 1 (constantly true))) {} (select-keys a a-not-b))
-      (reduce-kv #(assoc %1 %2 (update %3 1 (constantly true))) {} (select-keys b b-not-a))
-      (reduce #(assoc %1 %2 (merge-types (get a %2 {}) (get b %2 {}))) {} a-and-b))))
+(def merge-properties (build-map-merger #(update % 1 (constantly true)) {} merge-types))
 
-(defn merge-two-schemas [a b]
-  (let [keys-a (keys a)
-        keys-b (keys b)
-        a-not-b (set/difference (set keys-a) (set keys-b))
-        b-not-a (set/difference (set keys-b) (set keys-a))
-        a-and-b (set/intersection (set keys-a) (set keys-b))]
-    (merge
-      (select-keys a a-not-b)
-      (select-keys b b-not-a)
-      (reduce
-        #(assoc %1 %2 (merge-properties (get a %2 {}) (get b %2 {})))
-        {} a-and-b))))
+(def merge-two-schemas (build-map-merger identity {} merge-properties))
 
 (defn merge-schemas [schemas]
   (reduce merge-two-schemas (first schemas) (rest schemas)))
@@ -79,31 +75,32 @@
 (defn type-as-keyword [obj]
   (-> obj (type) (.getSimpleName) (str/lower-case) (keyword)))
 
-(defn path-to-keyword [path & tags]
-  (keyword (str/join "." (apply conj path (map name tags)))))
+(defn merge-data [data]
+  (reduce (build-map-merger identity (sorted-set) set/union) (first data) (rest data)))
 
 (defn detect-flat-schema [path {:keys [tag attrs content]}]
-  (let [schema (attr-schema attrs)
+  (let [{:keys [schema data]} (attr-schema (conj path (name tag)) attrs)
         content (filterv
-                  (fn [c]
-                    (or
-                      (map? c)
-                      (and
-                        (string? c)
-                        (not (empty? (str/trim c))))))
+                  #(or (map? %)
+                       (and (string? %)
+                            (not (empty? (str/trim %)))))
                   content)
+        string-content (into (sorted-set) (filterv string? content))
         types (map glean-type content)
         {types :keyword primitives :string} (group-by type-as-keyword types)
         prim-type (assoc {} ::CONTENT [(merge-primitive primitives) (> 1 (count primitives)) (< 1 (count primitives))])
         types (reduce-kv #(assoc %1 %2 [(path-to-keyword path tag %2) false (< 1 %3)]) {} (frequencies types))
-        schema  (merge types schema prim-type)]
-    (assoc
-      (merge-schemas (map (partial detect-flat-schema (conj path (name tag))) (filter map? content)))
-      (path-to-keyword path tag)
-      (if (empty? schema) "EMPTY" schema))))
+        schema  (merge types schema prim-type)
+        child-schemas (map (partial detect-flat-schema (conj path (name tag))) (filter map? content))
+        [child-schema child-data] (map #(map % child-schemas) [:schema :data])]
+    {:schema (assoc
+               (merge-schemas child-schema)
+               (path-to-keyword path tag)
+               schema)
+     :data (merge-data (conj child-data (assoc data (path-to-keyword path tag :CONTENT) string-content)))}))
 
 (defn revise-schema [schema]
-  (let [check-fn (fn [[k v]]
+  (let [check-fn (fn [[_ v]]
                    (= #{::CONTENT} (set (keys v))))
         [primitives objects] (map #(into {} (% check-fn schema)) [filter remove])
         primitives (reduce-kv #(assoc %1 %2 (first (get %3 ::CONTENT))) {} primitives)
@@ -123,11 +120,19 @@
                                    )))
                              obj (keys obj)))))
                      objects (keys objects))
-        objects (reduce-kv #(assoc %1 %2 (into (sorted-map) %3)) (sorted-map) objects)
-        ]
-    (pp/pprint (keys objects))
-    objects
-))
+        objects (reduce-kv #(assoc %1 %2 (into (sorted-map) %3)) (sorted-map) objects)]
+    objects))
+
+(defn detect-enums [data]
+  (into (sorted-map)
+        (remove #(empty? (second %))
+                (filterv #(>= 21 (count (second %)))
+                         data))))
+
+(defn apply-enums [schema enums]
+  {:schema schema
+   :enums enums})
 
 (defn detect-schema [tree]
-  (revise-schema (detect-flat-schema [] tree)))
+  (let [{:keys [schema data]} (detect-flat-schema [] tree)]
+    (apply-enums (revise-schema schema) (detect-enums data))))
