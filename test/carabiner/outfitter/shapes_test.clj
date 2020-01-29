@@ -12,6 +12,12 @@
 (defn remove-id-from-svg [svg]
   (update svg 1 dissoc :id))
 
+(defn parse-matrix [matrix]
+  (->> matrix
+       (drop 6)
+       (apply str)
+       (read-string)))
+
 (defn read-svg
   ([out ^File file]
    (let [[id svg] (read-svg file)
@@ -33,16 +39,13 @@
       (let [svgs (reduce read-svg (sorted-map) (.listFiles (File. file dir-name)))]
         (println "has shapes: " + (.getAbsolutePath file))
         (if (contains? names table-name)
-          #_(let [table (read-string (slurp (File. file table-name)))
-                pivot (apply mapv vector table)]
-            (spit (File. file table-name) pivot))
           (let [table (read-string (slurp (File. file table-name)))
                 table (apply mapv vector table)]
             (println "has table: " + (.getAbsolutePath file))
             (spit (File. file "table.html")
                   (convo
                     [:html
-                     [:head [:title path]]
+                     [:head [:title (str/join "." path)]]
                      [:body
                       (into [:table]
                             (map
@@ -85,6 +88,6 @@
         (build-tree-recurse child dir-name table-name marker path)))))
 
 (deftest compile-shapes
-  (let [root (File. "design/outfitter/items/body")
-        reddots (read-string (slurp (File. root "marker-check.edn")))]
-    (build-tree-recurse root "shapes" "table.edn" reddots [])))
+  (let [root (File. "design/outfitter/items/body/fit")
+        reddots (read-string (slurp (File. root "../marker-check.edn")))]
+    (build-tree-recurse root "shapes" "table.edn" reddots ["body"])))
