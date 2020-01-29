@@ -23,8 +23,9 @@
                  (update 1 select-keys [:width :height]))]
      [id svg])))
 
-(defn build-tree-recurse [^File file  ^String dir-name ^String table-name markers]
-  (let [convo #_(with-out-str (pp/pprint %)) h/to-html
+(defn build-tree-recurse [^File file  ^String dir-name ^String table-name marker path]
+  (let [path (conj path (.getName file))
+        convo #_(with-out-str (pp/pprint %)) h/to-html
         children (.listFiles file)
         names (set (map #(.getName ^File %) children))]
     (pp/pprint names)
@@ -32,12 +33,16 @@
       (let [svgs (reduce read-svg (sorted-map) (.listFiles (File. file dir-name)))]
         (println "has shapes: " + (.getAbsolutePath file))
         (if (contains? names table-name)
-          (let [table (read-string (slurp (File. file table-name)))]
+          #_(let [table (read-string (slurp (File. file table-name)))
+                pivot (apply mapv vector table)]
+            (spit (File. file table-name) pivot))
+          (let [table (read-string (slurp (File. file table-name)))
+                table (apply mapv vector table)]
             (println "has table: " + (.getAbsolutePath file))
             (spit (File. file "table.html")
                   (convo
                     [:html
-                     [:head [:title "Gallery"]]
+                     [:head [:title path]]
                      [:body
                       (into [:table]
                             (map
@@ -45,23 +50,41 @@
                                  [:tr]
                                  (map
                                    (fn [cell]
-                                     [:td (wrap-svg [cell (get svgs cell)])])
+                                     (let [cell (if (string? cell) (read-string cell) cell)]
+                                       (println cell)
+                                       [:td (if cell (wrap-svg [cell (get svgs cell)]) {})]))
                                    %))
                               table))]])))
-          (spit (File. file "compiled.html")
-                (convo
-                  [:html
-                   [:head
-                    [:title "Gallery"]
-                    [:style "body { background-color: green; }"]]
-                   (into [:body] (map wrap-svg svgs))]))))
+          (if (contains? names "compiled.html")
+            (let [reddot (get marker (str/join "." path))
+                  div-ids (->> (File. file "compiled.html")
+                               (slurp)
+                               (x/from-xml)
+                               (last)
+                               (rest)
+                               (drop 2)
+                               (map #(get (second %) :id)))
+                  index (as-> div-ids $d
+                              (mapv vector $d (range))
+                              (into {} $d)
+                              (get $d reddot))
+                  bg-list (take index div-ids)
+                  remaining (reverse (drop (inc index) div-ids))
+                  outline-list (reverse (take index remaining))
+                  detail-list (reverse (drop index remaining))
+                  detail-list (concat detail-list (repeat (- index (count detail-list)) nil))]
+              (spit (File. file table-name) (mapv vector bg-list detail-list outline-list)))
+            (spit (File. file "compiled.html")
+                  (convo
+                    [:html
+                     [:head
+                      [:title "Gallery"]
+                      [:style "body { background-color: green; }"]]
+                     (into [:body] (map wrap-svg svgs))])))))
       (doseq [child children]
-        (build-tree-recurse child dir-name table-name markers)))))
+        (build-tree-recurse child dir-name table-name marker path)))))
 
 (deftest compile-shapes
   (let [root (File. "design/outfitter/items/body")
-        markers (->> (File. "design/outfitter/items/markers/body")
-                     (.listFiles)
-                     (map read-svg)
-                     (into {}))]
-    (build-tree-recurse root "shapes" "table.edn" markers)))
+        reddots (read-string (slurp (File. root "marker-check.edn")))]
+    (build-tree-recurse root "shapes" "table.edn" reddots [])))
