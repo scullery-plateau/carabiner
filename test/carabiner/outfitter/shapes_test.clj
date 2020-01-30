@@ -18,6 +18,12 @@
        (apply str)
        (read-string)))
 
+(defn shade-filter-fn [svg]
+  (->> svg
+       (last)
+       (drop 2)
+       (some #(contains? % :fill-opacity))))
+
 (defn read-svg
   ([out ^File file]
    (let [[id svg] (read-svg file)
@@ -39,6 +45,9 @@
       (let [svgs (reduce read-svg (sorted-map) (.listFiles (File. file dir-name)))]
         (println "has shapes: " + (.getAbsolutePath file))
         (if (contains? names table-name)
+          #_(let [table-file (File. file table-name)]
+            (when (.exists table-file)
+              (.delete table-file)))
           (let [table (read-string (slurp (File. file table-name)))
                 table (apply mapv vector table)]
             (println "has table: " + (.getAbsolutePath file))
@@ -60,23 +69,27 @@
                               table))]])))
           (if (contains? names "compiled.html")
             (let [reddot (get marker (str/join "." path))
-                  div-ids (->> (File. file "compiled.html")
+                  divs (->> (File. file "compiled.html")
                                (slurp)
                                (x/from-xml)
                                (last)
                                (rest)
-                               (drop 2)
-                               (map #(get (second %) :id)))
-                  index (as-> div-ids $d
+                               (drop 2))
+                  svgs (map last divs)
+                  shade (filterv shade-filter-fn svgs)
+                  svgs (vec (remove shade-filter-fn svgs))
+                  svg-ids (map #(get (second %) :id) svgs)
+                  shade-ids (map #(get (second %) :id) shade)
+                  index (as-> svg-ids $d
                               (mapv vector $d (range))
                               (into {} $d)
                               (get $d reddot))
-                  bg-list (take index div-ids)
-                  remaining (reverse (drop (inc index) div-ids))
+                  bg-list (take index svg-ids)
+                  remaining (reverse (drop (inc index) svg-ids))
                   outline-list (reverse (take index remaining))
                   detail-list (reverse (drop index remaining))
-                  detail-list (concat detail-list (repeat (- index (count detail-list)) nil))]
-              (spit (File. file table-name) (mapv vector bg-list detail-list outline-list)))
+                  [detail-list shade-ids] (map #(concat % (repeat (- index (count %)) nil)) [detail-list shade-ids])]
+              (spit (File. file table-name) (mapv vec [bg-list detail-list outline-list shade-ids])))
             (spit (File. file "compiled.html")
                   (convo
                     [:html
