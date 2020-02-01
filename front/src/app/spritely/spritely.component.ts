@@ -34,7 +34,7 @@ export class SpritelyComponent implements OnInit {
     imgFile:['']
   });
 
-  palette: string[] = [undefined];
+  palette: string[] = ['#fffffe'];
 
   pixels: {} = {};
 
@@ -137,7 +137,7 @@ export class SpritelyComponent implements OnInit {
 
   makeTransparent() {
     let t = this.spritelyForm.value.makeTransparent;
-    this.palette[0] = t?undefined:this.spritelyForm.value.backgroundColor;
+    this.palette[0] = t?"none":this.spritelyForm.value.backgroundColor;
   }
 
   setBackground() {
