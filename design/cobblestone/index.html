@@ -11,8 +11,12 @@
     </style>
     <link rel="stylesheet" href="../style/main.css"/>
     <script type="text/javascript" src="../script/common.js"></script>
+    <script type="text/javascript" src="cobblestone.js"></script>
+    <script type="text/javascript">
+        window.app = new Cobblestone('loadfile','selector','input','canvas');
+    </script>
 </head>
-<body>
+<body onload="app.init()">
 <!--The content below is only a placeholder and can be replaced.-->
 <header class="sticky">
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
@@ -48,10 +52,28 @@
     </nav>
 </header>
 <p></p>
-<div class="container-fluid">
-
-    <!-- TODO -->
-
+<div class="container-fluid d-flex flex-column">
+    <div id="nav" class="d-flex flex-row">
+        <input class="nes-input" type="file" id="loadfile"/>
+        <button class="nes-btn" onclick="app.loadFile()">Load File</button>
+        <button class="nes-btn" onclick="app.saveFile()">Save File</button>
+        <button class="nes-btn" onclick="app.saveImage()">Save Image</button>
+        <button class="nes-btn" onclick="app.publish()">Publish</button>
+    </div>
+    <div class="d-flex flex-row">
+        <div class="showcase">
+            <div class="nes-container d-flex flex-column">
+                <select id="selector" class="nes-input" onchange="app.select()"></select>
+                <textarea id="input" class="nes-textarea"></textarea>
+                <button class="nes-btn btn-primary" onclick="app.reload()">Reload</button>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="nes-container">
+                <div id="canvas"></div>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
     <div class="jumbotron text-center" style="margin-bottom:0">

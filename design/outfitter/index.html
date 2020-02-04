@@ -10,6 +10,7 @@
         }
     </style>
     <link rel="stylesheet" href="../style/main.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <script type="text/javascript" src="../script/common.js"></script>
 </head>
 <body>
@@ -58,7 +59,7 @@
                     <option value="torso">torso</option>
                     <option value="legs">legs</option>
                     <option value="left arm">left arm</option>
-                    <option value="right arm">left arm</option>
+                    <option value="right arm">right arm</option>
                 </select>
                 <button class="nes-btn">+</button>
             </div>
@@ -66,59 +67,66 @@
                 <div class="nes-container with-title">
                     <span class="title">Layers</span>
                     <div class="d-flex flex-column">
-                        <div class="d-flex flex-row align-items-center nes-input bg-success">
-                            <button class="nes-btn is-primary">=</button>
-                            <button class="nes-btn is-error">x</button>
-                            <span class="text-white m-1">head</span>
+                        <div class="nes-input bg-success outfitter-layer">
+                            <button class="nes-btn is-primary drag-btn">=</button>
+                            <button class="nes-btn is-error close-btn">x</button>
+                            <table style="margin-left: 3em; margin-right: 3em; ">
+                                <tr>
+                                    <td><span class="text-white m-1">head</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: red; color: red;">_</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: green; color: green;">_</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: blue; color: blue;">_</span></td>
+                                    <td><button class="nes-btn is-warning layer-btn">a</button></td>
+                                    <td><button class="nes-btn is-warning layer-btn">s</button></td>
+                                    <td><button class="nes-btn is-warning layer-btn">p</button></td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="d-flex flex-row align-items-center nes-input bg-warning">
-                            <button class="nes-btn is-primary">=</button>
-                            <button class="nes-btn is-error">x</button>
-                            <span class="m-1">torso</span>
+                        <div class="nes-input bg-warning outfitter-layer">
+                            <button class="nes-btn is-primary drag-btn">=</button>
+                            <button class="nes-btn is-error close-btn">x</button>
+                            <table style="margin-left: 3em; margin-right: 3em; ">
+                                <tr>
+                                    <td><span class="text-white m-1">torso</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: red; color: red;">_</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: green; color: green;">_</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: blue; color: blue;">_</span></td>
+                                    <td><button class="nes-btn is-warning layer-btn">a</button></td>
+                                    <td><button class="nes-btn is-warning layer-btn">s</button></td>
+                                    <td><button class="nes-btn is-warning layer-btn">p</button></td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="d-flex flex-row align-items-center nes-input bg-warning">
-                            <button class="nes-btn is-primary">=</button>
-                            <button class="nes-btn is-error">x</button>
-                            <span class="m-1">legs</span>
+                        <div class="nes-input bg-warning outfitter-layer">
+                            <button class="nes-btn is-primary drag-btn">=</button>
+                            <button class="nes-btn is-error close-btn">x</button>
+                            <table style="margin-left: 3em; margin-right: 3em; ">
+                                <tr>
+                                    <td><span class="text-white m-1">legs</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: red; color: red;">_</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: green; color: green;">_</span></td>
+                                    <td><span class="nes-input layer-btn" style="background-color: blue; color: blue;">_</span></td>
+                                    <td><button class="nes-btn is-warning layer-btn">a</button></td>
+                                    <td><button class="nes-btn is-warning layer-btn">s</button></td>
+                                    <td><button class="nes-btn is-warning layer-btn">p</button></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <select id="pattern" class="nes-input">
-                <option>(Pattern)</option>
-                <option value="plain">plain</option>
-                <option value="stone">stone</option>
-                <option value="wood">wood</option>
-                <option value="spider-web">spider-web</option>
-                <option value="scales">scales</option>
-            </select>
-            <select id="shadow" class="nes-input">
-                <option>(Shadow)</option>
-                <option value="plain">plain</option>
-                <option value="shade">shade</option>
-                <option value="leather">leather</option>
-                <option value="metalic">metalic</option>
-            </select>
             <div class="showcase">
-                <div class="nes-container with-title d-flex flex-row">
-                    <!--<span class="title">Palette</span>-->
-                    <span class="nes-input" style="background-color: red; color: red; margin: 1%;">_</span>
-                    <span class="nes-input" style="background-color: green; color: green; margin: 1%;">_</span>
-                    <span class="nes-input" style="background-color: blue; color: blue; margin: 1%;">_</span>
+                <div class="nes-container">
+                    <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Load Data</button></div></div>
+                    <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Download Data</button></div></div>
+                    <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Download Image</button></div></div>
+                    <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Mirror <-></button></div></div>
                 </div>
             </div>
         </div>
         <div class="flex-fill showcase">
             <div class="nes-container">
                 <!-- TODO -->
-            </div>
-        </div>
-        <div class="showcase">
-            <div class="nes-container">
-                <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Load Data</button></div></div>
-                <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Download Data</button></div></div>
-                <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Download Image</button></div></div>
-                <div class="row"><div class="col-sm"><button type="button" class="nes-btn is-primary w-100">Mirror <-></button></div></div>
             </div>
         </div>
     </div>
