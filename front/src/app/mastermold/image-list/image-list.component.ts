@@ -17,7 +17,8 @@ export class ImageListComponent implements OnInit {
   }
 
   updateCount(e: Event, filename: string) {
-    this.data[filename].count = e.target.value;
+    let target = e.target as HTMLInputElement
+    this.data[filename].count = target.value;
   }
 
   removeImage(filename: string) {

@@ -158,6 +158,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cobblestone_transformed_tile_def_transformed_tile_def_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./cobblestone/transformed-tile-def/transformed-tile-def.component */ "./src/app/cobblestone/transformed-tile-def/transformed-tile-def.component.ts");
 /* harmony import */ var _cobblestone_transformed_tile_display_transformed_tile_display_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./cobblestone/transformed-tile-display/transformed-tile-display.component */ "./src/app/cobblestone/transformed-tile-display/transformed-tile-display.component.ts");
 /* harmony import */ var _cobblestone_transformed_tile_ref_transformed_tile_ref_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./cobblestone/transformed-tile-ref/transformed-tile-ref.component */ "./src/app/cobblestone/transformed-tile-ref/transformed-tile-ref.component.ts");
+/* harmony import */ var _mock_http_mock_request_interceptor__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./mock/http-mock-request-interceptor */ "./src/app/mock/http-mock-request-interceptor.ts");
+/* harmony import */ var _util_confirm_cancel_dialog_confirm_cancel_dialog_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./util/confirm-cancel-dialog/confirm-cancel-dialog.component */ "./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.ts");
+/* harmony import */ var _util_okay_dialog_okay_dialog_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./util/okay-dialog/okay-dialog.component */ "./src/app/util/okay-dialog/okay-dialog.component.ts");
+/* harmony import */ var _mastermold_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./mastermold/image-list/image-list.component */ "./src/app/mastermold/image-list/image-list.component.ts");
+/* harmony import */ var _mastermold_mini_gallery_mini_gallery_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./mastermold/mini-gallery/mini-gallery.component */ "./src/app/mastermold/mini-gallery/mini-gallery.component.ts");
+
+
+
+
+
 
 
 
@@ -212,6 +222,10 @@ var AppModule = /** @class */ (function () {
                 _cobblestone_transformed_tile_def_transformed_tile_def_component__WEBPACK_IMPORTED_MODULE_24__["TransformedTileDefComponent"],
                 _cobblestone_transformed_tile_display_transformed_tile_display_component__WEBPACK_IMPORTED_MODULE_25__["TransformedTileDisplayComponent"],
                 _cobblestone_transformed_tile_ref_transformed_tile_ref_component__WEBPACK_IMPORTED_MODULE_26__["TransformedTileRefComponent"],
+                _util_confirm_cancel_dialog_confirm_cancel_dialog_component__WEBPACK_IMPORTED_MODULE_28__["ConfirmCancelDialogComponent"],
+                _util_okay_dialog_okay_dialog_component__WEBPACK_IMPORTED_MODULE_29__["OkayDialogComponent"],
+                _mastermold_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_30__["ImageListComponent"],
+                _mastermold_mini_gallery_mini_gallery_component__WEBPACK_IMPORTED_MODULE_31__["MiniGalleryComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -220,7 +234,11 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
             ],
-            providers: [],
+            providers: [{
+                    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"],
+                    useClass: _mock_http_mock_request_interceptor__WEBPACK_IMPORTED_MODULE_27__["HttpMockRequestInterceptor"],
+                    multi: true
+                }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
@@ -1454,6 +1472,73 @@ var TransformedTilesComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/mastermold/image-list/image-list.component.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/mastermold/image-list/image-list.component.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<table>\n  <ng-container *ngFor=\"let mini of data.entries()\">\n    <tr>\n      <td>{{mini[0]}}</td>\n      <td><input type=\"number\" min=\"1\" value=\"1\" (change)=\"updateCount($event,mini[1].filename)\"/></td>\n      <td><button class=\"nes-btn is-error\" (click)=\"removeImage(mini[1].filename)\">X</button></td>\n    </tr>\n  </ng-container>\n</table>\n"
+
+/***/ }),
+
+/***/ "./src/app/mastermold/image-list/image-list.component.scss":
+/*!*****************************************************************!*\
+  !*** ./src/app/mastermold/image-list/image-list.component.scss ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21hc3Rlcm1vbGQvaW1hZ2UtbGlzdC9pbWFnZS1saXN0LmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/mastermold/image-list/image-list.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/mastermold/image-list/image-list.component.ts ***!
+  \***************************************************************/
+/*! exports provided: ImageListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageListComponent", function() { return ImageListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ImageListComponent = /** @class */ (function () {
+    function ImageListComponent() {
+    }
+    ImageListComponent.prototype.ngOnInit = function () {
+    };
+    ImageListComponent.prototype.updateCount = function (e, filename) {
+        var target = e.target;
+        this.data[filename].count = target.value;
+    };
+    ImageListComponent.prototype.removeImage = function (filename) {
+        delete this.data[filename];
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Map)
+    ], ImageListComponent.prototype, "data", void 0);
+    ImageListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'image-list',
+            template: __webpack_require__(/*! ./image-list.component.html */ "./src/app/mastermold/image-list/image-list.component.html"),
+            styles: [__webpack_require__(/*! ./image-list.component.scss */ "./src/app/mastermold/image-list/image-list.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ImageListComponent);
+    return ImageListComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/mastermold/mastermold.component.html":
 /*!******************************************************!*\
   !*** ./src/app/mastermold/mastermold.component.html ***!
@@ -1461,7 +1546,7 @@ var TransformedTilesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  mastermold works!\n</p>\n"
+module.exports = "<table>\n  <tr>\n    <td colspan=\"2\">\n      <div class=\"showcase\">\n        <div class=\"nes-container d-flex\">\n          <input type=\"file\" id=\"fileInput\" class=\"nes-input\" multiple (change)=\"addImage($event)\"/>\n        </div>\n      </div>\n    </td>\n  </tr>\n  <tr>\n    <td>\n      <div class=\"showcase\" id=\"ctrl\">\n        <div class=\"nes-container\">\n          <image-list [data]=\"images\"></image-list>\n        </div>\n      </div>\n    </td>\n    <td>\n      <div class=\"showcase h-100\">\n        <div class=\"nes-container h-100\">\n          <button class=\"nes-btn\" onclick=\"publish()\">Publish</button>\n          <p></p>\n          <mini-gallery [data]=\"images\"></mini-gallery>\n          <p></p>\n        </div>\n      </div>\n    </td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -1488,12 +1573,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MastermoldComponent", function() { return MastermoldComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mini */ "./src/app/mastermold/mini.ts");
+/* harmony import */ var _publish_minis_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./publish-minis.service */ "./src/app/mastermold/publish-minis.service.ts");
+
+
 
 
 var MastermoldComponent = /** @class */ (function () {
-    function MastermoldComponent() {
+    function MastermoldComponent(pubService) {
+        this.pubService = pubService;
+        this.images = new Map();
     }
     MastermoldComponent.prototype.ngOnInit = function () {
+    };
+    MastermoldComponent.prototype.addImage = function (e) {
+        var files = e.target.files;
+        console.log(files);
+        var me = this;
+        if (files.length > 0) {
+            files.forEach(function (file) {
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var mini = new _mini__WEBPACK_IMPORTED_MODULE_2__["Mini"]();
+                    mini.filename = file.name;
+                    mini.count = 1;
+                    mini.url = reader.result.toString();
+                    me.images[file.name] = mini;
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+    };
+    MastermoldComponent.prototype.publish = function () {
+        this.pubService.buildMinis(this.images.values()).subscribe(function (html) {
+            var w = window.open("", "_blank");
+            w.document.write(html);
+        });
     };
     MastermoldComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1501,11 +1616,215 @@ var MastermoldComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./mastermold.component.html */ "./src/app/mastermold/mastermold.component.html"),
             styles: [__webpack_require__(/*! ./mastermold.component.scss */ "./src/app/mastermold/mastermold.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_publish_minis_service__WEBPACK_IMPORTED_MODULE_3__["PublishMinisService"]])
     ], MastermoldComponent);
     return MastermoldComponent;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/mastermold/mini-gallery/mini-gallery.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/mastermold/mini-gallery/mini-gallery.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-container *ngFor=\"let mini of data.entries()\">\n  <span title=\"{{mini[1].filename}}\">\n    <svg width=\"{{20 * scale}}\" height=\"{{30 * scale}}\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\n      <rect x=\"0\" y=\"0\" width=\"{{20 * scale}}\" height=\"{{30 * scale}}\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n      <image href=\"{{mini[1].url}}\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\n    </svg>\n  </span>\n</ng-container>\n"
+
+/***/ }),
+
+/***/ "./src/app/mastermold/mini-gallery/mini-gallery.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/mastermold/mini-gallery/mini-gallery.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21hc3Rlcm1vbGQvbWluaS1nYWxsZXJ5L21pbmktZ2FsbGVyeS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/mastermold/mini-gallery/mini-gallery.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/mastermold/mini-gallery/mini-gallery.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: MiniGalleryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MiniGalleryComponent", function() { return MiniGalleryComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var MiniGalleryComponent = /** @class */ (function () {
+    function MiniGalleryComponent() {
+        this.scale = 7;
+        this.frameRect = {
+            small: [5, [0, 65]],
+            large: [30, [5, 35]],
+            steps: [70, 20]
+        };
+    }
+    MiniGalleryComponent.prototype.ngOnInit = function () {
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Map)
+    ], MiniGalleryComponent.prototype, "data", void 0);
+    MiniGalleryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'mini-gallery',
+            template: __webpack_require__(/*! ./mini-gallery.component.html */ "./src/app/mastermold/mini-gallery/mini-gallery.component.html"),
+            styles: [__webpack_require__(/*! ./mini-gallery.component.scss */ "./src/app/mastermold/mini-gallery/mini-gallery.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], MiniGalleryComponent);
+    return MiniGalleryComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mastermold/mini.ts":
+/*!************************************!*\
+  !*** ./src/app/mastermold/mini.ts ***!
+  \************************************/
+/*! exports provided: Mini */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Mini", function() { return Mini; });
+var Mini = /** @class */ (function () {
+    function Mini() {
+    }
+    return Mini;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mastermold/publish-minis.service.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/mastermold/publish-minis.service.ts ***!
+  \*****************************************************/
+/*! exports provided: PublishMinisService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PublishMinisService", function() { return PublishMinisService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var PublishMinisService = /** @class */ (function () {
+    function PublishMinisService(client) {
+        this.client = client;
+    }
+    PublishMinisService.prototype.buildMinis = function (minis) {
+        return this.client.post("/mastermold/publish", minis);
+    };
+    PublishMinisService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], PublishMinisService);
+    return PublishMinisService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mock/http-mock-request-interceptor.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/mock/http-mock-request-interceptor.ts ***!
+  \*******************************************************/
+/*! exports provided: isMock, HttpMockRequestInterceptor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isMock", function() { return isMock; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpMockRequestInterceptor", function() { return HttpMockRequestInterceptor; });
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _mock_responses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./mock-responses */ "./src/app/mock/mock-responses.ts");
+
+
+
+
+var isMock = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].mock;
+var HttpMockRequestInterceptor = /** @class */ (function () {
+    function HttpMockRequestInterceptor() {
+    }
+    HttpMockRequestInterceptor.prototype.intercept = function (req, next) {
+        if (isMock) {
+            console.log("intercepted");
+            console.log("url in question: " + req.url);
+            for (var _i = 0, MOCK_RESPONSES_1 = _mock_responses__WEBPACK_IMPORTED_MODULE_3__["MOCK_RESPONSES"]; _i < MOCK_RESPONSES_1.length; _i++) {
+                var mock = MOCK_RESPONSES_1[_i];
+                console.log("mock.path: " + mock.path);
+                var regex = new RegExp(mock.path, "g");
+                if (regex.test(req.url)) {
+                    console.log('Loaded from json : ' + req.url);
+                    if (mock.status >= 400) {
+                        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(mock.body);
+                    }
+                    else {
+                        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpResponse"]({
+                            status: mock.status || 200,
+                            body: mock.body
+                        }));
+                    }
+                }
+            }
+            console.log('Cannot locate mock for url: ' + req.url);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpResponse"]({
+                status: 500,
+                body: []
+            }));
+        }
+        else {
+            return next.handle(req);
+        }
+    };
+    return HttpMockRequestInterceptor;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mock/mock-responses.ts":
+/*!****************************************!*\
+  !*** ./src/app/mock/mock-responses.ts ***!
+  \****************************************/
+/*! exports provided: MOCK_RESPONSES */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MOCK_RESPONSES", function() { return MOCK_RESPONSES; });
+var MOCK_RESPONSES = [
+    {
+        "path": ".*",
+        "status": 200,
+        "body": []
+    }
+];
 
 
 /***/ }),
@@ -1802,7 +2121,7 @@ var SpritelyFileService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div style=\"display: none\">\r\n    <select id=\"palette\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectColor()\">\r\n      <ng-container *ngFor=\"let color of palette; index as i\">\r\n        <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n      </ng-container>\r\n    </select>\r\n    <input #colorPicker type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n  </div>\r\n  <div class=\"showcase col-lg-12\">\r\n    <div class=\"nes-container with-title\">\r\n      <div class=\"title\">\r\n        <label>Spritely </label>\r\n      </div>\r\n      <div class=\"row small\">\r\n        <div class=\"col-lg-5\">\r\n          <accordian\r\n            tabId=\"fileTab\"\r\n            containerId=\"fileContainer\"\r\n            [initCollapsed]=\"true\"\r\n            label=\"File\">\r\n            <file-form\r\n              [defaultSaveFile]=\"defaultSaveFile\"\r\n              [prepareLoadedData]=\"fileDataReader()\"\r\n              [fileLoadCallback]=\"fileLoadCallback()\"\r\n              [invokeDownload]=\"dataDownloader()\">\r\n            </file-form>\r\n          </accordian>\r\n          <accordian\r\n            tabId=\"directionsTab\"\r\n            containerId=\"directionsContainer\"\r\n            [initCollapsed]=\"true\"\r\n            label=\"Help\">\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Spritely is a canvas for pixel art.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Deleting a color will unpaint all pixels that matching color</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Unpainting pixels will return them to the background color.</p>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Palette</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <label for=\"makeTransparent\" class=\"text-brand\">\r\n                        <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                        <span>\r\n                          Make Transparent?\r\n                        </span>\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                  <hr/>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                      <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                    </div>\r\n                  </div>\r\n                  <p></p>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <accordian\r\n            tabId=\"transformsTab\"\r\n            containerId=\"transformsContainer\"\r\n            [initCollapsed]=\"true\"\r\n            label=\"Transforms\">\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-12 text-center\">\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnLeft')\">Turn Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnRight')\">Turn Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipOver')\">Flip Over</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipDown')\">Flip Down</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftLeft')\">Shift Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftRight')\">Shift Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftUp')\">Shift Up</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftDown')\">Shift Down</button>\r\n              </div>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Image</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-lg-4 col-md-6\">\r\n                      <div class=\"row\">\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n                          <input type=\"number\" min=\"1\" max=\"20\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\"/>\r\n                        </div>\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"imgFile\" class=\"text-brand\">Image FileName:</label>\r\n                          <input type=\"text\" id=\"imgFile\" class=\"nes-input\" formControlName=\"imgFile\" placeholder=\"Image File\"/>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"col-8 text-right\">\r\n                      <button class=\"nes-btn\" (click)=\"downloadImage()\">\r\n                        <pixel-painter\r\n                          [pixels]=\"pixels\"\r\n                          [scale]=\"spritelyForm.value.scale\"\r\n                          [width]=\"spritelyForm.value.width\"\r\n                          [height]=\"spritelyForm.value.height\"\r\n                          [palette]=\"palette\"\r\n                        ></pixel-painter>\r\n                      </button>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container\">\r\n              <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"width\" class=\"text-brand\">Width:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"height\" class=\"text-brand\">Height:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-12\">\r\n                  <app-palette-display\r\n                    [palette]=\"palette\"\r\n                    [href]=\"'#/spritely'\"\r\n                    [selectFn]=\"colorIndexSetter()\"\r\n                    [setColorFn]=\"colorSetter()\"\r\n                  ></app-palette-display>\r\n                </div>\r\n              </div>\r\n              <hr/>\r\n              <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                  <app-pixel-canvas\r\n                    class=\"col-12\"\r\n                    [pixels]=\"pixels\"\r\n                    [scale]=\"10\"\r\n                    [width]=\"min(spritelyForm.value.width,64)\"\r\n                    [height]=\"min(spritelyForm.value.height,64)\"\r\n                    [palette]=\"palette\"\r\n                    [backgroundColor]=\"spritelyForm.value.backgroundColor\"\r\n                    [colorIndex]=\"spritelyForm.value.selectedPalette\"\r\n                    page=\"spritely\"\r\n                  ></app-pixel-canvas>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n<pixel-pending label=\"Download\"></pixel-pending>\r\n"
+module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div style=\"display: none\">\r\n    <select id=\"palette\" class=\"form-control\" formControlName=\"selectedPalette\" (change)=\"selectColor()\">\r\n      <ng-container *ngFor=\"let color of palette; index as i\">\r\n        <option *ngIf=\"i > 0\" value=\"{{i}}\">{{i}} - {{color||'Transparent'}}</option>\r\n      </ng-container>\r\n    </select>\r\n    <input #colorPicker type=\"color\" id=\"color\" class=\"nes-input form-control\" formControlName=\"color\" value=\"#000001\" (change)=\"setColor()\"/>\r\n  </div>\r\n  <div class=\"showcase col-lg-12\">\r\n    <div class=\"nes-container with-title\">\r\n      <div class=\"title\">\r\n        <label>Spritely </label>\r\n      </div>\r\n      <div class=\"d-flex flex-row small\">\r\n        <div class=\"col-lg-5\">\r\n          <accordian\r\n            tabId=\"fileTab\"\r\n            containerId=\"fileContainer\"\r\n            [initCollapsed]=\"true\"\r\n            label=\"File\">\r\n            <file-form\r\n              [defaultSaveFile]=\"defaultSaveFile\"\r\n              [prepareLoadedData]=\"fileDataReader()\"\r\n              [fileLoadCallback]=\"fileLoadCallback()\"\r\n              [invokeDownload]=\"dataDownloader()\">\r\n            </file-form>\r\n          </accordian>\r\n          <accordian\r\n            tabId=\"directionsTab\"\r\n            containerId=\"directionsContainer\"\r\n            [initCollapsed]=\"true\"\r\n            label=\"Help\">\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Spritely is a canvas for pixel art.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Build your palette below, then select a color in the palette to paint pixels that color, or to unpaint pixels already that color.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Changing the color of a slot in the palette will change the color of all matching pixels.</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-right\">\r\n              <p>Deleting a color will unpaint all pixels that matching color</p>\r\n            </div>\r\n            <div class=\"nes-balloon from-left\">\r\n              <p>Unpainting pixels will return them to the background color.</p>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Palette</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"backgroundColor\" class=\"text-brand\">Background Color:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"color\" id=\"backgroundColor\" class=\"nes-input form-control\" formControlName=\"backgroundColor\" value=\"#fffffe\" (change)=\"setBackground()\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <label for=\"makeTransparent\" class=\"text-brand\">\r\n                        <input type=\"checkbox\" id=\"makeTransparent\" class=\"nes-checkbox\" formControlName=\"makeTransparent\" (change)=\"makeTransparent()\">\r\n                        <span>\r\n                          Make Transparent?\r\n                        </span>\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                  <hr/>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-12 text-center\">\r\n                      <button class=\"nes-btn is-success\" (click)=\"addColor()\">Add Color</button>\r\n                      <button class=\"nes-btn is-error\" (click)=\"removeColor()\">Remove Color</button>\r\n                    </div>\r\n                  </div>\r\n                  <p></p>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <accordian\r\n            tabId=\"transformsTab\"\r\n            containerId=\"transformsContainer\"\r\n            [initCollapsed]=\"true\"\r\n            label=\"Transforms\">\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-12 text-center\">\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnLeft')\">Turn Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('turnRight')\">Turn Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipOver')\">Flip Over</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('flipDown')\">Flip Down</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftLeft')\">Shift Left</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftRight')\">Shift Right</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftUp')\">Shift Up</button>\r\n                <button class=\"nes-btn is-warning\" (click)=\"transform('shiftDown')\">Shift Down</button>\r\n              </div>\r\n            </div>\r\n          </accordian>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n              <div class=\"showcase\">\r\n                <div class=\"nes-container with-title\">\r\n                  <div class=\"title\">\r\n                    <label>Image</label>\r\n                  </div>\r\n                  <div class=\"row\">\r\n                    <div class=\"col-lg-4 col-md-6\">\r\n                      <div class=\"row\">\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"scale\" class=\"text-brand\">Scale:</label>\r\n                          <input type=\"number\" min=\"1\" max=\"20\" id=\"scale\" class=\"nes-input\" formControlName=\"scale\"/>\r\n                        </div>\r\n                        <div class=\"col-sm-12\">\r\n                          <label for=\"imgFile\" class=\"text-brand\">Image FileName:</label>\r\n                          <input type=\"text\" id=\"imgFile\" class=\"nes-input\" formControlName=\"imgFile\" placeholder=\"Image File\"/>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"col-8 text-right\">\r\n                      <button class=\"nes-btn\" (click)=\"downloadImage()\">\r\n                        <pixel-painter\r\n                          [pixels]=\"pixels\"\r\n                          [scale]=\"spritelyForm.value.scale\"\r\n                          [width]=\"spritelyForm.value.width\"\r\n                          [height]=\"spritelyForm.value.height\"\r\n                          [palette]=\"palette\"\r\n                        ></pixel-painter>\r\n                      </button>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"showcase\">\r\n            <div class=\"nes-container\">\r\n              <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"width\" class=\"text-brand\">Width:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"width\" class=\"nes-input\" formControlName=\"width\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-6\">\r\n                  <div class=\"row\">\r\n                    <div class=\"col-sm-5 text-right\">\r\n                      <label for=\"height\" class=\"text-brand\">Height:</label>\r\n                    </div>\r\n                    <div class=\"col-sm-7\">\r\n                      <input type=\"number\" min=\"8\" max=\"64\" id=\"height\" class=\"nes-input\" formControlName=\"height\" (change)=\"resize()\"/>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-12\">\r\n                  <app-palette-display\r\n                    [palette]=\"palette\"\r\n                    [href]=\"'#/spritely'\"\r\n                    [selectFn]=\"colorIndexSetter()\"\r\n                    [setColorFn]=\"colorSetter()\"\r\n                  ></app-palette-display>\r\n                </div>\r\n              </div>\r\n              <hr/>\r\n              <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                  <app-pixel-canvas\r\n                    [pixels]=\"pixels\"\r\n                    [scale]=\"10\"\r\n                    [width]=\"min(spritelyForm.value.width,64)\"\r\n                    [height]=\"min(spritelyForm.value.height,64)\"\r\n                    [palette]=\"palette\"\r\n                    [backgroundColor]=\"spritelyForm.value.backgroundColor\"\r\n                    [colorIndex]=\"spritelyForm.value.selectedPalette\"\r\n                    page=\"spritely\"\r\n                  ></app-pixel-canvas>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n<pixel-pending label=\"Download\"></pixel-pending>\r\n"
 
 /***/ }),
 
@@ -1855,7 +2174,7 @@ var SpritelyComponent = /** @class */ (function () {
             backgroundColor: ['#fffffe'],
             imgFile: ['']
         });
-        this.palette = [undefined];
+        this.palette = ['#fffffe'];
         this.pixels = {};
         this.trigger = new _util_trigger__WEBPACK_IMPORTED_MODULE_4__["Trigger"]("redraw-pixels");
         this.startingColors = ["#000000", "#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ffffff"];
@@ -1938,7 +2257,7 @@ var SpritelyComponent = /** @class */ (function () {
     };
     SpritelyComponent.prototype.makeTransparent = function () {
         var t = this.spritelyForm.value.makeTransparent;
-        this.palette[0] = t ? undefined : this.spritelyForm.value.backgroundColor;
+        this.palette[0] = t ? "none" : this.spritelyForm.value.backgroundColor;
     };
     SpritelyComponent.prototype.setBackground = function () {
         this.palette[0] = this.spritelyForm.value.backgroundColor;
@@ -2099,6 +2418,62 @@ var AccordianComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], AccordianComponent);
     return AccordianComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.html":
+/*!*********************************************************************************!*\
+  !*** ./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.html ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  confirm-cancel-dialog works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.scss":
+/*!*********************************************************************************!*\
+  !*** ./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.scss ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3V0aWwvY29uZmlybS1jYW5jZWwtZGlhbG9nL2NvbmZpcm0tY2FuY2VsLWRpYWxvZy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: ConfirmCancelDialogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmCancelDialogComponent", function() { return ConfirmCancelDialogComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ConfirmCancelDialogComponent = /** @class */ (function () {
+    function ConfirmCancelDialogComponent() {
+    }
+    ConfirmCancelDialogComponent.prototype.ngOnInit = function () {
+    };
+    ConfirmCancelDialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-confirm-cancel-dialog',
+            template: __webpack_require__(/*! ./confirm-cancel-dialog.component.html */ "./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.html"),
+            styles: [__webpack_require__(/*! ./confirm-cancel-dialog.component.scss */ "./src/app/util/confirm-cancel-dialog/confirm-cancel-dialog.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ConfirmCancelDialogComponent);
+    return ConfirmCancelDialogComponent;
 }());
 
 
@@ -2612,6 +2987,62 @@ var TabbedPanelComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/util/okay-dialog/okay-dialog.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/util/okay-dialog/okay-dialog.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  okay-dialog works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/util/okay-dialog/okay-dialog.component.scss":
+/*!*************************************************************!*\
+  !*** ./src/app/util/okay-dialog/okay-dialog.component.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3V0aWwvb2theS1kaWFsb2cvb2theS1kaWFsb2cuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/util/okay-dialog/okay-dialog.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/util/okay-dialog/okay-dialog.component.ts ***!
+  \***********************************************************/
+/*! exports provided: OkayDialogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OkayDialogComponent", function() { return OkayDialogComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var OkayDialogComponent = /** @class */ (function () {
+    function OkayDialogComponent() {
+    }
+    OkayDialogComponent.prototype.ngOnInit = function () {
+    };
+    OkayDialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-okay-dialog',
+            template: __webpack_require__(/*! ./okay-dialog.component.html */ "./src/app/util/okay-dialog/okay-dialog.component.html"),
+            styles: [__webpack_require__(/*! ./okay-dialog.component.scss */ "./src/app/util/okay-dialog/okay-dialog.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], OkayDialogComponent);
+    return OkayDialogComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/util/palette-display/palette-display.component.html":
 /*!*********************************************************************!*\
   !*** ./src/app/util/palette-display/palette-display.component.html ***!
@@ -2619,7 +3050,7 @@ var TabbedPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" >\r\n  <div *ngIf=\"palette && (palette.length == (showFirst?0:1))\" class=\"col-sm-12 nes-input text-center\">\r\n    <span>Add colors to your palette to paint.</span>\r\n  </div>\r\n  <div *ngIf=\"palette && (palette.length > (showFirst?0:1))\" class=\"col-sm-12 text-justify palette\" [style.margin]=\"0\">\r\n    <ng-container *ngFor=\"let c of palette; index as i\">\r\n      <a *ngIf=\"showFirst || i > 0\"\r\n        class=\"palette-item\"\r\n        [style.color]=\"c\"\r\n        [style.backgroundColor]=\"c\"\r\n        [style.width]=\"(100/(palette.length - (showFirst?0:1)))+'%'\"\r\n        href=\"{{href}}\"\r\n        (click)=\"select(i)\"\r\n        (dblclick)=\"setColor(i)\"\r\n        >\r\n        <span class=\"nes-input palette-color {{(activeIndex == i)?'is-error':''}}\">_</span>\r\n      </a>\r\n    </ng-container>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row\" >\r\n  <div *ngIf=\"palette && (palette.length == (showFirst?0:1))\" class=\"col-sm-12 nes-input text-center\">\r\n    <span>Add colors to your palette to paint.</span>\r\n  </div>\r\n  <div *ngIf=\"palette && (palette.length > (showFirst?0:1))\" class=\"col-sm-12 text-justify palette\" [style.margin]=\"0\">\r\n    <ng-container *ngFor=\"let c of palette; index as i\">\r\n      <a *ngIf=\"showFirst || i > 0\"\r\n        class=\"palette-item\"\r\n        [style.width]=\"((100/(palette.length - (showFirst?0:1))) - 2)+'%'\"\r\n        href=\"{{href}}\"\r\n        (click)=\"select(i)\"\r\n        (dblclick)=\"setColor(i)\"\r\n        >\r\n        <span class=\"nes-input palette-color {{(activeIndex == i)?'is-error':''}}\"\r\n              [style.color]=\"c\"\r\n              [style.backgroundColor]=\"c\"\r\n        >_</span>\r\n      </a>\r\n    </ng-container>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2927,7 +3358,8 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    mock: false
 };
 /*
  * For easier debugging in development mode, you can import the following file
