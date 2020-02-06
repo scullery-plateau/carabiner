@@ -6,8 +6,6 @@
             [carabiner.rogue94.coords :as coords]
             [clojure.pprint :as pp]))
 
-(def print-style (slurp "resources/publishing/print.css"))
-
 (defn full-map-file-to-json [[my-map paging mapping palettes & tiles]]
   (let [paging (mapv
                  (fn [page]
@@ -172,7 +170,7 @@
     [:html
      [:head
       [:title "Print Your Map"]
-      [:style print-style]]
+      [:style c/print-style]]
      (into
        [:body
         [:div {:class "defs"}

@@ -1,3 +1,30 @@
-<p>
-  mastermold works!
-</p>
+<table>
+  <tr>
+    <td colspan="2">
+      <div class="showcase">
+        <div class="nes-container d-flex">
+          <input type="file" id="fileInput" class="nes-input" multiple (change)="addImage($event)"/>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="showcase" id="ctrl">
+        <div class="nes-container">
+          <image-list [data]="images"></image-list>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="showcase h-100">
+        <div class="nes-container h-100">
+          <button class="nes-btn" onclick="publish()">Publish</button>
+          <p></p>
+          <mini-gallery [data]="images"></mini-gallery>
+          <p></p>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>

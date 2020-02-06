@@ -8,6 +8,8 @@
             [clojure.pprint :as pp])
   (:import (clojure.lang ExceptionInfo)))
 
+(def print-style (slurp "resources/publishing/print.css"))
+
 (defn validate [obj schema]
   (let [conformed (s/conform schema obj)]
     (when (= conformed ::s/invalid)

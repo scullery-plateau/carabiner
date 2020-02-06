@@ -28,6 +28,8 @@ import { TransformedTileRefComponent } from './cobblestone/transformed-tile-ref/
 import {HttpMockRequestInterceptor} from "./mock/http-mock-request-interceptor";
 import { ConfirmCancelDialogComponent } from './util/confirm-cancel-dialog/confirm-cancel-dialog.component';
 import { OkayDialogComponent } from './util/okay-dialog/okay-dialog.component';
+import { ImageListComponent } from './mastermold/image-list/image-list.component';
+import { MiniGalleryComponent } from './mastermold/mini-gallery/mini-gallery.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { OkayDialogComponent } from './util/okay-dialog/okay-dialog.component';
     TransformedTileRefComponent,
     ConfirmCancelDialogComponent,
     OkayDialogComponent,
+    ImageListComponent,
+    MiniGalleryComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@
       small:[5,[0,65]],
       large:[30,[5,35]],
       steps:[70,20]
-    }
+    };
     let drawRect = function(x,y,w,h) {
       return `<rect x="${scale*x}" y="${scale*y}" width="${scale*w}" height="${scale*h}" fill="white" stroke="black" stroke-width="2"></rect>`;
     };

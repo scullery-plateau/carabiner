@@ -1,0 +1,9 @@
+<table>
+  <ng-container *ngFor="let mini of data.entries()">
+    <tr>
+      <td>{{mini[0]}}</td>
+      <td><input type="number" min="1" value="1" (change)="updateCount($event,mini[1].filename)"/></td>
+      <td><button class="nes-btn is-error" (click)="removeImage(mini[1].filename)">X</button></td>
+    </tr>
+  </ng-container>
+</table>
