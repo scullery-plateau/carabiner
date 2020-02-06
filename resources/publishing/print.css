@@ -21,7 +21,7 @@
         margin: 0.23in 0.23in 0.23in 0.23in;
         border: 1px solid black;
     }
-    .defs {
+    .defs, .firstPage {
         max-width: 8in;
         max-height: 10in;
         padding: 0;

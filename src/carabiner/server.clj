@@ -10,10 +10,13 @@
             [schema.core :as s]
             [carabiner.schema :as cs]
             [carabiner.common.schema :as ccs]
+            [carabiner.common.hiccup :as h]
             [carabiner.spritely.core :as sp]
             [carabiner.cobblestone.core :as cb]
             [carabiner.cobblestone.schema :as cbs]
-            [carabiner.rogue94.char-index :as ch])
+            [carabiner.rogue94.char-index :as ch]
+            [carabiner.mastermold.core :as mm]
+            [carabiner.mastermold.schema :as ms])
   (:import (java.io ByteArrayInputStream)
            (clojure.lang ExceptionInfo)))
 
@@ -115,6 +118,19 @@
           (build-download "/data" cb/build-save-file "text/plain" cs/DownloadArgs download-file-headers)
           (build-download "/map" cb/build-map-image "image/png" cs/ImgDownloadArgs download-file-headers)
           (build-download "/print" cb/build-printable "text/html" cs/DownloadArgs download-file-headers))
+        (api/context
+          "/mastermold/publish" []
+          :tags ["mastermold"]
+          (sweet/resource
+            {:description ""
+             :post {:summary ""
+                    :parameters {:body-params ms/Minis}
+                    :produces "text/html"
+                    :responses {200 {}}
+                    :handler (fn [{minis :body-params}]
+                               (let [result (h/to-html (mm/build-printable minis))]
+                                 (-> (http/ok (ByteArrayInputStream. result))
+                                     (apply-headers (download-file-headers "text/html" {} result)))))}}))
         (api/context
           "/rogue94/charnames" []
           (sweet/resource

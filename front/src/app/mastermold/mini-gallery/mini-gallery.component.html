@@ -1,0 +1,8 @@
+<ng-container *ngFor="let mini of data.entries()">
+  <span title="{{mini[1].filename}}">
+    <svg width="{{20 * scale}}" height="{{30 * scale}}" [attr.viewBox]="'0 0 ' + (20 * scale) + ' ' + (30 * scale)">
+      <rect x="0" y="0" width="{{20 * scale}}" height="{{30 * scale}}" fill="none" stroke="black" stroke-width="2"/>
+      <image href="{{mini[1].url}}" [attr.x]="0" [attr.y]="0" [attr.width]="20 * scale" [attr.height]="30 * scale"/>
+    </svg>
+  </span>
+</ng-container>
