@@ -12,16 +12,19 @@
     <td>
       <div class="showcase" id="ctrl">
         <div class="nes-container">
-          <image-list [data]="images"></image-list>
+          <image-list
+            [data]="data"
+            (countUpdated)="updateCount($event)"
+            (imageRemoved)="deleteImage($event)"></image-list>
         </div>
       </div>
     </td>
     <td>
       <div class="showcase h-100">
         <div class="nes-container h-100">
-          <button class="nes-btn" onclick="publish()">Publish</button>
+          <button class="nes-btn" (click)="publish()">Publish</button>
           <p></p>
-          <mini-gallery [data]="images"></mini-gallery>
+          <mini-gallery [data]="data" ></mini-gallery>
           <p></p>
         </div>
       </div>

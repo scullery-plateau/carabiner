@@ -74,7 +74,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<header class=\"sticky\">\n  <nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\n    <a class=\"navbar-brand\" href=\"#\"><h2>{{title}}</h2></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\n        </li>\n        <!--\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\n        </li>\n        -->\n      </ul>\n    </div>\n  </nav>\n</header>\n<p></p>\n<div class=\"container-fluid\">\n  <router-outlet></router-outlet>\n</div>\n<footer>\n  <div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\n    <p>Built by Daniel Allen Johnson &copy; 2019</p>\n    <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\n  </div>\n</footer>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<header class=\"sticky\">\r\n  <nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\r\n    <a class=\"navbar-brand\" href=\"#\"><h2>{{title}}</h2></a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\r\n        </li>\r\n        <!--\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\r\n        </li>\r\n        -->\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</header>\r\n<p></p>\r\n<div class=\"container-fluid\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<footer>\r\n  <div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\r\n    <p>Built by Daniel Allen Johnson &copy; 2019 - 2020</p>\r\n    <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\r\n    <p>See the code at <a href=\"https://github.com/scullery-plateau/carabiner\">scullery-plateau/carabiner</a> on GitHub.</p>\r\n  </div>\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -1472,6 +1472,26 @@ var TransformedTilesComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/mastermold/count-update.ts":
+/*!********************************************!*\
+  !*** ./src/app/mastermold/count-update.ts ***!
+  \********************************************/
+/*! exports provided: CountUpdate */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountUpdate", function() { return CountUpdate; });
+var CountUpdate = /** @class */ (function () {
+    function CountUpdate() {
+    }
+    return CountUpdate;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/mastermold/image-list/image-list.component.html":
 /*!*****************************************************************!*\
   !*** ./src/app/mastermold/image-list/image-list.component.html ***!
@@ -1479,7 +1499,7 @@ var TransformedTilesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table>\n  <ng-container *ngFor=\"let mini of data.entries()\">\n    <tr>\n      <td>{{mini[0]}}</td>\n      <td><input type=\"number\" min=\"1\" value=\"1\" (change)=\"updateCount($event,mini[1].filename)\"/></td>\n      <td><button class=\"nes-btn is-error\" (click)=\"removeImage(mini[1].filename)\">X</button></td>\n    </tr>\n  </ng-container>\n</table>\n"
+module.exports = "<div class=\"d-flex flex-column\">\n  <ng-container *ngFor=\"let mini of data\">\n    <div class=\"d-flex\">\n      <div class=\"p-2 w-100 text-right\">{{mini.filename}}</div>\n      <div class=\"p-2\"><input type=\"number\" min=\"1\" value=\"1\" class=\"nes-input\" (change)=\"updateCount($event,mini.filename)\"/></div>\n      <div class=\"p-2\"><button class=\"nes-btn is-error\" (click)=\"removeImage(mini.filename)\">X</button></div>\n    </div>\n  </ng-container>\n</div>\n"
 
 /***/ }),
 
@@ -1506,24 +1526,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageListComponent", function() { return ImageListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _count_update__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../count-update */ "./src/app/mastermold/count-update.ts");
+
 
 
 var ImageListComponent = /** @class */ (function () {
     function ImageListComponent() {
+        this.countUpdated = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.imageRemoved = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
     }
     ImageListComponent.prototype.ngOnInit = function () {
     };
     ImageListComponent.prototype.updateCount = function (e, filename) {
         var target = e.target;
-        this.data[filename].count = target.value;
+        var update = new _count_update__WEBPACK_IMPORTED_MODULE_2__["CountUpdate"]();
+        update.count = parseInt(target.value);
+        update.filename = filename;
+        this.countUpdated.emit(update);
     };
     ImageListComponent.prototype.removeImage = function (filename) {
-        delete this.data[filename];
+        this.imageRemoved.emit(filename);
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Map)
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
     ], ImageListComponent.prototype, "data", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], ImageListComponent.prototype, "countUpdated", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], ImageListComponent.prototype, "imageRemoved", void 0);
     ImageListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'image-list',
@@ -1546,7 +1581,7 @@ var ImageListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table>\n  <tr>\n    <td colspan=\"2\">\n      <div class=\"showcase\">\n        <div class=\"nes-container d-flex\">\n          <input type=\"file\" id=\"fileInput\" class=\"nes-input\" multiple (change)=\"addImage($event)\"/>\n        </div>\n      </div>\n    </td>\n  </tr>\n  <tr>\n    <td>\n      <div class=\"showcase\" id=\"ctrl\">\n        <div class=\"nes-container\">\n          <image-list [data]=\"images\"></image-list>\n        </div>\n      </div>\n    </td>\n    <td>\n      <div class=\"showcase h-100\">\n        <div class=\"nes-container h-100\">\n          <button class=\"nes-btn\" onclick=\"publish()\">Publish</button>\n          <p></p>\n          <mini-gallery [data]=\"images\"></mini-gallery>\n          <p></p>\n        </div>\n      </div>\n    </td>\n  </tr>\n</table>\n"
+module.exports = "<table>\n  <tr>\n    <td colspan=\"2\">\n      <div class=\"showcase\">\n        <div class=\"nes-container d-flex\">\n          <input type=\"file\" id=\"fileInput\" class=\"nes-input\" multiple (change)=\"addImage($event)\"/>\n        </div>\n      </div>\n    </td>\n  </tr>\n  <tr>\n    <td>\n      <div class=\"showcase\" id=\"ctrl\">\n        <div class=\"nes-container\">\n          <image-list\n            [data]=\"data\"\n            (countUpdated)=\"updateCount($event)\"\n            (imageRemoved)=\"deleteImage($event)\"></image-list>\n        </div>\n      </div>\n    </td>\n    <td>\n      <div class=\"showcase h-100\">\n        <div class=\"nes-container h-100\">\n          <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\n          <p></p>\n          <mini-gallery [data]=\"data\" ></mini-gallery>\n          <p></p>\n        </div>\n      </div>\n    </td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -1583,11 +1618,27 @@ var MastermoldComponent = /** @class */ (function () {
     function MastermoldComponent(pubService) {
         this.pubService = pubService;
         this.images = new Map();
+        this.data = [];
     }
     MastermoldComponent.prototype.ngOnInit = function () {
     };
+    MastermoldComponent.prototype.updateData = function () {
+        this.data = Array.from(this.images.values());
+    };
+    MastermoldComponent.prototype.updateCount = function (update) {
+        this.images.get(update.filename).count = update.count;
+        this.updateData();
+    };
+    MastermoldComponent.prototype.deleteImage = function (filename) {
+        this.images.delete(filename);
+        this.updateData();
+    };
     MastermoldComponent.prototype.addImage = function (e) {
-        var files = e.target.files;
+        var files = Array.from(e.target.files);
+        var countdown = files.reduce(function (out, file) {
+            out[file.name] = true;
+            return out;
+        }, {});
         console.log(files);
         var me = this;
         if (files.length > 0) {
@@ -1598,7 +1649,11 @@ var MastermoldComponent = /** @class */ (function () {
                     mini.filename = file.name;
                     mini.count = 1;
                     mini.url = reader.result.toString();
-                    me.images[file.name] = mini;
+                    me.images.set(file.name, mini);
+                    delete countdown[file.name];
+                    if (Object.entries(countdown).length == 0) {
+                        me.updateData();
+                    }
                 };
                 reader.readAsDataURL(file);
             });
@@ -1632,7 +1687,7 @@ var MastermoldComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-container *ngFor=\"let mini of data.entries()\">\n  <span title=\"{{mini[1].filename}}\">\n    <svg width=\"{{20 * scale}}\" height=\"{{30 * scale}}\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\n      <rect x=\"0\" y=\"0\" width=\"{{20 * scale}}\" height=\"{{30 * scale}}\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n      <image href=\"{{mini[1].url}}\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\n    </svg>\n  </span>\n</ng-container>\n"
+module.exports = "<ng-container *ngFor=\"let image of data\">\n  <ng-container *ngFor=\"let mini of repeat(image)\">\n    <span title=\"{{mini.filename}}\">\n      <svg [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\n        <rect x=\"0\" y=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n        <image [attr.href]=\"mini.url\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\n      </svg>\n    </span>\n  </ng-container>\n</ng-container>\n"
 
 /***/ }),
 
@@ -1663,18 +1718,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var MiniGalleryComponent = /** @class */ (function () {
     function MiniGalleryComponent() {
-        this.scale = 7;
-        this.frameRect = {
-            small: [5, [0, 65]],
-            large: [30, [5, 35]],
-            steps: [70, 20]
-        };
+        this.scale = 5;
     }
     MiniGalleryComponent.prototype.ngOnInit = function () {
     };
+    MiniGalleryComponent.prototype.repeat = function (mini) {
+        return Array(mini.count).fill(mini);
+    };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Map)
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
     ], MiniGalleryComponent.prototype, "data", void 0);
     MiniGalleryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

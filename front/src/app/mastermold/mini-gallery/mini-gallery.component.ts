@@ -9,19 +9,17 @@ import {Mini} from "../mini";
 export class MiniGalleryComponent implements OnInit {
 
   @Input()
-  private data: Map<String,Mini>;
+  private data: Mini[];
 
-  private scale = 7;
-
-  private frameRect = {
-    small:[5,[0,65]],
-    large:[30,[5,35]],
-    steps:[70,20]
-  };
+  private scale = 5;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  repeat(mini:Mini) {
+    return Array(mini.count).fill(mini);
   }
 
 }

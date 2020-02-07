@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Mini} from "../mini";
+import {CountUpdate} from "../count-update";
 
 @Component({
   selector: 'image-list',
@@ -9,7 +10,13 @@ import {Mini} from "../mini";
 export class ImageListComponent implements OnInit {
 
   @Input()
-  data: Map<String,Mini>;
+  data: Mini[];
+
+  @Output()
+  countUpdated = new EventEmitter<CountUpdate>();
+
+  @Output()
+  imageRemoved = new EventEmitter<string>();
 
   constructor() { }
 
@@ -17,11 +24,14 @@ export class ImageListComponent implements OnInit {
   }
 
   updateCount(e: Event, filename: string) {
-    let target = e.target as HTMLInputElement
-    this.data[filename].count = target.value;
+    let target = e.target as HTMLInputElement;
+    let update = new CountUpdate();
+    update.count = parseInt(target.value);
+    update.filename = filename;
+    this.countUpdated.emit(update);
   }
 
   removeImage(filename: string) {
-    delete this.data[filename];
+    this.imageRemoved.emit(filename);
   }
 }
