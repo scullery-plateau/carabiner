@@ -1660,7 +1660,8 @@ var MastermoldComponent = /** @class */ (function () {
         }
     };
     MastermoldComponent.prototype.publish = function () {
-        this.pubService.buildMinis(Array.from(this.images.values())).subscribe(function (html) {
+        this.pubService.buildMinis(Array.from(this.images.values())).subscribe(function (resp) {
+            var html = resp.body;
             console.log(html);
             var w = window.open("", "_blank");
             w.document.write(html);
@@ -1788,7 +1789,7 @@ var PublishMinisService = /** @class */ (function () {
     PublishMinisService.prototype.buildMinis = function (minis) {
         console.log(minis);
         console.log(JSON.stringify(minis));
-        return this.client.post("/mastermold/publish", minis);
+        return this.client.post("/mastermold/publish", minis, { observe: 'response', responseType: 'text' });
     };
     PublishMinisService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
