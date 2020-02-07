@@ -1785,6 +1785,8 @@ var PublishMinisService = /** @class */ (function () {
         this.client = client;
     }
     PublishMinisService.prototype.buildMinis = function (minis) {
+        console.log(minis);
+        console.log(JSON.stringify(minis));
         return this.client.post("/mastermold/publish", minis);
     };
     PublishMinisService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
