@@ -10,7 +10,6 @@ export class PublishMinisService {
 
   constructor(private client: HttpClient) { }
 
-
   buildMinis(minis: Mini[]) : Observable<string> {
     console.log(minis);
     console.log(JSON.stringify(minis));
