@@ -12,6 +12,8 @@ export class PublishMinisService {
 
 
   buildMinis(minis: IterableIterator<Mini>) : Observable<string> {
+    console.log(minis);
+    console.log(JSON.stringify(minis));
     return this.client.post<string>("/mastermold/publish",minis);
   }
 }

@@ -96,7 +96,8 @@
         :data {:info {:title       "Scullery Plateau"
                       :description "Table Top gaming "}
                :tags [{:name "spritely", :description "Spritely pixel art app"}
-                      {:name "cobblestone", :description "Cobblestone tabletop battle map app"}]}}}
+                      {:name "cobblestone", :description "Cobblestone tabletop battle map app"}
+                      {:name "mastermold" :description "Mastermold paper mini app"}]}}}
       (sweet/api
         (api/context
           "/spritely" []
@@ -125,7 +126,8 @@
             {:description ""
              :post {:summary ""
                     :parameters {:body-params ms/Minis}
-                    :produces "text/html"
+                    :consumes   ["application/json"]
+                    :produces ["text/html"]
                     :responses {200 {}}
                     :handler (fn [{minis :body-params}]
                                (let [result (h/to-html (mm/build-printable minis))]
