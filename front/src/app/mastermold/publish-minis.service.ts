@@ -11,7 +11,7 @@ export class PublishMinisService {
   constructor(private client: HttpClient) { }
 
 
-  buildMinis(minis: IterableIterator<Mini>) : Observable<string> {
+  buildMinis(minis: Mini[]) : Observable<string> {
     console.log(minis);
     console.log(JSON.stringify(minis));
     return this.client.post<string>("/mastermold/publish",minis);

@@ -1,33 +1,21 @@
-<table>
-  <tr>
-    <td colspan="2">
-      <div class="showcase">
-        <div class="nes-container d-flex">
-          <input type="file" id="fileInput" class="nes-input" multiple (change)="addImage($event)"/>
-        </div>
+<div class="d-flex flex-column">
+  <input type="file" id="fileInput" class="nes-input" multiple (change)="addImage($event)"/>
+  <div class="d-flex flex-row">
+    <div class="showcase" id="ctrl">
+      <div class="nes-container">
+        <image-list
+          [data]="data"
+          (countUpdated)="updateCount($event)"
+          (imageRemoved)="deleteImage($event)"></image-list>
       </div>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="showcase" id="ctrl">
-        <div class="nes-container">
-          <image-list
-            [data]="data"
-            (countUpdated)="updateCount($event)"
-            (imageRemoved)="deleteImage($event)"></image-list>
-        </div>
+    </div>
+    <div class="showcase h-100">
+      <div class="nes-container h-100">
+        <button class="nes-btn" (click)="publish()">Publish</button>
+        <p></p>
+        <mini-gallery [data]="data"></mini-gallery>
+        <p></p>
       </div>
-    </td>
-    <td>
-      <div class="showcase h-100">
-        <div class="nes-container h-100">
-          <button class="nes-btn" (click)="publish()">Publish</button>
-          <p></p>
-          <mini-gallery [data]="data" ></mini-gallery>
-          <p></p>
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
+    </div>
+  </div>
+</div>

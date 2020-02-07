@@ -61,7 +61,7 @@ export class MastermoldComponent implements OnInit {
   }
 
   publish() {
-    this.pubService.buildMinis(this.images.values()).subscribe((html) => {
+    this.pubService.buildMinis(Array.from(this.images.values())).subscribe((html) => {
       let w = window.open("", "_blank");
       w.document.write(html);
     });

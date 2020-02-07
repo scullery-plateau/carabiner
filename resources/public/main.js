@@ -1660,7 +1660,7 @@ var MastermoldComponent = /** @class */ (function () {
         }
     };
     MastermoldComponent.prototype.publish = function () {
-        this.pubService.buildMinis(this.images.values()).subscribe(function (html) {
+        this.pubService.buildMinis(Array.from(this.images.values())).subscribe(function (html) {
             var w = window.open("", "_blank");
             w.document.write(html);
         });
