@@ -1,9 +1,36 @@
 (ns carabiner.mastermold.core
   (:require [carabiner.rogue94.common :as c]))
 
+(def style-doc (slurp "resources/publishing/printminis.css"))
+
 (def scale 7)
 
-(def page-frame [])
+(def frame-rect
+  {:small [5,[0,65]]
+   :large [30,[5,35]]
+   :steps [70,20]})
+
+(defn rect [x y w h]
+  (let [[x y w h] (map (partial * scale) [x y w h])]
+    [:rect {:x x :y y :width w :height h :fill "white" :stroke "black" :stroke-width 2}]))
+
+(defn draw-frame []
+  (vec
+    (reduce
+      (fn [out i]
+        (let [[step-x step-y] (:steps frame-rect)
+              x (* (quot i 10) step-x)
+              y (* (mod i 10) step-y)]
+          (concat
+            out
+            (for [spec [:small :large]
+                  xOff (get-in frame-rect [spec 1])]
+              (let [width (get-in frame-rect [spec 0])]
+                (rect (+ x xOff) y width 20))))))
+      []
+      (range 20))))
+
+(def page-frame (draw-frame))
 
 (defn append-images [out [index url]]
   (let [x (* 70 (rem index 2))
@@ -13,8 +40,8 @@
         x2 (* scale (+ x 41))
         width (* scale 18)
         height (* scale 28)
-        tf1 (str "rotate(90 " (* scale (+ x 20)) " " (* scale (+ y 10)))
-        tf2 (str "rotate(-90 " (* scale (+ x 50)) " " (* scale (+ y 10)))]
+        tf1 (str "rotate(90 " (* scale (+ x 20)) " " (* scale (+ y 10)) ")")
+        tf2 (str "rotate(-90 " (* scale (+ x 50)) " " (* scale (+ y 10)) ")")]
     (conj out
           [:image {:href url :x x1 :y y1 :width width :height height :transform tf1}]
           [:image {:href url :x x2 :y y1 :width width :height height :transform tf2}])))
@@ -30,7 +57,7 @@
   [:html
    [:head
     [:title "Print Your Map"]
-    [:style c/print-style]]
+    [:style style-doc]]
    (->> minis
         (reduce #(concat %1 (repeat (:count %2) (:url %2))) [])
         (partition-all 20)
