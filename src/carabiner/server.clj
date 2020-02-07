@@ -16,7 +16,9 @@
             [carabiner.cobblestone.schema :as cbs]
             [carabiner.rogue94.char-index :as ch]
             [carabiner.mastermold.core :as mm]
-            [carabiner.mastermold.schema :as ms])
+            [carabiner.mastermold.schema :as ms]
+            [clojure.pprint :as pp]
+            [clojure.data.json :as json])
   (:import (java.io ByteArrayInputStream)
            (clojure.lang ExceptionInfo)))
 
@@ -124,15 +126,20 @@
           :tags ["mastermold"]
           (sweet/resource
             {:description ""
-             :post {:summary ""
-                    :parameters {:body-params ms/Minis}
-                    :consumes   ["application/json"]
-                    :produces ["text/html"]
-                    :responses {200 {}}
-                    :handler (fn [{minis :body-params}]
-                               (let [result (h/to-html (mm/build-printable minis))]
-                                 (-> (http/ok (ByteArrayInputStream. result))
-                                     (apply-headers (download-file-headers "text/html" {} result)))))}}))
+             :post        {:summary    ""
+                           :parameters {:body ms/Minis}
+                           :consumes   ["application/json"]
+                           :produces   ["text/html"]
+                           :responses  {200 {}}
+                           :handler    (fn [{:keys [body]}]
+                                         (let [minis (json/read-json (slurp ^ByteArrayInputStream body) true)]
+                                           (println "Hello")
+                                           (println "minis")
+                                           (pp/pprint minis)
+                                           (println "minis type: " (type minis))
+                                           (let [result (h/to-html (mm/build-printable minis))]
+                                             (-> (http/ok (ByteArrayInputStream. (.getBytes result)))
+                                                 (apply-headers (download-file-headers "text/html" {} result))))))}}))
         (api/context
           "/rogue94/charnames" []
           (sweet/resource

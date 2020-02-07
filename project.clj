@@ -4,6 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.flatland/ordered "1.5.7"]
+                 [clj-commons/secretary "1.2.4"]
                  [http-kit "2.3.0"]
                  [environ "1.1.0"]
                  [metosin/compojure-api "1.1.11"]

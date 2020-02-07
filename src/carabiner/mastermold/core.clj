@@ -33,6 +33,6 @@
     [:style c/print-style]]
    (->> minis
         (reduce #(concat %1 (repeat (:count %2) (:url %2))) [])
-        (partition 20)
+        (partition-all 20)
         (mapv build-page (range))
         (into [:body]))])
