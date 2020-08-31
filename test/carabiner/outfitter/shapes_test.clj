@@ -95,13 +95,13 @@
          outline-ids] (map (partial map #(get (second %) :id))
                            [svgs shade outline])
         id-index (as-> svg-ids $d
-                    (mapv vector $d (range))
-                    (into {} $d))
+                       (mapv vector $d (range))
+                       (into {} $d))
         index (get id-index reddot)
         bg-list (take index svg-ids)
-        _ (pp/pprint {:index index
+        _ (pp/pprint {:index   index
                       :bg-list bg-list
-                      :shade shade-ids
+                      :shade   shade-ids
                       :outline outline-ids})
         detail-list (drop (inc index) svg-ids)]
     (spit (File. file table-name)
@@ -138,13 +138,16 @@
         reddots (read-string (slurp (File. root "marker-check.edn")))]
     (build-tree-recurse root "shapes" "table.edn" reddots [] delete-table)))
 
+(defn index-names [names]
+  (reduce-kv
+    #(assoc %1 %2 (into {} (mapv vec (mapv rest %3))))
+    {}
+    (group-by first names)))
+
 (deftest build-name-index
   (let [root (File. "design/outfitter/items/body/fit/arm")
         names (edn/read-string (slurp (File. root "names.edn")))
-        index (reduce-kv
-                #(assoc %1 %2 (into {} (mapv vec (mapv rest %3))))
-                {}
-                (group-by first names))]
+        index (index-names names)]
     (spit (File. root "name-index.edn") index)))
 
 (deftest fetch-path-actions
@@ -154,12 +157,12 @@
         paths (flatten
                 (mapv
                   #(->> %
-                       (last)
-                       (svg-file)
-                       (read-svg)
-                       (second)
-                       (last)
-                       (drop 2))
+                        (last)
+                        (svg-file)
+                        (read-svg)
+                        (second)
+                        (last)
+                        (drop 2))
                   names))
         d (->> paths
                (filter map?)
@@ -209,7 +212,7 @@
 (deftest test-parse-d
   (let [root (File. "design/outfitter/items/body/fit/arm")
         ds (mapv parse-d (edn/read-string (slurp (File. root "d.edn"))))]
-       (spit (File. root "ds.edn") ds)))
+    (spit (File. root "ds.edn") ds)))
 
 (defn parse-path [[_ {:keys [d] :as path-args}]]
   {:meta (dissoc path-args :d)
@@ -239,13 +242,26 @@
         parsed-paths (mapv parse-path paths)
         {:keys [min-x min-y max-x max-y]} (reduce minmax-xy-reducer init-minmax-xy parsed-paths)]
     {:paths parsed-paths
-     :dim {:width width
-           :height height
-           :offset [offset-x offset-y]
-           :min [min-x min-y]
-           :max [max-x max-y]}}))
+     :dim   {:width  width
+             :height height
+             :offset [offset-x offset-y]
+             :min    [min-x min-y]
+             :max    [max-x max-y]}}))
 
-(deftest compile-full-data
+(defn compile-full-data [svg-file-fn index]
+  (reduce-kv
+    (fn [out k v]
+      (assoc
+        out
+        k
+        (reduce-kv
+          #(assoc %1 %2 (data-ify-svg (svg-file-fn %3)))
+          {}
+          v)))
+    {}
+    index))
+
+(deftest test-compile-full-data
   (let [root (File. "design/outfitter/items/body/fit/arm")
         svg-file #(File. root (str "shapes/" % ".svg"))
         index (edn/read-string (slurp (File. root "name-index.edn")))]
@@ -253,17 +269,7 @@
       (File. root "name-data.edn")
       (with-out-str
         (pp/pprint
-          (reduce-kv
-            (fn [out k v]
-              (assoc
-                out
-                k
-                (reduce-kv
-                  #(assoc %1 %2 (data-ify-svg (svg-file %3)))
-                  {}
-                  v)))
-            {}
-            index))))))
+          (compile-full-data svg-file index))))))
 
 
 (defn get-number [point-num-str]
@@ -289,8 +295,8 @@
        (str/join " ")))
 
 (def layer-color-keys
-  {:base :fill
-   :detail :fill
+  {:base    :fill
+   :detail  :fill
    :outline :stroke})
 
 (defn path-ify [layer color {:keys [meta path]}]
@@ -314,8 +320,8 @@
      (mapv (partial path-ify layer color) paths))))
 
 (def layer-colors
-  {:base "#00ff00"
-   :detail "#ff0000"
+  {:base    "#00ff00"
+   :detail  "#ff0000"
    :outline "#0000ff"})
 
 (defn build-group-from-pair [[layer {:keys [paths]}]]
@@ -326,7 +332,6 @@
 
 (defn layer-data [row]
   (let [dims (mapv :dim (vals row))
-        _ (pp/pprint (mapv #(select-keys % [:min :max]) dims))
         mins (mapv :min dims)
         min-xs (mapv first mins)
         min-ys (mapv second mins)
@@ -340,8 +345,8 @@
         width (- max-x min-x)
         height (- max-y min-y)]
     [:td
-     (into [:svg {:width (str width "px")
-                  :height (str height "px")
+     (into [:svg {:width   (str width "px")
+                  :height  (str height "px")
                   :viewBox (str/join " " [min-x min-y width height])}]
            (mapv build-group-from-pair row))]))
 
@@ -359,12 +364,11 @@
   (let [row (get index key)]
     (conj
       (into [:tr]
-          (map (partial build-name-cell svg-file row)
-               [:base :detail :outline :shadow]))
+            (map (partial build-name-cell svg-file row)
+                 [:base :detail :outline :shadow]))
       (layer-all row))))
 
 (defn build-row-from-data [index key]
-  (pp/pprint key)
   (let [row (get index key)]
     (conj
       (into [:tr]
@@ -382,13 +386,13 @@
             {:title "Name-Matched"}
             [:table
              [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
-             (into  [:tbody] (map (partial build-name-row svg-file index) names))]))))
+             (into [:tbody] (map (partial build-name-row svg-file index) names))]))))
 
 (deftest build-table-from-name-data
   (let [root (File. "design/outfitter/items/body/fit/arm")
-        index (edn/read-string (slurp (File. root "name-data.edn")))
-        names (into (sorted-set) (keys index))
-        table (mapv (partial build-row-from-data index) names)]
+        data (edn/read-string (slurp (File. root "name-data.edn")))
+        names (into (sorted-set) (keys data))
+        table (mapv (partial build-row-from-data data) names)]
     (spit (File. root "table-from-data.json")
           (cheshire/generate-string table {:pretty true}))
     (spit (File. root "from-data.html")
@@ -396,4 +400,43 @@
             {:title "From Data"}
             [:table
              [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
-             (into  [:tbody] table)]))))
+             (into [:tbody] table)]))))
+
+(deftest build-overlap
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        index (edn/read-string (slurp (File. root "name-data.edn")))
+        outlines (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) {} index)
+        overlap (layer-data outlines)]
+    (spit (File. root "outlines.json")
+          (cheshire/generate-string overlap {:pretty true}))
+    (spit (File. root "outlines.html")
+          (build-html
+            {:title "Outlines"}
+            [:table [:tbody [:tr overlap]]]))))
+
+(deftest build-data-compile-e2e
+  (let [root (File. "design/outfitter/items/body/fit/torso")
+        svg-file #(File. root (str "shapes/" % ".svg"))
+        names-table (edn/read-string (slurp (File. root "names.edn")))
+        invalid-files (remove #(.exists (svg-file (last %))) names-table)]
+    (if-not (empty? invalid-files)
+      (pp/pprint invalid-files)
+      (let [index (index-names names-table)
+            _ (spit (File. root "name-index.edn")
+                    (with-out-str (pp/pprint index)))
+            data (compile-full-data svg-file index)
+            _ (spit (File. root "name-data.edn")
+                    (with-out-str (pp/pprint data)))
+            names (into (sorted-set) (keys data))
+            table (mapv (partial build-row-from-data data) names)
+            overlap (layer-data (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) {} data))]
+        (spit (File. root "from-data.html")
+              (build-html
+                {:title "From Data"}
+                [:table
+                 [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
+                 (into [:tbody] table)]))
+        (spit (File. root "outlines.html")
+              (build-html
+                {:title "Outlines"}
+                [:table [:tbody [:tr overlap]]]))))))

@@ -1,0 +1,11 @@
+{"batman" {:base 13, :detail 26, :outline 36, :shadow 47},
+ "jacket" {:base 16, :outline 40, :shadow 49},
+ "pants" {:base 17, :outline 41},
+ "rocket" {:base 19, :detail 30, :outline 43},
+ "longcape" {:outline 35},
+ "shortcape" {:base 12, :detail 25, :shadow 34, :outline 37},
+ "graplers" {:base 20, :detail 31, :outline 44},
+ "tatters" {:base 14, :detail 27, :outline 38, :shadow 48},
+ "tentrils" {:base 18, :detail 29, :outline 42},
+ "quiver" {:base 21, :detail 32, :outline 45},
+ "stormcape" {:base 15, :detail 28, :outline 39}}

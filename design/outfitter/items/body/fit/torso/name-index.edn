@@ -1,0 +1,10 @@
+{"tiger" {:base 19, :outline 35},
+ "wolf" {:base 16, :outline 32},
+ "skeleton" {:base 13, :outline 28, :shadow 38},
+ "zombie" {:base 14, :detail 24, :outline 29},
+ "?" {:base 17, :outline 33, :shadow 39},
+ "scales" {:base 18, :outline 34},
+ "shading" {:outline 31},
+ "robot" {:base 15, :detail 25, :outline 30},
+ "leopard" {:base 20, :outline 36},
+ "human" {:base 12, :outline 27}}
