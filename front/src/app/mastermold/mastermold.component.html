@@ -1,7 +1,7 @@
 <div class="d-flex flex-column">
   <input type="file" id="fileInput" class="nes-input" multiple (change)="addImage($event)"/>
-  <div class="d-flex flex-row">
-    <div class="showcase" id="ctrl">
+  <div class="row" *ngIf="data">
+    <div class="col-md-5 showcase" id="ctrl">
       <div class="nes-container">
         <image-list
           [data]="data"
@@ -9,7 +9,7 @@
           (imageRemoved)="deleteImage($event)"></image-list>
       </div>
     </div>
-    <div class="showcase h-100">
+    <div class="col-md-7 showcase h-100">
       <div class="nes-container h-100">
         <button class="nes-btn" (click)="publish()">Publish</button>
         <p></p>
