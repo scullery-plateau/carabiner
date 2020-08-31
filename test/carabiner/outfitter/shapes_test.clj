@@ -3,7 +3,9 @@
             [carabiner.common.hiccup :as h]
             [carabiner.common.xml :as x]
             [clojure.string :as str]
-            [clojure.pprint :as pp])
+            [clojure.pprint :as pp]
+            [clojure.edn :as edn]
+            [cheshire.core :as cheshire])
   (:import (java.io File)))
 
 (defn wrap-svg [[id svg]]
@@ -135,3 +137,263 @@
         root (File. "design/outfitter/items/body")
         reddots (read-string (slurp (File. root "marker-check.edn")))]
     (build-tree-recurse root "shapes" "table.edn" reddots [] delete-table)))
+
+(deftest build-name-index
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        names (edn/read-string (slurp (File. root "names.edn")))
+        index (reduce-kv
+                #(assoc %1 %2 (into {} (mapv vec (mapv rest %3))))
+                {}
+                (group-by first names))]
+    (spit (File. root "name-index.edn") index)))
+
+(deftest fetch-path-actions
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        svg-file #(File. root (str "shapes/" % ".svg"))
+        names (edn/read-string (slurp (File. root "names.edn")))
+        paths (flatten
+                (mapv
+                  #(->> %
+                       (last)
+                       (svg-file)
+                       (read-svg)
+                       (second)
+                       (last)
+                       (drop 2))
+                  names))
+        d (->> paths
+               (filter map?)
+               (map #(str/split (:d %) #" "))
+               (flatten)
+               (map #(int (first %)))
+               (filter #(< 57 %))
+               (set)
+               (map #(-> %
+                         (char)
+                         (str)
+                         (keyword)))
+               (into (sorted-set)))]
+    (pp/pprint d)))
+
+(deftest pull-d
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        svg-file #(File. root (str "shapes/" % ".svg"))
+        names (edn/read-string (slurp (File. root "names.edn")))
+        paths (flatten
+                (mapv
+                  #(->> %
+                        (last)
+                        (svg-file)
+                        (read-svg)
+                        (second)
+                        (last)
+                        (drop 2))
+                  names))
+        d (->> paths
+               (filter map?)
+               (mapv :d))]
+    (spit (File. root "d.edn") d)))
+
+(defn parse-double [double-str]
+  (Double/parseDouble double-str))
+
+(defn parse-d [d]
+  (->> (str/split d #" ")
+       (partition-by #(< 57 (int (first %))))
+       (mapv vec)
+       (partition 2)
+       (mapv (partial apply into))
+       (mapv #(into [(keyword (str (first (first %)))) (apply str (rest (first %)))] (rest %)))
+       (mapv #(into [(first %)] (mapv vec (partition 2 (map parse-double (rest %))))))))
+
+(deftest test-parse-d
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        ds (mapv parse-d (edn/read-string (slurp (File. root "d.edn"))))]
+       (spit (File. root "ds.edn") ds)))
+
+(defn parse-path [[_ {:keys [d] :as path-args}]]
+  {:meta (dissoc path-args :d)
+   :path (parse-d d)})
+
+(def init-minmax-xy
+  {:min-x (double Integer/MAX_VALUE)
+   :min-y (double Integer/MAX_VALUE)
+   :max-x (double Integer/MIN_VALUE)
+   :max-y (double Integer/MIN_VALUE)})
+
+(defn minmax-xy-reducer [out {:keys [path]}]
+  (reduce
+    (fn [{:keys [min-x min-y max-x max-y]} [x y]]
+      {:min-x (min min-x x)
+       :min-y (min min-y y)
+       :max-x (max max-x x)
+       :max-y (max max-y y)})
+    out
+    (partition 2 (flatten (map rest path)))))
+
+(defn data-ify-svg [file]
+  (let [svg (second (read-svg file))
+        [_ {:keys [width height]} [_ {:keys [transform]} & paths]] svg
+        matrix (edn/read-string (apply str (drop 6 transform)))
+        [offset-x offset-y] (drop 4 matrix)
+        parsed-paths (mapv parse-path paths)
+        {:keys [min-x min-y max-x max-y]} (reduce minmax-xy-reducer init-minmax-xy parsed-paths)]
+    {:paths parsed-paths
+     :dim {:width width
+           :height height
+           :offset [offset-x offset-y]
+           :min [min-x min-y]
+           :max [max-x max-y]}}))
+
+(deftest compile-full-data
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        svg-file #(File. root (str "shapes/" % ".svg"))
+        index (edn/read-string (slurp (File. root "name-index.edn")))]
+    (spit
+      (File. root "name-data.edn")
+      (with-out-str
+        (pp/pprint
+          (reduce-kv
+            (fn [out k v]
+              (assoc
+                out
+                k
+                (reduce-kv
+                  #(assoc %1 %2 (data-ify-svg (svg-file %3)))
+                  {}
+                  v)))
+            {}
+            index))))))
+
+
+(defn get-number [point-num-str]
+  (Double/parseDouble
+    (if (< 57 (int (first point-num-str)))
+      (apply str (rest point-num-str))
+      point-num-str)))
+
+(defn layer-all [row]
+  [:td])
+
+(defn re-align-svg [[_ svg-args [_ g-args & paths]]]
+  [:svg svg-args (into [:g g-args] paths)])
+
+(defn build-name-cell [svg-file row layer]
+  (let [file-index (get row layer)]
+    [:td (if file-index (re-align-svg (second (read-svg (svg-file file-index)))) "")]))
+
+(defn print-d [d]
+  (->> d
+       (map #(into [(name (first %))] (flatten (rest %))))
+       (flatten)
+       (str/join " ")))
+
+(def layer-color-keys
+  {:base :fill
+   :detail :fill
+   :outline :stroke})
+
+(defn path-ify [layer color {:keys [meta path]}]
+  (let [layer-color-key (get layer-color-keys layer)]
+    [:path (merge
+             meta
+             {:d (print-d path)}
+             (if layer-color-key
+               (assoc {} layer-color-key color)
+               {}))]))
+
+(defn build-group
+  ([layer offset paths]
+   (build-group layer offset paths "#000000"))
+  ([layer offset paths color]
+   (into
+     [:g
+      (if offset
+        {:transform (str "matrix(" (str/join "," (into [1.0 0.0 0.0 1.0] offset)) ")")}
+        {})]
+     (mapv (partial path-ify layer color) paths))))
+
+(def layer-colors
+  {:base "#00ff00"
+   :detail "#ff0000"
+   :outline "#0000ff"})
+
+(defn build-group-from-pair [[layer {:keys [paths]}]]
+  (let [color (get layer-colors layer)]
+    (if color
+      (build-group layer nil paths color)
+      (build-group layer nil paths))))
+
+(defn layer-data [row]
+  (let [dims (mapv :dim (vals row))
+        _ (pp/pprint (mapv #(select-keys % [:min :max]) dims))
+        mins (mapv :min dims)
+        min-xs (mapv first mins)
+        min-ys (mapv second mins)
+        maxs (mapv :max dims)
+        max-xs (mapv first maxs)
+        max-ys (mapv second maxs)
+        min-x (apply min min-xs)
+        min-y (apply min min-ys)
+        max-x (apply max max-xs)
+        max-y (apply max max-ys)
+        width (- max-x min-x)
+        height (- max-y min-y)]
+    [:td
+     (into [:svg {:width (str width "px")
+                  :height (str height "px")
+                  :viewBox (str/join " " [min-x min-y width height])}]
+           (mapv build-group-from-pair row))]))
+
+(defn build-cell-from-data [row layer]
+  (let [{:keys [dim paths] :as svg} (get row layer)
+        offset (:offset dim)]
+    (if svg
+      [:td
+       [:svg
+        (select-keys dim [:width :height])
+        (build-group layer offset paths)]]
+      [:td])))
+
+(defn build-name-row [svg-file index key]
+  (let [row (get index key)]
+    (conj
+      (into [:tr]
+          (map (partial build-name-cell svg-file row)
+               [:base :detail :outline :shadow]))
+      (layer-all row))))
+
+(defn build-row-from-data [index key]
+  (pp/pprint key)
+  (let [row (get index key)]
+    (conj
+      (into [:tr]
+            (map (partial build-cell-from-data row)
+                 [:base :detail :outline :shadow]))
+      (layer-data row))))
+
+(deftest build-name-table
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        svg-file #(File. root (str "shapes/" % ".svg"))
+        index (edn/read-string (slurp (File. root "name-index.edn")))
+        names (into (sorted-set) (keys index))]
+    (spit (File. root "name-matched.html")
+          (build-html
+            {:title "Name-Matched"}
+            [:table
+             [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
+             (into  [:tbody] (map (partial build-name-row svg-file index) names))]))))
+
+(deftest build-table-from-name-data
+  (let [root (File. "design/outfitter/items/body/fit/arm")
+        index (edn/read-string (slurp (File. root "name-data.edn")))
+        names (into (sorted-set) (keys index))
+        table (mapv (partial build-row-from-data index) names)]
+    (spit (File. root "table-from-data.json")
+          (cheshire/generate-string table {:pretty true}))
+    (spit (File. root "from-data.html")
+          (build-html
+            {:title "From Data"}
+            [:table
+             [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
+             (into  [:tbody] table)]))))
