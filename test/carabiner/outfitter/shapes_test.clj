@@ -5,7 +5,8 @@
             [clojure.string :as str]
             [clojure.pprint :as pp]
             [clojure.edn :as edn]
-            [cheshire.core :as cheshire])
+            [cheshire.core :as cheshire]
+            [clojure.set :as set])
   (:import (java.io File)))
 
 (defn wrap-svg [[id svg]]
@@ -413,6 +414,86 @@
           (build-html
             {:title "Outlines"}
             [:table [:tbody [:tr overlap]]]))))
+
+(defmulti assign-ranges count)
+
+(defmethod assign-ranges 3 [[base _ outline]]
+  {:base (vec base)
+   :outline (vec outline)})
+
+(defmethod assign-ranges 4 [[base _ detail outline]]
+  {:base (vec base)
+   :detail (vec detail)
+   :outline (vec outline)})
+
+(defmethod assign-ranges 5 [[base _ detail outline shadow]]
+  {:base (vec base)
+   :detail (vec detail)
+   :outline (vec outline)
+   :shadow (vec shadow)})
+
+(defn read-shape-numbers-to-ranges [folder]
+  (let [files (->> (.list folder)
+                   (mapv #(Integer/parseInt (first (str/split % #"\."))))
+                   (into (sorted-set))
+                   (drop 2))
+        min-file (apply min files)
+        max-file (apply max files)
+        markers (into
+                  (sorted-set)
+                  (set/difference
+                    (set (range min-file (inc max-file)))
+                    (set files)))
+        ranges (filter
+                 (fn [[a b]]
+                   (<= a b))
+                 (partition 2
+                            (conj
+                              (reduce
+                                #(into %1 [(dec %2) (inc %2)])
+                                [min-file]
+                                markers)
+                              max-file)))]
+    (assign-ranges ranges)))
+
+(def layers [:outline :base :detail :shadow])
+
+(deftest test-read-shape-file-numbers
+  (let [root (File. "design/outfitter/items/body/fit/boots")
+        shapes-folder (File. root "shapes")
+        ranges (read-shape-numbers-to-ranges shapes-folder)
+        columns (reduce-kv
+                  #(assoc %1 %2 (vec (range (first %3) (inc (second %3)))))
+                  {} ranges)
+        counts (reduce-kv
+                 #(assoc %1 %2 (count %3))
+                 {} columns)
+        max-count (apply max (vals counts))
+        diffs (reduce-kv
+                #(assoc %1 %2 (- max-count %3))
+                {}
+                counts)
+        empty-layers (set/difference (set layers) (set (keys diffs)))
+        {:keys [outline base detail shadow]}
+        (merge
+          (reduce #(assoc %1 %2 (repeat max-count nil)) {} empty-layers)
+          (reduce-kv
+            #(assoc %1 %2 (into %3 (repeat (get diffs %2) nil)))
+            {}
+            columns))
+
+        table (mapv vector outline base detail shadow)
+        full-data (mapv #(into {} (mapv vector layers %)) table)]
+    (pp/pprint ranges)
+    (pp/pprint counts)
+    (pp/pprint diffs)
+    (pp/pprint table)
+    (pp/pprint full-data)))
+
+(deftest build-table-from-index
+  (let [root (File. "design/outfitter/items/body/fit/torso")
+        ranges (edn/read-string (slurp (File. root "ranges.edn")))]
+    (pp/pprint ranges)))
 
 (deftest build-data-compile-e2e
   (let [root (File. "design/outfitter/items/body/fit/torso")
