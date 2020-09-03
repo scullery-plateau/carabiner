@@ -1,0 +1,632 @@
+{"hat-264"
+ [:svg
+  {:width "47.5px", :height "50.6px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 23.95, 143.35)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M19.8 -104.8 Q11.3 -92.35 -0.2 -92.75 -11.7 -92.35 -20.2 -104.8 -21.9 -107.3 -23.95 -107.4 L-23.95 -128.05 Q-22.25 -144.35 -0.2 -143.3 21.85 -144.35 23.55 -128.05 L23.55 -107.4 Q21.5 -107.3 19.8 -104.8"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0179, 0.0, 0.0, 0.0105, -0.15, -114.1)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]]],
+ "hat-257"
+ [:svg
+  {:width "29.0px", :height "7.3px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 14.75, 118.4)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M14.25 -114.75 Q14.25 -113.25 12.6 -112.2 10.85 -111.1 8.4 -111.1 5.9 -111.1 4.25 -112.2 2.5 -113.25 2.5 -114.75 2.5 -115.5 2.95 -116.15 L4.25 -117.35 Q5.9 -118.4 8.4 -118.4 10.85 -118.4 12.6 -117.35 L13.35 -116.75 Q14.25 -115.85 14.25 -114.75"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient1)",
+     :d
+     "M-3.45 -116.15 Q-3.0 -115.5 -3.0 -114.75 -3.0 -113.25 -4.75 -112.2 -6.4 -111.1 -8.9 -111.1 -11.35 -111.1 -13.1 -112.2 -14.75 -113.25 -14.75 -114.75 -14.75 -115.85 -13.85 -116.75 L-13.1 -117.35 Q-11.35 -118.4 -8.9 -118.4 -6.4 -118.4 -4.75 -117.35 L-3.45 -116.15"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0045, -0.0072, 0.0, 8.4, -114.75)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient1",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0045, -0.0072, 0.0, -8.85, -114.75)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"}]]]],
+ "hat-258"
+ [:svg
+  {:width "29.8px", :height "8.0px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 15.15, 118.9)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M2.15 -118.9 L14.65 -118.9 14.65 -110.9 2.15 -110.9 2.15 -118.9"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient1)",
+     :d
+     "M-2.65 -118.9 L-2.65 -110.9 -15.15 -110.9 -15.15 -118.9 -2.65 -118.9"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0049, -0.0076, 0.0, 8.4, -114.9)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient1",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0049, -0.0076, 0.0, -8.9, -114.9)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"}]]]],
+ "chest-212"
+ [:svg
+  {:width "26.7px", :height "25.35px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 9.35, 46.4)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M11.9 -27.8 L9.2 -30.4 5.5 -30.4 0.8 -35.2 1.5 -38.95 -1.35 -42.35 3.05 -46.4 5.75 -46.4 17.3 -35.55 17.35 -32.7 11.9 -27.8"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient1)",
+     :d
+     "M-1.35 -42.35 L1.5 -38.95 0.8 -35.2 5.5 -30.4 9.2 -30.4 11.9 -27.8 4.35 -21.05 1.5 -21.1 -9.35 -32.1 -9.35 -34.9 -1.35 -42.35"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill-opacity "0.5019608",
+     :fill "#ffffff",
+     :d "M9.65 -42.7 L-5.75 -28.45 -9.3 -32.05 5.75 -46.4 9.65 -42.7"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill-opacity "0.2",
+     :fill "#000000",
+     :d
+     "M1.5 -21.1 L-0.35 -22.95 15.55 -37.2 17.3 -35.55 17.35 -32.7 4.35 -21.05 1.5 -21.1"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0114, -0.0114, 0.0, 8.0, -37.1)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient1",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform "matrix(0.0, 0.013, -0.013, 0.0, 1.3, -31.7)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]]],
+ "hat-265"
+ [:svg
+  {:width "36.45px", :height "12.95px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 18.7, 120.45)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M14.95 -120.05 Q17.55 -118.75 17.75 -116.6 L17.75 -110.65 Q17.5 -109.2 15.1 -108.3 L13.85 -107.9 7.05 -107.5 Q5.7 -107.9 4.45 -111.15 4.35 -112.55 1.65 -112.65 L-0.2 -112.75 -0.45 -112.8 -2.6 -112.65 Q-5.35 -112.55 -5.4 -111.15 -6.7 -107.9 -7.95 -107.5 L-14.8 -107.9 -16.1 -108.3 Q-18.45 -109.2 -18.7 -110.65 L-18.7 -116.6 Q-18.5 -118.7 -16.1 -119.95 L-14.95 -120.45 14.05 -120.45 14.95 -120.05"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0222, 0.0, 0.0, 0.0079, -0.5, -114.0)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]]],
+ "chest-211"
+ [:svg
+  {:width "44.35px", :height "41.25px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 22.45, 52.55)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M5.1 -47.1 L10.6 -52.55 16.85 -52.55 21.9 -48.1 21.9 -40.75 15.3 -34.3 15.0 -35.8 14.95 -36.15 Q14.45 -38.3 13.3 -40.2 L10.8 -43.45 8.8 -45.15 6.15 -46.7 5.85 -46.85 5.1 -47.1"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient1)",
+     :d
+     "M5.1 -47.1 L5.85 -46.85 6.15 -46.7 8.8 -45.15 10.8 -43.45 13.3 -40.2 Q14.45 -38.3 14.95 -36.15 L15.0 -35.8 15.3 -34.3 15.45 -32.2 Q15.45 -30.45 15.1 -28.8 L14.75 -27.4 14.6 -27.1 14.25 -26.0 13.5 -26.65 13.15 -25.25 13.0 -24.95 11.8 -22.2 11.6 -21.9 11.45 -21.65 10.8 -20.95 8.85 -19.3 Q7.25 -18.15 5.45 -17.4 L4.4 -17.0 -0.3 -16.3 -4.95 -17.0 -6.0 -17.4 -9.45 -19.3 Q-10.4 -20.0 -11.35 -20.95 L-11.5 -21.1 -12.0 -21.9 -12.2 -22.2 Q-13.0 -23.5 -13.45 -24.95 L-13.55 -25.25 -13.9 -26.65 -14.75 -25.9 -15.2 -27.1 -15.3 -27.4 -15.65 -28.8 Q-16.0 -30.45 -16.0 -32.2 L-15.85 -34.3 -15.6 -35.8 -15.5 -36.15 Q-15.0 -38.3 -13.9 -40.2 L-11.35 -43.45 -9.35 -45.15 Q-8.1 -46.1 -6.75 -46.7 L-6.4 -46.85 -5.7 -47.1 Q-3.15 -48.05 -0.3 -48.1 2.6 -48.05 5.1 -47.1 M2.65 -39.5 L1.05 -40.0 -0.3 -40.15 -1.6 -40.0 -3.2 -39.5 Q-4.6 -39.0 -5.7 -37.85 L-6.5 -36.95 Q-7.3 -35.85 -7.7 -34.55 L-7.8 -34.3 -8.05 -32.2 -7.75 -30.0 Q-7.25 -28.1 -5.7 -26.6 L-4.9 -25.85 Q-4.15 -25.25 -3.3 -24.9 -1.9 -24.3 -0.3 -24.25 1.35 -24.3 2.8 -24.9 L4.3 -25.85 5.15 -26.6 Q6.7 -28.1 7.2 -30.0 L7.5 -32.2 7.2 -34.3 7.15 -34.55 5.9 -36.95 5.15 -37.85 Q4.0 -39.0 2.65 -39.5"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient2)",
+     :d
+     "M2.65 -39.5 Q4.0 -39.0 5.15 -37.85 L5.9 -36.95 7.15 -34.55 7.2 -34.3 7.5 -32.2 7.2 -30.0 Q6.7 -28.1 5.15 -26.6 L4.3 -25.85 2.8 -24.9 Q1.35 -24.3 -0.3 -24.25 -1.9 -24.3 -3.3 -24.9 -4.15 -25.25 -4.9 -25.85 L-5.7 -26.6 Q-7.25 -28.1 -7.75 -30.0 L-8.05 -32.2 -7.8 -34.3 -7.7 -34.55 Q-7.3 -35.85 -6.5 -36.95 L-5.7 -37.85 Q-4.6 -39.0 -3.2 -39.5 L-1.6 -40.0 -0.3 -40.15 1.05 -40.0 2.65 -39.5"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient3)",
+     :d
+     "M14.25 -26.0 L17.85 -22.9 17.85 -16.65 13.6 -11.3 7.25 -11.3 2.8 -14.85 3.85 -15.25 7.25 -17.15 9.2 -18.8 Q10.5 -20.15 11.45 -21.65 L11.6 -21.9 11.8 -22.2 13.0 -24.95 13.15 -25.25 13.5 -26.65 14.25 -26.0"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient4)",
+     :d
+     "M-15.85 -34.3 L-22.45 -40.75 -22.45 -48.1 -17.4 -52.55 -11.15 -52.55 -5.7 -47.1 -6.4 -46.85 -6.75 -46.7 Q-8.1 -46.1 -9.35 -45.15 L-11.35 -43.45 -13.9 -40.2 Q-15.0 -38.3 -15.5 -36.15 L-15.6 -35.8 -15.85 -34.3"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient5)",
+     :d
+     "M-11.5 -21.1 L-9.6 -18.8 -7.7 -17.15 Q-6.1 -16.0 -4.25 -15.25 L-3.2 -14.85 -7.65 -11.3 -14.0 -11.3 -18.3 -16.65 -18.3 -22.9 -14.75 -25.9 -13.9 -26.65 -13.55 -25.25 -13.45 -24.95 Q-13.0 -23.5 -12.2 -22.2 L-12.0 -21.9 -11.5 -21.1"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill-opacity "0.2",
+     :fill "#000000",
+     :d
+     "M21.9 -48.1 L21.9 -40.75 15.3 -34.3 15.0 -35.8 14.95 -36.15 Q14.45 -38.3 13.3 -40.2 L21.9 -48.1 M2.8 -14.85 L3.85 -15.25 7.25 -17.15 13.6 -11.3 7.25 -11.3 2.8 -14.85 M-15.85 -34.3 L-22.45 -40.75 -22.45 -48.1 -13.9 -40.2 Q-15.0 -38.3 -15.5 -36.15 L-15.6 -35.8 -15.85 -34.3 M-14.0 -11.3 L-7.7 -17.15 Q-6.1 -16.0 -4.25 -15.25 L-3.2 -14.85 -7.65 -11.3 -14.0 -11.3"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill-opacity "0.5019608",
+     :fill "#ffffff",
+     :d
+     "M16.85 -52.55 L8.8 -45.15 6.45 -46.55 12.0 -52.55 16.85 -52.55 M13.0 -24.95 L13.15 -25.25 17.85 -20.85 17.85 -16.65 11.8 -22.2 13.0 -24.95 M0.75 -38.45 L2.05 -38.05 4.1 -36.7 4.65 -36.0 Q5.35 -35.1 5.65 -34.05 L5.75 -33.9 5.95 -32.2 5.7 -30.45 Q5.3 -28.9 4.1 -27.7 L3.4 -27.1 Q2.8 -26.65 2.2 -26.35 L-0.3 -25.8 -1.0 -25.85 Q1.9 -27.75 2.55 -29.95 -5.7 -27.95 -2.85 -35.9 -4.9 -35.5 -6.2 -34.15 L-5.25 -36.0 -4.6 -36.7 -2.6 -38.05 -1.3 -38.45 -0.3 -38.55 0.75 -38.45 M10.85 -40.75 L11.95 -39.05 9.9 -37.25 8.75 -39.1 7.65 -40.45 Q6.0 -42.1 4.0 -42.9 L1.65 -43.6 -0.3 -43.85 -2.2 -43.6 -4.55 -42.9 Q-6.55 -42.1 -8.2 -40.45 L-9.3 -39.1 -10.4 -37.4 -12.55 -39.05 -11.45 -40.75 -10.1 -42.4 Q-8.05 -44.4 -5.55 -45.4 L-2.65 -46.25 -0.3 -46.5 2.05 -46.25 Q3.6 -46.0 4.95 -45.4 7.45 -44.4 9.5 -42.4 L10.85 -40.75 M-12.55 -52.55 L-6.4 -46.85 -6.75 -46.7 Q-8.1 -46.1 -9.35 -45.15 L-17.4 -52.55 -12.55 -52.55 M-13.45 -24.95 Q-13.0 -23.5 -12.2 -22.2 L-18.3 -16.65 -18.3 -20.85 -13.55 -25.25 -13.45 -24.95"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0111, -0.0102, 0.0, 13.5, -43.4)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient1",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0194, -0.0192, 0.0, -0.3, -32.2)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient2",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0097, -0.0095, 0.0, -0.3, -32.2)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient3",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0094, -0.0092, 0.0, 10.35, -19.0)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient4",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0111, -0.0102, 0.0, -14.05, -43.4)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient5",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0, 0.0094, -0.0092, 0.0, -10.75, -19.0)"}
+    [:stop
+     {:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]]]],
+ "hat-268"
+ [:svg
+  {:width "55.1px", :height "50.5px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 27.65, 136.25)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M0.05 -136.25 Q9.7 -135.95 15.75 -134.15 21.05 -132.65 23.6 -130.0 28.4 -116.2 27.2 -103.95 21.45 -100.55 15.6 -99.25 L10.0 -98.4 Q5.7 -101.9 1.8 -98.8 0.6 -97.2 1.8 -95.85 5.55 -93.1 10.0 -95.85 L15.6 -96.55 Q21.9 -97.75 26.8 -100.75 L25.9 -96.45 Q21.3 -91.1 15.6 -88.4 8.8 -85.25 0.4 -85.85 L-0.05 -85.9 -0.55 -85.85 Q-8.65 -85.3 -15.25 -88.2 -21.3 -90.85 -26.05 -96.45 -30.1 -111.85 -23.75 -130.0 -21.0 -132.85 -15.1 -134.4 -9.2 -135.95 -0.2 -136.25 L-0.05 -136.25 0.05 -136.25"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0359, 0.0, 0.0, 0.0308, 1.75, -111.0)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]]],
+ "hat-267"
+ [:svg
+  {:width "95.85px", :height "30.1px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 48.0, 128.75)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M11.95 -124.75 Q13.8 -123.2 15.0 -121.35 16.8 -118.55 16.8 -115.05 16.8 -111.65 15.05 -108.85 13.9 -106.95 11.95 -105.35 7.45 -101.65 1.2 -101.35 L-0.35 -101.3 -0.65 -101.3 -1.1 -101.35 -1.75 -101.35 Q-7.75 -101.75 -12.1 -105.35 -14.6 -107.4 -15.8 -109.9 -16.95 -112.3 -16.95 -115.05 L-16.85 -116.45 Q-16.65 -118.45 -15.8 -120.2 -14.6 -122.7 -12.1 -124.75 -7.4 -128.65 -0.75 -128.75 L0.75 -128.75 Q7.25 -128.6 11.95 -124.75"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient1)",
+     :d
+     "M40.05 -106.65 Q41.8 -107.15 43.05 -106.65 42.15 -103.05 39.8 -100.05 40.5 -103.35 40.05 -106.65"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient2)",
+     :d
+     "M46.15 -118.0 Q46.15 -121.8 45.0 -125.2 47.3 -121.8 47.7 -117.2 L46.15 -118.0"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient3)",
+     :d
+     "M47.8 -116.05 Q48.0 -111.5 46.65 -107.95 L45.2 -107.95 Q46.65 -112.25 46.45 -116.55 47.1 -116.8 47.8 -116.05"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient4)",
+     :d
+     "M45.05 -117.0 Q45.6 -112.55 44.0 -108.1 42.15 -107.55 40.35 -108.1 42.0 -112.4 41.5 -117.0 43.25 -117.7 45.05 -117.0"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient5)",
+     :d
+     "M41.7 -118.15 Q43.65 -120.85 43.55 -124.25 45.1 -121.9 45.05 -118.15 L41.7 -118.15"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient6)",
+     :d
+     "M44.4 -106.6 Q45.25 -106.95 46.15 -106.6 43.85 -101.1 40.45 -98.65 42.95 -102.15 44.4 -106.6"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient7)",
+     :d
+     "M-41.85 -118.15 L-45.2 -118.15 Q-45.25 -121.9 -43.7 -124.25 -43.8 -120.85 -41.85 -118.15"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient8)",
+     :d
+     "M-45.2 -117.0 Q-43.45 -117.7 -41.65 -117.0 -42.15 -112.4 -40.5 -108.1 -42.3 -107.55 -44.15 -108.1 -45.8 -112.55 -45.2 -117.0"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient9)",
+     :d
+     "M-46.3 -118.0 L-47.85 -117.2 Q-47.5 -121.8 -45.15 -125.2 -46.3 -121.8 -46.3 -118.0"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient10)",
+     :d
+     "M-48.0 -116.05 Q-47.3 -116.8 -46.6 -116.55 -46.85 -112.25 -45.35 -107.95 L-46.8 -107.95 Q-48.15 -111.5 -48.0 -116.05"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient11)",
+     :d
+     "M-46.3 -106.6 Q-45.45 -106.95 -44.6 -106.6 -43.1 -102.15 -40.6 -98.65 -44.05 -101.1 -46.3 -106.6"}]
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient12)",
+     :d
+     "M-40.2 -106.65 Q-40.65 -103.35 -39.95 -100.05 -42.35 -103.05 -43.2 -106.65 -41.95 -107.15 -40.2 -106.65"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0206, 0.0, 0.0, 0.0168, -0.1, -115.05)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient1",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.002, 0.0, 0.0, 0.0042, 41.4, -103.5)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient2",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0016, 0.0, 0.0, 0.0049, 46.35, -121.2)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient3",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0016, 0.0, 0.0, 0.0053, 46.5, -112.3)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient4",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.003, 0.0, 0.0, 0.0058, 42.75, -112.6)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient5",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.002, 0.0, 0.0, 0.0037, 43.35, -121.2)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient6",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0035, 0.0, 0.0, 0.005, 43.3, -102.75)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient7",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.002, 0.0, 0.0, 0.0037, -43.55, -121.2)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient8",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.003, 0.0, 0.0, 0.0058, -42.95, -112.6)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient9",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0016, 0.0, 0.0, 0.0049, -46.5, -121.2)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient10",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0016, 0.0, 0.0, 0.0053, -46.7, -112.3)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient11",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0035, 0.0, 0.0, 0.005, -43.45, -102.75)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient12",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.002, 0.0, 0.0, 0.0042, -41.6, -103.5)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]]],
+ "hat-263"
+ [:svg
+  {:width "29.4px", :height "17.25px"}
+  [:g
+   {:transform "matrix(1.0, 0.0, 0.0, 1.0, 14.85, 122.7)"}
+   [:path
+    {:stroke "none",
+     :fill-rule "evenodd",
+     :fill "url(#gradient0)",
+     :d
+     "M1.05 -116.3 L1.75 -116.75 Q8.15 -120.7 14.55 -122.7 L14.55 -109.8 Q11.65 -106.8 7.75 -105.45 L6.15 -109.75 Q-0.25 -112.2 -6.6 -109.75 L-8.05 -105.45 Q-11.95 -106.8 -14.85 -109.8 L-14.85 -122.7 Q-8.85 -120.85 -2.85 -117.3 L-1.5 -116.45 1.05 -116.3"}]]
+  [:defs
+   [:linearGradient
+    {:x2 "819.2",
+     :x1 "-819.2",
+     :spreadMethod "pad",
+     :id "gradient0",
+     :gradientUnits "userSpaceOnUse",
+     :gradientTransform
+     "matrix(0.0179, 0.0, 0.0, 0.0105, -0.15, -114.1)"}
+    [:stop {:stop-color "#ffffff", :offset "0.0"}]
+    [:stop
+     {:stop-opacity "0.0",
+      :stop-color "#ffffff",
+      :offset "0.49019607843137253"}]
+    [:stop {:stop-color "#ffffff", :offset "1.0"}]]]]}
