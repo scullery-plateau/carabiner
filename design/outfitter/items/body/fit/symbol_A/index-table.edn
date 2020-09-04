@@ -13,7 +13,7 @@
  {:outline 164, :base 24, :detail 16, :shadow nil}
  {:outline 165, :base 25, :detail 17, :shadow nil}
  {:outline 166, :base 26, :detail 18, :shadow nil}
- {:outline 167, :base 27, :detail nil, :shadow nil}
+ {:outline 167, :base 27, :detail 19, :shadow nil}
  {:outline 168, :base 28, :detail nil, :shadow nil}
  {:outline 169, :base 29, :detail nil, :shadow nil}
  {:outline 170, :base 30, :detail nil, :shadow nil}

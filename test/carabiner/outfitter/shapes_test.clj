@@ -252,13 +252,8 @@
   (let [matrix (edn/read-string (apply str (drop 6 matrix-txt)))]
     (str "matrix(" (str/join " " (concat (take 4 matrix) (point+ point (drop 4 matrix)))) ")")))
 
-(defn update-gradient [label meta]
-  (-> meta
-      (update :id #(str/replace % "gradient" (str label "-")))
-      (update :gradientTransform (partial translate-matrix [400 300]))))
-
 (defn parse-gradients [label [_ args & stops]]
-  {:meta  (update-gradient label args)
+  {:meta  (update args :id #(str/replace % "gradient" (str label "-")))
    :stops (map second stops)})
 
 (defn parse-defs [label [_ & defs]]
@@ -266,7 +261,7 @@
 
 (defn data-ify-svg [layer file label]
   (let [svg (second (read-svg file))
-        [diff-x diff-y :as diff-set] (if (= :shadow layer) [400 300] [0 0])
+        [diff-x diff-y :as diff-set] (if (= :shadow layer) [0 0] [-400 -300])
         [_ {:keys [width height]} [_ {:keys [transform]} & paths] & [defs]] svg
         matrix (edn/read-string (apply str (drop 6 transform)))
         [offset-x offset-y] (point+ (drop 4 matrix) [(- diff-x) (- diff-y)])
@@ -306,7 +301,7 @@
       (apply str (rest point-num-str))
       point-num-str)))
 
-(defn layer-all [row]
+(defn layer-all [_]
   [:td])
 
 (defn re-align-svg [[_ svg-args [_ g-args & paths]]]
@@ -397,18 +392,24 @@
                  [:base :detail :outline :shadow]))
       [:td (layer-all row)])))
 
-(defn build-row-from-data [row]
-  (conj
-    (into [:tr]
-          (map (partial build-cell-from-data row)
-               [:base :detail :outline :shadow]))
-    (->> [:base :detail :outline :shadow]
-         (filterv (set (keys row)))
-         (mapv (partial get row))
-         (layer-data
-           {:base    "#00ff00"
-            :detail  "#ff0000"
-            :outline "#0000ff"}))))
+(defn build-row-from-data
+  ([row]
+   (conj
+     (into [:tr]
+           (map (partial build-cell-from-data row)
+                [:base :detail :outline :shadow]))
+     (->> [:base :detail :outline :shadow]
+          (filterv (set (keys row)))
+          (mapv (partial get row))
+          (layer-data
+            {:base    "#00ff00"
+             :detail  "#ff0000"
+             :outline "#0000ff"})
+          (vector :td))))
+  ([n row]
+   (into
+     [:tr [:th [:h2 (str n)]]]
+     (drop 1 (build-row-from-data row)))))
 
 (deftest build-name-table
   (let [root (io/file "design/outfitter/items/body/fit/arm")
@@ -535,7 +536,7 @@
         index-table (index-table-from-columns columns)
         svg-file #(io/file folder (str "shapes/" % ".svg"))
         data (mapv (partial compile-data-row svg-file (.getName folder)) index-table)
-        table (mapv build-row-from-data data)
+        table (mapv build-row-from-data (range) data)
         outlines (remove nil? (mapv :outline data))]
     (spit (io/file folder "index-table.edn")
           (with-out-str (pp/pprint index-table)))
@@ -543,11 +544,13 @@
           (with-out-str (pp/pprint data)))
     (spit (io/file folder "outlines.edn")
           (with-out-str (pp/pprint outlines)))
+    (spit (io/file folder "table.edn")
+          (with-out-str (pp/pprint table)))
     (spit (io/file folder "from-data.html")
           (build-html
             {:title "From Data"}
             [:table {:style "background-color: #088;"}
-             [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
+             [:thead [:tr [:th "#"] [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
              (into [:tbody] table)]))
     (spit (io/file folder "outlines.html")
           (build-html
@@ -604,7 +607,7 @@
 
 (deftest test-read-columns-to-html
   (let [root (io/file "design/outfitter/items/body/fit")]
-    (read-columns-to-html (io/file root "arm"))))
+    (read-columns-to-html (io/file root "symbol_B"))))
 
 (deftest test-read-columns-to-html-for-folder
   (let [folder (io/file "design/outfitter/items/body/fit")]
@@ -627,6 +630,18 @@
                    #(with-out-str (pp/pprint %))
                    (spit name-index-file)))
             (build-columns-from-names folder)))))))
+
+(deftest build-part-menu
+  (let [root (io/file "design/outfitter/items/body/fit")
+        folders (mapv #(.getName %) (filterv #(.isDirectory %) (.listFiles root)))]
+    (spit (io/file root "menu.html")
+          (build-html
+            {:title "Part Menu"}
+            (into
+              [:ul]
+              (mapv
+                #(vector :li [:a {:href (str % "/from-data.html")} [:h2 %]])
+                folders))))))
 
 (deftest test-compile-names-e2e
   (let [part "torso"
@@ -654,6 +669,8 @@
         (spit (io/file root "outlines.html")
               (build-html {:title "Outlines"} overlap))))))
 
+
+
 (defn parse-blueprint-layer [root [step index & {:keys [flip? base detail outline]
                                                  :or   {flip?   false
                                                         base    "#ffffff"
@@ -678,11 +695,11 @@
         max-ys (mapv second maxs)
         min-y (- (apply min min-ys) padding)
         max-y (+ (apply max max-ys) padding)
-        left-x (- 400 (apply min min-xs))
-        right-x (- (apply max max-xs) 400)
+        left-x (Math/abs (double (apply min min-xs)))
+        right-x (Math/abs (double (apply max max-xs)))
         max-diff-x (+ (max left-x right-x) padding)
-        min-x (- 400 max-diff-x)
-        max-x (+ 400 max-diff-x)
+        min-x (- max-diff-x)
+        max-x max-diff-x
         width (- max-x min-x)
         height (- max-y min-y)]
     [:svg
@@ -704,7 +721,7 @@
            (into
              [:g
               (if flip?
-                {:transform "matrix(-1.0, 0.0, 0.0, 1.0, 800.0, 0.0)"}
+                {:transform "matrix(-1.0, 0.0, 0.0, 1.0, 0.0, 0.0)"}
                 {})]
              (->> [:base :detail :outline :shadow]
                   (filterv (set (keys layers)))
@@ -712,26 +729,38 @@
                   (mapv (partial build-group-from-pair colors)))))
          all-layers))]))
 
+(defn blueprint->svg [root [body-type & blueprint]]
+  (let [folder (io/file root (name body-type))]
+    (group-layers 10 (mapv (partial parse-blueprint-layer folder) blueprint))))
+
+(defn svg->64 [svg]
+  (-> svg
+      (update 1 assoc :xmlns "http://www.w3.org/2000/svg")
+      (hml/to-text)
+      (img/svg-to-64)))
+
+(defn build-demo-table [root demos]
+  (let [demo-mapper #(let [svg (blueprint->svg
+                                 root
+                                 (edn/read-string
+                                   (slurp %)))
+                           encoded (svg->64 svg)
+                           img (str "data:image/png;base64," encoded)]
+                        [:tr
+                         [:td svg]
+                         [:td [:img {:src img}]]])]
+    [:table
+      (into [:tbody]
+        (->> (.listFiles demos)
+             (filter #(str/ends-with? (.getName %) ".edn"))
+             (mapv demo-mapper)))]))
+
 (deftest test-parse-blueprint
-  (let [root (io/file "design/outfitter/items/body/fit")
-        blueprint (edn/read-string (slurp (io/file root "demo1.edn")))
-        layers (mapv (partial parse-blueprint-layer root) blueprint)
-        svg (group-layers 10 layers)
-        encoded (-> svg
-                    (update 1 assoc :xmlns "http://www.w3.org/2000/svg")
-                    (hml/to-text)
-                    (img/svg-to-64))]
-    (spit (io/file root "demo1-data.edn")
-          (with-out-str (pp/pprint layers)))
-    (spit (io/file root "demo1.html")
+  (let [root (io/file "design/outfitter/items/body")
+        demos (io/file "design/outfitter/demos")]
+    (spit (io/file demos "demo.html")
           (build-html
-            {:title "demo1.edn"}
-            [:table
-             [:tbody
-              [:tr
-               [:td svg]
-               [:td [:img {:src (str "data:image/png;base64," encoded)}]]]]]))))
-
-
+            {:title "Demos"}
+            (build-demo-table root demos)))))
 
 

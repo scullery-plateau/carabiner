@@ -1,1 +1,4 @@
-{:base [12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 nil], :detail [nil nil nil nil 35 nil nil 36 nil nil nil nil nil nil 37 38 39 40 41 42 nil], :outline [44 45 46 47 48 49 50 51 53 54 55 56 57 58 59 60 61 62 63 64 52], :shadow [nil nil nil nil nil nil 66 nil nil nil nil nil nil nil nil nil nil nil nil nil nil]}
+{:base    [12  13  14  15  16  17  18  18  19  20  21  22  23  24  25  26  27  28  29  30  31  nil],
+ :detail  [nil nil nil nil 35  nil nil nil 36  nil nil nil nil nil nil 37  38  39  40  41  42  nil],
+ :outline [44  45  46  47  48  49  50  50  51  53  54  55  56  57  58  59  60  61  62  63  64  52],
+ :shadow  [nil nil nil nil nil nil nil 66  nil nil nil nil nil nil nil nil nil nil nil nil nil nil]}
