@@ -40,4 +40,4 @@
 
 (defn to-html [expanded]
   (str "<!DOCTYPE html>"
-  (with-out-str (xml/emit-element expanded))))
+    (with-out-str (xml/emit-element expanded))))

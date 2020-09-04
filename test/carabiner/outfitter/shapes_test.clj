@@ -7,7 +7,9 @@
             [clojure.edn :as edn]
             [cheshire.core :as cheshire]
             [clojure.set :as set]
-            [clojure.java.io :as io])
+            [clojure.java.io :as io]
+            [carabiner.common.hiccup :as hml]
+            [carabiner.common.img :as img])
   (:import (java.io File)))
 
 (defn wrap-svg [[id svg]]
@@ -256,7 +258,7 @@
       (update :gradientTransform (partial translate-matrix [400 300]))))
 
 (defn parse-gradients [label [_ args & stops]]
-  {:meta (update-gradient label args)
+  {:meta  (update-gradient label args)
    :stops (map second stops)})
 
 (defn parse-defs [label [_ & defs]]
@@ -367,10 +369,10 @@
         max-y (apply max max-ys)
         width (- max-x min-x)
         height (- max-y min-y)]
-     (into [:svg {:width   (str width "px")
-                  :height  (str height "px")
-                  :viewBox (str/join " " [min-x min-y width height])}]
-           (mapv (partial build-group-from-pair colors) row))))
+    (into [:svg {:width   (str width "px")
+                 :height  (str height "px")
+                 :viewBox (str/join " " [min-x min-y width height])}]
+          (mapv (partial build-group-from-pair colors) row))))
 
 (defn build-gradients [{:keys [meta stops]}]
   (into [:linearGradient meta] (mapv (partial vector :stop) stops)))
@@ -449,19 +451,19 @@
 (defmulti assign-ranges count)
 
 (defmethod assign-ranges 3 [[base _ outline]]
-  {:base (vec base)
+  {:base    (vec base)
    :outline (vec outline)})
 
 (defmethod assign-ranges 4 [[base _ detail outline]]
-  {:base (vec base)
-   :detail (vec detail)
+  {:base    (vec base)
+   :detail  (vec detail)
    :outline (vec outline)})
 
 (defmethod assign-ranges 5 [[base _ detail outline shadow]]
-  {:base (vec base)
-   :detail (vec detail)
+  {:base    (vec base)
+   :detail  (vec detail)
    :outline (vec outline)
-   :shadow (vec shadow)})
+   :shadow  (vec shadow)})
 
 (defmethod assign-ranges :default [ranges]
   (pp/pprint ranges)
@@ -503,8 +505,8 @@
 
 (defn index-table-from-columns [columns]
   (let [counts (reduce-kv
-                         #(assoc %1 %2 (count %3))
-                         {} columns)
+                 #(assoc %1 %2 (count %3))
+                 {} columns)
         max-count (apply max (vals counts))
         diffs (reduce-kv
                 #(assoc %1 %2 (- max-count %3))
@@ -573,7 +575,7 @@
                          (let [columns (edn/read-string (slurp (io/file file "columns.edn")))
                                shadows (remove nil? (:shadow columns))]
                            (if (empty? shadows) out
-                             (assoc out (.getName file) shadows))))
+                                                (assoc out (.getName file) shadows))))
                        {} folders)
         _ (spit (io/file root "shadow-index.edn") (with-out-str (pp/pprint shadow-index)))
         shadows (reduce-kv
@@ -591,14 +593,14 @@
     (pp/pprint (into (sorted-set) (keys weird)))))
 
 #_(deftest test-build-columns-file
-   (let [root (io/file "design/outfitter/items/accessories/fit")]
-     (build-columns-file (io/file root "accessories_and_shields"))))
+    (let [root (io/file "design/outfitter/items/accessories/fit")]
+      (build-columns-file (io/file root "accessories_and_shields"))))
 
 #_(deftest test-build-columns-file-for-folder
-   (let [folder (io/file "design/outfitter/items/accessories/fit")]
-     (doseq [file (filter #(.isDirectory %) (.listFiles folder))]
-       (println (.getName file))
-       (build-columns-file file))))
+    (let [folder (io/file "design/outfitter/items/accessories/fit")]
+      (doseq [file (filter #(.isDirectory %) (.listFiles folder))]
+        (println (.getName file))
+        (build-columns-file file))))
 
 (deftest test-read-columns-to-html
   (let [root (io/file "design/outfitter/items/body/fit")]
@@ -653,10 +655,10 @@
               (build-html {:title "Outlines"} overlap))))))
 
 (defn parse-blueprint-layer [root [step index & {:keys [flip? base detail outline]
-                                                 :or {flip? false
-                                                      base "#ffffff"
-                                                      detail "#ffffff"
-                                                      outline "#000000"}}]]
+                                                 :or   {flip?   false
+                                                        base    "#ffffff"
+                                                        detail  "#ffffff"
+                                                        outline "#000000"}}]]
   (let [folder (io/file root (name step))
         data (edn/read-string (slurp (io/file folder "index-data.edn")))]
     {:layers (get data index)
@@ -683,40 +685,53 @@
         max-x (+ 400 max-diff-x)
         width (- max-x min-x)
         height (- max-y min-y)]
-    (into [:svg
-           {:width   (str width "px")
-            :height  (str height "px")
-            :viewBox (str/join " " [min-x min-y width height])}
-           [:rect
-            {:x min-x
-             :y min-y
-             :width width
-             :height height
-             :fill "none"
-             :stroke "#000000"
-             :stroke-width 2}]]
-          (mapv
-            (fn [{:keys [layers colors flip?]}]
-              (into
-                [:g
-                 (if flip?
-                   {:transform "matrix(-1.0, 0.0, 0.0, 1.0, 800.0, 0.0)"}
-                   {})]
-                (->> [:base :detail :outline :shadow]
-                     (filterv (set (keys layers)))
-                     (mapv (partial get layers))
-                     (mapv (partial build-group-from-pair colors)))))
-            all-layers))))
+    [:svg
+     {:width   (str width "px")
+      :height  (str height "px")
+      :viewBox (str/join " " [min-x min-y width height])}
+     [:rect
+      {:x            min-x
+       :y            min-y
+       :width        width
+       :height       height
+       :fill         "none"
+       :stroke       "#000000"
+       :stroke-width 2}]
+     (into
+       [:g]
+       (mapv
+         (fn [{:keys [layers colors flip?]}]
+           (into
+             [:g
+              (if flip?
+                {:transform "matrix(-1.0, 0.0, 0.0, 1.0, 800.0, 0.0)"}
+                {})]
+             (->> [:base :detail :outline :shadow]
+                  (filterv (set (keys layers)))
+                  (mapv (partial get layers))
+                  (mapv (partial build-group-from-pair colors)))))
+         all-layers))]))
 
 (deftest test-parse-blueprint
   (let [root (io/file "design/outfitter/items/body/fit")
         blueprint (edn/read-string (slurp (io/file root "demo1.edn")))
-        layers (mapv (partial parse-blueprint-layer root) blueprint)]
+        layers (mapv (partial parse-blueprint-layer root) blueprint)
+        svg (group-layers 10 layers)
+        encoded (-> svg
+                    (update 1 assoc :xmlns "http://www.w3.org/2000/svg")
+                    (hml/to-text)
+                    (img/svg-to-64))]
     (spit (io/file root "demo1-data.edn")
           (with-out-str (pp/pprint layers)))
     (spit (io/file root "demo1.html")
-      (build-html
-        {:title "demo1.edn"}
-        (group-layers 10 layers)))))
+          (build-html
+            {:title "demo1.edn"}
+            [:table
+             [:tbody
+              [:tr
+               [:td svg]
+               [:td [:img {:src (str "data:image/png;base64," encoded)}]]]]]))))
+
+
 
 

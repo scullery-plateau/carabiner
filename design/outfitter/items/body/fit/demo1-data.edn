@@ -747,4 +747,4 @@
      :min [381.1 160.05],
      :max [418.5 212.25]}}},
   :flip? false,
-  :colors {:base "blue", :detail "#ffffff", :outline "#000000"}}]
+  :colors {:base "#ffffff", :detail "#ffffff", :outline "#000000"}}]
