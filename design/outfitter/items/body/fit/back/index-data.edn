@@ -1,5 +1,6 @@
 [{:outline
   {:label "back-37",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -52,6 +53,7 @@
     :max [488.35 417.75]}},
   :base
   {:label "back-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -83,6 +85,7 @@
     :max [488.35 417.75]}},
   :detail
   {:label "back-25",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -108,6 +111,7 @@
     :max [480.0 403.6]}},
   :shadow
   {:label "back-34",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -137,6 +141,7 @@
     :max [480.0 403.6]}}}
  {:outline
   {:label "back-36",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -205,6 +210,7 @@
     :max [488.35 503.1]}},
   :base
   {:label "back-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -236,6 +242,7 @@
     :max [488.35 503.1]}},
   :detail
   {:label "back-26",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -277,6 +284,7 @@
     :max [480.0 482.2]}},
   :shadow
   {:label "back-47",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -322,6 +330,7 @@
     :max [479.95 482.2]}}}
  {:outline
   {:label "back-38",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -581,6 +590,7 @@
     :max [565.35 511.7]}},
   :base
   {:label "back-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -660,6 +670,7 @@
     :max [533.75 474.7]}},
   :detail
   {:label "back-27",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -879,6 +890,7 @@
     :max [565.35 511.7]}},
   :shadow
   {:label "back-48",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1102,6 +1114,7 @@
     :max [565.35 511.7]}}}
  {:outline
   {:label "back-39",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1213,6 +1226,7 @@
     :max [489.9 529.0]}},
   :base
   {:label "back-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1304,6 +1318,7 @@
     :max [489.9 529.0]}},
   :detail
   {:label "back-28",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1355,6 +1370,7 @@
     :max [484.25 505.1]}}}
  {:outline
   {:label "back-40",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1397,6 +1413,7 @@
     :max [440.5 474.75]}},
   :base
   {:label "back-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1434,6 +1451,7 @@
     :max [440.5 474.75]}},
   :shadow
   {:label "back-49",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1482,6 +1500,7 @@
     :max [440.5 474.75]}}}
  {:outline
   {:label "back-41",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1560,6 +1579,7 @@
     :max [467.0 511.3]}},
   :base
   {:label "back-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1637,6 +1657,7 @@
     :max [467.0 511.3]}}}
  {:outline
   {:label "back-42",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1857,6 +1878,7 @@
     :max [495.1 480.35]}},
   :base
   {:label "back-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1972,6 +1994,7 @@
     :max [495.1 233.75]}},
   :detail
   {:label "back-29",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2104,6 +2127,7 @@
     :max [495.1 480.35]}}}
  {:outline
   {:label "back-43",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2993,6 +3017,7 @@
     :max [452.15 317.45]}},
   :base
   {:label "back-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3218,6 +3243,7 @@
     :max [452.15 304.25]}},
   :detail
   {:label "back-30",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3408,6 +3434,7 @@
     :max [446.4 317.45]}}}
  {:outline
   {:label "back-44",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4910,6 +4937,7 @@
     :max [578.25 396.95]}},
   :base
   {:label "back-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5364,6 +5392,7 @@
     :max [578.25 390.3]}},
   :detail
   {:label "back-31",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6157,6 +6186,7 @@
     :max [578.2 396.95]}}}
  {:outline
   {:label "back-45",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6367,6 +6397,7 @@
     :max [390.0 308.7]}},
   :base
   {:label "back-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6430,6 +6461,7 @@
     :max [390.0 308.7]}},
   :detail
   {:label "back-32",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6515,6 +6547,7 @@
     :max [378.95 222.85]}}}
  {:outline
   {:label "back-35",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",

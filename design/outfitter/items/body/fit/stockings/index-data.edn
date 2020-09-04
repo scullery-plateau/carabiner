@@ -1,5 +1,6 @@
 [{:outline
   {:label "stockings-134",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21,6 +22,7 @@
     :max [444.7 499.95]}}}
  {:outline
   {:label "stockings-135",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -62,6 +64,7 @@
     :max [475.75 560.0]}},
   :base
   {:label "stockings-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -89,6 +92,7 @@
     :max [475.75 560.0]}}}
  {:outline
   {:label "stockings-136",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -131,6 +135,7 @@
     :max [476.6 560.0]}},
   :base
   {:label "stockings-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -168,6 +173,7 @@
     :max [476.6 560.0]}}}
  {:outline
   {:label "stockings-137",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -215,6 +221,7 @@
     :max [476.6 560.0]}},
   :base
   {:label "stockings-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -248,6 +255,7 @@
     :max [476.6 560.0]}}}
  {:outline
   {:label "stockings-138",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -300,6 +308,7 @@
     :max [476.6 560.0]}},
   :base
   {:label "stockings-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -337,6 +346,7 @@
     :max [476.6 560.0]}}}
  {:outline
   {:label "stockings-139",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -389,6 +399,7 @@
     :max [478.2 560.0]}},
   :base
   {:label "stockings-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -423,6 +434,7 @@
     :max [478.2 560.0]}}}
  {:outline
   {:label "stockings-140",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -467,6 +479,7 @@
     :max [478.2 560.0]}},
   :base
   {:label "stockings-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -508,6 +521,7 @@
     :max [478.2 560.0]}}}
  {:outline
   {:label "stockings-141",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -544,6 +558,7 @@
     :max [446.2 498.45]}},
   :base
   {:label "stockings-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -565,6 +580,7 @@
     :max [446.2 499.95]}}}
  {:outline
   {:label "stockings-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -603,6 +619,7 @@
     :max [448.05 498.45]}},
   :base
   {:label "stockings-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -626,6 +643,7 @@
     :max [448.05 499.95]}}}
  {:outline
   {:label "stockings-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -664,6 +682,7 @@
     :max [450.2 498.45]}},
   :base
   {:label "stockings-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -693,6 +712,7 @@
     :max [450.2 499.95]}}}
  {:outline
   {:label "stockings-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -735,6 +755,7 @@
     :max [450.2 498.45]}},
   :base
   {:label "stockings-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -768,6 +789,7 @@
     :max [450.2 499.95]}}}
  {:outline
   {:label "stockings-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -818,6 +840,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -857,6 +880,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -909,6 +933,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -945,6 +970,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1003,6 +1029,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1043,6 +1070,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1101,6 +1129,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1141,6 +1170,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1201,6 +1231,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1247,6 +1278,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1313,6 +1345,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1364,6 +1397,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1432,6 +1466,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1490,6 +1525,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1565,6 +1601,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1620,6 +1657,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1698,6 +1736,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1760,6 +1799,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1844,6 +1884,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1911,6 +1952,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1999,6 +2041,7 @@
     :max [451.85 498.45]}},
   :base
   {:label "stockings-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2065,6 +2108,7 @@
     :max [451.85 499.95]}}}
  {:outline
   {:label "stockings-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2110,6 +2154,7 @@
     :max [476.6 556.4]}},
   :base
   {:label "stockings-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2141,6 +2186,7 @@
     :max [476.6 556.4]}}}
  {:outline
   {:label "stockings-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2183,6 +2229,7 @@
     :max [473.9 547.45]}},
   :base
   {:label "stockings-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2204,6 +2251,7 @@
     :max [473.9 547.45]}}}
  {:outline
   {:label "stockings-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2247,6 +2295,7 @@
     :max [462.1 532.35]}},
   :base
   {:label "stockings-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2274,6 +2323,7 @@
     :max [462.1 532.35]}}}
  {:outline
   {:label "stockings-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2314,6 +2364,7 @@
     :max [452.7 516.65]}},
   :base
   {:label "stockings-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2340,6 +2391,7 @@
     :max [452.7 516.65]}}}
  {:outline
   {:label "stockings-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2382,6 +2434,7 @@
     :max [448.05 490.2]}},
   :base
   {:label "stockings-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2404,6 +2457,7 @@
     :max [448.05 490.2]}}}
  {:outline
   {:label "stockings-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2444,6 +2498,7 @@
     :max [450.2 478.2]}},
   :base
   {:label "stockings-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2468,6 +2523,7 @@
     :max [450.2 478.2]}}}
  {:outline
   {:label "stockings-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2516,6 +2572,7 @@
     :max [450.2 478.15]}},
   :base
   {:label "stockings-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2540,6 +2597,7 @@
     :max [450.2 478.15]}}}
  {:outline
   {:label "stockings-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2585,6 +2643,7 @@
     :max [451.85 465.3]}},
   :base
   {:label "stockings-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2613,6 +2672,7 @@
     :max [451.85 465.3]}}}
  {:outline
   {:label "stockings-164",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2658,6 +2718,7 @@
     :max [450.7 464.5]}},
   :base
   {:label "stockings-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2686,6 +2747,7 @@
     :max [450.7 464.5]}}}
  {:outline
   {:label "stockings-165",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2734,6 +2796,7 @@
     :max [450.7 449.5]}},
   :base
   {:label "stockings-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2762,6 +2825,7 @@
     :max [450.7 449.5]}}}
  {:outline
   {:label "stockings-166",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2802,6 +2866,7 @@
     :max [444.95 432.5]}},
   :base
   {:label "stockings-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2823,6 +2888,7 @@
     :max [444.95 432.5]}}}
  {:outline
   {:label "stockings-167",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2863,6 +2929,7 @@
     :max [444.95 419.8]}},
   :base
   {:label "stockings-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2889,6 +2956,7 @@
     :max [444.95 419.8]}}}
  {:outline
   {:label "stockings-168",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2929,6 +2997,7 @@
     :max [444.65 408.05]}},
   :base
   {:label "stockings-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2958,6 +3027,7 @@
     :max [444.65 408.05]}}}
  {:outline
   {:label "stockings-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2998,6 +3068,7 @@
     :max [443.7 406.25]}},
   :base
   {:label "stockings-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3022,6 +3093,7 @@
     :max [443.7 406.25]}}}
  {:outline
   {:label "stockings-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3064,6 +3136,7 @@
     :max [443.7 395.25]}},
   :base
   {:label "stockings-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3088,6 +3161,7 @@
     :max [443.7 395.25]}}}
  {:outline
   {:label "stockings-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3130,6 +3204,7 @@
     :max [442.15 382.65]}},
   :base
   {:label "stockings-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3150,6 +3225,7 @@
     :max [442.15 382.65]}}}
  {:outline
   {:label "stockings-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3192,6 +3268,7 @@
     :max [440.1 370.3]}},
   :base
   {:label "stockings-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3212,6 +3289,7 @@
     :max [440.1 370.3]}}}
  {:outline
   {:label "stockings-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3254,6 +3332,7 @@
     :max [437.2 359.5]}},
   :base
   {:label "stockings-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3277,6 +3356,7 @@
     :max [437.2 359.5]}}}
  {:outline
   {:label "stockings-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3319,6 +3399,7 @@
     :max [470.25 560.0]}},
   :base
   {:label "stockings-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3344,6 +3425,7 @@
     :max [470.25 560.0]}}}
  {:outline
   {:label "stockings-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3388,6 +3470,7 @@
     :max [471.2 560.0]}},
   :base
   {:label "stockings-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3413,6 +3496,7 @@
     :max [471.2 560.0]}}}
  {:outline
   {:label "stockings-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3457,6 +3541,7 @@
     :max [471.2 560.0]}},
   :base
   {:label "stockings-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3482,6 +3567,7 @@
     :max [471.2 560.0]}}}
  {:outline
   {:label "stockings-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3526,6 +3612,7 @@
     :max [471.2 560.0]}},
   :base
   {:label "stockings-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3551,6 +3638,7 @@
     :max [471.2 560.0]}}}
  {:outline
   {:label "stockings-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3595,6 +3683,7 @@
     :max [471.2 560.0]}},
   :base
   {:label "stockings-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3618,6 +3707,7 @@
     :max [471.2 560.0]}}}
  {:outline
   {:label "stockings-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3647,6 +3737,7 @@
     :max [442.9 499.05]}},
   :base
   {:label "stockings-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3672,6 +3763,7 @@
     :max [442.9 499.05]}}}
  {:outline
   {:label "stockings-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3697,6 +3789,7 @@
     :max [443.3 499.05]}},
   :base
   {:label "stockings-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3716,6 +3809,7 @@
     :max [443.3 499.05]}}}
  {:outline
   {:label "stockings-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3742,6 +3836,7 @@
     :max [443.7 499.05]}},
   :base
   {:label "stockings-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3763,6 +3858,7 @@
     :max [443.7 499.05]}}}
  {:outline
   {:label "stockings-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3795,6 +3891,7 @@
     :max [444.15 499.05]}},
   :base
   {:label "stockings-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3816,6 +3913,7 @@
     :max [444.15 499.1]}}}
  {:outline
   {:label "stockings-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3843,6 +3941,7 @@
     :max [444.4 499.05]}},
   :base
   {:label "stockings-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3864,6 +3963,7 @@
     :max [444.4 499.05]}}}
  {:outline
   {:label "stockings-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3899,6 +3999,7 @@
     :max [444.75 499.05]}},
   :base
   {:label "stockings-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3922,6 +4023,7 @@
     :max [444.75 499.05]}}}
  {:outline
   {:label "stockings-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3956,6 +4058,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3981,6 +4084,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4016,6 +4120,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4042,6 +4147,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4076,6 +4182,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4097,6 +4204,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4129,6 +4237,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4154,6 +4263,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4193,6 +4303,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4228,6 +4339,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4257,6 +4369,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4278,6 +4391,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4314,6 +4428,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4343,6 +4458,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4388,6 +4504,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4419,6 +4536,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4452,6 +4570,7 @@
     :max [444.8 499.05]}},
   :base
   {:label "stockings-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4477,6 +4596,7 @@
     :max [444.8 499.05]}}}
  {:outline
   {:label "stockings-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4495,6 +4615,7 @@
     :max [362.85 499.95]}}}
  {:outline
   {:label "stockings-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4525,6 +4646,7 @@
     :max [345.9 560.0]}},
   :base
   {:label "stockings-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4540,6 +4662,7 @@
     :max [345.9 560.0]}}}
  {:outline
   {:label "stockings-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4568,6 +4691,7 @@
     :max [353.5 560.0]}},
   :base
   {:label "stockings-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4589,6 +4713,7 @@
     :max [353.5 560.0]}}}
  {:outline
   {:label "stockings-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4619,6 +4744,7 @@
     :max [358.0 560.0]}},
   :base
   {:label "stockings-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4638,6 +4764,7 @@
     :max [358.0 560.0]}}}
  {:outline
   {:label "stockings-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4670,6 +4797,7 @@
     :max [364.75 560.0]}},
   :base
   {:label "stockings-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4691,6 +4819,7 @@
     :max [364.75 560.0]}}}
  {:outline
   {:label "stockings-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4729,6 +4858,7 @@
     :max [365.6 560.0]}},
   :base
   {:label "stockings-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4751,6 +4881,7 @@
     :max [365.6 560.0]}}}
  {:outline
   {:label "stockings-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4781,6 +4912,7 @@
     :max [365.6 560.0]}},
   :base
   {:label "stockings-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4807,6 +4939,7 @@
     :max [365.6 560.0]}}}
  {:outline
   {:label "stockings-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4835,6 +4968,7 @@
     :max [364.8 498.45]}},
   :base
   {:label "stockings-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4851,6 +4985,7 @@
     :max [364.8 499.95]}}}
  {:outline
   {:label "stockings-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4880,6 +5015,7 @@
     :max [367.9 498.45]}},
   :base
   {:label "stockings-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4897,6 +5033,7 @@
     :max [367.9 499.95]}}}
  {:outline
   {:label "stockings-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4926,6 +5063,7 @@
     :max [374.0 498.45]}},
   :base
   {:label "stockings-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4949,6 +5087,7 @@
     :max [374.0 499.95]}}}
  {:outline
   {:label "stockings-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4984,6 +5123,7 @@
     :max [374.0 498.45]}},
   :base
   {:label "stockings-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5007,6 +5147,7 @@
     :max [374.0 499.95]}}}
  {:outline
   {:label "stockings-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5045,6 +5186,7 @@
     :max [380.8 498.45]}},
   :base
   {:label "stockings-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5076,6 +5218,7 @@
     :max [380.8 499.95]}}}
  {:outline
   {:label "stockings-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5115,6 +5258,7 @@
     :max [380.8 498.45]}},
   :base
   {:label "stockings-82",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5141,6 +5285,7 @@
     :max [380.8 499.95]}}}
  {:outline
   {:label "stockings-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5185,6 +5330,7 @@
     :max [381.1 498.45]}},
   :base
   {:label "stockings-83",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5213,6 +5359,7 @@
     :max [381.1 499.95]}}}
  {:outline
   {:label "stockings-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5257,6 +5404,7 @@
     :max [381.1 498.45]}},
   :base
   {:label "stockings-84",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5285,6 +5433,7 @@
     :max [381.1 499.95]}}}
  {:outline
   {:label "stockings-209",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5331,6 +5480,7 @@
     :max [381.45 498.45]}},
   :base
   {:label "stockings-85",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5365,6 +5515,7 @@
     :max [381.45 499.95]}}}
  {:outline
   {:label "stockings-210",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5416,6 +5567,7 @@
     :max [384.45 498.45]}},
   :base
   {:label "stockings-86",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5452,6 +5604,7 @@
     :max [384.45 499.95]}}}
  {:outline
   {:label "stockings-211",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5505,6 +5658,7 @@
     :max [384.45 498.45]}},
   :base
   {:label "stockings-87",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5542,6 +5696,7 @@
     :max [384.45 499.95]}}}
  {:outline
   {:label "stockings-212",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5596,6 +5751,7 @@
     :max [387.75 498.45]}},
   :base
   {:label "stockings-88",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5633,6 +5789,7 @@
     :max [387.75 499.95]}}}
  {:outline
   {:label "stockings-213",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5689,6 +5846,7 @@
     :max [391.6 498.45]}},
   :base
   {:label "stockings-89",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5732,6 +5890,7 @@
     :max [391.6 499.95]}}}
  {:outline
   {:label "stockings-214",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5792,6 +5951,7 @@
     :max [395.2 498.45]}},
   :base
   {:label "stockings-90",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5837,6 +5997,7 @@
     :max [395.2 499.95]}}}
  {:outline
   {:label "stockings-215",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5902,6 +6063,7 @@
     :max [399.8 498.45]}},
   :base
   {:label "stockings-91",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5948,6 +6110,7 @@
     :max [399.8 499.95]}}}
  {:outline
   {:label "stockings-216",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5981,6 +6144,7 @@
     :max [353.5 556.4]}},
   :base
   {:label "stockings-92",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6006,6 +6170,7 @@
     :max [353.5 556.4]}}}
  {:outline
   {:label "stockings-217",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6039,6 +6204,7 @@
     :max [358.0 547.45]}},
   :base
   {:label "stockings-93",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6055,6 +6221,7 @@
     :max [358.0 547.45]}}}
  {:outline
   {:label "stockings-218",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6088,6 +6255,7 @@
     :max [364.75 532.35]}},
   :base
   {:label "stockings-94",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6110,6 +6278,7 @@
     :max [364.75 532.35]}}}
  {:outline
   {:label "stockings-219",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6140,6 +6309,7 @@
     :max [365.6 516.65]}},
   :base
   {:label "stockings-95",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6157,6 +6327,7 @@
     :max [365.6 516.65]}}}
  {:outline
   {:label "stockings-220",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6190,6 +6361,7 @@
     :max [367.9 490.2]}},
   :base
   {:label "stockings-96",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6206,6 +6378,7 @@
     :max [367.9 490.2]}}}
  {:outline
   {:label "stockings-221",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6238,6 +6411,7 @@
     :max [374.0 478.2]}},
   :base
   {:label "stockings-97",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6258,6 +6432,7 @@
     :max [374.0 478.2]}}}
  {:outline
   {:label "stockings-222",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6294,6 +6469,7 @@
     :max [374.0 478.15]}},
   :base
   {:label "stockings-98",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6314,6 +6490,7 @@
     :max [374.0 478.15]}}}
  {:outline
   {:label "stockings-223",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6349,6 +6526,7 @@
     :max [380.8 465.3]}},
   :base
   {:label "stockings-99",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6371,6 +6549,7 @@
     :max [380.8 465.3]}}}
  {:outline
   {:label "stockings-224",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6406,6 +6585,7 @@
     :max [380.8 464.5]}},
   :base
   {:label "stockings-100",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6428,6 +6608,7 @@
     :max [380.8 464.5]}}}
  {:outline
   {:label "stockings-225",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6464,6 +6645,7 @@
     :max [381.1 449.5]}},
   :base
   {:label "stockings-101",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6486,6 +6668,7 @@
     :max [381.1 449.5]}}}
  {:outline
   {:label "stockings-226",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6518,6 +6701,7 @@
     :max [378.9 432.5]}},
   :base
   {:label "stockings-102",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6534,6 +6718,7 @@
     :max [378.9 432.5]}}}
  {:outline
   {:label "stockings-227",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6566,6 +6751,7 @@
     :max [381.45 419.8]}},
   :base
   {:label "stockings-103",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6587,6 +6773,7 @@
     :max [381.45 419.8]}}}
  {:outline
   {:label "stockings-228",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6619,6 +6806,7 @@
     :max [384.45 408.0]}},
   :base
   {:label "stockings-104",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6639,6 +6827,7 @@
     :max [384.45 408.0]}}}
  {:outline
   {:label "stockings-229",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6671,6 +6860,7 @@
     :max [384.45 406.25]}},
   :base
   {:label "stockings-105",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6690,6 +6880,7 @@
     :max [384.45 406.25]}}}
  {:outline
   {:label "stockings-230",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6723,6 +6914,7 @@
     :max [387.75 395.25]}},
   :base
   {:label "stockings-106",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6742,6 +6934,7 @@
     :max [387.75 395.25]}}}
  {:outline
   {:label "stockings-231",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6775,6 +6968,7 @@
     :max [391.6 382.65]}},
   :base
   {:label "stockings-107",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6794,6 +6988,7 @@
     :max [391.6 382.65]}}}
  {:outline
   {:label "stockings-232",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6827,6 +7022,7 @@
     :max [395.2 370.3]}},
   :base
   {:label "stockings-108",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6846,6 +7042,7 @@
     :max [395.2 370.3]}}}
  {:outline
   {:label "stockings-233",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6882,6 +7079,7 @@
     :max [399.8 359.5]}},
   :base
   {:label "stockings-109",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6902,6 +7100,7 @@
     :max [399.8 359.5]}}}
  {:outline
   {:label "stockings-234",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6936,6 +7135,7 @@
     :max [338.65 560.0]}},
   :base
   {:label "stockings-110",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6957,6 +7157,7 @@
     :max [338.65 560.0]}}}
  {:outline
   {:label "stockings-235",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6989,6 +7190,7 @@
     :max [342.5 560.0]}},
   :base
   {:label "stockings-111",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7007,6 +7209,7 @@
     :max [342.5 560.0]}}}
  {:outline
   {:label "stockings-236",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7039,6 +7242,7 @@
     :max [349.4 560.0]}},
   :base
   {:label "stockings-112",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7057,6 +7261,7 @@
     :max [349.4 560.0]}}}
  {:outline
   {:label "stockings-237",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7089,6 +7294,7 @@
     :max [356.5 560.0]}},
   :base
   {:label "stockings-113",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7107,6 +7313,7 @@
     :max [356.5 560.0]}}}
  {:outline
   {:label "stockings-238",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7139,6 +7346,7 @@
     :max [359.9 560.0]}},
   :base
   {:label "stockings-114",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7156,6 +7364,7 @@
     :max [359.9 560.0]}}}
  {:outline
   {:label "stockings-239",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7179,6 +7388,7 @@
     :max [360.65 499.05]}},
   :base
   {:label "stockings-115",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7197,6 +7407,7 @@
     :max [360.65 499.05]}}}
  {:outline
   {:label "stockings-240",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7218,6 +7429,7 @@
     :max [361.85 499.05]}},
   :base
   {:label "stockings-116",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7234,6 +7446,7 @@
     :max [361.85 499.05]}}}
  {:outline
   {:label "stockings-241",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7256,6 +7469,7 @@
     :max [363.55 499.05]}},
   :base
   {:label "stockings-117",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7272,6 +7486,7 @@
     :max [363.55 499.05]}}}
  {:outline
   {:label "stockings-242",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7298,6 +7513,7 @@
     :max [365.25 499.05]}},
   :base
   {:label "stockings-118",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7314,6 +7530,7 @@
     :max [365.25 499.05]}}}
  {:outline
   {:label "stockings-243",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7336,6 +7553,7 @@
     :max [366.1 499.05]}},
   :base
   {:label "stockings-119",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7352,6 +7570,7 @@
     :max [366.1 499.05]}}}
  {:outline
   {:label "stockings-244",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7378,6 +7597,7 @@
     :max [366.7 499.05]}},
   :base
   {:label "stockings-120",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7397,6 +7617,7 @@
     :max [366.7 499.05]}}}
  {:outline
   {:label "stockings-245",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7422,6 +7643,7 @@
     :max [369.05 499.05]}},
   :base
   {:label "stockings-121",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7440,6 +7662,7 @@
     :max [369.05 499.05]}}}
  {:outline
   {:label "stockings-246",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7466,6 +7689,7 @@
     :max [370.6 499.05]}},
   :base
   {:label "stockings-122",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7485,6 +7709,7 @@
     :max [370.6 499.05]}}}
  {:outline
   {:label "stockings-247",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7511,6 +7736,7 @@
     :max [372.45 499.05]}},
   :base
   {:label "stockings-123",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7527,6 +7753,7 @@
     :max [372.45 499.05]}}}
  {:outline
   {:label "stockings-248",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7550,6 +7777,7 @@
     :max [374.6 499.05]}},
   :base
   {:label "stockings-124",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7566,6 +7794,7 @@
     :max [374.6 499.05]}}}
  {:outline
   {:label "stockings-249",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7597,6 +7826,7 @@
     :max [375.1 499.05]}},
   :base
   {:label "stockings-125",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7618,6 +7848,7 @@
     :max [375.1 499.05]}}}
  {:outline
   {:label "stockings-250",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7641,6 +7872,7 @@
     :max [377.05 499.05]}},
   :base
   {:label "stockings-126",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7657,6 +7889,7 @@
     :max [377.05 499.05]}}}
  {:outline
   {:label "stockings-251",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7684,6 +7917,7 @@
     :max [379.7 499.05]}},
   :base
   {:label "stockings-127",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7704,6 +7938,7 @@
     :max [379.7 499.05]}}}
  {:outline
   {:label "stockings-252",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7735,6 +7970,7 @@
     :max [382.6 499.05]}},
   :base
   {:label "stockings-128",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7756,6 +7992,7 @@
     :max [382.6 499.05]}}}
  {:outline
   {:label "stockings-253",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7781,6 +8018,7 @@
     :max [384.95 499.05]}},
   :base
   {:label "stockings-129",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

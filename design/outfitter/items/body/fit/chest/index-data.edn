@@ -1,5 +1,6 @@
 [{:outline
   {:label "chest-137",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -56,6 +57,7 @@
     :max [477.5 328.3]}},
   :base
   {:label "chest-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -96,6 +98,7 @@
     :max [477.5 328.3]}}}
  {:outline
   {:label "chest-138",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -177,6 +180,7 @@
     :max [449.9 316.5]}},
   :base
   {:label "chest-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -205,6 +209,7 @@
     :max [449.9 316.5]}}}
  {:outline
   {:label "chest-139",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -291,6 +296,7 @@
     :max [450.0 328.2]}},
   :base
   {:label "chest-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -353,6 +359,7 @@
     :max [450.0 328.2]}}}
  {:outline
   {:label "chest-140",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -415,6 +422,7 @@
     :max [450.0 328.2]}},
   :base
   {:label "chest-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -454,6 +462,7 @@
     :max [450.0 328.2]}}}
  {:outline
   {:label "chest-141",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -491,6 +500,7 @@
     :max [477.65 328.25]}},
   :base
   {:label "chest-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -523,6 +533,7 @@
     :max [477.65 328.25]}}}
  {:outline
   {:label "chest-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -579,6 +590,7 @@
     :max [477.65 328.25]}},
   :base
   {:label "chest-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -612,6 +624,7 @@
     :max [477.65 328.25]}},
   :detail
   {:label "chest-85",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -645,6 +658,7 @@
     :max [437.75 326.85]}}}
  {:outline
   {:label "chest-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -855,6 +869,7 @@
     :max [440.55 328.3]}},
   :base
   {:label "chest-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1033,6 +1048,7 @@
     :max [440.55 328.3]}},
   :detail
   {:label "chest-86",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1192,6 +1208,7 @@
     :max [431.0 303.55]}}}
  {:outline
   {:label "chest-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1317,6 +1334,7 @@
     :max [470.2 328.3]}},
   :base
   {:label "chest-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1385,6 +1403,7 @@
     :max [470.2 328.3]}},
   :detail
   {:label "chest-87",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1451,6 +1470,7 @@
     :max [423.9 327.85]}}}
  {:outline
   {:label "chest-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1527,6 +1547,7 @@
     :max [475.15 320.95]}},
   :base
   {:label "chest-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1572,6 +1593,7 @@
     :max [475.15 320.95]}},
   :detail
   {:label "chest-88",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1620,6 +1642,7 @@
     :max [435.6 320.95]}}}
  {:outline
   {:label "chest-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1765,6 +1788,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "chest-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1826,6 +1850,7 @@
     :max [492.8 364.25]}},
   :detail
   {:label "chest-89",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1916,6 +1941,7 @@
     :max [487.2 361.1]}}}
  {:outline
   {:label "chest-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2177,6 +2203,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "chest-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2369,6 +2396,7 @@
     :max [492.8 364.25]}},
   :detail
   {:label "chest-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2489,6 +2517,7 @@
     :max [452.0 343.05]}}}
  {:outline
   {:label "chest-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2676,6 +2705,7 @@
     :max [492.8 369.85]}},
   :base
   {:label "chest-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2806,6 +2836,7 @@
     :max [492.8 369.85]}},
   :detail
   {:label "chest-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2879,6 +2910,7 @@
     :max [441.7 343.05]}}}
  {:outline
   {:label "chest-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3085,6 +3117,7 @@
     :max [492.8 407.0]}},
   :base
   {:label "chest-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3218,6 +3251,7 @@
     :max [492.8 407.0]}},
   :detail
   {:label "chest-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3291,6 +3325,7 @@
     :max [441.7 343.05]}}}
  {:outline
   {:label "chest-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3499,6 +3534,7 @@
     :max [492.8 490.2]}},
   :base
   {:label "chest-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3646,6 +3682,7 @@
     :max [492.8 490.2]}},
   :detail
   {:label "chest-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3719,6 +3756,7 @@
     :max [441.7 343.05]}}}
  {:outline
   {:label "chest-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3824,6 +3862,7 @@
     :max [492.75 366.0]}},
   :base
   {:label "chest-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3904,6 +3943,7 @@
     :max [492.75 366.0]}}}
  {:outline
   {:label "chest-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4049,6 +4089,7 @@
     :max [492.75 491.4]}},
   :base
   {:label "chest-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4157,6 +4198,7 @@
     :max [492.75 491.4]}},
   :detail
   {:label "chest-92",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4180,6 +4222,7 @@
     :max [434.6 330.35]}}}
  {:outline
   {:label "chest-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4326,6 +4369,7 @@
     :max [492.8 499.75]}},
   :base
   {:label "chest-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4400,6 +4444,7 @@
     :max [492.8 486.25]}},
   :detail
   {:label "chest-93",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4460,6 +4505,7 @@
     :max [488.7 499.75]}}}
  {:outline
   {:label "chest-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4630,6 +4676,7 @@
     :max [501.8 499.75]}},
   :base
   {:label "chest-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4736,6 +4783,7 @@
     :max [501.8 499.75]}},
   :detail
   {:label "chest-94",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4798,6 +4846,7 @@
     :max [437.15 362.25]}}}
  {:outline
   {:label "chest-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5231,6 +5280,7 @@
     :max [492.8 367.95]}},
   :base
   {:label "chest-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5521,6 +5571,7 @@
     :max [492.8 360.9]}},
   :detail
   {:label "chest-95",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5835,6 +5886,7 @@
     :max [491.1 367.95]}}}
  {:outline
   {:label "chest-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6359,6 +6411,7 @@
     :max [492.8 364.1]}},
   :base
   {:label "chest-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6414,6 +6467,7 @@
     :max [492.8 342.25]}},
   :detail
   {:label "chest-96",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6514,6 +6568,7 @@
     :max [490.9 364.1]}}}
  {:outline
   {:label "chest-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6769,6 +6824,7 @@
     :max [498.2 363.85]}},
   :base
   {:label "chest-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6934,6 +6990,7 @@
     :max [497.25 361.55]}},
   :detail
   {:label "chest-97",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7134,6 +7191,7 @@
     :max [498.2 363.85]}}}
  {:outline
   {:label "chest-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7243,6 +7301,7 @@
     :max [470.2 341.75]}},
   :base
   {:label "chest-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7290,6 +7349,7 @@
     :max [470.2 335.05]}},
   :detail
   {:label "chest-98",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7336,6 +7396,7 @@
     :max [435.2 341.75]}}}
  {:outline
   {:label "chest-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7577,6 +7638,7 @@
     :max [470.2 343.05]}},
   :base
   {:label "chest-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7758,6 +7820,7 @@
     :max [470.2 343.05]}},
   :detail
   {:label "chest-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7878,6 +7941,7 @@
     :max [452.0 343.05]}}}
  {:outline
   {:label "chest-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8042,6 +8106,7 @@
     :max [470.2 369.85]}},
   :base
   {:label "chest-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8161,6 +8226,7 @@
     :max [470.2 369.85]}},
   :detail
   {:label "chest-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8234,6 +8300,7 @@
     :max [441.7 343.05]}}}
  {:outline
   {:label "chest-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8415,6 +8482,7 @@
     :max [470.2 407.0]}},
   :base
   {:label "chest-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8536,6 +8604,7 @@
     :max [470.2 407.0]}},
   :detail
   {:label "chest-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8609,6 +8678,7 @@
     :max [441.7 343.05]}}}
  {:outline
   {:label "chest-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8795,6 +8865,7 @@
     :max [470.2 490.2]}},
   :base
   {:label "chest-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8936,6 +9007,7 @@
     :max [470.2 490.2]}},
   :detail
   {:label "chest-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9009,6 +9081,7 @@
     :max [441.7 343.05]}}}
  {:outline
   {:label "chest-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9075,6 +9148,7 @@
     :max [470.2 311.9]}},
   :base
   {:label "chest-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9133,6 +9207,7 @@
     :max [470.2 311.9]}}}
  {:outline
   {:label "chest-164",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9241,6 +9316,7 @@
     :max [470.2 491.4]}},
   :base
   {:label "chest-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9327,6 +9403,7 @@
     :max [470.2 491.4]}},
   :detail
   {:label "chest-92",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9350,6 +9427,7 @@
     :max [434.6 330.35]}}}
  {:outline
   {:label "chest-165",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9455,6 +9533,7 @@
     :max [470.2 499.75]}},
   :base
   {:label "chest-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9513,6 +9592,7 @@
     :max [470.2 486.25]}},
   :detail
   {:label "chest-99",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9562,6 +9642,7 @@
     :max [464.2 499.75]}}}
  {:outline
   {:label "chest-166",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9679,6 +9760,7 @@
     :max [470.1 499.75]}},
   :base
   {:label "chest-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9745,6 +9827,7 @@
     :max [470.2 499.75]}},
   :detail
   {:label "chest-94",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9807,6 +9890,7 @@
     :max [437.15 362.25]}}}
  {:outline
   {:label "chest-167",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10110,6 +10194,7 @@
     :max [470.2 318.1]}},
   :base
   {:label "chest-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10328,6 +10413,7 @@
     :max [470.2 318.1]}},
   :detail
   {:label "chest-100",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10566,6 +10652,7 @@
     :max [439.1 314.65]}}}
  {:outline
   {:label "chest-168",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10943,6 +11030,7 @@
     :max [476.0 328.2]}},
   :base
   {:label "chest-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10980,6 +11068,7 @@
     :max [454.8 327.35]}},
   :detail
   {:label "chest-101",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11055,6 +11144,7 @@
     :max [476.0 328.2]}}}
  {:outline
   {:label "chest-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11133,6 +11223,7 @@
     :max [470.2 289.35]}},
   :base
   {:label "chest-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11173,6 +11264,7 @@
     :max [470.2 288.05]}},
   :detail
   {:label "chest-102",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11216,6 +11308,7 @@
     :max [441.4 289.35]}}}
  {:outline
   {:label "chest-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11292,6 +11385,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "chest-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11317,6 +11411,7 @@
     :max [492.8 364.25]}},
   :detail
   {:label "chest-103",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11370,6 +11465,7 @@
     :max [487.2 361.1]}}}
  {:outline
   {:label "chest-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11424,6 +11520,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "chest-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11477,6 +11574,7 @@
     :max [492.8 364.25]}}}
  {:outline
   {:label "chest-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11555,6 +11653,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "chest-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11608,6 +11707,7 @@
     :max [492.8 364.25]}},
   :detail
   {:label "chest-104",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11629,6 +11729,7 @@
     :max [492.8 319.4]}}}
  {:outline
   {:label "chest-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11707,6 +11808,7 @@
     :max [492.75 366.0]}},
   :base
   {:label "chest-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11760,6 +11862,7 @@
     :max [492.8 364.25]}}}
  {:outline
   {:label "chest-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11828,6 +11931,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "chest-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11885,6 +11989,7 @@
     :max [492.8 353.75]}},
   :detail
   {:label "chest-105",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11906,6 +12011,7 @@
     :max [488.7 364.25]}}}
  {:outline
   {:label "chest-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12003,6 +12109,7 @@
     :max [501.8 448.6]}},
   :base
   {:label "chest-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12080,6 +12187,7 @@
     :max [501.8 448.6]}}}
  {:outline
   {:label "chest-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12242,6 +12350,7 @@
     :max [492.8 367.95]}},
   :base
   {:label "chest-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12346,6 +12455,7 @@
     :max [492.8 360.9]}},
   :detail
   {:label "chest-106",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12431,6 +12541,7 @@
     :max [491.1 367.95]}}}
  {:outline
   {:label "chest-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12616,6 +12727,7 @@
     :max [492.8 364.1]}},
   :base
   {:label "chest-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12669,6 +12781,7 @@
     :max [492.8 342.25]}},
   :detail
   {:label "chest-107",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12706,6 +12819,7 @@
     :max [490.9 364.1]}}}
  {:outline
   {:label "chest-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12890,6 +13004,7 @@
     :max [498.2 363.85]}},
   :base
   {:label "chest-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13059,6 +13174,7 @@
     :max [497.25 361.55]}},
   :detail
   {:label "chest-108",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13227,6 +13343,7 @@
     :max [498.2 363.85]}}}
  {:outline
   {:label "chest-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13277,6 +13394,7 @@
     :max [355.2 364.25]}},
   :base
   {:label "chest-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13295,6 +13413,7 @@
     :max [327.75 364.25]}},
   :detail
   {:label "chest-109",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13328,6 +13447,7 @@
     :max [355.2 361.1]}}}
  {:outline
   {:label "chest-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13363,6 +13483,7 @@
     :max [355.2 364.25]}},
   :base
   {:label "chest-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13397,6 +13518,7 @@
     :max [355.2 364.25]}}}
  {:outline
   {:label "chest-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13448,6 +13570,7 @@
     :max [355.2 364.25]}},
   :base
   {:label "chest-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13482,6 +13605,7 @@
     :max [355.2 364.25]}},
   :detail
   {:label "chest-110",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13498,6 +13622,7 @@
     :max [326.3 319.4]}}}
  {:outline
   {:label "chest-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13547,6 +13672,7 @@
     :max [355.2 366.0]}},
   :base
   {:label "chest-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13581,6 +13707,7 @@
     :max [355.2 364.25]}}}
  {:outline
   {:label "chest-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13626,6 +13753,7 @@
     :max [355.2 364.25]}},
   :base
   {:label "chest-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13662,6 +13790,7 @@
     :max [355.2 353.75]}},
   :detail
   {:label "chest-111",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13678,6 +13807,7 @@
     :max [334.25 364.25]}}}
  {:outline
   {:label "chest-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13740,6 +13870,7 @@
     :max [355.2 448.6]}},
   :base
   {:label "chest-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13786,6 +13917,7 @@
     :max [355.2 448.6]}}}
  {:outline
   {:label "chest-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13879,6 +14011,7 @@
     :max [355.2 367.95]}},
   :base
   {:label "chest-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13943,6 +14076,7 @@
     :max [355.2 360.9]}},
   :detail
   {:label "chest-112",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13994,6 +14128,7 @@
     :max [338.85 367.95]}}}
  {:outline
   {:label "chest-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14096,6 +14231,7 @@
     :max [355.2 364.1]}},
   :base
   {:label "chest-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14128,6 +14264,7 @@
     :max [355.2 342.25]}},
   :detail
   {:label "chest-113",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14152,6 +14289,7 @@
     :max [336.9 364.1]}}}
  {:outline
   {:label "chest-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14259,6 +14397,7 @@
     :max [355.2 363.85]}},
   :base
   {:label "chest-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14349,6 +14488,7 @@
     :max [355.2 361.55]}},
   :detail
   {:label "chest-114",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14442,6 +14582,7 @@
     :max [351.3 363.85]}}}
  {:outline
   {:label "chest-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14844,6 +14985,7 @@
     :max [454.4 328.2]}},
   :base
   {:label "chest-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15084,6 +15226,7 @@
     :max [441.5 327.4]}},
   :detail
   {:label "chest-115",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15352,6 +15495,7 @@
     :max [454.4 328.2]}}}
  {:outline
   {:label "chest-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15454,6 +15598,7 @@
     :max [475.1 297.55]}},
   :base
   {:label "chest-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15497,6 +15642,7 @@
     :max [468.8 292.65]}},
   :detail
   {:label "chest-116",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15549,6 +15695,7 @@
     :max [475.1 297.55]}}}
  {:outline
   {:label "chest-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15654,6 +15801,7 @@
     :max [455.75 292.65]}},
   :base
   {:label "chest-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15693,6 +15841,7 @@
     :max [455.75 292.65]}},
   :detail
   {:label "chest-117",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15749,6 +15898,7 @@
     :max [450.4 283.1]}}}
  {:outline
   {:label "chest-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15901,6 +16051,7 @@
     :max [461.2 296.9]}},
   :base
   {:label "chest-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15981,6 +16132,7 @@
     :max [461.2 293.2]}},
   :detail
   {:label "chest-118",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16024,6 +16176,7 @@
     :max [437.4 296.9]}}}
  {:outline
   {:label "chest-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -16227,6 +16380,7 @@
     :max [455.75 328.3]}},
   :base
   {:label "chest-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16267,6 +16421,7 @@
     :max [455.75 328.3]}},
   :detail
   {:label "chest-119",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16324,6 +16479,7 @@
     :max [450.4 283.1]}}}
  {:outline
   {:label "chest-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -16437,6 +16593,7 @@
     :max [455.75 328.3]}},
   :base
   {:label "chest-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16474,6 +16631,7 @@
     :max [455.75 328.3]}},
   :detail
   {:label "chest-120",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16495,6 +16653,7 @@
     :max [423.45 227.9]}}}
  {:outline
   {:label "chest-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -16556,6 +16715,7 @@
     :max [452.3 339.55]}},
   :base
   {:label "chest-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16589,6 +16749,7 @@
     :max [452.3 329.05]}},
   :detail
   {:label "chest-121",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16617,6 +16778,7 @@
     :max [438.65 339.55]}}}
  {:outline
   {:label "chest-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17200,6 +17362,7 @@
     :max [450.15 330.6]}},
   :base
   {:label "chest-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17333,6 +17496,7 @@
     :max [450.15 330.6]}},
   :detail
   {:label "chest-122",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17432,6 +17596,7 @@
     :max [446.85 275.65]}},
   :shadow
   {:label "chest-210",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -17672,6 +17837,7 @@
     :max [450.0 324.8]}}}
  {:outline
   {:label "chest-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17790,6 +17956,7 @@
     :max [484.15 274.4]}},
   :base
   {:label "chest-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17847,6 +18014,7 @@
     :max [484.15 274.4]}},
   :detail
   {:label "chest-123",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17876,6 +18044,7 @@
     :max [407.25 260.6]}}}
  {:outline
   {:label "chest-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18025,6 +18194,7 @@
     :max [486.1 314.8]}},
   :base
   {:label "chest-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18123,6 +18293,7 @@
     :max [486.1 314.8]}},
   :detail
   {:label "chest-124",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18205,6 +18376,7 @@
     :max [486.05 291.35]}}}
  {:outline
   {:label "chest-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18264,6 +18436,7 @@
     :max [454.3 288.8]}},
   :base
   {:label "chest-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18308,6 +18481,7 @@
     :max [454.3 288.8]}},
   :detail
   {:label "chest-125",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18331,6 +18505,7 @@
     :max [433.05 250.65]}}}
  {:outline
   {:label "chest-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18486,6 +18661,7 @@
     :max [444.2 305.1]}},
   :base
   {:label "chest-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18553,6 +18729,7 @@
     :max [444.2 305.1]}},
   :detail
   {:label "chest-126",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18624,6 +18801,7 @@
     :max [421.9 288.7]}},
   :shadow
   {:label "chest-211",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#chest-211-0)"},
@@ -18967,6 +19145,7 @@
       {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"})}]}}
  {:outline
   {:label "chest-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19023,6 +19202,7 @@
     :max [444.2 305.1]}},
   :base
   {:label "chest-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19044,6 +19224,7 @@
     :max [444.2 305.1]}},
   :detail
   {:label "chest-127",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19066,6 +19247,7 @@
     :max [417.35 278.95]}},
   :shadow
   {:label "chest-212",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#chest-212-0)"},
@@ -19152,6 +19334,7 @@
       {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"})}]}}
  {:outline
   {:label "chest-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19302,6 +19485,7 @@
     :max [449.9 327.55]}},
   :base
   {:label "chest-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19398,6 +19582,7 @@
     :max [449.9 327.55]}},
   :detail
   {:label "chest-128",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19463,6 +19648,7 @@
     :max [440.3 279.7]}}}
  {:outline
   {:label "chest-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19647,6 +19833,7 @@
     :max [438.55 327.6]}},
   :base
   {:label "chest-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19742,6 +19929,7 @@
     :max [438.55 315.25]}},
   :detail
   {:label "chest-129",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19821,6 +20009,7 @@
     :max [437.55 327.6]}}}
  {:outline
   {:label "chest-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19925,6 +20114,7 @@
     :max [386.1 327.6]}},
   :base
   {:label "chest-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19973,6 +20163,7 @@
     :max [383.5 315.25]}},
   :detail
   {:label "chest-130",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20018,6 +20209,7 @@
     :max [386.1 327.6]}}}
  {:outline
   {:label "chest-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -20356,6 +20548,7 @@
     :max [480.95 278.95]}},
   :base
   {:label "chest-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20619,6 +20812,7 @@
     :max [480.95 278.95]}},
   :detail
   {:label "chest-131",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20769,6 +20963,7 @@
     :max [439.3 271.05]}}}
  {:outline
   {:label "chest-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21646,6 +21841,7 @@
     :max [495.75 291.1]}},
   :base
   {:label "chest-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22165,6 +22361,7 @@
     :max [490.8 288.35]}},
   :detail
   {:label "chest-132",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22712,6 +22909,7 @@
     :max [495.75 291.1]}}}
  {:outline
   {:label "chest-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22760,6 +22958,7 @@
     :max [487.35 293.95]}},
   :base
   {:label "chest-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22789,6 +22988,7 @@
     :max [486.7 290.3]}},
   :detail
   {:label "chest-133",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22819,6 +23019,7 @@
     :max [487.35 293.95]}}}
  {:outline
   {:label "chest-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22906,6 +23107,7 @@
     :max [487.35 293.5]}},
   :base
   {:label "chest-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22955,6 +23157,7 @@
     :max [486.7 289.85]}},
   :detail
   {:label "chest-134",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23013,6 +23216,7 @@
     :max [487.35 293.5]}}}
  {:outline
   {:label "chest-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23275,6 +23479,7 @@
     :max [487.35 292.95]}},
   :base
   {:label "chest-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23449,6 +23654,7 @@
     :max [486.7 289.0]}},
   :detail
   {:label "chest-135",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

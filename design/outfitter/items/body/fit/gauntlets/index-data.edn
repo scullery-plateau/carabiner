@@ -1,5 +1,6 @@
 [{:outline
   {:label "gauntlets-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -133,6 +134,7 @@
     :max [483.3 363.65]}},
   :base
   {:label "gauntlets-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -225,6 +227,7 @@
     :max [483.3 363.65]}},
   :detail
   {:label "gauntlets-69",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -276,6 +279,7 @@
     :max [480.1 362.65]}}}
  {:outline
   {:label "gauntlets-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -327,6 +331,7 @@
     :max [486.8 362.0]}},
   :base
   {:label "gauntlets-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -364,6 +369,7 @@
     :max [486.8 362.0]}}}
  {:outline
   {:label "gauntlets-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -427,6 +433,7 @@
     :max [493.15 361.9]}},
   :base
   {:label "gauntlets-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -476,6 +483,7 @@
     :max [493.15 361.9]}},
   :detail
   {:label "gauntlets-70",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -507,6 +515,7 @@
     :max [489.6 352.8]}}}
  {:outline
   {:label "gauntlets-113",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -600,6 +609,7 @@
     :max [496.3 361.9]}},
   :base
   {:label "gauntlets-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -671,6 +681,7 @@
     :max [496.3 356.3]}},
   :detail
   {:label "gauntlets-71",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -714,6 +725,7 @@
     :max [491.45 361.9]}}}
  {:outline
   {:label "gauntlets-114",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -760,6 +772,7 @@
     :max [485.7 368.2]}},
   :base
   {:label "gauntlets-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -794,6 +807,7 @@
     :max [485.7 368.2]}}}
  {:outline
   {:label "gauntlets-115",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -863,6 +877,7 @@
     :max [486.25 368.2]}},
   :base
   {:label "gauntlets-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -888,6 +903,7 @@
     :max [485.0 365.0]}},
   :detail
   {:label "gauntlets-72",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -952,6 +968,7 @@
     :max [486.25 368.2]}}}
  {:outline
   {:label "gauntlets-116",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1096,6 +1113,7 @@
     :max [486.85 368.2]}},
   :base
   {:label "gauntlets-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1206,6 +1224,7 @@
     :max [485.7 368.2]}},
   :detail
   {:label "gauntlets-73",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1309,6 +1328,7 @@
     :max [486.85 360.45]}}}
  {:outline
   {:label "gauntlets-117",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1575,6 +1595,7 @@
     :max [492.6 364.8]}},
   :base
   {:label "gauntlets-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1768,6 +1789,7 @@
     :max [492.6 364.8]}},
   :detail
   {:label "gauntlets-74",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1943,6 +1965,7 @@
     :max [491.1 361.0]}}}
  {:outline
   {:label "gauntlets-118",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2008,6 +2031,7 @@
     :max [492.8 361.85]}},
   :base
   {:label "gauntlets-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2064,6 +2088,7 @@
     :max [492.8 361.85]}}}
  {:outline
   {:label "gauntlets-119",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2106,6 +2131,7 @@
     :max [493.95 360.05]}},
   :base
   {:label "gauntlets-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2142,6 +2168,7 @@
     :max [493.95 360.05]}}}
  {:outline
   {:label "gauntlets-120",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2236,6 +2263,7 @@
     :max [492.3 463.65]}},
   :base
   {:label "gauntlets-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2293,6 +2321,7 @@
     :max [490.65 463.65]}},
   :detail
   {:label "gauntlets-75",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2318,6 +2347,7 @@
     :max [492.3 351.9]}}}
  {:outline
   {:label "gauntlets-121",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2446,6 +2476,7 @@
     :max [482.95 295.15]}},
   :base
   {:label "gauntlets-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2565,6 +2596,7 @@
     :max [482.95 295.15]}}}
  {:outline
   {:label "gauntlets-122",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2631,6 +2663,7 @@
     :max [499.4 361.85]}},
   :base
   {:label "gauntlets-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2674,6 +2707,7 @@
     :max [499.4 361.85]}},
   :detail
   {:label "gauntlets-76",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2703,6 +2737,7 @@
     :max [476.0 359.3]}}}
  {:outline
   {:label "gauntlets-123",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2759,6 +2794,7 @@
     :max [501.3 372.4]}},
   :base
   {:label "gauntlets-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2790,6 +2826,7 @@
     :max [501.3 372.4]}},
   :detail
   {:label "gauntlets-77",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2812,6 +2849,7 @@
     :max [491.65 360.15]}}}
  {:outline
   {:label "gauntlets-124",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2949,6 +2987,7 @@
     :max [494.1 361.65]}},
   :base
   {:label "gauntlets-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3021,6 +3060,7 @@
     :max [494.1 361.65]}},
   :detail
   {:label "gauntlets-78",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3125,6 +3165,7 @@
     :max [492.9 360.4]}}}
  {:outline
   {:label "gauntlets-125",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3312,6 +3353,7 @@
     :max [501.9 361.6]}},
   :base
   {:label "gauntlets-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3441,6 +3483,7 @@
     :max [501.9 361.6]}},
   :detail
   {:label "gauntlets-79",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3506,6 +3549,7 @@
     :max [480.8 348.1]}}}
  {:outline
   {:label "gauntlets-126",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3668,6 +3712,7 @@
     :max [495.6 370.2]}},
   :base
   {:label "gauntlets-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3778,6 +3823,7 @@
     :max [493.5 358.4]}},
   :detail
   {:label "gauntlets-80",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3898,6 +3944,7 @@
     :max [495.6 370.2]}}}
  {:outline
   {:label "gauntlets-127",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4017,6 +4064,7 @@
     :max [495.25 361.9]}},
   :base
   {:label "gauntlets-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4113,6 +4161,7 @@
     :max [495.25 361.9]}},
   :detail
   {:label "gauntlets-81",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4175,6 +4224,7 @@
     :max [491.35 347.6]}}}
  {:outline
   {:label "gauntlets-128",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4320,6 +4370,7 @@
     :max [495.25 361.9]}},
   :base
   {:label "gauntlets-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4419,6 +4470,7 @@
     :max [495.25 361.9]}},
   :detail
   {:label "gauntlets-81",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4481,6 +4533,7 @@
     :max [491.35 347.6]}}}
  {:outline
   {:label "gauntlets-129",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4645,6 +4698,7 @@
     :max [498.2 373.45]}},
   :base
   {:label "gauntlets-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4723,6 +4777,7 @@
     :max [498.2 373.45]}},
   :detail
   {:label "gauntlets-82",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4774,6 +4829,7 @@
     :max [476.8 355.15]}}}
  {:outline
   {:label "gauntlets-130",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5024,6 +5080,7 @@
     :max [498.05 368.35]}},
   :base
   {:label "gauntlets-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5207,6 +5264,7 @@
     :max [498.05 368.35]}},
   :detail
   {:label "gauntlets-83",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5299,6 +5357,7 @@
     :max [475.35 356.8]}}}
  {:outline
   {:label "gauntlets-131",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5468,6 +5527,7 @@
     :max [491.15 397.0]}},
   :base
   {:label "gauntlets-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5595,6 +5655,7 @@
     :max [489.7 397.0]}},
   :detail
   {:label "gauntlets-84",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5696,6 +5757,7 @@
     :max [491.15 381.3]}}}
  {:outline
   {:label "gauntlets-132",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6127,6 +6189,7 @@
     :max [493.9 363.1]}},
   :base
   {:label "gauntlets-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6416,6 +6479,7 @@
     :max [493.9 363.1]}},
   :detail
   {:label "gauntlets-85",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6736,6 +6800,7 @@
     :max [493.9 362.4]}}}
  {:outline
   {:label "gauntlets-133",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6871,6 +6936,7 @@
     :max [497.9 321.15]}},
   :base
   {:label "gauntlets-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6952,6 +7018,7 @@
     :max [495.7 321.15]}},
   :detail
   {:label "gauntlets-86",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7011,6 +7078,7 @@
     :max [497.9 316.9]}}}
  {:outline
   {:label "gauntlets-134",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7192,6 +7260,7 @@
     :max [503.7 321.15]}},
   :base
   {:label "gauntlets-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7317,6 +7386,7 @@
     :max [497.6 321.15]}},
   :detail
   {:label "gauntlets-87",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7386,6 +7456,7 @@
     :max [503.7 318.75]}}}
  {:outline
   {:label "gauntlets-135",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7644,6 +7715,7 @@
     :max [494.7 361.6]}},
   :base
   {:label "gauntlets-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7758,6 +7830,7 @@
     :max [492.8 361.6]}},
   :detail
   {:label "gauntlets-88",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7884,6 +7957,7 @@
     :max [494.7 350.85]}}}
  {:outline
   {:label "gauntlets-136",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8735,6 +8809,7 @@
     :max [496.95 373.65]}},
   :base
   {:label "gauntlets-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9084,6 +9159,7 @@
     :max [496.95 372.85]}}}
  {:outline
   {:label "gauntlets-137",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9157,6 +9233,7 @@
     :max [331.5 363.65]}},
   :base
   {:label "gauntlets-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9211,6 +9288,7 @@
     :max [331.5 363.65]}},
   :detail
   {:label "gauntlets-89",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9246,6 +9324,7 @@
     :max [324.35 362.65]}}}
  {:outline
   {:label "gauntlets-138",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9282,6 +9361,7 @@
     :max [332.3 362.0]}},
   :base
   {:label "gauntlets-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9306,6 +9386,7 @@
     :max [332.3 362.0]}}}
  {:outline
   {:label "gauntlets-139",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9350,6 +9431,7 @@
     :max [337.2 361.9]}},
   :base
   {:label "gauntlets-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9382,6 +9464,7 @@
     :max [337.2 361.9]}},
   :detail
   {:label "gauntlets-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9404,6 +9487,7 @@
     :max [332.65 352.8]}}}
  {:outline
   {:label "gauntlets-140",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9460,6 +9544,7 @@
     :max [339.25 361.9]}},
   :base
   {:label "gauntlets-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9501,6 +9586,7 @@
     :max [339.25 356.3]}},
   :detail
   {:label "gauntlets-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9534,6 +9620,7 @@
     :max [335.35 361.9]}}}
  {:outline
   {:label "gauntlets-141",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9569,6 +9656,7 @@
     :max [330.9 368.2]}},
   :base
   {:label "gauntlets-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9591,6 +9679,7 @@
     :max [330.9 368.2]}}}
  {:outline
   {:label "gauntlets-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9639,6 +9728,7 @@
     :max [331.9 368.2]}},
   :base
   {:label "gauntlets-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9656,6 +9746,7 @@
     :max [330.75 365.0]}},
   :detail
   {:label "gauntlets-92",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9694,6 +9785,7 @@
     :max [331.9 368.2]}}}
  {:outline
   {:label "gauntlets-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9781,6 +9873,7 @@
     :max [330.9 368.2]}},
   :base
   {:label "gauntlets-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9847,6 +9940,7 @@
     :max [330.9 368.2]}},
   :detail
   {:label "gauntlets-93",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9907,6 +10001,7 @@
     :max [329.95 360.45]}}}
  {:outline
   {:label "gauntlets-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10051,6 +10146,7 @@
     :max [336.5 364.8]}},
   :base
   {:label "gauntlets-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10155,6 +10251,7 @@
     :max [336.5 364.8]}},
   :detail
   {:label "gauntlets-94",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10248,6 +10345,7 @@
     :max [334.6 361.0]}}}
  {:outline
   {:label "gauntlets-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10285,6 +10383,7 @@
     :max [337.9 361.85]}},
   :base
   {:label "gauntlets-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10317,6 +10416,7 @@
     :max [337.9 361.85]}}}
  {:outline
   {:label "gauntlets-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10346,6 +10446,7 @@
     :max [325.15 360.05]}},
   :base
   {:label "gauntlets-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10369,6 +10470,7 @@
     :max [325.15 360.05]}}}
  {:outline
   {:label "gauntlets-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10424,6 +10526,7 @@
     :max [348.15 463.65]}},
   :base
   {:label "gauntlets-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10458,6 +10561,7 @@
     :max [348.15 463.65]}},
   :detail
   {:label "gauntlets-95",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10479,6 +10583,7 @@
     :max [319.85 351.9]}}}
  {:outline
   {:label "gauntlets-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10549,6 +10654,7 @@
     :max [351.8 295.15]}},
   :base
   {:label "gauntlets-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10614,6 +10720,7 @@
     :max [351.8 295.15]}}}
  {:outline
   {:label "gauntlets-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10662,6 +10769,7 @@
     :max [337.9 361.85]}},
   :base
   {:label "gauntlets-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10690,6 +10798,7 @@
     :max [328.6 361.85]}},
   :detail
   {:label "gauntlets-96",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10709,6 +10818,7 @@
     :max [337.9 359.3]}}}
  {:outline
   {:label "gauntlets-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10751,6 +10861,7 @@
     :max [344.05 372.4]}},
   :base
   {:label "gauntlets-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10772,6 +10883,7 @@
     :max [344.05 372.4]}},
   :detail
   {:label "gauntlets-97",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10788,6 +10900,7 @@
     :max [337.45 360.15]}}}
  {:outline
   {:label "gauntlets-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10868,6 +10981,7 @@
     :max [337.9 361.65]}},
   :base
   {:label "gauntlets-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10912,6 +11026,7 @@
     :max [337.9 361.65]}},
   :detail
   {:label "gauntlets-98",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10968,6 +11083,7 @@
     :max [333.55 360.4]}}}
  {:outline
   {:label "gauntlets-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11073,6 +11189,7 @@
     :max [338.4 361.6]}},
   :base
   {:label "gauntlets-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11144,6 +11261,7 @@
     :max [333.75 361.6]}},
   :detail
   {:label "gauntlets-99",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11182,6 +11300,7 @@
     :max [338.4 348.1]}}}
  {:outline
   {:label "gauntlets-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11276,6 +11395,7 @@
     :max [339.35 370.2]}},
   :base
   {:label "gauntlets-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11338,6 +11458,7 @@
     :max [327.35 358.4]}},
   :detail
   {:label "gauntlets-100",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11408,6 +11529,7 @@
     :max [339.35 370.2]}}}
  {:outline
   {:label "gauntlets-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11482,6 +11604,7 @@
     :max [337.9 361.9]}},
   :base
   {:label "gauntlets-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11536,6 +11659,7 @@
     :max [337.9 361.9]}},
   :detail
   {:label "gauntlets-101",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11573,6 +11697,7 @@
     :max [337.9 347.6]}}}
  {:outline
   {:label "gauntlets-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11653,6 +11778,7 @@
     :max [343.9 361.9]}},
   :base
   {:label "gauntlets-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11708,6 +11834,7 @@
     :max [343.9 361.9]}},
   :detail
   {:label "gauntlets-101",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11745,6 +11872,7 @@
     :max [337.9 347.6]}}}
  {:outline
   {:label "gauntlets-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11836,6 +11964,7 @@
     :max [339.95 373.45]}},
   :base
   {:label "gauntlets-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11882,6 +12011,7 @@
     :max [339.6 373.45]}},
   :detail
   {:label "gauntlets-102",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11913,6 +12043,7 @@
     :max [339.95 355.15]}}}
  {:outline
   {:label "gauntlets-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12050,6 +12181,7 @@
     :max [345.45 368.35]}},
   :base
   {:label "gauntlets-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12149,6 +12281,7 @@
     :max [345.45 368.35]}},
   :detail
   {:label "gauntlets-103",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12202,6 +12335,7 @@
     :max [343.9 356.8]}}}
  {:outline
   {:label "gauntlets-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12302,6 +12436,7 @@
     :max [358.25 397.0]}},
   :base
   {:label "gauntlets-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12369,6 +12504,7 @@
     :max [358.25 397.0]}},
   :detail
   {:label "gauntlets-104",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12423,6 +12559,7 @@
     :max [354.55 381.3]}}}
  {:outline
   {:label "gauntlets-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12648,6 +12785,7 @@
     :max [344.65 363.1]}},
   :base
   {:label "gauntlets-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12801,6 +12939,7 @@
     :max [325.6 363.1]}},
   :detail
   {:label "gauntlets-105",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12958,6 +13097,7 @@
     :max [344.65 362.4]}}}
  {:outline
   {:label "gauntlets-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13036,6 +13176,7 @@
     :max [337.9 321.15]}},
   :base
   {:label "gauntlets-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13085,6 +13226,7 @@
     :max [337.9 321.15]}},
   :detail
   {:label "gauntlets-106",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13122,6 +13264,7 @@
     :max [314.8 316.9]}}}
  {:outline
   {:label "gauntlets-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13230,6 +13373,7 @@
     :max [337.9 321.15]}},
   :base
   {:label "gauntlets-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13300,6 +13444,7 @@
     :max [337.9 321.15]}},
   :detail
   {:label "gauntlets-107",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13341,6 +13486,7 @@
     :max [312.8 318.75]}}}
  {:outline
   {:label "gauntlets-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13476,6 +13622,7 @@
     :max [355.2 361.6]}},
   :base
   {:label "gauntlets-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13539,6 +13686,7 @@
     :max [354.45 361.6]}},
   :detail
   {:label "gauntlets-108",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13609,6 +13757,7 @@
     :max [355.2 350.85]}}}
  {:outline
   {:label "gauntlets-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14045,6 +14194,7 @@
     :max [354.35 373.65]}},
   :base
   {:label "gauntlets-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

@@ -272,6 +272,7 @@
         {:keys [min-x min-y max-x max-y]} (reduce minmax-xy-reducer init-minmax-xy parsed-paths)]
     (merge
       {:label label
+       :layer layer
        :paths parsed-paths
        :dim   {:width  width
                :height height
@@ -346,19 +347,14 @@
           {}))]
      (mapv (partial path-ify layer color) paths))))
 
-(def layer-colors
-  {:base    "#00ff00"
-   :detail  "#ff0000"
-   :outline "#0000ff"})
-
-(defn build-group-from-pair [[layer {:keys [label paths]}]]
-  (let [color (get layer-colors layer)]
+(defn build-group-from-pair [colors {:keys [label layer paths]}]
+  (let [color (get colors layer)]
     (if color
       (build-group layer label nil paths color)
       (build-group layer label nil paths))))
 
-(defn layer-data [row]
-  (let [dims (mapv :dim (vals row))
+(defn layer-data [colors row]
+  (let [dims (mapv :dim row)
         mins (mapv :min dims)
         min-xs (mapv first mins)
         min-ys (mapv second mins)
@@ -371,13 +367,10 @@
         max-y (apply max max-ys)
         width (- max-x min-x)
         height (- max-y min-y)]
-    [:td
      (into [:svg {:width   (str width "px")
                   :height  (str height "px")
                   :viewBox (str/join " " [min-x min-y width height])}]
-           (->> [:base :detail :outline :shadow]
-                (filter (set (keys row)))
-                (mapv #(build-group-from-pair [% (get row %)]))))]))
+           (mapv (partial build-group-from-pair colors) row))))
 
 (defn build-gradients [{:keys [meta stops]}]
   (into [:linearGradient meta] (mapv (partial vector :stop) stops)))
@@ -389,8 +382,8 @@
       (let [body [:svg
                   (select-keys dim [:width :height])
                   (build-group layer label offset paths)]
-            body (if defs (conj body (into [:defs] (mapv build-gradients defs))) body)
-            ]
+            body (if defs (conj body (into [:defs] (mapv build-gradients defs))) body)]
+
         [:td {:alt label} body])
       [:td])))
 
@@ -400,14 +393,20 @@
       (into [:tr]
             (map (partial build-name-cell svg-file row)
                  [:base :detail :outline :shadow]))
-      (layer-all row))))
+      [:td (layer-all row)])))
 
 (defn build-row-from-data [row]
   (conj
     (into [:tr]
           (map (partial build-cell-from-data row)
                [:base :detail :outline :shadow]))
-    (layer-data row)))
+    (->> [:base :detail :outline :shadow]
+         (filterv (set (keys row)))
+         (mapv (partial get row))
+         (layer-data
+           {:base    "#00ff00"
+            :detail  "#ff0000"
+            :outline "#0000ff"}))))
 
 (deftest build-name-table
   (let [root (io/file "design/outfitter/items/body/fit/arm")
@@ -438,8 +437,8 @@
 (deftest build-overlap
   (let [root (io/file "design/outfitter/items/body/fit/arm")
         index (edn/read-string (slurp (io/file root "name-data.edn")))
-        outlines (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) {} index)
-        overlap (layer-data outlines)]
+        outlines (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) (sorted-map) index)
+        overlap (layer-data {} (vals outlines))]
     (spit (io/file root "outlines.json")
           (cheshire/generate-string overlap {:pretty true}))
     (spit (io/file root "outlines.html")
@@ -535,7 +534,7 @@
         svg-file #(io/file folder (str "shapes/" % ".svg"))
         data (mapv (partial compile-data-row svg-file (.getName folder)) index-table)
         table (mapv build-row-from-data data)
-        outlines (into {} (mapv vector (range) (remove nil? (mapv :outline data))))]
+        outlines (remove nil? (mapv :outline data))]
     (spit (io/file folder "index-table.edn")
           (with-out-str (pp/pprint index-table)))
     (spit (io/file folder "index-data.edn")
@@ -551,7 +550,7 @@
     (spit (io/file folder "outlines.html")
           (build-html
             {:title "Outlines"}
-            [:table [:tbody [:tr (layer-data outlines)]]]))))
+            [:table [:tbody [:tr (layer-data {} outlines)]]]))))
 
 (defn build-columns-from-names [folder]
   (pp/pprint "building columns")
@@ -592,18 +591,18 @@
     (pp/pprint (into (sorted-set) (keys weird)))))
 
 #_(deftest test-build-columns-file
-  (let [root (io/file "design/outfitter/items/accessories/fit")]
-    (build-columns-file (io/file root "accessories_and_shields"))))
+   (let [root (io/file "design/outfitter/items/accessories/fit")]
+     (build-columns-file (io/file root "accessories_and_shields"))))
 
 #_(deftest test-build-columns-file-for-folder
-  (let [folder (io/file "design/outfitter/items/accessories/fit")]
-    (doseq [file (filter #(.isDirectory %) (.listFiles folder))]
-      (println (.getName file))
-      (build-columns-file file))))
+   (let [folder (io/file "design/outfitter/items/accessories/fit")]
+     (doseq [file (filter #(.isDirectory %) (.listFiles folder))]
+       (println (.getName file))
+       (build-columns-file file))))
 
 (deftest test-read-columns-to-html
   (let [root (io/file "design/outfitter/items/body/fit")]
-    (read-columns-to-html (io/file root "symbol_B"))))
+    (read-columns-to-html (io/file root "arm"))))
 
 (deftest test-read-columns-to-html-for-folder
   (let [folder (io/file "design/outfitter/items/body/fit")]
@@ -643,7 +642,7 @@
                     (with-out-str (pp/pprint data)))
             names (into (sorted-set) (keys data))
             table (mapv #(build-row-from-data (get data %)) names)
-            overlap (layer-data (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) {} data))]
+            overlap (layer-data {} (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) {} data))]
         (spit (io/file root "from-data.html")
               (build-html
                 {:title "From Data"}
@@ -651,6 +650,73 @@
                  [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
                  (into [:tbody] table)]))
         (spit (io/file root "outlines.html")
-              (build-html
-                {:title "Outlines"}
-                [:table [:tbody [:tr overlap]]]))))))
+              (build-html {:title "Outlines"} overlap))))))
+
+(defn parse-blueprint-layer [root [step index & {:keys [flip? base detail outline]
+                                                 :or {flip? false
+                                                      base "#ffffff"
+                                                      detail "#ffffff"
+                                                      outline "#000000"}}]]
+  (let [folder (io/file root (name step))
+        data (edn/read-string (slurp (io/file folder "index-data.edn")))]
+    {:layers (get data index)
+     :flip?  flip?
+     :colors {:base    base
+              :detail  detail
+              :outline outline}}))
+
+(defn group-layers [padding all-layers]
+  (let [layers (mapv :layers all-layers)
+        dims (reduce #(into %1 (mapv :dim (vals %2))) [] layers)
+        mins (mapv :min dims)
+        min-xs (mapv first mins)
+        min-ys (mapv second mins)
+        maxs (mapv :max dims)
+        max-xs (mapv first maxs)
+        max-ys (mapv second maxs)
+        min-y (- (apply min min-ys) padding)
+        max-y (+ (apply max max-ys) padding)
+        left-x (- 400 (apply min min-xs))
+        right-x (- (apply max max-xs) 400)
+        max-diff-x (+ (max left-x right-x) padding)
+        min-x (- 400 max-diff-x)
+        max-x (+ 400 max-diff-x)
+        width (- max-x min-x)
+        height (- max-y min-y)]
+    (into [:svg
+           {:width   (str width "px")
+            :height  (str height "px")
+            :viewBox (str/join " " [min-x min-y width height])}
+           [:rect
+            {:x min-x
+             :y min-y
+             :width width
+             :height height
+             :fill "none"
+             :stroke "#000000"
+             :stroke-width 2}]]
+          (mapv
+            (fn [{:keys [layers colors flip?]}]
+              (into
+                [:g
+                 (if flip?
+                   {:transform "matrix(-1.0, 0.0, 0.0, 1.0, 800.0, 0.0)"}
+                   {})]
+                (->> [:base :detail :outline :shadow]
+                     (filterv (set (keys layers)))
+                     (mapv (partial get layers))
+                     (mapv (partial build-group-from-pair colors)))))
+            all-layers))))
+
+(deftest test-parse-blueprint
+  (let [root (io/file "design/outfitter/items/body/fit")
+        blueprint (edn/read-string (slurp (io/file root "demo1.edn")))
+        layers (mapv (partial parse-blueprint-layer root) blueprint)]
+    (spit (io/file root "demo1-data.edn")
+          (with-out-str (pp/pprint layers)))
+    (spit (io/file root "demo1.html")
+      (build-html
+        {:title "demo1.edn"}
+        (group-layers 10 layers)))))
+
+

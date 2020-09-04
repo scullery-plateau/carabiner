@@ -1,5 +1,6 @@
 [{:outline
   {:label "eyebrows-61",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21,6 +22,7 @@
     :max [414.85 183.75]}}}
  {:outline
   {:label "eyebrows-62",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -44,6 +46,7 @@
     :max [415.4 183.8]}}}
  {:outline
   {:label "eyebrows-63",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -81,6 +84,7 @@
     :max [415.55 184.1]}},
   :base
   {:label "eyebrows-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -112,6 +116,7 @@
     :max [415.55 184.1]}}}
  {:outline
   {:label "eyebrows-64",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -153,6 +158,7 @@
     :max [415.6 183.45]}},
   :base
   {:label "eyebrows-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -188,6 +194,7 @@
     :max [415.6 183.45]}}}
  {:outline
   {:label "eyebrows-65",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -225,6 +232,7 @@
     :max [416.5 185.45]}},
   :base
   {:label "eyebrows-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -248,6 +256,7 @@
     :max [416.5 185.45]}}}
  {:outline
   {:label "eyebrows-66",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -301,6 +310,7 @@
     :max [416.45 186.0]}},
   :base
   {:label "eyebrows-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -333,6 +343,7 @@
     :max [416.45 185.25]}}}
  {:outline
   {:label "eyebrows-67",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -373,6 +384,7 @@
     :max [415.9 187.05]}},
   :base
   {:label "eyebrows-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -395,6 +407,7 @@
     :max [415.9 185.0]}}}
  {:outline
   {:label "eyebrows-68",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -435,6 +448,7 @@
     :max [414.75 182.9]}},
   :base
   {:label "eyebrows-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -462,6 +476,7 @@
     :max [414.75 182.9]}}}
  {:outline
   {:label "eyebrows-69",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -499,6 +514,7 @@
     :max [414.55 182.1]}},
   :base
   {:label "eyebrows-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -521,6 +537,7 @@
     :max [414.55 182.1]}}}
  {:outline
   {:label "eyebrows-70",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -558,6 +575,7 @@
     :max [416.35 183.15]}},
   :base
   {:label "eyebrows-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -589,6 +607,7 @@
     :max [416.35 183.15]}}}
  {:outline
   {:label "eyebrows-71",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -626,6 +645,7 @@
     :max [414.85 182.95]}},
   :base
   {:label "eyebrows-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -657,6 +677,7 @@
     :max [414.85 182.95]}}}
  {:outline
   {:label "eyebrows-72",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -690,6 +711,7 @@
     :max [415.2 183.45]}},
   :base
   {:label "eyebrows-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -713,6 +735,7 @@
     :max [415.2 183.45]}}}
  {:outline
   {:label "eyebrows-73",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -748,6 +771,7 @@
     :max [415.9 181.9]}},
   :base
   {:label "eyebrows-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -777,6 +801,7 @@
     :max [415.9 181.9]}}}
  {:outline
   {:label "eyebrows-74",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -814,6 +839,7 @@
     :max [416.3 181.65]}},
   :base
   {:label "eyebrows-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -845,6 +871,7 @@
     :max [416.3 181.65]}}}
  {:outline
   {:label "eyebrows-75",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -868,6 +895,7 @@
     :max [414.95 182.65]}},
   :base
   {:label "eyebrows-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -889,6 +917,7 @@
     :max [414.95 182.65]}}}
  {:outline
   {:label "eyebrows-76",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -917,6 +946,7 @@
     :max [415.85 183.4]}},
   :base
   {:label "eyebrows-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -939,6 +969,7 @@
     :max [415.85 183.4]}}}
  {:outline
   {:label "eyebrows-77",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -967,6 +998,7 @@
     :max [415.25 183.9]}},
   :base
   {:label "eyebrows-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -989,6 +1021,7 @@
     :max [415.25 183.9]}}}
  {:outline
   {:label "eyebrows-78",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1017,6 +1050,7 @@
     :max [416.4 183.9]}},
   :base
   {:label "eyebrows-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1039,6 +1073,7 @@
     :max [416.4 183.9]}}}
  {:outline
   {:label "eyebrows-79",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1079,6 +1114,7 @@
     :max [416.1 183.9]}},
   :base
   {:label "eyebrows-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1112,6 +1148,7 @@
     :max [416.1 183.9]}}}
  {:outline
   {:label "eyebrows-80",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1139,6 +1176,7 @@
     :max [414.75 184.0]}},
   :base
   {:label "eyebrows-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1160,6 +1198,7 @@
     :max [414.75 184.0]}}}
  {:outline
   {:label "eyebrows-81",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1202,6 +1241,7 @@
     :max [415.25 183.7]}},
   :base
   {:label "eyebrows-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1232,6 +1272,7 @@
     :max [415.25 183.7]}}}
  {:outline
   {:label "eyebrows-82",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1266,6 +1307,7 @@
     :max [416.45 183.9]}},
   :base
   {:label "eyebrows-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1290,6 +1332,7 @@
     :max [416.45 183.9]}}}
  {:outline
   {:label "eyebrows-83",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1345,6 +1388,7 @@
     :max [417.75 183.9]}},
   :base
   {:label "eyebrows-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1394,6 +1438,7 @@
     :max [417.75 183.9]}}}
  {:outline
   {:label "eyebrows-84",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1454,6 +1499,7 @@
     :max [415.85 188.1]}},
   :base
   {:label "eyebrows-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1500,6 +1546,7 @@
     :max [415.85 188.1]}}}
  {:outline
   {:label "eyebrows-85",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1533,6 +1580,7 @@
     :max [416.0 185.65]}}}
  {:outline
   {:label "eyebrows-86",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1555,6 +1603,7 @@
     :max [403.85 186.05]}}}
  {:outline
   {:label "eyebrows-87",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1581,6 +1630,7 @@
     :max [416.55 181.75]}},
   :base
   {:label "eyebrows-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1605,6 +1655,7 @@
     :max [416.55 181.75]}}}
  {:outline
   {:label "eyebrows-88",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1623,6 +1674,7 @@
     :max [395.85 183.75]}}}
  {:outline
   {:label "eyebrows-89",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1643,6 +1695,7 @@
     :max [396.75 183.8]}}}
  {:outline
   {:label "eyebrows-90",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1670,6 +1723,7 @@
     :max [396.75 184.1]}},
   :base
   {:label "eyebrows-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1691,6 +1745,7 @@
     :max [396.75 184.1]}}}
  {:outline
   {:label "eyebrows-91",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1720,6 +1775,7 @@
     :max [396.05 183.45]}},
   :base
   {:label "eyebrows-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1743,6 +1799,7 @@
     :max [396.05 183.45]}}}
  {:outline
   {:label "eyebrows-92",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1769,6 +1826,7 @@
     :max [398.6 185.45]}},
   :base
   {:label "eyebrows-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1786,6 +1844,7 @@
     :max [397.5 185.45]}}}
  {:outline
   {:label "eyebrows-93",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1822,6 +1881,7 @@
     :max [399.85 186.0]}},
   :base
   {:label "eyebrows-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1846,6 +1906,7 @@
     :max [397.35 185.25]}}}
  {:outline
   {:label "eyebrows-94",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1873,6 +1934,7 @@
     :max [399.85 187.05]}},
   :base
   {:label "eyebrows-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1889,6 +1951,7 @@
     :max [396.9 185.0]}}}
  {:outline
   {:label "eyebrows-95",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1918,6 +1981,7 @@
     :max [398.6 182.9]}},
   :base
   {:label "eyebrows-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1939,6 +2003,7 @@
     :max [397.35 182.9]}}}
  {:outline
   {:label "eyebrows-96",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1966,6 +2031,7 @@
     :max [397.65 182.1]}},
   :base
   {:label "eyebrows-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1982,6 +2048,7 @@
     :max [396.1 182.1]}}}
  {:outline
   {:label "eyebrows-97",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2009,6 +2076,7 @@
     :max [395.95 183.15]}},
   :base
   {:label "eyebrows-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2030,6 +2098,7 @@
     :max [395.95 183.15]}}}
  {:outline
   {:label "eyebrows-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2057,6 +2126,7 @@
     :max [396.65 182.95]}},
   :base
   {:label "eyebrows-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2078,6 +2148,7 @@
     :max [396.65 182.95]}}}
  {:outline
   {:label "eyebrows-99",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2102,6 +2173,7 @@
     :max [398.8 183.45]}},
   :base
   {:label "eyebrows-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2119,6 +2191,7 @@
     :max [397.2 183.45]}}}
  {:outline
   {:label "eyebrows-100",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2145,6 +2218,7 @@
     :max [395.95 181.9]}},
   :base
   {:label "eyebrows-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2165,6 +2239,7 @@
     :max [395.95 181.9]}}}
  {:outline
   {:label "eyebrows-101",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2192,6 +2267,7 @@
     :max [395.0 181.65]}},
   :base
   {:label "eyebrows-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2213,6 +2289,7 @@
     :max [395.0 181.65]}}}
  {:outline
   {:label "eyebrows-102",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2237,6 +2314,7 @@
     :max [397.2 182.65]}},
   :base
   {:label "eyebrows-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2255,6 +2333,7 @@
     :max [397.2 182.65]}}}
  {:outline
   {:label "eyebrows-103",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2277,6 +2356,7 @@
     :max [397.7 183.4]}},
   :base
   {:label "eyebrows-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2293,6 +2373,7 @@
     :max [397.7 183.4]}}}
  {:outline
   {:label "eyebrows-104",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2316,6 +2397,7 @@
     :max [396.55 183.9]}},
   :base
   {:label "eyebrows-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2333,6 +2415,7 @@
     :max [396.55 183.9]}}}
  {:outline
   {:label "eyebrows-105",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2356,6 +2439,7 @@
     :max [396.55 183.9]}},
   :base
   {:label "eyebrows-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2373,6 +2457,7 @@
     :max [396.55 183.9]}}}
  {:outline
   {:label "eyebrows-106",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2405,6 +2490,7 @@
     :max [396.55 183.9]}},
   :base
   {:label "eyebrows-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2427,6 +2513,7 @@
     :max [396.55 183.9]}}}
  {:outline
   {:label "eyebrows-107",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2449,6 +2536,7 @@
     :max [396.65 184.0]}},
   :base
   {:label "eyebrows-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2465,6 +2553,7 @@
     :max [396.65 184.0]}}}
  {:outline
   {:label "eyebrows-108",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2492,6 +2581,7 @@
     :max [397.6 183.7]}},
   :base
   {:label "eyebrows-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2513,6 +2603,7 @@
     :max [397.6 183.7]}}}
  {:outline
   {:label "eyebrows-109",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2539,6 +2630,7 @@
     :max [397.5 183.9]}},
   :base
   {:label "eyebrows-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2559,6 +2651,7 @@
     :max [397.5 183.9]}}}
  {:outline
   {:label "eyebrows-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2595,6 +2688,7 @@
     :max [397.5 183.9]}},
   :base
   {:label "eyebrows-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2625,6 +2719,7 @@
     :max [397.5 183.9]}}}
  {:outline
   {:label "eyebrows-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2663,6 +2758,7 @@
     :max [398.4 188.0]}},
   :base
   {:label "eyebrows-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2691,6 +2787,7 @@
     :max [398.4 188.0]}}}
  {:outline
   {:label "eyebrows-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",

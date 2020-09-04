@@ -1,5 +1,6 @@
 [{:outline
   {:label "beard-58",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22,6 +23,7 @@
     :max [403.8 199.55]}},
   :base
   {:label "beard-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -39,6 +41,7 @@
     :max [403.8 199.6]}}}
  {:outline
   {:label "beard-59",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -64,6 +67,7 @@
     :max [409.9 200.55]}},
   :base
   {:label "beard-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -88,6 +92,7 @@
     :max [409.9 200.6]}}}
  {:outline
   {:label "beard-60",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -110,6 +115,7 @@
     :max [407.95 199.35]}}}
  {:outline
   {:label "beard-61",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -136,6 +142,7 @@
     :max [410.45 198.5]}},
   :base
   {:label "beard-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -157,6 +164,7 @@
     :max [410.45 198.55]}}}
  {:outline
   {:label "beard-62",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -177,6 +185,7 @@
     :max [411.85 199.8]}},
   :base
   {:label "beard-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -196,6 +205,7 @@
     :max [411.85 199.85]}}}
  {:outline
   {:label "beard-63",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -215,6 +225,7 @@
     :max [410.1 201.4]}},
   :base
   {:label "beard-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -229,6 +240,7 @@
     :max [410.1 201.45]}}}
  {:outline
   {:label "beard-64",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -267,6 +279,7 @@
     :max [411.85 206.05]}},
   :base
   {:label "beard-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -300,6 +313,7 @@
     :max [411.85 206.1]}}}
  {:outline
   {:label "beard-65",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -335,6 +349,7 @@
     :max [411.25 211.05]}},
   :base
   {:label "beard-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -368,6 +383,7 @@
     :max [411.25 211.1]}}}
  {:outline
   {:label "beard-66",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -423,6 +439,7 @@
     :max [432.95 203.75]}},
   :base
   {:label "beard-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -473,6 +490,7 @@
     :max [432.95 203.8]}}}
  {:outline
   {:label "beard-67",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -498,6 +516,7 @@
     :max [409.15 207.75]}},
   :base
   {:label "beard-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -518,6 +537,7 @@
     :max [409.15 207.8]}}}
  {:outline
   {:label "beard-68",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -552,6 +572,7 @@
     :max [413.05 203.1]}},
   :base
   {:label "beard-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -581,6 +602,7 @@
     :max [413.05 203.15]}}}
  {:outline
   {:label "beard-69",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -656,6 +678,7 @@
     :max [423.1 203.85]}},
   :base
   {:label "beard-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -722,6 +745,7 @@
     :max [423.1 203.9]}}}
  {:outline
   {:label "beard-70",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -744,6 +768,7 @@
     :max [411.9 219.25]}}}
  {:outline
   {:label "beard-71",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -782,6 +807,7 @@
     :max [413.4 229.15]}},
   :base
   {:label "beard-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -815,6 +841,7 @@
     :max [413.4 229.2]}}}
  {:outline
   {:label "beard-72",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -844,6 +871,7 @@
     :max [423.95 207.95]}}}
  {:outline
   {:label "beard-73",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -871,6 +899,7 @@
     :max [418.4 201.55]}},
   :base
   {:label "beard-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -901,6 +930,7 @@
     :max [418.4 201.6]}}}
  {:outline
   {:label "beard-74",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -961,6 +991,7 @@
     :max [420.0 206.15]}},
   :base
   {:label "beard-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1016,6 +1047,7 @@
     :max [420.0 206.2]}}}
  {:outline
   {:label "beard-75",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1062,6 +1094,7 @@
     :max [418.65 212.7]}},
   :base
   {:label "beard-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1103,6 +1136,7 @@
     :max [418.65 212.75]}}}
  {:outline
   {:label "beard-76",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1133,6 +1167,7 @@
     :max [409.3 211.35]}}}
  {:outline
   {:label "beard-77",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1160,6 +1195,7 @@
     :max [406.9 212.2]}},
   :base
   {:label "beard-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1182,6 +1218,7 @@
     :max [406.9 212.25]}}}
  {:outline
   {:label "beard-78",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1209,6 +1246,7 @@
     :max [406.9 219.55]}},
   :base
   {:label "beard-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1227,6 +1265,7 @@
     :max [406.9 219.6]}}}
  {:outline
   {:label "beard-79",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1255,6 +1294,7 @@
     :max [410.95 212.25]}},
   :base
   {:label "beard-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1278,6 +1318,7 @@
     :max [410.95 212.3]}}}
  {:outline
   {:label "beard-80",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1314,6 +1355,7 @@
     :max [410.95 212.25]}},
   :base
   {:label "beard-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1345,6 +1387,7 @@
     :max [410.95 212.3]}}}
  {:outline
   {:label "beard-81",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1379,6 +1422,7 @@
     :max [415.4 219.05]}},
   :base
   {:label "beard-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1404,6 +1448,7 @@
     :max [415.4 219.1]}}}
  {:outline
   {:label "beard-82",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1431,6 +1476,7 @@
     :max [401.75 209.5]}},
   :base
   {:label "beard-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1453,6 +1499,7 @@
     :max [401.75 209.55]}}}
  {:outline
   {:label "beard-83",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1478,6 +1525,7 @@
     :max [403.15 210.75]}},
   :base
   {:label "beard-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1498,6 +1546,7 @@
     :max [403.15 210.8]}}}
  {:outline
   {:label "beard-84",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1520,6 +1569,7 @@
     :max [412.25 215.0]}},
   :base
   {:label "beard-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1537,6 +1587,7 @@
     :max [412.25 215.05]}}}
  {:outline
   {:label "beard-85",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1584,6 +1635,7 @@
     :max [418.4 212.25]}},
   :base
   {:label "beard-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1626,6 +1678,7 @@
     :max [418.4 212.3]}}}
  {:outline
   {:label "beard-86",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1674,6 +1727,7 @@
     :max [417.85 212.2]}},
   :base
   {:label "beard-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1717,6 +1771,7 @@
     :max [417.85 212.25]}}}
  {:outline
   {:label "beard-87",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1759,6 +1814,7 @@
     :max [419.5 214.0]}},
   :base
   {:label "beard-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1796,6 +1852,7 @@
     :max [419.5 214.05]}}}
  {:outline
   {:label "beard-88",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1828,6 +1885,7 @@
     :max [418.75 213.5]}},
   :base
   {:label "beard-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1855,6 +1913,7 @@
     :max [418.75 213.55]}}}
  {:outline
   {:label "beard-89",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1895,6 +1954,7 @@
     :max [418.35 214.6]}},
   :base
   {:label "beard-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1930,6 +1990,7 @@
     :max [418.35 214.65]}}}
  {:base
   {:label "beard-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1983,6 +2044,7 @@
     :max [418.4 212.3]}}}
  {:base
   {:label "beard-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2039,6 +2101,7 @@
     :max [417.85 212.25]}}}
  {:base
   {:label "beard-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2087,6 +2150,7 @@
     :max [419.5 214.05]}}}
  {:base
   {:label "beard-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2125,6 +2189,7 @@
     :max [418.75 213.55]}}}
  {:base
   {:label "beard-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2173,6 +2238,7 @@
     :max [418.35 214.65]}}}
  {:outline
   {:label "beard-90",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2217,6 +2283,7 @@
     :max [418.4 211.65]}},
   :base
   {:label "beard-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2252,6 +2319,7 @@
     :max [418.4 211.7]}}}
  {:outline
   {:label "beard-91",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2295,6 +2363,7 @@
     :max [418.4 214.45]}},
   :base
   {:label "beard-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2333,6 +2402,7 @@
     :max [418.4 214.5]}}}
  {:outline
   {:label "beard-92",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2368,6 +2438,7 @@
     :max [418.4 224.9]}},
   :base
   {:label "beard-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2398,6 +2469,7 @@
     :max [418.4 224.95]}}}
  {:outline
   {:label "beard-93",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2435,6 +2507,7 @@
     :max [418.4 229.3]}},
   :base
   {:label "beard-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2467,6 +2540,7 @@
     :max [418.4 229.35]}}}
  {:outline
   {:label "beard-94",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2511,6 +2585,7 @@
     :max [419.25 221.95]}},
   :base
   {:label "beard-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2546,6 +2621,7 @@
     :max [419.25 222.0]}}}
  {:outline
   {:label "beard-95",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2586,6 +2662,7 @@
     :max [424.3 226.15]}},
   :base
   {:label "beard-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2621,6 +2698,7 @@
     :max [424.3 226.2]}}}
  {:outline
   {:label "beard-96",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2755,6 +2833,7 @@
     :max [419.25 239.3]}},
   :base
   {:label "beard-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2828,6 +2907,7 @@
     :max [419.25 239.35]}}}
  {:outline
   {:label "beard-97",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2875,6 +2955,7 @@
     :max [419.25 250.3]}},
   :base
   {:label "beard-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2921,6 +3002,7 @@
     :max [419.25 250.35]}}}
  {:outline
   {:label "beard-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3008,6 +3090,7 @@
     :max [419.3 362.55]}},
   :base
   {:label "beard-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

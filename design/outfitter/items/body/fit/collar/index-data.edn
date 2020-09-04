@@ -1,5 +1,6 @@
 [{:outline
   {:label "collar-49",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -59,6 +60,7 @@
     :max [423.05 325.35]}},
   :base
   {:label "collar-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -84,6 +86,7 @@
     :max [410.9 325.35]}},
   :detail
   {:label "collar-34",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -119,6 +122,7 @@
     :max [423.05 234.5]}}}
  {:outline
   {:label "collar-50",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -180,6 +184,7 @@
     :max [423.05 240.95]}},
   :base
   {:label "collar-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -217,6 +222,7 @@
     :max [416.0 240.95]}},
   :detail
   {:label "collar-35",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -252,6 +258,7 @@
     :max [423.05 233.15]}}}
  {:outline
   {:label "collar-51",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -435,6 +442,7 @@
     :max [432.35 279.1]}},
   :base
   {:label "collar-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -496,6 +504,7 @@
     :max [432.35 279.1]}}}
  {:outline
   {:label "collar-52",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -521,6 +530,7 @@
     :max [439.35 247.7]}},
   :base
   {:label "collar-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -545,6 +555,7 @@
     :max [439.35 247.7]}}}
  {:outline
   {:label "collar-53",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -652,6 +663,7 @@
     :max [436.25 260.8]}},
   :base
   {:label "collar-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -715,6 +727,7 @@
     :max [436.25 260.8]}},
   :detail
   {:label "collar-36",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -743,6 +756,7 @@
     :max [422.1 255.4]}}}
  {:outline
   {:label "collar-54",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -806,6 +820,7 @@
     :max [425.4 232.55]}},
   :base
   {:label "collar-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -842,6 +857,7 @@
     :max [425.4 232.55]}}}
  {:outline
   {:label "collar-55",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -901,6 +917,7 @@
     :max [449.1 266.3]}},
   :base
   {:label "collar-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -938,6 +955,7 @@
     :max [449.1 266.3]}},
   :detail
   {:label "collar-37",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -956,6 +974,7 @@
     :max [436.8 219.0]}}}
  {:outline
   {:label "collar-56",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1074,6 +1093,7 @@
     :max [428.85 256.4]}},
   :base
   {:label "collar-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1151,6 +1171,7 @@
     :max [428.85 256.4]}}}
  {:outline
   {:label "collar-57",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1315,6 +1336,7 @@
     :max [423.65 251.15]}},
   :base
   {:label "collar-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1450,6 +1472,7 @@
     :max [423.65 251.15]}}}
  {:outline
   {:label "collar-58",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1574,6 +1597,7 @@
     :max [422.9 229.45]}},
   :base
   {:label "collar-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1639,6 +1663,7 @@
     :max [416.35 229.45]}},
   :detail
   {:label "collar-38",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1704,6 +1729,7 @@
     :max [422.9 229.45]}}}
  {:outline
   {:label "collar-59",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1896,6 +1922,7 @@
     :max [436.25 261.85]}},
   :base
   {:label "collar-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2028,6 +2055,7 @@
     :max [436.25 261.85]}},
   :detail
   {:label "collar-39",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2146,6 +2174,7 @@
     :max [432.0 257.9]}}}
  {:outline
   {:label "collar-60",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2580,6 +2609,7 @@
     :max [433.4 263.5]}},
   :base
   {:label "collar-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2944,6 +2974,7 @@
     :max [433.4 263.5]}},
   :detail
   {:label "collar-40",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3035,6 +3066,7 @@
     :max [429.4 259.25]}}}
  {:outline
   {:label "collar-61",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3100,6 +3132,7 @@
     :max [470.2 234.85]}},
   :base
   {:label "collar-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3131,6 +3164,7 @@
     :max [470.2 234.85]}}}
  {:outline
   {:label "collar-62",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3232,6 +3266,7 @@
     :max [472.1 256.0]}},
   :base
   {:label "collar-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3274,6 +3309,7 @@
     :max [472.1 251.05]}},
   :detail
   {:label "collar-41",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3307,6 +3343,7 @@
     :max [428.5 256.0]}}}
  {:outline
   {:label "collar-63",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3446,6 +3483,7 @@
     :max [486.0 274.8]}},
   :base
   {:label "collar-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3533,6 +3571,7 @@
     :max [486.0 274.8]}},
   :detail
   {:label "collar-42",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3585,6 +3624,7 @@
     :max [430.7 241.8]}}}
  {:outline
   {:label "collar-64",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3794,6 +3834,7 @@
     :max [496.8 307.05]}},
   :base
   {:label "collar-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3866,6 +3907,7 @@
     :max [495.45 303.25]}},
   :detail
   {:label "collar-43",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3979,6 +4021,7 @@
     :max [496.8 307.05]}}}
  {:outline
   {:label "collar-65",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4159,6 +4202,7 @@
     :max [474.1 288.7]}},
   :base
   {:label "collar-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4256,6 +4300,7 @@
     :max [474.1 288.7]}},
   :detail
   {:label "collar-44",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4287,6 +4332,7 @@
     :max [444.65 244.45]}}}
  {:outline
   {:label "collar-66",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4446,6 +4492,7 @@
     :max [463.65 260.3]}},
   :base
   {:label "collar-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4548,6 +4595,7 @@
     :max [463.65 260.3]}},
   :detail
   {:label "collar-45",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4634,6 +4682,7 @@
     :max [459.3 256.5]}}}
  {:outline
   {:label "collar-67",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4943,6 +4992,7 @@
     :max [501.05 247.85]}},
   :base
   {:label "collar-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5158,6 +5208,7 @@
     :max [495.35 244.55]}},
   :detail
   {:label "collar-46",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5396,6 +5447,7 @@
     :max [501.05 247.85]}}}
  {:outline
   {:label "collar-48",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5439,6 +5491,7 @@
     :max [423.05 234.5]}},
   :detail
   {:label "collar-34",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

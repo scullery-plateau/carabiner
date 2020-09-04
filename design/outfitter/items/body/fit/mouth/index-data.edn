@@ -1,5 +1,6 @@
 [{:outline
   {:label "mouth-64",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21,6 +22,7 @@
     :max [406.95 206.0]}}}
  {:outline
   {:label "mouth-65",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -46,6 +48,7 @@
     :max [408.3 205.05]}}}
  {:outline
   {:label "mouth-66",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -67,6 +70,7 @@
     :max [405.85 203.95]}}}
  {:outline
   {:label "mouth-67",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -88,6 +92,7 @@
     :max [406.15 202.35]}}}
  {:outline
   {:label "mouth-68",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -137,6 +142,7 @@
     :max [406.85 205.55]}},
   :base
   {:label "mouth-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -165,6 +171,7 @@
     :max [406.5 204.2]}},
   :detail
   {:label "mouth-49",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -198,6 +205,7 @@
     :max [405.65 203.0]}}}
  {:outline
   {:label "mouth-69",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -246,6 +254,7 @@
     :max [408.1 206.25]}},
   :base
   {:label "mouth-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -269,6 +278,7 @@
     :max [407.85 203.5]}},
   :detail
   {:label "mouth-50",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -289,6 +299,7 @@
     :max [406.8 204.4]}}}
  {:outline
   {:label "mouth-70",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -334,6 +345,7 @@
     :max [408.85 208.85]}},
   :base
   {:label "mouth-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -362,6 +374,7 @@
     :max [408.15 204.9]}},
   :detail
   {:label "mouth-51",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -401,6 +414,7 @@
     :max [408.85 206.95]}}}
  {:outline
   {:label "mouth-71",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -426,6 +440,7 @@
     :max [406.0 203.95]}}}
  {:outline
   {:label "mouth-72",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -457,6 +472,7 @@
     :max [406.0 204.25]}}}
  {:outline
   {:label "mouth-73",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -486,6 +502,7 @@
     :max [406.8 203.8]}}}
  {:outline
   {:label "mouth-74",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -544,6 +561,7 @@
     :max [408.65 204.35]}},
   :base
   {:label "mouth-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -574,6 +592,7 @@
     :max [408.65 203.1]}},
   :detail
   {:label "mouth-52",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -606,6 +625,7 @@
     :max [407.25 202.65]}}}
  {:outline
   {:label "mouth-75",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -635,6 +655,7 @@
     :max [407.0 204.25]}}}
  {:outline
   {:label "mouth-76",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -668,6 +689,7 @@
     :max [406.2 206.1]}},
   :base
   {:label "mouth-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -683,6 +705,7 @@
     :max [405.3 203.4]}},
   :detail
   {:label "mouth-53",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -705,6 +728,7 @@
     :max [406.2 204.65]}}}
  {:outline
   {:label "mouth-77",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -742,6 +766,7 @@
     :max [406.4 206.25]}},
   :base
   {:label "mouth-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -763,6 +788,7 @@
     :max [405.95 203.9]}},
   :detail
   {:label "mouth-54",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -787,6 +813,7 @@
     :max [406.4 205.0]}}}
  {:outline
   {:label "mouth-78",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -833,6 +860,7 @@
     :max [408.5 207.15]}},
   :base
   {:label "mouth-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -862,6 +890,7 @@
     :max [408.5 204.35]}},
   :detail
   {:label "mouth-55",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -889,6 +918,7 @@
     :max [407.7 205.8]}}}
  {:outline
   {:label "mouth-79",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -914,6 +944,7 @@
     :max [407.05 204.65]}}}
  {:outline
   {:label "mouth-80",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -951,6 +982,7 @@
     :max [409.9 204.55]}},
   :base
   {:label "mouth-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -969,6 +1001,7 @@
     :max [407.75 202.35]}}}
  {:outline
   {:label "mouth-81",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -998,6 +1031,7 @@
     :max [410.7 204.65]}},
   :base
   {:label "mouth-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1013,6 +1047,7 @@
     :max [409.45 203.3]}}}
  {:outline
   {:label "mouth-82",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1045,6 +1080,7 @@
     :max [411.45 206.55]}},
   :base
   {:label "mouth-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1065,6 +1101,7 @@
     :max [409.3 205.2]}},
   :detail
   {:label "mouth-56",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1084,6 +1121,7 @@
     :max [407.75 202.0]}}}
  {:outline
   {:label "mouth-83",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1107,6 +1145,7 @@
     :max [406.05 204.15]}}}
  {:outline
   {:label "mouth-84",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1133,6 +1172,7 @@
     :max [408.0 203.7]}}}
  {:outline
   {:label "mouth-85",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1168,6 +1208,7 @@
     :max [407.7 205.3]}},
   :base
   {:label "mouth-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1195,6 +1236,7 @@
     :max [407.7 204.8]}}}
  {:outline
   {:label "mouth-86",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1240,6 +1282,7 @@
     :max [408.25 206.65]}},
   :base
   {:label "mouth-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1273,6 +1316,7 @@
     :max [408.25 206.1]}}}
  {:outline
   {:label "mouth-87",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1298,6 +1342,7 @@
     :max [405.3 204.45]}}}
  {:outline
   {:label "mouth-88",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1330,6 +1375,7 @@
     :max [404.55 205.2]}},
   :detail
   {:label "mouth-57",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1350,6 +1396,7 @@
     :max [403.7 202.95]}}}
  {:outline
   {:label "mouth-89",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1383,6 +1430,7 @@
     :max [403.95 206.55]}},
   :base
   {:label "mouth-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1404,6 +1452,7 @@
     :max [403.95 204.2]}}}
  {:outline
   {:label "mouth-90",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1437,6 +1486,7 @@
     :max [405.3 207.65]}},
   :base
   {:label "mouth-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1458,6 +1508,7 @@
     :max [405.3 205.45]}}}
  {:outline
   {:label "mouth-91",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1485,6 +1536,7 @@
     :max [407.15 205.4]}},
   :base
   {:label "mouth-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1507,6 +1559,7 @@
     :max [407.15 205.4]}}}
  {:outline
   {:label "mouth-92",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1526,6 +1579,7 @@
     :max [408.45 203.3]}}}
  {:outline
   {:label "mouth-93",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1555,6 +1609,7 @@
     :max [405.6 203.85]}},
   :base
   {:label "mouth-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1574,6 +1629,7 @@
     :max [405.6 203.85]}}}
  {:outline
   {:label "mouth-94",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1607,6 +1663,7 @@
     :max [406.85 203.85]}},
   :base
   {:label "mouth-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1626,6 +1683,7 @@
     :max [406.85 203.85]}}}
  {:outline
   {:label "mouth-95",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1659,6 +1717,7 @@
     :max [406.6 203.85]}},
   :base
   {:label "mouth-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1681,6 +1740,7 @@
     :max [406.6 203.85]}}}
  {:outline
   {:label "mouth-96",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1774,6 +1834,7 @@
     :max [407.8 203.65]}},
   :base
   {:label "mouth-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1812,6 +1873,7 @@
     :max [407.8 203.65]}}}
  {:outline
   {:label "mouth-97",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1876,6 +1938,7 @@
     :max [408.9 207.2]}},
   :base
   {:label "mouth-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1923,6 +1986,7 @@
     :max [408.9 205.0]}},
   :detail
   {:label "mouth-58",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1954,6 +2018,7 @@
     :max [405.1 204.65]}}}
  {:outline
   {:label "mouth-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1977,6 +2042,7 @@
     :max [406.35 202.6]}},
   :base
   {:label "mouth-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1994,6 +2060,7 @@
     :max [406.35 202.6]}}}
  {:outline
   {:label "mouth-99",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2033,6 +2100,7 @@
     :max [413.15 204.1]}},
   :base
   {:label "mouth-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2060,6 +2128,7 @@
     :max [413.15 203.15]}}}
  {:outline
   {:label "mouth-100",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2093,6 +2162,7 @@
     :max [417.75 203.55]}}}
  {:outline
   {:label "mouth-101",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2153,6 +2223,7 @@
     :max [410.45 205.8]}},
   :base
   {:label "mouth-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2179,6 +2250,7 @@
     :max [407.8 205.8]}}}
  {:outline
   {:label "mouth-102",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2220,6 +2292,7 @@
     :max [412.65 203.55]}}}
  {:outline
   {:label "mouth-103",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2263,6 +2336,7 @@
     :max [410.4 200.45]}},
   :base
   {:label "mouth-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2290,6 +2364,7 @@
     :max [403.85 200.45]}}}
  {:outline
   {:label "mouth-104",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2469,6 +2544,7 @@
     :max [408.0 208.5]}},
   :base
   {:label "mouth-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2571,6 +2647,7 @@
     :max [406.95 206.75]}},
   :detail
   {:label "mouth-59",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2710,6 +2787,7 @@
     :max [408.0 206.75]}}}
  {:outline
   {:label "mouth-105",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2835,6 +2913,7 @@
     :max [412.2 209.15]}},
   :base
   {:label "mouth-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2867,6 +2946,7 @@
     :max [403.1 202.0]}},
   :detail
   {:label "mouth-60",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2957,6 +3037,7 @@
     :max [412.2 209.15]}}}
  {:outline
   {:label "mouth-106",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3024,6 +3105,7 @@
     :max [409.25 205.85]}},
   :base
   {:label "mouth-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3055,6 +3137,7 @@
     :max [403.45 205.85]}}}
  {:outline
   {:label "mouth-107",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3161,6 +3244,7 @@
     :max [406.65 211.6]}},
   :base
   {:label "mouth-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3184,6 +3268,7 @@
     :max [404.65 203.05]}}}
  {:outline
   {:label "mouth-108",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3401,6 +3486,7 @@
     :max [415.35 221.3]}},
   :base
   {:label "mouth-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3448,6 +3534,7 @@
     :max [415.35 221.3]}},
   :detail
   {:label "mouth-61",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3588,6 +3675,7 @@
     :max [412.45 216.9]}},
   :shadow
   {:label "mouth-115",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#990000"},
      :path
@@ -3713,6 +3801,7 @@
     :max [412.1 216.65]}}}
  {:outline
   {:label "mouth-109",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3748,6 +3837,7 @@
     :max [414.45 210.45]}},
   :base
   {:label "mouth-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3773,6 +3863,7 @@
     :max [414.45 210.45]}}}
  {:outline
   {:label "mouth-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3836,6 +3927,7 @@
     :max [414.2 210.35]}},
   :base
   {:label "mouth-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3879,6 +3971,7 @@
     :max [414.2 210.35]}}}
  {:outline
   {:label "mouth-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4012,6 +4105,7 @@
     :max [415.9 206.1]}},
   :base
   {:label "mouth-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4080,6 +4174,7 @@
     :max [415.25 206.1]}}}
  {:outline
   {:label "mouth-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4174,6 +4269,7 @@
     :max [411.3 207.1]}},
   :base
   {:label "mouth-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4229,6 +4325,7 @@
     :max [411.3 207.1]}}}
  {:outline
   {:label "mouth-113",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4348,6 +4445,7 @@
     :max [416.1 205.35]}},
   :base
   {:label "mouth-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4419,6 +4517,7 @@
     :max [415.6 204.5]}},
   :detail
   {:label "mouth-62",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

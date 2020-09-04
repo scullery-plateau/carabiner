@@ -1,5 +1,6 @@
 [{:outline
   {:label "symbol_B-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -29,6 +30,7 @@
     :max [417.55 265.75]}},
   :base
   {:label "symbol_B-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -52,6 +54,7 @@
     :max [417.55 265.75]}}}
  {:outline
   {:label "symbol_B-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -115,6 +118,7 @@
     :max [415.55 265.75]}},
   :base
   {:label "symbol_B-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -174,6 +178,7 @@
     :max [415.55 265.75]}}}
  {:outline
   {:label "symbol_B-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -231,6 +236,7 @@
     :max [415.95 266.2]}},
   :base
   {:label "symbol_B-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -283,6 +289,7 @@
     :max [415.95 266.2]}}}
  {:outline
   {:label "symbol_B-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -334,6 +341,7 @@
     :max [415.55 265.75]}},
   :base
   {:label "symbol_B-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -380,6 +388,7 @@
     :max [415.55 265.75]}}}
  {:outline
   {:label "symbol_B-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -411,6 +420,7 @@
     :max [414.2 265.75]}},
   :base
   {:label "symbol_B-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -436,6 +446,7 @@
     :max [414.2 265.75]}}}
  {:outline
   {:label "symbol_B-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -465,6 +476,7 @@
     :max [413.05 265.75]}},
   :base
   {:label "symbol_B-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -488,6 +500,7 @@
     :max [413.05 265.75]}}}
  {:outline
   {:label "symbol_B-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -548,6 +561,7 @@
     :max [416.1 266.2]}},
   :base
   {:label "symbol_B-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -603,6 +617,7 @@
     :max [416.1 266.2]}}}
  {:outline
   {:label "symbol_B-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -634,6 +649,7 @@
     :max [415.45 265.75]}},
   :base
   {:label "symbol_B-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -659,6 +675,7 @@
     :max [415.45 265.75]}}}
  {:outline
   {:label "symbol_B-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -682,6 +699,7 @@
     :max [405.3 265.75]}}}
  {:outline
   {:label "symbol_B-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -719,6 +737,7 @@
     :max [411.8 266.2]}},
   :base
   {:label "symbol_B-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -748,6 +767,7 @@
     :max [411.8 266.2]}}}
  {:outline
   {:label "symbol_B-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -779,6 +799,7 @@
     :max [418.65 265.75]}},
   :base
   {:label "symbol_B-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -804,6 +825,7 @@
     :max [418.65 265.75]}}}
  {:outline
   {:label "symbol_B-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -829,6 +851,7 @@
     :max [413.85 265.75]}},
   :base
   {:label "symbol_B-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -848,6 +871,7 @@
     :max [413.85 265.75]}}}
  {:outline
   {:label "symbol_B-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -880,6 +904,7 @@
     :max [418.05 265.75]}},
   :base
   {:label "symbol_B-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -906,6 +931,7 @@
     :max [418.05 265.75]}}}
  {:outline
   {:label "symbol_B-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -935,6 +961,7 @@
     :max [415.45 265.75]}},
   :base
   {:label "symbol_B-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -958,6 +985,7 @@
     :max [415.45 265.75]}}}
  {:outline
   {:label "symbol_B-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1015,6 +1043,7 @@
     :max [416.65 266.2]}},
   :base
   {:label "symbol_B-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1066,6 +1095,7 @@
     :max [416.65 266.2]}}}
  {:outline
   {:label "symbol_B-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1102,6 +1132,7 @@
     :max [414.4 265.75]}},
   :base
   {:label "symbol_B-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1136,6 +1167,7 @@
     :max [414.4 265.75]}}}
  {:outline
   {:label "symbol_B-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1195,6 +1227,7 @@
     :max [417.85 268.75]}},
   :base
   {:label "symbol_B-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1248,6 +1281,7 @@
     :max [417.85 268.75]}}}
  {:outline
   {:label "symbol_B-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1299,6 +1333,7 @@
     :max [417.55 265.75]}},
   :base
   {:label "symbol_B-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1342,6 +1377,7 @@
     :max [417.55 265.75]}}}
  {:outline
   {:label "symbol_B-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1418,6 +1454,7 @@
     :max [414.6 266.2]}},
   :base
   {:label "symbol_B-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1489,6 +1526,7 @@
     :max [414.6 266.2]}}}
  {:outline
   {:label "symbol_B-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1516,6 +1554,7 @@
     :max [415.05 265.75]}},
   :base
   {:label "symbol_B-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1537,6 +1576,7 @@
     :max [415.05 265.75]}}}
  {:outline
   {:label "symbol_B-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1586,6 +1626,7 @@
     :max [415.45 266.2]}},
   :base
   {:label "symbol_B-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1629,6 +1670,7 @@
     :max [415.45 266.2]}}}
  {:outline
   {:label "symbol_B-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1655,6 +1697,7 @@
     :max [417.45 265.75]}},
   :base
   {:label "symbol_B-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1675,6 +1718,7 @@
     :max [417.45 265.75]}}}
  {:outline
   {:label "symbol_B-164",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1707,6 +1751,7 @@
     :max [422.25 265.75]}},
   :base
   {:label "symbol_B-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1733,6 +1778,7 @@
     :max [422.25 265.75]}}}
  {:outline
   {:label "symbol_B-165",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1764,6 +1810,7 @@
     :max [417.55 265.75]}},
   :base
   {:label "symbol_B-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1789,6 +1836,7 @@
     :max [417.55 265.75]}}}
  {:outline
   {:label "symbol_B-166",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1817,6 +1865,7 @@
     :max [417.55 265.75]}},
   :base
   {:label "symbol_B-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1839,6 +1888,7 @@
     :max [417.55 265.75]}}}
  {:outline
   {:label "symbol_B-167",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1868,6 +1918,7 @@
     :max [415.05 265.75]}},
   :base
   {:label "symbol_B-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1891,6 +1942,7 @@
     :max [415.05 265.75]}}}
  {:outline
   {:label "symbol_B-168",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1966,6 +2018,7 @@
     :max [413.55 266.2]}},
   :base
   {:label "symbol_B-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2035,6 +2088,7 @@
     :max [413.55 266.2]}}}
  {:outline
   {:label "symbol_B-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2097,6 +2151,7 @@
     :max [413.5 266.2]}},
   :base
   {:label "symbol_B-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2153,6 +2208,7 @@
     :max [413.5 266.2]}}}
  {:outline
   {:label "symbol_B-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2216,6 +2272,7 @@
     :max [413.7 266.2]}},
   :base
   {:label "symbol_B-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2274,6 +2331,7 @@
     :max [413.7 266.2]}}}
  {:outline
   {:label "symbol_B-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2329,6 +2387,7 @@
     :max [412.35 266.2]}},
   :base
   {:label "symbol_B-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2378,6 +2437,7 @@
     :max [412.35 266.2]}}}
  {:outline
   {:label "symbol_B-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2436,6 +2496,7 @@
     :max [413.7 266.2]}},
   :base
   {:label "symbol_B-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2489,6 +2550,7 @@
     :max [413.7 266.2]}}}
  {:outline
   {:label "symbol_B-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2532,6 +2594,7 @@
     :max [410.4 265.75]}},
   :base
   {:label "symbol_B-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2569,6 +2632,7 @@
     :max [410.4 265.75]}}}
  {:outline
   {:label "symbol_B-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2646,6 +2710,7 @@
     :max [412.4 273.45]}},
   :base
   {:label "symbol_B-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2711,6 +2776,7 @@
     :max [412.4 273.45]}}}
  {:outline
   {:label "symbol_B-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2753,6 +2819,7 @@
     :max [412.45 265.75]}},
   :base
   {:label "symbol_B-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2791,6 +2858,7 @@
     :max [412.45 265.75]}}}
  {:outline
   {:label "symbol_B-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2820,6 +2888,7 @@
     :max [404.9 265.75]}},
   :base
   {:label "symbol_B-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2843,6 +2912,7 @@
     :max [404.9 265.75]}}}
  {:outline
   {:label "symbol_B-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2876,6 +2946,7 @@
     :max [404.95 273.45]}},
   :base
   {:label "symbol_B-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2904,6 +2975,7 @@
     :max [404.95 273.45]}}}
  {:outline
   {:label "symbol_B-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2935,6 +3007,7 @@
     :max [415.05 265.75]}},
   :base
   {:label "symbol_B-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2960,6 +3033,7 @@
     :max [415.05 265.75]}}}
  {:outline
   {:label "symbol_B-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2983,6 +3057,7 @@
     :max [404.9 265.75]}}}
  {:outline
   {:label "symbol_B-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3045,6 +3120,7 @@
     :max [419.65 265.75]}},
   :base
   {:label "symbol_B-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3101,6 +3177,7 @@
     :max [419.65 265.75]}}}
  {:outline
   {:label "symbol_B-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3143,6 +3220,7 @@
     :max [412.45 265.75]}},
   :base
   {:label "symbol_B-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3181,6 +3259,7 @@
     :max [412.45 265.75]}}}
  {:outline
   {:label "symbol_B-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3234,6 +3313,7 @@
     :max [413.5 266.2]}},
   :base
   {:label "symbol_B-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3281,6 +3361,7 @@
     :max [413.5 266.2]}}}
  {:outline
   {:label "symbol_B-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3341,6 +3422,7 @@
     :max [413.5 273.0]}},
   :base
   {:label "symbol_B-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3395,6 +3477,7 @@
     :max [413.5 273.0]}}}
  {:outline
   {:label "symbol_B-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3452,6 +3535,7 @@
     :max [412.35 273.0]}},
   :base
   {:label "symbol_B-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3503,6 +3587,7 @@
     :max [412.35 273.0]}}}
  {:outline
   {:label "symbol_B-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3535,6 +3620,7 @@
     :max [411.4 265.75]}},
   :base
   {:label "symbol_B-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3562,6 +3648,7 @@
     :max [411.4 265.75]}}}
  {:outline
   {:label "symbol_B-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3631,6 +3718,7 @@
     :max [412.35 266.2]}},
   :base
   {:label "symbol_B-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3694,6 +3782,7 @@
     :max [412.35 266.2]}}}
  {:outline
   {:label "symbol_B-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3731,6 +3820,7 @@
     :max [409.0 266.2]}},
   :base
   {:label "symbol_B-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3763,6 +3853,7 @@
     :max [409.0 266.2]}}}
  {:outline
   {:label "symbol_B-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3802,6 +3893,7 @@
     :max [412.35 266.2]}},
   :base
   {:label "symbol_B-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3835,6 +3927,7 @@
     :max [412.35 266.2]}}}
  {:outline
   {:label "symbol_B-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3861,6 +3954,7 @@
     :max [413.95 265.75]}},
   :base
   {:label "symbol_B-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3881,6 +3975,7 @@
     :max [413.95 265.75]}}}
  {:outline
   {:label "symbol_B-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3913,6 +4008,7 @@
     :max [421.15 265.75]}},
   :base
   {:label "symbol_B-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3939,6 +4035,7 @@
     :max [421.15 265.75]}}}
  {:outline
   {:label "symbol_B-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3970,6 +4067,7 @@
     :max [414.8 265.75]}},
   :base
   {:label "symbol_B-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3995,6 +4093,7 @@
     :max [414.8 265.75]}}}
  {:outline
   {:label "symbol_B-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4023,6 +4122,7 @@
     :max [414.05 273.45]}},
   :base
   {:label "symbol_B-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4045,6 +4145,7 @@
     :max [414.05 273.45]}}}
  {:outline
   {:label "symbol_B-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4074,6 +4175,7 @@
     :max [411.7 265.75]}},
   :base
   {:label "symbol_B-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4097,6 +4199,7 @@
     :max [411.7 265.75]}}}
  {:outline
   {:label "symbol_B-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4120,6 +4223,7 @@
     :max [407.35 265.75]}},
   :base
   {:label "symbol_B-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4137,6 +4241,7 @@
     :max [407.35 265.75]}}}
  {:outline
   {:label "symbol_B-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4194,6 +4299,7 @@
     :max [413.15 265.75]}},
   :base
   {:label "symbol_B-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4245,6 +4351,7 @@
     :max [413.15 265.75]}}}
  {:outline
   {:label "symbol_B-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4324,6 +4431,7 @@
     :max [413.25 266.2]}},
   :base
   {:label "symbol_B-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4397,6 +4505,7 @@
     :max [413.25 266.2]}}}
  {:outline
   {:label "symbol_B-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4429,6 +4538,7 @@
     :max [414.15 265.75]}},
   :base
   {:label "symbol_B-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4455,6 +4565,7 @@
     :max [414.15 265.75]}}}
  {:outline
   {:label "symbol_B-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4517,6 +4628,7 @@
     :max [413.35 266.2]}},
   :base
   {:label "symbol_B-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4571,6 +4683,7 @@
     :max [413.35 266.2]}}}
  {:outline
   {:label "symbol_B-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4647,6 +4760,7 @@
     :max [413.5 266.2]}},
   :base
   {:label "symbol_B-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4718,6 +4832,7 @@
     :max [413.5 266.2]}}}
  {:outline
   {:label "symbol_B-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4741,6 +4856,7 @@
     :max [413.25 265.75]}},
   :base
   {:label "symbol_B-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4758,6 +4874,7 @@
     :max [413.25 265.75]}}}
  {:outline
   {:label "symbol_B-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4851,6 +4968,7 @@
     :max [413.25 266.2]}},
   :base
   {:label "symbol_B-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4938,6 +5056,7 @@
     :max [413.25 266.2]}}}
  {:outline
   {:label "symbol_B-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5011,6 +5130,7 @@
     :max [413.2 266.2]}},
   :base
   {:label "symbol_B-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5074,6 +5194,7 @@
     :max [413.2 266.2]}}}
  {:outline
   {:label "symbol_B-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5139,6 +5260,7 @@
     :max [413.25 266.2]}},
   :base
   {:label "symbol_B-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5198,6 +5320,7 @@
     :max [413.25 266.2]}}}
  {:outline
   {:label "symbol_B-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5229,6 +5352,7 @@
     :max [405.2 265.75]}},
   :base
   {:label "symbol_B-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5250,6 +5374,7 @@
     :max [405.2 265.75]}}}
  {:outline
   {:label "symbol_B-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5373,6 +5498,7 @@
     :max [416.7 269.95]}},
   :base
   {:label "symbol_B-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5490,6 +5616,7 @@
     :max [416.7 269.95]}}}
  {:outline
   {:label "symbol_B-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5543,6 +5670,7 @@
     :max [413.45 266.2]}},
   :base
   {:label "symbol_B-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5590,6 +5718,7 @@
     :max [413.45 266.2]}}}
  {:outline
   {:label "symbol_B-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5672,6 +5801,7 @@
     :max [413.55 269.6]}},
   :base
   {:label "symbol_B-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5743,6 +5873,7 @@
     :max [413.55 269.6]}}}
  {:outline
   {:label "symbol_B-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5840,6 +5971,7 @@
     :max [420.1 267.1]}},
   :base
   {:label "symbol_B-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5929,6 +6061,7 @@
     :max [420.1 267.1]}}}
  {:outline
   {:label "symbol_B-209",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5955,6 +6088,7 @@
     :max [412.05 253.55]}},
   :base
   {:label "symbol_B-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5975,6 +6109,7 @@
     :max [412.05 253.55]}}}
  {:outline
   {:label "symbol_B-210",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6062,6 +6197,7 @@
     :max [418.1 266.2]}},
   :base
   {:label "symbol_B-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6142,6 +6278,7 @@
     :max [418.1 266.2]}}}
  {:outline
   {:label "symbol_B-211",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6179,6 +6316,7 @@
     :max [408.7 252.15]}},
   :base
   {:label "symbol_B-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6209,6 +6347,7 @@
     :max [408.7 252.15]}}}
  {:outline
   {:label "symbol_B-212",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6240,6 +6379,7 @@
     :max [412.0 262.45]}},
   :base
   {:label "symbol_B-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6265,6 +6405,7 @@
     :max [412.0 262.45]}}}
  {:outline
   {:label "symbol_B-213",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6322,6 +6463,7 @@
     :max [412.3 265.75]}},
   :base
   {:label "symbol_B-82",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6373,6 +6515,7 @@
     :max [412.3 265.75]}}}
  {:outline
   {:label "symbol_B-214",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6396,6 +6539,7 @@
     :max [405.2 273.15]}},
   :base
   {:label "symbol_B-83",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6416,6 +6560,7 @@
     :max [405.2 273.15]}}}
  {:outline
   {:label "symbol_B-215",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6480,6 +6625,7 @@
     :max [414.85 266.2]}},
   :base
   {:label "symbol_B-84",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6537,6 +6683,7 @@
     :max [414.85 266.2]}}}
  {:outline
   {:label "symbol_B-216",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6615,6 +6762,7 @@
     :max [415.95 273.5]}},
   :base
   {:label "symbol_B-85",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6688,6 +6836,7 @@
     :max [415.95 273.5]}}}
  {:outline
   {:label "symbol_B-217",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6776,6 +6925,7 @@
     :max [413.7 273.5]}},
   :base
   {:label "symbol_B-86",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6856,6 +7006,7 @@
     :max [413.7 273.5]}}}
  {:outline
   {:label "symbol_B-218",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6890,6 +7041,7 @@
     :max [412.35 268.0]}},
   :base
   {:label "symbol_B-87",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6918,6 +7070,7 @@
     :max [412.35 268.0]}}}
  {:outline
   {:label "symbol_B-219",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6979,6 +7132,7 @@
     :max [415.85 268.75]}},
   :base
   {:label "symbol_B-88",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7034,6 +7188,7 @@
     :max [415.85 268.75]}}}
  {:outline
   {:label "symbol_B-220",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7100,6 +7255,7 @@
     :max [415.95 267.9]}},
   :base
   {:label "symbol_B-89",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7171,6 +7327,7 @@
     :max [415.95 267.9]}}}
  {:outline
   {:label "symbol_B-221",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7229,6 +7386,7 @@
     :max [417.45 268.2]}},
   :base
   {:label "symbol_B-90",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7282,6 +7440,7 @@
     :max [417.45 268.2]}}}
  {:outline
   {:label "symbol_B-222",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7337,6 +7496,7 @@
     :max [415.35 268.2]}},
   :base
   {:label "symbol_B-91",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7382,6 +7542,7 @@
     :max [415.35 268.2]}}}
  {:outline
   {:label "symbol_B-223",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7781,6 +7942,7 @@
     :max [427.65 282.45]}},
   :base
   {:label "symbol_B-92",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8175,6 +8337,7 @@
     :max [427.65 282.45]}}}
  {:outline
   {:label "symbol_B-224",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8218,6 +8381,7 @@
     :max [413.3 270.3]}},
   :base
   {:label "symbol_B-93",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8253,6 +8417,7 @@
     :max [413.3 270.3]}}}
  {:outline
   {:label "symbol_B-225",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8355,6 +8520,7 @@
     :max [418.2 273.25]}},
   :base
   {:label "symbol_B-94",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8449,6 +8615,7 @@
     :max [418.2 273.25]}}}
  {:outline
   {:label "symbol_B-226",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8505,6 +8672,7 @@
     :max [419.55 268.45]}},
   :base
   {:label "symbol_B-95",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8540,6 +8708,7 @@
     :max [419.55 268.45]}},
   :detail
   {:label "symbol_B-128",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8565,6 +8734,7 @@
     :max [395.3 243.1]}}}
  {:outline
   {:label "symbol_B-227",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8605,6 +8775,7 @@
     :max [412.85 268.4]}},
   :base
   {:label "symbol_B-96",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8636,6 +8807,7 @@
     :max [412.85 268.4]}}}
  {:outline
   {:label "symbol_B-228",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8673,6 +8845,7 @@
     :max [431.15 272.35]}},
   :base
   {:label "symbol_B-97",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8706,6 +8879,7 @@
     :max [431.15 272.35]}},
   :detail
   {:label "symbol_B-129",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8731,6 +8905,7 @@
     :max [423.3 266.0]}}}
  {:outline
   {:label "symbol_B-229",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8812,6 +8987,7 @@
     :max [417.45 272.6]}},
   :base
   {:label "symbol_B-98",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8886,6 +9062,7 @@
     :max [417.45 272.6]}}}
  {:outline
   {:label "symbol_B-230",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8968,6 +9145,7 @@
     :max [417.15 268.35]}},
   :base
   {:label "symbol_B-99",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9038,6 +9216,7 @@
     :max [417.15 268.35]}},
   :detail
   {:label "symbol_B-20",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9055,6 +9234,7 @@
     :max [405.3 256.4]}}}
  {:outline
   {:label "symbol_B-231",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9099,6 +9279,7 @@
     :max [416.8 267.05]}},
   :base
   {:label "symbol_B-100",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9139,6 +9320,7 @@
     :max [416.8 267.05]}}}
  {:outline
   {:label "symbol_B-232",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9170,6 +9352,7 @@
     :max [411.45 270.8]}},
   :base
   {:label "symbol_B-101",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9197,6 +9380,7 @@
     :max [411.45 270.8]}}}
  {:outline
   {:label "symbol_B-233",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9232,6 +9416,7 @@
     :max [423.5 271.85]}},
   :base
   {:label "symbol_B-102",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9249,6 +9434,7 @@
     :max [423.5 271.85]}},
   :detail
   {:label "symbol_B-130",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9268,6 +9454,7 @@
     :max [410.65 271.85]}}}
  {:outline
   {:label "symbol_B-234",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9324,6 +9511,7 @@
     :max [416.65 273.65]}},
   :base
   {:label "symbol_B-103",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9363,6 +9551,7 @@
     :max [416.65 270.25]}},
   :detail
   {:label "symbol_B-131",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9377,6 +9566,7 @@
     :max [393.7 273.65]}}}
  {:outline
   {:label "symbol_B-235",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9400,6 +9590,7 @@
     :max [418.6 276.85]}},
   :base
   {:label "symbol_B-104",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9417,6 +9608,7 @@
     :max [418.6 276.85]}}}
  {:outline
   {:label "symbol_B-236",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9452,6 +9644,7 @@
     :max [414.6 269.6]}},
   :base
   {:label "symbol_B-105",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9474,6 +9667,7 @@
     :max [414.6 269.6]}},
   :detail
   {:label "symbol_B-132",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9492,6 +9686,7 @@
     :max [414.6 264.45]}}}
  {:outline
   {:label "symbol_B-237",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9547,6 +9742,7 @@
     :max [410.95 273.55]}},
   :base
   {:label "symbol_B-106",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9590,6 +9786,7 @@
     :max [410.95 273.55]}},
   :detail
   {:label "symbol_B-133",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9617,6 +9814,7 @@
     :max [400.8 263.25]}}}
  {:outline
   {:label "symbol_B-238",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9689,6 +9887,7 @@
     :max [418.75 266.85]}},
   :base
   {:label "symbol_B-107",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9759,6 +9958,7 @@
     :max [418.75 266.85]}}}
  {:outline
   {:label "symbol_B-239",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9809,6 +10009,7 @@
     :max [415.65 275.75]}},
   :base
   {:label "symbol_B-108",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9854,6 +10055,7 @@
     :max [415.65 275.75]}},
   :detail
   {:label "symbol_B-134",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9879,6 +10081,7 @@
     :max [406.5 258.75]}}}
  {:outline
   {:label "symbol_B-240",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9932,6 +10135,7 @@
     :max [417.25 267.0]}},
   :base
   {:label "symbol_B-109",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9980,6 +10184,7 @@
     :max [417.25 267.0]}}}
  {:outline
   {:label "symbol_B-241",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10051,6 +10256,7 @@
     :max [413.3 271.4]}},
   :base
   {:label "symbol_B-110",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10091,6 +10297,7 @@
     :max [406.75 255.15]}},
   :detail
   {:label "symbol_B-135",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10132,6 +10339,7 @@
     :max [413.3 271.4]}}}
  {:outline
   {:label "symbol_B-242",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10173,6 +10381,7 @@
     :max [416.55 273.55]}},
   :base
   {:label "symbol_B-111",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10196,6 +10405,7 @@
     :max [398.8 273.55]}},
   :detail
   {:label "symbol_B-136",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10215,6 +10425,7 @@
     :max [416.55 273.55]}}}
  {:outline
   {:label "symbol_B-243",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10335,6 +10546,7 @@
     :max [420.4 273.75]}},
   :base
   {:label "symbol_B-112",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10447,6 +10659,7 @@
     :max [420.4 273.75]}}}
  {:outline
   {:label "symbol_B-244",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10471,6 +10684,7 @@
     :max [422.8 275.75]}},
   :base
   {:label "symbol_B-113",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10484,6 +10698,7 @@
     :max [399.9 275.75]}},
   :detail
   {:label "symbol_B-137",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10497,6 +10712,7 @@
     :max [422.8 275.75]}}}
  {:outline
   {:label "symbol_B-245",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10624,6 +10840,7 @@
     :max [416.85 272.35]}},
   :base
   {:label "symbol_B-114",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10686,6 +10903,7 @@
     :max [416.85 272.35]}},
   :detail
   {:label "symbol_B-138",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10758,6 +10976,7 @@
     :max [416.85 246.3]}}}
  {:outline
   {:label "symbol_B-246",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10785,6 +11004,7 @@
     :max [419.95 275.1]}},
   :base
   {:label "symbol_B-115",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10806,6 +11026,7 @@
     :max [419.95 275.1]}}}
  {:outline
   {:label "symbol_B-247",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10841,6 +11062,7 @@
     :max [418.6 277.25]}},
   :base
   {:label "symbol_B-116",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10870,6 +11092,7 @@
     :max [418.6 277.25]}}}
  {:outline
   {:label "symbol_B-248",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10899,6 +11122,7 @@
     :max [419.7 267.05]}},
   :base
   {:label "symbol_B-117",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10922,6 +11146,7 @@
     :max [419.7 267.05]}}}
  {:outline
   {:label "symbol_B-249",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10991,6 +11216,7 @@
     :max [415.0 279.65]}},
   :base
   {:label "symbol_B-118",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11018,6 +11244,7 @@
     :max [415.0 279.65]}},
   :detail
   {:label "symbol_B-139",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11065,6 +11292,7 @@
     :max [402.55 279.1]}}}
  {:outline
   {:label "symbol_B-250",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11130,6 +11358,7 @@
     :max [417.35 266.55]}},
   :base
   {:label "symbol_B-119",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11153,6 +11382,7 @@
     :max [417.35 266.55]}},
   :detail
   {:label "symbol_B-140",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11200,6 +11430,7 @@
     :max [408.55 255.3]}}}
  {:outline
   {:label "symbol_B-251",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11243,6 +11474,7 @@
     :max [416.15 272.55]}},
   :base
   {:label "symbol_B-120",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11275,6 +11507,7 @@
     :max [416.15 272.55]}}}
  {:outline
   {:label "symbol_B-252",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11305,6 +11538,7 @@
     :max [418.55 280.35]}},
   :base
   {:label "symbol_B-121",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11330,6 +11564,7 @@
     :max [418.55 280.35]}}}
  {:outline
   {:label "symbol_B-253",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11364,6 +11599,7 @@
     :max [417.8 274.9]}},
   :base
   {:label "symbol_B-122",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11392,6 +11628,7 @@
     :max [417.8 274.9]}}}
  {:outline
   {:label "symbol_B-254",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11425,6 +11662,7 @@
     :max [415.25 273.2]}},
   :base
   {:label "symbol_B-123",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11455,6 +11693,7 @@
     :max [415.25 273.2]}}}
  {:outline
   {:label "symbol_B-255",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11500,6 +11739,7 @@
     :max [420.0 276.2]}},
   :base
   {:label "symbol_B-124",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

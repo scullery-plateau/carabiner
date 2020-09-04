@@ -1,0 +1,5 @@
+[[torso 0]
+ [legs 0]
+ [arm 3]
+ [arm 0 :flip? true]
+ [head 0]]

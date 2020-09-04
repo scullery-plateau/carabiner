@@ -1,5 +1,6 @@
 [{:outline
   {:label "hair-135",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -24,6 +25,7 @@
     :max [418.5 185.3]}}}
  {:outline
   {:label "hair-136",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -49,6 +51,7 @@
     :max [418.4 185.3]}},
   :base
   {:label "hair-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -74,6 +77,7 @@
     :max [418.6 185.3]}}}
  {:outline
   {:label "hair-137",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -102,6 +106,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -125,6 +130,7 @@
     :max [418.6 185.3]}}}
  {:outline
   {:label "hair-138",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -150,6 +156,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -174,6 +181,7 @@
     :max [418.6 185.3]}}}
  {:outline
   {:label "hair-139",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -207,6 +215,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -232,6 +241,7 @@
     :max [418.6 185.3]}}}
  {:outline
   {:label "hair-140",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -257,6 +267,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -282,6 +293,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-249",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -307,6 +319,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-141",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -349,6 +362,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -382,6 +396,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-250",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -437,6 +452,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -468,6 +484,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -504,6 +521,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-251",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -545,6 +563,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -577,6 +596,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -605,6 +625,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-252",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -655,6 +676,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -700,6 +722,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -731,6 +754,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-253",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -774,6 +798,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -838,6 +863,7 @@
     :max [418.5 188.85]}},
   :base
   {:label "hair-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -885,6 +911,7 @@
     :max [418.6 188.85]}},
   :shadow
   {:label "hair-254",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -961,6 +988,7 @@
     :max [418.55 188.85]}}}
  {:outline
   {:label "hair-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1005,6 +1033,7 @@
     :max [418.5 191.6]}},
   :base
   {:label "hair-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1053,6 +1082,7 @@
     :max [418.6 191.6]}},
   :shadow
   {:label "hair-255",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1117,6 +1147,7 @@
     :max [418.55 191.6]}}}
  {:outline
   {:label "hair-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1162,6 +1193,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1206,6 +1238,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-256",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1240,6 +1273,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1271,6 +1305,7 @@
     :max [418.55 185.3]}},
   :base
   {:label "hair-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1296,6 +1331,7 @@
     :max [418.6 184.1]}},
   :shadow
   {:label "hair-257",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1349,6 +1385,7 @@
     :max [418.55 184.1]}}}
  {:outline
   {:label "hair-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1378,6 +1415,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1406,6 +1444,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-258",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1457,6 +1496,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1497,6 +1537,7 @@
     :max [418.5 185.3]}},
   :base
   {:label "hair-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1531,6 +1572,7 @@
     :max [418.6 185.3]}},
   :shadow
   {:label "hair-259",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1585,6 +1627,7 @@
     :max [418.55 185.3]}}}
  {:outline
   {:label "hair-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1617,6 +1660,7 @@
     :max [421.1 196.8]}},
   :base
   {:label "hair-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1647,6 +1691,7 @@
     :max [421.1 196.8]}},
   :shadow
   {:label "hair-260",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1689,6 +1734,7 @@
     :max [421.05 196.8]}}}
  {:outline
   {:label "hair-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1724,6 +1770,7 @@
     :max [416.15 170.45]}},
   :base
   {:label "hair-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1754,6 +1801,7 @@
     :max [416.15 170.45]}},
   :shadow
   {:label "hair-261",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1798,6 +1846,7 @@
     :max [411.85 167.9]}}}
  {:outline
   {:label "hair-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1832,6 +1881,7 @@
     :max [415.35 170.45]}},
   :base
   {:label "hair-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1860,6 +1910,7 @@
     :max [415.35 170.45]}},
   :shadow
   {:label "hair-262",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1885,6 +1936,7 @@
     :max [412.8 167.45]}}}
  {:outline
   {:label "hair-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1927,6 +1979,7 @@
     :max [415.35 179.95]}},
   :base
   {:label "hair-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1966,6 +2019,7 @@
     :max [415.35 179.95]}},
   :shadow
   {:label "hair-263",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2011,6 +2065,7 @@
     :max [412.8 171.15]}}}
  {:outline
   {:label "hair-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2071,6 +2126,7 @@
     :max [410.65 176.55]}},
   :base
   {:label "hair-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2120,6 +2176,7 @@
     :max [410.65 176.55]}},
   :shadow
   {:label "hair-264",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2156,6 +2213,7 @@
     :max [410.35 176.55]}}}
  {:outline
   {:label "hair-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2206,6 +2264,7 @@
     :max [420.7 170.45]}},
   :base
   {:label "hair-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2247,6 +2306,7 @@
     :max [420.7 170.45]}},
   :shadow
   {:label "hair-265",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2288,6 +2348,7 @@
     :max [420.65 170.45]}}}
  {:outline
   {:label "hair-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2324,6 +2385,7 @@
     :max [415.4 216.2]}},
   :base
   {:label "hair-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2354,6 +2416,7 @@
     :max [415.4 216.2]}},
   :shadow
   {:label "hair-266",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2404,6 +2467,7 @@
     :max [414.5 216.2]}}}
  {:outline
   {:label "hair-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2449,6 +2513,7 @@
     :max [417.15 227.0]}},
   :base
   {:label "hair-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2488,6 +2553,7 @@
     :max [417.15 227.0]}},
   :shadow
   {:label "hair-267",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2530,6 +2596,7 @@
     :max [417.1 227.0]}}}
  {:outline
   {:label "hair-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2579,6 +2646,7 @@
     :max [421.0 256.55]}},
   :base
   {:label "hair-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2619,6 +2687,7 @@
     :max [421.0 256.55]}},
   :shadow
   {:label "hair-268",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2659,6 +2728,7 @@
     :max [420.8 256.55]}}}
  {:outline
   {:label "hair-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2780,6 +2850,7 @@
     :max [433.1 221.0]}},
   :base
   {:label "hair-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2895,6 +2966,7 @@
     :max [433.1 221.0]}},
   :shadow
   {:label "hair-269",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3018,6 +3090,7 @@
     :max [428.55 221.0]}}}
  {:outline
   {:label "hair-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3153,6 +3226,7 @@
     :max [429.85 202.8]}},
   :base
   {:label "hair-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3244,6 +3318,7 @@
     :max [429.85 202.8]}}}
  {:outline
   {:label "hair-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3277,6 +3352,7 @@
     :max [416.85 182.6]}},
   :base
   {:label "hair-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3300,6 +3376,7 @@
     :max [416.85 182.6]}},
   :shadow
   {:label "hair-270",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3348,6 +3425,7 @@
     :max [414.45 182.45]}}}
  {:outline
   {:label "hair-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3368,6 +3446,7 @@
     :max [419.35 185.3]}},
   :base
   {:label "hair-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3388,6 +3467,7 @@
     :max [419.35 181.7]}},
   :shadow
   {:label "hair-271",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3410,6 +3490,7 @@
     :max [419.3 181.7]}}}
  {:outline
   {:label "hair-164",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3454,6 +3535,7 @@
     :max [423.3 185.3]}},
   :base
   {:label "hair-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3499,6 +3581,7 @@
     :max [423.3 181.7]}},
   :shadow
   {:label "hair-272",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3526,6 +3609,7 @@
     :max [423.25 181.7]}}}
  {:outline
   {:label "hair-165",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3562,6 +3646,7 @@
     :max [420.5 185.3]}},
   :base
   {:label "hair-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3599,6 +3684,7 @@
     :max [420.5 181.7]}},
   :shadow
   {:label "hair-273",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3624,6 +3710,7 @@
     :max [420.15 181.7]}}}
  {:outline
   {:label "hair-166",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3709,6 +3796,7 @@
     :max [425.3 185.3]}},
   :base
   {:label "hair-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3796,6 +3884,7 @@
     :max [425.3 185.3]}},
   :shadow
   {:label "hair-274",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3857,6 +3946,7 @@
     :max [425.25 185.3]}}}
  {:outline
   {:label "hair-167",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3889,6 +3979,7 @@
     :max [421.6 183.7]}},
   :base
   {:label "hair-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3922,6 +4013,7 @@
     :max [421.6 183.7]}},
   :shadow
   {:label "hair-275",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3955,6 +4047,7 @@
     :max [421.55 183.7]}}}
  {:outline
   {:label "hair-168",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3987,6 +4080,7 @@
     :max [429.6 185.3]}},
   :base
   {:label "hair-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4018,6 +4112,7 @@
     :max [429.6 181.8]}},
   :shadow
   {:label "hair-276",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4053,6 +4148,7 @@
     :max [429.15 181.8]}}}
  {:outline
   {:label "hair-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4085,6 +4181,7 @@
     :max [438.5 185.3]}},
   :base
   {:label "hair-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4123,6 +4220,7 @@
     :max [438.5 185.3]}},
   :shadow
   {:label "hair-277",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4162,6 +4260,7 @@
     :max [438.45 185.3]}}}
  {:outline
   {:label "hair-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4200,6 +4299,7 @@
     :max [421.6 185.3]}},
   :base
   {:label "hair-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4228,6 +4328,7 @@
     :max [421.6 180.95]}},
   :shadow
   {:label "hair-278",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4251,6 +4352,7 @@
     :max [420.65 180.95]}}}
  {:outline
   {:label "hair-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4287,6 +4389,7 @@
     :max [422.15 185.3]}},
   :base
   {:label "hair-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4320,6 +4423,7 @@
     :max [422.15 183.85]}},
   :shadow
   {:label "hair-279",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4374,6 +4478,7 @@
     :max [422.0 183.85]}}}
  {:outline
   {:label "hair-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4409,6 +4514,7 @@
     :max [422.85 189.4]}},
   :base
   {:label "hair-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4441,6 +4547,7 @@
     :max [422.85 189.4]}},
   :shadow
   {:label "hair-280",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4492,6 +4599,7 @@
     :max [422.8 189.4]}}}
  {:outline
   {:label "hair-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4533,6 +4641,7 @@
     :max [420.75 185.3]}},
   :base
   {:label "hair-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4557,6 +4666,7 @@
     :max [420.75 178.35]}},
   :shadow
   {:label "hair-281",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4578,6 +4688,7 @@
     :max [420.45 178.35]}}}
  {:outline
   {:label "hair-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4632,6 +4743,7 @@
     :max [430.0 185.3]}},
   :base
   {:label "hair-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4660,6 +4772,7 @@
     :max [430.0 178.35]}},
   :shadow
   {:label "hair-282",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4691,6 +4804,7 @@
     :max [424.9 178.6]}}}
  {:outline
   {:label "hair-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4734,6 +4848,7 @@
     :max [422.2 185.3]}},
   :base
   {:label "hair-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4761,6 +4876,7 @@
     :max [422.2 181.9]}},
   :shadow
   {:label "hair-283",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4797,6 +4913,7 @@
     :max [422.15 181.9]}}}
  {:outline
   {:label "hair-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4855,6 +4972,7 @@
     :max [422.6 185.3]}},
   :base
   {:label "hair-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4898,6 +5016,7 @@
     :max [422.6 181.7]}},
   :shadow
   {:label "hair-284",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4927,6 +5046,7 @@
     :max [422.55 181.7]}}}
  {:outline
   {:label "hair-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4968,6 +5088,7 @@
     :max [422.6 185.3]}},
   :base
   {:label "hair-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4996,6 +5117,7 @@
     :max [422.6 181.2]}},
   :shadow
   {:label "hair-285",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -5032,6 +5154,7 @@
     :max [422.55 181.2]}}}
  {:outline
   {:label "hair-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5081,6 +5204,7 @@
     :max [422.25 185.3]}},
   :base
   {:label "hair-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5117,6 +5241,7 @@
     :max [422.25 180.55]}},
   :shadow
   {:label "hair-286",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -5154,6 +5279,7 @@
     :max [422.2 180.55]}}}
  {:outline
   {:label "hair-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5194,6 +5320,7 @@
     :max [422.3 185.3]}},
   :base
   {:label "hair-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5234,6 +5361,7 @@
     :max [422.3 183.9]}},
   :shadow
   {:label "hair-287",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -5278,6 +5406,7 @@
     :max [421.4 183.9]}}}
  {:outline
   {:label "hair-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5324,6 +5453,7 @@
     :max [425.95 185.35]}},
   :base
   {:label "hair-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5373,6 +5503,7 @@
     :max [425.95 185.35]}},
   :shadow
   {:label "hair-288",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -5417,6 +5548,7 @@
     :max [423.15 185.35]}}}
  {:outline
   {:label "hair-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5541,6 +5673,7 @@
     :max [424.25 185.3]}},
   :base
   {:label "hair-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5647,6 +5780,7 @@
     :max [424.25 185.3]}},
   :shadow
   {:label "hair-289",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -5697,6 +5831,7 @@
     :max [424.2 185.3]}}}
  {:outline
   {:label "hair-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5767,6 +5902,7 @@
     :max [426.85 185.3]}},
   :base
   {:label "hair-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5838,6 +5974,7 @@
     :max [426.85 185.3]}},
   :shadow
   {:label "hair-290",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -5887,6 +6024,7 @@
     :max [426.8 185.3]}}}
  {:outline
   {:label "hair-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5947,6 +6085,7 @@
     :max [424.4 187.05]}},
   :base
   {:label "hair-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6020,6 +6159,7 @@
     :max [424.4 187.05]}},
   :shadow
   {:label "hair-291",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6059,6 +6199,7 @@
     :max [424.35 181.05]}}}
  {:outline
   {:label "hair-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6124,6 +6265,7 @@
     :max [427.4 185.3]}},
   :base
   {:label "hair-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6176,6 +6318,7 @@
     :max [427.4 183.85]}},
   :shadow
   {:label "hair-292",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6232,6 +6375,7 @@
     :max [427.35 183.85]}}}
  {:outline
   {:label "hair-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6262,6 +6406,7 @@
     :max [421.8 185.3]}},
   :base
   {:label "hair-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6292,6 +6437,7 @@
     :max [421.8 181.7]}},
   :shadow
   {:label "hair-293",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6317,6 +6463,7 @@
     :max [421.75 181.7]}}}
  {:outline
   {:label "hair-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6351,6 +6498,7 @@
     :max [421.5 185.3]}},
   :base
   {:label "hair-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6385,6 +6533,7 @@
     :max [421.5 181.7]}},
   :shadow
   {:label "hair-294",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6416,6 +6565,7 @@
     :max [421.45 181.7]}}}
  {:outline
   {:label "hair-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6470,6 +6620,7 @@
     :max [418.45 174.8]}},
   :base
   {:label "hair-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6498,6 +6649,7 @@
     :max [418.45 174.8]}},
   :shadow
   {:label "hair-295",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6521,6 +6673,7 @@
     :max [418.4 174.8]}}}
  {:outline
   {:label "hair-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6567,6 +6720,7 @@
     :max [421.85 185.3]}},
   :base
   {:label "hair-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6596,6 +6750,7 @@
     :max [421.85 185.3]}},
   :shadow
   {:label "hair-296",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6623,6 +6778,7 @@
     :max [421.8 185.3]}}}
  {:outline
   {:label "hair-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6666,6 +6822,7 @@
     :max [407.35 170.35]}},
   :base
   {:label "hair-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6685,6 +6842,7 @@
     :max [407.35 170.35]}},
   :shadow
   {:label "hair-297",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6714,6 +6872,7 @@
     :max [407.3 170.35]}}}
  {:outline
   {:label "hair-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6749,6 +6908,7 @@
     :max [405.3 170.35]}},
   :base
   {:label "hair-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6768,6 +6928,7 @@
     :max [405.3 170.35]}},
   :shadow
   {:label "hair-298",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6787,6 +6948,7 @@
     :max [405.25 170.35]}}}
  {:outline
   {:label "hair-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6896,6 +7058,7 @@
     :max [452.3 178.05]}},
   :base
   {:label "hair-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6953,6 +7116,7 @@
     :max [447.2 173.25]}},
   :detail
   {:label "hair-127",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7012,6 +7176,7 @@
     :max [452.3 178.0]}}}
  {:outline
   {:label "hair-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7117,6 +7282,7 @@
     :max [419.35 185.3]}},
   :base
   {:label "hair-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7194,6 +7360,7 @@
     :max [419.35 185.3]}},
   :shadow
   {:label "hair-299",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -7237,6 +7404,7 @@
     :max [419.3 185.3]}}}
  {:outline
   {:label "hair-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7312,6 +7480,7 @@
     :max [423.15 185.3]}},
   :base
   {:label "hair-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7354,6 +7523,7 @@
     :max [423.15 185.3]}},
   :shadow
   {:label "hair-300",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -7399,6 +7569,7 @@
     :max [422.25 185.3]}}}
  {:outline
   {:label "hair-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7451,6 +7622,7 @@
     :max [426.0 187.8]}},
   :base
   {:label "hair-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7482,6 +7654,7 @@
     :max [426.0 187.8]}},
   :shadow
   {:label "hair-301",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -7534,6 +7707,7 @@
     :max [425.95 187.8]}}}
  {:outline
   {:label "hair-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7617,6 +7791,7 @@
     :max [426.5 215.75]}},
   :base
   {:label "hair-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7678,6 +7853,7 @@
     :max [426.5 215.75]}},
   :shadow
   {:label "hair-302",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -7762,6 +7938,7 @@
     :max [426.45 217.4]}}}
  {:outline
   {:label "hair-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7806,6 +7983,7 @@
     :max [423.85 200.75]}},
   :base
   {:label "hair-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7844,6 +8022,7 @@
     :max [423.85 200.75]}},
   :shadow
   {:label "hair-303",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -7912,6 +8091,7 @@
     :max [423.6 200.75]}}}
  {:outline
   {:label "hair-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8001,6 +8181,7 @@
     :max [421.2 230.75]}},
   :base
   {:label "hair-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8061,6 +8242,7 @@
     :max [421.2 230.75]}},
   :detail
   {:label "hair-128",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8084,6 +8266,7 @@
     :max [418.0 174.05]}},
   :shadow
   {:label "hair-304",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -8138,6 +8321,7 @@
     :max [421.15 230.75]}}}
  {:outline
   {:label "hair-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8226,6 +8410,7 @@
     :max [432.35 245.35]}},
   :base
   {:label "hair-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8295,6 +8480,7 @@
     :max [432.35 245.35]}},
   :shadow
   {:label "hair-305",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -8390,6 +8576,7 @@
     :max [429.6 245.35]}}}
  {:outline
   {:label "hair-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8528,6 +8715,7 @@
     :max [440.25 241.2]}},
   :base
   {:label "hair-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8651,6 +8839,7 @@
     :max [440.25 241.2]}},
   :shadow
   {:label "hair-306",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -8788,6 +8977,7 @@
     :max [440.2 241.2]}}}
  {:outline
   {:label "hair-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8867,6 +9057,7 @@
     :max [424.55 237.35]}},
   :base
   {:label "hair-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8920,6 +9111,7 @@
     :max [424.55 237.35]}},
   :shadow
   {:label "hair-307",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -9026,6 +9218,7 @@
     :max [424.5 237.35]}}}
  {:outline
   {:label "hair-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9114,6 +9307,7 @@
     :max [426.2 235.5]}},
   :base
   {:label "hair-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9188,6 +9382,7 @@
     :max [426.2 235.5]}},
   :shadow
   {:label "hair-308",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -9403,6 +9598,7 @@
     :max [422.95 235.5]}}}
  {:outline
   {:label "hair-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9545,6 +9741,7 @@
     :max [440.5 261.8]}},
   :base
   {:label "hair-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9667,6 +9864,7 @@
     :max [440.5 261.8]}},
   :shadow
   {:label "hair-309",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -9957,6 +10155,7 @@
     :max [436.75 255.65]}}}
  {:outline
   {:label "hair-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10052,6 +10251,7 @@
     :max [438.65 269.0]}},
   :base
   {:label "hair-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10129,6 +10329,7 @@
     :max [438.65 269.0]}},
   :shadow
   {:label "hair-310",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -10303,6 +10504,7 @@
     :max [438.6 269.0]}}}
  {:outline
   {:label "hair-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10398,6 +10600,7 @@
     :max [447.5 247.9]}},
   :base
   {:label "hair-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10478,6 +10681,7 @@
     :max [447.5 247.9]}},
   :shadow
   {:label "hair-311",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -10711,6 +10915,7 @@
     :max [447.4 247.9]}}}
  {:outline
   {:label "hair-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10816,6 +11021,7 @@
     :max [423.75 263.1]}},
   :base
   {:label "hair-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10892,6 +11098,7 @@
     :max [423.75 263.1]}},
   :shadow
   {:label "hair-312",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -11089,6 +11296,7 @@
     :max [419.4 263.1]}}}
  {:outline
   {:label "hair-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11179,6 +11387,7 @@
     :max [432.9 231.3]}},
   :base
   {:label "hair-82",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11257,6 +11466,7 @@
     :max [432.9 231.3]}},
   :shadow
   {:label "hair-313",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -11468,6 +11678,7 @@
     :max [430.75 231.3]}}}
  {:outline
   {:label "hair-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11514,6 +11725,7 @@
     :max [420.75 179.1]}},
   :base
   {:label "hair-83",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11546,6 +11758,7 @@
     :max [420.75 179.1]}},
   :shadow
   {:label "hair-314",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -11581,6 +11794,7 @@
     :max [418.55 173.25]}}}
  {:outline
   {:label "hair-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11653,6 +11867,7 @@
     :max [423.75 185.3]}},
   :base
   {:label "hair-84",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11694,6 +11909,7 @@
     :max [423.75 185.3]}},
   :shadow
   {:label "hair-315",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -11750,6 +11966,7 @@
     :max [423.7 185.3]}}}
  {:outline
   {:label "hair-209",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11848,6 +12065,7 @@
     :max [434.4 211.75]}},
   :base
   {:label "hair-85",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11914,6 +12132,7 @@
     :max [434.4 211.75]}},
   :shadow
   {:label "hair-316",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -11996,6 +12215,7 @@
     :max [434.35 211.75]}}}
  {:outline
   {:label "hair-210",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12189,6 +12409,7 @@
     :max [430.35 245.3]}},
   :base
   {:label "hair-86",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12318,6 +12539,7 @@
     :max [430.35 245.3]}},
   :shadow
   {:label "hair-317",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -12405,6 +12627,7 @@
     :max [428.65 245.3]}}}
  {:outline
   {:label "hair-211",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12495,6 +12718,7 @@
     :max [424.45 184.2]}},
   :base
   {:label "hair-87",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12570,6 +12794,7 @@
     :max [424.45 184.2]}},
   :shadow
   {:label "hair-318",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -12598,6 +12823,7 @@
     :max [414.05 179.35]}}}
  {:outline
   {:label "hair-212",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12660,6 +12886,7 @@
     :max [421.35 197.9]}},
   :base
   {:label "hair-88",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12698,6 +12925,7 @@
     :max [421.35 197.9]}},
   :shadow
   {:label "hair-319",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -12745,6 +12973,7 @@
     :max [421.3 197.7]}}}
  {:outline
   {:label "hair-213",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12821,6 +13050,7 @@
     :max [421.75 196.6]}},
   :base
   {:label "hair-89",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12869,6 +13099,7 @@
     :max [421.75 196.6]}},
   :shadow
   {:label "hair-320",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -12916,6 +13147,7 @@
     :max [420.2 196.6]}}}
  {:outline
   {:label "hair-214",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13050,6 +13282,7 @@
     :max [423.65 192.65]}},
   :base
   {:label "hair-90",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13157,6 +13390,7 @@
     :max [423.65 192.65]}},
   :shadow
   {:label "hair-321",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -13214,6 +13448,7 @@
     :max [423.6 192.65]}}}
  {:outline
   {:label "hair-215",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "0.5",
@@ -13266,6 +13501,7 @@
     :max [420.05 207.4]}},
   :base
   {:label "hair-91",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13293,6 +13529,7 @@
     :max [420.05 207.4]}},
   :shadow
   {:label "hair-322",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -13332,6 +13569,7 @@
     :max [417.85 193.15]}}}
  {:outline
   {:label "hair-216",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13434,6 +13672,7 @@
     :max [424.2 214.1]}},
   :base
   {:label "hair-92",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13503,6 +13742,7 @@
     :max [424.2 214.1]}},
   :shadow
   {:label "hair-323",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -13584,6 +13824,7 @@
     :max [424.15 214.1]}}}
  {:outline
   {:label "hair-217",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13783,6 +14024,7 @@
     :max [433.5 199.6]}},
   :base
   {:label "hair-93",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13918,6 +14160,7 @@
     :max [433.5 199.6]}},
   :shadow
   {:label "hair-324",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -13990,6 +14233,7 @@
     :max [433.45 199.6]}}}
  {:outline
   {:label "hair-218",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14103,6 +14347,7 @@
     :max [427.2 210.9]}},
   :base
   {:label "hair-94",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14173,6 +14418,7 @@
     :max [427.2 210.9]}},
   :shadow
   {:label "hair-325",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -14274,6 +14520,7 @@
     :max [427.15 210.9]}}}
  {:outline
   {:label "hair-219",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14389,6 +14636,7 @@
     :max [422.3 217.7]}},
   :base
   {:label "hair-95",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14482,6 +14730,7 @@
     :max [422.3 217.7]}},
   :shadow
   {:label "hair-326",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -14529,6 +14778,7 @@
     :max [422.25 217.7]}}}
  {:outline
   {:label "hair-220",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14625,6 +14875,7 @@
     :max [424.7 217.15]}},
   :base
   {:label "hair-96",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14699,6 +14950,7 @@
     :max [424.7 217.15]}},
   :shadow
   {:label "hair-327",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -14782,6 +15034,7 @@
     :max [424.65 217.15]}}}
  {:outline
   {:label "hair-221",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14875,6 +15128,7 @@
     :max [421.5 214.9]}},
   :base
   {:label "hair-97",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14946,6 +15200,7 @@
     :max [421.5 214.9]}},
   :shadow
   {:label "hair-328",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -14994,6 +15249,7 @@
     :max [421.2 214.9]}}}
  {:outline
   {:label "hair-222",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15081,6 +15337,7 @@
     :max [428.0 216.75]}},
   :base
   {:label "hair-98",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15144,6 +15401,7 @@
     :max [428.0 216.75]}},
   :shadow
   {:label "hair-329",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -15215,6 +15473,7 @@
     :max [421.75 216.75]}}}
  {:outline
   {:label "hair-223",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15286,6 +15545,7 @@
     :max [424.75 220.25]}},
   :base
   {:label "hair-99",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15329,6 +15589,7 @@
     :max [424.75 220.25]}},
   :shadow
   {:label "hair-330",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -15372,6 +15633,7 @@
     :max [424.7 220.25]}}}
  {:outline
   {:label "hair-224",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15502,6 +15764,7 @@
     :max [425.5 215.05]}},
   :base
   {:label "hair-100",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15591,6 +15854,7 @@
     :max [425.5 215.05]}},
   :shadow
   {:label "hair-331",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -15662,6 +15926,7 @@
     :max [425.45 215.05]}}}
  {:outline
   {:label "hair-225",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15956,6 +16221,7 @@
     :max [432.3 248.75]}},
   :base
   {:label "hair-101",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16085,6 +16351,7 @@
     :max [432.3 248.75]}},
   :detail
   {:label "hair-129",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16121,6 +16388,7 @@
     :max [425.25 236.3]}},
   :shadow
   {:label "hair-332",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -16218,6 +16486,7 @@
     :max [432.25 231.7]}}}
  {:outline
   {:label "hair-226",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -16429,6 +16698,7 @@
     :max [432.4 213.6]}},
   :base
   {:label "hair-102",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16540,6 +16810,7 @@
     :max [432.4 213.6]}},
   :shadow
   {:label "hair-333",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -16627,6 +16898,7 @@
     :max [427.4 213.0]}}}
  {:outline
   {:label "hair-227",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -16786,6 +17058,7 @@
     :max [444.05 203.45]}},
   :base
   {:label "hair-103",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16888,6 +17161,7 @@
     :max [444.05 203.45]}},
   :detail
   {:label "hair-130",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16913,6 +17187,7 @@
     :max [420.05 170.75]}},
   :shadow
   {:label "hair-334",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -16980,6 +17255,7 @@
     :max [444.0 194.85]}}}
  {:outline
   {:label "hair-228",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17103,6 +17379,7 @@
     :max [427.55 246.45]}},
   :base
   {:label "hair-104",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17169,6 +17446,7 @@
     :max [427.55 246.45]}},
   :shadow
   {:label "hair-335",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -17255,6 +17533,7 @@
     :max [427.5 246.45]}}}
  {:outline
   {:label "hair-229",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17340,6 +17619,7 @@
     :max [427.85 238.2]}},
   :base
   {:label "hair-105",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17398,6 +17678,7 @@
     :max [427.85 238.2]}},
   :shadow
   {:label "hair-336",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -17460,6 +17741,7 @@
     :max [427.8 238.2]}}}
  {:outline
   {:label "hair-230",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17729,6 +18011,7 @@
     :max [429.6 258.05]}},
   :base
   {:label "hair-106",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17918,6 +18201,7 @@
     :max [429.6 258.05]}},
   :shadow
   {:label "hair-337",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -18075,6 +18359,7 @@
     :max [429.55 258.05]}}}
  {:outline
   {:label "hair-231",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18303,6 +18588,7 @@
     :max [447.85 247.4]}},
   :base
   {:label "hair-107",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18470,6 +18756,7 @@
     :max [447.85 247.4]}},
   :shadow
   {:label "hair-338",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -18621,6 +18908,7 @@
     :max [447.8 247.4]}}}
  {:outline
   {:label "hair-232",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18644,6 +18932,7 @@
     :max [420.15 269.4]}},
   :base
   {:label "hair-108",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18661,6 +18950,7 @@
     :max [420.15 269.4]}}}
  {:outline
   {:label "hair-233",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19417,6 +19707,7 @@
     :max [438.9 232.85]}},
   :base
   {:label "hair-109",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20296,6 +20587,7 @@
     :max [438.9 232.85]}}}
  {:outline
   {:label "hair-234",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -20667,6 +20959,7 @@
     :max [442.75 221.95]}},
   :base
   {:label "hair-110",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20971,6 +21264,7 @@
     :max [442.75 221.95]}},
   :detail
   {:label "hair-131",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21284,6 +21578,7 @@
     :max [437.6 229.9]}}}
  {:outline
   {:label "hair-235",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21834,6 +22129,7 @@
     :max [424.1 264.4]}},
   :base
   {:label "hair-111",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22148,6 +22444,7 @@
     :max [424.1 264.4]}},
   :detail
   {:label "hair-132",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22167,6 +22464,7 @@
     :max [423.6 255.8]}}}
  {:outline
   {:label "hair-236",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22205,6 +22503,7 @@
     :max [426.0 212.25]}},
   :base
   {:label "hair-112",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22238,6 +22537,7 @@
     :max [426.0 212.25]}},
   :shadow
   {:label "hair-339",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22275,6 +22575,7 @@
     :max [425.95 212.25]}}}
  {:outline
   {:label "hair-237",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22321,6 +22622,7 @@
     :max [430.75 214.45]}},
   :base
   {:label "hair-113",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22362,6 +22664,7 @@
     :max [430.75 214.45]}},
   :shadow
   {:label "hair-340",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22407,6 +22710,7 @@
     :max [430.7 214.45]}}}
  {:outline
   {:label "hair-238",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22472,6 +22776,7 @@
     :max [424.9 213.2]}},
   :base
   {:label "hair-114",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22532,6 +22837,7 @@
     :max [424.9 213.2]}},
   :shadow
   {:label "hair-341",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22594,6 +22900,7 @@
     :max [424.85 213.2]}}}
  {:outline
   {:label "hair-239",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22672,6 +22979,7 @@
     :max [434.25 233.95]}},
   :base
   {:label "hair-115",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22745,6 +23053,7 @@
     :max [434.25 233.95]}},
   :shadow
   {:label "hair-342",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22816,6 +23125,7 @@
     :max [434.2 233.95]}}}
  {:outline
   {:label "hair-240",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22858,6 +23168,7 @@
     :max [444.9 238.95]}},
   :base
   {:label "hair-116",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22898,6 +23209,7 @@
     :max [444.9 238.95]}},
   :shadow
   {:label "hair-343",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22937,6 +23249,7 @@
     :max [444.85 238.95]}}}
  {:outline
   {:label "hair-241",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22971,6 +23284,7 @@
     :max [434.6 300.0]}},
   :base
   {:label "hair-117",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23000,6 +23314,7 @@
     :max [434.6 300.0]}},
   :shadow
   {:label "hair-344",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -23040,6 +23355,7 @@
     :max [434.55 300.0]}}}
  {:outline
   {:label "hair-242",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23069,6 +23385,7 @@
     :max [423.5 300.0]}},
   :base
   {:label "hair-118",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23093,6 +23410,7 @@
     :max [423.5 300.0]}},
   :shadow
   {:label "hair-345",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -23117,6 +23435,7 @@
     :max [423.45 300.0]}}}
  {:outline
   {:label "hair-243",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23143,6 +23462,7 @@
     :max [415.9 170.85]}},
   :base
   {:label "hair-119",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23164,6 +23484,7 @@
     :max [415.9 170.85]}},
   :shadow
   {:label "hair-346",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -23213,6 +23534,7 @@
     :max [459.3 304.7]}}}
  {:outline
   {:label "hair-244",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23253,6 +23575,7 @@
     :max [411.95 170.7]}},
   :base
   {:label "hair-120",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23278,6 +23601,7 @@
     :max [411.95 170.7]}},
   :detail
   {:label "hair-133",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23294,6 +23618,7 @@
     :max [403.2 164.2]}},
   :shadow
   {:label "hair-347",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -23688,6 +24013,7 @@
     :max [520.9 417.15]}}}
  {:outline
   {:label "hair-245",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23764,6 +24090,7 @@
     :max [449.45 185.1]}},
   :base
   {:label "hair-121",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23823,6 +24150,7 @@
     :max [449.45 185.1]}}}
  {:outline
   {:label "hair-246",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23869,6 +24197,7 @@
     :max [459.35 304.7]}},
   :base
   {:label "hair-122",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23910,6 +24239,7 @@
     :max [459.35 304.7]}}}
  {:outline
   {:label "hair-247",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -24337,6 +24667,7 @@
     :max [520.95 417.15]}},
   :base
   {:label "hair-123",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

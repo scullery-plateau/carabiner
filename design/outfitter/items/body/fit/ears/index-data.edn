@@ -1,5 +1,6 @@
 [{:outline
   {:label "ears-72",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -59,6 +60,7 @@
     :max [422.85 192.9]}},
   :base
   {:label "ears-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -94,6 +96,7 @@
     :max [422.85 192.9]}}}
  {:outline
   {:label "ears-73",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -144,6 +147,7 @@
     :max [421.5 192.85]}},
   :base
   {:label "ears-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -169,6 +173,7 @@
     :max [421.5 192.85]}}}
  {:outline
   {:label "ears-74",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -230,6 +235,7 @@
     :max [424.45 192.9]}},
   :base
   {:label "ears-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -265,6 +271,7 @@
     :max [424.45 192.9]}}}
  {:outline
   {:label "ears-75",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -328,6 +335,7 @@
     :max [427.7 192.9]}},
   :base
   {:label "ears-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -361,6 +369,7 @@
     :max [427.7 192.9]}}}
  {:outline
   {:label "ears-76",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -436,6 +445,7 @@
     :max [429.2 195.2]}},
   :base
   {:label "ears-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -475,6 +485,7 @@
     :max [429.2 195.2]}}}
  {:outline
   {:label "ears-77",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -513,6 +524,7 @@
     :max [423.8 194.7]}},
   :base
   {:label "ears-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -534,6 +546,7 @@
     :max [423.8 194.7]}}}
  {:outline
   {:label "ears-78",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -578,6 +591,7 @@
     :max [419.65 170.35]}},
   :base
   {:label "ears-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -605,6 +619,7 @@
     :max [419.65 170.35]}}}
  {:outline
   {:label "ears-79",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -677,6 +692,7 @@
     :max [424.4 192.85]}},
   :base
   {:label "ears-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -711,6 +727,7 @@
     :max [424.4 192.85]}}}
  {:outline
   {:label "ears-80",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -796,6 +813,7 @@
     :max [421.45 172.9]}},
   :base
   {:label "ears-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -840,6 +858,7 @@
     :max [421.45 172.9]}},
   :detail
   {:label "ears-57",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -881,6 +900,7 @@
     :max [414.95 156.9]}}}
  {:outline
   {:label "ears-81",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1042,6 +1062,7 @@
     :max [422.65 175.55]}},
   :base
   {:label "ears-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1126,6 +1147,7 @@
     :max [422.65 175.55]}},
   :detail
   {:label "ears-58",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1188,6 +1210,7 @@
     :max [421.45 145.6]}}}
  {:outline
   {:label "ears-82",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1303,6 +1326,7 @@
     :max [428.7 186.7]}},
   :base
   {:label "ears-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1400,6 +1424,7 @@
     :max [428.7 186.7]}},
   :detail
   {:label "ears-59",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1467,6 +1492,7 @@
     :max [423.75 180.9]}}}
  {:outline
   {:label "ears-83",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1583,6 +1609,7 @@
     :max [423.25 178.65]}},
   :base
   {:label "ears-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1678,6 +1705,7 @@
     :max [423.25 178.65]}},
   :detail
   {:label "ears-60",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1727,6 +1755,7 @@
     :max [421.45 174.55]}}}
  {:outline
   {:label "ears-84",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1816,6 +1845,7 @@
     :max [435.05 182.5]}},
   :base
   {:label "ears-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1869,6 +1899,7 @@
     :max [428.75 182.5]}},
   :detail
   {:label "ears-61",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1916,6 +1947,7 @@
     :max [435.05 179.0]}}}
  {:outline
   {:label "ears-85",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2014,6 +2046,7 @@
     :max [443.9 192.0]}},
   :base
   {:label "ears-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2051,6 +2084,7 @@
     :max [441.4 190.3]}},
   :detail
   {:label "ears-62",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2122,6 +2156,7 @@
     :max [443.9 192.0]}}}
  {:outline
   {:label "ears-86",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2201,6 +2236,7 @@
     :max [430.6 196.75]}},
   :base
   {:label "ears-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2222,6 +2258,7 @@
     :max [430.6 181.35]}},
   :detail
   {:label "ears-63",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2269,6 +2306,7 @@
     :max [430.6 196.75]}}}
  {:outline
   {:label "ears-87",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2344,6 +2382,7 @@
     :max [422.65 195.3]}},
   :base
   {:label "ears-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2413,6 +2452,7 @@
     :max [422.65 195.3]}}}
  {:outline
   {:label "ears-88",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2501,6 +2541,7 @@
     :max [427.9 207.6]}},
   :base
   {:label "ears-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2584,6 +2625,7 @@
     :max [427.9 207.6]}}}
  {:outline
   {:label "ears-89",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2607,6 +2649,7 @@
     :max [423.45 188.8]}},
   :base
   {:label "ears-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2625,6 +2668,7 @@
     :max [423.45 188.8]}}}
  {:outline
   {:label "ears-90",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2649,6 +2693,7 @@
     :max [427.05 196.15]}},
   :base
   {:label "ears-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2670,6 +2715,7 @@
     :max [427.05 196.15]}}}
  {:outline
   {:label "ears-91",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2717,6 +2763,7 @@
     :max [423.25 208.35]}},
   :base
   {:label "ears-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2752,6 +2799,7 @@
     :max [423.25 208.35]}}}
  {:outline
   {:label "ears-92",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2804,6 +2852,7 @@
     :max [420.05 192.0]}},
   :base
   {:label "ears-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2847,6 +2896,7 @@
     :max [420.05 192.0]}}}
  {:outline
   {:label "ears-93",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2892,6 +2942,7 @@
     :max [383.5 192.9]}},
   :base
   {:label "ears-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2915,6 +2966,7 @@
     :max [383.5 192.9]}}}
  {:outline
   {:label "ears-94",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2956,6 +3008,7 @@
     :max [383.5 192.85]}},
   :base
   {:label "ears-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2974,6 +3027,7 @@
     :max [383.5 192.85]}}}
  {:outline
   {:label "ears-95",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3020,6 +3074,7 @@
     :max [383.5 192.9]}},
   :base
   {:label "ears-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3041,6 +3096,7 @@
     :max [383.5 192.9]}}}
  {:outline
   {:label "ears-96",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3089,6 +3145,7 @@
     :max [383.5 192.9]}},
   :base
   {:label "ears-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3112,6 +3169,7 @@
     :max [383.5 192.9]}}}
  {:outline
   {:label "ears-97",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3156,6 +3214,7 @@
     :max [383.45 195.2]}},
   :base
   {:label "ears-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3179,6 +3238,7 @@
     :max [383.45 195.2]}}}
  {:outline
   {:label "ears-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3208,6 +3268,7 @@
     :max [384.1 194.7]}},
   :base
   {:label "ears-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3224,6 +3285,7 @@
     :max [384.1 194.7]}}}
  {:outline
   {:label "ears-99",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3258,6 +3320,7 @@
     :max [393.95 170.35]}},
   :base
   {:label "ears-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3277,6 +3340,7 @@
     :max [393.95 170.35]}}}
  {:outline
   {:label "ears-100",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3328,6 +3392,7 @@
     :max [384.4 192.85]}},
   :base
   {:label "ears-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3352,6 +3417,7 @@
     :max [384.4 192.85]}}}
  {:outline
   {:label "ears-101",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3406,6 +3472,7 @@
     :max [394.65 172.9]}},
   :base
   {:label "ears-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3433,6 +3500,7 @@
     :max [394.65 172.9]}},
   :detail
   {:label "ears-64",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3459,6 +3527,7 @@
     :max [389.7 156.9]}}}
  {:outline
   {:label "ears-102",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3555,6 +3624,7 @@
     :max [390.65 175.55]}},
   :base
   {:label "ears-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3602,6 +3672,7 @@
     :max [390.65 175.55]}},
   :detail
   {:label "ears-65",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3640,6 +3711,7 @@
     :max [386.3 145.6]}}}
  {:outline
   {:label "ears-103",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3712,6 +3784,7 @@
     :max [387.9 186.7]}},
   :base
   {:label "ears-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3768,6 +3841,7 @@
     :max [387.9 186.7]}},
   :detail
   {:label "ears-66",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3807,6 +3881,7 @@
     :max [385.15 180.9]}}}
  {:outline
   {:label "ears-104",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3875,6 +3950,7 @@
     :max [392.25 178.65]}},
   :base
   {:label "ears-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3921,6 +3997,7 @@
     :max [392.25 178.65]}},
   :detail
   {:label "ears-67",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3946,6 +4023,7 @@
     :max [386.15 174.55]}}}
  {:outline
   {:label "ears-105",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4007,6 +4085,7 @@
     :max [386.1 182.5]}},
   :base
   {:label "ears-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4039,6 +4118,7 @@
     :max [386.1 182.5]}},
   :detail
   {:label "ears-68",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4066,6 +4146,7 @@
     :max [380.2 179.0]}}}
  {:outline
   {:label "ears-106",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4133,6 +4214,7 @@
     :max [389.3 192.0]}},
   :base
   {:label "ears-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4159,6 +4241,7 @@
     :max [389.3 190.3]}},
   :detail
   {:label "ears-69",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4201,6 +4284,7 @@
     :max [385.3 192.0]}}}
  {:outline
   {:label "ears-107",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4250,6 +4334,7 @@
     :max [383.8 196.75]}},
   :base
   {:label "ears-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4268,6 +4353,7 @@
     :max [382.4 181.35]}},
   :detail
   {:label "ears-70",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4295,6 +4381,7 @@
     :max [383.8 196.75]}}}
  {:outline
   {:label "ears-108",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4338,6 +4425,7 @@
     :max [382.25 195.3]}},
   :base
   {:label "ears-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4377,6 +4465,7 @@
     :max [382.25 195.3]}}}
  {:outline
   {:label "ears-109",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4429,6 +4518,7 @@
     :max [388.9 207.6]}},
   :base
   {:label "ears-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4476,6 +4566,7 @@
     :max [388.9 207.6]}}}
  {:outline
   {:label "ears-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4496,6 +4587,7 @@
     :max [378.6 188.8]}},
   :base
   {:label "ears-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4510,6 +4602,7 @@
     :max [378.6 188.8]}}}
  {:outline
   {:label "ears-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4530,6 +4623,7 @@
     :max [381.1 196.15]}},
   :base
   {:label "ears-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4544,6 +4638,7 @@
     :max [381.1 196.15]}}}
  {:outline
   {:label "ears-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4577,6 +4672,7 @@
     :max [382.7 208.35]}},
   :base
   {:label "ears-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4601,6 +4697,7 @@
     :max [382.7 208.35]}}}
  {:outline
   {:label "ears-113",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4635,6 +4732,7 @@
     :max [382.25 192.0]}},
   :base
   {:label "ears-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

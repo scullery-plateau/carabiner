@@ -1,5 +1,6 @@
 [{:outline
   {:label "wings_and_tails-46",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -369,6 +370,7 @@
     :max [539.65 510.2]}},
   :base
   {:label "wings_and_tails-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -512,6 +514,7 @@
     :max [539.65 510.2]}},
   :shadow
   {:label "wings_and_tails-45",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -784,6 +787,7 @@
     :max [522.85 437.35]}}}
  {:outline
   {:label "wings_and_tails-47",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1045,6 +1049,7 @@
     :max [568.45 510.65]}},
   :base
   {:label "wings_and_tails-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1192,6 +1197,7 @@
     :max [568.45 510.65]}},
   :detail
   {:label "wings_and_tails-34",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1342,6 +1348,7 @@
     :max [553.7 510.65]}},
   :shadow
   {:label "wings_and_tails-66",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1843,6 +1850,7 @@
     :max [561.65 486.95]}}}
  {:outline
   {:label "wings_and_tails-48",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2276,6 +2284,7 @@
     :max [591.45 323.05]}},
   :base
   {:label "wings_and_tails-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2503,6 +2512,7 @@
     :max [591.45 323.05]}},
   :detail
   {:label "wings_and_tails-35",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2666,6 +2676,7 @@
     :max [574.4 283.7]}}}
  {:outline
   {:label "wings_and_tails-49",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3104,6 +3115,7 @@
     :max [637.9 470.35]}},
   :base
   {:label "wings_and_tails-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3253,6 +3265,7 @@
     :max [636.3 465.3]}},
   :detail
   {:label "wings_and_tails-36",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3353,6 +3366,7 @@
     :max [637.9 470.35]}}}
  {:outline
   {:label "wings_and_tails-50",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3753,6 +3767,7 @@
     :max [615.6 438.1]}},
   :base
   {:label "wings_and_tails-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3898,6 +3913,7 @@
     :max [615.6 438.1]}}}
  {:outline
   {:label "wings_and_tails-51",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4087,6 +4103,7 @@
     :max [399.85 510.2]}},
   :base
   {:label "wings_and_tails-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4159,6 +4176,7 @@
     :max [399.85 510.2]}},
   :shadow
   {:label "wings_and_tails-67",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4309,6 +4327,7 @@
     :max [399.85 437.35]}}}
  {:outline
   {:label "wings_and_tails-52",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4459,6 +4478,7 @@
     :max [399.85 510.65]}},
   :base
   {:label "wings_and_tails-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4544,6 +4564,7 @@
     :max [399.85 510.65]}},
   :detail
   {:label "wings_and_tails-37",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4623,6 +4644,7 @@
     :max [396.6 510.65]}},
   :shadow
   {:label "wings_and_tails-68",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -4882,6 +4904,7 @@
     :max [399.85 486.95]}}}
  {:outline
   {:label "wings_and_tails-53",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5118,6 +5141,7 @@
     :max [400.8 323.05]}},
   :base
   {:label "wings_and_tails-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5241,6 +5265,7 @@
     :max [386.7 323.05]}},
   :detail
   {:label "wings_and_tails-38",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5332,6 +5357,7 @@
     :max [400.8 283.7]}}}
  {:outline
   {:label "wings_and_tails-54",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5565,6 +5591,7 @@
     :max [399.8 470.35]}},
   :base
   {:label "wings_and_tails-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5644,6 +5671,7 @@
     :max [399.8 465.3]}},
   :detail
   {:label "wings_and_tails-39",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5705,6 +5733,7 @@
     :max [399.8 470.35]}}}
  {:outline
   {:label "wings_and_tails-55",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5933,6 +5962,7 @@
     :max [388.0 438.1]}},
   :base
   {:label "wings_and_tails-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6008,6 +6038,7 @@
     :max [388.0 438.1]}}}
  {:outline
   {:label "wings_and_tails-56",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6070,6 +6101,7 @@
     :max [406.45 448.25]}},
   :base
   {:label "wings_and_tails-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6127,6 +6159,7 @@
     :max [406.45 448.25]}}}
  {:outline
   {:label "wings_and_tails-57",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6283,6 +6316,7 @@
     :max [432.4 482.6]}},
   :base
   {:label "wings_and_tails-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6353,6 +6387,7 @@
     :max [432.4 482.6]}},
   :detail
   {:label "wings_and_tails-40",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6435,6 +6470,7 @@
     :max [420.85 477.55]}}}
  {:outline
   {:label "wings_and_tails-58",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6649,6 +6685,7 @@
     :max [572.35 425.5]}},
   :base
   {:label "wings_and_tails-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6812,6 +6849,7 @@
     :max [572.35 425.5]}},
   :detail
   {:label "wings_and_tails-41",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6896,6 +6934,7 @@
     :max [566.4 419.45]}}}
  {:outline
   {:label "wings_and_tails-59",
+   :layer :outline,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#993333"},
      :path
@@ -6983,6 +7022,7 @@
     :max [530.2 489.85]}},
   :base
   {:label "wings_and_tails-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7044,6 +7084,7 @@
     :max [483.8 489.85]}},
   :detail
   {:label "wings_and_tails-42",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7082,6 +7123,7 @@
     :max [530.2 481.3]}}}
  {:outline
   {:label "wings_and_tails-60",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7158,6 +7200,7 @@
     :max [413.9 454.35]}},
   :base
   {:label "wings_and_tails-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7303,6 +7346,7 @@
     :max [413.9 439.0]}},
   :detail
   {:label "wings_and_tails-43",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7459,6 +7503,7 @@
     :max [412.55 454.35]}}}
  {:outline
   {:label "wings_and_tails-61",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7542,6 +7587,7 @@
     :max [505.0 492.5]}},
   :base
   {:label "wings_and_tails-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7615,6 +7661,7 @@
     :max [504.6 492.5]}}}
  {:outline
   {:label "wings_and_tails-62",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7683,6 +7730,7 @@
     :max [412.75 472.75]}},
   :base
   {:label "wings_and_tails-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7745,6 +7793,7 @@
     :max [412.75 472.75]}}}
  {:outline
   {:label "wings_and_tails-63",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7947,6 +7996,7 @@
     :max [409.55 468.1]}},
   :base
   {:label "wings_and_tails-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8058,6 +8108,7 @@
     :max [409.55 468.1]}},
   :shadow
   {:label "wings_and_tails-69",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -8128,6 +8179,7 @@
     :max [412.75 468.75]}}}
  {:outline
   {:label "wings_and_tails-64",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8207,6 +8259,7 @@
     :max [423.4 484.4]}},
   :base
   {:label "wings_and_tails-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8281,6 +8334,7 @@
     :max [423.4 484.4]}},
   :shadow
   {:label "wings_and_tails-70",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",

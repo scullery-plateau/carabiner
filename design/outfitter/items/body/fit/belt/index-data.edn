@@ -1,5 +1,6 @@
 [{:outline
   {:label "belt-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19,6 +20,7 @@
     :max [429.2 328.3]}}}
  {:outline
   {:label "belt-99",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -41,6 +43,7 @@
     :max [430.9 333.8]}},
   :base
   {:label "belt-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -58,6 +61,7 @@
     :max [430.9 333.8]}}}
  {:outline
   {:label "belt-100",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -87,6 +91,7 @@
     :max [441.05 369.95]}},
   :base
   {:label "belt-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -103,6 +108,7 @@
     :max [441.05 369.95]}}}
  {:outline
   {:label "belt-101",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -152,6 +158,7 @@
     :max [441.05 369.95]}},
   :base
   {:label "belt-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -181,6 +188,7 @@
     :max [441.05 369.95]}}}
  {:outline
   {:label "belt-102",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -223,6 +231,7 @@
     :max [430.15 332.85]}},
   :base
   {:label "belt-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -260,6 +269,7 @@
     :max [430.15 332.85]}}}
  {:outline
   {:label "belt-103",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -304,6 +314,7 @@
     :max [433.3 343.2]}},
   :base
   {:label "belt-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -327,6 +338,7 @@
     :max [433.3 343.2]}}}
  {:outline
   {:label "belt-104",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -349,6 +361,7 @@
     :max [430.9 339.95]}},
   :base
   {:label "belt-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -366,6 +379,7 @@
     :max [430.9 339.95]}}}
  {:outline
   {:label "belt-105",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -397,6 +411,7 @@
     :max [430.9 333.8]}},
   :base
   {:label "belt-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -414,6 +429,7 @@
     :max [430.9 333.8]}}}
  {:outline
   {:label "belt-106",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -569,6 +585,7 @@
     :max [450.6 407.4]}},
   :base
   {:label "belt-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -703,6 +720,7 @@
     :max [450.6 407.4]}},
   :detail
   {:label "belt-63",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -825,6 +843,7 @@
     :max [448.65 397.3]}}}
  {:outline
   {:label "belt-107",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -868,6 +887,7 @@
     :max [436.15 338.95]}},
   :base
   {:label "belt-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -885,6 +905,7 @@
     :max [433.85 335.6]}},
   :detail
   {:label "belt-64",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -907,6 +928,7 @@
     :max [436.15 338.95]}}}
  {:outline
   {:label "belt-108",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -965,6 +987,7 @@
     :max [432.55 336.0]}},
   :base
   {:label "belt-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -996,6 +1019,7 @@
     :max [432.55 336.0]}}}
  {:outline
   {:label "belt-109",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1048,6 +1072,7 @@
     :max [426.3 431.65]}},
   :base
   {:label "belt-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1070,6 +1095,7 @@
     :max [420.95 425.8]}},
   :detail
   {:label "belt-65",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1102,6 +1128,7 @@
     :max [426.3 431.65]}}}
  {:outline
   {:label "belt-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1142,6 +1169,7 @@
     :max [421.2 422.0]}},
   :base
   {:label "belt-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1161,6 +1189,7 @@
     :max [417.0 413.35]}},
   :detail
   {:label "belt-66",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1184,6 +1213,7 @@
     :max [421.2 422.0]}}}
  {:outline
   {:label "belt-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1396,6 +1426,7 @@
     :max [420.9 511.1]}},
   :base
   {:label "belt-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1583,6 +1614,7 @@
     :max [418.25 511.1]}},
   :detail
   {:label "belt-67",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1780,6 +1812,7 @@
     :max [420.9 511.05]}}}
  {:outline
   {:label "belt-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1979,6 +2012,7 @@
     :max [432.75 328.65]}},
   :base
   {:label "belt-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2121,6 +2155,7 @@
     :max [432.75 326.1]}},
   :detail
   {:label "belt-68",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2297,6 +2332,7 @@
     :max [429.85 328.65]}}}
  {:outline
   {:label "belt-113",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2429,6 +2465,7 @@
     :max [433.5 328.6]}},
   :base
   {:label "belt-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2501,6 +2538,7 @@
     :max [429.4 325.7]}},
   :detail
   {:label "belt-69",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2611,6 +2649,7 @@
     :max [433.5 328.6]}}}
  {:outline
   {:label "belt-114",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2713,6 +2752,7 @@
     :max [436.3 336.95]}},
   :base
   {:label "belt-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2789,6 +2829,7 @@
     :max [436.2 336.95]}},
   :detail
   {:label "belt-70",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2836,6 +2877,7 @@
     :max [436.3 332.05]}}}
  {:outline
   {:label "belt-115",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3222,6 +3264,7 @@
     :max [433.45 341.95]}},
   :base
   {:label "belt-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3347,6 +3390,7 @@
     :max [432.25 341.95]}},
   :detail
   {:label "belt-71",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3432,6 +3476,7 @@
     :max [433.45 335.15]}}}
  {:outline
   {:label "belt-116",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3796,6 +3841,7 @@
     :max [431.35 331.4]}},
   :base
   {:label "belt-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4065,6 +4111,7 @@
     :max [431.35 331.4]}},
   :detail
   {:label "belt-72",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4125,6 +4172,7 @@
     :max [424.65 329.45]}}}
  {:outline
   {:label "belt-117",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4162,6 +4210,7 @@
     :max [407.35 334.55]}},
   :base
   {:label "belt-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4194,6 +4243,7 @@
     :max [407.35 334.55]}}}
  {:outline
   {:label "belt-118",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4216,6 +4266,7 @@
     :max [408.1 335.25]}},
   :base
   {:label "belt-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4233,6 +4284,7 @@
     :max [408.1 335.25]}}}
  {:outline
   {:label "belt-119",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4258,6 +4310,7 @@
     :max [408.1 335.35]}},
   :base
   {:label "belt-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4278,6 +4331,7 @@
     :max [408.1 335.35]}}}
  {:outline
   {:label "belt-120",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4326,6 +4380,7 @@
     :max [408.1 335.35]}},
   :base
   {:label "belt-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4357,6 +4412,7 @@
     :max [408.1 335.35]}},
   :detail
   {:label "belt-73",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4379,6 +4435,7 @@
     :max [405.9 333.4]}}}
  {:outline
   {:label "belt-121",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4430,6 +4487,7 @@
     :max [422.75 396.8]}},
   :base
   {:label "belt-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4464,6 +4522,7 @@
     :max [422.75 396.8]}},
   :detail
   {:label "belt-74",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4483,6 +4542,7 @@
     :max [420.45 390.6]}}}
  {:outline
   {:label "belt-122",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4507,6 +4567,7 @@
     :max [423.1 332.2]}},
   :base
   {:label "belt-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4526,6 +4587,7 @@
     :max [423.1 332.2]}}}
  {:outline
   {:label "belt-123",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4600,6 +4662,7 @@
     :max [434.45 336.55]}},
   :base
   {:label "belt-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4631,6 +4694,7 @@
     :max [434.45 336.55]}}}
  {:outline
   {:label "belt-124",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4733,6 +4797,7 @@
     :max [385.95 369.7]}},
   :base
   {:label "belt-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4776,6 +4841,7 @@
     :max [385.95 331.8]}},
   :detail
   {:label "belt-75",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4811,6 +4877,7 @@
     :max [385.75 369.7]}}}
  {:outline
   {:label "belt-125",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5227,6 +5294,7 @@
     :max [454.4 399.85]}},
   :base
   {:label "belt-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5292,6 +5360,7 @@
     :max [453.65 399.85]}},
   :detail
   {:label "belt-76",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5472,6 +5541,7 @@
     :max [454.4 338.9]}}}
  {:outline
   {:label "belt-126",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5692,6 +5762,7 @@
     :max [391.6 399.85]}},
   :base
   {:label "belt-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5730,6 +5801,7 @@
     :max [391.6 399.85]}},
   :detail
   {:label "belt-77",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5824,6 +5896,7 @@
     :max [375.55 338.9]}}}
  {:outline
   {:label "belt-127",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5882,6 +5955,7 @@
     :max [388.1 359.2]}},
   :base
   {:label "belt-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5917,6 +5991,7 @@
     :max [388.1 359.2]}},
   :detail
   {:label "belt-78",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5941,6 +6016,7 @@
     :max [367.05 334.55]}}}
  {:outline
   {:label "belt-128",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6014,6 +6090,7 @@
     :max [446.3 349.25]}},
   :base
   {:label "belt-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6057,6 +6134,7 @@
     :max [446.3 349.25]}},
   :detail
   {:label "belt-79",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6080,6 +6158,7 @@
     :max [439.8 330.75]}}}
  {:outline
   {:label "belt-129",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6223,6 +6302,7 @@
     :max [439.0 345.2]}},
   :base
   {:label "belt-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6268,6 +6348,7 @@
     :max [439.0 339.55]}},
   :detail
   {:label "belt-80",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6339,6 +6420,7 @@
     :max [437.2 345.2]}}}
  {:outline
   {:label "belt-130",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6424,6 +6506,7 @@
     :max [434.55 338.75]}},
   :base
   {:label "belt-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6482,6 +6565,7 @@
     :max [434.55 338.75]}},
   :detail
   {:label "belt-81",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6512,6 +6596,7 @@
     :max [434.55 328.65]}}}
  {:outline
   {:label "belt-131",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6672,6 +6757,7 @@
     :max [393.05 360.1]}},
   :base
   {:label "belt-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6727,6 +6813,7 @@
     :max [387.55 360.1]}},
   :detail
   {:label "belt-82",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6767,6 +6854,7 @@
     :max [393.05 344.0]}}}
  {:outline
   {:label "belt-132",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7171,6 +7259,7 @@
     :max [431.65 337.15]}},
   :base
   {:label "belt-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7253,6 +7342,7 @@
     :max [431.65 333.95]}},
   :detail
   {:label "belt-83",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7386,6 +7476,7 @@
     :max [430.85 337.15]}}}
  {:outline
   {:label "belt-133",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7472,6 +7563,7 @@
     :max [431.1 328.55]}},
   :base
   {:label "belt-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7527,6 +7619,7 @@
     :max [431.1 328.55]}}}
  {:outline
   {:label "belt-134",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7635,6 +7728,7 @@
     :max [450.65 379.1]}},
   :base
   {:label "belt-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7705,6 +7799,7 @@
     :max [450.65 379.1]}},
   :detail
   {:label "belt-84",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7773,6 +7868,7 @@
     :max [450.35 363.75]}}}
  {:outline
   {:label "belt-135",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7837,6 +7933,7 @@
     :max [385.4 379.1]}},
   :base
   {:label "belt-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7876,6 +7973,7 @@
     :max [385.4 379.1]}},
   :detail
   {:label "belt-85",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7911,6 +8009,7 @@
     :max [385.4 363.75]}}}
  {:outline
   {:label "belt-136",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7989,6 +8088,7 @@
     :max [450.4 392.7]}},
   :base
   {:label "belt-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8049,6 +8149,7 @@
     :max [450.4 392.7]}},
   :detail
   {:label "belt-86",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8082,6 +8183,7 @@
     :max [450.1 379.35]}}}
  {:outline
   {:label "belt-137",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8131,6 +8233,7 @@
     :max [388.05 392.7]}},
   :base
   {:label "belt-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8169,6 +8272,7 @@
     :max [388.05 392.7]}},
   :detail
   {:label "belt-87",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8191,6 +8295,7 @@
     :max [380.4 379.35]}}}
  {:outline
   {:label "belt-138",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8321,6 +8426,7 @@
     :max [447.45 384.4]}},
   :base
   {:label "belt-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8384,6 +8490,7 @@
     :max [447.45 379.25]}},
   :detail
   {:label "belt-88",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8444,6 +8551,7 @@
     :max [446.45 384.4]}}}
  {:outline
   {:label "belt-139",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8531,6 +8639,7 @@
     :max [382.15 384.4]}},
   :base
   {:label "belt-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8570,6 +8679,7 @@
     :max [378.95 379.25]}},
   :detail
   {:label "belt-89",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8607,6 +8717,7 @@
     :max [382.15 384.4]}}}
  {:outline
   {:label "belt-140",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8663,6 +8774,7 @@
     :max [445.45 393.65]}},
   :base
   {:label "belt-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8699,6 +8811,7 @@
     :max [444.95 393.65]}},
   :detail
   {:label "belt-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8724,6 +8837,7 @@
     :max [445.45 374.65]}}}
  {:outline
   {:label "belt-141",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8765,6 +8879,7 @@
     :max [388.75 393.65]}},
   :base
   {:label "belt-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8789,6 +8904,7 @@
     :max [388.75 393.65]}},
   :detail
   {:label "belt-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8807,6 +8923,7 @@
     :max [386.9 374.65]}}}
  {:outline
   {:label "belt-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8851,6 +8968,7 @@
     :max [416.35 374.5]}},
   :base
   {:label "belt-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8878,6 +8996,7 @@
     :max [416.35 374.5]}},
   :detail
   {:label "belt-92",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8897,6 +9016,7 @@
     :max [415.25 361.05]}}}
  {:outline
   {:label "belt-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9014,6 +9134,7 @@
     :max [445.45 380.5]}},
   :base
   {:label "belt-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9060,6 +9181,7 @@
     :max [445.05 375.65]}},
   :detail
   {:label "belt-93",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9113,6 +9235,7 @@
     :max [445.45 380.5]}}}
  {:outline
   {:label "belt-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9647,6 +9770,7 @@
     :max [449.25 400.25]}},
   :base
   {:label "belt-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9761,6 +9885,7 @@
     :max [438.9 376.25]}},
   :detail
   {:label "belt-94",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9965,6 +10090,7 @@
     :max [449.25 400.25]}},
   :shadow
   {:label "belt-148",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -10225,6 +10351,7 @@
     :max [446.65 393.2]}}}
  {:outline
   {:label "belt-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10309,6 +10436,7 @@
     :max [446.25 390.95]}},
   :base
   {:label "belt-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10340,6 +10468,7 @@
     :max [439.5 390.95]}},
   :detail
   {:label "belt-95",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10381,6 +10510,7 @@
     :max [446.25 390.95]}}}
  {:outline
   {:label "belt-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10447,6 +10577,7 @@
     :max [438.55 390.4]}},
   :base
   {:label "belt-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10493,6 +10624,7 @@
     :max [438.55 390.4]}},
   :detail
   {:label "belt-96",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

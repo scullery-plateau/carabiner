@@ -1,5 +1,6 @@
 [{:outline
   {:label "hat-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#gradient0)"},
@@ -74,6 +75,7 @@
       {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -128,6 +130,7 @@
     :max [408.9 192.35]}},
   :base
   {:label "hat-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -173,6 +176,7 @@
     :max [408.9 192.35]}}}
  {:outline
   {:label "hat-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -233,6 +237,7 @@
     :max [418.5 189.0]}},
   :base
   {:label "hat-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -287,6 +292,7 @@
     :max [414.3 189.0]}},
   :shadow
   {:label "hat-257",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-257-0)"},
@@ -358,6 +364,7 @@
       {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -390,6 +397,7 @@
     :max [418.5 189.15]}},
   :base
   {:label "hat-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -409,6 +417,7 @@
     :max [414.7 189.15]}},
   :shadow
   {:label "hat-258",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-258-0)"},
@@ -457,6 +466,7 @@
       {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -491,6 +501,7 @@
     :max [417.75 190.45]}},
   :base
   {:label "hat-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -514,6 +525,7 @@
     :max [397.55 190.45]}}}
  {:outline
   {:label "hat-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -569,6 +581,7 @@
     :max [418.6 192.8]}},
   :base
   {:label "hat-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -601,6 +614,7 @@
     :max [418.6 192.8]}}}
  {:outline
   {:label "hat-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -628,6 +642,7 @@
     :max [419.15 193.0]}},
   :base
   {:label "hat-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -650,6 +665,7 @@
     :max [419.15 193.0]}}}
  {:outline
   {:label "hat-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -685,6 +701,7 @@
     :max [419.25 193.0]}},
   :base
   {:label "hat-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -712,6 +729,7 @@
     :max [419.25 193.0]}}}
  {:outline
   {:label "hat-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -748,6 +766,7 @@
     :max [419.15 197.3]}},
   :base
   {:label "hat-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -775,6 +794,7 @@
     :max [419.15 197.3]}}}
  {:outline
   {:label "hat-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -851,6 +871,7 @@
     :max [418.5 194.65]}},
   :base
   {:label "hat-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -911,6 +932,7 @@
     :max [418.5 194.65]}},
   :detail
   {:label "hat-101",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -945,6 +967,7 @@
     :max [416.0 193.45]}}}
  {:outline
   {:label "hat-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -994,6 +1017,7 @@
     :max [418.75 195.5]}},
   :base
   {:label "hat-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1030,6 +1054,7 @@
     :max [418.75 195.5]}},
   :detail
   {:label "hat-102",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1057,6 +1082,7 @@
     :max [416.0 191.7]}}}
  {:outline
   {:label "hat-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1197,6 +1223,7 @@
     :max [421.65 193.6]}},
   :base
   {:label "hat-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1258,6 +1285,7 @@
     :max [421.65 193.6]}},
   :detail
   {:label "hat-103",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1301,6 +1329,7 @@
     :max [414.4 191.6]}}}
  {:outline
   {:label "hat-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1360,6 +1389,7 @@
     :max [397.05 193.25]}},
   :base
   {:label "hat-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1380,6 +1410,7 @@
     :max [385.75 193.25]}},
   :detail
   {:label "hat-104",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1398,6 +1429,7 @@
     :max [397.05 189.2]}}}
  {:outline
   {:label "hat-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1565,6 +1597,7 @@
     :max [422.65 215.25]}},
   :base
   {:label "hat-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1657,6 +1690,7 @@
     :max [422.65 212.1]}},
   :detail
   {:label "hat-105",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1732,6 +1766,7 @@
     :max [419.05 215.25]}}}
  {:outline
   {:label "hat-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1786,6 +1821,7 @@
     :max [418.45 215.2]}},
   :base
   {:label "hat-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1803,6 +1839,7 @@
     :max [407.65 215.2]}},
   :detail
   {:label "hat-106",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1834,6 +1871,7 @@
     :max [418.45 209.75]}}}
  {:outline
   {:label "hat-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1895,6 +1933,7 @@
     :max [420.2 214.7]}},
   :base
   {:label "hat-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1925,6 +1964,7 @@
     :max [420.2 214.7]}},
   :detail
   {:label "hat-107",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1958,6 +1998,7 @@
     :max [410.55 208.3]}}}
  {:outline
   {:label "hat-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2022,6 +2063,7 @@
     :max [399.15 204.5]}},
   :base
   {:label "hat-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2074,6 +2116,7 @@
     :max [399.15 204.5]}},
   :detail
   {:label "hat-108",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2090,6 +2133,7 @@
     :max [393.85 203.6]}}}
  {:outline
   {:label "hat-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2214,6 +2258,7 @@
     :max [425.65 192.2]}},
   :base
   {:label "hat-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2279,6 +2324,7 @@
     :max [422.3 192.2]}},
   :detail
   {:label "hat-109",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2339,6 +2385,7 @@
     :max [425.65 191.05]}}}
  {:outline
   {:label "hat-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2402,6 +2449,7 @@
     :max [418.75 212.15]}},
   :base
   {:label "hat-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2425,6 +2473,7 @@
     :max [408.15 212.15]}},
   :detail
   {:label "hat-110",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2447,6 +2496,7 @@
     :max [418.75 197.65]}}}
  {:outline
   {:label "hat-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2780,6 +2830,7 @@
     :max [436.15 215.25]}},
   :base
   {:label "hat-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2853,6 +2904,7 @@
     :max [416.9 213.75]}},
   :detail
   {:label "hat-111",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2968,6 +3020,7 @@
     :max [436.15 215.25]}}}
  {:outline
   {:label "hat-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3038,6 +3091,7 @@
     :max [418.35 189.6]}},
   :base
   {:label "hat-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3064,6 +3118,7 @@
     :max [418.35 177.95]}},
   :detail
   {:label "hat-112",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3104,6 +3159,7 @@
     :max [381.3 189.6]}},
   :shadow
   {:label "hat-259",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3143,6 +3199,7 @@
     :max [380.4 189.55]}}}
  {:outline
   {:label "hat-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3203,6 +3260,7 @@
     :max [419.45 189.6]}},
   :base
   {:label "hat-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3223,6 +3281,7 @@
     :max [419.45 178.3]}},
   :detail
   {:label "hat-113",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3255,6 +3314,7 @@
     :max [380.5 189.6]}},
   :shadow
   {:label "hat-260",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -3295,6 +3355,7 @@
     :max [380.4 189.55]}}}
  {:outline
   {:label "hat-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3391,6 +3452,7 @@
     :max [422.25 178.05]}},
   :base
   {:label "hat-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3423,6 +3485,7 @@
     :max [418.3 171.15]}},
   :detail
   {:label "hat-114",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3472,6 +3535,7 @@
     :max [422.25 178.05]}}}
  {:outline
   {:label "hat-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3757,6 +3821,7 @@
     :max [417.6 186.4]}},
   :base
   {:label "hat-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3819,6 +3884,7 @@
     :max [417.6 186.4]}}}
  {:outline
   {:label "hat-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3907,6 +3973,7 @@
     :max [419.6 182.2]}},
   :base
   {:label "hat-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3957,6 +4024,7 @@
     :max [419.6 182.2]}}}
  {:outline
   {:label "hat-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4104,6 +4172,7 @@
     :max [419.55 212.95]}},
   :base
   {:label "hat-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4163,6 +4232,7 @@
     :max [419.55 212.95]}}}
  {:outline
   {:label "hat-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4211,6 +4281,7 @@
     :max [419.45 181.65]}},
   :base
   {:label "hat-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4229,6 +4300,7 @@
     :max [419.05 174.5]}},
   :detail
   {:label "hat-115",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4253,6 +4325,7 @@
     :max [419.45 181.65]}}}
  {:outline
   {:label "hat-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4300,6 +4373,7 @@
     :max [419.45 178.3]}},
   :base
   {:label "hat-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4323,6 +4397,7 @@
     :max [419.45 178.3]}},
   :detail
   {:label "hat-116",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4342,6 +4417,7 @@
     :max [408.55 175.0]}}}
  {:outline
   {:label "hat-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4382,6 +4458,7 @@
     :max [420.9 182.15]}},
   :base
   {:label "hat-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4402,6 +4479,7 @@
     :max [416.75 182.15]}},
   :detail
   {:label "hat-117",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4426,6 +4504,7 @@
     :max [420.9 182.15]}}}
  {:outline
   {:label "hat-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4478,6 +4557,7 @@
     :max [426.7 180.25]}},
   :base
   {:label "hat-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4510,6 +4590,7 @@
     :max [426.7 180.25]}},
   :detail
   {:label "hat-118",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4526,6 +4607,7 @@
     :max [419.4 173.9]}}}
  {:outline
   {:label "hat-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4577,6 +4659,7 @@
     :max [423.65 183.05]}},
   :base
   {:label "hat-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4614,6 +4697,7 @@
     :max [423.65 183.05]}},
   :detail
   {:label "hat-119",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4631,6 +4715,7 @@
     :max [417.7 173.9]}}}
  {:outline
   {:label "hat-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4677,6 +4762,7 @@
     :max [438.0 181.75]}},
   :base
   {:label "hat-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4705,6 +4791,7 @@
     :max [438.0 181.75]}},
   :detail
   {:label "hat-120",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4725,6 +4812,7 @@
     :max [419.55 174.2]}}}
  {:outline
   {:label "hat-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4776,6 +4864,7 @@
     :max [436.0 181.45]}},
   :base
   {:label "hat-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4804,6 +4893,7 @@
     :max [436.0 181.45]}},
   :detail
   {:label "hat-121",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4824,6 +4914,7 @@
     :max [419.5 173.2]}}}
  {:outline
   {:label "hat-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4907,6 +4998,7 @@
     :max [439.2 179.4]}},
   :base
   {:label "hat-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4952,6 +5044,7 @@
     :max [439.2 179.4]}},
   :detail
   {:label "hat-122",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4974,6 +5067,7 @@
     :max [420.55 170.95]}}}
  {:outline
   {:label "hat-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5030,6 +5124,7 @@
     :max [426.05 177.2]}},
   :base
   {:label "hat-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5061,6 +5156,7 @@
     :max [426.05 177.2]}},
   :detail
   {:label "hat-123",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5081,6 +5177,7 @@
     :max [417.9 174.5]}}}
  {:outline
   {:label "hat-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5160,6 +5257,7 @@
     :max [429.55 182.4]}},
   :base
   {:label "hat-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5197,6 +5295,7 @@
     :max [429.55 182.4]}},
   :detail
   {:label "hat-124",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5214,6 +5313,7 @@
     :max [418.4 178.9]}}}
  {:outline
   {:label "hat-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5300,6 +5400,7 @@
     :max [431.2 184.45]}},
   :base
   {:label "hat-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5360,6 +5461,7 @@
     :max [431.2 184.45]}},
   :detail
   {:label "hat-125",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5384,6 +5486,7 @@
     :max [418.9 172.0]}}}
  {:outline
   {:label "hat-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5440,6 +5543,7 @@
     :max [444.75 179.7]}},
   :base
   {:label "hat-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5481,6 +5585,7 @@
     :max [444.75 179.7]}},
   :detail
   {:label "hat-126",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5498,6 +5603,7 @@
     :max [418.5 175.7]}}}
  {:outline
   {:label "hat-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5600,6 +5706,7 @@
     :max [444.1 179.05]}},
   :base
   {:label "hat-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5656,6 +5763,7 @@
     :max [442.0 179.05]}},
   :detail
   {:label "hat-127",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5727,6 +5835,7 @@
     :max [444.1 176.4]}}}
  {:outline
   {:label "hat-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6171,6 +6280,7 @@
     :max [447.15 258.45]}},
   :base
   {:label "hat-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6417,6 +6527,7 @@
     :max [447.15 258.4]}},
   :detail
   {:label "hat-128",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6651,6 +6762,7 @@
     :max [447.15 254.85]}}}
  {:outline
   {:label "hat-209",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6720,6 +6832,7 @@
     :max [431.0 224.45]}},
   :base
   {:label "hat-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6769,6 +6882,7 @@
     :max [431.0 224.45]}},
   :detail
   {:label "hat-129",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6791,6 +6905,7 @@
     :max [422.4 174.2]}}}
  {:outline
   {:label "hat-210",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7276,6 +7391,7 @@
     :max [455.85 186.2]}},
   :base
   {:label "hat-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7355,6 +7471,7 @@
     :max [455.85 186.2]}}}
  {:outline
   {:label "hat-211",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7495,6 +7612,7 @@
     :max [441.9 178.35]}},
   :base
   {:label "hat-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7582,6 +7700,7 @@
     :max [440.7 178.35]}},
   :detail
   {:label "hat-130",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7651,6 +7770,7 @@
     :max [441.9 172.6]}}}
  {:outline
   {:label "hat-212",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7697,6 +7817,7 @@
     :max [421.1 174.0]}},
   :base
   {:label "hat-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7726,6 +7847,7 @@
     :max [421.1 174.0]}},
   :detail
   {:label "hat-131",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7740,6 +7862,7 @@
     :max [418.6 173.65]}}}
  {:outline
   {:label "hat-213",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7839,6 +7962,7 @@
     :max [422.4 184.7]}},
   :base
   {:label "hat-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7893,6 +8017,7 @@
     :max [422.4 175.95]}},
   :detail
   {:label "hat-132",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7926,6 +8051,7 @@
     :max [418.35 184.7]}}}
  {:outline
   {:label "hat-214",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7976,6 +8102,7 @@
     :max [431.15 180.45]}},
   :base
   {:label "hat-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8004,6 +8131,7 @@
     :max [431.15 173.45]}},
   :detail
   {:label "hat-133",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8027,6 +8155,7 @@
     :max [419.45 180.45]}}}
  {:outline
   {:label "hat-215",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8073,6 +8202,7 @@
     :max [428.2 178.25]}},
   :base
   {:label "hat-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8103,6 +8233,7 @@
     :max [427.0 177.65]}},
   :detail
   {:label "hat-134",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8120,6 +8251,7 @@
     :max [428.2 178.25]}}}
  {:outline
   {:label "hat-216",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8210,6 +8342,7 @@
     :max [423.05 191.05]}},
   :base
   {:label "hat-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8268,6 +8401,7 @@
     :max [423.05 191.05]}},
   :detail
   {:label "hat-135",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8294,6 +8428,7 @@
     :max [419.6 176.0]}}}
  {:outline
   {:label "hat-217",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8375,6 +8510,7 @@
     :max [423.15 195.85]}},
   :base
   {:label "hat-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8416,6 +8552,7 @@
     :max [423.15 195.85]}},
   :detail
   {:label "hat-136",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8447,6 +8584,7 @@
     :max [417.2 178.15]}}}
  {:outline
   {:label "hat-218",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8620,6 +8758,7 @@
     :max [424.15 214.65]}},
   :base
   {:label "hat-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8680,6 +8819,7 @@
     :max [424.15 214.65]}},
   :detail
   {:label "hat-137",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8724,6 +8864,7 @@
     :max [424.15 208.5]}}}
  {:outline
   {:label "hat-219",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8745,6 +8886,7 @@
     :max [419.55 177.65]}},
   :base
   {:label "hat-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8765,6 +8907,7 @@
     :max [419.55 177.65]}}}
  {:outline
   {:label "hat-220",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8799,6 +8942,7 @@
     :max [418.45 209.0]}},
   :base
   {:label "hat-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8834,6 +8978,7 @@
     :max [418.45 209.0]}}}
  {:outline
   {:label "hat-221",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8910,6 +9055,7 @@
     :max [419.95 193.6]}},
   :base
   {:label "hat-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8958,6 +9104,7 @@
     :max [419.95 193.6]}},
   :detail
   {:label "hat-138",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9000,6 +9147,7 @@
     :max [419.3 173.3]}}}
  {:outline
   {:label "hat-222",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9040,6 +9188,7 @@
     :max [419.55 179.75]}},
   :base
   {:label "hat-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9072,6 +9221,7 @@
     :max [419.55 179.75]}},
   :detail
   {:label "hat-139",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9089,6 +9239,7 @@
     :max [403.8 176.75]}}}
  {:outline
   {:label "hat-223",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9139,6 +9290,7 @@
     :max [421.1 214.05]}},
   :base
   {:label "hat-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9169,6 +9321,7 @@
     :max [420.95 210.05]}},
   :detail
   {:label "hat-140",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9204,6 +9357,7 @@
     :max [421.1 214.05]}}}
  {:outline
   {:label "hat-224",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9298,6 +9452,7 @@
     :max [430.65 209.0]}},
   :base
   {:label "hat-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9327,6 +9482,7 @@
     :max [415.55 186.75]}},
   :detail
   {:label "hat-141",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9378,6 +9534,7 @@
     :max [430.65 209.0]}}}
  {:outline
   {:label "hat-225",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9543,6 +9700,7 @@
     :max [443.9 178.5]}},
   :base
   {:label "hat-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9652,6 +9810,7 @@
     :max [428.1 176.8]}},
   :detail
   {:label "hat-142",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9781,6 +9940,7 @@
     :max [443.9 178.5]}}}
  {:outline
   {:label "hat-226",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9864,6 +10024,7 @@
     :max [452.1 178.35]}},
   :base
   {:label "hat-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9890,6 +10051,7 @@
     :max [418.3 178.35]}},
   :detail
   {:label "hat-143",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9930,6 +10092,7 @@
     :max [452.1 175.45]}}}
  {:outline
   {:label "hat-227",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10336,6 +10499,7 @@
     :max [426.05 221.85]}},
   :base
   {:label "hat-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10573,6 +10737,7 @@
     :max [425.2 219.1]}},
   :detail
   {:label "hat-144",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10873,6 +11038,7 @@
     :max [426.05 221.85]}}}
  {:outline
   {:label "hat-228",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11594,6 +11760,7 @@
     :max [422.0 220.35]}},
   :base
   {:label "hat-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11883,6 +12050,7 @@
     :max [422.0 220.35]}},
   :detail
   {:label "hat-145",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12128,6 +12296,7 @@
     :max [420.05 219.85]}}}
  {:outline
   {:label "hat-229",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12206,6 +12375,7 @@
     :max [419.05 200.35]}},
   :base
   {:label "hat-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12315,6 +12485,7 @@
     :max [419.05 200.35]}}}
  {:outline
   {:label "hat-230",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12359,6 +12530,7 @@
     :max [441.75 160.2]}},
   :base
   {:label "hat-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12386,6 +12558,7 @@
     :max [441.75 153.9]}},
   :detail
   {:label "hat-146",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12402,6 +12575,7 @@
     :max [402.5 160.2]}}}
  {:outline
   {:label "hat-231",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12499,6 +12673,7 @@
     :max [418.45 204.15]}},
   :base
   {:label "hat-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12564,6 +12739,7 @@
     :max [418.45 204.15]}},
   :detail
   {:label "hat-147",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12593,6 +12769,7 @@
     :max [414.4 195.2]}}}
  {:outline
   {:label "hat-232",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12821,6 +12998,7 @@
     :max [419.45 207.45]}},
   :base
   {:label "hat-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12941,6 +13119,7 @@
     :max [419.45 207.45]}}}
  {:outline
   {:label "hat-233",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13294,6 +13473,7 @@
     :max [458.3 207.45]}},
   :base
   {:label "hat-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13414,6 +13594,7 @@
     :max [419.45 207.45]}},
   :detail
   {:label "hat-148",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13489,6 +13670,7 @@
     :max [458.3 184.1]}}}
  {:outline
   {:label "hat-234",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13724,6 +13906,7 @@
     :max [447.75 212.45]}},
   :base
   {:label "hat-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13836,6 +14019,7 @@
     :max [440.75 212.45]}},
   :detail
   {:label "hat-149",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -13943,6 +14127,7 @@
     :max [447.75 176.4]}},
   :shadow
   {:label "hat-261",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -14065,6 +14250,7 @@
     :max [440.75 208.4]}}}
  {:outline
   {:label "hat-235",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14460,6 +14646,7 @@
     :max [433.0 218.45]}},
   :base
   {:label "hat-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14650,6 +14837,7 @@
     :max [423.5 218.45]}},
   :detail
   {:label "hat-150",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14790,6 +14978,7 @@
     :max [433.0 208.5]}},
   :shadow
   {:label "hat-262",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14894,6 +15083,7 @@
     :max [409.05 210.55]}}}
  {:outline
   {:label "hat-236",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -14955,6 +15145,7 @@
     :max [420.15 217.7]}},
   :base
   {:label "hat-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14977,6 +15168,7 @@
     :max [420.15 217.7]}},
   :detail
   {:label "hat-151",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14994,6 +15186,7 @@
     :max [409.7 152.0]}}}
  {:outline
   {:label "hat-237",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15066,6 +15259,7 @@
     :max [427.7 183.45]}},
   :base
   {:label "hat-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15103,6 +15297,7 @@
     :max [419.2 180.25]}},
   :detail
   {:label "hat-152",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15154,6 +15349,7 @@
     :max [427.7 183.45]}}}
  {:outline
   {:label "hat-238",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15242,6 +15438,7 @@
     :max [436.4 234.9]}},
   :base
   {:label "hat-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15305,6 +15502,7 @@
     :max [436.4 234.85]}}}
  {:outline
   {:label "hat-239",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15397,6 +15595,7 @@
     :max [422.8 207.35]}},
   :base
   {:label "hat-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15442,6 +15641,7 @@
     :max [419.95 207.35]}},
   :detail
   {:label "hat-153",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15479,6 +15679,7 @@
     :max [422.8 196.45]}}}
  {:outline
   {:label "hat-240",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -15746,6 +15947,7 @@
     :max [431.1 220.25]}},
   :base
   {:label "hat-82",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15882,6 +16084,7 @@
     :max [419.0 216.9]}},
   :detail
   {:label "hat-154",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16003,6 +16206,7 @@
     :max [431.1 220.25]}}}
  {:outline
   {:label "hat-241",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "0.1",
@@ -16389,6 +16593,7 @@
     :max [420.5 214.55]}},
   :base
   {:label "hat-83",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16742,6 +16947,7 @@
     :max [420.5 214.55]}},
   :detail
   {:label "hat-155",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17042,6 +17248,7 @@
     :max [417.85 212.0]}}}
  {:outline
   {:label "hat-242",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17204,6 +17411,7 @@
     :max [419.05 215.85]}},
   :base
   {:label "hat-84",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17323,6 +17531,7 @@
     :max [419.05 215.85]}},
   :detail
   {:label "hat-156",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17402,6 +17611,7 @@
     :max [417.45 212.7]}}}
  {:outline
   {:label "hat-243",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17507,6 +17717,7 @@
     :max [422.25 212.15]}},
   :base
   {:label "hat-85",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17557,6 +17768,7 @@
     :max [422.25 212.15]}},
   :detail
   {:label "hat-157",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17580,6 +17792,7 @@
     :max [414.4 191.6]}}}
  {:outline
   {:label "hat-244",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -17870,6 +18083,7 @@
     :max [430.7 216.75]}},
   :base
   {:label "hat-86",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -17946,6 +18160,7 @@
     :max [430.7 216.75]}},
   :detail
   {:label "hat-158",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18028,6 +18243,7 @@
     :max [430.45 212.8]}},
   :shadow
   {:label "hat-263",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-263-0)"},
@@ -18066,6 +18282,7 @@
       {:stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-245",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18373,6 +18590,7 @@
     :max [422.9 217.55]}},
   :base
   {:label "hat-87",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18588,6 +18806,7 @@
     :max [422.9 216.8]}},
   :detail
   {:label "hat-159",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18776,6 +18995,7 @@
     :max [421.3 217.55]}}}
  {:outline
   {:label "hat-246",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18897,6 +19117,7 @@
     :max [440.1 250.05]}},
   :base
   {:label "hat-88",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -18976,6 +19197,7 @@
     :max [440.1 250.05]}},
   :detail
   {:label "hat-160",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19023,6 +19245,7 @@
     :max [429.0 222.85]}},
   :shadow
   {:label "hat-264",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-264-0)"},
@@ -19065,6 +19288,7 @@
       {:stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-247",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19098,6 +19322,7 @@
     :max [423.55 207.65]}},
   :base
   {:label "hat-89",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19126,6 +19351,7 @@
     :max [423.55 207.65]}},
   :shadow
   {:label "hat-264",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-264-0)"},
@@ -19168,6 +19394,7 @@
       {:stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-248",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19326,6 +19553,7 @@
     :max [426.9 214.85]}},
   :base
   {:label "hat-90",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19394,6 +19622,7 @@
     :max [426.9 213.6]}},
   :detail
   {:label "hat-161",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19472,6 +19701,7 @@
     :max [426.45 214.85]}}}
  {:outline
   {:label "hat-249",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19553,6 +19783,7 @@
     :max [422.35 193.55]}},
   :base
   {:label "hat-91",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19592,6 +19823,7 @@
     :max [422.35 191.25]}},
   :detail
   {:label "hat-162",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19632,6 +19864,7 @@
     :max [421.8 193.55]}}}
  {:outline
   {:label "hat-250",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -19816,6 +20049,7 @@
     :max [423.9 206.8]}},
   :base
   {:label "hat-92",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19905,6 +20139,7 @@
     :max [423.9 206.8]}},
   :detail
   {:label "hat-163",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19953,6 +20188,7 @@
     :max [419.4 193.75]}}}
  {:outline
   {:label "hat-251",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -20073,6 +20309,7 @@
     :max [426.85 207.3]}},
   :base
   {:label "hat-93",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20144,6 +20381,7 @@
     :max [426.85 206.0]}},
   :detail
   {:label "hat-164",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20177,6 +20415,7 @@
     :max [426.1 207.3]}},
   :shadow
   {:label "hat-265",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-265-0)"},
@@ -20220,6 +20459,7 @@
       {:stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-252",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -20610,6 +20850,7 @@
     :max [426.75 217.85]}},
   :base
   {:label "hat-94",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20737,6 +20978,7 @@
     :max [424.45 193.35]}},
   :detail
   {:label "hat-165",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20874,6 +21116,7 @@
     :max [418.35 217.85]}},
   :shadow
   {:label "hat-266",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#999999"},
      :path
@@ -21057,6 +21300,7 @@
     :max [426.75 215.65]}}}
  {:outline
   {:label "hat-253",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21203,6 +21447,7 @@
     :max [425.05 215.8]}},
   :base
   {:label "hat-95",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21308,6 +21553,7 @@
     :max [425.05 215.8]}}}
  {:outline
   {:label "hat-254",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21757,6 +22003,7 @@
     :max [452.5 219.25]}},
   :base
   {:label "hat-96",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21903,6 +22150,7 @@
     :max [438.75 218.0]}},
   :detail
   {:label "hat-166",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22168,6 +22416,7 @@
     :max [452.5 219.25]}},
   :shadow
   {:label "hat-267",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-267-0)"},
@@ -22500,6 +22749,7 @@
       {:stop-color "#ffffff", :offset "1.0"})}]}}
  {:outline
   {:label "hat-255",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22836,6 +23086,7 @@
     :max [439.7 221.0]}},
   :base
   {:label "hat-97",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22947,6 +23198,7 @@
     :max [432.25 219.5]}},
   :detail
   {:label "hat-167",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23122,6 +23374,7 @@
     :max [439.7 221.0]}},
   :shadow
   {:label "hat-268",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#hat-268-0)"},

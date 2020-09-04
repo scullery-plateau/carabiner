@@ -1,5 +1,6 @@
 [{:outline
   {:label "gloves-74",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21,6 +22,7 @@
     :max [481.45 361.9]}}}
  {:outline
   {:label "gloves-75",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -79,6 +81,7 @@
     :max [481.45 392.7]}},
   :base
   {:label "gloves-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -109,6 +112,7 @@
     :max [481.45 392.7]}}}
  {:outline
   {:label "gloves-76",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -169,6 +173,7 @@
     :max [481.45 392.7]}},
   :base
   {:label "gloves-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -195,6 +200,7 @@
     :max [481.45 392.7]}}}
  {:outline
   {:label "gloves-77",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -289,6 +295,7 @@
     :max [481.45 400.4]}},
   :base
   {:label "gloves-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -337,6 +344,7 @@
     :max [481.45 400.4]}}}
  {:outline
   {:label "gloves-78",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -444,6 +452,7 @@
     :max [481.45 401.4]}},
   :base
   {:label "gloves-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -518,6 +527,7 @@
     :max [481.45 401.4]}}}
  {:outline
   {:label "gloves-79",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -601,6 +611,7 @@
     :max [481.45 404.7]}},
   :base
   {:label "gloves-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -655,6 +666,7 @@
     :max [481.45 404.7]}}}
  {:outline
   {:label "gloves-80",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -718,6 +730,7 @@
     :max [481.45 386.0]}},
   :base
   {:label "gloves-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -755,6 +768,7 @@
     :max [481.45 386.0]}}}
  {:outline
   {:label "gloves-81",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -807,6 +821,7 @@
     :max [481.45 386.0]}},
   :base
   {:label "gloves-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -843,6 +858,7 @@
     :max [481.45 386.0]}}}
  {:outline
   {:label "gloves-82",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -909,6 +925,7 @@
     :max [481.45 388.8]}},
   :base
   {:label "gloves-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -947,6 +964,7 @@
     :max [481.45 388.8]}}}
  {:outline
   {:label "gloves-83",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1019,6 +1037,7 @@
     :max [481.45 388.45]}},
   :base
   {:label "gloves-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1073,6 +1092,7 @@
     :max [481.45 388.45]}}}
  {:outline
   {:label "gloves-84",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1096,6 +1116,7 @@
     :max [477.2 377.1]}},
   :base
   {:label "gloves-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1113,6 +1134,7 @@
     :max [477.2 377.1]}}}
  {:outline
   {:label "gloves-85",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1157,6 +1179,7 @@
     :max [481.45 375.95]}},
   :base
   {:label "gloves-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1179,6 +1202,7 @@
     :max [481.45 375.95]}}}
  {:outline
   {:label "gloves-86",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1215,6 +1239,7 @@
     :max [485.7 361.6]}},
   :base
   {:label "gloves-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1239,6 +1264,7 @@
     :max [485.7 361.9]}}}
  {:outline
   {:label "gloves-87",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1279,6 +1305,7 @@
     :max [489.65 349.5]}},
   :base
   {:label "gloves-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1310,6 +1337,7 @@
     :max [489.65 349.5]}}}
  {:outline
   {:label "gloves-88",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1350,6 +1378,7 @@
     :max [492.8 335.9]}},
   :base
   {:label "gloves-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1379,6 +1408,7 @@
     :max [492.8 335.9]}}}
  {:outline
   {:label "gloves-89",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1420,6 +1450,7 @@
     :max [492.8 348.25]}},
   :base
   {:label "gloves-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1451,6 +1482,7 @@
     :max [492.8 348.25]}}}
  {:outline
   {:label "gloves-90",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1499,6 +1531,7 @@
     :max [492.8 348.25]}},
   :base
   {:label "gloves-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1539,6 +1572,7 @@
     :max [492.8 348.25]}}}
  {:outline
   {:label "gloves-91",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1588,6 +1622,7 @@
     :max [492.8 321.4]}},
   :base
   {:label "gloves-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1615,6 +1650,7 @@
     :max [492.8 321.4]}}}
  {:outline
   {:label "gloves-92",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1667,6 +1703,7 @@
     :max [487.2 303.95]}},
   :base
   {:label "gloves-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1699,6 +1736,7 @@
     :max [487.2 303.95]}}}
  {:outline
   {:label "gloves-93",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1739,6 +1777,7 @@
     :max [481.95 293.1]}},
   :base
   {:label "gloves-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1770,6 +1809,7 @@
     :max [481.95 293.1]}}}
  {:outline
   {:label "gloves-94",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1825,6 +1865,7 @@
     :max [479.85 280.65]}},
   :base
   {:label "gloves-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1859,6 +1900,7 @@
     :max [479.85 280.65]}}}
  {:outline
   {:label "gloves-95",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1897,6 +1939,7 @@
     :max [489.65 361.6]}},
   :base
   {:label "gloves-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1933,6 +1976,7 @@
     :max [489.65 361.9]}}}
  {:outline
   {:label "gloves-96",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1977,6 +2021,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2022,6 +2067,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-97",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2064,6 +2110,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2104,6 +2151,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2166,6 +2214,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2222,6 +2271,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-99",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2295,6 +2345,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2353,6 +2404,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-100",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2442,6 +2494,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2513,6 +2566,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-101",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2607,6 +2661,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2685,6 +2740,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-102",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2794,6 +2850,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "gloves-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2881,6 +2938,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "gloves-103",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2918,6 +2976,7 @@
     :max [499.9 362.15]}},
   :base
   {:label "gloves-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2950,6 +3009,7 @@
     :max [499.9 362.15]}}}
  {:outline
   {:label "gloves-104",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2967,6 +3027,7 @@
     :max [330.9 361.9]}}}
  {:outline
   {:label "gloves-105",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3008,6 +3069,7 @@
     :max [349.35 392.7]}},
   :base
   {:label "gloves-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3029,6 +3091,7 @@
     :max [349.35 392.7]}}}
  {:outline
   {:label "gloves-106",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3071,6 +3134,7 @@
     :max [352.6 392.7]}},
   :base
   {:label "gloves-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3090,6 +3154,7 @@
     :max [352.6 392.7]}}}
  {:outline
   {:label "gloves-107",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3151,6 +3216,7 @@
     :max [352.6 400.4]}},
   :base
   {:label "gloves-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3181,6 +3247,7 @@
     :max [352.6 400.4]}}}
  {:outline
   {:label "gloves-108",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3251,6 +3318,7 @@
     :max [356.25 401.4]}},
   :base
   {:label "gloves-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3294,6 +3362,7 @@
     :max [356.25 401.4]}}}
  {:outline
   {:label "gloves-109",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3350,6 +3419,7 @@
     :max [356.25 404.7]}},
   :base
   {:label "gloves-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3383,6 +3453,7 @@
     :max [356.25 404.7]}}}
  {:outline
   {:label "gloves-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3427,6 +3498,7 @@
     :max [348.2 386.0]}},
   :base
   {:label "gloves-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3451,6 +3523,7 @@
     :max [348.2 386.0]}}}
  {:outline
   {:label "gloves-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3490,6 +3563,7 @@
     :max [349.7 386.0]}},
   :base
   {:label "gloves-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3513,6 +3587,7 @@
     :max [349.7 386.0]}}}
  {:outline
   {:label "gloves-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3559,6 +3634,7 @@
     :max [349.7 388.8]}},
   :base
   {:label "gloves-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3583,6 +3659,7 @@
     :max [349.7 388.8]}}}
  {:outline
   {:label "gloves-113",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3632,6 +3709,7 @@
     :max [349.7 388.45]}},
   :base
   {:label "gloves-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3664,6 +3742,7 @@
     :max [349.7 388.45]}}}
  {:outline
   {:label "gloves-114",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3688,6 +3767,7 @@
     :max [334.65 377.1]}},
   :base
   {:label "gloves-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3702,6 +3782,7 @@
     :max [334.65 377.1]}}}
  {:outline
   {:label "gloves-115",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3736,6 +3817,7 @@
     :max [338.55 375.95]}},
   :base
   {:label "gloves-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3756,6 +3838,7 @@
     :max [338.55 375.95]}}}
  {:outline
   {:label "gloves-116",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3784,6 +3867,7 @@
     :max [330.9 361.6]}},
   :base
   {:label "gloves-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3803,6 +3887,7 @@
     :max [330.9 361.9]}}}
  {:outline
   {:label "gloves-117",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3835,6 +3920,7 @@
     :max [332.65 349.5]}},
   :base
   {:label "gloves-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3856,6 +3942,7 @@
     :max [332.65 349.5]}}}
  {:outline
   {:label "gloves-118",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3888,6 +3975,7 @@
     :max [337.9 335.9]}},
   :base
   {:label "gloves-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3908,6 +3996,7 @@
     :max [337.9 335.9]}}}
  {:outline
   {:label "gloves-119",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3940,6 +4029,7 @@
     :max [332.65 348.25]}},
   :base
   {:label "gloves-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3961,6 +4051,7 @@
     :max [332.65 348.25]}}}
  {:outline
   {:label "gloves-120",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3997,6 +4088,7 @@
     :max [332.65 348.25]}},
   :base
   {:label "gloves-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4024,6 +4116,7 @@
     :max [332.65 348.25]}}}
  {:outline
   {:label "gloves-121",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4059,6 +4152,7 @@
     :max [337.9 321.4]}},
   :base
   {:label "gloves-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4081,6 +4175,7 @@
     :max [337.9 321.4]}}}
  {:outline
   {:label "gloves-122",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4121,6 +4216,7 @@
     :max [342.15 303.75]}},
   :base
   {:label "gloves-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4143,6 +4239,7 @@
     :max [342.15 303.75]}}}
  {:outline
   {:label "gloves-123",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4175,6 +4272,7 @@
     :max [349.7 293.1]}},
   :base
   {:label "gloves-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4196,6 +4294,7 @@
     :max [349.7 293.1]}}}
  {:outline
   {:label "gloves-124",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4236,6 +4335,7 @@
     :max [355.2 280.65]}},
   :base
   {:label "gloves-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4259,6 +4359,7 @@
     :max [355.2 280.65]}}}
  {:outline
   {:label "gloves-125",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4288,6 +4389,7 @@
     :max [332.65 361.6]}},
   :base
   {:label "gloves-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4311,6 +4413,7 @@
     :max [332.65 361.9]}}}
  {:outline
   {:label "gloves-126",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4345,6 +4448,7 @@
     :max [337.9 361.6]}},
   :base
   {:label "gloves-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4373,6 +4477,7 @@
     :max [337.9 361.9]}}}
  {:outline
   {:label "gloves-127",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4406,6 +4511,7 @@
     :max [332.65 361.6]}},
   :base
   {:label "gloves-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4431,6 +4537,7 @@
     :max [332.65 361.9]}}}
  {:outline
   {:label "gloves-128",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4477,6 +4584,7 @@
     :max [337.9 361.6]}},
   :base
   {:label "gloves-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4509,6 +4617,7 @@
     :max [337.9 361.9]}}}
  {:outline
   {:label "gloves-129",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4565,6 +4674,7 @@
     :max [342.15 361.6]}},
   :base
   {:label "gloves-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4603,6 +4713,7 @@
     :max [342.15 361.9]}}}
  {:outline
   {:label "gloves-130",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4665,6 +4776,7 @@
     :max [349.7 361.6]}},
   :base
   {:label "gloves-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4704,6 +4816,7 @@
     :max [349.7 361.9]}}}
  {:outline
   {:label "gloves-131",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4763,6 +4876,7 @@
     :max [355.2 361.6]}},
   :base
   {:label "gloves-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4808,6 +4922,7 @@
     :max [355.2 361.9]}}}
  {:outline
   {:label "gloves-132",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4884,6 +4999,7 @@
     :max [355.2 361.6]}},
   :base
   {:label "gloves-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4936,6 +5052,7 @@
     :max [355.2 361.9]}}}
  {:outline
   {:label "gloves-133",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4964,6 +5081,7 @@
     :max [318.2 362.15]}},
   :base
   {:label "gloves-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

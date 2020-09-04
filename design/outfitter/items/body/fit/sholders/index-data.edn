@@ -1,5 +1,6 @@
 [{:outline
   {:label "sholders-82",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -36,6 +37,7 @@
     :max [488.75 272.05]}},
   :base
   {:label "sholders-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -67,6 +69,7 @@
     :max [488.75 272.05]}}}
  {:outline
   {:label "sholders-83",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -99,6 +102,7 @@
     :max [476.6 267.6]}},
   :base
   {:label "sholders-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -126,6 +130,7 @@
     :max [476.6 267.6]}}}
  {:outline
   {:label "sholders-84",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -172,6 +177,7 @@
     :max [492.3 272.6]}},
   :base
   {:label "sholders-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -205,6 +211,7 @@
     :max [492.3 272.6]}},
   :detail
   {:label "sholders-53",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -226,6 +233,7 @@
     :max [465.45 271.85]}}}
  {:outline
   {:label "sholders-85",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -318,6 +326,7 @@
     :max [501.5 262.25]}},
   :base
   {:label "sholders-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -389,6 +398,7 @@
     :max [501.5 262.25]}},
   :detail
   {:label "sholders-54",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -436,6 +446,7 @@
     :max [443.7 251.4]}}}
  {:outline
   {:label "sholders-86",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -547,6 +558,7 @@
     :max [497.9 281.5]}},
   :base
   {:label "sholders-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -592,6 +604,7 @@
     :max [497.9 281.5]}},
   :detail
   {:label "sholders-55",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -619,6 +632,7 @@
     :max [461.0 265.8]}}}
  {:outline
   {:label "sholders-87",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -689,6 +703,7 @@
     :max [497.5 268.0]}},
   :base
   {:label "sholders-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -718,6 +733,7 @@
     :max [494.25 259.55]}},
   :detail
   {:label "sholders-56",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -760,6 +776,7 @@
     :max [497.5 268.0]}}}
  {:outline
   {:label "sholders-88",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -851,6 +868,7 @@
     :max [496.7 283.6]}},
   :base
   {:label "sholders-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -909,6 +927,7 @@
     :max [496.7 283.6]}}}
  {:outline
   {:label "sholders-89",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -969,6 +988,7 @@
     :max [499.4 285.55]}},
   :base
   {:label "sholders-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -991,6 +1011,7 @@
     :max [499.4 265.35]}},
   :detail
   {:label "sholders-57",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1017,6 +1038,7 @@
     :max [494.9 285.55]}}}
  {:outline
   {:label "sholders-90",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1081,6 +1103,7 @@
     :max [490.0 302.0]}},
   :base
   {:label "sholders-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1109,6 +1132,7 @@
     :max [487.4 287.05]}},
   :detail
   {:label "sholders-58",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1130,6 +1154,7 @@
     :max [490.0 302.0]}}}
  {:outline
   {:label "sholders-91",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1419,6 +1444,7 @@
     :max [488.35 274.9]}},
   :base
   {:label "sholders-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1501,6 +1527,7 @@
     :max [488.35 274.9]}},
   :shadow
   {:label "sholders-121",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1600,6 +1627,7 @@
     :max [484.9 266.15]}}}
  {:outline
   {:label "sholders-92",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1704,6 +1732,7 @@
     :max [493.0 272.5]}},
   :base
   {:label "sholders-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1746,6 +1775,7 @@
     :max [493.0 272.5]}},
   :detail
   {:label "sholders-59",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1779,6 +1809,7 @@
     :max [459.7 260.2]}}}
  {:outline
   {:label "sholders-93",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1867,6 +1898,7 @@
     :max [489.7 280.8]}},
   :base
   {:label "sholders-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1935,6 +1967,7 @@
     :max [489.7 280.8]}},
   :detail
   {:label "sholders-60",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1971,6 +2004,7 @@
     :max [484.35 269.05]}}}
  {:outline
   {:label "sholders-94",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2162,6 +2196,7 @@
     :max [498.2 269.15]}},
   :base
   {:label "sholders-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2310,6 +2345,7 @@
     :max [498.2 269.15]}},
   :detail
   {:label "sholders-61",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2425,6 +2461,7 @@
     :max [497.5 264.65]}}}
  {:outline
   {:label "sholders-95",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2541,6 +2578,7 @@
     :max [494.35 261.85]}},
   :base
   {:label "sholders-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2584,6 +2622,7 @@
     :max [470.35 247.35]}},
   :detail
   {:label "sholders-62",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2663,6 +2702,7 @@
     :max [494.35 261.85]}}}
  {:outline
   {:label "sholders-96",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2986,6 +3026,7 @@
     :max [514.8 261.6]}},
   :base
   {:label "sholders-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3173,6 +3214,7 @@
     :max [514.8 261.6]}},
   :detail
   {:label "sholders-63",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3297,6 +3339,7 @@
     :max [514.2 227.7]}}}
  {:outline
   {:label "sholders-97",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3531,6 +3574,7 @@
     :max [477.85 250.15]}},
   :base
   {:label "sholders-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3645,6 +3689,7 @@
     :max [477.85 240.15]}},
   :detail
   {:label "sholders-64",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3798,6 +3843,7 @@
     :max [477.85 250.15]}}}
  {:outline
   {:label "sholders-98",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3910,6 +3956,7 @@
     :max [489.2 283.65]}},
   :base
   {:label "sholders-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4017,6 +4064,7 @@
     :max [489.2 283.65]}}}
  {:outline
   {:label "sholders-99",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5059,6 +5107,7 @@
     :max [559.35 230.1]}},
   :base
   {:label "sholders-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5441,6 +5490,7 @@
     :max [559.35 230.1]}},
   :detail
   {:label "sholders-65",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5844,6 +5894,7 @@
     :max [548.45 222.35]}}}
  {:outline
   {:label "sholders-100",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6499,6 +6550,7 @@
     :max [491.25 250.35]}},
   :base
   {:label "sholders-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6631,6 +6683,7 @@
     :max [491.25 250.35]}},
   :detail
   {:label "sholders-66",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6777,6 +6830,7 @@
     :max [488.6 222.55]}}}
  {:outline
   {:label "sholders-101",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6803,6 +6857,7 @@
     :max [359.8 272.05]}},
   :base
   {:label "sholders-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6824,6 +6879,7 @@
     :max [359.8 272.05]}}}
  {:outline
   {:label "sholders-102",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6848,6 +6904,7 @@
     :max [355.2 267.6]}},
   :base
   {:label "sholders-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6867,6 +6924,7 @@
     :max [355.2 267.6]}}}
  {:outline
   {:label "sholders-103",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6902,6 +6960,7 @@
     :max [369.45 272.6]}},
   :base
   {:label "sholders-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6924,6 +6983,7 @@
     :max [358.1 272.6]}},
   :detail
   {:label "sholders-67",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6944,6 +7004,7 @@
     :max [369.45 271.85]}}}
  {:outline
   {:label "sholders-104",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7003,6 +7064,7 @@
     :max [369.1 262.25]}},
   :base
   {:label "sholders-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7045,6 +7107,7 @@
     :max [369.1 262.25]}},
   :detail
   {:label "sholders-68",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7074,6 +7137,7 @@
     :max [362.3 251.45]}}}
  {:outline
   {:label "sholders-105",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7145,6 +7209,7 @@
     :max [368.1 281.5]}},
   :base
   {:label "sholders-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7173,6 +7238,7 @@
     :max [360.05 281.5]}},
   :detail
   {:label "sholders-69",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7194,6 +7260,7 @@
     :max [368.1 265.85]}}}
  {:outline
   {:label "sholders-106",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7238,6 +7305,7 @@
     :max [365.85 268.0]}},
   :base
   {:label "sholders-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7256,6 +7324,7 @@
     :max [357.7 259.6]}},
   :detail
   {:label "sholders-70",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7284,6 +7353,7 @@
     :max [365.85 268.0]}}}
  {:outline
   {:label "sholders-107",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7344,6 +7414,7 @@
     :max [369.85 283.6]}},
   :base
   {:label "sholders-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7378,6 +7449,7 @@
     :max [369.85 283.6]}}}
  {:outline
   {:label "sholders-108",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7418,6 +7490,7 @@
     :max [369.25 285.55]}},
   :base
   {:label "sholders-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7434,6 +7507,7 @@
     :max [369.25 265.4]}},
   :detail
   {:label "sholders-71",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7454,6 +7528,7 @@
     :max [350.6 285.55]}}}
  {:outline
   {:label "sholders-109",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7500,6 +7575,7 @@
     :max [390.05 302.0]}},
   :base
   {:label "sholders-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7522,6 +7598,7 @@
     :max [390.05 287.05]}},
   :detail
   {:label "sholders-72",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7538,6 +7615,7 @@
     :max [350.8 302.0]}}}
  {:outline
   {:label "sholders-110",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7697,6 +7775,7 @@
     :max [362.65 274.9]}},
   :base
   {:label "sholders-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7745,6 +7824,7 @@
     :max [362.65 274.9]}},
   :shadow
   {:label "sholders-122",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -7802,6 +7882,7 @@
     :max [362.5 266.15]}}}
  {:outline
   {:label "sholders-111",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7864,6 +7945,7 @@
     :max [367.3 272.5]}},
   :base
   {:label "sholders-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7890,6 +7972,7 @@
     :max [359.35 272.5]}},
   :detail
   {:label "sholders-73",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7912,6 +7995,7 @@
     :max [367.3 260.2]}}}
  {:outline
   {:label "sholders-112",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7973,6 +8057,7 @@
     :max [366.5 280.8]}},
   :base
   {:label "sholders-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8019,6 +8104,7 @@
     :max [366.5 280.8]}},
   :detail
   {:label "sholders-74",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8046,6 +8132,7 @@
     :max [361.0 269.05]}}}
  {:outline
   {:label "sholders-113",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8160,6 +8247,7 @@
     :max [364.35 269.15]}},
   :base
   {:label "sholders-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8244,6 +8332,7 @@
     :max [364.35 269.15]}},
   :detail
   {:label "sholders-75",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8307,6 +8396,7 @@
     :max [359.55 264.65]}}}
  {:outline
   {:label "sholders-114",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8378,6 +8468,7 @@
     :max [371.95 261.85]}},
   :base
   {:label "sholders-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8405,6 +8496,7 @@
     :max [371.95 247.35]}},
   :detail
   {:label "sholders-76",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8450,6 +8542,7 @@
     :max [343.4 261.85]}}}
  {:outline
   {:label "sholders-115",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8625,6 +8718,7 @@
     :max [381.3 261.6]}},
   :base
   {:label "sholders-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8725,6 +8819,7 @@
     :max [381.3 261.6]}},
   :detail
   {:label "sholders-77",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8790,6 +8885,7 @@
     :max [348.1 227.7]}}}
  {:outline
   {:label "sholders-116",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8922,6 +9018,7 @@
     :max [376.25 250.15]}},
   :base
   {:label "sholders-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8985,6 +9082,7 @@
     :max [376.25 240.15]}},
   :detail
   {:label "sholders-78",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9067,6 +9165,7 @@
     :max [366.15 250.15]}}}
  {:outline
   {:label "sholders-117",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9131,6 +9230,7 @@
     :max [359.0 283.65]}},
   :base
   {:label "sholders-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9190,6 +9290,7 @@
     :max [359.0 283.65]}}}
  {:outline
   {:label "sholders-118",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9726,6 +9827,7 @@
     :max [375.6 230.1]}},
   :base
   {:label "sholders-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9926,6 +10028,7 @@
     :max [375.6 230.1]}},
   :detail
   {:label "sholders-79",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10132,6 +10235,7 @@
     :max [372.85 222.35]}}}
  {:outline
   {:label "sholders-119",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10464,6 +10568,7 @@
     :max [372.7 250.35]}},
   :base
   {:label "sholders-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10534,6 +10639,7 @@
     :max [372.7 250.35]}},
   :detail
   {:label "sholders-80",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

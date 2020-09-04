@@ -1,5 +1,6 @@
 [{:outline
   {:label "arm-44",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -59,6 +60,7 @@
     :max [355.2 392.7]}},
   :base
   {:label "arm-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -95,6 +97,7 @@
     :max [355.2 392.7]}}}
  {:outline
   {:label "arm-45",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -155,6 +158,7 @@
     :max [355.2 392.7]}},
   :base
   {:label "arm-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -189,6 +193,7 @@
     :max [355.2 392.7]}}}
  {:outline
   {:label "arm-46",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -270,6 +275,7 @@
     :max [355.2 400.4]}},
   :base
   {:label "arm-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -321,6 +327,7 @@
     :max [355.2 400.4]}}}
  {:outline
   {:label "arm-47",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -415,6 +422,7 @@
     :max [356.25 401.4]}},
   :base
   {:label "arm-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -479,6 +487,7 @@
     :max [356.25 401.4]}}}
  {:outline
   {:label "arm-48",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -623,6 +632,7 @@
     :max [359.25 409.75]}},
   :base
   {:label "arm-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -706,6 +716,7 @@
     :max [355.2 401.4]}},
   :detail
   {:label "arm-35",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -745,6 +756,7 @@
     :max [359.25 409.75]}}}
  {:outline
   {:label "arm-49",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -825,6 +837,7 @@
     :max [356.25 404.7]}},
   :base
   {:label "arm-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -879,6 +892,7 @@
     :max [356.25 404.7]}}}
  {:outline
   {:label "arm-50",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1029,6 +1043,7 @@
     :max [351.75 390.6]}},
   :base
   {:label "arm-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1112,6 +1127,7 @@
     :max [351.75 390.6]}},
   :shadow
   {:label "arm-66",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1199,6 +1215,7 @@
     :max [349.4 390.6]}}}
  {:outline
   {:label "arm-51",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1333,6 +1350,7 @@
     :max [354.55 392.7]}},
   :base
   {:label "arm-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1410,6 +1428,7 @@
     :max [354.55 390.8]}},
   :detail
   {:label "arm-36",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1468,6 +1487,7 @@
     :max [353.8 392.7]}}}
  {:outline
   {:label "arm-53",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1528,6 +1548,7 @@
     :max [349.4 361.6]}},
   :base
   {:label "arm-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1564,6 +1585,7 @@
     :max [349.4 363.45]}}}
  {:outline
   {:label "arm-54",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1693,6 +1715,7 @@
     :max [349.55 355.0]}},
   :base
   {:label "arm-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1764,6 +1787,7 @@
     :max [349.55 355.0]}}}
  {:outline
   {:label "arm-55",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1838,6 +1862,7 @@
     :max [355.2 378.8]}},
   :base
   {:label "arm-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1893,6 +1918,7 @@
     :max [355.2 378.8]}}}
  {:outline
   {:label "arm-56",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1957,6 +1983,7 @@
     :max [355.2 339.9]}},
   :base
   {:label "arm-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1988,6 +2015,7 @@
     :max [355.2 339.9]}}}
  {:outline
   {:label "arm-57",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2068,6 +2096,7 @@
     :max [353.95 371.3]}},
   :base
   {:label "arm-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2131,6 +2160,7 @@
     :max [353.95 371.3]}}}
  {:outline
   {:label "arm-58",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2465,6 +2495,7 @@
     :max [349.4 373.15]}},
   :base
   {:label "arm-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2764,6 +2795,7 @@
     :max [349.4 373.15]}}}
  {:outline
   {:label "arm-59",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2826,6 +2858,7 @@
     :max [355.2 458.55]}},
   :base
   {:label "arm-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2872,6 +2905,7 @@
     :max [355.2 458.55]}},
   :detail
   {:label "arm-37",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2902,6 +2936,7 @@
     :max [340.95 456.85]}}}
  {:outline
   {:label "arm-60",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2965,6 +3000,7 @@
     :max [362.95 423.75]}},
   :base
   {:label "arm-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3001,6 +3037,7 @@
     :max [355.2 360.75]}},
   :detail
   {:label "arm-38",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3027,6 +3064,7 @@
     :max [362.95 423.75]}}}
  {:outline
   {:label "arm-61",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3461,6 +3499,7 @@
     :max [421.05 541.25]}},
   :base
   {:label "arm-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3623,6 +3662,7 @@
     :max [421.05 541.25]}},
   :detail
   {:label "arm-39",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3685,6 +3725,7 @@
     :max [414.25 534.05]}}}
  {:outline
   {:label "arm-62",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3941,6 +3982,7 @@
     :max [355.2 392.7]}},
   :base
   {:label "arm-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4034,6 +4076,7 @@
     :max [349.35 390.8]}},
   :detail
   {:label "arm-40",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4148,6 +4191,7 @@
     :max [355.2 392.7]}}}
  {:outline
   {:label "arm-63",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4415,6 +4459,7 @@
     :max [372.85 433.45]}},
   :base
   {:label "arm-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4555,6 +4600,7 @@
     :max [372.85 433.45]}},
   :detail
   {:label "arm-41",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4596,6 +4642,7 @@
     :max [339.45 383.1]}}}
  {:outline
   {:label "arm-64",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5001,6 +5048,7 @@
     :max [372.85 478.25]}},
   :base
   {:label "arm-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5167,6 +5215,7 @@
     :max [372.85 478.25]}},
   :detail
   {:label "arm-42",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5306,6 +5355,7 @@
     :max [354.3 469.3]}}}
  {:outline
   {:label "arm-52",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",

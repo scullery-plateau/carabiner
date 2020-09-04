@@ -1,5 +1,6 @@
 [{:outline
   {:label "head-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -38,6 +39,7 @@
     :max [418.5 212.25]}},
   :base
   {:label "head-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -70,6 +72,7 @@
     :max [418.5 212.25]}}}
  {:outline
   {:label "head-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -112,6 +115,7 @@
     :max [418.9 212.25]}},
   :base
   {:label "head-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -149,6 +153,7 @@
     :max [418.9 212.25]}}}
  {:outline
   {:label "head-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -186,6 +191,7 @@
     :max [419.5 214.05]}},
   :base
   {:label "head-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -218,6 +224,7 @@
     :max [419.5 214.05]}}}
  {:outline
   {:label "head-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -242,6 +249,7 @@
     :max [418.75 213.55]}},
   :base
   {:label "head-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -261,6 +269,7 @@
     :max [418.75 213.55]}}}
  {:outline
   {:label "head-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -296,6 +305,7 @@
     :max [418.5 214.65]}},
   :base
   {:label "head-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -326,6 +336,7 @@
     :max [418.5 214.65]}}}
  {:outline
   {:label "head-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -431,6 +442,7 @@
     :max [418.5 212.25]}},
   :base
   {:label "head-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -504,6 +516,7 @@
     :max [418.5 212.25]}},
   :detail
   {:label "head-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -555,6 +568,7 @@
     :max [414.05 196.85]}},
   :shadow
   {:label "head-236",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -607,6 +621,7 @@
     :max [414.05 196.85]}}}
  {:outline
   {:label "head-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -708,6 +723,7 @@
     :max [418.9 212.25]}},
   :base
   {:label "head-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -776,6 +792,7 @@
     :max [418.9 212.25]}},
   :detail
   {:label "head-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -827,6 +844,7 @@
     :max [414.05 196.85]}},
   :shadow
   {:label "head-236",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -879,6 +897,7 @@
     :max [414.05 196.85]}}}
  {:outline
   {:label "head-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -980,6 +999,7 @@
     :max [419.5 214.05]}},
   :base
   {:label "head-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1047,6 +1067,7 @@
     :max [419.5 214.05]}},
   :detail
   {:label "head-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1098,6 +1119,7 @@
     :max [414.05 196.85]}},
   :shadow
   {:label "head-236",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1150,6 +1172,7 @@
     :max [414.05 196.85]}}}
  {:outline
   {:label "head-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1238,6 +1261,7 @@
     :max [418.75 213.55]}},
   :base
   {:label "head-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1292,6 +1316,7 @@
     :max [418.75 213.55]}},
   :detail
   {:label "head-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1343,6 +1368,7 @@
     :max [414.05 196.85]}},
   :shadow
   {:label "head-236",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1395,6 +1421,7 @@
     :max [414.05 196.85]}}}
  {:outline
   {:label "head-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1501,6 +1528,7 @@
     :max [418.5 214.65]}},
   :base
   {:label "head-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1573,6 +1601,7 @@
     :max [418.5 214.65]}},
   :detail
   {:label "head-90",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1624,6 +1653,7 @@
     :max [414.05 196.85]}},
   :shadow
   {:label "head-236",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -1676,6 +1706,7 @@
     :max [414.05 196.85]}}}
  {:outline
   {:label "head-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1740,6 +1771,7 @@
     :max [418.5 212.25]}},
   :base
   {:label "head-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1770,6 +1802,7 @@
     :max [418.5 212.25]}},
   :detail
   {:label "head-91",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1799,6 +1832,7 @@
     :max [417.65 209.25]}}}
  {:outline
   {:label "head-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1860,6 +1894,7 @@
     :max [418.9 212.25]}},
   :base
   {:label "head-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1902,6 +1937,7 @@
     :max [418.9 212.25]}},
   :detail
   {:label "head-92",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1929,6 +1965,7 @@
     :max [416.1 206.9]}}}
  {:outline
   {:label "head-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1986,6 +2023,7 @@
     :max [419.5 214.05]}},
   :base
   {:label "head-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2010,6 +2048,7 @@
     :max [418.5 214.05]}},
   :detail
   {:label "head-93",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2036,6 +2075,7 @@
     :max [419.5 212.0]}}}
  {:outline
   {:label "head-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2080,6 +2120,7 @@
     :max [418.75 213.55]}},
   :base
   {:label "head-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2104,6 +2145,7 @@
     :max [418.15 213.55]}},
   :detail
   {:label "head-94",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2125,6 +2167,7 @@
     :max [418.75 213.55]}}}
  {:outline
   {:label "head-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2188,6 +2231,7 @@
     :max [418.5 214.65]}},
   :base
   {:label "head-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2216,6 +2260,7 @@
     :max [418.5 214.65]}},
   :detail
   {:label "head-95",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2237,6 +2282,7 @@
     :max [417.65 209.8]}}}
  {:outline
   {:label "head-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2258,6 +2304,7 @@
     :max [417.7 197.7]}}}
  {:outline
   {:label "head-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2284,6 +2331,7 @@
     :max [413.7 203.0]}}}
  {:outline
   {:label "head-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2305,6 +2353,7 @@
     :max [409.2 200.55]}}}
  {:outline
   {:label "head-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2326,6 +2375,7 @@
     :max [409.4 203.85]}}}
  {:outline
   {:label "head-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2351,6 +2401,7 @@
     :max [409.8 201.95]}}}
  {:outline
   {:label "head-164",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2376,6 +2427,7 @@
     :max [408.9 205.15]}}}
  {:outline
   {:label "head-165",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2401,6 +2453,7 @@
     :max [410.75 204.15]}}}
  {:outline
   {:label "head-166",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2422,6 +2475,7 @@
     :max [408.85 203.45]}}}
  {:outline
   {:label "head-167",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2447,6 +2501,7 @@
     :max [410.45 206.4]}}}
  {:outline
   {:label "head-168",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2468,6 +2523,7 @@
     :max [415.95 178.8]}}}
  {:outline
   {:label "head-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2489,6 +2545,7 @@
     :max [409.45 176.15]}}}
  {:outline
   {:label "head-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2518,6 +2575,7 @@
     :max [414.9 176.85]}}}
  {:outline
   {:label "head-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2550,6 +2608,7 @@
     :max [411.75 175.65]}}}
  {:outline
   {:label "head-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2573,6 +2632,7 @@
     :max [405.5 210.2]}}}
  {:outline
   {:label "head-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2596,6 +2656,7 @@
     :max [403.5 209.1]}}}
  {:outline
   {:label "head-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2619,6 +2680,7 @@
     :max [407.2 212.25]}}}
  {:outline
   {:label "head-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2647,6 +2709,7 @@
     :max [410.1 216.0]}},
   :base
   {:label "head-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2664,6 +2727,7 @@
     :max [410.1 216.0]}}}
  {:outline
   {:label "head-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2862,6 +2926,7 @@
     :max [398.85 207.65]}},
   :base
   {:label "head-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2983,6 +3048,7 @@
     :max [398.8 207.65]}},
   :detail
   {:label "head-96",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3014,6 +3080,7 @@
     :max [398.85 195.65]}}}
  {:outline
   {:label "head-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3288,6 +3355,7 @@
     :max [427.3 212.35]}},
   :base
   {:label "head-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3395,6 +3463,7 @@
     :max [427.3 212.35]}},
   :detail
   {:label "head-97",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3487,6 +3556,7 @@
     :max [421.85 208.45]}},
   :shadow
   {:label "head-237",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffffff"},
      :path
@@ -3650,6 +3720,7 @@
     :max [427.15 197.95]}}}
  {:outline
   {:label "head-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3924,6 +3995,7 @@
     :max [437.75 220.2]}},
   :base
   {:label "head-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4087,6 +4159,7 @@
     :max [437.75 220.2]}},
   :detail
   {:label "head-98",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4182,6 +4255,7 @@
     :max [419.8 210.1]}},
   :shadow
   {:label "head-238",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#d79702"},
      :path
@@ -4528,6 +4602,7 @@
     :max [435.25 220.2]}}}
  {:outline
   {:label "head-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4854,6 +4929,7 @@
     :max [431.05 224.85]}},
   :base
   {:label "head-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4980,6 +5056,7 @@
     :max [417.65 224.85]}},
   :detail
   {:label "head-99",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5159,6 +5236,7 @@
     :max [431.05 214.4]}},
   :shadow
   {:label "head-239",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffffff"},
      :path
@@ -5307,6 +5385,7 @@
     :max [411.6 224.85]}}}
  {:outline
   {:label "head-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5711,6 +5790,7 @@
     :max [427.7 224.5]}},
   :base
   {:label "head-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5884,6 +5964,7 @@
     :max [424.35 216.3]}},
   :detail
   {:label "head-100",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6088,6 +6169,7 @@
     :max [427.7 224.5]}},
   :shadow
   {:label "head-240",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -6180,6 +6262,7 @@
     :max [424.3 207.2]}}}
  {:outline
   {:label "head-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6632,6 +6715,7 @@
     :max [427.25 224.0]}},
   :base
   {:label "head-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6809,6 +6893,7 @@
     :max [421.65 217.65]}},
   :detail
   {:label "head-101",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6996,6 +7081,7 @@
     :max [427.25 224.0]}},
   :shadow
   {:label "head-241",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7456,6 +7542,7 @@
     :max [421.6 217.65]}}}
  {:outline
   {:label "head-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7746,6 +7833,7 @@
     :max [432.2 245.15]}},
   :base
   {:label "head-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7974,6 +8062,7 @@
     :max [432.2 245.15]}},
   :detail
   {:label "head-102",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8086,6 +8175,7 @@
     :max [427.3 209.3]}},
   :shadow
   {:label "head-242",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffffff"},
      :path
@@ -8546,6 +8636,7 @@
     :max [429.15 209.3]}}}
  {:outline
   {:label "head-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8702,6 +8793,7 @@
     :max [441.25 256.2]}},
   :base
   {:label "head-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8809,6 +8901,7 @@
     :max [441.25 256.2]}},
   :detail
   {:label "head-103",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8830,6 +8923,7 @@
     :max [412.55 185.7]}},
   :shadow
   {:label "head-243",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8991,6 +9085,7 @@
     :max [428.85 217.4]}}}
  {:outline
   {:label "head-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9508,6 +9603,7 @@
     :max [435.65 256.2]}},
   :base
   {:label "head-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9748,6 +9844,7 @@
     :max [435.65 256.2]}},
   :detail
   {:label "head-104",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9778,6 +9875,7 @@
     :max [410.0 188.55]}},
   :shadow
   {:label "head-244",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10285,6 +10383,7 @@
     :max [421.7 223.5]}}}
  {:outline
   {:label "head-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10616,6 +10715,7 @@
     :max [431.0 218.95]}},
   :base
   {:label "head-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10763,6 +10863,7 @@
     :max [431.0 218.95]}},
   :detail
   {:label "head-105",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10816,6 +10917,7 @@
     :max [412.85 185.15]}},
   :shadow
   {:label "head-245",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#cc9966"},
      :path
@@ -11308,6 +11410,7 @@
     :max [428.5 217.0]}}}
  {:outline
   {:label "head-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -11631,6 +11734,7 @@
     :max [428.15 210.45]}},
   :base
   {:label "head-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11855,6 +11959,7 @@
     :max [428.15 210.45]}},
   :detail
   {:label "head-106",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -11889,6 +11994,7 @@
     :max [414.65 188.3]}},
   :shadow
   {:label "head-246",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#be7e3f"},
      :path
@@ -12274,6 +12380,7 @@
     :max [426.85 210.45]}}}
  {:outline
   {:label "head-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -12639,6 +12746,7 @@
     :max [427.15 217.4]}},
   :base
   {:label "head-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12843,6 +12951,7 @@
     :max [427.15 217.4]}},
   :detail
   {:label "head-107",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -12882,6 +12991,7 @@
     :max [417.5 187.65]}},
   :shadow
   {:label "head-247",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#cc8f02"},
      :path
@@ -13368,6 +13478,7 @@
     :max [425.25 217.4]}}}
  {:outline
   {:label "head-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -13855,6 +13966,7 @@
     :max [424.65 218.6]}},
   :base
   {:label "head-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14132,6 +14244,7 @@
     :max [424.65 218.6]}},
   :detail
   {:label "head-108",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -14174,6 +14287,7 @@
     :max [411.1 186.45]}},
   :shadow
   {:label "head-248",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -15755,6 +15869,7 @@
     :max [423.95 214.3]}}}
  {:outline
   {:label "head-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -16357,6 +16472,7 @@
     :max [428.95 215.9]}},
   :base
   {:label "head-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16755,6 +16871,7 @@
     :max [428.95 215.9]}},
   :detail
   {:label "head-109",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -16795,6 +16912,7 @@
     :max [410.5 181.55]}},
   :shadow
   {:label "head-249",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ff9900"},
      :path
@@ -18250,6 +18368,7 @@
     :max [428.9 215.95]}}}
  {:outline
   {:label "head-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -18895,6 +19014,7 @@
     :max [441.55 243.55]}},
   :base
   {:label "head-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19268,6 +19388,7 @@
     :max [441.55 243.55]}},
   :detail
   {:label "head-110",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -19520,6 +19641,7 @@
     :max [429.7 214.25]}},
   :shadow
   {:label "head-250",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#cc3300"},
      :path
@@ -20061,6 +20183,7 @@
     :max [427.6 214.25]}}}
  {:outline
   {:label "head-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -20356,6 +20479,7 @@
     :max [426.85 214.55]}},
   :base
   {:label "head-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20551,6 +20675,7 @@
     :max [426.85 212.0]}},
   :detail
   {:label "head-111",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -20625,6 +20750,7 @@
     :max [415.8 195.95]}},
   :shadow
   {:label "head-251",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffffff"},
      :path
@@ -20881,6 +21007,7 @@
     :max [426.8 214.55]}}}
  {:outline
   {:label "head-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21124,6 +21251,7 @@
     :max [445.8 218.75]}},
   :base
   {:label "head-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21315,6 +21443,7 @@
     :max [445.8 218.75]}},
   :detail
   {:label "head-112",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21454,6 +21583,7 @@
     :max [424.15 210.6]}},
   :shadow
   {:label "head-252",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21629,6 +21759,7 @@
     :max [436.95 213.7]}}}
  {:outline
   {:label "head-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -21800,6 +21931,7 @@
     :max [454.45 255.9]}},
   :base
   {:label "head-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21866,6 +21998,7 @@
     :max [441.6 255.9]}},
   :detail
   {:label "head-113",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -21887,6 +22020,7 @@
     :max [454.45 174.95]}},
   :shadow
   {:label "head-253",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22001,6 +22135,7 @@
     :max [454.4 233.65]}}}
  {:outline
   {:label "head-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22218,6 +22353,7 @@
     :max [443.75 255.9]}},
   :base
   {:label "head-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22313,6 +22449,7 @@
     :max [441.6 255.9]}},
   :detail
   {:label "head-114",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22350,6 +22487,7 @@
     :max [443.75 172.25]}},
   :shadow
   {:label "head-254",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -22471,6 +22609,7 @@
     :max [443.7 212.35]}}}
  {:outline
   {:label "head-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -22711,6 +22850,7 @@
     :max [419.8 239.65]}},
   :base
   {:label "head-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22837,6 +22977,7 @@
     :max [417.65 239.65]}},
   :detail
   {:label "head-115",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -22924,6 +23065,7 @@
     :max [419.8 180.25]}},
   :shadow
   {:label "head-255",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -23086,6 +23228,7 @@
     :max [419.75 239.65]}}}
  {:outline
   {:label "head-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -23648,6 +23791,7 @@
     :max [429.6 216.35]}},
   :base
   {:label "head-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23883,6 +24027,7 @@
     :max [429.6 216.35]}},
   :detail
   {:label "head-116",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -23931,6 +24076,7 @@
     :max [412.9 186.0]}},
   :shadow
   {:label "head-256",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#7b5228"},
      :path
@@ -25018,6 +25164,7 @@
     :max [429.55 216.35]}}}
  {:outline
   {:label "head-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -25618,6 +25765,7 @@
     :max [496.5 221.4]}},
   :base
   {:label "head-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -25805,6 +25953,7 @@
     :max [444.35 221.4]}},
   :detail
   {:label "head-117",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -26025,6 +26174,7 @@
     :max [496.5 165.55]}},
   :shadow
   {:label "head-257",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#7b5228"},
      :path
@@ -26436,6 +26586,7 @@
     :max [445.35 208.75]}}}
  {:outline
   {:label "head-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -27240,6 +27391,7 @@
     :max [434.6 231.1]}},
   :base
   {:label "head-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -27509,6 +27661,7 @@
     :max [434.6 231.05]}},
   :detail
   {:label "head-118",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -27539,6 +27692,7 @@
     :max [410.85 191.7]}},
   :shadow
   {:label "head-258",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#996633"},
      :path
@@ -28404,6 +28558,7 @@
     :max [434.55 224.85]}}}
  {:outline
   {:label "head-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -28669,6 +28824,7 @@
     :max [430.45 224.4]}},
   :base
   {:label "head-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -28783,6 +28939,7 @@
     :max [430.45 224.4]}},
   :detail
   {:label "head-119",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -28804,6 +28961,7 @@
     :max [419.75 178.45]}},
   :shadow
   {:label "head-259",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -29180,6 +29338,7 @@
     :max [430.4 224.6]}}}
  {:outline
   {:label "head-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -29431,6 +29590,7 @@
     :max [425.4 221.55]}},
   :base
   {:label "head-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -29520,6 +29680,7 @@
     :max [425.4 221.55]}},
   :detail
   {:label "head-120",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -29550,6 +29711,7 @@
     :max [419.7 189.95]}},
   :shadow
   {:label "head-260",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#7f7f7f"},
      :path
@@ -29991,6 +30153,7 @@
     :max [425.35 221.55]}}}
  {:outline
   {:label "head-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -30563,6 +30726,7 @@
     :max [464.3 302.2]}},
   :base
   {:label "head-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -30789,6 +30953,7 @@
     :max [464.3 302.2]}},
   :detail
   {:label "head-121",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -30887,6 +31052,7 @@
     :max [439.65 257.65]}},
   :shadow
   {:label "head-261",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#666666"},
      :path
@@ -31374,6 +31540,7 @@
     :max [464.25 291.75]}}}
  {:outline
   {:label "head-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -31589,6 +31756,7 @@
     :max [440.55 248.85]}},
   :base
   {:label "head-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -31736,6 +31904,7 @@
     :max [440.55 248.85]}},
   :detail
   {:label "head-122",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -31774,6 +31943,7 @@
     :max [416.7 183.4]}},
   :shadow
   {:label "head-262",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -31794,6 +31964,7 @@
     :max [403.3 218.9]}}}
  {:outline
   {:label "head-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -31912,6 +32083,7 @@
     :max [435.85 216.8]}},
   :base
   {:label "head-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -32001,6 +32173,7 @@
     :max [435.85 216.8]}},
   :detail
   {:label "head-123",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -32048,6 +32221,7 @@
     :max [414.3 193.9]}},
   :shadow
   {:label "head-263",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -32128,6 +32302,7 @@
     :max [431.0 209.95]}}}
  {:outline
   {:label "head-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -32632,6 +32807,7 @@
     :max [443.7 225.15]}},
   :base
   {:label "head-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -32869,6 +33045,7 @@
     :max [443.7 225.15]}},
   :detail
   {:label "head-124",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -32912,6 +33089,7 @@
     :max [412.15 184.05]}},
   :shadow
   {:label "head-264",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -33480,6 +33658,7 @@
     :max [443.65 225.15]}}}
  {:outline
   {:label "head-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -33593,6 +33772,7 @@
     :max [434.6 240.3]}},
   :base
   {:label "head-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -33634,6 +33814,7 @@
     :max [434.6 233.95]}},
   :detail
   {:label "head-125",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -33666,6 +33847,7 @@
     :max [429.2 240.3]}},
   :shadow
   {:label "head-265",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ff9900"},
      :path
@@ -33707,6 +33889,7 @@
     :max [415.6 191.0]}}}
  {:outline
   {:label "head-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -33800,6 +33983,7 @@
     :max [435.5 219.15]}},
   :base
   {:label "head-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -33856,6 +34040,7 @@
     :max [435.5 219.15]}},
   :detail
   {:label "head-126",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -33889,6 +34074,7 @@
     :max [435.5 219.15]}},
   :shadow
   {:label "head-266",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffcc00"},
      :path
@@ -33966,6 +34152,7 @@
     :max [419.35 194.85]}}}
  {:outline
   {:label "head-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -34193,6 +34380,7 @@
     :max [439.55 225.2]}},
   :base
   {:label "head-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -34254,6 +34442,7 @@
     :max [439.55 225.2]}},
   :detail
   {:label "head-127",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -34289,6 +34478,7 @@
     :max [428.95 180.5]}},
   :shadow
   {:label "head-267",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -34408,6 +34598,7 @@
     :max [426.25 175.1]}}}
  {:outline
   {:label "head-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -34743,6 +34934,7 @@
     :max [426.3 222.65]}},
   :base
   {:label "head-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -34870,6 +35062,7 @@
     :max [426.3 222.65]}},
   :detail
   {:label "head-128",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -34894,6 +35087,7 @@
     :max [414.75 185.45]}},
   :shadow
   {:label "head-268",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#009700"},
      :path
@@ -35289,6 +35483,7 @@
     :max [424.05 222.65]}}}
  {:outline
   {:label "head-209",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -35407,6 +35602,7 @@
     :max [445.5 254.4]}},
   :base
   {:label "head-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -35488,6 +35684,7 @@
     :max [445.5 254.4]}},
   :detail
   {:label "head-129",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -35513,6 +35710,7 @@
     :max [416.1 208.0]}},
   :shadow
   {:label "head-269",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffffff"},
      :path
@@ -35530,6 +35728,7 @@
     :max [414.3 187.65]}}}
  {:outline
   {:label "head-210",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -35773,6 +35972,7 @@
     :max [438.6 247.65]}},
   :base
   {:label "head-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -35893,6 +36093,7 @@
     :max [438.6 247.65]}},
   :detail
   {:label "head-130",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -35936,6 +36137,7 @@
     :max [414.2 196.9]}},
   :shadow
   {:label "head-270",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#ffcc00"},
      :path
@@ -36117,6 +36319,7 @@
     :max [438.3 247.65]}}}
  {:outline
   {:label "head-211",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -36463,6 +36666,7 @@
     :max [437.8 215.6]}},
   :base
   {:label "head-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -36579,6 +36783,7 @@
     :max [437.8 215.6]}},
   :detail
   {:label "head-131",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -36728,6 +36933,7 @@
     :max [437.8 204.3]}},
   :shadow
   {:label "head-271",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#009933"},
      :path
@@ -37119,6 +37325,7 @@
     :max [424.45 214.75]}}}
  {:outline
   {:label "head-212",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -37429,6 +37636,7 @@
     :max [434.85 218.55]}},
   :base
   {:label "head-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -37535,6 +37743,7 @@
     :max [430.1 192.25]}},
   :detail
   {:label "head-132",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -37633,6 +37842,7 @@
     :max [434.85 218.55]}},
   :shadow
   {:label "head-272",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#2e4a5a"},
      :path
@@ -37936,6 +38146,7 @@
     :max [434.8 218.55]}}}
  {:outline
   {:label "head-213",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -38653,6 +38864,7 @@
     :max [454.6 309.15]}},
   :base
   {:label "head-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -39065,6 +39277,7 @@
     :max [454.6 309.15]}},
   :detail
   {:label "head-133",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -39096,6 +39309,7 @@
     :max [415.0 184.05]}},
   :shadow
   {:label "head-273",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#666699"},
      :path
@@ -39607,6 +39821,7 @@
     :max [454.55 309.1]}}}
  {:outline
   {:label "head-214",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -40003,6 +40218,7 @@
     :max [425.75 218.75]}},
   :base
   {:label "head-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -40135,6 +40351,7 @@
     :max [425.75 218.75]}},
   :detail
   {:label "head-134",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -40202,6 +40419,7 @@
     :max [417.55 180.2]}},
   :shadow
   {:label "head-274",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#89892e"},
      :path
@@ -40852,6 +41070,7 @@
     :max [424.8 217.9]}}}
  {:outline
   {:label "head-215",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -41345,6 +41564,7 @@
     :max [437.2 219.95]}},
   :base
   {:label "head-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -41591,6 +41811,7 @@
     :max [432.45 219.95]}},
   :detail
   {:label "head-135",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -41733,6 +41954,7 @@
     :max [437.2 196.1]}},
   :shadow
   {:label "head-275",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#999999"},
      :path
@@ -42396,6 +42618,7 @@
     :max [437.15 219.45]}}}
  {:outline
   {:label "head-216",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -42610,6 +42833,7 @@
     :max [422.6 240.25]}},
   :base
   {:label "head-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -42733,6 +42957,7 @@
     :max [422.6 240.15]}},
   :detail
   {:label "head-136",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -42776,6 +43001,7 @@
     :max [415.8 193.95]}},
   :shadow
   {:label "head-276",
+   :layer :shadow,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#5cbc2e"},
      :path
@@ -43011,6 +43237,7 @@
     :max [422.55 240.15]}}}
  {:outline
   {:label "head-217",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -43210,6 +43437,7 @@
     :max [435.5 240.3]}},
   :base
   {:label "head-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -43287,6 +43515,7 @@
     :max [435.5 233.95]}},
   :detail
   {:label "head-137",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -43330,6 +43559,7 @@
     :max [428.85 240.3]}}}
  {:outline
   {:label "head-218",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -43412,6 +43642,7 @@
     :max [425.35 217.55]}},
   :base
   {:label "head-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -43475,6 +43706,7 @@
     :max [425.35 217.55]}},
   :detail
   {:label "head-138",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -43522,6 +43754,7 @@
     :max [418.75 197.55]}},
   :shadow
   {:label "head-277",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -43563,6 +43796,7 @@
     :max [416.6 197.6]}}}
  {:outline
   {:label "head-219",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -43795,6 +44029,7 @@
     :max [445.0 233.75]}},
   :base
   {:label "head-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -43964,6 +44199,7 @@
     :max [445.0 233.75]}},
   :detail
   {:label "head-139",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -44020,6 +44256,7 @@
     :max [420.85 228.05]}}}
  {:outline
   {:label "head-220",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -44317,6 +44554,7 @@
     :max [435.75 218.4]}},
   :base
   {:label "head-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -44457,6 +44695,7 @@
     :max [435.75 218.4]}},
   :detail
   {:label "head-140",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -44509,6 +44748,7 @@
     :max [408.75 166.9]}},
   :shadow
   {:label "head-278",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -44755,6 +44995,7 @@
     :max [431.7 212.75]}}}
  {:outline
   {:label "head-221",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -44783,6 +45024,7 @@
     :max [412.25 171.95]}},
   :base
   {:label "head-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -44806,6 +45048,7 @@
     :max [412.2 171.95]}}}
  {:outline
   {:label "head-222",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -44834,6 +45077,7 @@
     :max [419.25 174.1]}},
   :base
   {:label "head-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -44857,6 +45101,7 @@
     :max [419.2 174.1]}}}
  {:outline
   {:label "head-223",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -44925,6 +45170,7 @@
     :max [449.15 243.85]}},
   :base
   {:label "head-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -44987,6 +45233,7 @@
     :max [449.1 243.85]}}}
  {:outline
   {:label "head-224",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45077,6 +45324,7 @@
     :max [426.45 168.05]}},
   :base
   {:label "head-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45135,6 +45383,7 @@
     :max [426.4 168.05]}}}
  {:outline
   {:label "head-225",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45183,6 +45432,7 @@
     :max [450.75 179.5]}},
   :base
   {:label "head-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45210,6 +45460,7 @@
     :max [450.7 177.45]}}}
  {:outline
   {:label "head-226",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45501,6 +45752,7 @@
     :max [496.25 176.45]}},
   :base
   {:label "head-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45717,6 +45969,7 @@
     :max [496.2 166.3]}},
   :detail
   {:label "head-141",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45788,6 +46041,7 @@
     :max [425.6 174.95]}}}
  {:outline
   {:label "head-227",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45824,6 +46078,7 @@
     :max [415.65 170.15]}},
   :base
   {:label "head-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45857,6 +46112,7 @@
     :max [415.6 170.15]}}}
  {:outline
   {:label "head-228",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45882,6 +46138,7 @@
     :max [393.0 171.95]}},
   :base
   {:label "head-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45902,6 +46159,7 @@
     :max [392.95 171.95]}}}
  {:outline
   {:label "head-229",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45926,6 +46184,7 @@
     :max [397.0 174.1]}},
   :base
   {:label "head-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -45945,6 +46204,7 @@
     :max [396.95 174.1]}}}
  {:outline
   {:label "head-230",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -45988,6 +46248,7 @@
     :max [389.85 243.85]}},
   :base
   {:label "head-82",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -46026,6 +46287,7 @@
     :max [389.8 243.85]}}}
  {:outline
   {:label "head-231",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -46084,6 +46346,7 @@
     :max [394.55 168.05]}},
   :base
   {:label "head-83",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -46119,6 +46382,7 @@
     :max [393.05 168.05]}}}
  {:outline
   {:label "head-232",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -46153,6 +46417,7 @@
     :max [388.65 179.5]}},
   :base
   {:label "head-84",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -46172,6 +46437,7 @@
     :max [387.35 177.45]}}}
  {:outline
   {:label "head-233",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -46333,6 +46599,7 @@
     :max [389.15 176.45]}},
   :base
   {:label "head-85",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -46449,6 +46716,7 @@
     :max [380.0 166.3]}},
   :detail
   {:label "head-142",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -46490,6 +46758,7 @@
     :max [389.15 174.95]}}}
  {:outline
   {:label "head-234",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -46518,6 +46787,7 @@
     :max [393.55 170.15]}},
   :base
   {:label "head-86",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path

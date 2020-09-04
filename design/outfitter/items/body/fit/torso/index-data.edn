@@ -1,5 +1,6 @@
 [{:outline
   {:label "torso-27",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -90,6 +91,7 @@
     :max [473.5 323.6]}},
   :base
   {:label "torso-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -126,6 +128,7 @@
     :max [473.6 328.3]}}}
  {:outline
   {:label "torso-28",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -557,6 +560,7 @@
     :max [458.65 329.0]}},
   :base
   {:label "torso-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -866,6 +870,7 @@
     :max [458.65 329.0]}},
   :shadow
   {:label "torso-38",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -981,6 +986,7 @@
     :max [458.65 274.0]}}}
  {:outline
   {:label "torso-28",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1412,6 +1418,7 @@
     :max [458.65 329.0]}},
   :base
   {:label "torso-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1721,6 +1728,7 @@
     :max [458.65 329.0]}},
   :shadow
   {:label "torso-39",
+   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -2044,6 +2052,7 @@
     :max [453.85 329.0]}}}
  {:outline
   {:label "torso-29",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2323,6 +2332,7 @@
     :max [442.75 303.05]}},
   :base
   {:label "torso-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2425,6 +2435,7 @@
     :max [433.9 303.05]}},
   :detail
   {:label "torso-24",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2573,6 +2584,7 @@
     :max [442.75 287.5]}}}
  {:outline
   {:label "torso-30",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2760,6 +2772,7 @@
     :max [473.5 325.95]}},
   :base
   {:label "torso-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2834,6 +2847,7 @@
     :max [473.6 323.6]}},
   :detail
   {:label "torso-25",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2898,6 +2912,7 @@
     :max [450.3 325.95]}}}
  {:outline
   {:label "torso-32",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3027,6 +3042,7 @@
     :max [473.5 323.6]}},
   :base
   {:label "torso-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3078,6 +3094,7 @@
     :max [473.6 328.3]}}}
  {:outline
   {:label "torso-33",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3154,6 +3171,7 @@
     :max [454.35 327.6]}},
   :base
   {:label "torso-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3206,6 +3224,7 @@
     :max [454.45 328.2]}}}
  {:outline
   {:label "torso-34",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3324,6 +3343,7 @@
     :max [454.35 328.2]}},
   :base
   {:label "torso-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3385,6 +3405,7 @@
     :max [454.45 328.2]}}}
  {:outline
   {:label "torso-35",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3509,6 +3530,7 @@
     :max [449.9 315.5]}},
   :base
   {:label "torso-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3589,6 +3611,7 @@
     :max [450.0 315.5]}}}
  {:outline
   {:label "torso-36",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4013,6 +4036,7 @@
     :max [455.1 261.7]}},
   :base
   {:label "torso-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4394,6 +4418,7 @@
     :max [455.2 261.7]}}}
  {:outline
   {:label "torso-31",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",

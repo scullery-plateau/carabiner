@@ -1,5 +1,6 @@
 [{:outline
   {:label "nose-26",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -27,6 +28,7 @@
     :max [404.25 196.4]}}}
  {:outline
   {:label "nose-27",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -56,6 +58,7 @@
     :max [403.25 196.1]}}}
  {:outline
   {:label "nose-28",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -89,6 +92,7 @@
     :max [404.0 196.2]}}}
  {:outline
   {:label "nose-29",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -120,6 +124,7 @@
     :max [404.3 196.4]}}}
  {:outline
   {:label "nose-30",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -155,6 +160,7 @@
     :max [405.3 196.9]}}}
  {:outline
   {:label "nose-31",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -190,6 +196,7 @@
     :max [404.7 197.25]}}}
  {:outline
   {:label "nose-32",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -227,6 +234,7 @@
     :max [405.05 196.05]}}}
  {:outline
   {:label "nose-33",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -266,6 +274,7 @@
     :max [404.0 195.85]}}}
  {:outline
   {:label "nose-34",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -307,6 +316,7 @@
     :max [404.4 197.3]}}}
  {:outline
   {:label "nose-35",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -351,6 +361,7 @@
     :max [404.1 195.6]}}}
  {:outline
   {:label "nose-36",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -382,6 +393,7 @@
     :max [405.15 197.45]}}}
  {:outline
   {:label "nose-37",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -426,6 +438,7 @@
     :max [404.2 194.85]}}}
  {:outline
   {:label "nose-38",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -457,6 +470,7 @@
     :max [404.75 195.55]}}}
  {:outline
   {:label "nose-39",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -500,6 +514,7 @@
     :max [405.75 196.95]}}}
  {:outline
   {:label "nose-40",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -531,6 +546,7 @@
     :max [404.5 198.4]}}}
  {:outline
   {:label "nose-41",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -554,6 +570,7 @@
     :max [404.1 195.75]}},
   :base
   {:label "nose-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -571,6 +588,7 @@
     :max [404.0 195.85]}}}
  {:outline
   {:label "nose-42",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -592,6 +610,7 @@
     :max [403.05 194.45]}}}
  {:outline
   {:label "nose-43",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -616,6 +635,7 @@
     :max [403.05 196.8]}},
   :base
   {:label "nose-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -630,6 +650,7 @@
     :max [402.95 196.9]}}}
  {:outline
   {:label "nose-44",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -674,6 +695,7 @@
     :max [403.95 197.35]}},
   :base
   {:label "nose-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -712,6 +734,7 @@
     :max [403.85 197.45]}}}
  {:outline
   {:label "nose-45",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -757,6 +780,7 @@
     :max [403.55 198.25]}},
   :base
   {:label "nose-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -791,6 +815,7 @@
     :max [403.45 198.35]}}}
  {:outline
   {:label "nose-46",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -854,6 +879,7 @@
     :max [406.4 198.85]}},
   :base
   {:label "nose-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -909,6 +935,7 @@
     :max [406.0 197.35]}}}
  {:outline
   {:label "nose-47",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -962,6 +989,7 @@
     :max [404.3 197.0]}},
   :base
   {:label "nose-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -996,6 +1024,7 @@
     :max [404.2 195.85]}}}
  {:outline
   {:label "nose-48",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1059,6 +1088,7 @@
     :max [406.25 198.6]}},
   :base
   {:label "nose-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1112,6 +1142,7 @@
     :max [406.15 198.7]}}}
  {:outline
   {:label "nose-49",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1145,6 +1176,7 @@
     :max [403.85 196.3]}},
   :base
   {:label "nose-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1175,6 +1207,7 @@
     :max [403.75 196.4]}}}
  {:outline
   {:label "nose-50",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1259,6 +1292,7 @@
     :max [407.85 202.75]}},
   :base
   {:label "nose-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1303,6 +1337,7 @@
     :max [407.75 202.85]}}}
  {:outline
   {:label "nose-51",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1484,6 +1519,7 @@
     :max [419.55 202.75]}},
   :base
   {:label "nose-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1528,6 +1564,7 @@
     :max [407.75 202.85]}},
   :detail
   {:label "nose-24",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1615,6 +1652,7 @@
     :max [419.45 201.6]}}}
  {:outline
   {:label "nose-52",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",

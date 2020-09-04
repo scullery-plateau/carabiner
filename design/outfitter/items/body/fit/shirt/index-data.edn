@@ -1,5 +1,6 @@
 [{:outline
   {:label "shirt-122",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -115,6 +116,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "shirt-12",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -171,6 +173,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "shirt-123",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -296,6 +299,7 @@
     :max [492.8 349.5]}},
   :base
   {:label "shirt-13",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -353,6 +357,7 @@
     :max [492.8 349.5]}}}
  {:outline
   {:label "shirt-124",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -476,6 +481,7 @@
     :max [492.8 335.9]}},
   :base
   {:label "shirt-14",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -529,6 +535,7 @@
     :max [492.8 335.9]}}}
  {:outline
   {:label "shirt-125",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -650,6 +657,7 @@
     :max [492.8 323.6]}},
   :base
   {:label "shirt-15",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -695,6 +703,7 @@
     :max [492.8 328.3]}}}
  {:outline
   {:label "shirt-126",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -809,6 +818,7 @@
     :max [487.2 323.6]}},
   :base
   {:label "shirt-16",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -844,6 +854,7 @@
     :max [487.2 328.3]}}}
  {:outline
   {:label "shirt-127",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -946,6 +957,7 @@
     :max [481.95 323.6]}},
   :base
   {:label "shirt-17",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -987,6 +999,7 @@
     :max [481.95 328.3]}}}
  {:outline
   {:label "shirt-128",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1086,6 +1099,7 @@
     :max [480.15 323.6]}},
   :base
   {:label "shirt-18",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1111,6 +1125,7 @@
     :max [480.15 328.3]}}}
  {:outline
   {:label "shirt-129",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1203,6 +1218,7 @@
     :max [480.15 323.6]}},
   :base
   {:label "shirt-19",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1244,6 +1260,7 @@
     :max [480.15 328.3]}}}
  {:outline
   {:label "shirt-130",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1349,6 +1366,7 @@
     :max [479.05 323.6]}},
   :base
   {:label "shirt-20",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1386,6 +1404,7 @@
     :max [479.05 328.3]}}}
  {:outline
   {:label "shirt-131",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1481,6 +1500,7 @@
     :max [470.2 323.6]}},
   :base
   {:label "shirt-21",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1517,6 +1537,7 @@
     :max [470.2 328.3]}}}
  {:outline
   {:label "shirt-132",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1602,6 +1623,7 @@
     :max [449.9 323.6]}},
   :base
   {:label "shirt-22",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1637,6 +1659,7 @@
     :max [449.9 328.3]}}}
  {:outline
   {:label "shirt-133",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1727,6 +1750,7 @@
     :max [452.9 323.6]}},
   :base
   {:label "shirt-23",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1764,6 +1788,7 @@
     :max [455.65 328.3]}}}
  {:outline
   {:label "shirt-134",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1835,6 +1860,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "shirt-24",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -1898,6 +1924,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "shirt-135",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -1969,6 +1996,7 @@
     :max [492.8 349.5]}},
   :base
   {:label "shirt-25",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2032,6 +2060,7 @@
     :max [492.8 349.5]}}}
  {:outline
   {:label "shirt-136",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2101,6 +2130,7 @@
     :max [492.8 335.9]}},
   :base
   {:label "shirt-26",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2160,6 +2190,7 @@
     :max [492.8 335.9]}}}
  {:outline
   {:label "shirt-137",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2227,6 +2258,7 @@
     :max [492.8 321.4]}},
   :base
   {:label "shirt-27",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2278,6 +2310,7 @@
     :max [492.8 321.4]}}}
  {:outline
   {:label "shirt-138",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2350,6 +2383,7 @@
     :max [487.2 303.95]}},
   :base
   {:label "shirt-28",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2395,6 +2429,7 @@
     :max [487.2 303.95]}}}
  {:outline
   {:label "shirt-139",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2451,6 +2486,7 @@
     :max [481.95 293.1]}},
   :base
   {:label "shirt-29",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2498,6 +2534,7 @@
     :max [481.95 293.1]}}}
  {:outline
   {:label "shirt-140",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2551,6 +2588,7 @@
     :max [480.15 280.65]}},
   :base
   {:label "shirt-30",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2590,6 +2628,7 @@
     :max [480.15 280.65]}}}
  {:outline
   {:label "shirt-141",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2624,6 +2663,7 @@
     :max [480.15 266.2]}},
   :base
   {:label "shirt-31",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2655,6 +2695,7 @@
     :max [480.15 266.2]}}}
  {:outline
   {:label "shirt-142",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2692,6 +2733,7 @@
     :max [479.05 260.8]}},
   :base
   {:label "shirt-32",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2719,6 +2761,7 @@
     :max [479.05 260.8]}}}
  {:outline
   {:label "shirt-143",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2751,6 +2794,7 @@
     :max [470.2 255.2]}},
   :base
   {:label "shirt-33",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -2770,6 +2814,7 @@
     :max [470.2 255.2]}}}
  {:outline
   {:label "shirt-144",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -2933,6 +2978,7 @@
     :max [487.75 361.6]}},
   :base
   {:label "shirt-34",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3023,6 +3069,7 @@
     :max [487.75 361.6]}}}
  {:outline
   {:label "shirt-145",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3132,6 +3179,7 @@
     :max [452.9 328.1]}},
   :base
   {:label "shirt-35",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3184,6 +3232,7 @@
     :max [455.65 328.2]}}}
  {:outline
   {:label "shirt-146",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3285,6 +3334,7 @@
     :max [433.15 328.1]}},
   :base
   {:label "shirt-36",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3317,6 +3367,7 @@
     :max [433.15 328.2]}}}
  {:outline
   {:label "shirt-147",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3407,6 +3458,7 @@
     :max [487.75 361.6]}},
   :base
   {:label "shirt-37",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3479,6 +3531,7 @@
     :max [487.75 361.6]}}}
  {:outline
   {:label "shirt-148",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3662,6 +3715,7 @@
     :max [492.8 349.5]}},
   :base
   {:label "shirt-38",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3797,6 +3851,7 @@
     :max [492.8 349.5]}}}
  {:outline
   {:label "shirt-149",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -3914,6 +3969,7 @@
     :max [453.5 315.45]}},
   :base
   {:label "shirt-39",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -3996,6 +4052,7 @@
     :max [454.4 315.45]}}}
  {:outline
   {:label "shirt-150",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4115,6 +4172,7 @@
     :max [449.9 315.45]}},
   :base
   {:label "shirt-40",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4194,6 +4252,7 @@
     :max [449.9 315.45]}}}
  {:outline
   {:label "shirt-151",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4288,6 +4347,7 @@
     :max [492.8 349.5]}},
   :base
   {:label "shirt-41",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4370,6 +4430,7 @@
     :max [492.8 349.5]}}}
  {:outline
   {:label "shirt-152",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4444,6 +4505,7 @@
     :max [399.8 361.6]}},
   :base
   {:label "shirt-42",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4481,6 +4543,7 @@
     :max [399.8 361.9]}}}
  {:outline
   {:label "shirt-153",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4538,6 +4601,7 @@
     :max [399.8 328.2]}},
   :base
   {:label "shirt-43",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4565,6 +4629,7 @@
     :max [399.8 328.3]}}}
  {:outline
   {:label "shirt-154",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4622,6 +4687,7 @@
     :max [399.8 328.2]}},
   :base
   {:label "shirt-44",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4647,6 +4713,7 @@
     :max [399.8 328.3]}}}
  {:outline
   {:label "shirt-155",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4699,6 +4766,7 @@
     :max [355.2 361.6]}},
   :base
   {:label "shirt-45",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4736,6 +4804,7 @@
     :max [355.2 361.9]}}}
  {:outline
   {:label "shirt-156",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4788,6 +4857,7 @@
     :max [355.2 349.5]}},
   :base
   {:label "shirt-46",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4825,6 +4895,7 @@
     :max [355.2 349.5]}}}
  {:outline
   {:label "shirt-157",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4876,6 +4947,7 @@
     :max [355.2 335.9]}},
   :base
   {:label "shirt-47",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4911,6 +4983,7 @@
     :max [355.2 335.9]}}}
  {:outline
   {:label "shirt-158",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -4961,6 +5034,7 @@
     :max [355.2 321.4]}},
   :base
   {:label "shirt-48",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -4992,6 +5066,7 @@
     :max [355.2 321.4]}}}
  {:outline
   {:label "shirt-159",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5041,6 +5116,7 @@
     :max [355.2 303.75]}},
   :base
   {:label "shirt-49",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5068,6 +5144,7 @@
     :max [355.2 303.75]}}}
  {:outline
   {:label "shirt-160",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5109,6 +5186,7 @@
     :max [355.2 293.1]}},
   :base
   {:label "shirt-50",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5138,6 +5216,7 @@
     :max [355.2 293.1]}}}
  {:outline
   {:label "shirt-161",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5177,6 +5256,7 @@
     :max [355.2 280.65]}},
   :base
   {:label "shirt-51",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5202,6 +5282,7 @@
     :max [355.2 280.65]}}}
  {:outline
   {:label "shirt-162",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5229,6 +5310,7 @@
     :max [349.4 266.2]}},
   :base
   {:label "shirt-52",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5250,6 +5332,7 @@
     :max [349.4 266.2]}}}
  {:outline
   {:label "shirt-163",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5281,6 +5364,7 @@
     :max [349.95 260.75]}},
   :base
   {:label "shirt-53",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5302,6 +5386,7 @@
     :max [349.95 260.75]}}}
  {:outline
   {:label "shirt-164",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5326,6 +5411,7 @@
     :max [349.4 255.2]}},
   :base
   {:label "shirt-54",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5341,6 +5427,7 @@
     :max [349.4 255.2]}}}
  {:outline
   {:label "shirt-165",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5443,6 +5530,7 @@
     :max [492.8 361.85]}},
   :base
   {:label "shirt-55",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5495,6 +5583,7 @@
     :max [492.8 361.85]}}}
  {:outline
   {:label "shirt-166",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5571,6 +5660,7 @@
     :max [453.65 325.9]}},
   :base
   {:label "shirt-56",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5592,6 +5682,7 @@
     :max [454.65 328.25]}}}
  {:outline
   {:label "shirt-167",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5668,6 +5759,7 @@
     :max [442.4 325.9]}},
   :base
   {:label "shirt-57",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5695,6 +5787,7 @@
     :max [442.4 328.25]}}}
  {:outline
   {:label "shirt-168",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5767,6 +5860,7 @@
     :max [492.8 361.85]}},
   :base
   {:label "shirt-58",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5826,6 +5920,7 @@
     :max [492.8 361.85]}}}
  {:outline
   {:label "shirt-169",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -5913,6 +6008,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "shirt-59",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -5979,6 +6075,7 @@
     :max [492.8 361.9]}}}
  {:outline
   {:label "shirt-170",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6037,6 +6134,7 @@
     :max [452.9 291.25]}},
   :base
   {:label "shirt-60",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6084,6 +6182,7 @@
     :max [455.65 291.25]}}}
  {:outline
   {:label "shirt-171",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6196,6 +6295,7 @@
     :max [492.8 361.6]}},
   :base
   {:label "shirt-61",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6251,6 +6351,7 @@
     :max [492.8 361.9]}},
   :detail
   {:label "shirt-116",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6304,6 +6405,7 @@
     :max [452.75 283.1]}}}
  {:outline
   {:label "shirt-172",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6382,6 +6484,7 @@
     :max [452.9 283.1]}},
   :base
   {:label "shirt-62",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6413,6 +6516,7 @@
     :max [455.45 267.6]}},
   :detail
   {:label "shirt-117",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6471,6 +6575,7 @@
     :max [451.35 283.1]}}}
  {:outline
   {:label "shirt-173",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6506,6 +6611,7 @@
     :max [452.9 274.25]}},
   :base
   {:label "shirt-63",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6535,6 +6641,7 @@
     :max [452.9 274.25]}}}
  {:outline
   {:label "shirt-174",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6568,6 +6675,7 @@
     :max [452.9 274.25]}},
   :base
   {:label "shirt-64",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6595,6 +6703,7 @@
     :max [452.9 274.25]}}}
  {:outline
   {:label "shirt-175",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6651,6 +6760,7 @@
     :max [452.9 274.25]}},
   :base
   {:label "shirt-65",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6682,6 +6792,7 @@
     :max [452.9 274.25]}}}
  {:outline
   {:label "shirt-176",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6748,6 +6859,7 @@
     :max [449.9 323.6]}},
   :base
   {:label "shirt-66",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6777,6 +6889,7 @@
     :max [449.9 328.3]}}}
  {:outline
   {:label "shirt-177",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6831,6 +6944,7 @@
     :max [449.9 323.6]}},
   :base
   {:label "shirt-67",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6855,6 +6969,7 @@
     :max [449.9 328.3]}}}
  {:outline
   {:label "shirt-178",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6904,6 +7019,7 @@
     :max [433.7 323.6]}},
   :base
   {:label "shirt-68",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6927,6 +7043,7 @@
     :max [433.7 328.3]}}}
  {:outline
   {:label "shirt-179",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -6971,6 +7088,7 @@
     :max [433.7 323.6]}},
   :base
   {:label "shirt-69",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -6991,6 +7109,7 @@
     :max [433.7 328.3]}}}
  {:outline
   {:label "shirt-180",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7033,6 +7152,7 @@
     :max [429.25 328.2]}},
   :base
   {:label "shirt-70",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7057,6 +7177,7 @@
     :max [429.25 328.3]}}}
  {:outline
   {:label "shirt-181",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7099,6 +7220,7 @@
     :max [429.25 323.6]}},
   :base
   {:label "shirt-71",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7120,6 +7242,7 @@
     :max [429.25 328.3]}}}
  {:outline
   {:label "shirt-182",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7170,6 +7293,7 @@
     :max [433.7 305.1]}},
   :base
   {:label "shirt-72",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7188,6 +7312,7 @@
     :max [433.7 305.1]}}}
  {:outline
   {:label "shirt-183",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7262,6 +7387,7 @@
     :max [444.2 305.1]}},
   :base
   {:label "shirt-73",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7288,6 +7414,7 @@
     :max [444.2 305.1]}}}
  {:outline
   {:label "shirt-184",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7367,6 +7494,7 @@
     :max [433.7 305.1]}},
   :base
   {:label "shirt-74",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7406,6 +7534,7 @@
     :max [433.7 305.1]}}}
  {:outline
   {:label "shirt-185",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7465,6 +7594,7 @@
     :max [405.9 328.1]}},
   :base
   {:label "shirt-75",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7480,6 +7610,7 @@
     :max [405.9 328.2]}}}
  {:outline
   {:label "shirt-186",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7542,6 +7673,7 @@
     :max [419.25 327.55]}},
   :base
   {:label "shirt-76",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7572,6 +7704,7 @@
     :max [419.25 328.2]}}}
  {:outline
   {:label "shirt-187",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7650,6 +7783,7 @@
     :max [433.15 325.9]}},
   :base
   {:label "shirt-77",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7674,6 +7808,7 @@
     :max [433.15 328.25]}}}
  {:outline
   {:label "shirt-188",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7710,6 +7845,7 @@
     :max [415.35 210.85]}},
   :base
   {:label "shirt-78",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7732,6 +7868,7 @@
     :max [415.35 210.85]}}}
  {:outline
   {:label "shirt-189",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7768,6 +7905,7 @@
     :max [416.75 224.2]}},
   :base
   {:label "shirt-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7786,6 +7924,7 @@
     :max [416.75 224.2]}}}
  {:outline
   {:label "shirt-190",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7830,6 +7969,7 @@
     :max [416.25 232.15]}},
   :base
   {:label "shirt-80",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7862,6 +8002,7 @@
     :max [416.25 232.15]}}}
  {:outline
   {:label "shirt-191",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7906,6 +8047,7 @@
     :max [423.45 227.9]}},
   :base
   {:label "shirt-79",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7924,6 +8066,7 @@
     :max [416.75 224.2]}},
   :detail
   {:label "shirt-118",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -7950,6 +8093,7 @@
     :max [423.45 227.9]}}}
  {:outline
   {:label "shirt-192",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -7994,6 +8138,7 @@
     :max [416.75 224.2]}},
   :base
   {:label "shirt-81",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8018,6 +8163,7 @@
     :max [416.35 219.8]}},
   :detail
   {:label "shirt-119",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8044,6 +8190,7 @@
     :max [416.75 224.2]}}}
  {:outline
   {:label "shirt-193",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8094,6 +8241,7 @@
     :max [440.15 236.7]}},
   :base
   {:label "shirt-82",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8119,6 +8267,7 @@
     :max [440.15 236.7]}}}
  {:outline
   {:label "shirt-194",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8169,6 +8318,7 @@
     :max [431.9 249.6]}},
   :base
   {:label "shirt-83",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8201,6 +8351,7 @@
     :max [431.9 249.6]}}}
  {:outline
   {:label "shirt-195",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8255,6 +8406,7 @@
     :max [470.2 266.3]}},
   :base
   {:label "shirt-84",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8287,6 +8439,7 @@
     :max [470.2 266.3]}}}
  {:outline
   {:label "shirt-196",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8334,6 +8487,7 @@
     :max [452.9 266.3]}},
   :base
   {:label "shirt-85",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8358,6 +8512,7 @@
     :max [452.9 266.3]}}}
  {:outline
   {:label "shirt-197",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8414,6 +8569,7 @@
     :max [442.0 266.3]}},
   :base
   {:label "shirt-86",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8441,6 +8597,7 @@
     :max [442.0 266.3]}}}
  {:outline
   {:label "shirt-198",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8473,6 +8630,7 @@
     :max [470.2 240.2]}},
   :base
   {:label "shirt-87",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8492,6 +8650,7 @@
     :max [470.2 240.2]}}}
  {:outline
   {:label "shirt-199",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8559,6 +8718,7 @@
     :max [480.15 274.4]}},
   :base
   {:label "shirt-88",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8596,6 +8756,7 @@
     :max [480.15 274.4]}}}
  {:outline
   {:label "shirt-200",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8647,6 +8808,7 @@
     :max [453.7 274.4]}},
   :base
   {:label "shirt-89",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8676,6 +8838,7 @@
     :max [454.55 274.4]}}}
  {:outline
   {:label "shirt-201",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8738,6 +8901,7 @@
     :max [442.0 274.4]}},
   :base
   {:label "shirt-90",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8769,6 +8933,7 @@
     :max [442.0 274.4]}}}
  {:outline
   {:label "shirt-202",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8804,6 +8969,7 @@
     :max [480.15 266.2]}},
   :base
   {:label "shirt-91",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8833,6 +8999,7 @@
     :max [480.15 266.2]}}}
  {:outline
   {:label "shirt-203",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8889,6 +9056,7 @@
     :max [480.15 266.2]}},
   :base
   {:label "shirt-92",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8917,6 +9085,7 @@
     :max [480.15 266.2]}}}
  {:outline
   {:label "shirt-204",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -8961,6 +9130,7 @@
     :max [453.2 253.65]}},
   :base
   {:label "shirt-93",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -8986,6 +9156,7 @@
     :max [455.35 253.65]}}}
  {:outline
   {:label "shirt-205",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9040,6 +9211,7 @@
     :max [442.0 249.55]}},
   :base
   {:label "shirt-94",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9067,6 +9239,7 @@
     :max [442.0 249.55]}}}
  {:outline
   {:label "shirt-206",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9101,6 +9274,7 @@
     :max [480.15 266.2]}},
   :base
   {:label "shirt-95",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9132,6 +9306,7 @@
     :max [480.15 266.2]}}}
  {:outline
   {:label "shirt-207",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9181,6 +9356,7 @@
     :max [428.8 250.65]}},
   :base
   {:label "shirt-96",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9215,6 +9391,7 @@
     :max [428.8 250.65]}}}
  {:outline
   {:label "shirt-208",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9267,6 +9444,7 @@
     :max [425.1 249.6]}},
   :base
   {:label "shirt-97",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9290,6 +9468,7 @@
     :max [425.1 249.6]}}}
  {:outline
   {:label "shirt-209",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9343,6 +9522,7 @@
     :max [431.95 282.5]}},
   :base
   {:label "shirt-98",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9375,6 +9555,7 @@
     :max [431.95 282.5]}}}
  {:outline
   {:label "shirt-210",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9446,6 +9627,7 @@
     :max [431.95 328.2]}},
   :base
   {:label "shirt-99",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9478,6 +9660,7 @@
     :max [431.95 328.2]}}}
  {:outline
   {:label "shirt-211",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9525,6 +9708,7 @@
     :max [446.25 260.5]}},
   :base
   {:label "shirt-100",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9555,6 +9739,7 @@
     :max [446.25 260.5]}}}
  {:outline
   {:label "shirt-212",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9637,6 +9822,7 @@
     :max [428.45 300.5]}},
   :base
   {:label "shirt-101",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9682,6 +9868,7 @@
     :max [428.45 300.5]}},
   :detail
   {:label "shirt-120",
+   :layer :detail,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9702,6 +9889,7 @@
     :max [397.25 276.7]}}}
  {:outline
   {:label "shirt-213",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9762,6 +9950,7 @@
     :max [470.2 343.2]}},
   :base
   {:label "shirt-102",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9798,6 +9987,7 @@
     :max [470.2 343.2]}}}
  {:outline
   {:label "shirt-214",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9850,6 +10040,7 @@
     :max [449.9 343.2]}},
   :base
   {:label "shirt-103",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -9889,6 +10080,7 @@
     :max [449.9 343.2]}}}
  {:outline
   {:label "shirt-215",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -9957,6 +10149,7 @@
     :max [492.8 364.25]}},
   :base
   {:label "shirt-104",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10012,6 +10205,7 @@
     :max [492.8 364.25]}}}
  {:outline
   {:label "shirt-216",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10062,6 +10256,7 @@
     :max [355.2 364.25]}},
   :base
   {:label "shirt-105",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10095,6 +10290,7 @@
     :max [355.2 364.25]}}}
  {:outline
   {:label "shirt-217",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10147,6 +10343,7 @@
     :max [484.4 294.85]}},
   :base
   {:label "shirt-106",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10182,6 +10379,7 @@
     :max [484.4 294.85]}}}
  {:outline
   {:label "shirt-218",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10220,6 +10418,7 @@
     :max [355.2 294.85]}},
   :base
   {:label "shirt-107",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10243,6 +10442,7 @@
     :max [355.2 294.85]}}}
  {:outline
   {:label "shirt-219",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10311,6 +10511,7 @@
     :max [488.05 289.8]}},
   :base
   {:label "shirt-108",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10377,6 +10578,7 @@
     :max [488.05 289.8]}}}
  {:outline
   {:label "shirt-220",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10423,6 +10625,7 @@
     :max [355.2 289.8]}},
   :base
   {:label "shirt-109",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10462,6 +10665,7 @@
     :max [355.2 289.8]}}}
  {:outline
   {:label "shirt-221",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10553,6 +10757,7 @@
     :max [406.0 328.2]}},
   :base
   {:label "shirt-110",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10636,6 +10841,7 @@
     :max [406.0 324.45]}}}
  {:outline
   {:label "shirt-222",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10710,6 +10916,7 @@
     :max [399.85 327.4]}},
   :base
   {:label "shirt-111",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
@@ -10775,6 +10982,7 @@
     :max [386.35 308.9]}}}
  {:outline
   {:label "shirt-223",
+   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
@@ -10825,6 +11033,7 @@
     :max [410.75 328.2]}},
   :base
   {:label "shirt-112",
+   :layer :base,
    :paths
    [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
      :path
