@@ -1,0 +1,11 @@
+[{:outline 37, :base 12, :detail 25, :shadow 34}
+ {:outline 36, :base 13, :detail 26, :shadow 47}
+ {:outline 38, :base 14, :detail 27, :shadow 48}
+ {:outline 39, :base 15, :detail 28, :shadow nil}
+ {:outline 40, :base 16, :detail nil, :shadow 49}
+ {:outline 41, :base 17, :detail nil, :shadow nil}
+ {:outline 42, :base 18, :detail 29, :shadow nil}
+ {:outline 43, :base 19, :detail 30, :shadow nil}
+ {:outline 44, :base 20, :detail 31, :shadow nil}
+ {:outline 45, :base 21, :detail 32, :shadow nil}
+ {:outline 35, :base nil, :detail nil, :shadow nil}]

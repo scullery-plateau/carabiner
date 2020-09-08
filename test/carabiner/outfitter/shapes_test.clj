@@ -470,11 +470,15 @@
   (pp/pprint ranges)
   (throw (Exception. "bad range")))
 
+(defn read-shape-numbers [folder]
+  (->> (.list folder)
+       (mapv #(Integer/parseInt (first (str/split % #"\."))))
+       (into (sorted-set))
+       (drop 2)))
+
+
 (defn read-shape-numbers-to-ranges [folder]
-  (let [files (->> (.list folder)
-                   (mapv #(Integer/parseInt (first (str/split % #"\."))))
-                   (into (sorted-set))
-                   (drop 2))
+  (let [files (read-shape-numbers folder)
         min-file (apply min files)
         max-file (apply max files)
         markers (into
@@ -596,8 +600,8 @@
     (pp/pprint (into (sorted-set) (keys weird)))))
 
 #_(deftest test-build-columns-file
-    (let [root (io/file "design/outfitter/items/accessories/fit")]
-      (build-columns-file (io/file root "accessories_and_shields"))))
+    (let [root (io/file "design/outfitter/items/body/hulk")]
+      (build-columns-file (io/file root "boots"))))
 
 #_(deftest test-build-columns-file-for-folder
     (let [folder (io/file "design/outfitter/items/accessories/fit")]
@@ -610,10 +614,11 @@
     (read-columns-to-html (io/file root "symbol_B"))))
 
 (deftest test-read-columns-to-html-for-folder
-  (let [folder (io/file "design/outfitter/items/body/fit")]
-    (doseq [file (filter #(.isDirectory %) (.listFiles folder))]
-      (println (.getName file))
-      (read-columns-to-html file))))
+  (let [folder (io/file "design/outfitter/items/body")]
+    (doseq [_type ["hulk" "superman" "woman"]]
+      (doseq [file (filter #(.isDirectory %) (.listFiles (io/file folder _type)))]
+       (println (.getName file))
+       (read-columns-to-html file)))))
 
 (deftest test-build-columns-from-names
   (let [root (io/file "design/outfitter/items/body/fit")]
@@ -632,16 +637,19 @@
             (build-columns-from-names folder)))))))
 
 (deftest build-part-menu
-  (let [root (io/file "design/outfitter/items/body/fit")
-        folders (mapv #(.getName %) (filterv #(.isDirectory %) (.listFiles root)))]
-    (spit (io/file root "menu.html")
-          (build-html
-            {:title "Part Menu"}
-            (into
-              [:ul]
-              (mapv
-                #(vector :li [:a {:href (str % "/from-data.html")} [:h2 %]])
-                folders))))))
+  (let [root (io/file "design/outfitter/items/body")]
+    (doseq [_type ["hulk" "superman" "woman"]]
+      (let [type-folder (io/file root _type)
+            folders (mapv #(.getName %) (filterv #(.isDirectory %) (.listFiles type-folder)))]
+       (spit (io/file type-folder "menu.html")
+             (build-html
+                   {:title "Part Menu"}
+                   (into
+                         [:ul]
+                         (mapv
+                               #(vector :li [:a {:href (str % "/from-data.html")} [:h2 %]])
+                               folders))))))))
+
 
 (deftest test-compile-names-e2e
   (let [part "torso"

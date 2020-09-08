@@ -3,7 +3,8 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.set :as set]
-            [clojure.pprint :as pp])
+            [clojure.pprint :as pp]
+            [carabiner.outfitter.shapes-test :as shapes])
   (:import (java.io File)))
 
 (deftest test-parallels
@@ -55,6 +56,14 @@
                           (assoc part-map part part-nums)
                           part-map))
                       (sorted-map) diff-parts)))
-                (sorted-map) types)]
+                (sorted-map) types)
+        fit-parts (into (sorted-set) (keys fit))]
     (spit (io/file root "diffs.edn")
-          (with-out-str (pp/pprint diffs)))))
+          (with-out-str (pp/pprint diffs)))
+    (doseq [[type part] (for [t types p fit-parts] [t p])]
+      (if (get-in diffs [type part])
+        (shapes/build-columns-file (io/file root (name type) part))
+        (spit (io/file root (name type) part "columns.edn")
+              (slurp (io/file root "fit" part "columns.edn")))))))
+
+

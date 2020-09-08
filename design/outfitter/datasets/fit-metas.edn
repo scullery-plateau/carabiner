@@ -1,0 +1,9 @@
+{:fill-rule #{java.lang.String},
+ :stroke #{java.lang.String},
+ :stroke-opacity #{java.lang.String},
+ :fill #{java.lang.String},
+ :stroke-linejoin #{java.lang.String},
+ :stroke-linecap #{java.lang.String},
+ :stroke-width #{java.lang.String},
+ :stroke-miterlimit #{java.lang.String},
+ :fill-opacity #{java.lang.String}}
