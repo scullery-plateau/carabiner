@@ -59,8 +59,8 @@
      :gradientTransform
      "matrix(0.0, 0.0038, -0.0038, 0.0, 5.75, -110.85)"},
     :stops
-    ({:stop-color "#ffffff", :offset "0.0"}
-     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"})}
+    [{:stop-color "#ffffff", :offset "0.0"}
+     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"}]}
    {:meta
     {:x2 "819.2",
      :x1 "-819.2",
@@ -70,8 +70,8 @@
      :gradientTransform
      "matrix(0.0, 0.0038, -0.0038, 0.0, -6.25, -110.85)"},
     :stops
-    ({:stop-color "#ffffff", :offset "0.0"}
-     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"})}]}
+    [{:stop-color "#ffffff", :offset "0.0"}
+     {:stop-opacity "0.0", :stop-color "#ffffff", :offset "1.0"}]}]}
  {:label "hat-170",
   :layer :outline,
   :paths

@@ -1,15 +1,15 @@
 (ns carabiner.outfitter.shapes-test
   (:require [clojure.test :refer :all]
-            [carabiner.common.hiccup :as h]
-            [carabiner.common.xml :as x]
             [clojure.string :as str]
+            [clojure.set :as set]
             [clojure.pprint :as pp]
+            [clojure.java.io :as io]
             [clojure.edn :as edn]
             [cheshire.core :as cheshire]
-            [clojure.set :as set]
-            [clojure.java.io :as io]
-            [carabiner.common.hiccup :as hml]
-            [carabiner.common.img :as img])
+            [carabiner.common.hiccup :as h]
+            [carabiner.common.xml :as x]
+            [carabiner.common.img :as img]
+            [carabiner.outfitter.translate :as tr])
   (:import (java.io File)))
 
 (defn wrap-svg [[id svg]]
@@ -232,12 +232,6 @@
              (update color-key (partial update-color-url label)))
    :path (parse-d off-set d)})
 
-(def init-minmax-xy
-  {:min-x (double Integer/MAX_VALUE)
-   :min-y (double Integer/MAX_VALUE)
-   :max-x (double Integer/MIN_VALUE)
-   :max-y (double Integer/MIN_VALUE)})
-
 (defn minmax-xy-reducer [out {:keys [path]}]
   (reduce
     (fn [{:keys [min-x min-y max-x max-y]} [x y]]
@@ -254,7 +248,7 @@
 
 (defn parse-gradients [label [_ args & stops]]
   {:meta  (update args :id #(str/replace % "gradient" (str label "-")))
-   :stops (map second stops)})
+   :stops (mapv second stops)})
 
 (defn parse-defs [label [_ & defs]]
   (mapv (partial parse-gradients label) defs))
@@ -266,7 +260,7 @@
         matrix (edn/read-string (apply str (drop 6 transform)))
         [offset-x offset-y] (point+ (drop 4 matrix) [(- diff-x) (- diff-y)])
         parsed-paths (mapv (partial parse-path diff-set (if (= layer :outline) :stroke :fill) label) paths)
-        {:keys [min-x min-y max-x max-y]} (reduce minmax-xy-reducer init-minmax-xy parsed-paths)]
+        {:keys [min-x min-y max-x max-y]} (reduce minmax-xy-reducer tr/init-minmax-xy parsed-paths)]
     (merge
       {:label label
        :layer layer
@@ -611,7 +605,7 @@
 
 (deftest test-read-columns-to-html
   (let [root (io/file "design/outfitter/items/body/fit")]
-    (read-columns-to-html (io/file root "symbol_B"))))
+    (read-columns-to-html (io/file root "hat"))))
 
 (deftest test-read-columns-to-html-for-folder
   (let [folder (io/file "design/outfitter/items/body")]
@@ -744,7 +738,7 @@
 (defn svg->64 [svg]
   (-> svg
       (update 1 assoc :xmlns "http://www.w3.org/2000/svg")
-      (hml/to-text)
+      (h/to-text)
       (img/svg-to-64)))
 
 (defn build-demo-table [root demos]

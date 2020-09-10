@@ -5,7 +5,7 @@
 
 (s/def ::body-types #{:fit :hulk :superman :woman})
 
-(s/def ::whole-number (s/and int? pos?))
+(s/def ::whole-number (s/and int? (complement neg?)))
 
 (s/def ::layer (s/and
                  vector?
@@ -20,13 +20,14 @@
                         :move (s/? (s/cat :label #{:move} :value ::cs/double-xy))
                         :flip? (s/? (s/cat :label #{:flip?} :value boolean?)))))
 
+(s/def ::resize-body ::cs/double-xy)
+
+(s/def ::bg-color ::rcs/color)
+
+(s/def ::bg-pattern ::whole-number)
+
 (s/def ::schematic (s/and
                      vector?
                      (s/cat :body-type ::body-types
-                            :resize-body (s/? (s/cat :label #{:resize-body} :value ::cs/double-xy))
-                            :bg-color (s/? (s/cat :label #{:bg-color} :value ::rcs/color))
-                            :bg-pattern (s/? (s/cat :label #{:bg-pattern} :value ::whole-number))
+                            :args (s/? (s/keys :opt-un [::resize-body ::bg-color ::bg-pattern]))
                             :layers (s/+ ::layer))))
-
-
-

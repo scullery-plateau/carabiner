@@ -1,12 +1,10 @@
 [{:outline
   {:label "chest-137",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.69999999999999 -65.55000000000001]]
@@ -69,7 +67,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [76.5 -69.4]]
@@ -80,16 +77,14 @@
       [:M [-76.80000000000001 -69.4]]
       [:L [-71.05000000000001 -65.6]]]}],
    :dim
-   {:width "154.8px",
-    :height "107.45px",
-    :offset [77.55000000000001 78.75],
+   {:offset [77.55000000000001 78.75],
+    :frame [154.8 107.45],
     :min [-77.80000000000001 -78.25],
     :max [77.5 28.30000000000001]}},
   :base
   {:label "chest-12",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [76.5 -69.4]]
       [:Q
@@ -145,20 +140,17 @@
        [31.75 -78.19999999999999]]
       [:L [43.89999999999998 -72.94999999999999] [76.5 -69.4]]]}],
    :dim
-   {:width "153.8px",
-    :height "106.45px",
-    :offset [77.05000000000001 78.25],
+   {:offset [77.05000000000001 78.25],
+    :frame [153.8 106.45],
     :min [-77.80000000000001 -78.25],
     :max [77.5 28.30000000000001]}}}
  {:outline
   {:label "chest-138",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-38.35000000000002 -9.699999999999989]]
@@ -207,7 +199,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-38.14999999999998 -9.600000000000023]]
@@ -254,16 +245,14 @@
       [:M [-12.100000000000023 -2.8500000000000227]]
       [:L [-1.1000000000000227 -4.399999999999977]]]}],
    :dim
-   {:width "101.2px",
-    :height "94.8px",
-    :offset [50.80000000000001 79.0],
+   {:offset [50.80000000000001 79.0],
+    :frame [101.2 94.8],
     :min [-50.30000000000001 -78.5],
     :max [49.89999999999998 16.5]}},
   :base
   {:label "chest-13",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [40.39999999999998 -66.9]]
       [:Q [28.5 -48.80000000000001] [13.25 -32.39999999999998]]
@@ -304,20 +293,17 @@
        [44.14999999999998 -72.85]
        [40.39999999999998 -66.9]]]}],
    :dim
-   {:width "100.2px",
-    :height "93.8px",
-    :offset [50.30000000000001 78.5],
+   {:offset [50.30000000000001 78.5],
+    :frame [100.2 93.8],
     :min [-50.30000000000001 -78.5],
     :max [49.89999999999998 16.5]}}}
  {:outline
   {:label "chest-139",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [39.44999999999999 -79.9]]
@@ -387,7 +373,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [39.44999999999999 -79.9]]
@@ -409,16 +394,14 @@
        [8.550000000000011 -22.649999999999977]
        [25.44999999999999 -55.400000000000006]]]}],
    :dim
-   {:width "101.3px",
-    :height "112.4px",
-    :offset [50.80000000000001 83.69999999999999],
+   {:offset [50.80000000000001 83.69999999999999],
+    :frame [101.3 112.4],
     :min [-50.30000000000001 -84.5],
     :max [50.0 28.19999999999999]}},
   :base
   {:label "chest-14",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [27.899999999999977 -79.9]]
       [:L [25.350000000000023 -81.0]]
@@ -482,21 +465,18 @@
        [28.80000000000001 -76.25]
        [27.899999999999977 -79.9]]]}],
    :dim
-   {:width "100.3px",
-    :height "111.4px",
-    :offset [50.30000000000001 83.19999999999999],
+   {:offset [50.30000000000001 83.19999999999999],
+    :frame [100.3 111.4],
     :min [-50.30000000000001 -84.5],
     :max [50.0 28.19999999999999]}}}
  {:outline
   {:label "chest-140",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [39.44999999999999 -79.9]]
@@ -515,7 +495,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [36.25 3.75]]
@@ -562,16 +541,14 @@
        [28.25 11.899999999999977]
        [36.25 3.75]]]}],
    :dim
-   {:width "89.55px",
-    :height "112.4px",
-    :offset [39.05000000000001 83.69999999999999],
+   {:offset [39.05000000000001 83.69999999999999],
+    :frame [89.55 112.4],
     :min [-38.55000000000001 -84.5],
     :max [50.0 28.19999999999999]}},
   :base
   {:label "chest-15",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [21.649999999999977 -60.0]]
       [:Q
@@ -618,20 +595,17 @@
        [-3.1999999999999886 -21.30000000000001]
        [21.649999999999977 -60.0]]]}],
    :dim
-   {:width "88.55px",
-    :height "111.4px",
-    :offset [38.55000000000001 83.19999999999999],
+   {:offset [38.55000000000001 83.19999999999999],
+    :frame [88.55 111.4],
     :min [-38.55000000000001 -84.5],
     :max [50.0 28.19999999999999]}}}
  {:outline
   {:label "chest-141",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [77.64999999999998 -66.44999999999999]]
@@ -682,16 +656,14 @@
        [46.80000000000001 -71.65]
        [77.64999999999998 -66.44999999999999]]]}],
    :dim
-   {:width "156.65px",
-    :height "107.3px",
-    :offset [78.5 78.6],
+   {:offset [78.5 78.6],
+    :frame [156.65 107.3],
     :min [-78.0 -78.1],
     :max [77.64999999999998 28.25]}},
   :base
   {:label "chest-16",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [77.64999999999998 -66.44999999999999]]
       [:Q
@@ -741,21 +713,18 @@
        [46.80000000000001 -71.65]
        [77.64999999999998 -66.44999999999999]]]}],
    :dim
-   {:width "155.65px",
-    :height "106.3px",
-    :offset [78.0 78.1],
+   {:offset [78.0 78.1],
+    :frame [155.65 106.3],
     :min [-78.0 -78.1],
     :max [77.64999999999998 28.25]}}}
  {:outline
   {:label "chest-142",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-0.14999999999997726 -30.0]]
@@ -777,7 +746,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [77.64999999999998 -66.44999999999999]]
@@ -822,16 +790,14 @@
        [46.80000000000001 -71.65]
        [77.64999999999998 -66.44999999999999]]]}],
    :dim
-   {:width "156.65px",
-    :height "110.85px",
-    :offset [78.5 82.15],
+   {:offset [78.5 82.15],
+    :frame [156.65 110.85],
     :min [-78.0 -81.94999999999999],
     :max [77.64999999999998 28.25]}},
   :base
   {:label "chest-17",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [77.64999999999998 -66.44999999999999]]
       [:Q
@@ -876,16 +842,14 @@
        [-78.0 -66.44999999999999]]
       [:L [-47.14999999999998 -71.65] [-38.10000000000002 -75.65]]]}],
    :dim
-   {:width "155.65px",
-    :height "103.85px",
-    :offset [78.0 75.65],
+   {:offset [78.0 75.65],
+    :frame [155.65 103.85],
     :min [-78.0 -75.65],
     :max [77.64999999999998 28.25]}},
   :detail
   {:label "chest-85",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [37.75 -75.65]]
       [:Q
@@ -910,20 +874,17 @@
        [34.19999999999999 -81.94999999999999]
        [37.75 -75.65]]]}],
    :dim
-   {:width "75.85px",
-    :height "108.5px",
-    :offset [38.10000000000002 81.65],
+   {:offset [38.10000000000002 81.65],
+    :frame [75.85 108.5],
     :min [-38.10000000000002 -81.94999999999999],
     :max [37.75 26.850000000000023]}}}
  {:outline
   {:label "chest-143",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [40.55000000000001 -75.85]]
@@ -984,7 +945,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [18.44999999999999 -28.55000000000001]]
@@ -1176,16 +1136,14 @@
        [25.649999999999977 0.25]]
       [:L [25.44999999999999 0.44999999999998863]]]}],
    :dim
-   {:width "82.35px",
-    :height "109.0px",
-    :offset [41.30000000000001 80.30000000000001],
+   {:offset [41.30000000000001 80.30000000000001],
+    :frame [82.35 109.0],
     :min [-40.80000000000001 -79.80000000000001],
     :max [40.55000000000001 28.30000000000001]}},
   :base
   {:label "chest-18",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [40.55000000000001 -75.85]]
       [:L
@@ -1402,16 +1360,14 @@
        [25.649999999999977 0.25]]
       [:L [25.44999999999999 0.44999999999998863]]]}],
    :dim
-   {:width "81.35px",
-    :height "108.0px",
-    :offset [40.80000000000001 79.80000000000001],
+   {:offset [40.80000000000001 79.80000000000001],
+    :frame [81.35 108.0],
     :min [-40.80000000000001 -79.80000000000001],
     :max [40.55000000000001 28.30000000000001]}},
   :detail
   {:label "chest-86",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [30.19999999999999 -34.75]]
       [:L
@@ -1588,20 +1544,17 @@
        [28.30000000000001 1.0]
        [28.30000000000001 1.75]]]}],
    :dim
-   {:width "62.25px",
-    :height "46.9px",
-    :offset [31.25 43.35000000000002],
+   {:offset [31.25 43.35000000000002],
+    :frame [62.25 46.9],
     :min [-31.25 -43.35000000000002],
     :max [31.0 3.5500000000000114]}}}
  {:outline
   {:label "chest-144",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
@@ -1677,7 +1630,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [17.05000000000001 -84.55000000000001]]
@@ -1769,16 +1721,14 @@
        [-44.05000000000001 -31.649999999999977]
        [-44.80000000000001 -32.39999999999998]]]}],
    :dim
-   {:width "141.8px",
-    :height "124.45px",
-    :offset [71.10000000000002 95.75],
+   {:offset [71.10000000000002 95.75],
+    :frame [141.8 124.45],
     :min [-70.60000000000002 -95.25],
     :max [70.19999999999999 28.30000000000001]}},
   :base
   {:label "chest-19",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
       [:Q
@@ -1875,16 +1825,14 @@
       [:Q [-21.25 -90.35] [-15.800000000000011 -92.94999999999999]]
       [:L [-16.69999999999999 -84.94999999999999]]]}],
    :dim
-   {:width "140.8px",
-    :height "121.15px",
-    :offset [70.60000000000002 92.94999999999999],
+   {:offset [70.60000000000002 92.94999999999999],
+    :frame [140.8 121.15],
     :min [-70.60000000000002 -92.94999999999999],
     :max [70.19999999999999 28.30000000000001]}},
   :detail
   {:label "chest-87",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [15.449999999999989 -92.80000000000001]]
       [:L [15.199999999999989 -94.75]]
@@ -1958,20 +1906,17 @@
        [17.600000000000023 -92.1]
        [15.449999999999989 -92.80000000000001]]]}],
    :dim
-   {:width "60.7px",
-    :height "123.1px",
-    :offset [38.85000000000002 95.25],
+   {:offset [38.85000000000002 95.25],
+    :frame [60.7 123.1],
     :min [-38.85000000000002 -95.25],
     :max [23.899999999999977 27.850000000000023]}}}
  {:outline
   {:label "chest-145",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [16.69999999999999 20.899999999999977]]
@@ -2035,7 +1980,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [33.05000000000001 -82.55000000000001]]
@@ -2055,16 +1999,14 @@
        [-17.05000000000001 -25.25]
        [-17.149999999999977 20.94999999999999]]]}],
    :dim
-   {:width "151.75px",
-    :height "116.1px",
-    :offset [76.10000000000002 94.65],
+   {:offset [76.10000000000002 94.65],
+    :frame [151.75 116.1],
     :min [-75.60000000000002 -94.15],
     :max [75.14999999999998 20.94999999999999]}},
   :base
   {:label "chest-20",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.69999999999999 -72.5]]
       [:L [75.14999999999998 -68.5]]
@@ -2111,16 +2053,14 @@
        [-36.05000000000001 -75.80000000000001]
        [-34.35000000000002 -65.15]]]}],
    :dim
-   {:width "150.75px",
-    :height "103.5px",
-    :offset [75.60000000000002 82.55000000000001],
+   {:offset [75.60000000000002 82.55000000000001],
+    :frame [150.75 103.5],
     :min [-75.60000000000002 -82.55000000000001],
     :max [75.14999999999998 20.94999999999999]}},
   :detail
   {:label "chest-88",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-33.5 -82.5]]
       [:Q [-29.649999999999977 -92.94999999999999] [-15.75 -94.1]]
@@ -2160,20 +2100,17 @@
        [33.35000000000002 -77.85]
        [16.25 -84.9]]]}],
    :dim
-   {:width "69.65px",
-    :height "115.1px",
-    :offset [35.05000000000001 94.15],
+   {:offset [35.05000000000001 94.15],
+    :frame [69.65 115.1],
     :min [-36.05000000000001 -94.15],
     :max [35.60000000000002 20.94999999999999]}}}
  {:outline
   {:label "chest-146",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -2306,7 +2243,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -2398,16 +2334,14 @@
       [:M [16.94999999999999 35.05000000000001]]
       [:L [14.149999999999977 35.25]]]}],
    :dim
-   {:width "187.0px",
-    :height "160.35px",
-    :offset [93.69999999999999 95.55000000000001],
+   {:offset [93.69999999999999 95.55000000000001],
+    :frame [187.0 160.35],
     :min [-93.19999999999999 -95.05000000000001],
     :max [92.80000000000001 64.25]}},
   :base
   {:label "chest-21",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -2519,16 +2453,14 @@
        [85.0 1.6499999999999773]
        [85.60000000000002 2.75]]]}],
    :dim
-   {:width "186.0px",
-    :height "151.75px",
-    :offset [93.19999999999999 87.44999999999999],
+   {:offset [93.19999999999999 87.44999999999999],
+    :frame [186.0 151.75],
     :min [-93.19999999999999 -87.44999999999999],
     :max [92.80000000000001 64.25]}},
   :detail
   {:label "chest-89",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [25.69999999999999 -91.4]]
       [:L [26.399999999999977 -87.44999999999999]]
@@ -2672,21 +2604,18 @@
        [32.69999999999999 8.149999999999977]]
       [:Q [32.30000000000001 12.850000000000023] [32.5 17.5]]]}],
    :dim
-   {:width "174.8px",
-    :height "156.15px",
-    :offset [87.60000000000002 95.05000000000001],
+   {:offset [87.60000000000002 95.05000000000001],
+    :frame [174.8 156.15],
     :min [-87.60000000000002 -95.05000000000001],
     :max [87.19999999999999 61.10000000000002]}}}
  {:outline
   {:label "chest-147",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [49.10000000000002 -71.19999999999999]]
@@ -2895,7 +2824,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -3034,16 +2962,14 @@
        [-46.89999999999998 -25.899999999999977]
        [-44.80000000000001 -32.39999999999998]]]}],
    :dim
-   {:width "187.0px",
-    :height "153.9px",
-    :offset [93.69999999999999 89.1],
+   {:offset [93.69999999999999 89.1],
+    :frame [187.0 153.9],
     :min [-93.19999999999999 -88.6],
     :max [92.80000000000001 64.25]}},
   :base
   {:label "chest-22",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [49.10000000000002 -71.19999999999999]]
       [:L [48.85000000000002 -70.85]]
@@ -3289,16 +3215,14 @@
        [-33.80000000000001 -58.94999999999999]
        [-34.30000000000001 -59.44999999999999]]]}],
    :dim
-   {:width "186.0px",
-    :height "152.9px",
-    :offset [93.19999999999999 88.6],
+   {:offset [93.19999999999999 88.6],
+    :frame [186.0 152.9],
     :min [-93.19999999999999 -88.6],
     :max [92.80000000000001 64.25]}},
   :detail
   {:label "chest-90",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [26.899999999999977 -44.69999999999999]]
       [:Q
@@ -3418,20 +3342,17 @@
        [-29.19999999999999 -47.599999999999994]
        [-28.5 -47.599999999999994]]]}],
    :dim
-   {:width "104.4px",
-    :height "114.75px",
-    :offset [52.39999999999998 71.69999999999999],
+   {:offset [52.39999999999998 71.69999999999999],
+    :frame [104.4 114.75],
     :min [-52.39999999999998 -71.69999999999999],
     :max [52.0 43.05000000000001]}}}
  {:outline
   {:label "chest-148",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -3560,7 +3481,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.80000000000001 -81.65]]
@@ -3681,16 +3601,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "187.0px",
-    :height "156.65px",
-    :offset [93.69999999999999 87.25],
+   {:offset [93.69999999999999 87.25],
+    :frame [187.0 156.65],
     :min [-93.19999999999999 -86.75],
     :max [92.80000000000001 69.85000000000002]}},
   :base
   {:label "chest-23",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.19999999999999 -70.25]]
       [:L [70.19999999999999 -66.15]]
@@ -3875,16 +3793,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "186.0px",
-    :height "155.65px",
-    :offset [93.19999999999999 86.75],
+   {:offset [93.19999999999999 86.75],
+    :frame [186.0 155.65],
     :min [-93.19999999999999 -86.75],
     :max [92.80000000000001 69.85000000000002]}},
   :detail
   {:label "chest-91",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [41.69999999999999 -40.85000000000002]]
       [:L
@@ -3961,21 +3877,18 @@
        [7.300000000000011 36.44999999999999]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "76.85px",
-    :height "83.9px",
-    :offset [35.14999999999998 40.85000000000002],
+   {:offset [35.14999999999998 40.85000000000002],
+    :frame [76.85 83.9],
     :min [-35.14999999999998 -40.85000000000002],
     :max [41.69999999999999 43.05000000000001]}}}
  {:outline
   {:label "chest-149",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [44.39999999999998 -32.39999999999998]]
@@ -4119,7 +4032,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -4248,16 +4160,14 @@
        [-46.89999999999998 -25.899999999999977]
        [-50.30000000000001 -19.350000000000023]]]}],
    :dim
-   {:width "187.0px",
-    :height "194.55px",
-    :offset [93.69999999999999 87.25],
+   {:offset [93.69999999999999 87.25],
+    :frame [187.0 194.55],
     :min [-93.19999999999999 -86.75],
     :max [92.80000000000001 107.0]}},
   :base
   {:label "chest-24",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.19999999999999 -70.25]]
       [:L [70.19999999999999 -66.15]]
@@ -4445,16 +4355,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "186.0px",
-    :height "193.55px",
-    :offset [93.19999999999999 86.75],
+   {:offset [93.19999999999999 86.75],
+    :frame [186.0 193.55],
     :min [-93.19999999999999 -86.75],
     :max [92.80000000000001 107.0]}},
   :detail
   {:label "chest-91",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [41.69999999999999 -40.85000000000002]]
       [:L
@@ -4531,20 +4439,17 @@
        [7.300000000000011 36.44999999999999]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "76.85px",
-    :height "83.9px",
-    :offset [35.14999999999998 40.85000000000002],
+   {:offset [35.14999999999998 40.85000000000002],
+    :frame [76.85 83.9],
     :min [-35.14999999999998 -40.85000000000002],
     :max [41.69999999999999 43.05000000000001]}}}
  {:outline
   {:label "chest-150",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -4685,7 +4590,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.80000000000001 -81.65]]
@@ -4807,16 +4711,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "187.0px",
-    :height "277.3px",
-    :offset [93.69999999999999 87.25],
+   {:offset [93.69999999999999 87.25],
+    :frame [187.0 277.3],
     :min [-93.19999999999999 -86.75],
     :max [92.80000000000001 190.2]}},
   :base
   {:label "chest-25",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.19999999999999 -70.25]]
       [:L [70.19999999999999 -66.15]]
@@ -5010,16 +4912,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "186.0px",
-    :height "276.3px",
-    :offset [93.19999999999999 86.75],
+   {:offset [93.19999999999999 86.75],
+    :frame [186.0 276.3],
     :min [-93.19999999999999 -86.75],
     :max [92.80000000000001 190.2]}},
   :detail
   {:label "chest-91",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [41.69999999999999 -40.85000000000002]]
       [:L
@@ -5096,21 +4996,18 @@
        [7.300000000000011 36.44999999999999]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "76.85px",
-    :height "83.9px",
-    :offset [35.14999999999998 40.85000000000002],
+   {:offset [35.14999999999998 40.85000000000002],
+    :frame [76.85 83.9],
     :min [-35.14999999999998 -40.85000000000002],
     :max [41.69999999999999 43.05000000000001]}}}
  {:outline
   {:label "chest-151",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [30.80000000000001 -78.65]]
@@ -5155,7 +5052,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -5240,16 +5136,14 @@
        [-70.60000000000002 -66.15]]
       [:L [-50.60000000000002 -70.25] [-31.25 -78.6]]]}],
    :dim
-   {:width "186.95px",
-    :height "151.95px",
-    :offset [93.69999999999999 87.19999999999999],
+   {:offset [93.69999999999999 87.19999999999999],
+    :frame [186.95 151.95],
     :min [-93.19999999999999 -86.69999999999999],
     :max [92.75 66.0]}},
   :base
   {:label "chest-26",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-31.25 -78.6]]
       [:L
@@ -5333,20 +5227,17 @@
        [30.80000000000001 -78.65]
        [50.14999999999998 -70.30000000000001]]]}],
    :dim
-   {:width "185.95px",
-    :height "150.95px",
-    :offset [93.19999999999999 86.69999999999999],
+   {:offset [93.19999999999999 86.69999999999999],
+    :frame [185.95 150.95],
     :min [-93.19999999999999 -86.69999999999999],
     :max [92.75 66.0]}}}
  {:outline
   {:label "chest-152",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -5457,7 +5348,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [30.80000000000001 -78.65]]
@@ -5519,16 +5409,14 @@
        [-83.89999999999998 -0.8999999999999773]
        [-82.05000000000001 -3.25]]]}],
    :dim
-   {:width "186.95px",
-    :height "278.9px",
-    :offset [93.69999999999999 87.19999999999999],
+   {:offset [93.69999999999999 87.19999999999999],
+    :frame [186.95 278.9],
     :min [-93.19999999999999 -86.69999999999999],
     :max [92.75 191.39999999999998]}},
   :base
   {:label "chest-27",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-31.25 -78.6]]
       [:L
@@ -5642,16 +5530,14 @@
        [20.25 30.30000000000001]
        [34.60000000000002 28.19999999999999]]]}],
    :dim
-   {:width "185.95px",
-    :height "277.9px",
-    :offset [93.19999999999999 86.69999999999999],
+   {:offset [93.19999999999999 86.69999999999999],
+    :frame [185.95 277.9],
     :min [-93.19999999999999 -86.69999999999999],
     :max [92.75 191.39999999999998]}},
   :detail
   {:label "chest-92",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-20.69999999999999 30.350000000000023]]
       [:L
@@ -5666,21 +5552,18 @@
        [33.0 19.850000000000023]
        [34.60000000000002 28.19999999999999]]]}],
    :dim
-   {:width "69.65px",
-    :height "10.5px",
-    :offset [35.05000000000001 -19.850000000000023],
+   {:offset [35.05000000000001 -19.850000000000023],
+    :frame [69.65 10.5],
     :min [-35.05000000000001 19.850000000000023],
     :max [34.60000000000002 30.350000000000023]}}}
  {:outline
   {:label "chest-153",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [16.19999999999999 -85.25]]
@@ -5731,7 +5614,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -5852,16 +5734,14 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "187.0px",
-    :height "293.0px",
-    :offset [93.69999999999999 92.75],
+   {:offset [93.69999999999999 92.75],
+    :frame [187.0 293.0],
     :min [-93.19999999999999 -92.25],
     :max [92.80000000000001 199.75]}},
   :base
   {:label "chest-28",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.19999999999999 -70.25]]
       [:L [70.19999999999999 -66.15]]
@@ -5940,16 +5820,14 @@
        [-16.649999999999977 -84.9]
        [-16.600000000000023 -85.25]]]}],
    :dim
-   {:width "186.0px",
-    :height "271.5px",
-    :offset [93.19999999999999 85.25],
+   {:offset [93.19999999999999 85.25],
+    :frame [186.0 271.5],
     :min [-93.19999999999999 -85.25],
     :max [92.80000000000001 186.25]}},
   :detail
   {:label "chest-93",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [15.5 -92.25]]
       [:L
@@ -6028,20 +5906,17 @@
        [71.85000000000002 61.10000000000002]]
       [:L [67.89999999999998 58.39999999999998]]]}],
    :dim
-   {:width "177.8px",
-    :height "292.0px",
-    :offset [89.10000000000002 92.25],
+   {:offset [89.10000000000002 92.25],
+    :frame [177.8 292.0],
     :min [-89.10000000000002 -92.25],
     :max [88.69999999999999 199.75]}}}
  {:outline
   {:label "chest-154",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.10000000000002 -66.19999999999999]]
@@ -6196,7 +6071,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [36.69999999999999 -76.05000000000001]]
@@ -6258,16 +6132,14 @@
        [-74.5 144.14999999999998]]
       [:L [-72.30000000000001 148.60000000000002]]]}],
    :dim
-   {:width "201.0px",
-    :height "287.7px",
-    :offset [100.75 87.44999999999999],
+   {:offset [100.75 87.44999999999999],
+    :frame [201.0 287.7],
     :min [-102.30000000000001 -86.94999999999999],
     :max [101.80000000000001 199.75]}},
   :base
   {:label "chest-29",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-37.64999999999998 -66.65]]
       [:L [-37.64999999999998 -60.349999999999994]]
@@ -6387,16 +6259,14 @@
        [36.69999999999999 -76.05000000000001]
        [50.10000000000002 -70.30000000000001]]]}],
    :dim
-   {:width "200.0px",
-    :height "275.8px",
-    :offset [100.25 76.05000000000001],
+   {:offset [100.25 76.05000000000001],
+    :frame [200.0 275.8],
     :min [-102.30000000000001 -76.05000000000001],
     :max [101.80000000000001 199.75]}},
   :detail
   {:label "chest-94",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [36.39999999999998 -79.30000000000001]]
       [:L
@@ -6470,20 +6340,17 @@
        [-26.100000000000023 -85.30000000000001]
        [-16.350000000000023 -86.9]]]}],
    :dim
-   {:width "74.85px",
-    :height "149.2px",
-    :offset [37.69999999999999 86.94999999999999],
+   {:offset [37.69999999999999 86.94999999999999],
+    :frame [74.85 149.2],
     :min [-37.64999999999998 -86.94999999999999],
     :max [37.14999999999998 62.25]}}}
  {:outline
   {:label "chest-155",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [49.89999999999998 -19.350000000000023]]
@@ -6626,7 +6493,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -6644,7 +6510,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [44.39999999999998 -32.39999999999998]]
@@ -7095,16 +6960,14 @@
       [:M [-89.35000000000002 51.10000000000002]]
       [:L [-89.5 51.10000000000002] [-91.5 50.69999999999999]]]}],
    :dim
-   {:width "187.0px",
-    :height "158.65px",
-    :offset [93.69999999999999 90.19999999999999],
+   {:offset [93.69999999999999 90.19999999999999],
+    :frame [187.0 158.65],
     :min [-93.19999999999999 -89.69999999999999],
     :max [92.80000000000001 67.94999999999999]}},
   :base
   {:label "chest-30",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [14.100000000000023 -3.8500000000000227]]
       [:Q
@@ -7518,16 +7381,14 @@
        [12.399999999999977 4.649999999999977]]
       [:L [18.649999999999977 6.100000000000023]]]}],
    :dim
-   {:width "186.0px",
-    :height "142.7px",
-    :offset [93.19999999999999 81.85],
+   {:offset [93.19999999999999 81.85],
+    :frame [186.0 142.7],
     :min [-93.19999999999999 -81.85],
     :max [92.80000000000001 60.89999999999998]}},
   :detail
   {:label "chest-95",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-64.75 53.10000000000002]]
       [:L [-64.85000000000002 52.80000000000001]]
@@ -7981,21 +7842,18 @@
        [67.39999999999998 52.10000000000002]
        [66.75 51.80000000000001]]]}],
    :dim
-   {:width "182.6px",
-    :height "157.65px",
-    :offset [91.5 89.69999999999999],
+   {:offset [91.5 89.69999999999999],
+    :frame [182.6 157.65],
     :min [-91.5 -89.69999999999999],
     :max [91.10000000000002 67.94999999999999]}}}
  {:outline
   {:label "chest-156",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [49.5 -70.55000000000001]]
@@ -8516,7 +8374,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [74.80000000000001 -59.25]]
@@ -8664,7 +8521,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [54.80000000000001 -47.849999999999994]]
@@ -8677,16 +8533,14 @@
        [-49.85000000000002 -40.55000000000001]
        [-44.80000000000001 -32.39999999999998]]]}],
    :dim
-   {:width "187.0px",
-    :height "138.05px",
-    :offset [93.69999999999999 73.44999999999999],
+   {:offset [93.69999999999999 73.44999999999999],
+    :frame [187.0 138.05],
     :min [-93.19999999999999 -72.94999999999999],
     :max [92.80000000000001 64.10000000000002]}},
   :base
   {:label "chest-31",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-68.25 -52.94999999999999]]
       [:L
@@ -8780,16 +8634,14 @@
        [62.5 -50.69999999999999]
        [67.35000000000002 -52.75]]]}],
    :dim
-   {:width "186.0px",
-    :height "98.85px",
-    :offset [93.19999999999999 56.599999999999994],
+   {:offset [93.19999999999999 56.599999999999994],
+    :frame [186.0 98.85],
     :min [-93.19999999999999 -56.599999999999994],
     :max [92.80000000000001 42.25]}},
   :detail
   {:label "chest-96",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [67.35000000000002 -52.75]]
       [:L
@@ -8941,21 +8793,18 @@
        [-0.6999999999999886 -24.649999999999977]
        [-0.8500000000000227 -24.600000000000023]]]}],
    :dim
-   {:width "182.2px",
-    :height "137.05px",
-    :offset [91.30000000000001 72.94999999999999],
+   {:offset [91.30000000000001 72.94999999999999],
+    :frame [182.2 137.05],
     :min [-91.30000000000001 -72.94999999999999],
     :max [90.89999999999998 64.10000000000002]}}}
  {:outline
   {:label "chest-157",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -9182,7 +9031,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [88.44999999999999 -47.05000000000001]]
@@ -9375,16 +9223,14 @@
        [87.44999999999999 -26.899999999999977]
        [88.44999999999999 -18.899999999999977]]]}],
    :dim
-   {:width "197.8px",
-    :height "149.95px",
-    :offset [99.10000000000002 85.6],
+   {:offset [99.10000000000002 85.6],
+    :frame [197.8 149.95],
     :min [-98.60000000000002 -85.55000000000001],
     :max [98.19999999999999 63.85000000000002]}},
   :base
   {:label "chest-32",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [77.14999999999998 -32.55000000000001]]
       [:L [83.35000000000002 -32.10000000000002]]
@@ -9643,16 +9489,14 @@
        [-59.75 -4.100000000000023]
        [-63.55000000000001 0.5500000000000114]]]}],
    :dim
-   {:width "194.9px",
-    :height "145.85px",
-    :offset [97.64999999999998 84.30000000000001],
+   {:offset [97.64999999999998 84.30000000000001],
+    :frame [194.9 145.85],
     :min [-97.64999999999998 -84.30000000000001],
     :max [97.25 61.55000000000001]}},
   :detail
   {:label "chest-97",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [28.850000000000023 -70.55000000000001]]
       [:Q
@@ -9926,20 +9770,17 @@
        [69.94999999999999 25.850000000000023]
        [65.19999999999999 30.94999999999999]]]}],
    :dim
-   {:width "196.8px",
-    :height "148.95px",
-    :offset [98.60000000000002 85.1],
+   {:offset [98.60000000000002 85.1],
+    :frame [196.8 148.95],
     :min [-98.60000000000002 -85.55000000000001],
     :max [98.19999999999999 63.85000000000002]}}}
  {:outline
   {:label "chest-158",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -10022,7 +9863,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [17.25 -77.0]]
@@ -10090,16 +9930,14 @@
        [17.0 35.05000000000001]]
       [:L [16.94999999999999 35.05000000000001]]]}],
    :dim
-   {:width "141.8px",
-    :height "137.8px",
-    :offset [71.10000000000002 95.55000000000001],
+   {:offset [71.10000000000002 95.55000000000001],
+    :frame [141.8 137.8],
     :min [-70.60000000000002 -95.05000000000001],
     :max [70.19999999999999 41.75]}},
   :base
   {:label "chest-33",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -10176,16 +10014,14 @@
        [-28.05000000000001 -79.94999999999999]
        [-26.80000000000001 -87.44999999999999]]]}],
    :dim
-   {:width "140.8px",
-    :height "122.5px",
-    :offset [70.60000000000002 87.44999999999999],
+   {:offset [70.60000000000002 87.44999999999999],
+    :frame [140.8 122.5],
     :min [-70.60000000000002 -87.44999999999999],
     :max [70.19999999999999 35.05000000000001]}},
   :detail
   {:label "chest-98",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [25.69999999999999 -91.4]]
       [:L [26.399999999999977 -87.44999999999999]]
@@ -10274,21 +10110,18 @@
        [32.69999999999999 8.149999999999977]]
       [:Q [32.30000000000001 12.850000000000023] [32.5 17.5]]]}],
    :dim
-   {:width "70.8px",
-    :height "136.8px",
-    :offset [35.60000000000002 95.05000000000001],
+   {:offset [35.60000000000002 95.05000000000001],
+    :frame [70.8 136.8],
     :min [-35.60000000000002 -95.05000000000001],
     :max [35.19999999999999 41.75]}}}
  {:outline
   {:label "chest-159",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [49.10000000000002 -71.19999999999999]]
@@ -10487,7 +10320,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
@@ -10578,16 +10410,14 @@
       [:Q [31.850000000000023 -80.4] [33.60000000000002 -77.4]]
       [:L [46.14999999999998 -72.0]]]}],
    :dim
-   {:width "141.8px",
-    :height "132.65px",
-    :offset [71.10000000000002 89.1],
+   {:offset [71.10000000000002 89.1],
+    :frame [141.8 132.65],
     :min [-70.60000000000002 -88.6],
     :max [70.19999999999999 43.05000000000001]}},
   :base
   {:label "chest-34",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [49.10000000000002 -71.19999999999999]]
       [:L [48.85000000000002 -70.85]]
@@ -10793,16 +10623,14 @@
        [-33.80000000000001 -58.94999999999999]
        [-34.30000000000001 -59.44999999999999]]]}],
    :dim
-   {:width "140.8px",
-    :height "131.65px",
-    :offset [70.60000000000002 88.6],
+   {:offset [70.60000000000002 88.6],
+    :frame [140.8 131.65],
     :min [-70.60000000000002 -88.6],
     :max [70.19999999999999 43.05000000000001]}},
   :detail
   {:label "chest-90",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [26.899999999999977 -44.69999999999999]]
       [:Q
@@ -10922,20 +10750,17 @@
        [-29.19999999999999 -47.599999999999994]
        [-28.5 -47.599999999999994]]]}],
    :dim
-   {:width "104.4px",
-    :height "114.75px",
-    :offset [52.39999999999998 71.69999999999999],
+   {:offset [52.39999999999998 71.69999999999999],
+    :frame [104.4 114.75],
     :min [-52.39999999999998 -71.69999999999999],
     :max [52.0 43.05000000000001]}}}
  {:outline
   {:label "chest-160",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-0.19999999999998863 44.64999999999998]]
@@ -11017,7 +10842,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.80000000000001 -81.65]]
@@ -11128,16 +10952,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "141.8px",
-    :height "156.65px",
-    :offset [71.10000000000002 87.25],
+   {:offset [71.10000000000002 87.25],
+    :frame [141.8 156.65],
     :min [-70.60000000000002 -86.75],
     :max [70.19999999999999 69.85000000000002]}},
   :base
   {:label "chest-35",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:L [66.44999999999999 -62.150000000000006]]
@@ -11281,16 +11103,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "140.8px",
-    :height "155.65px",
-    :offset [70.60000000000002 86.75],
+   {:offset [70.60000000000002 86.75],
+    :frame [140.8 155.65],
     :min [-70.60000000000002 -86.75],
     :max [70.19999999999999 69.85000000000002]}},
   :detail
   {:label "chest-91",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [41.69999999999999 -40.85000000000002]]
       [:L
@@ -11367,21 +11187,18 @@
        [7.300000000000011 36.44999999999999]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "76.85px",
-    :height "83.9px",
-    :offset [35.14999999999998 40.85000000000002],
+   {:offset [35.14999999999998 40.85000000000002],
+    :frame [76.85 83.9],
     :min [-35.14999999999998 -40.85000000000002],
     :max [41.69999999999999 43.05000000000001]}}}
  {:outline
   {:label "chest-161",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.80000000000001 -81.65]]
@@ -11517,7 +11334,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-0.19999999999998863 44.64999999999998]]
@@ -11599,16 +11415,14 @@
       [:M [-16.55000000000001 -85.80000000000001]]
       [:L [-16.44999999999999 -86.6] [-16.44999999999999 -86.75]]]}],
    :dim
-   {:width "141.8px",
-    :height "194.55px",
-    :offset [71.10000000000002 87.25],
+   {:offset [71.10000000000002 87.25],
+    :frame [141.8 194.55],
     :min [-70.60000000000002 -86.75],
     :max [70.19999999999999 107.0]}},
   :base
   {:label "chest-36",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:L [66.44999999999999 -62.150000000000006]]
@@ -11754,16 +11568,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "140.8px",
-    :height "193.55px",
-    :offset [70.60000000000002 86.75],
+   {:offset [70.60000000000002 86.75],
+    :frame [140.8 193.55],
     :min [-70.60000000000002 -86.75],
     :max [70.19999999999999 107.0]}},
   :detail
   {:label "chest-91",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [41.69999999999999 -40.85000000000002]]
       [:L
@@ -11840,20 +11652,17 @@
        [7.300000000000011 36.44999999999999]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "76.85px",
-    :height "83.9px",
-    :offset [35.14999999999998 40.85000000000002],
+   {:offset [35.14999999999998 40.85000000000002],
+    :frame [76.85 83.9],
     :min [-35.14999999999998 -40.85000000000002],
     :max [41.69999999999999 43.05000000000001]}}}
  {:outline
   {:label "chest-162",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-0.19999999999998863 44.64999999999998]]
@@ -11947,7 +11756,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.80000000000001 -81.65]]
@@ -12060,16 +11868,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "141.8px",
-    :height "277.3px",
-    :offset [71.10000000000002 87.25],
+   {:offset [71.10000000000002 87.25],
+    :frame [141.8 277.3],
     :min [-70.60000000000002 -86.75],
     :max [70.19999999999999 190.2]}},
   :base
   {:label "chest-37",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:L [66.44999999999999 -62.150000000000006]]
@@ -12227,16 +12033,14 @@
        [34.75 34.64999999999998]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "140.8px",
-    :height "276.3px",
-    :offset [70.60000000000002 86.75],
+   {:offset [70.60000000000002 86.75],
+    :frame [140.8 276.3],
     :min [-70.60000000000002 -86.75],
     :max [70.19999999999999 190.2]}},
   :detail
   {:label "chest-91",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [41.69999999999999 -40.85000000000002]]
       [:L
@@ -12313,21 +12117,18 @@
        [7.300000000000011 36.44999999999999]
        [34.75 31.649999999999977]]]}],
    :dim
-   {:width "76.85px",
-    :height "83.9px",
-    :offset [35.14999999999998 40.85000000000002],
+   {:offset [35.14999999999998 40.85000000000002],
+    :frame [76.85 83.9],
     :min [-35.14999999999998 -40.85000000000002],
     :max [41.69999999999999 43.05000000000001]}}}
  {:outline
   {:label "chest-163",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [30.80000000000001 -78.65]]
@@ -12348,7 +12149,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [11.149999999999977 6.5]]
@@ -12405,16 +12205,14 @@
        [-50.60000000000002 -70.25]
        [-31.25 -78.6]]]}],
    :dim
-   {:width "141.8px",
-    :height "99.6px",
-    :offset [71.10000000000002 87.19999999999999],
+   {:offset [71.10000000000002 87.19999999999999],
+    :frame [141.8 99.6],
     :min [-70.60000000000002 -86.69999999999999],
     :max [70.19999999999999 11.899999999999977]}},
   :base
   {:label "chest-38",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-31.25 -78.6]]
       [:L
@@ -12471,20 +12269,17 @@
        [70.14999999999998 -66.19999999999999]
        [70.19999999999999 -66.15]]]}],
    :dim
-   {:width "140.8px",
-    :height "98.6px",
-    :offset [70.60000000000002 86.69999999999999],
+   {:offset [70.60000000000002 86.69999999999999],
+    :frame [140.8 98.6],
     :min [-70.60000000000002 -86.69999999999999],
     :max [70.19999999999999 11.899999999999977]}}}
  {:outline
   {:label "chest-164",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [15.949999999999989 11.550000000000011]]
@@ -12567,7 +12362,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [30.80000000000001 -78.65]]
@@ -12605,16 +12399,14 @@
        [33.0 19.850000000000023]
        [34.60000000000002 28.19999999999999]]]}],
    :dim
-   {:width "141.8px",
-    :height "278.9px",
-    :offset [71.10000000000002 87.19999999999999],
+   {:offset [71.10000000000002 87.19999999999999],
+    :frame [141.8 278.9],
     :min [-70.60000000000002 -86.69999999999999],
     :max [70.19999999999999 191.39999999999998]}},
   :base
   {:label "chest-39",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-31.25 -78.6]]
       [:L
@@ -12701,16 +12493,14 @@
        [20.25 30.30000000000001]
        [34.60000000000002 28.19999999999999]]]}],
    :dim
-   {:width "140.8px",
-    :height "277.9px",
-    :offset [70.60000000000002 86.69999999999999],
+   {:offset [70.60000000000002 86.69999999999999],
+    :frame [140.8 277.9],
     :min [-70.60000000000002 -86.69999999999999],
     :max [70.19999999999999 191.39999999999998]}},
   :detail
   {:label "chest-92",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-20.69999999999999 30.350000000000023]]
       [:L
@@ -12725,21 +12515,18 @@
        [33.0 19.850000000000023]
        [34.60000000000002 28.19999999999999]]]}],
    :dim
-   {:width "69.65px",
-    :height "10.5px",
-    :offset [35.05000000000001 -19.850000000000023],
+   {:offset [35.05000000000001 -19.850000000000023],
+    :frame [69.65 10.5],
     :min [-35.05000000000001 19.850000000000023],
     :max [34.60000000000002 30.350000000000023]}}}
  {:outline
   {:label "chest-165",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [16.19999999999999 -85.25]]
@@ -12772,7 +12559,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [61.64999999999998 163.95]]
@@ -12839,16 +12625,14 @@
        [17.5 -86.05000000000001]
        [16.19999999999999 -85.25]]]}],
    :dim
-   {:width "141.8px",
-    :height "293.0px",
-    :offset [71.10000000000002 92.75],
+   {:offset [71.10000000000002 92.75],
+    :frame [141.8 293.0],
     :min [-70.60000000000002 -92.25],
     :max [70.19999999999999 199.75]}},
   :base
   {:label "chest-40",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:L [66.44999999999999 -62.150000000000006]]
@@ -12901,16 +12685,14 @@
        [-16.649999999999977 -84.9]
        [-16.600000000000023 -85.25]]]}],
    :dim
-   {:width "140.8px",
-    :height "271.5px",
-    :offset [70.60000000000002 85.25],
+   {:offset [70.60000000000002 85.25],
+    :frame [140.8 271.5],
     :min [-70.60000000000002 -85.25],
     :max [70.19999999999999 186.25]}},
   :detail
   {:label "chest-99",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [15.5 -92.25]]
       [:L
@@ -12962,20 +12744,17 @@
        [15.5 -92.15]]
       [:L [15.5 -92.25]]]}],
    :dim
-   {:width "128.8px",
-    :height "292.0px",
-    :offset [64.60000000000002 92.25],
+   {:offset [64.60000000000002 92.25],
+    :frame [128.8 292.0],
     :min [-64.60000000000002 -92.25],
     :max [64.19999999999999 199.75]}}}
  {:outline
   {:label "chest-166",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [66.35000000000002 -62.19999999999999]]
@@ -13067,7 +12846,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [36.69999999999999 -76.05000000000001]]
@@ -13100,16 +12878,14 @@
       [:L [-37.55000000000001 -69.35] [-37.55000000000001 -69.9]]
       [:Q [-37.44999999999999 -73.0] [-37.19999999999999 -76.0]]]}],
    :dim
-   {:width "141.7px",
-    :height "287.7px",
-    :offset [71.10000000000002 87.44999999999999],
+   {:offset [71.10000000000002 87.44999999999999],
+    :frame [141.7 287.7],
     :min [-70.60000000000002 -86.94999999999999],
     :max [70.10000000000002 199.75]}},
   :base
   {:label "chest-41",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.1]]
       [:L [66.44999999999999 -62.150000000000006]]
@@ -13174,16 +12950,14 @@
        [-66.85000000000002 -62.150000000000006]]
       [:L [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "140.8px",
-    :height "275.8px",
-    :offset [70.60000000000002 76.05000000000001],
+   {:offset [70.60000000000002 76.05000000000001],
+    :frame [140.8 275.8],
     :min [-70.60000000000002 -76.05000000000001],
     :max [70.19999999999999 199.75]}},
   :detail
   {:label "chest-94",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [36.39999999999998 -79.30000000000001]]
       [:L
@@ -13257,20 +13031,17 @@
        [-26.100000000000023 -85.30000000000001]
        [-16.350000000000023 -86.9]]]}],
    :dim
-   {:width "74.85px",
-    :height "149.2px",
-    :offset [37.69999999999999 86.94999999999999],
+   {:offset [37.69999999999999 86.94999999999999],
+    :frame [74.85 149.2],
     :min [-37.64999999999998 -86.94999999999999],
     :max [37.14999999999998 62.25]}}}
  {:outline
   {:label "chest-167",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
@@ -13349,7 +13120,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [22.19999999999999 -82.35]]
@@ -13655,16 +13425,14 @@
        [12.399999999999977 4.649999999999977]]
       [:L [18.649999999999977 6.100000000000023]]]}],
    :dim
-   {:width "141.8px",
-    :height "108.8px",
-    :offset [71.10000000000002 90.19999999999999],
+   {:offset [71.10000000000002 90.19999999999999],
+    :frame [141.8 108.8],
     :min [-70.60000000000002 -89.69999999999999],
     :max [70.19999999999999 18.100000000000023]}},
   :base
   {:label "chest-42",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
       [:Q
@@ -13938,16 +13706,14 @@
        [-18.05000000000001 -27.850000000000023]
        [-19.149999999999977 -27.100000000000023]]]}],
    :dim
-   {:width "140.8px",
-    :height "99.95px",
-    :offset [70.60000000000002 81.85],
+   {:offset [70.60000000000002 81.85],
+    :frame [140.8 99.95],
     :min [-70.60000000000002 -81.85],
     :max [70.19999999999999 18.100000000000023]}},
   :detail
   {:label "chest-100",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [23.350000000000023 -81.85]]
       [:Q
@@ -14253,21 +14019,18 @@
        [-16.149999999999977 -89.69999999999999]]
       [:L [-16.69999999999999 -84.85]]]}],
    :dim
-   {:width "78.6px",
-    :height "104.35px",
-    :offset [39.5 89.69999999999999],
+   {:offset [39.5 89.69999999999999],
+    :frame [78.6 104.35],
     :min [-39.5 -89.69999999999999],
     :max [39.10000000000002 14.649999999999977]}}}
  {:outline
   {:label "chest-168",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [49.5 -70.55000000000001]]
@@ -14643,7 +14406,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [74.80000000000001 -59.25]]
@@ -14732,16 +14494,14 @@
        [-76.39999999999998 -56.599999999999994]
        [-75.19999999999999 -59.25]]]}],
    :dim
-   {:width "153.4px",
-    :height "102.15px",
-    :offset [76.89999999999998 73.44999999999999],
+   {:offset [76.89999999999998 73.44999999999999],
+    :frame [153.4 102.15],
     :min [-76.39999999999998 -72.94999999999999],
     :max [76.0 28.19999999999999]}},
   :base
   {:label "chest-43",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [37.55000000000001 -42.64999999999998]]
       [:Q
@@ -14788,16 +14548,14 @@
        [-49.85000000000002 -40.55000000000001]
        [-55.19999999999999 -47.849999999999994]]]}],
    :dim
-   {:width "110.0px",
-    :height "75.2px",
-    :offset [55.19999999999999 47.849999999999994],
+   {:offset [55.19999999999999 47.849999999999994],
+    :frame [110.0 75.2],
     :min [-55.19999999999999 -47.849999999999994],
     :max [54.80000000000001 27.350000000000023]}},
   :detail
   {:label "chest-101",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [67.35000000000002 -52.75]]
       [:L
@@ -14914,21 +14672,18 @@
        [-0.6999999999999886 -24.649999999999977]
        [-0.8500000000000227 -24.600000000000023]]]}],
    :dim
-   {:width "152.4px",
-    :height "101.15px",
-    :offset [76.39999999999998 72.94999999999999],
+   {:offset [76.39999999999998 72.94999999999999],
+    :frame [152.4 101.15],
     :min [-76.39999999999998 -72.94999999999999],
     :max [76.0 28.19999999999999]}}}
  {:outline
   {:label "chest-169",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [41.39999999999998 -11.949999999999989]]
@@ -14955,7 +14710,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
@@ -15011,16 +14765,14 @@
        [-46.64999999999998 -15.350000000000023]
        [-41.80000000000001 -11.949999999999989]]]}],
    :dim
-   {:width "141.8px",
-    :height "75.45px",
-    :offset [71.10000000000002 85.6],
+   {:offset [71.10000000000002 85.6],
+    :frame [141.8 75.45],
     :min [-70.60000000000002 -85.55000000000001],
     :max [70.19999999999999 -10.649999999999977]}},
   :base
   {:label "chest-44",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
       [:Q
@@ -15072,16 +14824,14 @@
        [-28.149999999999977 -77.65]
        [-29.25 -70.55000000000001]]]}],
    :dim
-   {:width "140.8px",
-    :height "72.35px",
-    :offset [70.60000000000002 84.30000000000001],
+   {:offset [70.60000000000002 84.30000000000001],
+    :frame [140.8 72.35],
     :min [-70.60000000000002 -84.30000000000001],
     :max [70.19999999999999 -11.949999999999989]}},
   :detail
   {:label "chest-102",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [28.850000000000023 -70.55000000000001]]
       [:Q
@@ -15124,20 +14874,17 @@
       [:L [-29.25 -24.350000000000023]]
       [:Q [-32.5 -49.349999999999994] [-29.25 -70.55000000000001]]]}],
    :dim
-   {:width "83.2px",
-    :height "74.45px",
-    :offset [41.80000000000001 85.1],
+   {:offset [41.80000000000001 85.1],
+    :frame [83.2 74.45],
     :min [-41.80000000000001 -85.55000000000001],
     :max [41.39999999999998 -10.649999999999977]}}}
  {:outline
   {:label "chest-170",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [87.19999999999999 -1.3999999999999773]]
@@ -15207,7 +14954,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [71.85000000000002 61.10000000000002]]
@@ -15227,16 +14973,14 @@
        [-76.0 3.6499999999999773]
        [-87.60000000000002 -1.3999999999999773]]]}],
    :dim
-   {:width "187.0px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [187.0 131.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}},
   :base
   {:label "chest-45",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-72.25 61.10000000000002]]
       [:Q [-77.0 63.85000000000002] [-81.64999999999998 64.25]]
@@ -15274,16 +15018,14 @@
        [85.0 1.6499999999999773]
        [85.60000000000002 2.75]]]}],
    :dim
-   {:width "186.0px",
-    :height "65.7px",
-    :offset [93.19999999999999 1.3999999999999773],
+   {:offset [93.19999999999999 1.3999999999999773],
+    :frame [186.0 65.7],
     :min [-93.19999999999999 -1.3999999999999773],
     :max [92.80000000000001 64.25]}},
   :detail
   {:label "chest-103",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -15341,20 +15083,17 @@
        [-46.89999999999998 -25.899999999999977]
        [-50.30000000000001 -19.350000000000023]]]}],
    :dim
-   {:width "174.8px",
-    :height "127.25px",
-    :offset [87.60000000000002 66.15],
+   {:offset [87.60000000000002 66.15],
+    :frame [174.8 127.25],
     :min [-87.60000000000002 -66.15],
     :max [87.19999999999999 61.10000000000002]}}}
  {:outline
   {:label "chest-171",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -15420,16 +15159,14 @@
        [-66.85000000000002 -62.150000000000006]]
       [:L [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "187.0px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [187.0 131.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}},
   :base
   {:label "chest-46",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -15496,20 +15233,17 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "186.0px",
-    :height "130.45px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [186.0 130.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}}}
  {:outline
   {:label "chest-172",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -15585,7 +15319,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [81.60000000000002 -16.149999999999977]]
@@ -15599,16 +15332,14 @@
        [-73.69999999999999 -14.050000000000011]
        [-82.0 -16.149999999999977]]]}],
    :dim
-   {:width "187.0px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [187.0 131.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}},
   :base
   {:label "chest-47",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -15675,16 +15406,14 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "186.0px",
-    :height "130.45px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [186.0 130.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}},
   :detail
   {:label "chest-104",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [81.60000000000002 -16.149999999999977]]
       [:Q
@@ -15711,21 +15440,18 @@
        [-93.19999999999999 15.800000000000011]]
       [:Q [-89.80000000000001 9.300000000000011] [-86.0 2.75]]]}],
    :dim
-   {:width "186.0px",
-    :height "35.55px",
-    :offset [93.19999999999999 16.149999999999977],
+   {:offset [93.19999999999999 16.149999999999977],
+    :frame [186.0 35.55],
     :min [-93.19999999999999 -16.149999999999977],
     :max [92.80000000000001 19.399999999999977]}}}
  {:outline
   {:label "chest-173",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.25 3.75]]
@@ -15742,7 +15468,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -15800,16 +15525,14 @@
        [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "186.95px",
-    :height "131.4px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [186.95 131.4],
     :min [-93.19999999999999 -66.15],
     :max [92.75 66.0]}},
   :base
   {:label "chest-46",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -15876,21 +15599,18 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "186.0px",
-    :height "130.45px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [186.0 130.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}}}
  {:outline
   {:label "chest-174",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [88.69999999999999 52.44999999999999]]
@@ -15901,7 +15621,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.19999999999999 -66.15]]
@@ -15974,16 +15693,14 @@
        [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "187.0px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [187.0 131.45],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.25]}},
   :base
   {:label "chest-48",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.15]]
       [:Q
@@ -16038,16 +15755,14 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "186.0px",
-    :height "118.8px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [186.0 118.8],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 53.75]}},
   :detail
   {:label "chest-105",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-68.30000000000001 58.39999999999998]]
       [:Q
@@ -16077,20 +15792,17 @@
        [88.69999999999999 52.44999999999999]]
       [:L [86.25 63.89999999999998] [81.25 64.25]]]}],
    :dim
-   {:width "177.8px",
-    :height "17.9px",
-    :offset [89.10000000000002 -46.39999999999998],
+   {:offset [89.10000000000002 -46.39999999999998],
+    :frame [177.8 17.9],
     :min [-89.10000000000002 46.39999999999998],
     :max [88.69999999999999 64.25]}}}
  {:outline
   {:label "chest-175",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [71.80000000000001 148.55]]
@@ -16183,7 +15895,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [81.35000000000002 61.55000000000001]]
@@ -16201,16 +15912,14 @@
        [-74.5 144.14999999999998]]
       [:L [-72.30000000000001 148.60000000000002]]]}],
    :dim
-   {:width "201.0px",
-    :height "215.8px",
-    :offset [100.75 66.69999999999999],
+   {:offset [100.75 66.69999999999999],
+    :frame [201.0 215.8],
     :min [-102.30000000000001 -66.19999999999999],
     :max [101.80000000000001 148.60000000000002]}},
   :base
   {:label "chest-49",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.19999999999999 -66.1]]
       [:Q
@@ -16297,20 +16006,17 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "200.0px",
-    :height "214.75px",
-    :offset [100.25 66.15],
+   {:offset [100.25 66.15],
+    :frame [200.0 214.75],
     :min [-102.30000000000001 -66.15],
     :max [101.80000000000001 148.60000000000002]}}}
  {:outline
   {:label "chest-176",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [88.94999999999999 51.10000000000002]]
@@ -16399,7 +16105,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [65.85000000000002 3.75]]
@@ -16539,16 +16244,14 @@
        [65.69999999999999 60.60000000000002]]
       [:L [66.60000000000002 59.69999999999999]]]}],
    :dim
-   {:width "187.0px",
-    :height "135.1px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [187.0 135.1],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 67.94999999999999]}},
   :base
   {:label "chest-50",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
       [:L [70.19999999999999 -66.15]]
@@ -16716,16 +16419,14 @@
        [73.64999999999998 55.19999999999999]]
       [:L [67.64999999999998 54.05000000000001]]]}],
    :dim
-   {:width "186.0px",
-    :height "127.0px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [186.0 127.0],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 60.89999999999998]}},
   :detail
   {:label "chest-106",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-64.75 53.10000000000002]]
       [:L [-64.85000000000002 52.80000000000001]]
@@ -16878,21 +16579,18 @@
        [67.64999999999998 54.05000000000001]
        [73.64999999999998 55.19999999999999]]]}],
    :dim
-   {:width "182.6px",
-    :height "21.7px",
-    :offset [91.5 -46.25],
+   {:offset [91.5 -46.25],
+    :frame [182.6 21.7],
     :min [-91.5 46.25],
     :max [91.10000000000002 67.94999999999999]}}}
  {:outline
   {:label "chest-177",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [65.85000000000002 3.75]]
@@ -17028,7 +16726,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [90.44999999999999 41.80000000000001]]
@@ -17129,16 +16826,14 @@
       [:M [62.85000000000002 56.35000000000002]]
       [:L [64.0 41.94999999999999]]]}],
    :dim
-   {:width "187.0px",
-    :height "131.25px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [187.0 131.25],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 64.10000000000002]}},
   :base
   {:label "chest-51",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [66.44999999999999 -62.150000000000006]]
       [:L [70.19999999999999 -66.15]]
@@ -17207,16 +16902,14 @@
        [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "186.0px",
-    :height "108.4px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [186.0 108.4],
     :min [-93.19999999999999 -66.15],
     :max [92.80000000000001 42.25]}},
   :detail
   {:label "chest-107",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-64.39999999999998 41.94999999999999]]
       [:L [-63.10000000000002 58.30000000000001]]
@@ -17253,21 +16946,18 @@
        [62.69999999999999 58.30000000000001]]
       [:L [64.0 41.94999999999999]]]}],
    :dim
-   {:width "182.2px",
-    :height "24.45px",
-    :offset [91.30000000000001 -39.64999999999998],
+   {:offset [91.30000000000001 -39.64999999999998],
+    :frame [182.2 24.45],
     :min [-91.30000000000001 39.64999999999998],
     :max [90.89999999999998 64.10000000000002]}}}
  {:outline
   {:label "chest-178",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [55.60000000000002 -48.900000000000006]]
@@ -17451,7 +17141,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [88.44999999999999 -47.05000000000001]]
@@ -17617,16 +17306,14 @@
       [:Q [-83.39999999999998 -61.0] [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "197.8px",
-    :height "131.0px",
-    :offset [99.10000000000002 66.65],
+   {:offset [99.10000000000002 66.65],
+    :frame [197.8 131.0],
     :min [-98.60000000000002 -66.15],
     :max [98.19999999999999 63.85000000000002]}},
   :base
   {:label "chest-52",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [82.35000000000002 -34.05000000000001]]
       [:L [77.0 -34.44999999999999]]
@@ -17867,16 +17554,14 @@
        [-59.75 -4.100000000000023]
        [-63.55000000000001 0.5500000000000114]]]}],
    :dim
-   {:width "194.9px",
-    :height "127.7px",
-    :offset [97.64999999999998 66.15],
+   {:offset [97.64999999999998 66.15],
+    :frame [194.9 127.7],
     :min [-97.64999999999998 -66.15],
     :max [97.25 61.55000000000001]}},
   :detail
   {:label "chest-108",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [77.14999999999998 -32.55000000000001]]
       [:Q
@@ -18112,20 +17797,17 @@
        [69.94999999999999 25.850000000000023]
        [65.19999999999999 30.94999999999999]]]}],
    :dim
-   {:width "196.8px",
-    :height "113.35px",
-    :offset [98.60000000000002 49.5],
+   {:offset [98.60000000000002 49.5],
+    :frame [196.8 113.35],
     :min [-98.60000000000002 -50.150000000000006],
     :max [98.19999999999999 63.85000000000002]}}}
  {:outline
   {:label "chest-179",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-50.30000000000001 -19.350000000000023]]
@@ -18165,7 +17847,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-72.25 61.10000000000002]]
@@ -18177,16 +17858,14 @@
        [-76.0 3.6499999999999773]
        [-87.60000000000002 -1.3999999999999773]]]}],
    :dim
-   {:width "49.4px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 131.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}},
   :base
   {:label "chest-53",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-72.25 61.10000000000002]]
       [:Q [-77.0 63.85000000000002] [-81.64999999999998 64.25]]
@@ -18204,16 +17883,14 @@
       [:Q [-78.25 38.60000000000002] [-72.35000000000002 60.75]]
       [:L [-72.25 61.10000000000002]]]}],
    :dim
-   {:width "20.95px",
-    :height "65.7px",
-    :offset [93.19999999999999 1.3999999999999773],
+   {:offset [93.19999999999999 1.3999999999999773],
+    :frame [20.95 65.7],
     :min [-93.19999999999999 -1.3999999999999773],
     :max [-72.25 64.25]}},
   :detail
   {:label "chest-109",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-50.30000000000001 -19.350000000000023]]
       [:Q
@@ -18244,20 +17921,17 @@
        [-46.89999999999998 -25.899999999999977]
        [-50.30000000000001 -19.350000000000023]]]}],
    :dim
-   {:width "42.8px",
-    :height "127.25px",
-    :offset [87.60000000000002 66.15],
+   {:offset [87.60000000000002 66.15],
+    :frame [42.8 127.25],
     :min [-87.60000000000002 -66.15],
     :max [-44.80000000000001 61.10000000000002]}}}
  {:outline
   {:label "chest-180",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-70.60000000000002 -66.15]]
@@ -18292,16 +17966,14 @@
        [-66.85000000000002 -62.150000000000006]]
       [:L [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "49.4px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 131.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}},
   :base
   {:label "chest-54",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]
@@ -18337,20 +18009,17 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "48.4px",
-    :height "130.45px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [48.4 130.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}}}
  {:outline
   {:label "chest-181",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
@@ -18393,7 +18062,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-93.19999999999999 15.800000000000011]]
@@ -18402,16 +18070,14 @@
        [-73.69999999999999 -14.050000000000011]
        [-82.0 -16.149999999999977]]]}],
    :dim
-   {:width "49.4px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 131.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}},
   :base
   {:label "chest-55",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]
@@ -18446,16 +18112,14 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "48.4px",
-    :height "130.45px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [48.4 130.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}},
   :detail
   {:label "chest-110",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-86.0 2.75]]
       [:L
@@ -18470,21 +18134,18 @@
        [-93.19999999999999 15.800000000000011]]
       [:Q [-89.80000000000001 9.300000000000011] [-86.0 2.75]]]}],
    :dim
-   {:width "19.5px",
-    :height "35.55px",
-    :offset [93.19999999999999 16.149999999999977],
+   {:offset [93.19999999999999 16.149999999999977],
+    :frame [19.5 35.55],
     :min [-93.19999999999999 -16.149999999999977],
     :max [-73.69999999999999 19.399999999999977]}}}
  {:outline
   {:label "chest-182",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.25 3.75]]
@@ -18497,7 +18158,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
@@ -18528,16 +18188,14 @@
        [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "49.4px",
-    :height "131.4px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 131.4],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 66.0]}},
   :base
   {:label "chest-54",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]
@@ -18573,21 +18231,18 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "48.4px",
-    :height "130.45px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [48.4 130.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}}}
  {:outline
   {:label "chest-183",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-65.89999999999998 46.39999999999998]]
@@ -18596,7 +18251,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
@@ -18637,16 +18291,14 @@
        [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "49.4px",
-    :height "131.45px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 131.45],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.25]}},
   :base
   {:label "chest-56",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]
@@ -18676,16 +18328,14 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "48.4px",
-    :height "118.8px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [48.4 118.8],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 53.75]}},
   :detail
   {:label "chest-111",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-68.30000000000001 58.39999999999998]]
       [:Q
@@ -18703,20 +18353,17 @@
        [-65.75 56.19999999999999]]
       [:L [-68.30000000000001 58.39999999999998]]]}],
    :dim
-   {:width "23.35px",
-    :height "17.9px",
-    :offset [89.10000000000002 -46.39999999999998],
+   {:offset [89.10000000000002 -46.39999999999998],
+    :frame [23.35 17.9],
     :min [-89.10000000000002 46.39999999999998],
     :max [-65.75 64.25]}}}
  {:outline
   {:label "chest-184",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
@@ -18765,7 +18412,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-81.85000000000002 61.60000000000002]]
@@ -18776,16 +18422,14 @@
        [-74.5 144.14999999999998]]
       [:L [-72.30000000000001 148.60000000000002]]]}],
    :dim
-   {:width "56.45px",
-    :height "215.75px",
-    :offset [100.75 66.65],
+   {:offset [100.75 66.65],
+    :frame [56.45 215.75],
     :min [-102.30000000000001 -66.15],
     :max [-44.80000000000001 148.60000000000002]}},
   :base
   {:label "chest-57",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]
@@ -18829,20 +18473,17 @@
        [-80.55000000000001 -54.650000000000006]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "55.45px",
-    :height "214.75px",
-    :offset [100.25 66.15],
+   {:offset [100.25 66.15],
+    :frame [55.45 214.75],
     :min [-102.30000000000001 -66.15],
     :max [-44.80000000000001 148.60000000000002]}}}
  {:outline
   {:label "chest-185",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
@@ -18889,7 +18530,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.25 3.75]]
@@ -18964,16 +18604,14 @@
        [-67.30000000000001 58.94999999999999]
        [-67.05000000000001 58.35000000000002]]]}],
    :dim
-   {:width "49.4px",
-    :height "135.1px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 135.1],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 67.94999999999999]}},
   :base
   {:label "chest-58",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
       [:Q
@@ -19061,16 +18699,14 @@
        [-64.60000000000002 53.44999999999999]
        [-64.89999999999998 54.05000000000001]]]}],
    :dim
-   {:width "48.4px",
-    :height "127.0px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [48.4 127.0],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 60.89999999999998]}},
   :detail
   {:label "chest-112",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-64.75 53.10000000000002]]
       [:L [-64.85000000000002 52.80000000000001]]
@@ -19152,21 +18788,18 @@
        [-63.25 53.10000000000002]]
       [:L [-64.75 53.10000000000002]]]}],
    :dim
-   {:width "30.35px",
-    :height "21.7px",
-    :offset [91.5 -46.25],
+   {:offset [91.5 -46.25],
+    :frame [30.35 21.7],
     :min [-91.5 46.25],
     :max [-61.14999999999998 67.94999999999999]}}}
  {:outline
   {:label "chest-186",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-68.89999999999998 46.14999999999998]]
@@ -19234,7 +18867,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-90.85000000000002 41.80000000000001]]
@@ -19284,16 +18916,14 @@
        [-91.30000000000001 44.35000000000002]
        [-90.85000000000002 41.80000000000001]]]}],
    :dim
-   {:width "49.4px",
-    :height "131.25px",
-    :offset [93.69999999999999 66.65],
+   {:offset [93.69999999999999 66.65],
+    :frame [49.4 131.25],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 64.10000000000002]}},
   :base
   {:label "chest-59",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]
@@ -19331,16 +18961,14 @@
        [-73.30000000000001 -63.05000000000001]
        [-70.60000000000002 -66.15]]]}],
    :dim
-   {:width "48.4px",
-    :height "108.4px",
-    :offset [93.19999999999999 66.15],
+   {:offset [93.19999999999999 66.15],
+    :frame [48.4 108.4],
     :min [-93.19999999999999 -66.15],
     :max [-44.80000000000001 42.25]}},
   :detail
   {:label "chest-113",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-64.39999999999998 41.94999999999999]]
       [:L [-63.10000000000002 58.30000000000001]]
@@ -19360,21 +18988,18 @@
       [:Q [-74.75 42.25] [-65.44999999999999 39.64999999999998]]
       [:L [-64.39999999999998 41.94999999999999]]]}],
    :dim
-   {:width "28.2px",
-    :height "24.45px",
-    :offset [91.30000000000001 -39.64999999999998],
+   {:offset [91.30000000000001 -39.64999999999998],
+    :frame [28.2 24.45],
     :min [-91.30000000000001 39.64999999999998],
     :max [-63.10000000000002 64.10000000000002]}}}
  {:outline
   {:label "chest-187",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-53.94999999999999 -46.150000000000006]]
@@ -19474,7 +19099,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
@@ -19561,16 +19185,14 @@
       [:Q [-83.39999999999998 -61.0] [-70.60000000000002 -66.15]]
       [:L [-66.85000000000002 -62.150000000000006]]]}],
    :dim
-   {:width "54.8px",
-    :height "131.0px",
-    :offset [99.10000000000002 66.65],
+   {:offset [99.10000000000002 66.65],
+    :frame [54.8 131.0],
     :min [-98.60000000000002 -66.15],
     :max [-44.80000000000001 63.85000000000002]}},
   :base
   {:label "chest-60",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-66.85000000000002 -62.150000000000006]]
       [:Q
@@ -19697,16 +19319,14 @@
        [-59.75 -4.100000000000023]
        [-63.55000000000001 0.5500000000000114]]]}],
    :dim
-   {:width "52.85px",
-    :height "127.7px",
-    :offset [97.64999999999998 66.15],
+   {:offset [97.64999999999998 66.15],
+    :frame [52.85 127.7],
     :min [-97.64999999999998 -66.15],
     :max [-44.80000000000001 61.55000000000001]}},
   :detail
   {:label "chest-114",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-53.94999999999999 -46.150000000000006]]
       [:Q
@@ -19830,20 +19450,17 @@
        [-69.10000000000002 46.05000000000001]
        [-69.19999999999999 47.69999999999999]]]}],
    :dim
-   {:width "49.1px",
-    :height "113.35px",
-    :offset [98.60000000000002 49.5],
+   {:offset [98.60000000000002 49.5],
+    :frame [49.1 113.35],
     :min [-98.60000000000002 -50.150000000000006],
     :max [-48.69999999999999 63.85000000000002]}}}
  {:outline
   {:label "chest-188",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [44.39999999999998 -32.39999999999998]]
@@ -19947,7 +19564,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [37.94999999999999 -66.69999999999999]]
@@ -20299,16 +19915,14 @@
       [:M [31.600000000000023 -2.1000000000000227]]
       [:L [20.100000000000023 -5.300000000000011]]]}],
    :dim
-   {:width "109.1px",
-    :height "110.35px",
-    :offset [54.75 81.65],
+   {:offset [54.75 81.65],
+    :frame [109.1 110.35],
     :min [-54.80000000000001 -81.15],
     :max [54.39999999999998 28.19999999999999]}},
   :base
   {:label "chest-61",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [18.75 -65.30000000000001]]
       [:L [14.449999999999989 -64.94999999999999]]
@@ -20589,16 +20203,14 @@
        [20.5 22.94999999999999]
        [20.100000000000023 22.5]]]}],
    :dim
-   {:width "83.4px",
-    :height "108.55px",
-    :offset [41.89999999999998 81.15],
+   {:offset [41.89999999999998 81.15],
+    :frame [83.4 108.55],
     :min [-41.89999999999998 -81.15],
     :max [41.5 27.399999999999977]}},
   :detail
   {:label "chest-115",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [24.100000000000023 -10.199999999999989]]
       [:Q
@@ -20894,20 +20506,17 @@
        [21.350000000000023 0.39999999999997726]
        [20.94999999999999 -0.05000000000001137]]]}],
    :dim
-   {:width "108.1px",
-    :height "108.3px",
-    :offset [54.25 80.1],
+   {:offset [54.25 80.1],
+    :frame [108.1 108.3],
     :min [-54.80000000000001 -80.1],
     :max [54.39999999999998 28.19999999999999]}}}
  {:outline
   {:label "chest-189",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [70.85000000000002 -66.15]]
@@ -20966,7 +20575,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [33.35000000000002 -77.55000000000001]]
@@ -21033,16 +20641,14 @@
       [:M [-42.55000000000001 -67.05000000000001]]
       [:L [-14.800000000000011 -64.94999999999999]]]}],
    :dim
-   {:width "151.5px",
-    :height "77.75px",
-    :offset [75.89999999999998 79.69999999999999],
+   {:offset [75.89999999999998 79.69999999999999],
+    :frame [151.5 77.75],
     :min [-75.39999999999998 -79.19999999999999],
     :max [75.10000000000002 -2.4499999999999886]}},
   :base
   {:label "chest-62",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [14.5 -64.94999999999999]]
       [:Q
@@ -21093,16 +20699,14 @@
        [7.600000000000023 -61.400000000000006]
        [14.5 -64.94999999999999]]]}],
    :dim
-   {:width "137.9px",
-    :height "70.2px",
-    :offset [69.10000000000002 77.55000000000001],
+   {:offset [69.10000000000002 77.55000000000001],
+    :frame [137.9 70.2],
     :min [-69.10000000000002 -77.55000000000001],
     :max [68.80000000000001 -7.350000000000023]}},
   :detail
   {:label "chest-116",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [70.85000000000002 -66.15]]
       [:Q
@@ -21178,21 +20782,18 @@
        [-46.89999999999998 -25.899999999999977]
        [-44.80000000000001 -32.39999999999998]]]}],
    :dim
-   {:width "150.5px",
-    :height "76.75px",
-    :offset [75.39999999999998 79.19999999999999],
+   {:offset [75.39999999999998 79.19999999999999],
+    :frame [150.5 76.75],
     :min [-75.39999999999998 -79.19999999999999],
     :max [75.10000000000002 -2.4499999999999886]}}}
  {:outline
   {:label "chest-190",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [47.80000000000001 -71.30000000000001]]
@@ -21255,7 +20856,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [50.39999999999998 -64.0]]
@@ -21318,16 +20918,14 @@
       [:M [-48.0 -65.85]]
       [:Q [-49.55000000000001 -65.15] [-50.69999999999999 -64.0]]]}],
    :dim
-   {:width "109.2px",
-    :height "87.85px",
-    :offset [54.75 94.69999999999999],
+   {:offset [54.75 94.69999999999999],
+    :frame [109.2 87.85],
     :min [-56.05000000000001 -94.30000000000001],
     :max [55.75 -7.350000000000023]}},
   :base
   {:label "chest-63",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.39999999999998 -64.0]]
       [:Q
@@ -21382,16 +20980,14 @@
        [47.69999999999999 -65.85]]
       [:Q [49.25 -65.15] [50.39999999999998 -64.0]]]}],
    :dim
-   {:width "108.2px",
-    :height "83.95px",
-    :offset [54.25 91.30000000000001],
+   {:offset [54.25 91.30000000000001],
+    :frame [108.2 83.95],
     :min [-56.05000000000001 -91.30000000000001],
     :max [55.75 -7.350000000000023]}},
   :detail
   {:label "chest-117",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [15.399999999999977 -91.1]]
       [:L [19.100000000000023 -94.19999999999999]]
@@ -21457,20 +21053,17 @@
        [-46.89999999999998 -25.899999999999977]
        [-44.80000000000001 -32.39999999999998]]]}],
    :dim
-   {:width "101.1px",
-    :height "77.2px",
-    :offset [50.69999999999999 94.19999999999999],
+   {:offset [50.69999999999999 94.19999999999999],
+    :frame [101.1 77.2],
     :min [-50.69999999999999 -94.30000000000001],
     :max [50.39999999999998 -16.899999999999977]}}}
  {:outline
   {:label "chest-191",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [48.19999999999999 -66.5]]
@@ -21548,7 +21141,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [17.899999999999977 -85.65]]
@@ -21664,16 +21256,14 @@
        [-36.05000000000001 -14.25]
        [-35.89999999999998 -15.25]]]}],
    :dim
-   {:width "116.5px",
-    :height "89.05px",
-    :offset [58.44999999999999 92.75],
+   {:offset [58.44999999999999 92.75],
+    :frame [116.5 89.05],
     :min [-61.60000000000002 -92.25],
     :max [61.19999999999999 -3.1000000000000227]}},
   :base
   {:label "chest-64",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.64999999999998 -72.35]]
       [:L [48.19999999999999 -66.5]]
@@ -21768,16 +21358,14 @@
        [-4.600000000000023 -38.75]
        [-7.0 -29.149999999999977]]]}],
    :dim
-   {:width "115.5px",
-    :height "85.45px",
-    :offset [57.94999999999999 92.25],
+   {:offset [57.94999999999999 92.25],
+    :frame [115.5 85.45],
     :min [-61.60000000000002 -92.25],
     :max [61.19999999999999 -6.800000000000011]}},
   :detail
   {:label "chest-118",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [25.25 -10.149999999999977]]
       [:Q
@@ -21836,20 +21424,17 @@
        [-4.0 -25.399999999999977]
        [-7.0 -29.149999999999977]]]}],
    :dim
-   {:width "75.2px",
-    :height "63.7px",
-    :offset [37.80000000000001 67.9],
+   {:offset [37.80000000000001 67.9],
+    :frame [75.2 63.7],
     :min [-37.80000000000001 -68.0],
     :max [37.39999999999998 -3.1000000000000227]}}}
  {:outline
   {:label "chest-192",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [50.39999999999998 -64.0]]
@@ -21923,7 +21508,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [47.80000000000001 -71.30000000000001]]
@@ -22038,7 +21622,6 @@
       :stroke-opacity "0.2509804",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [26.100000000000023 -29.100000000000023]]
@@ -22122,16 +21705,14 @@
        [-31.0 -21.55000000000001]
        [-31.30000000000001 -21.55000000000001]]]}],
    :dim
-   {:width "109.2px",
-    :height "114.25px",
-    :offset [54.75 85.55000000000001],
+   {:offset [54.75 85.55000000000001],
+    :frame [109.2 114.25],
     :min [-56.05000000000001 -85.80000000000001],
     :max [55.75 28.30000000000001]}},
   :base
   {:label "chest-65",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [47.69999999999999 -65.85]]
       [:Q
@@ -22204,16 +21785,14 @@
        [-31.0 -21.55000000000001]
        [-31.44999999999999 -21.94999999999999]]]}],
    :dim
-   {:width "108.2px",
-    :height "110.05px",
-    :offset [54.25 81.85],
+   {:offset [54.25 81.85],
+    :frame [108.2 110.05],
     :min [-56.05000000000001 -81.85],
     :max [55.75 28.30000000000001]}},
   :detail
   {:label "chest-119",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [16.30000000000001 -84.75]]
       [:L [16.44999999999999 -84.80000000000001]]
@@ -22278,21 +21857,18 @@
        [-46.89999999999998 -25.899999999999977]
        [-44.80000000000001 -32.39999999999998]]]}],
    :dim
-   {:width "101.1px",
-    :height "68.05px",
-    :offset [50.69999999999999 85.05000000000001],
+   {:offset [50.69999999999999 85.05000000000001],
+    :frame [101.1 68.05],
     :min [-50.69999999999999 -85.80000000000001],
     :max [50.39999999999998 -16.899999999999977]}}}
  {:outline
   {:label "chest-193",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.44999999999999 -81.80000000000001]]
@@ -22395,7 +21971,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [50.39999999999998 -64.0]]
@@ -22466,22 +22041,19 @@
       :stroke-opacity "0.2509804",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [26.100000000000023 -29.100000000000023]]
       [:L [26.350000000000023 -29.05000000000001]]]}],
    :dim
-   {:width "109.2px",
-    :height "114.25px",
-    :offset [54.75 85.55000000000001],
+   {:offset [54.75 85.55000000000001],
+    :frame [109.2 114.25],
     :min [-56.05000000000001 -85.80000000000001],
     :max [55.75 28.30000000000001]}},
   :base
   {:label "chest-66",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [50.30000000000001 -70.25]]
       [:L [50.39999999999998 -64.0]]
@@ -22535,16 +22107,14 @@
        [23.44999999999999 -81.80000000000001]]
       [:L [50.30000000000001 -70.25]]]}],
    :dim
-   {:width "108.2px",
-    :height "110.05px",
-    :offset [54.25 81.85],
+   {:offset [54.25 81.85],
+    :frame [108.2 110.05],
     :min [-56.05000000000001 -81.85],
     :max [55.75 28.30000000000001]}},
   :detail
   {:label "chest-120",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [16.30000000000001 -84.75]]
       [:L [16.44999999999999 -84.80000000000001]]
@@ -22569,20 +22139,17 @@
       [:Q [13.600000000000023 -78.0] [16.75 -81.1]]
       [:L [16.30000000000001 -84.75]]]}],
    :dim
-   {:width "47.2px",
-    :height "12.95px",
-    :offset [23.75 85.05000000000001],
+   {:offset [23.75 85.05000000000001],
+    :frame [47.2 12.95],
     :min [-23.75 -85.80000000000001],
     :max [23.44999999999999 -72.1]}}}
  {:outline
   {:label "chest-194",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [27.75 -81.0]]
@@ -22623,7 +22190,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [27.75 -81.0]]
@@ -22641,16 +22207,14 @@
        [-25.75 25.399999999999977]
        [-0.19999999999998863 29.05000000000001]]]}],
    :dim
-   {:width "106.0px",
-    :height "124.9px",
-    :offset [53.19999999999999 84.85],
+   {:offset [53.19999999999999 84.85],
+    :frame [106.0 124.9],
     :min [-52.69999999999999 -84.35],
     :max [52.30000000000001 39.55000000000001]}},
   :base
   {:label "chest-67",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [47.05000000000001 -74.75]]
       [:Q
@@ -22675,16 +22239,14 @@
        [35.55000000000001 -79.1]
        [47.05000000000001 -74.75]]]}],
    :dim
-   {:width "105.0px",
-    :height "110.05px",
-    :offset [52.69999999999999 81.0],
+   {:offset [52.69999999999999 81.0],
+    :frame [105.0 110.05],
     :min [-52.69999999999999 -81.0],
     :max [52.30000000000001 29.05000000000001]}},
   :detail
   {:label "chest-121",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [27.75 -81.0]]
       [:Q
@@ -22718,20 +22280,17 @@
        [-5.399999999999977 34.30000000000001]
        [-7.149999999999977 39.55000000000001]]]}],
    :dim
-   {:width "77.7px",
-    :height "123.9px",
-    :offset [39.05000000000001 84.35],
+   {:offset [39.05000000000001 84.35],
+    :frame [77.7 123.9],
     :min [-39.05000000000001 -84.35],
     :max [38.64999999999998 39.55000000000001]}}}
  {:outline
   {:label "chest-195",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#010101",
       :fill "none"},
      :path
      [[:M [36.44999999999999 -73.69999999999999]]
@@ -22840,7 +22399,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#010101",
       :fill "none"},
      :path
      [[:M [33.94999999999999 -74.75]]
@@ -23419,16 +22977,14 @@
       [:M [6.5 -44.400000000000006]]
       [:L [4.050000000000011 -44.400000000000006]]]}],
    :dim
-   {:width "101.2px",
-    :height "113.7px",
-    :offset [50.69999999999999 82.6],
+   {:offset [50.69999999999999 82.6],
+    :frame [101.2 113.7],
     :min [-50.35000000000002 -82.1],
     :max [50.14999999999998 30.600000000000023]}},
   :base
   {:label "chest-68",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [46.05000000000001 -74.55000000000001]]
       [:L [44.35000000000002 -71.6]]
@@ -23593,16 +23149,14 @@
        [-23.100000000000023 24.100000000000023]
        [-23.19999999999999 24.100000000000023]]]}],
    :dim
-   {:width "100.2px",
-    :height "112.7px",
-    :offset [50.19999999999999 82.1],
+   {:offset [50.19999999999999 82.1],
+    :frame [100.2 112.7],
     :min [-50.35000000000002 -82.1],
     :max [50.14999999999998 30.600000000000023]}},
   :detail
   {:label "chest-122",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [39.75 -68.1]]
       [:Q
@@ -23723,14 +23277,12 @@
        [-41.60000000000002 -28.149999999999977]
        [-39.75 -33.44999999999999]]]}],
    :dim
-   {:width "93.9px",
-    :height "48.15px",
-    :offset [47.05000000000001 73.19999999999999],
+   {:offset [47.05000000000001 73.19999999999999],
+    :frame [93.9 48.15],
     :min [-47.05000000000001 -73.69999999999999],
     :max [46.85000000000002 -24.350000000000023]}},
   :shadow
   {:label "chest-210",
-   :layer :shadow,
    :paths
    [{:meta
      {:stroke "none",
@@ -23964,21 +23516,18 @@
       [:M [-29.2 9.55]]
       [:L [-30.8 13.15] [-31.95 9.3] [-29.2 9.55]]]}],
    :dim
-   {:width "100.2px",
-    :height "92.05px",
-    :offset [50.2 67.25],
+   {:offset [50.2 67.25],
+    :frame [100.2 92.05],
     :min [-50.2 -67.25],
     :max [50.0 24.8]}}}
  {:outline
   {:label "chest-196",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [47.35000000000002 -71.44999999999999]]
@@ -24063,7 +23612,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [83.35000000000002 -37.80000000000001]]
@@ -24109,16 +23657,14 @@
        [-79.80000000000001 -33.80000000000001]]
       [:L [-83.80000000000001 -37.80000000000001]]]}],
    :dim
-   {:width "168.25px",
-    :height "60.3px",
-    :offset [84.35000000000002 85.4],
+   {:offset [84.35000000000002 85.4],
+    :frame [168.25 60.3],
     :min [-84.60000000000002 -84.9],
     :max [84.14999999999998 -25.600000000000023]}},
   :base
   {:label "chest-69",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [5.050000000000011 -41.60000000000002]]
       [:Q
@@ -24178,16 +23724,14 @@
        [47.35000000000002 -71.44999999999999]
        [52.69999999999999 -76.05000000000001]]]}],
    :dim
-   {:width "167.25px",
-    :height "59.3px",
-    :offset [83.85000000000002 84.9],
+   {:offset [83.85000000000002 84.9],
+    :frame [167.25 59.3],
     :min [-84.60000000000002 -84.9],
     :max [84.14999999999998 -25.600000000000023]}},
   :detail
   {:label "chest-123",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [5.050000000000011 -41.60000000000002]]
       [:Q
@@ -24208,21 +23752,18 @@
        [7.25 -43.75]
        [5.050000000000011 -41.60000000000002]]]}],
    :dim
-   {:width "14.85px",
-    :height "14.85px",
-    :offset [7.600000000000023 54.25],
+   {:offset [7.600000000000023 54.25],
+    :frame [14.85 14.85],
     :min [-7.600000000000023 -54.25],
     :max [7.25 -39.39999999999998]}}}
  {:outline
   {:label "chest-197",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [81.05000000000001 -70.0]]
@@ -24333,7 +23874,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [84.5 -56.400000000000006]]
@@ -24411,16 +23951,14 @@
        [72.0 -83.6]
        [81.05000000000001 -70.0]]]}],
    :dim
-   {:width "174.55px",
-    :height "103.65px",
-    :offset [88.0 88.35],
+   {:offset [88.0 88.35],
+    :frame [174.55 103.65],
     :min [-87.55000000000001 -87.85],
     :max [86.10000000000002 14.800000000000011]}},
   :base
   {:label "chest-70",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [60.19999999999999 -65.6]]
       [:Q
@@ -24538,16 +24076,14 @@
        [38.69999999999999 -33.69999999999999]
        [34.94999999999999 -35.05000000000001]]]}],
    :dim
-   {:width "173.55px",
-    :height "102.65px",
-    :offset [87.5 87.85],
+   {:offset [87.5 87.85],
+    :frame [173.55 102.65],
     :min [-87.55000000000001 -87.85],
     :max [86.10000000000002 14.800000000000011]}},
   :detail
   {:label "chest-124",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [83.89999999999998 -59.349999999999994]]
       [:L
@@ -24638,20 +24174,17 @@
        [-60.44999999999999 -73.25]
        [-61.64999999999998 -65.44999999999999]]]}],
    :dim
-   {:width "173.55px",
-    :height "73.05px",
-    :offset [87.5 81.69999999999999],
+   {:offset [87.5 81.69999999999999],
+    :frame [173.55 73.05],
     :min [-87.5 -83.6],
     :max [86.05000000000001 -8.649999999999977]}}}
  {:outline
   {:label "chest-198",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [33.05000000000001 -49.349999999999994]]
@@ -24710,7 +24243,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [32.55000000000001 -60.0]]
@@ -24720,16 +24252,14 @@
        [-32.80000000000001 -54.75]
        [-33.30000000000001 -49.349999999999994]]]}],
    :dim
-   {:width "109.3px",
-    :height "66.5px",
-    :offset [54.80000000000001 78.4],
+   {:offset [54.80000000000001 78.4],
+    :frame [109.3 66.5],
     :min [-54.60000000000002 -78.44999999999999],
     :max [54.30000000000001 -11.199999999999989]}},
   :base
   {:label "chest-71",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-34.19999999999999 -75.4]]
       [:Q
@@ -24779,16 +24309,14 @@
        [38.05000000000001 -77.80000000000001]]
       [:L [52.64999999999998 -72.30000000000001]]]}],
    :dim
-   {:width "108.3px",
-    :height "65.5px",
-    :offset [54.30000000000001 77.9],
+   {:offset [54.30000000000001 77.9],
+    :frame [108.3 65.5],
     :min [-54.60000000000002 -78.44999999999999],
     :max [54.30000000000001 -11.199999999999989]}},
   :detail
   {:label "chest-125",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [33.05000000000001 -49.349999999999994]]
       [:Q
@@ -24803,21 +24331,18 @@
       [:L [32.55000000000001 -60.0]]
       [:Q [32.5 -54.75] [33.05000000000001 -49.349999999999994]]]}],
    :dim
-   {:width "66.35px",
-    :height "12.4px",
-    :offset [33.30000000000001 61.75],
+   {:offset [33.30000000000001 61.75],
+    :frame [66.35 12.4],
     :min [-33.30000000000001 -61.75],
     :max [33.05000000000001 -49.349999999999994]}}}
  {:outline
   {:label "chest-199",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [11.449999999999989 -52.55000000000001]]
@@ -24952,7 +24477,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [21.899999999999977 -42.14999999999998]]
@@ -25030,16 +24554,14 @@
        [-22.30000000000001 -40.80000000000001]
        [-22.30000000000001 -42.14999999999998]]]}],
    :dim
-   {:width "89.75px",
-    :height "84.6px",
-    :offset [45.05000000000001 79.0],
+   {:offset [45.05000000000001 79.0],
+    :frame [89.75 84.6],
     :min [-44.55000000000001 -78.5],
     :max [44.19999999999999 5.100000000000023]}},
   :base
   {:label "chest-72",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [21.80000000000001 -65.5]]
       [:L
@@ -25131,16 +24653,14 @@
        [-25.649999999999977 -14.600000000000023]
        [-18.30000000000001 -21.30000000000001]]]}],
    :dim
-   {:width "88.75px",
-    :height "83.6px",
-    :offset [44.55000000000001 78.5],
+   {:offset [44.55000000000001 78.5],
+    :frame [88.75 83.6],
     :min [-44.55000000000001 -78.5],
     :max [44.19999999999999 5.100000000000023]}},
   :detail
   {:label "chest-126",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [16.850000000000023 -52.55000000000001]]
       [:L
@@ -25239,14 +24759,79 @@
        [10.600000000000023 -52.55000000000001]
        [16.850000000000023 -52.55000000000001]]]}],
    :dim
-   {:width "44.2px",
-    :height "41.25px",
-    :offset [22.30000000000001 52.55000000000001],
+   {:offset [22.30000000000001 52.55000000000001],
+    :frame [44.2 41.25],
     :min [-22.30000000000001 -52.55000000000001],
     :max [21.899999999999977 -11.300000000000011]}},
   :shadow
   {:label "chest-211",
-   :layer :shadow,
+   :defs
+   [{:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-211-0",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0111, -0.0102, 0.0, 13.5, -43.4)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
+    {:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-211-1",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0194, -0.0192, 0.0, -0.3, -32.2)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
+    {:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-211-2",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0097, -0.0095, 0.0, -0.3, -32.2)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
+    {:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-211-3",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0094, -0.0092, 0.0, 10.35, -19.0)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
+    {:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-211-4",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0111, -0.0102, 0.0, -14.05, -43.4)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
+    {:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-211-5",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0094, -0.0092, 0.0, -10.75, -19.0)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}],
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#chest-211-0)"},
@@ -25511,87 +25096,17 @@
        [-13.55 -25.25]
        [-13.45 -24.95]]]}],
    :dim
-   {:width "44.35px",
-    :height "41.25px",
-    :offset [22.45 52.55],
+   {:offset [22.45 52.55],
+    :frame [44.35 41.25],
     :min [-22.45 -52.55],
-    :max [21.9 -11.3]},
-   :defs
-   [{:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-211-0",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0111, -0.0102, 0.0, 13.5, -43.4)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
-    {:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-211-1",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0194, -0.0192, 0.0, -0.3, -32.2)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
-    {:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-211-2",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0097, -0.0095, 0.0, -0.3, -32.2)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
-    {:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-211-3",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0094, -0.0092, 0.0, 10.35, -19.0)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
-    {:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-211-4",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0111, -0.0102, 0.0, -14.05, -43.4)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
-    {:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-211-5",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0094, -0.0092, 0.0, -10.75, -19.0)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}]}}
+    :max [21.9 -11.3]}}}
  {:outline
   {:label "chest-200",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [16.649999999999977 -36.14999999999998]]
@@ -25632,7 +25147,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [6.0 -46.19999999999999]]
@@ -25650,16 +25164,14 @@
        [1.5 -21.100000000000023]
        [2.1000000000000227 -21.100000000000023]]]}],
    :dim
-   {:width "79.3px",
-    :height "84.6px",
-    :offset [34.60000000000002 79.0],
+   {:offset [34.60000000000002 79.0],
+    :frame [79.3 84.6],
     :min [-34.10000000000002 -78.5],
     :max [44.19999999999999 5.100000000000023]}},
   :base
   {:label "chest-73",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [21.75 -65.5]]
       [:L
@@ -25685,16 +25197,14 @@
        [-34.10000000000002 -7.350000000000023]
        [-25.649999999999977 -14.600000000000023]]]}],
    :dim
-   {:width "78.3px",
-    :height "83.6px",
-    :offset [34.10000000000002 78.5],
+   {:offset [34.10000000000002 78.5],
+    :frame [78.3 83.6],
     :min [-34.10000000000002 -78.5],
     :max [44.19999999999999 5.100000000000023]}},
   :detail
   {:label "chest-127",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [5.75 -46.44999999999999]]
       [:L
@@ -25708,14 +25218,35 @@
        [3.1000000000000227 -46.44999999999999]
        [5.75 -46.44999999999999]]]}],
    :dim
-   {:width "26.7px",
-    :height "25.4px",
-    :offset [9.350000000000023 46.44999999999999],
+   {:offset [9.350000000000023 46.44999999999999],
+    :frame [26.7 25.4],
     :min [-9.350000000000023 -46.44999999999999],
     :max [17.350000000000023 -21.05000000000001]}},
   :shadow
   {:label "chest-212",
-   :layer :shadow,
+   :defs
+   [{:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-212-0",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.0114, -0.0114, 0.0, 8.0, -37.1)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
+    {:meta
+     {:x2 "819.2",
+      :x1 "-819.2",
+      :spreadMethod "pad",
+      :id "chest-212-1",
+      :gradientUnits "userSpaceOnUse",
+      :gradientTransform
+      "matrix(0.0, 0.013, -0.013, 0.0, 1.3, -31.7)"},
+     :stops
+     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
+      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}],
    :paths
    [{:meta
      {:stroke "none", :fill-rule "evenodd", :fill "url(#chest-212-0)"},
@@ -25770,43 +25301,17 @@
        [4.35 -21.05]
        [1.5 -21.1]]]}],
    :dim
-   {:width "26.7px",
-    :height "25.35px",
-    :offset [9.35 46.4],
+   {:offset [9.35 46.4],
+    :frame [26.7 25.35],
     :min [-9.35 -46.4],
-    :max [17.35 -21.05]},
-   :defs
-   [{:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-212-0",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.0114, -0.0114, 0.0, 8.0, -37.1)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}
-    {:meta
-     {:x2 "819.2",
-      :x1 "-819.2",
-      :spreadMethod "pad",
-      :id "chest-212-1",
-      :gradientUnits "userSpaceOnUse",
-      :gradientTransform
-      "matrix(0.0, 0.013, -0.013, 0.0, 1.3, -31.7)"},
-     :stops
-     [{:stop-opacity "0.2509804", :stop-color "#000000", :offset "0.0"}
-      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"}]}]}}
+    :max [17.35 -21.05]}}}
  {:outline
   {:label "chest-201",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [33.75 -77.35]]
@@ -25863,7 +25368,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [33.75 -77.35]]
@@ -25996,16 +25500,14 @@
        [-34.30000000000001 -45.75]
        [-31.149999999999977 -47.650000000000006]]]}],
    :dim
-   {:width "101.2px",
-    :height "116.3px",
-    :offset [50.80000000000001 88.25],
+   {:offset [50.80000000000001 88.25],
+    :frame [101.2 116.3],
     :min [-50.30000000000001 -87.75],
     :max [49.89999999999998 27.55000000000001]}},
   :base
   {:label "chest-74",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [33.75 -77.35]]
       [:L [31.19999999999999 -73.15] [31.149999999999977 -72.75]]
@@ -26142,16 +25644,14 @@
        [-31.55000000000001 -72.75]]
       [:L [-31.600000000000023 -73.15] [-34.14999999999998 -77.35]]]}],
    :dim
-   {:width "100.2px",
-    :height "106.9px",
-    :offset [50.30000000000001 79.35],
+   {:offset [50.30000000000001 79.35],
+    :frame [100.2 106.9],
     :min [-50.30000000000001 -79.35],
     :max [49.89999999999998 27.55000000000001]}},
   :detail
   {:label "chest-128",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [25.0 -21.149999999999977]]
       [:Q
@@ -26251,21 +25751,18 @@
        [-24.149999999999977 -23.69999999999999]
        [-24.05000000000001 -23.149999999999977]]]}],
    :dim
-   {:width "81.0px",
-    :height "67.45px",
-    :offset [40.69999999999999 87.75],
+   {:offset [40.69999999999999 87.75],
+    :frame [81.0 67.45],
     :min [-40.69999999999999 -87.75],
     :max [40.30000000000001 -20.30000000000001]}}}
  {:outline
   {:label "chest-202",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.55000000000001 -71.75]]
@@ -26391,7 +25888,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [23.55000000000001 -71.75]]
@@ -26498,16 +25994,14 @@
        [-22.30000000000001 -82.4]]
       [:Q [-23.350000000000023 -77.15] [-24.0 -71.69999999999999]]]}],
    :dim
-   {:width "78.55px",
-    :height "111.05px",
-    :offset [39.5 82.94999999999999],
+   {:offset [39.5 82.94999999999999],
+    :frame [78.55 111.05],
     :min [-39.0 -82.44999999999999],
     :max [38.55000000000001 27.600000000000023]}},
   :base
   {:label "chest-75",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [23.55000000000001 -71.75]]
       [:L
@@ -26623,16 +26117,14 @@
        [28.850000000000023 -1.3500000000000227]
        [29.100000000000023 -1.3500000000000227]]]}],
    :dim
-   {:width "77.55px",
-    :height "88.15px",
-    :offset [39.0 72.9],
+   {:offset [39.0 72.9],
+    :frame [77.55 88.15],
     :min [-39.0 -72.9],
     :max [38.55000000000001 15.25]}},
   :detail
   {:label "chest-129",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [19.600000000000023 -11.100000000000023]]
       [:L
@@ -26716,21 +26208,18 @@
        [16.05000000000001 11.199999999999989]
        [17.600000000000023 14.300000000000011]]]}],
    :dim
-   {:width "75.65px",
-    :height "110.05px",
-    :offset [38.05000000000001 82.44999999999999],
+   {:offset [38.05000000000001 82.44999999999999],
+    :frame [75.65 110.05],
     :min [-38.0 -82.44999999999999],
     :max [37.55000000000001 27.600000000000023]}}}
  {:outline
   {:label "chest-203",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-24.0 -71.69999999999999]]
@@ -26793,7 +26282,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-24.0 -71.69999999999999]]
@@ -26853,16 +26341,14 @@
        [-22.30000000000001 -82.4]]
       [:Q [-23.350000000000023 -77.15] [-24.0 -71.69999999999999]]]}],
    :dim
-   {:width "26.1px",
-    :height "111.0px",
-    :offset [39.5 82.9],
+   {:offset [39.5 82.9],
+    :frame [26.1 111.0],
     :min [-39.0 -82.4],
     :max [-13.899999999999977 27.600000000000023]}},
   :base
   {:label "chest-76",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-36.19999999999999 -31.100000000000023]]
       [:L
@@ -26924,16 +26410,14 @@
        [-30.80000000000001 2.3500000000000227]
        [-30.69999999999999 0.8000000000000114]]]}],
    :dim
-   {:width "22.5px",
-    :height "88.1px",
-    :offset [39.0 72.85],
+   {:offset [39.0 72.85],
+    :frame [22.5 88.1],
     :min [-39.0 -72.85],
     :max [-16.5 15.25]}},
   :detail
   {:label "chest-130",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-24.94999999999999 -56.75]]
       [:L
@@ -26976,21 +26460,18 @@
        [-16.5 11.25]
        [-13.899999999999977 27.600000000000023]]]}],
    :dim
-   {:width "24.15px",
-    :height "110.0px",
-    :offset [38.05000000000001 82.4],
+   {:offset [38.05000000000001 82.4],
+    :frame [24.15 110.0],
     :min [-38.0 -82.4],
     :max [-13.899999999999977 27.600000000000023]}}}
  {:outline
   {:label "chest-204",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [80.85000000000002 -68.1]]
@@ -27283,7 +26764,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [55.89999999999998 -54.0]]
@@ -27428,16 +26908,14 @@
        [-48.5 -72.44999999999999]
        [-50.69999999999999 -72.5]]]}],
    :dim
-   {:width "163.2px",
-    :height "65.65px",
-    :offset [81.75 86.5],
+   {:offset [81.75 86.5],
+    :frame [163.2 65.65],
     :min [-81.25 -86.0],
     :max [80.94999999999999 -21.05000000000001]}},
   :base
   {:label "chest-77",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [63.10000000000002 -72.0]]
       [:Q
@@ -27796,16 +27274,14 @@
        [-6.699999999999989 -37.94999999999999]
        [-7.149999999999977 -37.94999999999999]]]}],
    :dim
-   {:width "162.2px",
-    :height "64.65px",
-    :offset [81.25 86.0],
+   {:offset [81.25 86.0],
+    :frame [162.2 64.65],
     :min [-81.25 -86.0],
     :max [80.94999999999999 -21.05000000000001]}},
   :detail
   {:label "chest-131",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [38.75 -31.75]]
       [:L [38.85000000000002 -31.649999999999977]]
@@ -28000,21 +27476,18 @@
        [-6.100000000000023 -44.099999999999994]]
       [:L [-6.0 -43.89999999999998]]]}],
    :dim
-   {:width "78.75px",
-    :height "42.35px",
-    :offset [39.5 71.30000000000001],
+   {:offset [39.5 71.30000000000001],
+    :frame [78.75 42.35],
     :min [-39.55000000000001 -71.35],
     :max [39.30000000000001 -28.94999999999999]}}}
  {:outline
   {:label "chest-205",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [54.60000000000002 -85.15]]
@@ -29168,7 +28641,6 @@
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [53.55000000000001 -40.55000000000001]]
@@ -29273,16 +28745,14 @@
        [53.55000000000001 -39.55000000000001]
        [53.55000000000001 -40.55000000000001]]]}],
    :dim
-   {:width "189.8px",
-    :height "78.7px",
-    :offset [95.05000000000001 87.5],
+   {:offset [95.05000000000001 87.5],
+    :frame [189.8 78.7],
     :min [-96.05000000000001 -89.85],
     :max [95.75 -8.899999999999977]}},
   :base
   {:label "chest-78",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [54.60000000000002 -85.15]]
       [:L
@@ -30033,16 +29503,14 @@
        [-25.80000000000001 -18.100000000000023]
        [-25.19999999999999 -17.899999999999977]]]}],
    :dim
-   {:width "181.9px",
-    :height "73.0px",
-    :offset [91.10000000000002 87.0],
+   {:offset [91.10000000000002 87.0],
+    :frame [181.9 73.0],
     :min [-91.10000000000002 -89.85],
     :max [90.80000000000001 -11.649999999999977]}},
   :detail
   {:label "chest-132",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [7.350000000000023 -27.850000000000023]]
       [:L [6.25 -28.100000000000023]]
@@ -30816,20 +30284,17 @@
        [-8.100000000000023 -22.399999999999977]
        [-7.699999999999989 -22.100000000000023]]]}],
    :dim
-   {:width "188.8px",
-    :height "77.4px",
-    :offset [94.55000000000001 86.69999999999999],
+   {:offset [94.55000000000001 86.69999999999999],
+    :frame [188.8 77.4],
     :min [-96.05000000000001 -86.69999999999999],
     :max [95.75 -8.899999999999977]}}}
  {:outline
   {:label "chest-206",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [75.35000000000002 -58.05000000000001]]
@@ -30873,7 +30338,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-16.649999999999977 -84.85]]
@@ -30893,16 +30357,14 @@
        [-46.0 -9.699999999999989]
        [-87.10000000000002 -23.30000000000001]]]}],
    :dim
-   {:width "176.1px",
-    :height "79.35px",
-    :offset [88.25 85.4],
+   {:offset [88.25 85.4],
+    :frame [176.1 79.35],
     :min [-87.75 -84.9],
     :max [87.35000000000002 -6.050000000000011]}},
   :base
   {:label "chest-79",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [75.35000000000002 -58.05000000000001]]
       [:Q
@@ -30935,16 +30397,14 @@
        [73.30000000000001 -62.55000000000001]
        [75.35000000000002 -58.05000000000001]]]}],
    :dim
-   {:width "173.8px",
-    :height "74.7px",
-    :offset [87.10000000000002 84.85],
+   {:offset [87.10000000000002 84.85],
+    :frame [173.8 74.7],
     :min [-87.10000000000002 -84.85],
     :max [86.69999999999999 -9.699999999999989]}},
   :detail
   {:label "chest-133",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [16.25 -84.85]]
       [:L [16.75 -81.1]]
@@ -30982,20 +30442,17 @@
        [42.85000000000002 -6.050000000000011]
        [-0.19999999999998863 -6.600000000000023]]]}],
    :dim
-   {:width "175.1px",
-    :height "78.35px",
-    :offset [87.75 84.9],
+   {:offset [87.75 84.9],
+    :frame [175.1 78.35],
     :min [-87.75 -84.9],
     :max [87.35000000000002 -6.050000000000011]}}}
  {:outline
   {:label "chest-207",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [75.35000000000002 -58.05000000000001]]
@@ -31066,7 +30523,6 @@
       :stroke-opacity "0.5019608",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [-16.649999999999977 -84.85]]
@@ -31106,16 +30562,14 @@
        [-76.60000000000002 -20.05000000000001]
        [-87.10000000000002 -23.30000000000001]]]}],
    :dim
-   {:width "176.1px",
-    :height "79.3px",
-    :offset [88.25 85.4],
+   {:offset [88.25 85.4],
+    :frame [176.1 79.3],
     :min [-87.75 -84.9],
     :max [87.35000000000002 -6.5]}},
   :base
   {:label "chest-80",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [75.35000000000002 -58.05000000000001]]
       [:Q [78.89999999999998 -51.75] [81.5 -44.650000000000006]]
@@ -31176,16 +30630,14 @@
        [73.30000000000001 -62.55000000000001]
        [75.35000000000002 -58.05000000000001]]]}],
    :dim
-   {:width "173.8px",
-    :height "74.7px",
-    :offset [87.10000000000002 84.85],
+   {:offset [87.10000000000002 84.85],
+    :frame [173.8 74.7],
     :min [-87.10000000000002 -84.85],
     :max [86.69999999999999 -10.149999999999977]}},
   :detail
   {:label "chest-134",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [16.25 -84.85]]
       [:L [16.75 -81.1]]
@@ -31267,20 +30719,17 @@
        [34.69999999999999 -35.60000000000002]
        [37.30000000000001 -12.199999999999989]]]}],
    :dim
-   {:width "175.1px",
-    :height "78.3px",
-    :offset [87.75 84.9],
+   {:offset [87.75 84.9],
+    :frame [175.1 78.3],
     :min [-87.75 -84.9],
     :max [87.35000000000002 -6.5]}}}
  {:outline
   {:label "chest-208",
-   :layer :outline,
    :paths
    [{:meta
      {:stroke-width "1.0",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [86.69999999999999 -23.30000000000001]]
@@ -31371,7 +30820,6 @@
       :stroke-opacity "0.49803922",
       :stroke-linejoin "round",
       :stroke-linecap "round",
-      :stroke "#000000",
       :fill "none"},
      :path
      [[:M [16.25 -84.85]]
@@ -31627,16 +31075,14 @@
       [:M [-12.800000000000011 -52.05000000000001]]
       [:L [-10.25 -57.599999999999994]]]}],
    :dim
-   {:width "176.1px",
-    :height "78.85px",
-    :offset [88.25 85.4],
+   {:offset [88.25 85.4],
+    :frame [176.1 78.85],
     :min [-87.75 -84.9],
     :max [87.35000000000002 -7.050000000000011]}},
   :base
   {:label "chest-81",
-   :layer :base,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [-22.350000000000023 -42.30000000000001]]
       [:Q
@@ -31829,16 +31275,14 @@
       [:Q [13.600000000000023 -78.0] [16.75 -81.1]]
       [:L [16.25 -84.85] [50.19999999999999 -70.25]]]}],
    :dim
-   {:width "173.8px",
-    :height "73.85px",
-    :offset [87.10000000000002 84.85],
+   {:offset [87.10000000000002 84.85],
+    :frame [173.8 73.85],
     :min [-87.10000000000002 -84.85],
     :max [86.69999999999999 -11.0]}},
   :detail
   {:label "chest-135",
-   :layer :detail,
    :paths
-   [{:meta {:stroke "none", :fill-rule "evenodd", :fill "#000000"},
+   [{:meta {:stroke "none", :fill-rule "evenodd"},
      :path
      [[:M [16.75 -81.1]]
       [:Q
@@ -32071,8 +31515,7 @@
        [-17.75 -25.30000000000001]
        [-21.149999999999977 -10.699999999999989]]]}],
    :dim
-   {:width "175.1px",
-    :height "77.85px",
-    :offset [87.75 84.9],
+   {:offset [87.75 84.9],
+    :frame [175.1 77.85],
     :min [-87.75 -84.9],
     :max [87.35000000000002 -7.050000000000011]}}}]

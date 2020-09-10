@@ -1,6 +1,7 @@
 (ns carabiner.outfitter.common-schema
   (:require [clojure.spec.alpha :as s]
-            [carabiner.common.regex :as r]))
+            [carabiner.common.regex :as r]
+            [carabiner.rogue94.common-schema :as rcs]))
 
 (s/def ::part-types #{:arm :back :beard :belt :boots :chest :collar :ears :eyebrows :eyes :gauntlets
                       :gloves :hair :hat :head :legs :mask :mouth :nose :pants :shirt :sholders :stockings

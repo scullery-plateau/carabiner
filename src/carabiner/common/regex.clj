@@ -1,6 +1,6 @@
 (ns carabiner.common.regex)
 
-(def hex-color-pattern #"[#][a-fA-F0-9]{6}")
+(def hex-color-pattern #"([#][a-fA-F0-9]{3})|([#][a-fA-F0-9]{6})")
 
 (def name-pattern #"[a-zA-Z]([a-zA-Z0-9\-_]*[a-zA-Z0-9])?")
 
