@@ -71,46 +71,7 @@
               (io/file part-folder "index-data.edn"))))))))
 
 (deftest test-build-dataset-folder
-  (build-dataset-folder "fit"))
-
-(defn build-dataset [body-type]
-  (let [root (io/file "design/outfitter")
-        dataset-file (io/file root "datasets" (str body-type ".edn"))
-        body-folder (io/file root "items/body" body-type)
-        parts-folders (->> (.listFiles body-folder)
-                           (filterv #(.isDirectory ^File %)))
-        p&s-folder (io/file root "items/patterns&shading" body-type)
-        patterns-file (io/file p&s-folder "patterns/patterns.edn")
-        shading-file (io/file p&s-folder "shading/shading.edn")
-        parts (reduce
-                #(assoc
-                   %1
-                   (keyword (.getName %2))
-                   (map-part-file (io/file %2 "index-data.edn")))
-                {}
-                parts-folders)
-        [shading patterns] (mapv map-layer-file [shading-file patterns-file])
-        mapper #(type (second %))]
-    (spit dataset-file
-          (with-out-str
-            (pp/pprint
-              {:parts parts
-               :shading shading
-               :patterns patterns})))
-    (spit (io/file root (str "datasets/" body-type "-metas.edn"))
-          (with-out-str
-            (pp/pprint
-              (->> (concat (flatten (mapv vals (flatten (vals parts)))) shading patterns)
-                   (mapv :paths)
-                   (flatten)
-                   (mapv :meta)
-                   (reduce into [])
-                   (group-by first)
-                   (reduce-kv #(assoc %1 %2 (set (mapv mapper %3))) {})))))))
-
-
-(deftest test-build-dataset
-  (build-dataset "fit"))
+  (build-dataset-folder "woman"))
 
 (deftest test-torsos
   (let [root (io/file "design/outfitter/items/body")]

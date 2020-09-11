@@ -1,4 +1,5 @@
 [{:outline 66, :base 12, :detail nil, :shadow nil}
+ {:outline 66, :base 12, :detail nil, :shadow 107}
  {:outline 67, :base 12, :detail nil, :shadow nil}
  {:outline 68, :base 13, :detail nil, :shadow nil}
  {:outline 69, :base 14, :detail 51, :shadow nil}
@@ -6,7 +7,7 @@
  {:outline 71, :base 16, :detail nil, :shadow nil}
  {:outline 72, :base 17, :detail nil, :shadow nil}
  {:outline 73, :base 18, :detail 53, :shadow nil}
- {:outline 74, :base 19, :detail nil, :shadow 107}
+ {:outline 74, :base 19, :detail nil, :shadow nil}
  {:outline 75, :base 20, :detail 54, :shadow nil}
  {:outline 76, :base 21, :detail nil, :shadow nil}
  {:outline 77, :base 22, :detail nil, :shadow nil}
@@ -15,7 +16,7 @@
  {:outline 80, :base 24, :detail nil, :shadow nil}
  {:outline 81, :base 25, :detail nil, :shadow nil}
  {:outline 82, :base 26, :detail nil, :shadow nil}
- {:outline 83, :base 27, :detail 55, :shadow nil}
+ {:outline 83, :base 27, :detail 55, :shadow 108}
  {:outline 84, :base 28, :detail 56, :shadow 108}
  {:outline 85, :base 29, :detail 57, :shadow 109}
  {:outline 86, :base 30, :detail 58, :shadow 110}

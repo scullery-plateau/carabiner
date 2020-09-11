@@ -354,8 +354,7 @@
    :max [800.0 600.0]}}
  {:label "shading-01",
   :defs
-  [
-   {:meta
+  [{:meta
     {:x2 "819.2",
      :x1 "-819.2",
      :spreadMethod "pad",
@@ -915,8 +914,7 @@
       :stop-color "#000000",
       :offset "1.0"})}],
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",
@@ -2125,8 +2123,7 @@
    :max [800.0 600.0]}}
  {:label "shading-02",
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",
@@ -2484,8 +2481,7 @@
    :max [800.0 600.0]}}
  {:label "shading-03",
   :defs
-  [
-   {:meta
+  [{:meta
     {:x2 "819.2",
      :x1 "-819.2",
      :spreadMethod "pad",
@@ -3045,8 +3041,7 @@
       :stop-color "#ffffff",
       :offset "1.0"})}],
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",
@@ -4255,8 +4250,7 @@
    :max [800.0 600.0]}}
  {:label "shading-04",
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",
@@ -4364,8 +4358,7 @@
    :max [476.8 540.5]}}
  {:label "shading-05",
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",
@@ -4819,8 +4812,7 @@
    :max [800.0 600.0]}}
  {:label "shading-06",
   :defs
-  [
-   {:meta
+  [{:meta
     {:x2 "819.2",
      :x1 "-819.2",
      :spreadMethod "pad",
@@ -5380,8 +5372,7 @@
       :stop-color "#000000",
       :offset "1.0"})}],
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",
@@ -6690,8 +6681,7 @@
    :max [800.0 600.0]}}
  {:label "shading-07",
   :defs
-  [
-   {:meta
+  [{:meta
     {:x2 "819.2",
      :x1 "-819.2",
      :spreadMethod "pad",
@@ -6769,8 +6759,7 @@
     ({:stop-opacity "0.2", :stop-color "#000000", :offset "0.0"}
      {:stop-opacity "0.0", :stop-color "#000000", :offset "1.0"})}],
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none", :fill-rule "evenodd", :fill "url(#shading-07-0)"},
     :path
     [[:M [384.7 202.5]]

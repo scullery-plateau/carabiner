@@ -1,11 +1,11 @@
 [{:outline 44, :base 12, :detail nil, :shadow nil}
+ {:outline 44, :base 12, :detail nil, :shadow 66}
  {:outline 45, :base 13, :detail nil, :shadow nil}
  {:outline 46, :base 14, :detail nil, :shadow nil}
  {:outline 47, :base 15, :detail nil, :shadow nil}
  {:outline 48, :base 16, :detail 35, :shadow nil}
  {:outline 49, :base 17, :detail nil, :shadow nil}
  {:outline 50, :base 18, :detail nil, :shadow nil}
- {:outline 50, :base 18, :detail nil, :shadow 66}
  {:outline 51, :base 19, :detail 36, :shadow nil}
  {:outline 53, :base 20, :detail nil, :shadow nil}
  {:outline 54, :base 21, :detail nil, :shadow nil}

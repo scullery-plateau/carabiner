@@ -595,7 +595,7 @@
 
 #_(deftest test-build-columns-file
     (let [root (io/file "design/outfitter/items/body/hulk")]
-      (build-columns-file (io/file root "boots"))))
+      (build-columns-file (io/file root "chest"))))
 
 #_(deftest test-build-columns-file-for-folder
     (let [folder (io/file "design/outfitter/items/accessories/fit")]
@@ -604,8 +604,8 @@
         (build-columns-file file))))
 
 (deftest test-read-columns-to-html
-  (let [root (io/file "design/outfitter/items/body/fit")]
-    (read-columns-to-html (io/file root "hat"))))
+  (let [root (io/file "design/outfitter/items/body/superman")]
+    (read-columns-to-html (io/file root "arm"))))
 
 (deftest test-read-columns-to-html-for-folder
   (let [folder (io/file "design/outfitter/items/body")]
@@ -643,126 +643,3 @@
                          (mapv
                                #(vector :li [:a {:href (str % "/from-data.html")} [:h2 %]])
                                folders))))))))
-
-
-(deftest test-compile-names-e2e
-  (let [part "torso"
-        root (io/file "design/outfitter/items/body/fit" part)
-        svg-file #(io/file root (str "shapes/" % ".svg"))
-        names-table (edn/read-string (slurp (io/file root "names.edn")))
-        invalid-files (remove #(.exists (svg-file (last %))) names-table)]
-    (if-not (empty? invalid-files)
-      (pp/pprint invalid-files)
-      (let [index (index-names names-table)
-            _ (spit (io/file root "name-index.edn")
-                    (with-out-str (pp/pprint index)))
-            data (compile-full-data svg-file part index)
-            _ (spit (io/file root "name-data.edn")
-                    (with-out-str (pp/pprint data)))
-            names (into (sorted-set) (keys data))
-            table (mapv #(build-row-from-data (get data %)) names)
-            overlap (layer-data {} (reduce-kv #(if (:outline %3) (assoc %1 %2 (:outline %3)) %1) {} data))]
-        (spit (io/file root "from-data.html")
-              (build-html
-                {:title "From Data"}
-                [:table
-                 [:thead [:tr [:th "Base"] [:th "Detail"] [:th "Outline"] [:th "Shadow"] [:th "All"]]]
-                 (into [:tbody] table)]))
-        (spit (io/file root "outlines.html")
-              (build-html {:title "Outlines"} overlap))))))
-
-
-
-(defn parse-blueprint-layer [root [step index & {:keys [flip? base detail outline]
-                                                 :or   {flip?   false
-                                                        base    "#ffffff"
-                                                        detail  "#ffffff"
-                                                        outline "#000000"}}]]
-  (let [folder (io/file root (name step))
-        data (edn/read-string (slurp (io/file folder "index-data.edn")))]
-    {:layers (get data index)
-     :flip?  flip?
-     :colors {:base    base
-              :detail  detail
-              :outline outline}}))
-
-(defn group-layers [padding all-layers]
-  (let [layers (mapv :layers all-layers)
-        dims (reduce #(into %1 (mapv :dim (vals %2))) [] layers)
-        mins (mapv :min dims)
-        min-xs (mapv first mins)
-        min-ys (mapv second mins)
-        maxs (mapv :max dims)
-        max-xs (mapv first maxs)
-        max-ys (mapv second maxs)
-        min-y (- (apply min min-ys) padding)
-        max-y (+ (apply max max-ys) padding)
-        left-x (Math/abs (double (apply min min-xs)))
-        right-x (Math/abs (double (apply max max-xs)))
-        max-diff-x (+ (max left-x right-x) padding)
-        min-x (- max-diff-x)
-        max-x max-diff-x
-        width (- max-x min-x)
-        height (- max-y min-y)]
-    [:svg
-     {:width   (str width "px")
-      :height  (str height "px")
-      :viewBox (str/join " " [min-x min-y width height])}
-     [:rect
-      {:x            min-x
-       :y            min-y
-       :width        width
-       :height       height
-       :fill         "none"
-       :stroke       "#000000"
-       :stroke-width 2}]
-     (into
-       [:g]
-       (mapv
-         (fn [{:keys [layers colors flip?]}]
-           (into
-             [:g
-              (if flip?
-                {:transform "matrix(-1.0, 0.0, 0.0, 1.0, 0.0, 0.0)"}
-                {})]
-             (->> [:base :detail :outline :shadow]
-                  (filterv (set (keys layers)))
-                  (mapv (partial get layers))
-                  (mapv (partial build-group-from-pair colors)))))
-         all-layers))]))
-
-(defn blueprint->svg [root [body-type & blueprint]]
-  (let [folder (io/file root (name body-type))]
-    (group-layers 10 (mapv (partial parse-blueprint-layer folder) blueprint))))
-
-(defn svg->64 [svg]
-  (-> svg
-      (update 1 assoc :xmlns "http://www.w3.org/2000/svg")
-      (h/to-text)
-      (img/svg-to-64)))
-
-(defn build-demo-table [root demos]
-  (let [demo-mapper #(let [svg (blueprint->svg
-                                 root
-                                 (edn/read-string
-                                   (slurp %)))
-                           encoded (svg->64 svg)
-                           img (str "data:image/png;base64," encoded)]
-                        [:tr
-                         [:td svg]
-                         [:td [:img {:src img}]]])]
-    [:table
-      (into [:tbody]
-        (->> (.listFiles demos)
-             (filter #(str/ends-with? (.getName %) ".edn"))
-             (mapv demo-mapper)))]))
-
-(deftest test-parse-blueprint
-  (let [root (io/file "design/outfitter/items/body")
-        demos (io/file "design/outfitter/demos")]
-    (spit (io/file demos "demo.html")
-          (build-html
-            {:title "Demos"}
-            (build-demo-table root demos)))))
-
-

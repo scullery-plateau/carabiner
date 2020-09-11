@@ -1,11 +1,11 @@
-[{:outline 28, :base 12, :detail 25, :shadow 40}
- {:outline 29, :base 13, :detail 26, :shadow 41}
- {:outline 30, :base 14, :detail nil, :shadow nil}
- {:outline 31, :base 15, :detail nil, :shadow nil}
- {:outline 32, :base 16, :detail nil, :shadow nil}
- {:outline 33, :base 17, :detail nil, :shadow nil}
- {:outline 34, :base 18, :detail nil, :shadow nil}
- {:outline 35, :base 19, :detail nil, :shadow nil}
- {:outline 36, :base 20, :detail nil, :shadow nil}
- {:outline 37, :base 21, :detail nil, :shadow nil}
- {:outline 38, :base nil, :detail nil, :shadow nil}]
+[{:outline 28, :base 12, :detail nil, :shadow nil}
+ {:outline 29, :base 13, :detail nil, :shadow 40}
+ {:outline 30, :base 14, :detail 25, :shadow nil}
+ {:outline 31, :base 15, :detail nil, :shadow 41}
+ {:outline 32, :base 16, :detail 26, :shadow nil}
+ {:outline 33, :base nil, :detail nil, :shadow nil}
+ {:outline 34, :base 17, :detail nil, :shadow nil}
+ {:outline 35, :base 18, :detail nil, :shadow nil}
+ {:outline 36, :base 19, :detail nil, :shadow nil}
+ {:outline 37, :base 20, :detail nil, :shadow nil}
+ {:outline 38, :base 21, :detail nil, :shadow nil}]

@@ -1,0 +1,13 @@
+[:fit
+ {:bg-color "#ffc"}
+ [:tights 0 :base "red" :pattern 5 :shading 0]
+ [:tights 11 :base "blue" :shading 0]
+ [:shirt 0 :base "blue" :shading 0]
+ [:belt 6 :base "red" :pattern 5 :shading 0]
+ [:shirt 43 :base "red" :pattern 5 :shading 0]
+ [:gloves 1 :base "red" :pattern 5 :shading 0]
+ [:gloves 22 :base "red" :pattern 5 :shading 0]
+ [:head 0 :base "red" :pattern 5 :shading 0]
+ [:mask 75 :base "black"]
+ [:eyes 11]
+ [:symbol_A 75 :base "black" :detail "black" :shading 0]]

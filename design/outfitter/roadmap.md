@@ -1,13 +1,12 @@
 # Outfitter Roadmap
 
-1. dataset schema
-  * remove colors from part layers so color can be ascribed at group level
-2. patterns & shading
-  * integrate into dataset
-3. image document schema
-  * components as defs
-  * shading using <use> to use base and detail layers
-4. add stretch/squish feature to image document at both top level and part level
+1. finish aligning data for all body types
+2. explore v2k9 for missing patterns / shading / shapes
+3. separate hair into hair-back and hair-front
+4. add "scale-image" to increase resolution of end result
+6. add "body-scale" to allow for different body proportions
+  * lanky, thin, stocky, small, & default
+7. build menu for parts, patterns, shading
 5. Add Opacity feature to image document
 6. Accessories / Powers
 7. Common

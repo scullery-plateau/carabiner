@@ -1,1 +1,4 @@
-{:base [12 13 14 15 16 17 18 19 20 21], :detail [25 26], :outline [28 29 30 31 32 33 34 35 36 37 38], :shadow [40 41]}
+{:base    [12  13  14  15  16  nil 17  18  19  20  21]
+ :detail  [nil nil 25  nil 26]
+ :outline [28  29  30  31  32  33  34  35  36  37  38]
+ :shadow  [nil 40  nil 41]}

@@ -38,8 +38,6 @@
    :max-x (double Integer/MIN_VALUE)
    :max-y (double Integer/MIN_VALUE)})
 
-
-
 (defn build-d [d]
   (->> d
        (map #(into [(name (first %))] (flatten (rest %))))
@@ -183,7 +181,7 @@
     (throw (ExceptionInfo. "invalid schematic" errors)))
   (let [[body-type & args&layers] schematic
 
-        [{:keys [resize-body bg-color bg-pattern padding] :or {padding 10}} layers]
+        [{:keys [bg-color bg-pattern padding] :or {padding 10}} layers]
         (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])
 
         layers (mapv (fn [[part-type index & {:as args}]] [[part-type index] args]) layers)
@@ -210,8 +208,7 @@
                         (conj %1 [:rect {:x min-x :y min-y :width width :height height :fill %2}])
                         %1)
                      [:g]
-                     [bg-color bg-pattern-ref])
-          ]
+                     [bg-color bg-pattern-ref])]
       [:svg
        (assoc (build-svg-args dim) :xmlns "http://www.w3.org/2000/svg")
        (vec
