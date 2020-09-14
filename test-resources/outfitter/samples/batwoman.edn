@@ -1,7 +1,7 @@
 [:woman
- {:bg-color "#ccc"}
- [:hair 105 :base "darkred" :pattern 28]
- [:hair 102 :base "darkred" :outline "red" :pattern 28]
+ {:bg-color "#ccc"
+  :scale-image 3}
+ [:hair 105 :base "darkred" :pattern 51]
  [:back 1 :base "black" :detail "darkred" :outline "lightgrey"]
  [:tights 0 :base "black" :outline "lightgrey" :shading 2]
  [:shirt 0 :base "black" :outline "lightgrey" :shading 2]

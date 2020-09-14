@@ -470,7 +470,6 @@
        (into (sorted-set))
        (drop 2)))
 
-
 (defn read-shape-numbers-to-ranges [folder]
   (let [files (read-shape-numbers folder)
         min-file (apply min files)
@@ -605,7 +604,7 @@
 
 (deftest test-read-columns-to-html
   (let [root (io/file "design/outfitter/items/body/superman")]
-    (read-columns-to-html (io/file root "arm"))))
+    (read-columns-to-html (io/file root "boots"))))
 
 (deftest test-read-columns-to-html-for-folder
   (let [folder (io/file "design/outfitter/items/body")]
@@ -643,3 +642,4 @@
                          (mapv
                                #(vector :li [:a {:href (str % "/from-data.html")} [:h2 %]])
                                folders))))))))
+

@@ -1,8 +1,8 @@
-[{:outline 123, :base 12, :detail 117, :shadow nil}
- {:outline 124, :base 13, :detail 118, :shadow nil}
- {:outline 125, :base 14, :detail 119, :shadow nil}
- {:outline 126, :base 15, :detail 120, :shadow nil}
- {:outline 127, :base 16, :detail 121, :shadow nil}
+[{:outline 123, :base 12, :detail nil, :shadow nil}
+ {:outline 124, :base 13, :detail nil, :shadow nil}
+ {:outline 125, :base 14, :detail nil, :shadow nil}
+ {:outline 126, :base 15, :detail nil, :shadow nil}
+ {:outline 127, :base 16, :detail nil, :shadow nil}
  {:outline 128, :base 17, :detail nil, :shadow nil}
  {:outline 129, :base 18, :detail nil, :shadow nil}
  {:outline 130, :base 19, :detail nil, :shadow nil}
@@ -47,8 +47,8 @@
  {:outline 169, :base 58, :detail nil, :shadow nil}
  {:outline 170, :base 59, :detail nil, :shadow nil}
  {:outline 171, :base 60, :detail nil, :shadow nil}
- {:outline 172, :base 61, :detail nil, :shadow nil}
- {:outline 173, :base 62, :detail nil, :shadow nil}
+ {:outline 172, :base 61, :detail 117, :shadow nil}
+ {:outline 173, :base 62, :detail 118, :shadow nil}
  {:outline 174, :base 63, :detail nil, :shadow nil}
  {:outline 175, :base 64, :detail nil, :shadow nil}
  {:outline 176, :base 65, :detail nil, :shadow nil}
@@ -67,8 +67,8 @@
  {:outline 189, :base 78, :detail nil, :shadow nil}
  {:outline 190, :base 79, :detail nil, :shadow nil}
  {:outline 191, :base 80, :detail nil, :shadow nil}
- {:outline 192, :base 81, :detail nil, :shadow nil}
- {:outline 193, :base 82, :detail nil, :shadow nil}
+ {:outline 192, :base 81, :detail 119, :shadow nil}
+ {:outline 193, :base 82, :detail 120, :shadow nil}
  {:outline 194, :base 83, :detail nil, :shadow nil}
  {:outline 195, :base 84, :detail nil, :shadow nil}
  {:outline 196, :base 85, :detail nil, :shadow nil}
@@ -88,7 +88,7 @@
  {:outline 210, :base 99, :detail nil, :shadow nil}
  {:outline 211, :base 100, :detail nil, :shadow nil}
  {:outline 212, :base 101, :detail nil, :shadow nil}
- {:outline 213, :base 102, :detail nil, :shadow nil}
+ {:outline 213, :base 102, :detail 121, :shadow nil}
  {:outline 214, :base 103, :detail nil, :shadow nil}
  {:outline 215, :base 104, :detail nil, :shadow nil}
  {:outline 216, :base 105, :detail nil, :shadow nil}

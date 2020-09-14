@@ -1,0 +1,18 @@
+[:hulk
+ {:bg-color "#ccf"
+  :scale-image 3}
+ [:torso 0 :base "coral" :pattern 49 :shading 0]
+ [:legs 0 :base "coral" :pattern 49 :shading 0]
+ [:arm 0 :base "coral" :pattern 49 :shading 0]
+ [:arm 0 :base "coral" :pattern 49 :shading 0 :flip? true]
+ [:head 0 :base "coral" :pattern 49 :shading 0 :resize [1.1 1.0]]
+ [:head 17 :resize [1.1 1.0]]
+ [:tights 14 :base "blue" :shading 0]
+ [:tights 55 :base "black" :outline "lightgrey" :shading 0]
+ [:stockings 14 :base "coral" :pattern 49 :shading 0]
+ [:belt 1 :base "black" :outline "lightgrey" :shading 0]
+ [:eyebrows 24 :resize [1.1 1.0]]
+ [:eyebrows 23 :base "coral" :outline "black" :pattern 49 :shading 0 :resize [1.1 1.0]]
+ [:nose 0 :resize [1.1 1.0] :move [0.0 -5.0]]
+ [:eyes 20 :base "blue" :resize [1.1 1.0]]
+ [:mouth 14 :base "black" :resize [1.2 1.0]]]

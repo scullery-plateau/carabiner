@@ -34,7 +34,7 @@
  {:outline 171, :base 45, :detail 104, :shadow nil}
  {:outline 172, :base 46, :detail nil, :shadow nil}
  {:outline 173, :base 47, :detail 105, :shadow nil}
- {:outline 174, :base 48, :detail nil, :shadow nil}
+ {:outline 174, :base 46, :detail nil, :shadow nil}
  {:outline 175, :base 48, :detail 106, :shadow nil}
  {:outline 176, :base 49, :detail nil, :shadow nil}
  {:outline 177, :base 50, :detail 107, :shadow nil}

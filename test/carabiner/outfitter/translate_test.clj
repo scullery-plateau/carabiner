@@ -11,7 +11,7 @@
   (:import (clojure.lang ExceptionInfo)))
 
 (deftest build-menu
-  (let [colors {:base "green" :detail "red" :outline "blue"}
+  (let [colors {:base "#00f" :detail "#0f0" :outline "#f00"}
         src (io/file "resources/outfitter")
         dest (io/file "resources/public/outfitter")
         body-types (mapv #(.getName %) (.listFiles src))]
@@ -43,8 +43,8 @@
                     (let []
                       [:div
                        {:alt index :title index :style "display: inline;"}
-                       (into [:svg (tr/build-svg-args (tr/build-dim [[part-option {}]] 5))]
-                             [(tr/build-layer [] [] [part-option colors])])]))
+                       (into [:svg (tr/build-svg-args (tr/build-dim [[part-option {}]] 5 1 [1 1]))]
+                             [(tr/build-layer [] [] [1 1] [0 0] [part-option colors])])]))
                   (range)
                   (edn/read-string (slurp (io/file parts-folder (str part ".edn")))))))))
         (doseq [pattern ["patterns" "shading"]]
@@ -76,7 +76,7 @@
 
 (deftest test-schematic->svg
   (let [demos-folder (io/file "test-resources/outfitter/samples")
-        demos ["spiderman"]]
+        demos ["iron-man"]]
     (doseq [demo demos]
       (pp/pprint demo)
       (spit

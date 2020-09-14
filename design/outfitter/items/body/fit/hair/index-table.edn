@@ -106,8 +106,8 @@
  {:outline 240, :base 116, :detail nil, :shadow 343}
  {:outline 241, :base 117, :detail nil, :shadow 344}
  {:outline 242, :base 118, :detail nil, :shadow 345}
- {:outline 243, :base 119, :detail nil, :shadow 346}
- {:outline 244, :base 120, :detail 133, :shadow 347}
+ {:outline 243, :base 119, :detail nil, :shadow nil}
+ {:outline 244, :base 120, :detail 133, :shadow nil}
  {:outline 245, :base 121, :detail nil, :shadow nil}
- {:outline 246, :base 122, :detail nil, :shadow nil}
- {:outline 247, :base 123, :detail nil, :shadow nil}]
+ {:outline 246, :base 122, :detail nil, :shadow 346}
+ {:outline 247, :base 123, :detail nil, :shadow 347}]

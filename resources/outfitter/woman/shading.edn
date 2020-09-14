@@ -364,8 +364,7 @@
    :max [800.0 600.0]}}
  {:label "shading-01",
   :defs
-  [
-   {:meta
+  [{:meta
     {:x2 "819.2",
      :x1 "-819.2",
      :spreadMethod "pad",
@@ -873,8 +872,7 @@
       :stop-color "#000000",
       :offset "1.0"})}],
   :paths
-  [
-   {:meta
+  [{:meta
     {:stroke "none",
      :fill-rule "evenodd",
      :fill-opacity "0.2",

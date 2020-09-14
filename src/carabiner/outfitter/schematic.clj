@@ -26,8 +26,12 @@
 
 (s/def ::bg-pattern ::whole-number)
 
+(s/def ::scale-image (s/or :double double? :int int?))
+
+(s/def ::body-scale #{:lanky :thin :stocky :petite})
+
 (s/def ::schematic (s/and
                      vector?
                      (s/cat :body-type ::body-types
-                            :args (s/? (s/keys :opt-un [::resize-body ::bg-color ::bg-pattern]))
+                            :args (s/? (s/keys :opt-un [::resize-body ::bg-color ::bg-pattern ::scale-image ::body-scale]))
                             :layers (s/+ ::layer))))

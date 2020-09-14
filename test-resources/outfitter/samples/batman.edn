@@ -1,5 +1,6 @@
 [:fit
- {:bg-color "#ccc"}
+ {:bg-color "#ccc"
+  :scale-image 3}
  [:back 1 :base "black" :detail "darkslategrey" :outline "lightgrey"]
  [:tights 0 :base "darkslategrey" :outline "lightgrey" :shading 0]
  [:shirt 0 :base "darkslategrey" :outline "lightgrey" :shading 0]

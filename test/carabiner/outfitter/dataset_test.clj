@@ -50,8 +50,10 @@
         dest-folder (io/file "resources/outfitter" body-type)
         parts-dest (io/file dest-folder "parts")
         patterns-file (io/file p&s-folder "patterns/patterns.edn")
+        patterns-b-file (io/file p&s-folder "patterns-B/patterns.edn")
         shading-file (io/file p&s-folder "shading/shading.edn")
-        [shading patterns] (mapv map-layer-file [shading-file patterns-file])]
+        [shading patterns patterns-b] (mapv map-layer-file [shading-file patterns-file patterns-b-file])
+        patterns (into patterns patterns-b)]
     (.mkdir dest-folder)
     (.mkdir parts-dest)
     (spit
@@ -71,7 +73,11 @@
               (io/file part-folder "index-data.edn"))))))))
 
 (deftest test-build-dataset-folder
-  (build-dataset-folder "woman"))
+  (build-dataset-folder "superman"))
+
+(deftest test-build-all-dataset-folders
+  (doseq [body-type ["fit" "hulk" "superman" "woman"]]
+    (build-dataset-folder body-type)))
 
 (deftest test-torsos
   (let [root (io/file "design/outfitter/items/body")]
@@ -87,3 +93,25 @@
                               (select-keys [:min :max])))
             {}
             ["fit" "hulk" "superman" "woman"]))))))
+
+(deftest test-y-mark
+  (let [root (io/file "resources/outfitter")
+        out (reduce
+              (fn [out part]
+                (assoc
+                  out
+                  part
+                  (reduce
+                    (fn [m body-type]
+                      (assoc
+                        m
+                        (keyword body-type)
+                        (-> (io/file root body-type "parts" (str part ".edn"))
+                            (slurp)
+                            (edn/read-string)
+                            (get-in [0 :outline :dim :min 1]))))
+                    {}
+                    ["fit" "hulk" "superman" "woman"])))
+              {}
+              ["head" "torso"])]
+    (pp/pprint out)))
