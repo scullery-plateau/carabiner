@@ -16,9 +16,9 @@
    :woman    93.6})
 
 (def body-scales
-  {:lanky  [0.8 1.2]
-   :thin   [0.8 1.0]
-   :stocky [1.0 0.8]
+  {:lanky  [0.85 1.15]
+   :thin   [0.85 1.0]
+   :stocky [0.85 0.75]
    :petite [0.7 0.7]})
 
 (defn out-of-range-filter-fn [my-coll]
@@ -201,7 +201,7 @@
 (defn get-body-scale [body-type body-scale]
   (let [body-resize (get body-scales body-scale [1.0 1.0])
         torso-top (get torso-tops body-type)
-        y-shift (* torso-top (- 1 (second body-resize)))]
+        y-shift (* torso-top 0.8 (- 1 (second body-resize)))]
     {:body-resize body-resize
      :head-shift [0.0 y-shift]}))
 

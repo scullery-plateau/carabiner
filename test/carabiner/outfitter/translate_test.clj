@@ -76,7 +76,7 @@
 
 (deftest test-schematic->svg
   (let [demos-folder (io/file "test-resources/outfitter/samples")
-        demos ["iron-man"]]
+        demos ["gimli"]]
     (doseq [demo demos]
       (pp/pprint demo)
       (spit

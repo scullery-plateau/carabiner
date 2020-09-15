@@ -1,0 +1,19 @@
+[:fit
+ {:bg-color "#ccf"
+  :scale-image 3
+  :body-scale :thin}
+ [:boots 6 :base "black" :outline "grey" :shading 0]
+ [:gloves 1 :base "#fc9" :shading 0]
+ [:pants 0 :base "black" :outline "grey" :shading 0]
+ [:shirt 93 :base "black" :outline "grey" :shading 0]
+ [:shirt 91 :base "black" :outline "grey" :shading 0]
+ [:shirt 82 :base "red" :shading 0]
+ [:shirt 21 :base "red" :shading 0]
+ [:shirt 68 :base "#fc9" :shading 0]
+ [:ears 1 :base "#fc9" :shading 0]
+ [:head 0 :base "#fc9" :shading 0]
+ [:eyes 1 :base "blue" :shading 0]
+ [:nose 1]
+ [:mouth 2]
+ [:eyebrows 10 :base "black" :outline "black" :shading 0]
+ [:hair 3 :base "black" :shading 2]]
