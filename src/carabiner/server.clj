@@ -17,8 +17,12 @@
             [carabiner.rogue94.char-index :as ch]
             [carabiner.mastermold.core :as mm]
             [carabiner.mastermold.schema :as ms]
+            [carabiner.outfitter.translate :as tr]
             [clojure.pprint :as pp]
-            [clojure.data.json :as json])
+            [clojure.data.json :as json]
+            [clojure.edn :as edn]
+            [carabiner.common.img :as img]
+            [carabiner.common.hiccup :as hml])
   (:import (java.io ByteArrayInputStream)
            (clojure.lang ExceptionInfo)))
 
@@ -97,9 +101,10 @@
         :spec "/swagger.json"
         :data {:info {:title       "Scullery Plateau"
                       :description "Table Top gaming "}
-               :tags [{:name "spritely", :description "Spritely pixel art app"}
-                      {:name "cobblestone", :description "Cobblestone tabletop battle map app"}
-                      {:name "mastermold" :description "Mastermold paper mini app"}]}}}
+               :tags [{:name "spritely" :description "Spritely pixel art app"}
+                      {:name "cobblestone" :description "Cobblestone tabletop battle map app"}
+                      {:name "mastermold" :description "Mastermold paper mini app"}
+                      {:name "outfitter" :description "Outfitter character design app"}]}}}
       (sweet/api
         (api/context
           "/spritely" []
@@ -141,6 +146,24 @@
                                              (-> (http/ok (ByteArrayInputStream. (.getBytes result)))
                                                  (apply-headers (download-file-headers "text/html" {} result))))))}}))
         (api/context
+          "/outfitter/publish" []
+          :tags ["outfitter"]
+          (sweet/resource
+            {:description ""
+             :post        {:summary    ""
+                           :parameters {:body ms/Minis}
+                           :consumes   ["text/plain"]
+                           :produces   ["text/plain"]
+                           :responses  {200 {}}
+                           :handler    (fn [{:keys [body]}]
+                                         (let [result (-> (slurp ^ByteArrayInputStream body)
+                                                          (edn/read-string)
+                                                          (tr/schematic->svg)
+                                                          (hml/to-text)
+                                                          (img/svg-to-64))]
+                                           (-> (http/ok result)
+                                               (apply-headers (download-file-headers "text/plain" {} result)))))}}))
+        (api/context
           "/rogue94/charnames" []
           (sweet/resource
             {:description ""
@@ -156,9 +179,8 @@
 
 (defn -main [& [port]]
   (let [my-app (build-app)
-        port (Integer. ^int (or port (env :port) 5000))]
+        port (int (or port (env :port) 5000))]
     (server/run-server my-app {
       :port port
       :join? false
-      :max-line 131072
-      })))
+      :max-line 131072})))

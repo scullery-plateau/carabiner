@@ -18,6 +18,8 @@
  [:shirt 50 :base "#752" :detail "darkgoldenrod" :shading 0]
  [:chest 56 :base "darkslategrey" :detail "darkgoldenrod" :shading 13]
 
+ [:collar 16 :base "#532" :shading 0]
+
  [:ears 0 :base "#fc9" :shading 0]
  [:head 0 :base "#fc9" :shading 0]
  [:nose 4]
@@ -29,7 +31,5 @@
  [:hair 1 :base "#622" :pattern 50]
  [:beard 22 :base "#622" :pattern 50]
  [:beard 37 :base "#622" :pattern 50]
-
- [:collar 16 :base "#532" :shading 0]
 
  ]
