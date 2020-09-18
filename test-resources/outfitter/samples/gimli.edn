@@ -16,6 +16,10 @@
  [:shirt 15 :base "#752" :shading 0]
  [:gloves 14 :base "#532" :shading 0]
  [:shirt 50 :base "#752" :detail "darkgoldenrod" :shading 0]
+ [:shirt 95 :base "slategrey" :pattern 7 :shading 13]
+
+ [:pants 15 :base "slategrey" :pattern 7 :shading 13]
+ [:shirt 95 :base "slategrey" :pattern 7 :shading 13]
  [:chest 56 :base "darkslategrey" :detail "darkgoldenrod" :shading 13]
 
  [:collar 16 :base "#532" :shading 0]
