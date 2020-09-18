@@ -30,6 +30,7 @@ import { ConfirmCancelDialogComponent } from './util/confirm-cancel-dialog/confi
 import { OkayDialogComponent } from './util/okay-dialog/okay-dialog.component';
 import { ImageListComponent } from './mastermold/image-list/image-list.component';
 import { MiniGalleryComponent } from './mastermold/mini-gallery/mini-gallery.component';
+import { OutfitterComponent } from './outfitter/outfitter.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { MiniGalleryComponent } from './mastermold/mini-gallery/mini-gallery.com
     OkayDialogComponent,
     ImageListComponent,
     MiniGalleryComponent,
+    OutfitterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+<div class="d-flex flex-column">
+  <label class="nes-btn" *ngIf="!processing">
+    <span>Select your file</span>
+    <input type="file" id="fileInput" style="display: none;" (change)="loadSchematic($event)">
+  </label>
+  <img [alt]="fileName" *ngIf="base64" src="data:image/png;base64, {{base64}}"/>
+</div>
