@@ -7,7 +7,7 @@
             [clojure.pprint :as pp])
   (:import (clojure.lang ExceptionInfo)))
 
-(def datasets-path "resources/outfitter")
+(def datasets-path "resources/outfitter/data")
 
 (def torso-tops
   {:fit      106.35
