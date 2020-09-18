@@ -1940,7 +1940,7 @@ var OutfitterComponent = /** @class */ (function () {
     OutfitterComponent.prototype.ngOnInit = function () {
     };
     OutfitterComponent.prototype.safeURL = function (base64) {
-        return this.sanitizer.bypassSecurityTrustHtml("data:image/png;base64, " + base64);
+        return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
     };
     OutfitterComponent.prototype.loadSchematic = function (e) {
         var files = Array.from(e.target.files);

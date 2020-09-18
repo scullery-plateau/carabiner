@@ -19,7 +19,7 @@ export class OutfitterComponent implements OnInit {
   }
 
   safeURL(base64: string) {
-    return this.sanitizer.bypassSecurityTrustHtml("data:image/png;base64, " + base64);
+    return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
   }
 
   loadSchematic(e) {
