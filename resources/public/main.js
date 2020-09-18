@@ -1952,7 +1952,7 @@ var OutfitterComponent = /** @class */ (function () {
                     me_1.processing = false;
                 });
             };
-            reader_1.readAsDataURL(file_1);
+            reader_1.readAsText(file_1);
         }
     };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

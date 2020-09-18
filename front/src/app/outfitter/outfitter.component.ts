@@ -33,7 +33,7 @@ export class OutfitterComponent implements OnInit {
           me.processing = false;
         });
       };
-      reader.readAsDataURL(file);
+      reader.readAsText(file);
     }
   }
 }
