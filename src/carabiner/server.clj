@@ -150,7 +150,7 @@
           (sweet/resource
             {:description ""
              :post        {:summary    ""
-                           :parameters {:body ms/Minis}
+                           :parameters {:body s/Str}
                            :consumes   ["text/plain"]
                            :produces   ["text/plain"]
                            :responses  {200 {}}
