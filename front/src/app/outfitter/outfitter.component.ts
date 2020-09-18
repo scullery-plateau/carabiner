@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Mini} from "../mastermold/mini";
 import {OutfitterService} from "./outfitter.service";
+import {DomSanitizer} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-outfitter',
@@ -8,13 +9,17 @@ import {OutfitterService} from "./outfitter.service";
   styleUrls: ['./outfitter.component.scss']
 })
 export class OutfitterComponent implements OnInit {
-  constructor(private os : OutfitterService) { }
+  constructor(private os : OutfitterService, private sanitizer:DomSanitizer) { }
 
   processing: boolean;
   base64: string;
   fileName: string;
 
   ngOnInit() {
+  }
+
+  safeURL(base64: string) {
+    return this.sanitizer.bypassSecurityTrustHtml("data:image/png;base64, " + base64);
   }
 
   loadSchematic(e) {

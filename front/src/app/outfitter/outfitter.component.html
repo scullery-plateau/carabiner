@@ -3,5 +3,5 @@
     <span>Select your file</span>
     <input type="file" id="fileInput" style="display: none;" (change)="loadSchematic($event)">
   </label>
-  <img [alt]="fileName" *ngIf="base64" src="data:image/png;base64, {{base64}}"/>
+  <img *ngIf="base64" [alt]="fileName" [src]="safeURL(base64)"/>
 </div>

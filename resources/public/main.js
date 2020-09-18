@@ -1899,7 +1899,7 @@ var MOCK_RESPONSES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\n  <label class=\"nes-btn\" *ngIf=\"!processing\">\n    <span>Select your file</span>\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\n  </label>\n  <img [alt]=\"fileName\" *ngIf=\"base64\" src=\"data:image/png;base64, {{base64}}\"/>\n</div>\n"
+module.exports = "<div class=\"d-flex flex-column\">\n  <label class=\"nes-btn\" *ngIf=\"!processing\">\n    <span>Select your file</span>\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\n  </label>\n  <img *ngIf=\"base64\" [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\n</div>\n"
 
 /***/ }),
 
@@ -1927,14 +1927,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _outfitter_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./outfitter.service */ "./src/app/outfitter/outfitter.service.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 
 var OutfitterComponent = /** @class */ (function () {
-    function OutfitterComponent(os) {
+    function OutfitterComponent(os, sanitizer) {
         this.os = os;
+        this.sanitizer = sanitizer;
     }
     OutfitterComponent.prototype.ngOnInit = function () {
+    };
+    OutfitterComponent.prototype.safeURL = function (base64) {
+        return this.sanitizer.bypassSecurityTrustHtml("data:image/png;base64, " + base64);
     };
     OutfitterComponent.prototype.loadSchematic = function (e) {
         var files = Array.from(e.target.files);
@@ -1961,7 +1967,7 @@ var OutfitterComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./outfitter.component.html */ "./src/app/outfitter/outfitter.component.html"),
             styles: [__webpack_require__(/*! ./outfitter.component.scss */ "./src/app/outfitter/outfitter.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_outfitter_service__WEBPACK_IMPORTED_MODULE_2__["OutfitterService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_outfitter_service__WEBPACK_IMPORTED_MODULE_2__["OutfitterService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]])
     ], OutfitterComponent);
     return OutfitterComponent;
 }());
