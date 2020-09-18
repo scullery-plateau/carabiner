@@ -153,7 +153,7 @@
                            :parameters {:body s/Str}
                            :consumes   ["text/plain"]
                            :produces   ["text/plain"]
-                           :responses  {200 {}}
+                           :responses  {200 {:schema s/Str}}
                            :handler    (fn [{:keys [body]}]
                                          (let [text (slurp ^ByteArrayInputStream body)
                                                _ (println text)
@@ -162,7 +162,7 @@
                                                           (hml/to-text)
                                                           (img/svg-to-64))]
                                            (-> (http/ok result)
-                                               (apply-headers (download-file-headers "text/plain" {} result)))))}}))
+                                               (http/content-type "text/plain"))))}}))
         (api/context
           "/rogue94/charnames" []
           (sweet/resource
