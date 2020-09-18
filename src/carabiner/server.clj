@@ -42,21 +42,20 @@
                       :responses  {200 {:schema schema}}
                       :handler    (fn [{body :body}]
                                     (let [args (slurp body)]
-                                    (try
-                                      (http/content-type
-                                        (http/ok (func args))
-                                        "application/json")
-                                    (catch ExceptionInfo e
-                                      (if (= "Errors parsing rogue94 full-map." (.getMessage e))
-                                      (http/content-type
-                                        (http/bad-request {
-                                          :message (.getMessage e)
-                                          ;:problems (mapv #(select-keys % [:path :pred :val]) (:spec/problems (.getData e)))
-                                          :problems (::spec/problems (.getData e))
-                                          })
-                                        "application/json")
-                                        (throw e)
-                                        )))))}}))))
+                                      (try
+                                        (http/content-type
+                                          (http/ok (func args))
+                                          "application/json")
+                                        (catch ExceptionInfo e
+                                          (if (= "Errors parsing rogue94 full-map." (.getMessage e))
+                                            (http/content-type
+                                              (http/bad-request
+                                                {:message  (.getMessage e)
+                                                 ;:problems (mapv #(select-keys % [:path :pred :val]) (:spec/problems (.getData e)))
+                                                 :problems (::spec/problems (.getData e))})
+                                              "application/json")
+                                            (throw e))))))}}))))
+
 
 (defn build-compressor [path func schema]
   (api/context
@@ -64,20 +63,20 @@
     (sweet/resource
       {:description ""
        :post
-       {:summary    ""
-        :parameters {:body-params schema}
-        :consumes   ["application/json"]
-        :produces   ["text/plain"]
-        :responses  {200 {:schema s/Str}}
-        :handler    (fn [{obj :body-params}]
-                      (http/content-type
-                        (http/ok (func obj))
-                        "text/plain"))}})))
+                    {:summary    ""
+                     :parameters {:body-params schema}
+                     :consumes   ["application/json"]
+                     :produces   ["text/plain"]
+                     :responses  {200 {:schema s/Str}}
+                     :handler    (fn [{obj :body-params}]
+                                   (http/content-type
+                                     (http/ok (func obj))
+                                     "text/plain"))}})))
 
 (defn download-file-headers [content-type {:keys [filename]} response-body]
   (merge
     {"Content-Length" (count response-body)
-     "Content-Type" content-type}
+     "Content-Type"   content-type}
     (if-not (empty? filename) {"Content-Disposition" (str "filename=" filename)} {})))
 
 (defn build-download
@@ -179,8 +178,8 @@
 
 (defn -main [& [port]]
   (let [my-app (build-app)
-        port (int (or port (env :port) 5000))]
-    (server/run-server my-app {
-      :port port
-      :join? false
-      :max-line 131072})))
+        port (Integer/parseInt (str (or port 5000)))]
+    (server/run-server my-app
+      {:port     port
+       :join?    false
+       :max-line 131072})))
