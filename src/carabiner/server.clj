@@ -155,8 +155,9 @@
                            :produces   ["text/plain"]
                            :responses  {200 {}}
                            :handler    (fn [{:keys [body]}]
-                                         (let [result (-> (slurp ^ByteArrayInputStream body)
-                                                          (edn/read-string)
+                                         (let [text (slurp ^ByteArrayInputStream body)
+                                               _ (println text)
+                                               result (-> (edn/read-string text)
                                                           (tr/schematic->svg)
                                                           (hml/to-text)
                                                           (img/svg-to-64))]

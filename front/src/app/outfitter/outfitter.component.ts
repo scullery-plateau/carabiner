@@ -25,7 +25,9 @@ export class OutfitterComponent implements OnInit {
       let reader = new FileReader();
       reader.onload = function() {
         me.processing = true;
-        me.os.loadSchematic(reader.result.toString()).subscribe((base64) => {
+        let data = reader.result.toString();
+        console.log(data);
+        me.os.loadSchematic(data).subscribe((base64) => {
           me.base64 = base64;
           me.fileName = file.name;
           me.processing = false;

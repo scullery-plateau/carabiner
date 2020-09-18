@@ -206,6 +206,7 @@
      :head-shift [0.0 y-shift]}))
 
 (defn schematic->svg [schematic]
+  (pp/pprint schematic)
   (when-let [errors (s/explain-data ::sc/schematic schematic)]
     (throw (ExceptionInfo. "invalid schematic" errors)))
   (let [[body-type & args&layers] schematic

@@ -1944,7 +1944,9 @@ var OutfitterComponent = /** @class */ (function () {
             var reader_1 = new FileReader();
             reader_1.onload = function () {
                 me_1.processing = true;
-                me_1.os.loadSchematic(reader_1.result.toString()).subscribe(function (base64) {
+                var data = reader_1.result.toString();
+                console.log(data);
+                me_1.os.loadSchematic(data).subscribe(function (base64) {
                     me_1.base64 = base64;
                     me_1.fileName = file_1.name;
                     me_1.processing = false;
