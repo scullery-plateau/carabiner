@@ -205,12 +205,14 @@
     {:body-resize body-resize
      :head-shift [0.0 y-shift]}))
 
+(def scale-image 2)
+
 (defn schematic->svg [schematic]
   (when-let [errors (s/explain-data ::sc/schematic schematic)]
     (throw (ExceptionInfo. "invalid schematic" errors)))
   (let [[body-type & args&layers] schematic
 
-        [{:keys [bg-color bg-pattern padding scale-image body-scale] :or {padding 10 scale-image 1}} layers]
+        [{:keys [bg-color bg-pattern padding body-scale] :or {padding 10}} layers]
         (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])
 
         {:keys [body-resize head-shift]} (get-body-scale body-type body-scale)

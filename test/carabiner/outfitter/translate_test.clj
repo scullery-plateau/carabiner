@@ -8,7 +8,8 @@
             [carabiner.common.img :as img]
             [carabiner.common.hiccup :as h]
             [clojure.string :as str])
-  (:import (clojure.lang ExceptionInfo)))
+  (:import (clojure.lang ExceptionInfo)
+           (java.io File)))
 
 (deftest build-menu
   (let [colors {:base "#00f" :detail "#0f0" :outline "#f00"}
@@ -74,34 +75,55 @@
               [(mapv #(vector :li [:a {:href (str % ".html")} %]) parts)
                (mapv #(vector :li [:a {:href (str % ".html")} %]) ["patterns" "shading"])])))))))
 
+(def demos-folder ^File (io/file "test-resources/outfitter/samples"))
+
+(defn demo-reducer [out demo]
+  (pp/pprint demo)
+  (let [demo-name (first (str/split demo #"\."))]
+    (try
+      (let [start (System/currentTimeMillis)
+            svg (tr/schematic->svg
+                  (edn/read-string
+                    (slurp
+                      (io/file demos-folder demo))))
+            text (h/to-text svg)
+            text-size (count text)
+            encoded (img/svg-to-64 text)
+            encoded-size (count encoded)
+            time-at-encode (System/currentTimeMillis)
+            time-e2e (- time-at-encode start)
+            img (str "data:image/png;base64," encoded)]
+        (spit
+          (io/file demos-folder (str demo-name "-out.html"))
+          (shapes/build-html
+            {:title demo}
+            [:table
+             [:tr
+              [:td svg]
+              [:td [:img {:src img}]]]]))
+        (spit
+          (io/file demos-folder (str demo-name "-out.edn"))
+          (with-out-str (pp/pprint svg)))
+        (println (str demo " completed"))
+        (assoc out demo
+                   {:time-e2e time-e2e
+                    :text-size text-size
+                    :encoded-size encoded-size}))
+      (catch ExceptionInfo x
+        (println "exception thrown")
+        (spit
+          (io/file demos-folder (str demo-name "-out.edn"))
+          (with-out-str (pp/pprint (ex-data x))))
+        out))))
+
 (deftest test-schematic->svg
-  (let [demos-folder (io/file "test-resources/outfitter/samples")
-        demos ["gimli"]]
-    (doseq [demo demos]
-      (pp/pprint demo)
-      (spit
-        (io/file demos-folder (str demo "-out.edn"))
-        (try
-          (let [svg (tr/schematic->svg
-                      (edn/read-string
-                        (slurp
-                          (io/file demos-folder (str demo ".edn")))))
-                encoded (-> svg
-                            (h/to-text)
-                            (img/svg-to-64))
-                img (str "data:image/png;base64," encoded)]
-            (spit
-              (io/file demos-folder (str demo "-out.html"))
-              (shapes/build-html
-                {:title demo}
-                [:table
-                 [:tr
-                  [:td svg]
-                  [:td [:img {:src img}]]]]))
-            (with-out-str (pp/pprint svg)))
-          (catch ExceptionInfo x
-            (println "exception thrown")
-            (with-out-str
-              (pp/pprint
-                (ex-data x))))))
-      (println (str demo " completed")))))
+  (let [demos ["the-thing.edn"]]
+    (spit (io/file demos-folder "times-out.edn")
+          (reduce demo-reducer {} demos))))
+
+(deftest test-all-schematic->svg
+  (let [demos (->> (.listFiles demos-folder)
+                   (map #(.getName %))
+                   (remove #(str/index-of % "-out")))]
+    (spit (io/file demos-folder "all-times-out.edn")
+          (reduce demo-reducer {} demos))))
