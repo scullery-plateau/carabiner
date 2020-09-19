@@ -1899,7 +1899,7 @@ var MOCK_RESPONSES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\r\n  <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n    <span>Select your file</span>\r\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n  </label>\r\n  <div *ngIf=\"base64\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"d-flex flex-column\">\r\n  <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n    <span>Select your file</span>\r\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n  </label>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1936,29 +1936,43 @@ var OutfitterComponent = /** @class */ (function () {
     function OutfitterComponent(os, sanitizer) {
         this.os = os;
         this.sanitizer = sanitizer;
+        this.step = 0;
+        this.maxStep = 5;
+        this.ellipse = "";
     }
     OutfitterComponent.prototype.ngOnInit = function () {
     };
     OutfitterComponent.prototype.safeURL = function (base64) {
         return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
     };
+    OutfitterComponent.prototype.stepAnimate = function () {
+        var me = this;
+        var animateStep = function () {
+            me.step = (me.step + 1) % me.maxStep;
+            me.ellipse = ".".repeat(me.step + 1);
+            animateStep();
+        };
+        return animateStep;
+    };
     OutfitterComponent.prototype.loadSchematic = function (e) {
         var files = Array.from(e.target.files);
         if (files.length > 0) {
-            var file_1 = files[0];
+            var file = files[0];
+            this.fileName = file.name;
+            this.base64 = undefined;
             var me_1 = this;
             var reader_1 = new FileReader();
             reader_1.onload = function () {
-                me_1.processing = true;
+                me_1.processing = setTimeout(me_1.stepAnimate(), 1000);
                 var data = reader_1.result.toString();
                 console.log(data);
                 me_1.os.loadSchematic(data).subscribe(function (base64) {
                     me_1.base64 = base64;
-                    me_1.fileName = file_1.name;
-                    me_1.processing = false;
+                    clearTimeout(me_1.processing);
+                    me_1.ellipse = "";
                 });
             };
-            reader_1.readAsText(file_1);
+            reader_1.readAsText(file);
         }
     };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
