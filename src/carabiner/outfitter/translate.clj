@@ -7,7 +7,7 @@
             [clojure.pprint :as pp])
   (:import (clojure.lang ExceptionInfo)))
 
-(def datasets-path "resources/outfitter")
+(def datasets-path "resources/outfitter/data")
 
 (def torso-tops
   {:fit      106.35
@@ -208,6 +208,7 @@
 (def scale-image 2)
 
 (defn schematic->svg [schematic]
+  (pp/pprint schematic)
   (when-let [errors (s/explain-data ::sc/schematic schematic)]
     (throw (ExceptionInfo. "invalid schematic" errors)))
   (let [[body-type & args&layers] schematic

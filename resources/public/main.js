@@ -39,6 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cobblestone_cobblestone_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cobblestone/cobblestone.component */ "./src/app/cobblestone/cobblestone.component.ts");
 /* harmony import */ var _spritely_spritely_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./spritely/spritely.component */ "./src/app/spritely/spritely.component.ts");
 /* harmony import */ var _mastermold_mastermold_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mastermold/mastermold.component */ "./src/app/mastermold/mastermold.component.ts");
+/* harmony import */ var _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./outfitter/outfitter.component */ "./src/app/outfitter/outfitter.component.ts");
+
 
 
 
@@ -48,6 +50,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: '', redirectTo: '/spritely', pathMatch: 'full' },
     { path: 'cobblestone', component: _cobblestone_cobblestone_component__WEBPACK_IMPORTED_MODULE_3__["CobblestoneComponent"] },
+    { path: 'outfitter', component: _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_6__["OutfitterComponent"] },
     { path: 'mastermold', component: _mastermold_mastermold_component__WEBPACK_IMPORTED_MODULE_5__["MastermoldComponent"] },
     { path: 'spritely', component: _spritely_spritely_component__WEBPACK_IMPORTED_MODULE_4__["SpritelyComponent"] },
 ];
@@ -74,7 +77,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<header class=\"sticky\">\r\n  <nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\r\n    <a class=\"navbar-brand\" href=\"#\"><h2>{{title}}</h2></a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\r\n        </li>\r\n        <!--\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\r\n        </li>\r\n        -->\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</header>\r\n<p></p>\r\n<div class=\"container-fluid\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<footer>\r\n  <div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\r\n    <p>Built by Daniel Allen Johnson &copy; 2019 - 2020</p>\r\n    <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\r\n    <p>See the code at <a href=\"https://github.com/scullery-plateau/carabiner\">scullery-plateau/carabiner</a> on GitHub.</p>\r\n  </div>\r\n</footer>\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<header class=\"sticky\">\r\n  <nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\r\n    <a class=\"navbar-brand\" href=\"#\"><h2>{{title}}</h2></a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\" onclick=\"toggleDropDown('collapsibleNavbar')\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/spritely\">Spritely</a>\r\n        </li>\r\n        <!--\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/cobblestone\">CobbleStone</a>\r\n        </li>\r\n        -->\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/mastermold\">MasterMold</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#/outfitter\">Outfitter</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</header>\r\n<p></p>\r\n<div class=\"container-fluid\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<footer>\r\n  <div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\r\n    <p>Built by Daniel Allen Johnson &copy; 2019 - 2020</p>\r\n    <p>Contact at <a href=\"https://twitter.com/voltron42\" target=\"_blank\">@voltron42</a> on Twitter.</p>\r\n    <p>See the code at <a href=\"https://github.com/scullery-plateau/carabiner\">scullery-plateau/carabiner</a> on GitHub.</p>\r\n  </div>\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -163,6 +166,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_okay_dialog_okay_dialog_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./util/okay-dialog/okay-dialog.component */ "./src/app/util/okay-dialog/okay-dialog.component.ts");
 /* harmony import */ var _mastermold_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./mastermold/image-list/image-list.component */ "./src/app/mastermold/image-list/image-list.component.ts");
 /* harmony import */ var _mastermold_mini_gallery_mini_gallery_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./mastermold/mini-gallery/mini-gallery.component */ "./src/app/mastermold/mini-gallery/mini-gallery.component.ts");
+/* harmony import */ var _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./outfitter/outfitter.component */ "./src/app/outfitter/outfitter.component.ts");
+
 
 
 
@@ -226,6 +231,7 @@ var AppModule = /** @class */ (function () {
                 _util_okay_dialog_okay_dialog_component__WEBPACK_IMPORTED_MODULE_29__["OkayDialogComponent"],
                 _mastermold_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_30__["ImageListComponent"],
                 _mastermold_mini_gallery_mini_gallery_component__WEBPACK_IMPORTED_MODULE_31__["MiniGalleryComponent"],
+                _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_32__["OutfitterComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1581,7 +1587,7 @@ var ImageListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\n  <input type=\"file\" id=\"fileInput\" class=\"nes-input\" multiple (change)=\"addImage($event)\"/>\n  <div class=\"d-flex flex-row\">\n    <div class=\"showcase\" id=\"ctrl\">\n      <div class=\"nes-container\">\n        <image-list\n          [data]=\"data\"\n          (countUpdated)=\"updateCount($event)\"\n          (imageRemoved)=\"deleteImage($event)\"></image-list>\n      </div>\n    </div>\n    <div class=\"showcase h-100\">\n      <div class=\"nes-container h-100\">\n        <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\n        <p></p>\n        <mini-gallery [data]=\"data\"></mini-gallery>\n        <p></p>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"d-flex flex-column\">\n  <label class=\"nes-btn\">\n    <span>Select your file</span>\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"addImage($event)\">\n  </label>\n  <div class=\"row\" *ngIf=\"data\">\n    <div class=\"col-md-5 showcase\" id=\"ctrl\">\n      <div class=\"nes-container\">\n        <image-list\n          [data]=\"data\"\n          (countUpdated)=\"updateCount($event)\"\n          (imageRemoved)=\"deleteImage($event)\"></image-list>\n      </div>\n    </div>\n    <div class=\"col-md-7 showcase h-100\">\n      <div class=\"nes-container h-100\">\n        <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\n        <p></p>\n        <mini-gallery [data]=\"data\"></mini-gallery>\n        <p></p>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1882,6 +1888,126 @@ var MOCK_RESPONSES = [
         "body": []
     }
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/outfitter/outfitter.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"d-flex flex-column\">\n  <label class=\"nes-btn\" *ngIf=\"!processing\">\n    <span>Select your file</span>\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\n  </label>\n  <img *ngIf=\"base64\" [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/outfitter/outfitter.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9vdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/outfitter/outfitter.component.ts ***!
+  \**************************************************/
+/*! exports provided: OutfitterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutfitterComponent", function() { return OutfitterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _outfitter_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./outfitter.service */ "./src/app/outfitter/outfitter.service.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
+
+
+
+var OutfitterComponent = /** @class */ (function () {
+    function OutfitterComponent(os, sanitizer) {
+        this.os = os;
+        this.sanitizer = sanitizer;
+    }
+    OutfitterComponent.prototype.ngOnInit = function () {
+    };
+    OutfitterComponent.prototype.safeURL = function (base64) {
+        return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
+    };
+    OutfitterComponent.prototype.loadSchematic = function (e) {
+        var files = Array.from(e.target.files);
+        if (files.length > 0) {
+            var file_1 = files[0];
+            var me_1 = this;
+            var reader_1 = new FileReader();
+            reader_1.onload = function () {
+                me_1.processing = true;
+                var data = reader_1.result.toString();
+                console.log(data);
+                me_1.os.loadSchematic(data).subscribe(function (base64) {
+                    me_1.base64 = base64;
+                    me_1.fileName = file_1.name;
+                    me_1.processing = false;
+                });
+            };
+            reader_1.readAsText(file_1);
+        }
+    };
+    OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-outfitter',
+            template: __webpack_require__(/*! ./outfitter.component.html */ "./src/app/outfitter/outfitter.component.html"),
+            styles: [__webpack_require__(/*! ./outfitter.component.scss */ "./src/app/outfitter/outfitter.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_outfitter_service__WEBPACK_IMPORTED_MODULE_2__["OutfitterService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]])
+    ], OutfitterComponent);
+    return OutfitterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/outfitter/outfitter.service.ts ***!
+  \************************************************/
+/*! exports provided: OutfitterService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutfitterService", function() { return OutfitterService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var OutfitterService = /** @class */ (function () {
+    function OutfitterService(client) {
+        this.client = client;
+    }
+    OutfitterService.prototype.loadSchematic = function (schematic) {
+        return this.client.post("/outfitter/publish", schematic);
+    };
+    OutfitterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], OutfitterService);
+    return OutfitterService;
+}());
+
 
 
 /***/ }),
@@ -2824,7 +2950,7 @@ var FileFormComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<input type=\"file\" class=\"nes-input\" (change)=\"loadFile($event)\"/>\n"
+module.exports = "<label class=\"nes-btn\">\n  <span>Select your file</span>\n  <input type=\"file\" style=\"display: none;\" (change)=\"loadFile($event)\">\n</label>\n"
 
 /***/ }),
 

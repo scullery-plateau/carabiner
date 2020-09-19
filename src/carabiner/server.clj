@@ -150,18 +150,19 @@
           (sweet/resource
             {:description ""
              :post        {:summary    ""
-                           :parameters {:body ms/Minis}
+                           :parameters {:body s/Str}
                            :consumes   ["text/plain"]
                            :produces   ["text/plain"]
-                           :responses  {200 {}}
+                           :responses  {200 {:schema s/Str}}
                            :handler    (fn [{:keys [body]}]
-                                         (let [result (-> (slurp ^ByteArrayInputStream body)
-                                                          (edn/read-string)
+                                         (let [text (slurp ^ByteArrayInputStream body)
+                                               _ (println text)
+                                               result (-> (edn/read-string text)
                                                           (tr/schematic->svg)
                                                           (hml/to-text)
                                                           (img/svg-to-64))]
                                            (-> (http/ok result)
-                                               (apply-headers (download-file-headers "text/plain" {} result)))))}}))
+                                               (http/content-type "text/plain"))))}}))
         (api/context
           "/rogue94/charnames" []
           (sweet/resource
