@@ -1,11 +1,11 @@
 (ns carabiner.outfitter.common-schema
   (:require [clojure.spec.alpha :as s]
             [carabiner.common.regex :as r]
-            [carabiner.rogue94.common-schema :as rcs]))
+            [carabiner.rogue94.common-schema :as rcs]
+            [carabiner.outfitter.constants :as oc]
+            [clojure.pprint :as pp]))
 
-(s/def ::part-types #{:arm :back :beard :belt :boots :chest :collar :ears :eyebrows :eyes :gauntlets
-                      :gloves :hair :hat :head :legs :mask :mouth :nose :pants :shirt :sholders :stockings
-                      :symbol_A :symbol_B :tights :torso :wings_and_tail})
+(s/def ::part-types (into (sorted-set) (mapv keyword oc/part-types)))
 
 (s/def ::int-or-double (s/or :int int?
                              :double double?))
@@ -17,3 +17,7 @@
 
 (s/def ::color (s/or :rcs-color ::rcs/color
                      :id-ref (partial re-matches r/id-ref)))
+
+(defn has-unique-opts? [obj]
+  (pp/pprint obj)
+  true)

@@ -50,6 +50,7 @@ export class OutfitterComponent implements OnInit {
         me.os.loadSchematic(data).subscribe((base64) => {
           me.base64 = base64;
           clearTimeout(me.processing);
+          me.processing = undefined;
           me.ellipse = "";
         });
       };
