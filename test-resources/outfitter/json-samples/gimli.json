@@ -1,0 +1,140 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "superman",
+  "bgColor" : "#ccf",
+  "bodyScale" : "stocky",
+  "layers" : [ {
+    "part" : "shirt",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "gloves",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "pants",
+    "index" : 2,
+    "shading" : 0,
+    "base" : "#532"
+  }, {
+    "part" : "pants",
+    "index" : 2,
+    "shading" : 0,
+    "base" : "#532"
+  }, {
+    "part" : "pants",
+    "index" : 9,
+    "shading" : 0,
+    "base" : "#620"
+  }, {
+    "part" : "boots",
+    "index" : 44,
+    "shading" : 0,
+    "base" : "#752",
+    "detail" : "darkgoldenrod"
+  }, {
+    "part" : "boots",
+    "index" : 26,
+    "shading" : 13,
+    "base" : "darkslategrey"
+  }, {
+    "part" : "boots",
+    "index" : 28,
+    "shading" : 13,
+    "base" : "darkslategrey",
+    "detail" : "darkgoldenrod"
+  }, {
+    "part" : "shirt",
+    "index" : 15,
+    "shading" : 0,
+    "base" : "#752"
+  }, {
+    "part" : "gloves",
+    "index" : 14,
+    "shading" : 0,
+    "base" : "#532"
+  }, {
+    "part" : "shirt",
+    "index" : 50,
+    "shading" : 0,
+    "base" : "#752",
+    "detail" : "darkgoldenrod"
+  }, {
+    "part" : "shirt",
+    "index" : 95,
+    "shading" : 13,
+    "base" : "slategrey",
+    "pattern" : 7
+  }, {
+    "part" : "pants",
+    "index" : 15,
+    "shading" : 13,
+    "base" : "slategrey",
+    "pattern" : 7
+  }, {
+    "part" : "shirt",
+    "index" : 95,
+    "shading" : 13,
+    "base" : "slategrey",
+    "pattern" : 7
+  }, {
+    "part" : "chest",
+    "index" : 56,
+    "shading" : 13,
+    "base" : "darkslategrey",
+    "detail" : "darkgoldenrod"
+  }, {
+    "part" : "collar",
+    "index" : 16,
+    "shading" : 0,
+    "base" : "#532"
+  }, {
+    "part" : "ears",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "nose",
+    "index" : 4
+  }, {
+    "part" : "mouth",
+    "index" : 5,
+    "base" : "black"
+  }, {
+    "part" : "eyes",
+    "index" : 1,
+    "base" : "brown"
+  }, {
+    "part" : "eyebrows",
+    "index" : 22,
+    "base" : "#622",
+    "pattern" : 50
+  }, {
+    "part" : "hair",
+    "index" : 51,
+    "base" : "#622",
+    "pattern" : 50
+  }, {
+    "part" : "hair",
+    "index" : 1,
+    "base" : "#622",
+    "pattern" : 50
+  }, {
+    "part" : "beard",
+    "index" : 22,
+    "base" : "#622",
+    "pattern" : 50
+  }, {
+    "part" : "beard",
+    "index" : 37,
+    "base" : "#622",
+    "pattern" : 50
+  } ]
+}

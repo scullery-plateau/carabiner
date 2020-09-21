@@ -1,0 +1,125 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "superman",
+  "bgColor" : "#ffc",
+  "layers" : [ {
+    "part" : "back",
+    "index" : 0,
+    "shading" : 2,
+    "base" : "red",
+    "detail" : "darkred"
+  }, {
+    "part" : "tights",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "shirt",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "boots",
+    "index" : 6,
+    "shading" : 2,
+    "base" : "red",
+    "detail" : "darkred"
+  }, {
+    "part" : "tights",
+    "index" : 21,
+    "shading" : 0,
+    "base" : "red"
+  }, {
+    "part" : "belt",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "yellow"
+  }, {
+    "part" : "belt",
+    "index" : 24,
+    "shading" : 0,
+    "base" : "red"
+  }, {
+    "part" : "belt",
+    "index" : 21,
+    "shading" : 0,
+    "base" : "gold"
+  }, {
+    "part" : "gloves",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "gloves",
+    "index" : 0
+  }, {
+    "part" : "shirt",
+    "index" : 71,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "collar",
+    "index" : 12,
+    "shading" : 0,
+    "base" : "red"
+  }, {
+    "part" : "ears",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "eyes",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "nose",
+    "index" : 1
+  }, {
+    "part" : "mouth",
+    "index" : 2
+  }, {
+    "part" : "eyebrows",
+    "index" : 10,
+    "shading" : 0,
+    "outline" : "black",
+    "base" : "black"
+  }, {
+    "part" : "hair",
+    "index" : 3,
+    "shading" : 2,
+    "base" : "black"
+  }, {
+    "part" : "hair",
+    "index" : 19,
+    "shading" : 2,
+    "base" : "black"
+  }, {
+    "part" : "hair",
+    "index" : 17,
+    "move" : [ 0.0, -80.0 ],
+    "resize" : [ 0.5, 0.5 ],
+    "shading" : 2,
+    "base" : "black"
+  }, {
+    "part" : "symbol_A",
+    "index" : 15,
+    "move" : [ 0.0, 31.0 ],
+    "resize" : [ 1.4, 1.4 ],
+    "shading" : 0,
+    "base" : "red",
+    "detail" : "yellow"
+  }, {
+    "part" : "symbol_B",
+    "index" : 18,
+    "move" : [ 0.0, 2.5 ],
+    "resize" : [ 1.2, 1.0 ],
+    "shading" : 2,
+    "base" : "red"
+  } ]
+}

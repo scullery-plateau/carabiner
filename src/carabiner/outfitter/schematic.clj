@@ -8,21 +8,18 @@
 
 (s/def ::whole-number (s/and int? (complement neg?)))
 
-(s/def ::layer-args
-  (s/* (s/or :base (s/cat :label #{:base} :value ::rcs/color)
-             :detail (s/cat :label #{:detail} :value ::rcs/color)
-             :outline (s/cat :label #{:outline} :value ::rcs/color)
-             :pattern (s/cat :label #{:pattern} :value ::whole-number)
-             :shading (s/cat :label #{:shading} :value ::whole-number)
-             :resize (s/cat :label #{:resize} :value ::cs/double-xy)
-             :move (s/cat :label #{:move} :value ::cs/double-xy)
-             :flip? (s/cat :label #{:flip?} :value boolean?))))
-
 (s/def ::layer (s/and
                  vector?
                  (s/cat :part-type ::cs/part-types
                         :index ::whole-number
-                        :layer-args ::layer-args)))
+                        :base (s/? (s/cat :label #{:base} :value ::rcs/color))
+                        :detail (s/? (s/cat :label #{:detail} :value ::rcs/color))
+                        :outline (s/? (s/cat :label #{:outline} :value ::rcs/color))
+                        :pattern (s/? (s/cat :label #{:pattern} :value ::whole-number))
+                        :shading (s/? (s/cat :label #{:shading} :value ::whole-number))
+                        :resize (s/? (s/cat :label #{:resize} :value ::cs/double-xy))
+                        :move (s/? (s/cat :label #{:move} :value ::cs/double-xy))
+                        :flip? (s/? (s/cat :label #{:flip?} :value boolean?)))))
 
 (s/def ::bg-color ::rcs/color)
 

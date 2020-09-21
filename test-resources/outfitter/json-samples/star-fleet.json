@@ -1,0 +1,83 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "fit",
+  "bgColor" : "#ccf",
+  "bodyScale" : "thin",
+  "layers" : [ {
+    "part" : "boots",
+    "index" : 6,
+    "shading" : 0,
+    "outline" : "grey",
+    "base" : "black"
+  }, {
+    "part" : "gloves",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "pants",
+    "index" : 0,
+    "shading" : 0,
+    "outline" : "grey",
+    "base" : "black"
+  }, {
+    "part" : "shirt",
+    "index" : 93,
+    "shading" : 0,
+    "outline" : "grey",
+    "base" : "black"
+  }, {
+    "part" : "shirt",
+    "index" : 91,
+    "shading" : 0,
+    "outline" : "grey",
+    "base" : "black"
+  }, {
+    "part" : "shirt",
+    "index" : 82,
+    "shading" : 0,
+    "base" : "red"
+  }, {
+    "part" : "shirt",
+    "index" : 21,
+    "shading" : 0,
+    "base" : "red"
+  }, {
+    "part" : "shirt",
+    "index" : 68,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "ears",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "eyes",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "nose",
+    "index" : 1
+  }, {
+    "part" : "mouth",
+    "index" : 2
+  }, {
+    "part" : "eyebrows",
+    "index" : 10,
+    "shading" : 0,
+    "outline" : "black",
+    "base" : "black"
+  }, {
+    "part" : "hair",
+    "index" : 3,
+    "shading" : 2,
+    "base" : "black"
+  } ]
+}

@@ -1,0 +1,121 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "hulk",
+  "bgColor" : "#ccc",
+  "layers" : [ {
+    "part" : "back",
+    "index" : 1,
+    "outline" : "lightgrey",
+    "base" : "black",
+    "detail" : "darkslategrey"
+  }, {
+    "part" : "tights",
+    "index" : 0,
+    "shading" : 0,
+    "outline" : "lightgrey",
+    "base" : "darkslategrey"
+  }, {
+    "part" : "shirt",
+    "index" : 0,
+    "shading" : 0,
+    "outline" : "lightgrey",
+    "base" : "darkslategrey"
+  }, {
+    "part" : "boots",
+    "index" : 6,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black",
+    "detail" : "darkslategrey"
+  }, {
+    "part" : "tights",
+    "index" : 21,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "shirt",
+    "index" : 71,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "collar",
+    "index" : 12,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "gloves",
+    "index" : 1,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "gloves",
+    "index" : 23,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "gloves",
+    "index" : 29,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "#fc9"
+  }, {
+    "part" : "belt",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "yellow"
+  }, {
+    "part" : "belt",
+    "index" : 25,
+    "shading" : 0,
+    "base" : "gold"
+  }, {
+    "part" : "belt",
+    "index" : 19,
+    "shading" : 0,
+    "base" : "gold"
+  }, {
+    "part" : "mask",
+    "index" : 1,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "mask",
+    "index" : 83,
+    "shading" : 2,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "eyes",
+    "index" : 11,
+    "outline" : "white"
+  }, {
+    "part" : "nose",
+    "index" : 1,
+    "outline" : "lightgrey"
+  }, {
+    "part" : "mouth",
+    "index" : 0
+  }, {
+    "part" : "eyebrows",
+    "index" : 24,
+    "outline" : "lightgrey",
+    "base" : "lightgrey"
+  }, {
+    "part" : "symbol_A",
+    "index" : 72,
+    "shading" : 2,
+    "outline" : "yellow",
+    "base" : "black"
+  } ]
+}

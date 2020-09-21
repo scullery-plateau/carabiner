@@ -1,0 +1,72 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "woman",
+  "bgColor" : "#ffc",
+  "bodyScale" : "thin",
+  "layers" : [ {
+    "part" : "tights",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 5
+  }, {
+    "part" : "tights",
+    "index" : 12,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "shirt",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "tights",
+    "index" : 55,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 5
+  }, {
+    "part" : "shirt",
+    "index" : 43,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 5
+  }, {
+    "part" : "shirt",
+    "index" : 79,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 5
+  }, {
+    "part" : "gloves",
+    "index" : 1,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 5
+  }, {
+    "part" : "gloves",
+    "index" : 22,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 5
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "red",
+    "pattern" : 42
+  }, {
+    "part" : "eyes",
+    "index" : 29,
+    "base" : "black"
+  }, {
+    "part" : "eyes",
+    "index" : 11
+  }, {
+    "part" : "symbol_A",
+    "index" : 75,
+    "shading" : 0,
+    "base" : "black",
+    "detail" : "black"
+  } ]
+}

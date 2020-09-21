@@ -4,7 +4,8 @@
             [clojure.spec.alpha :as s]
             [carabiner.outfitter.schematic :as sc]
             [clojure.string :as str]
-            [clojure.pprint :as pp])
+            [clojure.pprint :as pp]
+            [clojure.set :as set])
   (:import (clojure.lang ExceptionInfo)))
 
 (def datasets-path "resources/outfitter/data")
@@ -207,18 +208,10 @@
 
 (def scale-image 2)
 
-(defn schematic->svg [schematic]
-  (pp/pprint schematic)
-  (when-let [errors (s/explain-data ::sc/schematic schematic)]
-    (throw (ExceptionInfo. "invalid schematic" errors)))
-  (let [[body-type & args&layers] schematic
+(def req-layer-keys [:part :index])
 
-        [{:keys [bg-color bg-pattern padding body-scale] :or {padding 10}} layers]
-        (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])
-
-        {:keys [body-resize head-shift]} (get-body-scale body-type body-scale)
-
-        layers (mapv (fn [[part-type index & {:as args}]] [[part-type index] args]) layers)
+(defn to-svg [{:keys [body-type bg-color bg-pattern padding body-scale] :or {padding 10}} layers]
+  (let [{:keys [body-resize head-shift]} (get-body-scale body-type body-scale)
         dataset-folder (io/file datasets-path (name body-type))
         [ds-patterns ds-shading] (mapv #(edn/read-string (slurp (io/file dataset-folder (str % ".edn")))) ["patterns" "shading"])
         parts-folder (io/file dataset-folder "parts")
@@ -260,3 +253,26 @@
                 (reduce gradient-defs []))))
        bg-group
        (into [:g group-args] full-layers)])))
+
+(defn json->svg [{:keys [layers] :as json}]
+  (let [header (set/rename-keys (dissoc json :layers) {:bodyType :body-type :bgColor :bg-color :bgPattern :bg-pattern :bodyScale :body-scale})
+        layers (mapv #(vector (mapv (partial get %) req-layer-keys) (apply dissoc % req-layer-keys)) layers)]
+    (to-svg header layers)))
+
+(defn schematic->svg [schematic]
+  (when-let [errors (s/explain-data ::sc/schematic schematic)]
+    (throw (ExceptionInfo. "invalid schematic" errors)))
+  (let [[body-type & args&layers] schematic
+        [args layers] (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])
+        layers (mapv (fn [[part-type index & {:as args}]] [[part-type index] args]) layers)
+        header (assoc args :body-type body-type)]
+    (to-svg header layers)))
+
+(defn schematic->json [schematic]
+  (when-let [errors (s/explain-data ::sc/schematic schematic)]
+    (throw (ExceptionInfo. "invalid schematic" errors)))
+  (let [[body-type & args&layers] schematic
+        [args layers] (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])
+        layers (mapv (fn [[part-type index & {:as args}]]  (merge {:part part-type :index index} args)) layers)
+        header (assoc args :body-type body-type)]
+    (assoc (set/rename-keys header {:body-type :bodyType :bg-color :bgColor :bg-pattern :bgPattern :body-scale :bodyScale}) :layers layers)))

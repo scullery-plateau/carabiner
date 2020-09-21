@@ -1,0 +1,122 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "superman",
+  "bgColor" : "#ccf",
+  "layers" : [ {
+    "part" : "torso",
+    "index" : 4,
+    "shading" : 13,
+    "base" : "goldenrod",
+    "detail" : "slategrey"
+  }, {
+    "part" : "legs",
+    "index" : 10,
+    "shading" : 13,
+    "base" : "goldenrod",
+    "detail" : "slategrey"
+  }, {
+    "part" : "arm",
+    "index" : 8,
+    "shading" : 13,
+    "base" : "goldenrod",
+    "detail" : "slategrey"
+  }, {
+    "part" : "arm",
+    "index" : 8,
+    "shading" : 13,
+    "flip?" : true,
+    "base" : "goldenrod",
+    "detail" : "slategrey"
+  }, {
+    "part" : "gloves",
+    "index" : 6,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "shirt",
+    "index" : 71,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "shirt",
+    "index" : 58,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "tights",
+    "index" : 21,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "chest",
+    "index" : 53,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "sholders",
+    "index" : 0,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "gauntlets",
+    "index" : 17,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "belt",
+    "index" : 16,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "boots",
+    "index" : 46,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "boots",
+    "index" : 22,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "boots",
+    "index" : 28,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 13,
+    "base" : "firebrick",
+    "detail" : "goldenrod"
+  }, {
+    "part" : "mask",
+    "index" : 18,
+    "shading" : 13,
+    "base" : "goldenrod"
+  }, {
+    "part" : "mouth",
+    "index" : 34,
+    "base" : "black"
+  }, {
+    "part" : "eyes",
+    "index" : 9,
+    "base" : "aqua"
+  }, {
+    "part" : "symbol_A",
+    "index" : 8,
+    "shading" : 3,
+    "base" : "white",
+    "detail" : "aqua"
+  } ]
+}

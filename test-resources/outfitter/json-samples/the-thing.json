@@ -1,0 +1,92 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "hulk",
+  "bgColor" : "#ccf",
+  "layers" : [ {
+    "part" : "torso",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "legs",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "arm",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "arm",
+    "index" : 0,
+    "shading" : 0,
+    "flip?" : true,
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "resize" : [ 1.1, 1.0 ],
+    "shading" : 0,
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "head",
+    "index" : 17,
+    "resize" : [ 1.1, 1.0 ]
+  }, {
+    "part" : "tights",
+    "index" : 14,
+    "shading" : 0,
+    "base" : "blue"
+  }, {
+    "part" : "tights",
+    "index" : 55,
+    "shading" : 0,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "stockings",
+    "index" : 14,
+    "shading" : 0,
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "belt",
+    "index" : 1,
+    "shading" : 0,
+    "outline" : "lightgrey",
+    "base" : "black"
+  }, {
+    "part" : "eyebrows",
+    "index" : 24,
+    "resize" : [ 1.1, 1.0 ]
+  }, {
+    "part" : "eyebrows",
+    "index" : 23,
+    "resize" : [ 1.1, 1.0 ],
+    "shading" : 0,
+    "outline" : "black",
+    "base" : "coral",
+    "pattern" : 49
+  }, {
+    "part" : "nose",
+    "index" : 0,
+    "move" : [ 0.0, -5.0 ],
+    "resize" : [ 1.1, 1.0 ]
+  }, {
+    "part" : "eyes",
+    "index" : 20,
+    "resize" : [ 1.1, 1.0 ],
+    "base" : "blue"
+  }, {
+    "part" : "mouth",
+    "index" : 14,
+    "resize" : [ 1.2, 1.0 ],
+    "base" : "black"
+  } ]
+}

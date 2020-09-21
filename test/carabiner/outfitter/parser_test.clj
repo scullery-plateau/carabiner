@@ -3,11 +3,14 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.pprint :as pp]
-            [carabiner.outfitter.parser :as p])
+            [carabiner.outfitter.parser :as p]
+            [clojure.edn :as edn]
+            [carabiner.outfitter.translate :as tr]
+            [cheshire.core :as cheshire])
   (:import (java.io File)
            (clojure.lang ExceptionInfo)))
 
-(def demos-folder ^File (io/file "test-resources/outfitter/text-samples"))
+(def demos-folder ^File (io/file "test-resources/outfitter/json-samples"))
 
 (defn demo-reducer [out demo]
   (assoc
@@ -32,24 +35,19 @@
           (with-out-str (pp/pprint (reduce demo-reducer {} demos))))))
 
 
-
-(defn swap-chars [file]
-  (let [outfile (io/file demos-folder (str (first (str/split (.getName file) #"\.")) ".txt"))
-        blackout "[]{}:\""
-        swap {#"\n\s+" "\n"
-               "#" ":#"}]
-    (as-> (slurp file) $
-      (reduce #(str/replace %1 %2 "") $ (str/split blackout #""))
-      (reduce-kv #(str/replace %1 %2 %3) $ swap)
-      (spit outfile $))))
+(defn make-json [file]
+  (let [outfile (io/file demos-folder (str (first (str/split (.getName file) #"\.")) ".json"))
+        schematic (edn/read-string (slurp file))
+        json (tr/schematic->json schematic)]
+    (spit outfile (cheshire/generate-string json {:pretty true}))))
 
 (deftest test-swap-chars
-  (swap-chars (io/file demos-folder "bathulk.edn")))
+  (make-json (io/file demos-folder "bathulk.edn")))
 
 (deftest test-all-swap-chars
   (let [demos (->> (.listFiles demos-folder)
                    (map #(.getName %))
                    (filter #(str/ends-with? % ".edn")))]
     (doseq [demo demos]
-      (swap-chars (io/file demos-folder demo)))))
+      (make-json (io/file demos-folder demo)))))
 

@@ -1,0 +1,39 @@
+[:superman
+ {:bg-color "#ccf"
+  :scale-image 3
+  :body-scale :stocky}
+
+
+ [:shirt 0 :base "#fc9" :shading 0]
+ [:gloves 1 :base "#fc9" :shading 0]
+ [:pants 2 :base "#532" :shading 0]
+ [:pants 2 :base "#532" :shading 0]
+ [:pants 9 :base "#620" :shading 0]
+ [:boots 44 :base "#752" :detail "darkgoldenrod" :shading 0]
+ [:boots 26 :base "darkslategrey" :shading 13]
+ [:boots 28 :base "darkslategrey" :detail "darkgoldenrod" :shading 13]
+
+ [:shirt 15 :base "#752" :shading 0]
+ [:gloves 14 :base "#532" :shading 0]
+ [:shirt 50 :base "#752" :detail "darkgoldenrod" :shading 0]
+ [:shirt 95 :base "slategrey" :pattern 7 :shading 13]
+
+ [:pants 15 :base "slategrey" :pattern 7 :shading 13]
+ [:shirt 95 :base "slategrey" :pattern 7 :shading 13]
+ [:chest 56 :base "darkslategrey" :detail "darkgoldenrod" :shading 13]
+
+ [:collar 16 :base "#532" :shading 0]
+
+ [:ears 0 :base "#fc9" :shading 0]
+ [:head 0 :base "#fc9" :shading 0]
+ [:nose 4]
+ [:mouth 5 :base "black"]
+ [:eyes 1 :base "brown"]
+
+ [:eyebrows 22 :base "#622" :pattern 50]
+ [:hair 51 :base "#622" :pattern 50]
+ [:hair 1 :base "#622" :pattern 50]
+ [:beard 22 :base "#622" :pattern 50]
+ [:beard 37 :base "#622" :pattern 50]
+
+ ]

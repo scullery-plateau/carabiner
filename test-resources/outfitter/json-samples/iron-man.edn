@@ -1,0 +1,24 @@
+[:superman
+ {:bg-color "#ccf"
+  :scale-image 3}
+ [:torso 4 :base "goldenrod" :detail "slategrey" :shading 13]
+ [:legs 10 :base "goldenrod" :detail "slategrey" :shading 13]
+ [:arm 8 :base "goldenrod" :detail "slategrey" :shading 13]
+ [:arm 8 :base "goldenrod" :detail "slategrey" :shading 13 :flip? true]
+ [:gloves 6 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:shirt 71 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:shirt 58 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:tights 21 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:chest 53 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:sholders 0 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:gauntlets 17 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:belt 16 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:boots 46 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:boots 22 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:boots 28 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:head 0 :base "firebrick" :detail "goldenrod" :shading 13]
+ [:mask 18 :base "goldenrod" :shading 13]
+ [:mouth 34 :base "black"]
+ [:eyes 9 :base "aqua"]
+ [:symbol_A 8 :base "white" :detail "aqua" :shading 3]]
+

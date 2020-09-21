@@ -1,0 +1,16 @@
+[:woman
+ {:bg-color "#ffc"
+  :scale-image 3
+  :body-scale :thin}
+ [:tights 0 :base "red" :pattern 5 :shading 0]
+ [:tights 12 :base "blue" :shading 0]
+ [:shirt 0 :base "blue" :shading 0]
+ [:tights 55 :base "red" :pattern 5 :shading 0]
+ [:shirt 43 :base "red" :pattern 5 :shading 0]
+ [:shirt 79 :base "red" :pattern 5 :shading 0]
+ [:gloves 1 :base "red" :pattern 5 :shading 0]
+ [:gloves 22 :base "red" :pattern 5 :shading 0]
+ [:head 0 :base "red" :pattern 42 :shading 0]
+ [:eyes 29 :base "black"]
+ [:eyes 11]
+ [:symbol_A 75 :base "black" :detail "black" :shading 0]]

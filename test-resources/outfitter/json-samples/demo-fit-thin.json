@@ -1,0 +1,41 @@
+{
+  "scale-image" : 3,
+  "bodyType" : "fit",
+  "bgColor" : "#ccf",
+  "layers" : [ {
+    "part" : "torso",
+    "index" : 0,
+    "resize" : [ 0.8, 1.0 ],
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "legs",
+    "index" : 0,
+    "resize" : [ 0.8, 1.0 ],
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "arm",
+    "index" : 3,
+    "resize" : [ 0.8, 1.0 ],
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "arm",
+    "index" : 0,
+    "resize" : [ 0.8, 1.0 ],
+    "shading" : 0,
+    "flip?" : true,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  } ]
+}
