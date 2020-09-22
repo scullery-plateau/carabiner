@@ -1,23 +1,23 @@
 (ns carabiner.outfitter.common-schema
-  (:require [clojure.spec.alpha :as s]
+  (:require [clojure.spec.alpha :as spec]
             [carabiner.common.regex :as r]
             [carabiner.rogue94.common-schema :as rcs]
             [carabiner.outfitter.constants :as oc]
-            [clojure.pprint :as pp]))
+            [schema.core :as s]))
 
-(s/def ::part-types (into (sorted-set) (mapv keyword oc/part-types)))
+(spec/def ::part-types (into (sorted-set) (mapv keyword oc/part-types)))
 
-(s/def ::int-or-double (s/or :int int?
+(spec/def ::int-or-double (spec/or :int int?
                              :double double?))
 
-(s/def ::double-xy (s/and
+(spec/def ::double-xy (spec/and
                      vector?
-                     (s/cat :x ::int-or-double
+                     (spec/cat :x ::int-or-double
                             :y ::int-or-double)))
 
-(s/def ::color (s/or :rcs-color ::rcs/color
+(spec/def ::color (spec/or :rcs-color ::rcs/color
                      :id-ref (partial re-matches r/id-ref)))
 
-(defn has-unique-opts? [obj]
-  (pp/pprint obj)
-  true)
+(s/defschema Index (s/constrained s/Int (partial <= 0)))
+
+(s/defschema XY [(s/one s/Num "x") (s/one s/Num "y")])

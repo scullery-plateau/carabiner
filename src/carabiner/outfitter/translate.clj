@@ -5,7 +5,9 @@
             [carabiner.outfitter.schematic :as sc]
             [clojure.string :as str]
             [clojure.pprint :as pp]
-            [clojure.set :as set])
+            [clojure.set :as set]
+            [cheshire.core :as json]
+            [carabiner.common.hiccup :as h])
   (:import (clojure.lang ExceptionInfo)))
 
 (def datasets-path "resources/outfitter/data")
@@ -276,3 +278,59 @@
         layers (mapv (fn [[part-type index & {:as args}]]  (merge {:part part-type :index index} args)) layers)
         header (assoc args :body-type body-type)]
     (assoc (set/rename-keys header {:body-type :bodyType :bg-color :bgColor :bg-pattern :bgPattern :body-scale :bodyScale}) :layers layers)))
+
+(defn part->dataset [part]
+  (let [{:keys [layers] {:keys [min-x max-x min-y max-y]} :dim}
+        (reduce-kv
+          (fn [{:keys [layers] {:keys [min-x max-x min-y max-y]} :dim}
+               layer-name
+               {:keys [label] {[x1 y1] :min [x2 y2] :max} :dim}]
+            {:layers (assoc layers layer-name label)
+             :dim {:min-x (min min-x x1)
+                   :max-x (max max-x x2)
+                   :min-y (min min-y y1)
+                   :max-y (max max-y y2)}})
+          {:layers {}
+           :dim init-minmax-xy}
+          part)]
+    {:layers layers
+     :min [min-x min-y]
+     :max [max-x max-y]}))
+
+(defn compile-dataset [body-type]
+  (let [folder (io/file datasets-path (name body-type))
+        svg-file (io/file datasets-path (str (name body-type) ".svg"))
+        defs-file (io/file datasets-path (str (name body-type) "-defs.edn"))
+        json-file (io/file datasets-path (str (name body-type) ".json"))
+        [patterns shading] (mapv #(edn/read-string (slurp (io/file folder %))) ["patterns.edn" "shading.edn"])
+        parts-folder (io/file folder "parts")
+        parts (reduce #(assoc %1
+                         (first (str/split (.getName %2) #"\."))
+                         (edn/read-string (slurp %2)))
+                      {} (.listFiles parts-folder))
+        json-parts (reduce-kv #(assoc %1 %2 (mapv part->dataset %3)) {} parts)
+        part-layers (flatten (mapv vals (flatten (vals parts))))
+        defs (concat
+               [:defs]
+               (->> (concat part-layers shading patterns)
+                    (filterv :defs)
+                    (mapv :defs)
+                    (reduce gradient-defs []))
+               (mapv build-shading shading)
+               (mapv build-pattern patterns)
+               (mapv #(build-group (:paths %) {:id (:label %)}) part-layers))]
+    (spit json-file
+      (json/generate-string
+        {:pattern-count (count patterns)
+         :shading-count (count shading)
+         :parts         json-parts}
+        {:pretty true}))
+    (spit defs-file (with-out-str (pp/pprint defs)))
+    (spit
+      svg-file
+      (h/to-text
+        [:svg
+         {:xmlns "http://www.w3.org/2000/svg"
+          :width "0px"
+          :height "0px"}
+         (vec defs)]))))

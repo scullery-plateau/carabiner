@@ -370,7 +370,7 @@ module.exports = "<tf-tile-def\r\n  [state]=\"state\"\r\n  [transformTrigger]=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "map-frame {\n  overflow: scroll;\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvY29iYmxlc3RvbmUtbWFwL0M6XFxVc2Vyc1xccG9zc2xfMDAwXFxEb2N1bWVudHNcXEdpdEh1YlxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcY29iYmxlc3RvbmVcXGNvYmJsZXN0b25lLW1hcFxcY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS1tYXAvY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWFwLWZyYW1lIHtcclxuICBvdmVyZmxvdzogc2Nyb2xsO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4iXX0= */"
+module.exports = "map-frame {\n  overflow: scroll;\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvY29iYmxlc3RvbmUtbWFwL0M6XFxwcmFjdGljZVxcY29kZVxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcY29iYmxlc3RvbmVcXGNvYmJsZXN0b25lLW1hcFxcY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS1tYXAvY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWFwLWZyYW1lIHtcclxuICBvdmVyZmxvdzogc2Nyb2xsO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -485,7 +485,7 @@ module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@media screen {\n  .print-cobblestone {\n    display: none; } }\n\n@media print {\n  footer {\n    display: none; }\n  .print-cobblestone {\n    display: block; }\n  tabbed-panel {\n    display: none; }\n  header {\n    display: none; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvQzpcXFVzZXJzXFxwb3NzbF8wMDBcXERvY3VtZW50c1xcR2l0SHViXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxjb2JibGVzdG9uZVxcY29iYmxlc3RvbmUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtJQUNFLGFBQWEsRUFBQSxFQUNkOztBQUdIO0VBQ0U7SUFDRSxhQUFhLEVBQUE7RUFFZjtJQUNFLGNBQWMsRUFBQTtFQUVoQjtJQUNFLGFBQWEsRUFBQTtFQUVmO0lBQ0UsYUFBYSxFQUFBLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4ge1xyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG5cclxuQG1lZGlhIHByaW50IHtcclxuICBmb290ZXIgIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICB9XHJcbiAgdGFiYmVkLXBhbmVsIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIGhlYWRlciB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG4iXX0= */"
+module.exports = "@media screen {\n  .print-cobblestone {\n    display: none; } }\n\n@media print {\n  footer {\n    display: none; }\n  .print-cobblestone {\n    display: block; }\n  tabbed-panel {\n    display: none; }\n  header {\n    display: none; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvQzpcXHByYWN0aWNlXFxjb2RlXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxjb2JibGVzdG9uZVxcY29iYmxlc3RvbmUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtJQUNFLGFBQWEsRUFBQSxFQUNkOztBQUdIO0VBQ0U7SUFDRSxhQUFhLEVBQUE7RUFFZjtJQUNFLGNBQWMsRUFBQTtFQUVoQjtJQUNFLGFBQWEsRUFBQTtFQUVmO0lBQ0UsYUFBYSxFQUFBLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4ge1xyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG5cclxuQG1lZGlhIHByaW50IHtcclxuICBmb290ZXIgIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICB9XHJcbiAgdGFiYmVkLXBhbmVsIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIGhlYWRlciB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -570,7 +570,7 @@ var CobblestoneComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  map-page-picker works!\r\n</p>\r\n"
+module.exports = "<p>\n  map-page-picker works!\n</p>\n"
 
 /***/ }),
 
@@ -1128,7 +1128,7 @@ var TileTransformerService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"0\" height=\"0\">\r\n  <defs>\r\n    <ng-container *ngFor=\"let tf of currentTransforms\">\r\n      <pattern [attr.id]=\"tf.key\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\r\n        <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\r\n              [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\r\n        <ng-container *ngFor=\"let pixel of tf.pixels\">\r\n          <rect\r\n            [attr.alt]=\"pixel.x + 'x' + pixel.y\"\r\n            [attr.x]=\"pixel.x\"\r\n            [attr.y]=\"pixel.y\"\r\n            [attr.width]=\"1\"\r\n            [attr.height]=\"1\"\r\n            [attr.fill]=\"pixel.fill\"\r\n            style=\"stroke:none;stroke-width:0;\"></rect>\r\n        </ng-container>\r\n      </pattern>\r\n    </ng-container>\r\n  </defs>\r\n</svg>\r\n"
+module.exports = "<svg width=\"0\" height=\"0\">\n  <defs>\n    <ng-container *ngFor=\"let tf of currentTransforms\">\n      <pattern [attr.id]=\"tf.key\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n        <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\n              [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\n        <ng-container *ngFor=\"let pixel of tf.pixels\">\n          <rect\n            [attr.alt]=\"pixel.x + 'x' + pixel.y\"\n            [attr.x]=\"pixel.x\"\n            [attr.y]=\"pixel.y\"\n            [attr.width]=\"1\"\n            [attr.height]=\"1\"\n            [attr.fill]=\"pixel.fill\"\n            style=\"stroke:none;stroke-width:0;\"></rect>\n        </ng-container>\n      </pattern>\n    </ng-container>\n  </defs>\n</svg>\n"
 
 /***/ }),
 
@@ -1212,7 +1212,7 @@ var TransformedTileDefComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg *ngIf=\"tf\" width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\r\n        [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\r\n  <ng-container *ngFor=\"let pixel of tf.pixels\">\r\n    <rect\r\n      [attr.alt]=\"pixel.x + 'x' + pixel.y\"\r\n      [attr.x]=\"pixel.x\"\r\n      [attr.y]=\"pixel.y\"\r\n      [attr.width]=\"1\"\r\n      [attr.height]=\"1\"\r\n      [attr.fill]=\"pixel.fill\"\r\n      style=\"stroke:none;stroke-width:0;\"></rect>\r\n  </ng-container>\r\n</svg>\r\n"
+module.exports = "<svg *ngIf=\"tf\" width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\n  <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\n        [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\n  <ng-container *ngFor=\"let pixel of tf.pixels\">\n    <rect\n      [attr.alt]=\"pixel.x + 'x' + pixel.y\"\n      [attr.x]=\"pixel.x\"\n      [attr.y]=\"pixel.y\"\n      [attr.width]=\"1\"\n      [attr.height]=\"1\"\n      [attr.fill]=\"pixel.fill\"\n      style=\"stroke:none;stroke-width:0;\"></rect>\n  </ng-container>\n</svg>\n"
 
 /***/ }),
 
@@ -1272,7 +1272,7 @@ var TransformedTileDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <rect height=\"16\" width=\"16\" stroke=\"none\" [attr.fill]=\"'url(#' + key + ')'\"></rect>\r\n</svg>\r\n"
+module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\n  <rect height=\"16\" width=\"16\" stroke=\"none\" [attr.fill]=\"'url(#' + key + ')'\"></rect>\n</svg>\n"
 
 /***/ }),
 
@@ -1505,7 +1505,7 @@ var CountUpdate = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\r\n  <ng-container *ngFor=\"let mini of data\">\r\n    <div class=\"d-flex\">\r\n      <div class=\"p-2 w-100 text-right\">{{mini.filename}}</div>\r\n      <div class=\"p-2\"><input type=\"number\" min=\"1\" value=\"1\" class=\"nes-input\" (change)=\"updateCount($event,mini.filename)\"/></div>\r\n      <div class=\"p-2\"><button class=\"nes-btn is-error\" (click)=\"removeImage(mini.filename)\">X</button></div>\r\n    </div>\r\n  </ng-container>\r\n</div>\r\n"
+module.exports = "<div class=\"d-flex flex-column\">\n  <ng-container *ngFor=\"let mini of data\">\n    <div class=\"d-flex\">\n      <div class=\"p-2 w-100 text-right\">{{mini.filename}}</div>\n      <div class=\"p-2\"><input type=\"number\" min=\"1\" value=\"1\" class=\"nes-input\" (change)=\"updateCount($event,mini.filename)\"/></div>\n      <div class=\"p-2\"><button class=\"nes-btn is-error\" (click)=\"removeImage(mini.filename)\">X</button></div>\n    </div>\n  </ng-container>\n</div>\n"
 
 /***/ }),
 
@@ -1587,7 +1587,7 @@ var ImageListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\r\n  <label class=\"nes-btn\">\r\n    <span>Select your file</span>\r\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"addImage($event)\">\r\n  </label>\r\n  <div class=\"row\" *ngIf=\"data\">\r\n    <div class=\"col-md-5 showcase\" id=\"ctrl\">\r\n      <div class=\"nes-container\">\r\n        <image-list\r\n          [data]=\"data\"\r\n          (countUpdated)=\"updateCount($event)\"\r\n          (imageRemoved)=\"deleteImage($event)\"></image-list>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-7 showcase h-100\">\r\n      <div class=\"nes-container h-100\">\r\n        <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\r\n        <p></p>\r\n        <mini-gallery [data]=\"data\"></mini-gallery>\r\n        <p></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"d-flex flex-column\">\n  <label class=\"nes-btn\">\n    <span>Select your file</span>\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"addImage($event)\">\n  </label>\n  <div class=\"row\" *ngIf=\"data\">\n    <div class=\"col-md-5 showcase\" id=\"ctrl\">\n      <div class=\"nes-container\">\n        <image-list\n          [data]=\"data\"\n          (countUpdated)=\"updateCount($event)\"\n          (imageRemoved)=\"deleteImage($event)\"></image-list>\n      </div>\n    </div>\n    <div class=\"col-md-7 showcase h-100\">\n      <div class=\"nes-container h-100\">\n        <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\n        <p></p>\n        <mini-gallery [data]=\"data\"></mini-gallery>\n        <p></p>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1695,7 +1695,7 @@ var MastermoldComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-container *ngFor=\"let image of data\">\r\n  <ng-container *ngFor=\"let mini of repeat(image)\">\r\n    <span title=\"{{mini.filename}}\">\r\n      <svg [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\r\n        <rect x=\"0\" y=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\r\n        <image [attr.href]=\"mini.url\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\r\n      </svg>\r\n    </span>\r\n  </ng-container>\r\n</ng-container>\r\n"
+module.exports = "<ng-container *ngFor=\"let image of data\">\n  <ng-container *ngFor=\"let mini of repeat(image)\">\n    <span title=\"{{mini.filename}}\">\n      <svg [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\n        <rect x=\"0\" y=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n        <image [attr.href]=\"mini.url\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\n      </svg>\n    </span>\n  </ng-container>\n</ng-container>\n"
 
 /***/ }),
 
@@ -1969,6 +1969,7 @@ var OutfitterComponent = /** @class */ (function () {
                 me_1.os.loadSchematic(data).subscribe(function (base64) {
                     me_1.base64 = base64;
                     clearTimeout(me_1.processing);
+                    me_1.processing = undefined;
                     me_1.ellipse = "";
                 });
             };
@@ -2329,7 +2330,7 @@ module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "textarea.pixel-canvas:before {\n  counter-increment: line;\n  content: counter(line);\n  display: inline-block;\n  border-right: 1px solid #ddd;\n  padding: 0 .5em;\n  margin-right: .5em;\n  color: #888; }\n\nhr {\n  border-top: 4px solid black; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3ByaXRlbHkvQzpcXFVzZXJzXFxwb3NzbF8wMDBcXERvY3VtZW50c1xcR2l0SHViXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxzcHJpdGVseVxcc3ByaXRlbHkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHSSx1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLHFCQUFxQjtFQUNyQiw0QkFBNEI7RUFDNUIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixXQUNGLEVBQUE7O0FBR0Y7RUFDRSwyQkFBMkIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3Nwcml0ZWx5L3Nwcml0ZWx5LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGV4dGFyZWEucGl4ZWwtY2FudmFzIHtcclxuXHJcbiAgJjpiZWZvcmUge1xyXG4gICAgY291bnRlci1pbmNyZW1lbnQ6IGxpbmU7XHJcbiAgICBjb250ZW50OiBjb3VudGVyKGxpbmUpO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2RkZDtcclxuICAgIHBhZGRpbmc6IDAgLjVlbTtcclxuICAgIG1hcmdpbi1yaWdodDogLjVlbTtcclxuICAgIGNvbG9yOiAjODg4XHJcbiAgfVxyXG59XHJcblxyXG5ociB7XHJcbiAgYm9yZGVyLXRvcDogNHB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"
+module.exports = "textarea.pixel-canvas:before {\n  counter-increment: line;\n  content: counter(line);\n  display: inline-block;\n  border-right: 1px solid #ddd;\n  padding: 0 .5em;\n  margin-right: .5em;\n  color: #888; }\n\nhr {\n  border-top: 4px solid black; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3ByaXRlbHkvQzpcXHByYWN0aWNlXFxjb2RlXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxzcHJpdGVseVxcc3ByaXRlbHkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHSSx1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLHFCQUFxQjtFQUNyQiw0QkFBNEI7RUFDNUIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixXQUNGLEVBQUE7O0FBR0Y7RUFDRSwyQkFBMkIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3Nwcml0ZWx5L3Nwcml0ZWx5LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGV4dGFyZWEucGl4ZWwtY2FudmFzIHtcclxuXHJcbiAgJjpiZWZvcmUge1xyXG4gICAgY291bnRlci1pbmNyZW1lbnQ6IGxpbmU7XHJcbiAgICBjb250ZW50OiBjb3VudGVyKGxpbmUpO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2RkZDtcclxuICAgIHBhZGRpbmc6IDAgLjVlbTtcclxuICAgIG1hcmdpbi1yaWdodDogLjVlbTtcclxuICAgIGNvbG9yOiAjODg4XHJcbiAgfVxyXG59XHJcblxyXG5ociB7XHJcbiAgYm9yZGVyLXRvcDogNHB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -2628,7 +2629,7 @@ var AccordianComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  confirm-cancel-dialog works!\r\n</p>\r\n"
+module.exports = "<p>\n  confirm-cancel-dialog works!\n</p>\n"
 
 /***/ }),
 
@@ -2964,7 +2965,7 @@ var FileFormComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<label class=\"nes-btn\">\r\n  <span>Select your file</span>\r\n  <input type=\"file\" style=\"display: none;\" (change)=\"loadFile($event)\">\r\n</label>\r\n"
+module.exports = "<label class=\"nes-btn\">\n  <span>Select your file</span>\n  <input type=\"file\" style=\"display: none;\" (change)=\"loadFile($event)\">\n</label>\n"
 
 /***/ }),
 
@@ -3046,7 +3047,7 @@ var FileLoadInputComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"show\" class=\"showcase nes-tab-body\">\r\n  <div class=\"nes-container with-title\">\r\n    <div class=\"title\">\r\n      <h5>{{label}}</h5>\r\n    </div>\r\n    <ng-content></ng-content>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"show\" class=\"showcase nes-tab-body\">\n  <div class=\"nes-container with-title\">\n    <div class=\"title\">\n      <h5>{{label}}</h5>\n    </div>\n    <ng-content></ng-content>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -3107,7 +3108,7 @@ var ChildPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container with-title\">\r\n        <div class=\"title\">\r\n          <h4 style=\"display: inline;\">&nbsp;{{title}}&nbsp;</h4>\r\n          <ng-container *ngFor=\"let child of children; index as i\">\r\n            <button class=\"nes-btn nes-tab-btn {{(activeIndex == i) ? activeClass : ''}}\" (click)=\"select(i)\">{{child.label}}</button>\r\n          </ng-container>\r\n        </div>\r\n        <ng-content></ng-content>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col-12\">\n    <div class=\"showcase\">\n      <div class=\"nes-container with-title\">\n        <div class=\"title\">\n          <h4 style=\"display: inline;\">&nbsp;{{title}}&nbsp;</h4>\n          <ng-container *ngFor=\"let child of children; index as i\">\n            <button class=\"nes-btn nes-tab-btn {{(activeIndex == i) ? activeClass : ''}}\" (click)=\"select(i)\">{{child.label}}</button>\n          </ng-container>\n        </div>\n        <ng-content></ng-content>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -3191,7 +3192,7 @@ var TabbedPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  okay-dialog works!\r\n</p>\r\n"
+module.exports = "<p>\n  okay-dialog works!\n</p>\n"
 
 /***/ }),
 
@@ -3331,7 +3332,7 @@ var PaletteDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<dialog #pendingDialog  class=\"nes-dialog is-dark is-rounded\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      {{label}} pending ...\r\n    </div>\r\n    <div class=\"col-12\">\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim1\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"black\" begin=\"0s; anim2.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim2\" attributeType=\"XML\" attributeName=\"fill\" from=\"black\" to=\"white\" begin=\"anim1.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\"\r\n           xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim3\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"red\" begin=\"0.5s; anim4.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim4\" attributeType=\"XML\" attributeName=\"fill\" from=\"red\" to=\"white\" begin=\"anim3.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim5\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"green\" begin=\"1s; anim6.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim6\" attributeType=\"XML\" attributeName=\"fill\" from=\"green\" to=\"white\" begin=\"anim5.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim7\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"blue\" begin=\"1.5s; anim8.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim8\" attributeType=\"XML\" attributeName=\"fill\" from=\"blue\" to=\"white\" begin=\"anim7.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n    </div>\r\n  </div>\r\n</dialog>\r\n"
+module.exports = "<dialog #pendingDialog  class=\"nes-dialog is-dark is-rounded\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      {{label}} pending ...\n    </div>\n    <div class=\"col-12\">\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim1\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"black\" begin=\"0s; anim2.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim2\" attributeType=\"XML\" attributeName=\"fill\" from=\"black\" to=\"white\" begin=\"anim1.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\"\n           xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim3\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"red\" begin=\"0.5s; anim4.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim4\" attributeType=\"XML\" attributeName=\"fill\" from=\"red\" to=\"white\" begin=\"anim3.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim5\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"green\" begin=\"1s; anim6.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim6\" attributeType=\"XML\" attributeName=\"fill\" from=\"green\" to=\"white\" begin=\"anim5.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim7\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"blue\" begin=\"1.5s; anim8.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim8\" attributeType=\"XML\" attributeName=\"fill\" from=\"blue\" to=\"white\" begin=\"anim7.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n    </div>\n  </div>\n</dialog>\n"
 
 /***/ }),
 
@@ -3603,7 +3604,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\possl_000\Documents\GitHub\carabiner\front\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\practice\code\carabiner\front\src\main.ts */"./src/main.ts");
 
 
 /***/ })

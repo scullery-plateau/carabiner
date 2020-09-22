@@ -33,3 +33,5 @@
     "tights"
     "torso"
     "wings_and_tail"})
+
+(def part-layer-types ["base" "detail" "outline" "shadow"])

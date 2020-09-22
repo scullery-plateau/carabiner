@@ -1,8 +1,10 @@
 (ns carabiner.outfitter.dataset
-  (:require [clojure.spec.alpha :as s]
-            [carabiner.outfitter.common-schema :as cs]))
+  (:require [clojure.spec.alpha :as spec]
+            [carabiner.outfitter.common-schema :as cs]
+            [schema.core :as s]
+            [carabiner.outfitter.constants :as oc]))
 
-(s/def ::meta-keys #{:fill-rule
+(spec/def ::meta-keys #{:fill-rule
                      :stroke
                      :stroke-opacity
                      :fill
@@ -12,32 +14,42 @@
                      :stroke-miterlimit
                      :fill-opacity})
 
-(s/def ::meta (s/map-of ::meta-keys string?))
+(spec/def ::meta (spec/map-of ::meta-keys string?))
 
-(s/def ::path-step (s/and vector? (s/cat :step-type #{:M :Q :L :Z}
-                                         :points (s/+ ::cs/double-xy))))
+(spec/def ::path-step (spec/and vector? (spec/cat :step-type #{:M :Q :L :Z}
+                                         :points (spec/+ ::cs/double-xy))))
 
-(s/def ::path (s/and vector? (s/coll-of ::path-step)))
+(spec/def ::path (spec/and vector? (spec/coll-of ::path-step)))
 
-(s/def ::paths (s/and vector? (s/coll-of (s/and map? (s/keys :req-un [::path ::meta])))))
+(spec/def ::paths (spec/and vector? (spec/coll-of (spec/and map? (spec/keys :req-un [::path ::meta])))))
 
-(s/def ::label keyword?)
+(spec/def ::label keyword?)
 
-(s/def ::dim (s/keys :req-un [::frame ::offset]))
+(spec/def ::dim (spec/keys :req-un [::frame ::offset]))
 
-(s/def ::layer (s/keys :req-un [::label ::paths ::dim]))
+(spec/def ::layer (spec/keys :req-un [::label ::paths ::dim]))
 
-(s/def ::layers (s/and vector? (s/coll-of ::layer)))
+(spec/def ::layers (spec/and vector? (spec/coll-of ::layer)))
 
-(s/def ::layer-type #{:base :detail :outline :shadow})
+(spec/def ::layer-type #{:base :detail :outline :shadow})
 
-(s/def ::parts (s/map-of ::cs/part-types
-                         (s/and vector?
-                           (s/coll-of
-                             (s/map-of ::layer-type
+(spec/def ::parts (spec/map-of ::cs/part-types
+                         (spec/and vector?
+                           (spec/coll-of
+                             (spec/map-of ::layer-type
                                        ::layer)))))
 
-(s/def ::patterns ::layers)
-(s/def ::shading ::layers)
+(spec/def ::patterns ::layers)
+(spec/def ::shading ::layers)
 
-(s/def ::dataset (s/keys :req-un [::parts ::patterns ::shading]))
+(spec/def ::dataset (spec/keys :req-un [::parts ::patterns ::shading]))
+
+(s/defschema PartTypeKey (apply s/enum (mapv keyword oc/part-types)))
+
+(s/defschema PartLayerTypeKey (apply s/enum (mapv keyword oc/part-layer-types)))
+
+(s/defschema DatasetJson {:pattern-count cs/Index
+                          :shading-count cs/Index
+                          :parts         {PartTypeKey [{:layers {PartLayerTypeKey s/Str}
+                                                        :min    cs/XY
+                                                        :max    cs/XY}]}})
