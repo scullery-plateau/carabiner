@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Mini} from "../mastermold/mini";
 import {OutfitterService} from "./outfitter.service";
 import {DomSanitizer} from "@angular/platform-browser";
+import {DatasetMeta} from "./dataset-meta";
+import {Schematic} from "./schematic";
 
 @Component({
   selector: 'app-outfitter',
@@ -17,6 +19,11 @@ export class OutfitterComponent implements OnInit {
   ellipse: string = "";
   base64: string;
   fileName: string;
+
+  defs: string;
+  meta: DatasetMeta;
+
+  schematic: Schematic;
 
   ngOnInit() {
   }
@@ -57,4 +64,14 @@ export class OutfitterComponent implements OnInit {
       reader.readAsText(file);
     }
   }
+
+  loadBodyType(bodyType: string) {
+    this.os.getDatasetDefs(bodyType).subscribe((defs) => this.defs = defs);
+    this.os.getDatasetMeta(bodyType).subscribe((meta) => this.meta = meta);
+    this.schematic = new Schematic(bodyType);
+    this.schematic.bodyType = bodyType;
+    this.schematic.layers = [];
+  }
+
+
 }

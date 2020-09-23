@@ -1899,7 +1899,7 @@ var MOCK_RESPONSES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\r\n  <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n    <span>Select your file</span>\r\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n  </label>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Select your file</span>\r\n      <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span>{{defs}}</span>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1976,6 +1976,8 @@ var OutfitterComponent = /** @class */ (function () {
             reader_1.readAsText(file);
         }
     };
+    OutfitterComponent.prototype.loadBodyType = function (fit) {
+    };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-outfitter',
@@ -2013,6 +2015,12 @@ var OutfitterService = /** @class */ (function () {
     }
     OutfitterService.prototype.loadSchematic = function (schematic) {
         return this.client.post("/outfitter/publish", schematic);
+    };
+    OutfitterService.prototype.getDatasetDefs = function (bodyType) {
+        return this.client.get("/outfitter/dataset/" + bodyType + ".svg");
+    };
+    OutfitterService.prototype.getDatasetMeta = function (bodyType) {
+        return this.client.get("/outfitter/dataset/" + bodyType + ".json");
     };
     OutfitterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({

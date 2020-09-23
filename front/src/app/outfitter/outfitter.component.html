@@ -1,12 +1,37 @@
-<div class="d-flex flex-column">
-  <label class="nes-btn" *ngIf="!processing">
-    <span>Select your file</span>
-    <input type="file" id="fileInput" style="display: none;" (change)="loadSchematic($event)">
-  </label>
+<div *ngIf="!defs && !meta" class="d-flex flex-column">
+  <div class="text-center">
+    <button class="nes-btn btn-primary" (click)="loadBodyType('fit')">Fit</button>
+  </div>
+  <div class="text-center">
+    <button class="nes-btn btn-primary" (click)="loadBodyType('hulk')">Hulk</button>
+  </div>
+  <div class="text-center">
+    <button class="nes-btn btn-primary" (click)="loadBodyType('superman')">Superman</button>
+  </div>
+  <div class="text-center">
+    <button class="nes-btn btn-primary" (click)="loadBodyType('woman')">Woman</button>
+  </div>
+  <div class="text-center">
+    <label class="nes-btn" *ngIf="!processing">
+      <span>Select your file</span>
+      <input type="file" id="fileInput" style="display: none;" (change)="loadSchematic($event)">
+    </label>
+  </div>
   <div *ngIf="processing">
     <h3>"{{fileName}}" currently loading {{ellipse}}</h3>
   </div>
-  <div *ngIf="base64">
+  <div *ngIf="base64" class="text-center">
     <img [alt]="fileName" [src]="safeURL(base64)"/>
+  </div>
+</div>
+<div *ngIf="defs && meta">
+  <span>{{defs}}</span>
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col">
+      <outfitter-display schematic="schematic" meta="meta"></outfitter-display>
+    </div>
   </div>
 </div>

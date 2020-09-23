@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <script src="load.js"></script>
+    <meta charset="UTF-8">
+    <title>ColorPicker</title>
+</head>
+<body onload="loadAll('colorByName','svg','display')">
+<div class="container">
+    <div class="nes-container">
+        <div class="row">
+            <div class="col">
+                <div id="display"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column">
+                    <div class="nes-field">
+                        <label for="name_field">Color Value</label>
+                        <input type="text" id="name_field" class="nes-input" onchange="setColor('display',this.value)">
+                    </div>
+                    <hr>
+                    <div>
+                        <label for="colorByName">Color by Name</label>
+                        <div class="nes-select">
+                            <select required id="colorByName" onchange="setColor('display',this.value)">
+                                <option value="" disabled selected hidden>Select Color By Name</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nes-field">
+                        <label for="red">red</label>
+                        <input type="range" id="red" min="0" max="255" class="nes-input" onchange="setRGB('display','red','green','blue')">
+                    </div>
+                    <div class="nes-field">
+                        <label for="green">Green</label>
+                        <input type="range" id="green" min="0" max="255" class="nes-input" onchange="setRGB('display','red','green','blue')">
+                    </div>
+                    <div class="nes-field">
+                        <label for="blue">Blue</label>
+                        <input type="range" id="blue" min="0" max="255" class="nes-input" onchange="setRGB('display','red','green','blue')">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="svg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
