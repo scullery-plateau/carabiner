@@ -1,6 +1,5 @@
 {
-  "scale-image" : 3,
-  "bodyType" : "woman",
+"bodyType" : "woman",
   "bgColor" : "#ccf",
   "layers" : [ {
     "part" : "torso",
@@ -28,7 +27,7 @@
     "index" : 0,
     "resize" : [ 1.1, 1.0 ],
     "shading" : 0,
-    "flip?" : true,
+    "flip" : true,
     "base" : "blue",
     "pattern" : 42
   }, {

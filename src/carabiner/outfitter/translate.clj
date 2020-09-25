@@ -1,13 +1,15 @@
 (ns carabiner.outfitter.translate
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]
-            [clojure.spec.alpha :as s]
+            [clojure.spec.alpha :as spec]
             [carabiner.outfitter.schematic :as sc]
+            [carabiner.outfitter.json-schematic :as sj]
             [clojure.string :as str]
             [clojure.pprint :as pp]
             [clojure.set :as set]
             [cheshire.core :as json]
-            [carabiner.common.hiccup :as h])
+            [carabiner.common.hiccup :as h]
+            [schema.core :as s])
   (:import (clojure.lang ExceptionInfo)))
 
 (def datasets-path "resources/outfitter/data")
@@ -257,12 +259,22 @@
        (into [:g group-args] full-layers)])))
 
 (defn json->svg [{:keys [layers] :as json}]
-  (let [header (set/rename-keys (dissoc json :layers) {:bodyType :body-type :bgColor :bg-color :bgPattern :bg-pattern :bodyScale :body-scale})
-        layers (mapv #(vector (mapv (partial get %) req-layer-keys) (apply dissoc % req-layer-keys)) layers)]
+  (s/validate sj/JsonSchematic json)
+  (let [header (reduce
+                 #(update %1 %2 keyword)
+                 (set/rename-keys
+                   (dissoc json :layers)
+                   {:bodyType :body-type :bgColor :bg-color :bgPattern :bg-pattern :bodyScale :body-scale})
+                 [:body-type :body-scale])
+        layers (mapv
+                 #(vector
+                    (mapv (partial get %) req-layer-keys)
+                    (apply dissoc (set/rename-keys % {:flip :flip?}) req-layer-keys))
+                 layers)]
     (to-svg header layers)))
 
 (defn schematic->svg [schematic]
-  (when-let [errors (s/explain-data ::sc/schematic schematic)]
+  (when-let [errors (spec/explain-data ::sc/schematic schematic)]
     (throw (ExceptionInfo. "invalid schematic" errors)))
   (let [[body-type & args&layers] schematic
         [args layers] (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])
@@ -271,7 +283,7 @@
     (to-svg header layers)))
 
 (defn schematic->json [schematic]
-  (when-let [errors (s/explain-data ::sc/schematic schematic)]
+  (when-let [errors (spec/explain-data ::sc/schematic schematic)]
     (throw (ExceptionInfo. "invalid schematic" errors)))
   (let [[body-type & args&layers] schematic
         [args layers] (if (map? (first args&layers)) [(first args&layers) (rest args&layers)] [{} args&layers])

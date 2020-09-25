@@ -1,5 +1,4 @@
 {
-  "scale-image" : 3,
   "bodyType" : "hulk",
   "bgColor" : "#ccf",
   "layers" : [ {
@@ -24,7 +23,7 @@
     "part" : "arm",
     "index" : 0,
     "shading" : 0,
-    "flip?" : true,
+    "flip" : true,
     "base" : "coral",
     "pattern" : 49
   }, {

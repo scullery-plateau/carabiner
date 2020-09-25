@@ -1,8 +1,0 @@
-[:superman
- {:bg-color "#ccf"
-  :scale-image 3}
- [:torso 0 :base "blue" :pattern 42 :shading 0 :resize [0.8 1.0]]
- [:legs 0 :base "blue" :pattern 42 :shading 0 :resize [0.8 1.0]]
- [:arm 3 :base "blue" :pattern 42 :shading 0 :resize [0.8 1.0]]
- [:arm 0 :base "blue" :pattern 42 :shading 0 :resize [0.8 1.0] :flip? true]
- [:head 0 :base "blue" :pattern 42 :shading 0]]

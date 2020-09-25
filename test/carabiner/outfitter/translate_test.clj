@@ -7,7 +7,8 @@
             [carabiner.outfitter.shapes-test :as shapes]
             [carabiner.common.img :as img]
             [carabiner.common.hiccup :as h]
-            [clojure.string :as str])
+            [clojure.string :as str]
+            [clojure.data.json :as json])
   (:import (clojure.lang ExceptionInfo)
            (java.io File)))
 
@@ -75,17 +76,14 @@
               [(mapv #(vector :li [:a {:href (str % ".html")} %]) parts)
                (mapv #(vector :li [:a {:href (str % ".html")} %]) ["patterns" "shading"])])))))))
 
-(def demos-folder ^File (io/file "test-resources/outfitter/samples"))
-
-(defn demo-reducer [out demo]
+(defn demo-reducer [folder parse out demo]
   (pp/pprint demo)
   (let [demo-name (first (str/split demo #"\."))]
     (try
       (let [start (System/currentTimeMillis)
-            svg (tr/schematic->svg
-                  (edn/read-string
-                    (slurp
-                      (io/file demos-folder demo))))
+            svg (-> (io/file folder demo)
+                    (slurp)
+                    (parse))
             text (h/to-text svg)
             text-size (count text)
             encoded (img/svg-to-64 text)
@@ -94,7 +92,7 @@
             time-e2e (- time-at-encode start)
             img (str "data:image/png;base64," encoded)]
         (spit
-          (io/file demos-folder (str demo-name "-out.html"))
+          (io/file folder (str demo-name "-out.html"))
           (shapes/build-html
             {:title demo}
             [:table
@@ -102,28 +100,49 @@
               [:td svg]
               [:td [:img {:src img}]]]]))
         (spit
-          (io/file demos-folder (str demo-name "-out.edn"))
+          (io/file folder (str demo-name "-out.edn"))
           (with-out-str (pp/pprint svg)))
         (println (str demo " completed"))
         (assoc out demo
-                   {:time-e2e time-e2e
-                    :text-size text-size
+                   {:time-e2e     time-e2e
+                    :text-size    text-size
                     :encoded-size encoded-size}))
       (catch ExceptionInfo x
         (println "exception thrown")
         (spit
-          (io/file demos-folder (str demo-name "-out.edn"))
+          (io/file folder (str demo-name "-out.edn"))
           (with-out-str (pp/pprint (ex-data x))))
         out))))
 
+(def demos-folder ^File (io/file "test-resources/outfitter/samples"))
+
 (deftest test-schematic->svg
-  (let [demos ["the-thing.edn"]]
+  (let [demo-parser #(tr/schematic->svg (edn/read-string %))
+        demos ["the-thing.edn"]]
     (spit (io/file demos-folder "times-out.edn")
-          (reduce demo-reducer {} demos))))
+          (reduce (partial demo-reducer demos-folder demo-parser) {} demos))))
 
 (deftest test-all-schematic->svg
-  (let [demos (->> (.listFiles demos-folder)
+  (let [demo-parser #(tr/schematic->svg (edn/read-string %))
+        demos (->> (.listFiles demos-folder)
                    (map #(.getName %))
                    (remove #(str/index-of % "-out")))]
     (spit (io/file demos-folder "all-times-out.edn")
-          (reduce demo-reducer {} demos))))
+          (reduce (partial demo-reducer demos-folder demo-parser) {} demos))))
+
+(def json-folder ^File (io/file "test-resources/outfitter/json-samples"))
+
+(deftest test-json->svg
+  (let [json-parser #(tr/json->svg (json/read-str % :key-fn keyword))
+        demos ["the-thing.json"]]
+    (spit (io/file json-folder "times-out.edn")
+          (reduce (partial demo-reducer json-folder json-parser) {} demos))))
+
+(deftest test-all-json->svg
+  (let [json-parser #(tr/json->svg (json/read-str % :key-fn keyword))
+        demos (->> (.listFiles json-folder)
+                   (map #(.getName %))
+                   (remove #(str/index-of % "-out")))]
+    (spit (io/file json-folder "all-times-out.edn")
+          (reduce (partial demo-reducer json-folder json-parser) {} demos))))
+

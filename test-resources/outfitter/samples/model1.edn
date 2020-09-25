@@ -1,0 +1,28 @@
+[:woman
+ {:scale-image 2}
+ [:shirt 8 :base "#ea8" :shading 0]
+ [:shirt 12 :base "#ea8" :pattern 39 :shading 0]
+ [:legs 0 :base "#ea8" :shading 0]
+
+ [:ears 1 :base "#ea8"]
+ [:head 0 :base "#ea8" :shading 0]
+ [:eyes 4 :base "blue"]
+ [:nose 1]
+ [:mouth 30 :base "red"]
+ [:eyebrows 2 :base "darkorchid"]
+
+ [:stockings 18 :base "#ea8" :pattern 39 :shading 0]
+ [:stockings 7 :base "red" :shading 0]
+ [:stockings 37 :base "red" :shading 0]
+
+ [:chest 4 :base "red" :shading 0]
+ [:gloves 1 :base "#ea8" :shading 0]
+ [:gloves 11 :base "red" :shading 0]
+ [:gloves 12 :base "red" :shading 0]
+ [:gloves 10 :base "#ea8" :shading 0]
+
+ [:belt 44 :base "red" :shading 0]
+ [:belt 9 :base "red" :shading 0]
+
+ [:hair 92 :base "darkorchid" :detail "black" :shading 0]]
+

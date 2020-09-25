@@ -1,6 +1,5 @@
 {
-  "scale-image" : 3,
-  "bodyType" : "fit",
+"bodyType" : "fit",
   "bgColor" : "#ccf",
   "bodyScale" : "thin",
   "layers" : [ {
