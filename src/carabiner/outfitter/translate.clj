@@ -136,12 +136,13 @@
 
 (defn build-layer [pattern-labels shading-labels body-resize head-shift part]
   (let [[{:keys [base detail outline shadow]}
-         {:keys      [pattern shading resize move flip?]
+         {:keys      [opacity pattern shading resize move flip?]
           base-color :base detail-color :detail outline-color :outline
           :or        {base-color "#ffffff" detail-color "#ffffff" outline-color "#000000"}}
          part-type] part
         resize (or resize [1 1])
         move (or move [0 0])
+        opacity (if (string? opacity) (/ (Integer/parseInt (str/replace opacity "%" "")) 100.0) opacity)
         [resize move] (if (and part-type (#{:beard :ears :eyebrows :eyes :hair :hat :head :mask :mouth :nose} part-type))
                         [resize [(+ (first head-shift) (first move)) (+ (second head-shift) (second move))]]
                         [[(* (first body-resize) (first resize)) (* (second body-resize) (second resize))] move])
@@ -152,7 +153,9 @@
         base (if (nil? base) [] base)
         p&s-paths (into base detail)
         layer-transform (build-layer-transform resize move flip?)
-        group-args (if layer-transform {:transform layer-transform} {})]
+        group-args (merge
+                     (if layer-transform {:transform layer-transform} {})
+                     (if opacity {:opacity opacity} {}))]
     (into
       [:g group-args]
       (reduce

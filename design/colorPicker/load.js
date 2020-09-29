@@ -1,11 +1,13 @@
-let colors = [ "aliceblue", "antiquewhite", "aqua", "aquamarine", "azure", "beige", "bisque", "black", "blanchedalmond", "blue", "blueviolet", "brown", "burlywood", "cadetblue", "chartreuse", "chocolate", "coral", "cornflowerblue", "cornsilk", "crimson", "cyan", "darkblue", "darkcyan", "darkgoldenrod", "darkgray", "darkgreen", "darkgrey", "darkkhaki", "darkmagenta", "darkolivegreen", "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen", "darkslateblue", "darkslategray", "darkslategrey", "darkturquoise", "darkviolet", "deeppink", "deepskyblue", "dimgray", "dimgrey", "dodgerblue", "firebrick", "floralwhite", "forestgreen", "fuchsia", "gainsboro", "ghostwhite", "gold", "goldenrod", "gray", "green", "greenyellow", "grey", "honeydew", "hotpink", "indianred", "indigo", "ivory", "khaki", "lavender", "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral", "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightgrey", "lightpink", "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray", "lightslategrey", "lightsteelblue", "lightyellow", "lime", "limegreen", "linen", "magenta", "maroon", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple", "mediumseagreen", "mediumslateblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue", "mintcream", "mistyrose", "moccasin", "navajowhite", "navy", "oldlace", "olive", "olivedrab", "orange", "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff", "peru", "pink", "plum", "powderblue", "purple", "rebeccapurple", "red", "rosybrown", "royalblue", "saddlebrown", "salmon", "sandybrown", "seagreen", "seashell", "sienna", "silver", "skyblue", "slateblue", "slategray", "slategrey", "snow", "springgreen", "steelblue", "tan", "teal", "thistle", "tomato", "turquoise", "violet", "wheat", "white", "whitesmoke", "yellow", "yellowgreen" ];
+let colors = {"aquamarine":"#7FFFD4","lime":"#00FF00","deepskyblue":"#00BFFF","darksalmon":"#E9967A","antiquewhite":"#FAEBD7","mediumturquoise":"#48D1CC","slategrey":"#708090","slategray":"#708090","sienna":"#A0522D","orange":"#FFA500","navajowhite":"#FFDEAD","lavenderblush":"#FFF0F5","firebrick":"#B22222","orangered":"#FF4500","palevioletred":"#DB7093","lawngreen":"#7CFC00","seashell":"#FFF5EE","lightpink":"#FFB6C1","darkolivegreen":"#556B2F","aliceblue":"#F0F8FF","gray":"#808080","lightsteelblue":"#B0C4DE","whitesmoke":"#F5F5F5","darkgoldenrod":"#B8860B","tan":"#D2B48C","bisque":"#FFE4C4","white":"#FFFFFF","lightgreen":"#90EE90","darkseagreen":"#8FBC8F","crimson":"#DC143C","darkslategray":"#2F4F4F","mistyrose":"#FFE4E1","chocolate":"#D2691E","yellow":"#FFFF00","cadetblue":"#5F9EA0","navy":"#000080","ghostwhite":"#F8F8FF","dimgrey":"#696969","rebeccapurple":"#663399","seagreen":"#2E8B57","green":"#008000","mediumseagreen":"#3CB371","indigo":"#4B0082","olivedrab":"#6B8E23","cyan":"#00FFFF","peachpuff":"#FFDAB9","limegreen":"#32CD32","mediumslateblue":"#7B68EE","violet":"#EE82EE","sandybrown":"#F4A460","yellowgreen":"#9ACD32","mediumspringgreen":"#00FA9A","steelblue":"#4682B4","rosybrown":"#BC8F8F","cornflowerblue":"#6495ED","ivory":"#FFFFF0","lightgoldenrodyellow":"#FAFAD2","salmon":"#FA8072","darkcyan":"#008B8B","peru":"#CD853F","cornsilk":"#FFF8DC","lightslategray":"#778899","blueviolet":"#8A2BE2","forestgreen":"#228B22","lightseagreen":"#20B2AA","gold":"#FFD700","gainsboro":"#DCDCDC","darkorchid":"#9932CC","burlywood":"#DEB887","lightskyblue":"#87CEFA","chartreuse":"#7FFF00","snow":"#FFFAFA","moccasin":"#FFE4B5","honeydew":"#F0FFF0","aqua":"#00FFFF","darkred":"#8B0000","mediumorchid":"#BA55D3","lightsalmon":"#FFA07A","saddlebrown":"#8B4513","wheat":"#F5DEB3","springgreen":"#00FF7F","lightslategrey":"#778899","darkblue":"#00008B","powderblue":"#B0E0E6","turquoise":"#40E0D0","blanchedalmond":"#FFEBCD","papayawhip":"#FFEFD5","slateblue":"#6A5ACD","lightblue":"#ADD8E6","skyblue":"#87CEEB","red":"#FF0000","lightyellow":"#FFFFE0","blue":"#0000FF","palegreen":"#98FB98","greenyellow":"#ADFF2F","khaki":"#F0E68C","maroon":"#800000","darkgrey":"#A9A9A9","midnightblue":"#191970","floralwhite":"#FFFAF0","deeppink":"#FF1493","paleturquoise":"#AFEEEE","darkkhaki":"#BDB76B","azure":"#F0FFFF","indianred":"#CD5C5C","darkviolet":"#9400D3","mediumpurple":"#9370DB","fuchsia":"#FF00FF","coral":"#FF7F50","mediumvioletred":"#C71585","lemonchiffon":"#FFFACD","mediumblue":"#0000CD","darkmagenta":"#8B008B","goldenrod":"#DAA520","darkorange":"#FF8C00","orchid":"#DA70D6","plum":"#DDA0DD","pink":"#FFC0CB","teal":"#008080","magenta":"#FF00FF","lightgrey":"#D3D3D3","purple":"#800080","dodgerblue":"#1E90FF","darkturquoise":"#00CED1","mintcream":"#F5FFFA","hotpink":"#FF69B4","thistle":"#D8BFD8","royalblue":"#4169E1","darkgreen":"#006400","darkslateblue":"#483D8B","silver":"#C0C0C0","darkgray":"#A9A9A9","grey":"#808080","oldlace":"#FDF5E6","mediumaquamarine":"#66CDAA","brown":"#A52A2A","lightgray":"#D3D3D3","olive":"#808000","lightcoral":"#F08080","tomato":"#FF6347","lightcyan":"#E0FFFF","linen":"#FAF0E6","darkslategrey":"#2F4F4F","lavender":"#E6E6FA","dimgray":"#696969","palegoldenrod":"#EEE8AA","beige":"#F5F5DC","black":"#000000"}
 
 function loadSelector(selectId) {
     let options = document.getElementById(selectId).options;
-    colors.forEach((c) => {
+    let colorNames = Array.from(Object.keys(colors));
+    colorNames.sort();
+    colorNames.forEach((c) => {
         let option = document.createElement("option");
         option.text = c;
-        option.value = c;
+        option.value = colors[c];
         options.add(option);
     });
 }
@@ -18,40 +20,53 @@ function rect(x,y,width,height,fill) {
     return `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${fill}" stroke="black" stroke-width="1"/>`;
 }
 
-function colorBtn(r,g,b,scale,displayId) {
-    let boxX = r % 2;
-    let boxY = Math.floor(r/2);
+function colorBtn(r,g,b,scale,displayId,fieldId,redId,greenId,blueId) {
+    let boxX = r % 3;
+    let boxY = Math.floor(r/3);
     let x = (g + (boxX * 6)) * scale;
     let y = (b + (boxY * 6)) * scale;
-    let rgb = '#' + [r,g,b].map((s) => (s * 3).toString(16)).join("");
-    return `<a href="#" onclick="setColor('${displayId}','${rgb}')">${rect(x,y,scale,scale,rgb)}</a>`;
+    let rgb = '#' + [r,g,b].map((s) => (s * 3).toString(16).repeat(2)).join("");
+    return `<a href="#" onclick="setRGB('${displayId}','${fieldId}','${redId}','${greenId}','${blueId}','${rgb}')">${rect(x,y,scale,scale,rgb)}</a>`;
 }
 
-function loadSVG(svgId,displayId) {
+function loadSVG(svgId,displayId,fieldId,redId,greenId,blueId) {
     let scale = 10;
     let content = [];
     for (let r = 0; r < 6; r++) {
         for (let g = 0; g < 6; g++) {
             for (let b = 0; b < 6; b++) {
-                content.push(colorBtn(r,g,b,scale,displayId));
+                content.push(colorBtn(r,g,b,scale,displayId,fieldId,redId,greenId,blueId));
             }
         }
     }
-    document.getElementById(svgId).innerHTML = svgFrame(2*6*scale,3*6*scale,content.join('\n'));
+    document.getElementById(svgId).innerHTML = svgFrame(3*6*scale,2*6*scale,content.join('\n'));
 }
 
-function loadAll(selectId,svgId,displayId) {
+function loadAll(selectId,svgId,displayId,fieldId,redId,greenId,blueId) {
     loadSelector(selectId);
-    loadSVG(svgId,displayId);
+    loadSVG(svgId,displayId,fieldId,redId,greenId,blueId);
 }
 
-function setColor(displayId,color) {
+function setColor(displayId,fieldId,color) {
     document.getElementById(displayId).innerHTML = svgFrame(100,10,rect(0,0,100,10,color));
+    document.getElementById(fieldId).value = color;
 }
 
-function setRGB(displayId,redId,greenId,blueId) {
+function setColorFromRGB(displayId,fieldId,redId,greenId,blueId) {
     let red = document.getElementById(redId).value;
     let green = document.getElementById(greenId).value;
     let blue = document.getElementById(blueId).value;
-    setColor(displayId,`rgb(${red},${green},${blue})`);
+    setColor(displayId,fieldId,`rgb(${red},${green},${blue})`);
+}
+
+function hexToRGB(hex) {
+    return [1,3,5].map((i) => parseInt(hex.substr(i,2),16));
+}
+
+function setRGB(displayId,fieldId,redId,greenId,blueId,hex) {
+    let rgb = hexToRGB(hex);
+    [redId,greenId,blueId].forEach((c,i) => {
+        document.getElementById(c).value = rgb[i];
+    })
+    setColor(displayId,fieldId,`rgb(${rgb[0]},${rgb[1]},${rgb[2]})`);
 }

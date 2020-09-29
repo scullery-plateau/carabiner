@@ -7,6 +7,14 @@
 
 (def transforms #{"flip-over" "flip-down" "turn-left" "turn-right"})
 
+(defn is-double-percent? [value]
+  (and (< 0 value)
+       (>= 1 value)))
+
+(s/defschema Percent
+  (s/conditional string? (s/pred (partial re-matches r/percent-pattern))
+                 number? (s/pred is-double-percent?)))
+
 (s/defschema PaletteColor
   (s/maybe (s/constrained s/Str
              #(or (= "none" %)

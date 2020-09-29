@@ -7,3 +7,5 @@
 (def coord-pattern #"\d+[x]\d+")
 
 (def id-ref #"url\(\#[a-zA-Z]([a-zA-Z0-9\-_]*[a-zA-Z0-9])?\)")
+
+(def percent-pattern #"((\d?\d)|100)(\%)")

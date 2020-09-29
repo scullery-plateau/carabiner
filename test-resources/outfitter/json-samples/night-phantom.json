@@ -1,0 +1,59 @@
+{
+  "bodyType" : "fit",
+  "layers" : [
+    {
+      "part": "shirt",
+      "index": 43,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "gloves",
+      "index": 1,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "tights",
+      "index": 51,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "tights",
+      "index": 21,
+      "outline": "white"
+    },{
+      "part": "tights",
+      "index": 21,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "stockings",
+      "index": 6,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "head",
+      "index": 0,
+      "outline": "white"
+    },{
+      "part": "mask",
+      "index": 35,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "mask",
+      "index": 76,
+      "base": "black",
+      "shading": 0,
+      "opacity": "60%"
+    },{
+      "part": "eyes",
+      "index": 10
+    }
+  ]
+}

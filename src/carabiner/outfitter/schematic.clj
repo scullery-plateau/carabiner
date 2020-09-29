@@ -2,11 +2,17 @@
   (:require [clojure.spec.alpha :as s]
             [carabiner.rogue94.common-schema :as rcs]
             [carabiner.outfitter.common-schema :as cs]
-            [carabiner.outfitter.constants :as oc]))
+            [carabiner.outfitter.constants :as oc]
+            [carabiner.common.regex :as r]
+            [carabiner.common.schema :as ccs]))
 
 (s/def ::body-types (set (mapv keyword oc/body-types)))
 
 (s/def ::whole-number (s/and int? (complement neg?)))
+
+(s/def ::percent
+  (s/or :string (s/and string? (partial re-matches r/percent-pattern))
+        :number (s/and number? ccs/is-double-percent?)))
 
 (s/def ::layer (s/and
                  vector?
@@ -15,6 +21,7 @@
                         :base (s/? (s/cat :label #{:base} :value ::rcs/color))
                         :detail (s/? (s/cat :label #{:detail} :value ::rcs/color))
                         :outline (s/? (s/cat :label #{:outline} :value ::rcs/color))
+                        :opacity (s/? (s/cat :label #{:outline} :value ::percent))
                         :pattern (s/? (s/cat :label #{:pattern} :value ::whole-number))
                         :shading (s/? (s/cat :label #{:shading} :value ::whole-number))
                         :resize (s/? (s/cat :label #{:resize} :value ::cs/double-xy))

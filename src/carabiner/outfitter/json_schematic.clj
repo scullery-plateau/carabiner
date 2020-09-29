@@ -15,6 +15,7 @@
                (s/optional-key :base) cs/PaletteColor
                (s/optional-key :detail) cs/PaletteColor
                (s/optional-key :outline) cs/PaletteColor
+               (s/optional-key :opacity) cs/Percent
                (s/optional-key :pattern) ocs/Index
                (s/optional-key :shading) ocs/Index
                (s/optional-key :resize) ocs/XY

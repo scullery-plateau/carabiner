@@ -134,7 +134,7 @@
 
 (deftest test-json->svg
   (let [json-parser #(tr/json->svg (json/read-str % :key-fn keyword))
-        demos ["the-thing.json"]]
+        demos ["night-phantom.json"]]
     (spit (io/file json-folder "times-out.edn")
           (reduce (partial demo-reducer json-folder json-parser) {} demos))))
 

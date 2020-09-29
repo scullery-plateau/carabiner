@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <title>ColorPicker</title>
 </head>
-<body onload="loadAll('colorByName','svg','display')">
+<body onload="loadAll('colorByName','svg','display','colorValue','red','green','blue')">
 <div class="container">
     <div class="nes-container">
         <div class="row">
@@ -23,14 +23,14 @@
             <div class="col">
                 <div class="d-flex flex-column">
                     <div class="nes-field">
-                        <label for="name_field">Color Value</label>
-                        <input type="text" id="name_field" class="nes-input" onchange="setColor('display',this.value)">
+                        <label for="colorValue">Color Value</label>
+                        <input type="text" id="colorValue" class="nes-input" onchange="setColor('display','colorValue',this.value)">
                     </div>
                     <hr>
                     <div>
                         <label for="colorByName">Color by Name</label>
                         <div class="nes-select">
-                            <select required id="colorByName" onchange="setColor('display',this.value)">
+                            <select required id="colorByName" onchange="setRGB('display','colorValue','red','green','blue',this.value)">
                                 <option value="" disabled selected hidden>Select Color By Name</option>
                             </select>
                         </div>
@@ -38,15 +38,15 @@
                     <hr>
                     <div class="nes-field">
                         <label for="red">red</label>
-                        <input type="range" id="red" min="0" max="255" class="nes-input" onchange="setRGB('display','red','green','blue')">
+                        <input type="range" id="red" min="0" max="255" class="nes-input" onchange="setColorFromRGB('display','colorValue','red','green','blue')">
                     </div>
                     <div class="nes-field">
                         <label for="green">Green</label>
-                        <input type="range" id="green" min="0" max="255" class="nes-input" onchange="setRGB('display','red','green','blue')">
+                        <input type="range" id="green" min="0" max="255" class="nes-input" onchange="setColorFromRGB('display','colorValue','red','green','blue')">
                     </div>
                     <div class="nes-field">
                         <label for="blue">Blue</label>
-                        <input type="range" id="blue" min="0" max="255" class="nes-input" onchange="setRGB('display','red','green','blue')">
+                        <input type="range" id="blue" min="0" max="255" class="nes-input" onchange="setColorFromRGB('display','colorValue','red','green','blue')">
                     </div>
                 </div>
             </div>
