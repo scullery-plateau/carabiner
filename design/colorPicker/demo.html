@@ -13,6 +13,14 @@
 <body onload="loadAll('colorByName','svg','display','colorValue','red','green','blue')">
 <div class="container">
     <div class="nes-container">
+        <div class="d-flex flex-column">
+            <div id="out"></div>
+            <div class="text-right">
+                <button type="button" name="button" class="nes-btn is-success" onclick="open('myDialog')">Set Color</button>
+            </div>
+        </div>
+    </div>
+    <dialog id="myDialog" class="nes-dialog is-dark is-rounded">
         <div class="row">
             <div class="col">
                 <div id="display"></div>
@@ -54,7 +62,11 @@
                 <div id="svg"></div>
             </div>
         </div>
-    </div>
+        <menu class="dialog-menu text-right">
+            <button class="nes-btn" onclick="cancel('myDialog')">Cancel</button>
+            <button class="nes-btn is-primary" onclick="confirm('myDialog','colorValue')">Confirm</button>
+        </menu>
+    </dialog>
 </div>
 </body>
 </html>
