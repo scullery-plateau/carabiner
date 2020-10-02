@@ -1,0 +1,11 @@
+<svg width="100%" height="100%" viewBox="{{dim()}}">
+  <ng-container *ngIf="schematic.bgColor">
+    <rect x="{{minX}}" y="{{minY}}" width="{{width}}" height="{{height}}" fill="{{schematic.bgColor}}" stroke="none"></rect>
+  </ng-container>
+  <ng-container *ngIf="schematic.bgPattern">
+    <rect x="{{minX}}" y="{{minY}}" width="{{width}}" height="{{height}}" fill="url(#{{schematic.bgPattern}})" stroke="none"></rect>
+  </ng-container>
+  <ng-container *ngFor="let layer of schematic.layers">
+    <display-layer [layer]="layer" [meta]="meta"></display-layer>
+  </ng-container>
+</svg>

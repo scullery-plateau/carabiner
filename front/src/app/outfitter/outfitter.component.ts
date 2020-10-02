@@ -4,6 +4,9 @@ import {OutfitterService} from "./outfitter.service";
 import {DomSanitizer} from "@angular/platform-browser";
 import {DatasetMeta} from "./dataset-meta";
 import {Schematic} from "./schematic";
+import {FormBuilder, FormGroup} from "@angular/forms";
+import {isNumber} from "util";
+import {SchematicLayer} from "./schematic-layer";
 
 @Component({
   selector: 'app-outfitter',
@@ -11,7 +14,27 @@ import {Schematic} from "./schematic";
   styleUrls: ['./outfitter.component.scss']
 })
 export class OutfitterComponent implements OnInit {
-  constructor(private os : OutfitterService, private sanitizer:DomSanitizer) { }
+  constructor(private os : OutfitterService, private sanitizer:DomSanitizer, private fb: FormBuilder) { }
+
+  schematicForm: FormGroup = this.fb.group({
+    bgColor:[''],
+    bgPattern:[-1],
+    bodyScale:[''],
+    selectedLayer:[0],
+    partType:[''],
+    partIndex:[0],
+    base:[''],
+    detail:[''],
+    outline:[''],
+    opacity:[1],
+    pattern:[-1],
+    shading:[-1],
+    resize_x:[1],
+    resize_y:[1],
+    move_x:[0],
+    move_y:[0],
+    flip:[false]
+  });
 
   processing: any;
   step: number = 0;
@@ -73,5 +96,57 @@ export class OutfitterComponent implements OnInit {
     this.schematic.layers = [];
   }
 
+  setBodyScale() {
+    this.schematic.bodyScale = this.schematicForm.value.bodyScale;
+  }
 
+  setBackgroundColor(selectedColor: string) {
+    this.schematic.bgColor = selectedColor;
+  }
+
+  setBGPattern() {
+    this.schematic.bgPattern = this.schematicForm.value.bgPattern;
+  }
+
+  loadSelectedLayer() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematicForm.patchValue(this.schematic.layers[selectedIndex].formValue());
+    }
+  }
+
+  addLayer() {
+    this.schematic.layers.push(new SchematicLayer());
+  }
+
+  removeCurrentLayer() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers.splice(selectedIndex,1);
+    }
+  }
+
+  moveToBack() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    }
+  }
+
+  moveBack() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    }
+  }
+
+  moveForward() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    }
+  }
+
+  moveToFront() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    }
+  }
 }

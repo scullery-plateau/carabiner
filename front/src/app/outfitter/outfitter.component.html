@@ -28,10 +28,60 @@
   <span>{{defs}}</span>
   <div class="row">
     <div class="col">
-
+      <div class="d-flex flex-column">
+        <div>
+          <h3>{{schematic.bodyType}}</h3>
+        </div>
+        <div>
+          <label for="bodyScale">Body Scale</label>
+          <div class="nes-select">
+            <select required id="bodyScale" formControlName="bodyScale" (change)="setBodyScale()">
+              <option value="" disabled selected hidden>Select...</option>
+              <option value="">Default</option>
+              <option value="lanky">Lanky</option>
+              <option value="thin">Thin</option>
+              <option value="stocky">Stocky</option>
+              <option value="petite">Petite</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div class="nes-field is-inline">
+            <label>Background Color</label>
+            <color-picker [initValue]="schematicForm.value.bgColor" (retVal)="setBackgroundColor($event)"></color-picker>
+          </div>
+        </div>
+        <div>
+          <div class="nes-field is-inline">
+            <label for="bgPattern">Background Pattern</label>
+            <input type="number" id="bgPattern" formControlName="bgPattern" class="nes-input" (change)="setBGPattern()">
+          </div>
+        </div>
+        <div>
+          <label for="selectedLayer">Selected Layer:</label>
+          <div class="nes-select">
+            <select required id="selectedLayer" formControlName="selectedLayer" (change)="loadSelectedLayer()">
+              <option value="" disabled selected hidden>Select...</option>
+              <ng-container *ngFor="let layer of schematic.layers; index as i">
+                <option [value]="i">{{i}}: {{layer.part}} {{layer.index}}</option>
+              </ng-container>
+            </select>
+          </div>
+        </div>
+        <div class="d-flex">
+          <button class="nes-btn is-success" (click)="addLayer()">Add Layer</button>
+          <button *ngIf="schematicForm.value.selectedLayer" class="nes-btn is-error" (click)="removeCurrentLayer()">Remove Layer</button>
+        </div>
+        <div class="d-flex">
+          <button class="nes-btn" title="Move To Back" (click)="moveToBack()"><span></span></button>
+          <button class="nes-btn" title="Move Back" (click)="moveBack()"></button>
+          <button class="nes-btn" title="Move Forward" (click)="moveForward()"></button>
+          <button class="nes-btn" title="Move To Front" (click)="moveToFront()"></button>
+        </div>
+      </div>
     </div>
     <div class="col">
-      <outfitter-display schematic="schematic" meta="meta"></outfitter-display>
+      <outfitter-display [schematic]="schematic" [meta]="meta"></outfitter-display>
     </div>
   </div>
 </div>

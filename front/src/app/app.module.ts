@@ -31,6 +31,9 @@ import { OkayDialogComponent } from './util/okay-dialog/okay-dialog.component';
 import { ImageListComponent } from './mastermold/image-list/image-list.component';
 import { MiniGalleryComponent } from './mastermold/mini-gallery/mini-gallery.component';
 import { OutfitterComponent } from './outfitter/outfitter.component';
+import { ColorPickerComponent } from './util/color-picker/color-picker.component';
+import { OutfitterDisplayComponent } from './outfitter/outfitter-display/outfitter-display.component';
+import { DisplayLayerComponent } from './outfitter/display-layer/display-layer.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +63,9 @@ import { OutfitterComponent } from './outfitter/outfitter.component';
     ImageListComponent,
     MiniGalleryComponent,
     OutfitterComponent,
+    ColorPickerComponent,
+    OutfitterDisplayComponent,
+    DisplayLayerComponent,
   ],
   imports: [
     BrowserModule,

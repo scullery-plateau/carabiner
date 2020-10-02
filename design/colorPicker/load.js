@@ -2,6 +2,12 @@ let colors = {"aquamarine":"#7FFFD4","lime":"#00FF00","deepskyblue":"#00BFFF","d
 
 let selectedColor = undefined;
 
+function getForegroundColor(hex) {
+    let [r, g, b] = hexToRGB(hex);
+    let luminosity = Math.sqrt(Math.pow(r, 2) * 0.299 + Math.pow(g, 2) * 0.587 + Math.pow(b, 2) * 0.114);
+    return luminosity > 186 ? "black" : "white";
+}
+
 function loadSelector(selectId) {
     let options = document.getElementById(selectId).options;
     let colorNames = Array.from(Object.keys(colors));
@@ -10,6 +16,8 @@ function loadSelector(selectId) {
         let option = document.createElement("option");
         option.text = c;
         option.value = colors[c];
+        option.style.backgroundColor = c;
+        option.style.color = getForegroundColor(colors[c]);
         options.add(option);
     });
 }
@@ -31,17 +39,24 @@ function colorBtn(r,g,b,scale,displayId,fieldId,redId,greenId,blueId) {
     return `<a href="#" onclick="setRGB('${displayId}','${fieldId}','${redId}','${greenId}','${blueId}','${rgb}')">${rect(x,y,scale,scale,rgb)}</a>`;
 }
 
+function colorBtn2(displayId,fieldId,redId,greenId,blueId,rgb) {
+    return `<td style="padding: 0; margin: 0; font-size: 0.8em"><button style="background-color: ${rgb}; color: ${rgb}" onclick="setRGB('${displayId}','${fieldId}','${redId}','${greenId}','${blueId}','${rgb}')">_</button></td>`;
+}
+
 function loadSVG(svgId,displayId,fieldId,redId,greenId,blueId) {
-    let scale = 10;
-    let content = [];
-    for (let r = 0; r < 6; r++) {
-        for (let g = 0; g < 6; g++) {
-            for (let b = 0; b < 6; b++) {
-                content.push(colorBtn(r,g,b,scale,displayId,fieldId,redId,greenId,blueId));
-            }
+    let rows = [];
+    for (let y = 0; y < 12; y++) {
+        let cells = [];
+        for (let x = 0; x < 18; x++) {
+            let r = (3 * Math.floor(y/6)) + Math.floor(x/6);
+            let g = x % 6;
+            let b = y % 6;
+            let rgb = '#' + [r,g,b].map((s) => (s * 3).toString(16).repeat(2)).join("");
+            cells.push(colorBtn2(displayId,fieldId,redId,greenId,blueId,rgb));
         }
+        rows.push("<tr style=\"padding: 0; margin: 0\">" + cells.join("") + "</tr>");
     }
-    document.getElementById(svgId).innerHTML = svgFrame(3*6*scale,2*6*scale,content.join('\n'));
+    document.getElementById(svgId).innerHTML = "<table style=\"padding: 0; margin: 0\">" + rows.join('') + "</table>";
 }
 
 function loadAll(selectId,svgId,displayId,fieldId,redId,greenId,blueId) {
@@ -56,11 +71,24 @@ function setColor(displayId,fieldId,color) {
     }
 }
 
+function rgbToHex(r,g,b) {
+    return '#' + [r,g,b].map((c) => {
+        console.log(c);
+        let h = Number(c).toString(16);
+        console.log(h);
+        if (h.length === 1) {
+            h = '0' + h;
+        }
+        return h;
+    }).join('');
+}
+
 function setColorFromRGB(displayId,fieldId,redId,greenId,blueId) {
     let red = document.getElementById(redId).value;
     let green = document.getElementById(greenId).value;
     let blue = document.getElementById(blueId).value;
-    setColor(displayId,fieldId,`rgb(${red},${green},${blue})`);
+    let hex = rgbToHex(red,green,blue);
+    setColor(displayId,fieldId,hex);
 }
 
 function hexToRGB(hex) {
@@ -72,7 +100,7 @@ function setRGB(displayId,fieldId,redId,greenId,blueId,hex) {
     [redId,greenId,blueId].forEach((c,i) => {
         document.getElementById(c).value = rgb[i];
     })
-    setColor(displayId,fieldId,`rgb(${rgb[0]},${rgb[1]},${rgb[2]})`);
+    setColor(displayId,fieldId,hex);
 }
 
 function open(id) {
