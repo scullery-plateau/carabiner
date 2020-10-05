@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Mini} from "../mastermold/mini";
 import {OutfitterService} from "./outfitter.service";
 import {DomSanitizer} from "@angular/platform-browser";
 import {DatasetMeta} from "./dataset-meta";
@@ -7,6 +6,7 @@ import {Schematic} from "./schematic";
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {isNumber} from "util";
 import {SchematicLayer} from "./schematic-layer";
+import {faFastBackward, faFastForward, faPlay, faStepBackward, faStepForward} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-outfitter',
@@ -14,6 +14,13 @@ import {SchematicLayer} from "./schematic-layer";
   styleUrls: ['./outfitter.component.scss']
 })
 export class OutfitterComponent implements OnInit {
+  icons: {} = {
+    rewind:faFastBackward,
+    back:faStepBackward,
+    play:faStepForward,
+    fastForward:faFastForward
+  };
+
   constructor(private os : OutfitterService, private sanitizer:DomSanitizer, private fb: FormBuilder) { }
 
   schematicForm: FormGroup = this.fb.group({
@@ -35,18 +42,18 @@ export class OutfitterComponent implements OnInit {
     move_y:[0],
     flip:[false]
   });
-
   processing: any;
   step: number = 0;
   maxStep: number = 5;
   ellipse: string = "";
   base64: string;
+
   fileName: string;
-
   defs: string;
-  meta: DatasetMeta;
 
+  meta: DatasetMeta;
   schematic: Schematic;
+  maxPartIndex: number;
 
   ngOnInit() {
   }
@@ -117,6 +124,8 @@ export class OutfitterComponent implements OnInit {
 
   addLayer() {
     this.schematic.layers.push(new SchematicLayer());
+    this.schematicForm.patchValue({selectedLayer:this.schematic.layers.length - 1});
+    this.maxPartIndex = 0;
   }
 
   removeCurrentLayer() {
@@ -128,25 +137,132 @@ export class OutfitterComponent implements OnInit {
 
   moveToBack() {
     let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (isNumber(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
+      this.swapLayers(0,selectedIndex);
     }
   }
 
   moveBack() {
     let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (isNumber(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
+      this.swapLayers(selectedIndex-1,selectedIndex);
     }
   }
 
   moveForward() {
     let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length-1) {
+      this.swapLayers(selectedIndex,selectedIndex+1);
     }
   }
 
   moveToFront() {
     let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length-1) {
+      this.swapLayers(selectedIndex,this.schematic.layers.length - 1);
+    }
+  }
+
+  private swapLayers(a: number, b: number) {
+    let temp = this.schematic.layers[a];
+    this.schematic.layers[a] = this.schematic.layers[b];
+    this.schematic.layers[b] = temp;
+  }
+
+
+  setPartType() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
     if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      let partType = this.schematicForm.value.partType;
+      this.schematic.layers[selectedIndex].part = partType;
+      this.maxPartIndex = this.meta.parts[partType].length;
+    }
+  }
+
+  setPartIndex() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].index = this.schematicForm.value.partIndex;
+    }
+  }
+
+  setBaseColor(color: string) {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematicForm.patchValue({base:color});
+      this.schematic.layers[selectedIndex].base = color;
+    }
+  }
+
+  setDetailColor(color: string) {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematicForm.patchValue({detail:color});
+      this.schematic.layers[selectedIndex].detail = color;
+    }
+  }
+
+  setOutlineColor(color: string) {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematicForm.patchValue({outline:color});
+      this.schematic.layers[selectedIndex].outline = color;
+    }
+  }
+
+  setOpacity() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].opacity = this.schematicForm.value.opacity;
+    }
+  }
+
+  setPattern() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].pattern = this.schematicForm.value.pattern;
+    }
+  }
+
+  setShading() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].shading = this.schematicForm.value.shading;
+    }
+  }
+
+  setResizeX() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].resize.x = this.schematicForm.value.resize_x;
+    }
+  }
+
+  setResizeY() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].resize.y = this.schematicForm.value.resize_y;
+    }
+  }
+
+  setMoveX() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].move.x = this.schematicForm.value.move_x;
+    }
+  }
+
+  setMoveY() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].move.y = this.schematicForm.value.move_y;
+    }
+  }
+
+  setFlip() {
+    let selectedIndex = this.schematicForm.value.selectedLayer;
+    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[selectedIndex].flip = this.schematicForm.value.flip;
     }
   }
 }

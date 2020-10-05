@@ -34,6 +34,7 @@ import { OutfitterComponent } from './outfitter/outfitter.component';
 import { ColorPickerComponent } from './util/color-picker/color-picker.component';
 import { OutfitterDisplayComponent } from './outfitter/outfitter-display/outfitter-display.component';
 import { DisplayLayerComponent } from './outfitter/display-layer/display-layer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { DisplayLayerComponent } from './outfitter/display-layer/display-layer.c
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
@@ -81,4 +83,4 @@ import { DisplayLayerComponent } from './outfitter/display-layer/display-layer.c
   }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
