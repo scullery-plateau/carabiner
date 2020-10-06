@@ -167,6 +167,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mastermold_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./mastermold/image-list/image-list.component */ "./src/app/mastermold/image-list/image-list.component.ts");
 /* harmony import */ var _mastermold_mini_gallery_mini_gallery_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./mastermold/mini-gallery/mini-gallery.component */ "./src/app/mastermold/mini-gallery/mini-gallery.component.ts");
 /* harmony import */ var _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./outfitter/outfitter.component */ "./src/app/outfitter/outfitter.component.ts");
+/* harmony import */ var _util_color_picker_color_picker_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./util/color-picker/color-picker.component */ "./src/app/util/color-picker/color-picker.component.ts");
+/* harmony import */ var _outfitter_outfitter_display_outfitter_display_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./outfitter/outfitter-display/outfitter-display.component */ "./src/app/outfitter/outfitter-display/outfitter-display.component.ts");
+/* harmony import */ var _outfitter_display_layer_display_layer_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./outfitter/display-layer/display-layer.component */ "./src/app/outfitter/display-layer/display-layer.component.ts");
+/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ "./node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js");
+
+
+
+
 
 
 
@@ -232,13 +240,17 @@ var AppModule = /** @class */ (function () {
                 _mastermold_image_list_image_list_component__WEBPACK_IMPORTED_MODULE_30__["ImageListComponent"],
                 _mastermold_mini_gallery_mini_gallery_component__WEBPACK_IMPORTED_MODULE_31__["MiniGalleryComponent"],
                 _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_32__["OutfitterComponent"],
+                _util_color_picker_color_picker_component__WEBPACK_IMPORTED_MODULE_33__["ColorPickerComponent"],
+                _outfitter_outfitter_display_outfitter_display_component__WEBPACK_IMPORTED_MODULE_34__["OutfitterDisplayComponent"],
+                _outfitter_display_layer_display_layer_component__WEBPACK_IMPORTED_MODULE_35__["DisplayLayerComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
+                _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_36__["FontAwesomeModule"]
             ],
             providers: [{
                     provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"],
@@ -1892,6 +1904,221 @@ var MOCK_RESPONSES = [
 
 /***/ }),
 
+/***/ "./src/app/outfitter/dataset-meta-part.ts":
+/*!************************************************!*\
+  !*** ./src/app/outfitter/dataset-meta-part.ts ***!
+  \************************************************/
+/*! exports provided: DatasetMetaPart */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatasetMetaPart", function() { return DatasetMetaPart; });
+var DatasetMetaPart = /** @class */ (function () {
+    function DatasetMetaPart() {
+    }
+    return DatasetMetaPart;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/dataset-meta.ts":
+/*!*******************************************!*\
+  !*** ./src/app/outfitter/dataset-meta.ts ***!
+  \*******************************************/
+/*! exports provided: DatasetMeta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatasetMeta", function() { return DatasetMeta; });
+var DatasetMeta = /** @class */ (function () {
+    function DatasetMeta() {
+    }
+    return DatasetMeta;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/display-layer/display-layer.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/outfitter/display-layer/display-layer.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<g transform=\"{{matrix()}}\" opacity=\"{{layer.opacity || 1.0}}\">\n  <use *ngIf=\"part.layers.base\" xlink:href=\"#{{part.layers.base}}\" fill=\"{{layer.base || 'white'}}\"></use>\n  <use *ngIf=\"part.layers.detail\" xlink:href=\"#{{part.layers.detail}}\" fill=\"{{layer.detail || 'white'}}\"></use>\n  <g *ngIf=\"layer.pattern && layer.pattern >= 0\">\n    <use *ngIf=\"part.layers.base\" xlink:href=\"#{{part.layers.base}}\" fill=\"url(#pattern_{{layer.pattern>=10?'':'0'}}{{layer.pattern}})\"></use>\n    <use *ngIf=\"part.layers.detail\" xlink:href=\"#{{part.layers.detail}}\" fill=\"url(#pattern_{{layer.pattern>=10?'':'0'}}{{layer.pattern}})\"></use>\n  </g>\n  <g *ngIf=\"layer.shading && layer.shading >= 0\">\n    <use *ngIf=\"part.layers.base\" xlink:href=\"#{{part.layers.base}}\" fill=\"url(#shading_{{layer.shading>=10?'':'0'}}{{layer.shading}})\"></use>\n    <use *ngIf=\"part.layers.detail\" xlink:href=\"#{{part.layers.detail}}\" fill=\"url(#shading_{{layer.shading>=10?'':'0'}}{{layer.shading}})\"></use>\n  </g>\n  <use *ngIf=\"part.layers.outline\" xlink:href=\"#{{part.layers.outline}}\" stroke=\"{{layer.outline || 'black'}}\"></use>\n  <use *ngIf=\"part.layers.shadow\" xlink:href=\"#{{part.layers.shadow}}\"></use>\n</g>\n"
+
+/***/ }),
+
+/***/ "./src/app/outfitter/display-layer/display-layer.component.scss":
+/*!**********************************************************************!*\
+  !*** ./src/app/outfitter/display-layer/display-layer.component.scss ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9kaXNwbGF5LWxheWVyL2Rpc3BsYXktbGF5ZXIuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/outfitter/display-layer/display-layer.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/outfitter/display-layer/display-layer.component.ts ***!
+  \********************************************************************/
+/*! exports provided: DisplayLayerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DisplayLayerComponent", function() { return DisplayLayerComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _schematic_layer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../schematic-layer */ "./src/app/outfitter/schematic-layer.ts");
+/* harmony import */ var _dataset_meta_part__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dataset-meta-part */ "./src/app/outfitter/dataset-meta-part.ts");
+
+
+
+
+var DisplayLayerComponent = /** @class */ (function () {
+    function DisplayLayerComponent() {
+    }
+    DisplayLayerComponent.prototype.ngOnInit = function () {
+    };
+    DisplayLayerComponent.prototype.matrix = function () {
+        return "matrix(" + [(this.layer.flip ? -1 : 1) * this.layer.resize.x, 0.0, 0.0, this.layer.resize.y, this.layer.move.x, this.layer.move.y].join(" ") + ")";
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _schematic_layer__WEBPACK_IMPORTED_MODULE_2__["SchematicLayer"])
+    ], DisplayLayerComponent.prototype, "layer", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _dataset_meta_part__WEBPACK_IMPORTED_MODULE_3__["DatasetMetaPart"])
+    ], DisplayLayerComponent.prototype, "part", void 0);
+    DisplayLayerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'display-layer',
+            template: __webpack_require__(/*! ./display-layer.component.html */ "./src/app/outfitter/display-layer/display-layer.component.html"),
+            styles: [__webpack_require__(/*! ./display-layer.component.scss */ "./src/app/outfitter/display-layer/display-layer.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], DisplayLayerComponent);
+    return DisplayLayerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter-display/outfitter-display.component.html":
+/*!******************************************************************************!*\
+  !*** ./src/app/outfitter/outfitter-display/outfitter-display.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"{{dim()}}\">\n  <ng-container *ngIf=\"schematic.bgColor\">\n    <rect x=\"{{minX}}\" y=\"{{minY}}\" width=\"{{width}}\" height=\"{{height}}\" fill=\"{{schematic.bgColor}}\" stroke=\"none\"></rect>\n  </ng-container>\n  <ng-container *ngIf=\"schematic.bgPattern\">\n    <rect x=\"{{minX}}\" y=\"{{minY}}\" width=\"{{width}}\" height=\"{{height}}\" fill=\"url(#pattern_{{schematic.bgPattern>=10?'':'0'}}{{schematic.bgPattern}})\" stroke=\"none\"></rect>\n  </ng-container>\n  <g transform=\"{{bodyMatrix()}}\">\n    <ng-container *ngFor=\"let layer of schematic.layers\">\n      <display-layer [layer]=\"layer\" [part]=\"meta.parts[layer.part][layer.index]\"></display-layer>\n    </ng-container>\n  </g>\n</svg>\n"
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter-display/outfitter-display.component.scss":
+/*!******************************************************************************!*\
+  !*** ./src/app/outfitter/outfitter-display/outfitter-display.component.scss ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9vdXRmaXR0ZXItZGlzcGxheS9vdXRmaXR0ZXItZGlzcGxheS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/outfitter/outfitter-display/outfitter-display.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/outfitter/outfitter-display/outfitter-display.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: OutfitterDisplayComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutfitterDisplayComponent", function() { return OutfitterDisplayComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _schematic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../schematic */ "./src/app/outfitter/schematic.ts");
+/* harmony import */ var _dataset_meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dataset-meta */ "./src/app/outfitter/dataset-meta.ts");
+/* harmony import */ var _xy__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../xy */ "./src/app/outfitter/xy.ts");
+/* harmony import */ var _scales__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scales */ "./src/app/outfitter/scales.ts");
+
+
+
+
+
+
+var OutfitterDisplayComponent = /** @class */ (function () {
+    function OutfitterDisplayComponent() {
+    }
+    OutfitterDisplayComponent.prototype.ngOnInit = function () {
+    };
+    OutfitterDisplayComponent.prototype.bodyScaleXY = function () {
+        return new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"](_scales__WEBPACK_IMPORTED_MODULE_5__["SCALES"][this.schematic.bodyScale] || [1.0, 1.0]);
+    };
+    OutfitterDisplayComponent.prototype.dim = function () {
+        var _this = this;
+        var min = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([0, 0]);
+        var max = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([0, 0]);
+        this.schematic.layers.forEach(function (layer) {
+            var part = _this.meta.parts[layer.part][layer.index];
+            var flip = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([(layer.flip ? -1.0 : 1.0), 1.0]);
+            min = min.min(part.min.times(layer.resize.times(flip)).plus(layer.move));
+            max = max.max(part.max.times(layer.resize.times(flip)).plus(layer.move));
+        });
+        var resize = this.bodyScaleXY();
+        min = min.times(resize);
+        max = max.times(resize);
+        var halfWidth = Math.max(Math.abs(max.x), Math.abs(min.x));
+        min = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([-halfWidth, min.y]);
+        max = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([halfWidth, max.y]);
+        var padding = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([10, 10]);
+        min = min.minus(padding);
+        max = max.plus(padding);
+        this.minX = min.x;
+        this.minY = min.y;
+        this.width = max.x - min.x;
+        this.height = max.y - min.y;
+        return [this.minX, this.minY, this.width, this.height].join(" ");
+    };
+    OutfitterDisplayComponent.prototype.bodyMatrix = function () {
+        var resize = this.bodyScaleXY();
+        return [resize.x, 0.0, 0.0, resize.y, 0.0, 0.0];
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _schematic__WEBPACK_IMPORTED_MODULE_2__["Schematic"])
+    ], OutfitterDisplayComponent.prototype, "schematic", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _dataset_meta__WEBPACK_IMPORTED_MODULE_3__["DatasetMeta"])
+    ], OutfitterDisplayComponent.prototype, "meta", void 0);
+    OutfitterDisplayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'outfitter-display',
+            template: __webpack_require__(/*! ./outfitter-display.component.html */ "./src/app/outfitter/outfitter-display/outfitter-display.component.html"),
+            styles: [__webpack_require__(/*! ./outfitter-display.component.scss */ "./src/app/outfitter/outfitter-display/outfitter-display.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], OutfitterDisplayComponent);
+    return OutfitterDisplayComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/outfitter/outfitter.component.html":
 /*!****************************************************!*\
   !*** ./src/app/outfitter/outfitter.component.html ***!
@@ -1899,7 +2126,7 @@ var MOCK_RESPONSES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Select your file</span>\r\n      <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span>{{defs}}</span>\r\n\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Select your file</span>\r\n      <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span>{{defs}}</span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <div class=\"d-flex flex-column\">\r\n        <div>\r\n          <h3>{{schematic.bodyType}}</h3>\r\n        </div>\r\n        <div>\r\n          <div class=\"nes-select\">\r\n            <select required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n              <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n              <option value=\"\">Default</option>\r\n              <option value=\"lanky\">Lanky</option>\r\n              <option value=\"thin\">Thin</option>\r\n              <option value=\"stocky\">Stocky</option>\r\n              <option value=\"petite\">Petite</option>\r\n            </select>\r\n          </div>\r\n        </div>\r\n        <div>\r\n          <div class=\"nes-field is-inline\">\r\n            <label>Background Color</label>\r\n            <color-picker [initValue]=\"schematicForm.value.bgColor\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n          </div>\r\n        </div>\r\n        <div>\r\n          <div class=\"nes-field is-inline\">\r\n            <label for=\"bgPattern\">Background Pattern</label>\r\n            <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setBGPattern()\">\r\n          </div>\r\n        </div>\r\n        <div>\r\n          <div class=\"nes-select\">\r\n            <select required id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n              <option value=\"\" disabled selected hidden>Select Layer</option>\r\n              <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n              </ng-container>\r\n            </select>\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\">\r\n          <div>\r\n            <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n          </div>\r\n          <div>\r\n            <button *ngIf=\"schematicForm.value.selectedLayer\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <div>\r\n            <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><fa-icon [icon]=\"icons['rewind']\"></fa-icon></button>\r\n          </div>\r\n          <div>\r\n            <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><fa-icon [icon]=\"icons['back']\"></fa-icon></button>\r\n          </div>\r\n          <div>\r\n            <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><fa-icon [icon]=\"icons['play']\"></fa-icon></button>\r\n          </div>\r\n          <div>\r\n            <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><fa-icon [icon]=\"icons['fastForward']\"></fa-icon></button>\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <select required id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n            <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n            <ng-container ></ng-container>\r\n          </select>\r\n          <div class=\"nes-field\">\r\n            <label for=\"partIndex\">Part Index</label>\r\n            <input type=\"number\" min=\"0\" [max]=\"maxPartIndex\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <div class=\"nes-field\">\r\n            <label>Base Color</label>\r\n            <color-picker [initValue]=\"schematicForm.value.base\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label>Detail Color</label>\r\n            <color-picker [initValue]=\"schematicForm.value.detail\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label>Outline Color</label>\r\n            <color-picker [initValue]=\"schematicForm.value.outline\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <div class=\"nes-field\">\r\n            <label for=\"opacity\">Opacity</label>\r\n            <input type=\"number\" min=\"0\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"pattern\">Pattern</label>\r\n            <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setPattern()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"shading\">Shading</label>\r\n            <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" [max]=\"meta.shadingCount\" (change)=\"setShading()\">\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <div>Move</div>\r\n          <div class=\"nes-field is-inline\">\r\n            <label for=\"resize_x\">X</label>\r\n            <input type=\"number\" id=\"resize_x\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n          </div>\r\n          <div class=\"nes-field is-inline\">\r\n            <label for=\"resize_y\">Y</label>\r\n            <input type=\"number\" id=\"resize_y\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n          </div>\r\n        </div>\r\n        <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <div>Move</div>\r\n          <div class=\"nes-field is-inline\">\r\n            <label for=\"move_x\">X</label>\r\n            <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n          </div>\r\n          <div class=\"nes-field is-inline\">\r\n            <label for=\"move_y\">Y</label>\r\n            <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n          </div>\r\n        </div>\r\n        <div *ngIf=\"schematicForm.value.selectedLayer\" >\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"flip\" class=\"nes-checkbox\" (change)=\"setFlip()\"/>\r\n            <span>Flip?</span>\r\n          </label>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1910,7 +2137,7 @@ module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9vdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MifQ== */"
+module.exports = ".flipH {\n  color: #1c87c9;\n  transform: scale(-1, 1); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3V0Zml0dGVyL0M6XFxwcmFjdGljZVxcY29kZVxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcb3V0Zml0dGVyXFxvdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBS2QsdUJBQXVCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9vdXRmaXR0ZXIvb3V0Zml0dGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZsaXBIIHtcclxuICBjb2xvcjogIzFjODdjOTtcclxuICAtbW96LXRyYW5zZm9ybTogc2NhbGUoLTEsIDEpO1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLW8tdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLW1zLXRyYW5zZm9ybTogc2NhbGUoLTEsIDEpO1xyXG4gIHRyYW5zZm9ybTogc2NhbGUoLTEsIDEpO1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -1928,14 +2155,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _outfitter_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./outfitter.service */ "./src/app/outfitter/outfitter.service.ts");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _schematic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./schematic */ "./src/app/outfitter/schematic.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! util */ "./node_modules/util/util.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _schematic_layer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./schematic-layer */ "./src/app/outfitter/schematic-layer.ts");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+
+
+
+
+
 
 
 
 
 var OutfitterComponent = /** @class */ (function () {
-    function OutfitterComponent(os, sanitizer) {
+    function OutfitterComponent(os, sanitizer, fb) {
         this.os = os;
         this.sanitizer = sanitizer;
+        this.fb = fb;
+        this.icons = {
+            rewind: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faFastBackward"],
+            back: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faStepBackward"],
+            play: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faStepForward"],
+            fastForward: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faFastForward"]
+        };
+        this.schematicForm = this.fb.group({
+            bgColor: [''],
+            bgPattern: [-1],
+            bodyScale: [''],
+            selectedLayer: [0],
+            partType: [''],
+            partIndex: [0],
+            base: [''],
+            detail: [''],
+            outline: [''],
+            opacity: [1],
+            pattern: [-1],
+            shading: [-1],
+            resize_x: [1],
+            resize_y: [1],
+            move_x: [0],
+            move_y: [0],
+            flip: [false]
+        });
         this.step = 0;
         this.maxStep = 5;
         this.ellipse = "";
@@ -1976,7 +2240,151 @@ var OutfitterComponent = /** @class */ (function () {
             reader_1.readAsText(file);
         }
     };
-    OutfitterComponent.prototype.loadBodyType = function (fit) {
+    OutfitterComponent.prototype.loadBodyType = function (bodyType) {
+        var _this = this;
+        this.os.getDatasetDefs(bodyType).subscribe(function (defs) { return _this.defs = defs; });
+        this.os.getDatasetMeta(bodyType).subscribe(function (meta) { return _this.meta = meta; });
+        this.schematic = new _schematic__WEBPACK_IMPORTED_MODULE_4__["Schematic"](bodyType);
+        this.schematic.bodyType = bodyType;
+        this.schematic.layers = [];
+    };
+    OutfitterComponent.prototype.setBodyScale = function () {
+        this.schematic.bodyScale = this.schematicForm.value.bodyScale;
+    };
+    OutfitterComponent.prototype.setBackgroundColor = function (selectedColor) {
+        this.schematic.bgColor = selectedColor;
+    };
+    OutfitterComponent.prototype.setBGPattern = function () {
+        this.schematic.bgPattern = this.schematicForm.value.bgPattern;
+    };
+    OutfitterComponent.prototype.loadSelectedLayer = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematicForm.patchValue(this.schematic.layers[selectedIndex].formValue());
+        }
+    };
+    OutfitterComponent.prototype.addLayer = function () {
+        this.schematic.layers.push(new _schematic_layer__WEBPACK_IMPORTED_MODULE_7__["SchematicLayer"]());
+        this.schematicForm.patchValue({ selectedLayer: this.schematic.layers.length - 1 });
+        this.maxPartIndex = 0;
+    };
+    OutfitterComponent.prototype.removeCurrentLayer = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers.splice(selectedIndex, 1);
+        }
+    };
+    OutfitterComponent.prototype.moveToBack = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
+            this.swapLayers(0, selectedIndex);
+        }
+    };
+    OutfitterComponent.prototype.moveBack = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
+            this.swapLayers(selectedIndex - 1, selectedIndex);
+        }
+    };
+    OutfitterComponent.prototype.moveForward = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length - 1) {
+            this.swapLayers(selectedIndex, selectedIndex + 1);
+        }
+    };
+    OutfitterComponent.prototype.moveToFront = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length - 1) {
+            this.swapLayers(selectedIndex, this.schematic.layers.length - 1);
+        }
+    };
+    OutfitterComponent.prototype.swapLayers = function (a, b) {
+        var temp = this.schematic.layers[a];
+        this.schematic.layers[a] = this.schematic.layers[b];
+        this.schematic.layers[b] = temp;
+    };
+    OutfitterComponent.prototype.setPartType = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            var partType = this.schematicForm.value.partType;
+            this.schematic.layers[selectedIndex].part = partType;
+            this.maxPartIndex = this.meta.parts[partType].length;
+        }
+    };
+    OutfitterComponent.prototype.setPartIndex = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].index = this.schematicForm.value.partIndex;
+        }
+    };
+    OutfitterComponent.prototype.setBaseColor = function (color) {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematicForm.patchValue({ base: color });
+            this.schematic.layers[selectedIndex].base = color;
+        }
+    };
+    OutfitterComponent.prototype.setDetailColor = function (color) {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematicForm.patchValue({ detail: color });
+            this.schematic.layers[selectedIndex].detail = color;
+        }
+    };
+    OutfitterComponent.prototype.setOutlineColor = function (color) {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematicForm.patchValue({ outline: color });
+            this.schematic.layers[selectedIndex].outline = color;
+        }
+    };
+    OutfitterComponent.prototype.setOpacity = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].opacity = this.schematicForm.value.opacity;
+        }
+    };
+    OutfitterComponent.prototype.setPattern = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].pattern = this.schematicForm.value.pattern;
+        }
+    };
+    OutfitterComponent.prototype.setShading = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].shading = this.schematicForm.value.shading;
+        }
+    };
+    OutfitterComponent.prototype.setResizeX = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].resize.x = this.schematicForm.value.resize_x;
+        }
+    };
+    OutfitterComponent.prototype.setResizeY = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].resize.y = this.schematicForm.value.resize_y;
+        }
+    };
+    OutfitterComponent.prototype.setMoveX = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].move.x = this.schematicForm.value.move_x;
+        }
+    };
+    OutfitterComponent.prototype.setMoveY = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].move.y = this.schematicForm.value.move_y;
+        }
+    };
+    OutfitterComponent.prototype.setFlip = function () {
+        var selectedIndex = this.schematicForm.value.selectedLayer;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_6__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[selectedIndex].flip = this.schematicForm.value.flip;
+        }
     };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1984,7 +2392,7 @@ var OutfitterComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./outfitter.component.html */ "./src/app/outfitter/outfitter.component.html"),
             styles: [__webpack_require__(/*! ./outfitter.component.scss */ "./src/app/outfitter/outfitter.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_outfitter_service__WEBPACK_IMPORTED_MODULE_2__["OutfitterService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_outfitter_service__WEBPACK_IMPORTED_MODULE_2__["OutfitterService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"]])
     ], OutfitterComponent);
     return OutfitterComponent;
 }());
@@ -2029,6 +2437,129 @@ var OutfitterService = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], OutfitterService);
     return OutfitterService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/scales.ts":
+/*!*************************************!*\
+  !*** ./src/app/outfitter/scales.ts ***!
+  \*************************************/
+/*! exports provided: SCALES */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SCALES", function() { return SCALES; });
+var SCALES = {
+    "lanky": [0.85, 1.15],
+    "thin": [0.85, 1.0],
+    "stocky": [0.85, 0.75],
+    "petite": [0.7, 0.7]
+};
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/schematic-layer.ts":
+/*!**********************************************!*\
+  !*** ./src/app/outfitter/schematic-layer.ts ***!
+  \**********************************************/
+/*! exports provided: SchematicLayer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SchematicLayer", function() { return SchematicLayer; });
+var SchematicLayer = /** @class */ (function () {
+    function SchematicLayer() {
+        this.part = 'arm';
+        this.index = 0;
+        this.shading = 1;
+    }
+    SchematicLayer.prototype.formValue = function () {
+        return {
+            partType: this.part,
+            partIndex: this.index,
+            base: this.base,
+            detail: this.detail,
+            outline: this.outline,
+            opacity: this.opacity,
+            pattern: this.pattern,
+            shading: this.shading,
+            resize_x: this.resize.x,
+            resize_y: this.resize.y,
+            move_x: this.move.x,
+            move_y: this.move.y,
+            flip: this.flip
+        };
+    };
+    return SchematicLayer;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/schematic.ts":
+/*!****************************************!*\
+  !*** ./src/app/outfitter/schematic.ts ***!
+  \****************************************/
+/*! exports provided: Schematic */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Schematic", function() { return Schematic; });
+var Schematic = /** @class */ (function () {
+    function Schematic(bodyType) {
+        this.bodyType = bodyType;
+        this.layers = [];
+    }
+    return Schematic;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/xy.ts":
+/*!*********************************!*\
+  !*** ./src/app/outfitter/xy.ts ***!
+  \*********************************/
+/*! exports provided: XY */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XY", function() { return XY; });
+var XY = /** @class */ (function () {
+    function XY(_a) {
+        var x = _a[0], y = _a[1];
+        this.x = x;
+        this.y = y;
+    }
+    XY.prototype.toJSON = function () {
+        return [this.x, this.y];
+    };
+    XY.prototype.plus = function (p) {
+        return new XY([this.x + p.x, this.y + p.y]);
+    };
+    XY.prototype.minus = function (p) {
+        return new XY([this.x - p.x, this.y - p.y]);
+    };
+    XY.prototype.times = function (p) {
+        return new XY([this.x * p.x, this.y * p.y]);
+    };
+    XY.prototype.min = function (p) {
+        return new XY([this.x - p.x, this.y - p.y]);
+    };
+    XY.prototype.max = function (p) {
+        return new XY([this.x - p.x, this.y - p.y]);
+    };
+    return XY;
 }());
 
 
@@ -2626,6 +3157,346 @@ var AccordianComponent = /** @class */ (function () {
     return AccordianComponent;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/util/color-picker/color-picker.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/util/color-picker/color-picker.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button type=\"button\" class=\"nes-btn is-success\" style=\"padding: 0; margin: 0; {{selectedValue?('background-color: ' + selectedValue + '; color: ' + selectedValue):''}}\" (click)=\"open()\">_</button>\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\n  <form [formGroup]=\"colorForm\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <ng-container *ngIf=\"selectedValue\">\n          <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 100 10\">\n            <rect x=\"0\" y=\"0\" width=\"100\" height=\"10\" fill=\"{{selectedValue}}\" stroke=\"black\" stroke-width=\"1\"/>\n          </svg>\n        </ng-container>\n      </div>\n    </div>\n    <br>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"d-flex flex-column\">\n          <div class=\"nes-field\">\n            <label for=\"colorValue\">Color Value</label>\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\n          </div>\n          <hr>\n          <div>\n            <label for=\"colorByName\">Color by Name</label>\n            <div class=\"nes-select\">\n              <select required id=\"colorByName\" formControlName=\"name\" (change)=\"setNamed()\">\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\n                <option *ngFor=\"let pair of colors | keyvalue\"\n                        [style]=\"'background-color: ' + pair.key + '; color: ' + getForegroundColor(pair.value.toString()) + ';'\"\n                        [value]=\"pair.key\">{{pair.key}}</option>\n              </select>\n            </div>\n          </div>\n          <hr>\n          <div class=\"nes-field\">\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n        </div>\n      </div>\n      <div class=\"col\">\n        <table style=\"padding: 0; margin: 0;\">\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\n              <button [style]=\"'background-color: ' + hexFromXY(x,y) + '; color: ' + hexFromXY(x,y) + ';'\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\n            </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n  </form>\n  <menu class=\"dialog-menu text-right\">\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\n  </menu>\n</dialog>\n"
+
+/***/ }),
+
+/***/ "./src/app/util/color-picker/color-picker.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/util/color-picker/color-picker.component.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3V0aWwvY29sb3ItcGlja2VyL2NvbG9yLXBpY2tlci5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/util/color-picker/color-picker.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/util/color-picker/color-picker.component.ts ***!
+  \*************************************************************/
+/*! exports provided: ColorPickerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ColorPickerComponent", function() { return ColorPickerComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../colors */ "./src/app/util/colors.ts");
+
+
+
+
+var ColorPickerComponent = /** @class */ (function () {
+    function ColorPickerComponent(fb) {
+        var _this = this;
+        this.fb = fb;
+        this.retVal = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.colors = _colors__WEBPACK_IMPORTED_MODULE_3__["COLORS"];
+        this.colorForm = this.fb.group({
+            value: [''],
+            name: [''],
+            red: [127],
+            green: [127],
+            blue: [127]
+        });
+        this.invertedColors = {};
+        Object.keys(this.colors).forEach(function (key) {
+            _this.invertedColors[_this.colors[key]] = key;
+        });
+    }
+    ColorPickerComponent.prototype.ngOnInit = function () {
+        this.dialog = this.dialogRef.nativeElement;
+        this.applyColor(this.initValue);
+    };
+    ColorPickerComponent.prototype.range = function (n) {
+        return "?".repeat(n).split('').map(function (c, i) { return i; });
+    };
+    ColorPickerComponent.prototype.hexFromRGB = function (r, g, b) {
+        return '#' + [r, g, b].map(function (c) {
+            var h = Number(c).toString(16);
+            if (h.length === 1) {
+                h = '0' + h;
+            }
+            return h;
+        }).join('');
+    };
+    ColorPickerComponent.prototype.rgbFromHex = function (hex) {
+        var rgb = [1, 3, 5].map(function (i) { return parseInt(hex.substr(i, 2), 16); });
+        return {
+            red: rgb[0],
+            green: rgb[1],
+            blue: rgb[2]
+        };
+    };
+    ColorPickerComponent.prototype.hexFromXY = function (x, y) {
+        var r = ((3 * Math.floor(y / 6)) + Math.floor(x / 6)) * 3;
+        var g = (x % 6) * 3;
+        var b = (y % 6) * 3;
+        return this.hexFromRGB(r, g, b);
+    };
+    ColorPickerComponent.prototype.getColorType = function (color) {
+        if (this.colors[color]) {
+            return "name";
+        }
+        if (/[#]([0-9a-f]{6})/i.exec(color)[0] == color) {
+            return "hex";
+        }
+        return;
+    };
+    ColorPickerComponent.prototype.applyName = function (name) {
+        var hex = this.colors[name];
+        var rgb = this.rgbFromHex(hex);
+        this.colorForm.patchValue({ name: name, value: name });
+        this.colorForm.patchValue(rgb);
+        this.selectedValue = name;
+    };
+    ColorPickerComponent.prototype.applyHex = function (hex) {
+        var rgb = this.rgbFromHex(hex);
+        var name = this.invertedColors[hex];
+        this.colorForm.patchValue({ name: name, value: hex });
+        this.colorForm.patchValue(rgb);
+        this.selectedValue = hex;
+    };
+    ColorPickerComponent.prototype.applyColor = function (color) {
+        switch (this.getColorType(color)) {
+            case "name":
+                this.applyName(color);
+                break;
+            case "hex":
+                this.applyHex(color);
+                break;
+        }
+    };
+    ColorPickerComponent.prototype.setColor = function () {
+        this.applyColor(this.colorForm.value.value);
+    };
+    ColorPickerComponent.prototype.setNamed = function () {
+        this.applyName(this.colorForm.value.name);
+    };
+    ColorPickerComponent.prototype.setRGB = function (hex) {
+        this.applyHex(hex);
+    };
+    ColorPickerComponent.prototype.setColorFromRGB = function () {
+        var rgb = this.colorForm.value;
+        this.applyHex(this.hexFromRGB(rgb.red, rgb.green, rgb.blue));
+    };
+    ColorPickerComponent.prototype.open = function () {
+        this.dialog.showModal();
+    };
+    ColorPickerComponent.prototype.cancel = function () {
+        this.dialog.close();
+    };
+    ColorPickerComponent.prototype.confirm = function () {
+        this.retVal.emit(this.selectedValue);
+        this.dialog.close();
+    };
+    ColorPickerComponent.prototype.getForegroundColor = function (hex) {
+        var rgb = this.rgbFromHex(hex);
+        var luminosity = Math.sqrt(Math.pow(rgb["red"], 2) * 0.299 + Math.pow(rgb["green"], 2) * 0.587 + Math.pow(rgb["blue"], 2) * 0.114);
+        return luminosity > 186 ? "black" : "white";
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('myDialog'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])
+    ], ColorPickerComponent.prototype, "dialogRef", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], ColorPickerComponent.prototype, "initValue", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
+    ], ColorPickerComponent.prototype, "retVal", void 0);
+    ColorPickerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'color-picker',
+            template: __webpack_require__(/*! ./color-picker.component.html */ "./src/app/util/color-picker/color-picker.component.html"),
+            styles: [__webpack_require__(/*! ./color-picker.component.scss */ "./src/app/util/color-picker/color-picker.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
+    ], ColorPickerComponent);
+    return ColorPickerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/util/colors.ts":
+/*!********************************!*\
+  !*** ./src/app/util/colors.ts ***!
+  \********************************/
+/*! exports provided: COLORS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLORS", function() { return COLORS; });
+var COLORS = {
+    "aquamarine": "#7FFFD4",
+    "lime": "#00FF00",
+    "deepskyblue": "#00BFFF",
+    "darksalmon": "#E9967A",
+    "antiquewhite": "#FAEBD7",
+    "mediumturquoise": "#48D1CC",
+    "slategrey": "#708090",
+    "slategray": "#708090",
+    "sienna": "#A0522D",
+    "orange": "#FFA500",
+    "navajowhite": "#FFDEAD",
+    "lavenderblush": "#FFF0F5",
+    "firebrick": "#B22222",
+    "orangered": "#FF4500",
+    "palevioletred": "#DB7093",
+    "lawngreen": "#7CFC00",
+    "seashell": "#FFF5EE",
+    "lightpink": "#FFB6C1",
+    "darkolivegreen": "#556B2F",
+    "aliceblue": "#F0F8FF",
+    "gray": "#808080",
+    "lightsteelblue": "#B0C4DE",
+    "whitesmoke": "#F5F5F5",
+    "darkgoldenrod": "#B8860B",
+    "tan": "#D2B48C",
+    "bisque": "#FFE4C4",
+    "white": "#FFFFFF",
+    "lightgreen": "#90EE90",
+    "darkseagreen": "#8FBC8F",
+    "crimson": "#DC143C",
+    "darkslategray": "#2F4F4F",
+    "mistyrose": "#FFE4E1",
+    "chocolate": "#D2691E",
+    "yellow": "#FFFF00",
+    "cadetblue": "#5F9EA0",
+    "navy": "#000080",
+    "ghostwhite": "#F8F8FF",
+    "dimgrey": "#696969",
+    "rebeccapurple": "#663399",
+    "seagreen": "#2E8B57",
+    "green": "#008000",
+    "mediumseagreen": "#3CB371",
+    "indigo": "#4B0082",
+    "olivedrab": "#6B8E23",
+    "cyan": "#00FFFF",
+    "peachpuff": "#FFDAB9",
+    "limegreen": "#32CD32",
+    "mediumslateblue": "#7B68EE",
+    "violet": "#EE82EE",
+    "sandybrown": "#F4A460",
+    "yellowgreen": "#9ACD32",
+    "mediumspringgreen": "#00FA9A",
+    "steelblue": "#4682B4",
+    "rosybrown": "#BC8F8F",
+    "cornflowerblue": "#6495ED",
+    "ivory": "#FFFFF0",
+    "lightgoldenrodyellow": "#FAFAD2",
+    "salmon": "#FA8072",
+    "darkcyan": "#008B8B",
+    "peru": "#CD853F",
+    "cornsilk": "#FFF8DC",
+    "lightslategray": "#778899",
+    "blueviolet": "#8A2BE2",
+    "forestgreen": "#228B22",
+    "lightseagreen": "#20B2AA",
+    "gold": "#FFD700",
+    "gainsboro": "#DCDCDC",
+    "darkorchid": "#9932CC",
+    "burlywood": "#DEB887",
+    "lightskyblue": "#87CEFA",
+    "chartreuse": "#7FFF00",
+    "snow": "#FFFAFA",
+    "moccasin": "#FFE4B5",
+    "honeydew": "#F0FFF0",
+    "aqua": "#00FFFF",
+    "darkred": "#8B0000",
+    "mediumorchid": "#BA55D3",
+    "lightsalmon": "#FFA07A",
+    "saddlebrown": "#8B4513",
+    "wheat": "#F5DEB3",
+    "springgreen": "#00FF7F",
+    "lightslategrey": "#778899",
+    "darkblue": "#00008B",
+    "powderblue": "#B0E0E6",
+    "turquoise": "#40E0D0",
+    "blanchedalmond": "#FFEBCD",
+    "papayawhip": "#FFEFD5",
+    "slateblue": "#6A5ACD",
+    "lightblue": "#ADD8E6",
+    "skyblue": "#87CEEB",
+    "red": "#FF0000",
+    "lightyellow": "#FFFFE0",
+    "blue": "#0000FF",
+    "palegreen": "#98FB98",
+    "greenyellow": "#ADFF2F",
+    "khaki": "#F0E68C",
+    "maroon": "#800000",
+    "darkgrey": "#A9A9A9",
+    "midnightblue": "#191970",
+    "floralwhite": "#FFFAF0",
+    "deeppink": "#FF1493",
+    "paleturquoise": "#AFEEEE",
+    "darkkhaki": "#BDB76B",
+    "azure": "#F0FFFF",
+    "indianred": "#CD5C5C",
+    "darkviolet": "#9400D3",
+    "mediumpurple": "#9370DB",
+    "fuchsia": "#FF00FF",
+    "coral": "#FF7F50",
+    "mediumvioletred": "#C71585",
+    "lemonchiffon": "#FFFACD",
+    "mediumblue": "#0000CD",
+    "darkmagenta": "#8B008B",
+    "goldenrod": "#DAA520",
+    "darkorange": "#FF8C00",
+    "orchid": "#DA70D6",
+    "plum": "#DDA0DD",
+    "pink": "#FFC0CB",
+    "teal": "#008080",
+    "magenta": "#FF00FF",
+    "lightgrey": "#D3D3D3",
+    "purple": "#800080",
+    "dodgerblue": "#1E90FF",
+    "darkturquoise": "#00CED1",
+    "mintcream": "#F5FFFA",
+    "hotpink": "#FF69B4",
+    "thistle": "#D8BFD8",
+    "royalblue": "#4169E1",
+    "darkgreen": "#006400",
+    "darkslateblue": "#483D8B",
+    "silver": "#C0C0C0",
+    "darkgray": "#A9A9A9",
+    "grey": "#808080",
+    "oldlace": "#FDF5E6",
+    "mediumaquamarine": "#66CDAA",
+    "brown": "#A52A2A",
+    "lightgray": "#D3D3D3",
+    "olive": "#808000",
+    "lightcoral": "#F08080",
+    "tomato": "#FF6347",
+    "lightcyan": "#E0FFFF",
+    "linen": "#FAF0E6",
+    "darkslategrey": "#2F4F4F",
+    "lavender": "#E6E6FA",
+    "dimgray": "#696969",
+    "palegoldenrod": "#EEE8AA",
+    "beige": "#F5F5DC",
+    "black": "#000000"
+};
 
 
 /***/ }),

@@ -10,4 +10,24 @@ export class XY {
   toJSON() {
     return [this.x, this.y];
   }
+
+  plus(p: XY): XY {
+    return new XY([this.x+p.x,this.y+p.y]);
+  }
+
+  minus(p: XY): XY {
+    return new XY([this.x-p.x,this.y-p.y]);
+  }
+
+  times(p: XY): XY {
+    return new XY([this.x*p.x,this.y*p.y]);
+  }
+
+  min(p: XY): XY {
+    return new XY([this.x-p.x,this.y-p.y]);
+  }
+
+  max(p: XY): XY {
+    return new XY([this.x-p.x,this.y-p.y]);
+  }
 }

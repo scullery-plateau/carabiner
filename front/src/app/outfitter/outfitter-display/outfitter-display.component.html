@@ -3,9 +3,11 @@
     <rect x="{{minX}}" y="{{minY}}" width="{{width}}" height="{{height}}" fill="{{schematic.bgColor}}" stroke="none"></rect>
   </ng-container>
   <ng-container *ngIf="schematic.bgPattern">
-    <rect x="{{minX}}" y="{{minY}}" width="{{width}}" height="{{height}}" fill="url(#{{schematic.bgPattern}})" stroke="none"></rect>
+    <rect x="{{minX}}" y="{{minY}}" width="{{width}}" height="{{height}}" fill="url(#pattern_{{schematic.bgPattern>=10?'':'0'}}{{schematic.bgPattern}})" stroke="none"></rect>
   </ng-container>
-  <ng-container *ngFor="let layer of schematic.layers">
-    <display-layer [layer]="layer" [meta]="meta"></display-layer>
-  </ng-container>
+  <g transform="{{bodyMatrix()}}">
+    <ng-container *ngFor="let layer of schematic.layers">
+      <display-layer [layer]="layer" [part]="meta.parts[layer.part][layer.index]"></display-layer>
+    </ng-container>
+  </g>
 </svg>
