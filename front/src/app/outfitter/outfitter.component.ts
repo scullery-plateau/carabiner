@@ -6,7 +6,7 @@ import {Schematic} from "./schematic";
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {isNumber} from "util";
 import {SchematicLayer} from "./schematic-layer";
-import {faFastBackward, faFastForward, faPlay, faStepBackward, faStepForward} from "@fortawesome/free-solid-svg-icons";
+import {PART_TYPES} from "./part-types";
 
 @Component({
   selector: 'app-outfitter',
@@ -14,12 +14,6 @@ import {faFastBackward, faFastForward, faPlay, faStepBackward, faStepForward} fr
   styleUrls: ['./outfitter.component.scss']
 })
 export class OutfitterComponent implements OnInit {
-  icons: {} = {
-    rewind:faFastBackward,
-    back:faStepBackward,
-    play:faStepForward,
-    fastForward:faFastForward
-  };
 
   constructor(private os : OutfitterService, private sanitizer:DomSanitizer, private fb: FormBuilder) { }
 
@@ -27,7 +21,7 @@ export class OutfitterComponent implements OnInit {
     bgColor:[''],
     bgPattern:[-1],
     bodyScale:[''],
-    selectedLayer:[0],
+    selectedLayer:[-1],
     partType:[''],
     partIndex:[0],
     base:[''],
@@ -54,6 +48,7 @@ export class OutfitterComponent implements OnInit {
   meta: DatasetMeta;
   schematic: Schematic;
   maxPartIndex: number;
+  partTypes: string[] = PART_TYPES;
 
   ngOnInit() {
   }
@@ -96,8 +91,15 @@ export class OutfitterComponent implements OnInit {
   }
 
   loadBodyType(bodyType: string) {
-    this.os.getDatasetDefs(bodyType).subscribe((defs) => this.defs = defs);
-    this.os.getDatasetMeta(bodyType).subscribe((meta) => this.meta = meta);
+    this.os.getDatasetDefs(bodyType).subscribe((defs) => {
+      console.log("defs");
+      let start = defs.indexOf("<svg");
+      console.log(start);
+      this.defs = defs.substr(start);
+    });
+    this.os.getDatasetMeta(bodyType).subscribe((meta) => {
+      this.meta = new DatasetMeta(meta);
+    });
     this.schematic = new Schematic(bodyType);
     this.schematic.bodyType = bodyType;
     this.schematic.layers = [];
@@ -175,7 +177,7 @@ export class OutfitterComponent implements OnInit {
     if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
       let partType = this.schematicForm.value.partType;
       this.schematic.layers[selectedIndex].part = partType;
-      this.maxPartIndex = this.meta.parts[partType].length;
+      this.maxPartIndex = this.meta.parts.get(partType).length;
     }
   }
 

@@ -15,10 +15,10 @@ export class OutfitterService {
   }
 
   getDatasetDefs(bodyType: string): Observable<string> {
-    return this.client.get<string>("/outfitter/dataset/" + bodyType + ".svg");
+    return this.client.get("/outfitter/datasets/" + bodyType + ".svg",{responseType:"text"});
   }
 
   getDatasetMeta(bodyType: string): Observable<DatasetMeta> {
-    return this.client.get<DatasetMeta>("/outfitter/dataset/" + bodyType + ".json");
+    return this.client.get<DatasetMeta>("/outfitter/datasets/" + bodyType + ".json");
   }
 }

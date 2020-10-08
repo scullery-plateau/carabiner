@@ -78,7 +78,7 @@ export class ColorPickerComponent implements OnInit {
     if (this.colors[color]) {
       return "name";
     }
-    if (/[#]([0-9a-f]{6})/i.exec(color)[0] == color) {
+    if ((/[#]([0-9a-f]{6})/i.exec(color)||[])[0] == color) {
       return "hex";
     }
     return;
@@ -145,5 +145,9 @@ export class ColorPickerComponent implements OnInit {
     let rgb = this.rgbFromHex(hex);
     let luminosity = Math.sqrt(Math.pow(rgb["red"], 2) * 0.299 + Math.pow(rgb["green"], 2) * 0.587 + Math.pow(rgb["blue"], 2) * 0.114);
     return luminosity > 186 ? "black" : "white";
+  }
+
+  paintSelectedValue() {
+
   }
 }

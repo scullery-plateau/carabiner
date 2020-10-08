@@ -1,13 +1,13 @@
-<button type="button" class="nes-btn is-success" style="padding: 0; margin: 0; {{selectedValue?('background-color: ' + selectedValue + '; color: ' + selectedValue):''}}" (click)="open()">_</button>
+<button type="button" class="nes-btn is-success" [ngStyle]="{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}" (click)="open()">_</button>
 <dialog #myDialog id="myDialog" class="nes-dialog is-dark is-rounded">
   <form [formGroup]="colorForm">
     <div class="row">
       <div class="col">
-        <ng-container *ngIf="selectedValue">
+        <div *ngIf="selectedValue" [innerHTML]="paintSelectedValue() | safeHtml">
           <svg width="100%" height="100%" viewBox="0 0 100 10">
-            <rect x="0" y="0" width="100" height="10" fill="{{selectedValue}}" stroke="black" stroke-width="1"/>
+            <rect [attr.x]="0" [attr.y]="0" [attr.width]="100" [attr.height]="10" [attr.fill]="selectedValue" [attr.stroke]="'black'" [attr.stroke-width]="1"/>
           </svg>
-        </ng-container>
+        </div>
       </div>
     </div>
     <br>
@@ -25,7 +25,7 @@
               <select required id="colorByName" formControlName="name" (change)="setNamed()">
                 <option value="" disabled selected hidden>Select Color By Name</option>
                 <option *ngFor="let pair of colors | keyvalue"
-                        [style]="'background-color: ' + pair.key + '; color: ' + getForegroundColor(pair.value.toString()) + ';'"
+                        [ngStyle]="{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}"
                         [value]="pair.key">{{pair.key}}</option>
               </select>
             </div>
@@ -49,7 +49,7 @@
         <table style="padding: 0; margin: 0;">
           <tr *ngFor="let y of range(12)" style="padding: 0; margin: 0;">
             <td *ngFor="let x of range(18)" style="padding: 0; margin: 0;">
-              <button [style]="'background-color: ' + hexFromXY(x,y) + '; color: ' + hexFromXY(x,y) + ';'" (click)="setRGB(hexFromXY(x,y))">_</button>
+              <button [ngStyle]="{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}" (click)="setRGB(hexFromXY(x,y))">_</button>
             </td>
           </tr>
         </table>

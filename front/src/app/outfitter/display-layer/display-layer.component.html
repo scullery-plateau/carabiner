@@ -1,14 +1,14 @@
-<g transform="{{matrix()}}" opacity="{{layer.opacity || 1.0}}">
-  <use *ngIf="part.layers.base" xlink:href="#{{part.layers.base}}" fill="{{layer.base || 'white'}}"></use>
-  <use *ngIf="part.layers.detail" xlink:href="#{{part.layers.detail}}" fill="{{layer.detail || 'white'}}"></use>
-  <g *ngIf="layer.pattern && layer.pattern >= 0">
-    <use *ngIf="part.layers.base" xlink:href="#{{part.layers.base}}" fill="url(#pattern_{{layer.pattern>=10?'':'0'}}{{layer.pattern}})"></use>
-    <use *ngIf="part.layers.detail" xlink:href="#{{part.layers.detail}}" fill="url(#pattern_{{layer.pattern>=10?'':'0'}}{{layer.pattern}})"></use>
-  </g>
-  <g *ngIf="layer.shading && layer.shading >= 0">
-    <use *ngIf="part.layers.base" xlink:href="#{{part.layers.base}}" fill="url(#shading_{{layer.shading>=10?'':'0'}}{{layer.shading}})"></use>
-    <use *ngIf="part.layers.detail" xlink:href="#{{part.layers.detail}}" fill="url(#shading_{{layer.shading>=10?'':'0'}}{{layer.shading}})"></use>
-  </g>
-  <use *ngIf="part.layers.outline" xlink:href="#{{part.layers.outline}}" stroke="{{layer.outline || 'black'}}"></use>
-  <use *ngIf="part.layers.shadow" xlink:href="#{{part.layers.shadow}}"></use>
-</g>
+<svg:g [attr.transform]="matrix()" [attr.opacity]="layer.opacity || 1.0">
+  <svg:use *ngIf="part.layers.base" [attr.xlink:href]="'#'+part.layers.base" [attr.fill]="layer.base || 'white'"></svg:use>
+  <svg:use *ngIf="part.layers.detail" [attr.xlink:href]="'#'+part.layers.detail" [attr.fill]="layer.detail || 'white'"></svg:use>
+  <svg:g *ngIf="layer.pattern && layer.pattern >= 0">
+    <svg:use *ngIf="part.layers.base" [attr.xlink:href]="'#'+part.layers.base" [attr.fill]="'url(#pattern_' + (layer.pattern>=10?'':'0') + layer.pattern+')'"></svg:use>
+    <svg:use *ngIf="part.layers.detail" [attr.xlink:href]="'#'+part.layers.detail" [attr.fill]="'url(#pattern_' + (layer.pattern>=10?'':'0') + layer.pattern+')'"></svg:use>
+  </svg:g>
+  <svg:g *ngIf="layer.shading && layer.shading >= 0">
+    <svg:use *ngIf="part.layers.base" [attr.xlink:href]="'#'+part.layers.base" [attr.fill]="'url(#shading_' + (layer.shading>=10?'':'0') + layer.shading+')'"></svg:use>
+    <svg:use *ngIf="part.layers.detail" [attr.xlink:href]="'#'+part.layers.detail" [attr.fill]="'url(#shading_' + (layer.shading>=10?'':'0') + layer.shading+')'"></svg:use>
+  </svg:g>
+  <svg:use *ngIf="part.layers.outline" [attr.xlink:href]="'#'+part.layers.outline" [attr.stroke]="layer.outline || 'black'"></svg:use>
+  <svg:use *ngIf="part.layers.shadow" [attr.xlink:href]="'#'+part.layers.shadow"></svg:use>
+</svg:g>

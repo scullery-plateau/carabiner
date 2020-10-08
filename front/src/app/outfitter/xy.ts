@@ -24,10 +24,10 @@ export class XY {
   }
 
   min(p: XY): XY {
-    return new XY([this.x-p.x,this.y-p.y]);
+    return new XY([Math.min(this.x,p.x),Math.min(this.y,p.y)]);
   }
 
   max(p: XY): XY {
-    return new XY([this.x-p.x,this.y-p.y]);
+    return new XY([Math.max(this.x,p.x),Math.max(this.y,p.y)]);
   }
 }
