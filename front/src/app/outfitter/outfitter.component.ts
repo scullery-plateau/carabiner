@@ -47,8 +47,11 @@ export class OutfitterComponent implements OnInit {
 
   meta: DatasetMeta;
   schematic: Schematic;
+
   maxPartIndex: number;
   partTypes: string[] = PART_TYPES;
+
+  selectedIndex: number = -1;
 
   ngOnInit() {
   }
@@ -111,6 +114,7 @@ export class OutfitterComponent implements OnInit {
 
   setBackgroundColor(selectedColor: string) {
     this.schematic.bgColor = selectedColor;
+    this.schematicForm.patchValue({bgColor:selectedColor});
   }
 
   setBGPattern() {
@@ -118,9 +122,11 @@ export class OutfitterComponent implements OnInit {
   }
 
   loadSelectedLayer() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematicForm.patchValue(this.schematic.layers[selectedIndex].formValue());
+    this.selectedIndex = ((typeof this.schematicForm.value.selectedLayer) === "string")?parseInt(this.schematicForm.value.selectedLayer):(this.schematicForm.value.selectedLayer as number);
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematicForm.patchValue(this.schematic.layers[this.selectedIndex].formValue());
+      let partType = this.schematicForm.value.partType;
+      this.maxPartIndex = this.meta.parts.get(partType).length;
     }
   }
 
@@ -128,40 +134,53 @@ export class OutfitterComponent implements OnInit {
     this.schematic.layers.push(new SchematicLayer());
     this.schematicForm.patchValue({selectedLayer:this.schematic.layers.length - 1});
     this.maxPartIndex = 0;
+    this.loadSelectedLayer();
   }
 
   removeCurrentLayer() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers.splice(selectedIndex,1);
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers.splice(this.selectedIndex,1);
+      if (this.selectedIndex === this.schematic.layers.length) {
+        this.selectedIndex--;
+        this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
+      }
+      this.loadSelectedLayer();
     }
   }
 
   moveToBack() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
-      this.swapLayers(0,selectedIndex);
+    if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.swapLayers(0,this.selectedIndex);
+      this.selectedIndex = 0;
+      this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
+      this.loadSelectedLayer();
     }
   }
 
   moveBack() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
-      this.swapLayers(selectedIndex-1,selectedIndex);
+    if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.swapLayers(this.selectedIndex-1,this.selectedIndex);
+      this.selectedIndex--;
+      this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
+      this.loadSelectedLayer();
     }
   }
 
   moveForward() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length-1) {
-      this.swapLayers(selectedIndex,selectedIndex+1);
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length-1) {
+      this.swapLayers(this.selectedIndex,this.selectedIndex+1);
+      this.selectedIndex++;
+      this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
+      this.loadSelectedLayer();
     }
   }
 
   moveToFront() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length-1) {
-      this.swapLayers(selectedIndex,this.schematic.layers.length - 1);
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length-1) {
+      this.swapLayers(this.selectedIndex,this.schematic.layers.length - 1);
+      this.selectedIndex = this.schematic.layers.length - 1;
+      this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
+      this.loadSelectedLayer();
     }
   }
 
@@ -171,100 +190,88 @@ export class OutfitterComponent implements OnInit {
     this.schematic.layers[b] = temp;
   }
 
-
   setPartType() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
       let partType = this.schematicForm.value.partType;
-      this.schematic.layers[selectedIndex].part = partType;
+      this.schematic.layers[this.selectedIndex].part = partType;
       this.maxPartIndex = this.meta.parts.get(partType).length;
     }
   }
 
   setPartIndex() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].index = this.schematicForm.value.partIndex;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].index = this.schematicForm.value.partIndex;
     }
   }
 
   setBaseColor(color: string) {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
       this.schematicForm.patchValue({base:color});
-      this.schematic.layers[selectedIndex].base = color;
+      this.schematic.layers[this.selectedIndex].base = color;
     }
   }
 
   setDetailColor(color: string) {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
       this.schematicForm.patchValue({detail:color});
-      this.schematic.layers[selectedIndex].detail = color;
+      this.schematic.layers[this.selectedIndex].detail = color;
     }
   }
 
   setOutlineColor(color: string) {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
       this.schematicForm.patchValue({outline:color});
-      this.schematic.layers[selectedIndex].outline = color;
+      this.schematic.layers[this.selectedIndex].outline = color;
     }
   }
 
   setOpacity() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].opacity = this.schematicForm.value.opacity;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].opacity = this.schematicForm.value.opacity;
     }
   }
 
   setPattern() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].pattern = this.schematicForm.value.pattern;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].pattern = this.schematicForm.value.pattern;
     }
   }
 
   setShading() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].shading = this.schematicForm.value.shading;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].shading = this.schematicForm.value.shading;
     }
   }
 
   setResizeX() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].resize.x = this.schematicForm.value.resize_x;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].resize.x = this.schematicForm.value.resize_x;
     }
   }
 
   setResizeY() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].resize.y = this.schematicForm.value.resize_y;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].resize.y = this.schematicForm.value.resize_y;
     }
   }
 
   setMoveX() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].move.x = this.schematicForm.value.move_x;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].move.x = this.schematicForm.value.move_x;
     }
   }
 
   setMoveY() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].move.y = this.schematicForm.value.move_y;
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      this.schematic.layers[this.selectedIndex].move.y = this.schematicForm.value.move_y;
     }
   }
 
-  setFlip() {
-    let selectedIndex = this.schematicForm.value.selectedLayer;
-    if (isNumber(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[selectedIndex].flip = this.schematicForm.value.flip;
+  toggleFlip() {
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+      let flip = !this.schematicForm.value.flip;
+      this.schematicForm.patchValue({flip:flip});
+      this.schematic.layers[this.selectedIndex].flip = flip;
     }
   }
 }

@@ -6,7 +6,7 @@ import {MastermoldComponent} from "./mastermold/mastermold.component";
 import {OutfitterComponent} from "./outfitter/outfitter.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/spritely', pathMatch: 'full' },
+  { path: '', redirectTo: '/outfitter', pathMatch: 'full' },
   { path: 'cobblestone', component: CobblestoneComponent },
   { path: 'outfitter', component: OutfitterComponent },
   { path: 'mastermold', component: MastermoldComponent },

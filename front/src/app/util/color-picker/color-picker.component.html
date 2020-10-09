@@ -1,13 +1,9 @@
-<button type="button" class="nes-btn is-success" [ngStyle]="{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}" (click)="open()">_</button>
+<button type="button" class="nes-btn" [ngStyle]="{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}" (click)="open()">________</button>
 <dialog #myDialog id="myDialog" class="nes-dialog is-dark is-rounded">
   <form [formGroup]="colorForm">
     <div class="row">
       <div class="col">
-        <div *ngIf="selectedValue" [innerHTML]="paintSelectedValue() | safeHtml">
-          <svg width="100%" height="100%" viewBox="0 0 100 10">
-            <rect [attr.x]="0" [attr.y]="0" [attr.width]="100" [attr.height]="10" [attr.fill]="selectedValue" [attr.stroke]="'black'" [attr.stroke-width]="1"/>
-          </svg>
-        </div>
+        <div *ngIf="selectedValue" [innerHTML]="paintSelectedValue() | safeHtml"></div>
       </div>
     </div>
     <br>

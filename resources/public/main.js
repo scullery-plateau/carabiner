@@ -48,7 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', redirectTo: '/spritely', pathMatch: 'full' },
+    { path: '', redirectTo: '/outfitter', pathMatch: 'full' },
     { path: 'cobblestone', component: _cobblestone_cobblestone_component__WEBPACK_IMPORTED_MODULE_3__["CobblestoneComponent"] },
     { path: 'outfitter', component: _outfitter_outfitter_component__WEBPACK_IMPORTED_MODULE_6__["OutfitterComponent"] },
     { path: 'mastermold', component: _mastermold_mastermold_component__WEBPACK_IMPORTED_MODULE_5__["MastermoldComponent"] },
@@ -2200,7 +2200,7 @@ var OutfitterDisplayComponent = /** @class */ (function () {
         frame.push(_util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].group({
             transform: "matrix(" + bodyScale.x + ",0.0,0.0," + bodyScale.y + ",0.0,0.0)"
         }, contents));
-        return _util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].svg("100%", "100%", {
+        return _util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].svg("" + (1.5 * width), "" + (1.5 * height), {
             viewBox: [min.x, min.y, width, height].join(" ")
         }, frame);
     };
@@ -2234,7 +2234,7 @@ var OutfitterDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Select your file</span>\r\n      <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span [innerHTML]=\"defs | safeHtml\"></span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <form [formGroup]=\"schematicForm\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div>\r\n            <h3>{{schematic.bodyType}}</h3>\r\n          </div>\r\n          <div>\r\n            <div class=\"nes-select\">\r\n              <select required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n                <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n                <option value=\"\">Default</option>\r\n                <option value=\"lanky\">Lanky</option>\r\n                <option value=\"thin\">Thin</option>\r\n                <option value=\"stocky\">Stocky</option>\r\n                <option value=\"petite\">Petite</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label>Background Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.bgColor\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"bgPattern\">Background Pattern</label>\r\n              <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setBGPattern()\">\r\n            </div>\r\n          </div>\r\n          <div>\r\n            <div class=\"nes-select\">\r\n              <select required id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n                <option value=\"\" disabled selected hidden>Select Layer</option>\r\n                <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                  <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n                </ng-container>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div>\r\n              <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n            </div>\r\n            <div>\r\n              <button *ngIf=\"schematicForm.value.selectedLayer>=0\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer>=0\" >\r\n            <div>\r\n              <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><i class='fas fa-fast-backward'></i></button>\r\n            </div>\r\n            <div>\r\n              <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><i class='fas fa-step-backward'></i></button>\r\n            </div>\r\n            <div>\r\n              <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><i class='fas fa-step-forward'></i></button>\r\n            </div>\r\n            <div>\r\n              <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><i class='fas fa-fast-forward'></i></button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer>=0\" >\r\n            <select required id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n              <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n              <ng-container *ngFor=\"let partType of partTypes\">\r\n                <option [value]=\"partType\">{{partType}}</option>\r\n              </ng-container>\r\n            </select>\r\n            <div class=\"nes-field\">\r\n              <label for=\"partIndex\">Part Index</label>\r\n              <input type=\"number\" min=\"0\" [max]=\"maxPartIndex\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer>=0\" >\r\n            <div class=\"nes-field\">\r\n              <label>Base Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.base\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field\">\r\n              <label>Detail Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.detail\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field\">\r\n              <label>Outline Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.outline\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer>=0\" >\r\n            <div class=\"nes-field\">\r\n              <label for=\"opacity\">Opacity</label>\r\n              <input type=\"number\" min=\"0\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n            </div>\r\n            <div class=\"nes-field\">\r\n              <label for=\"pattern\">Pattern</label>\r\n              <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setPattern()\">\r\n            </div>\r\n            <div class=\"nes-field\">\r\n              <label for=\"shading\">Shading</label>\r\n              <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" [max]=\"meta.shadingCount\" (change)=\"setShading()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer>=0\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_x\">X</label>\r\n              <input type=\"number\" id=\"resize_x\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_y\">Y</label>\r\n              <input type=\"number\" id=\"resize_y\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"schematicForm.value.selectedLayer\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_x\">X</label>\r\n              <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_y\">Y</label>\r\n              <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n            </div>\r\n          </div>\r\n          <div *ngIf=\"schematicForm.value.selectedLayer>=0\" >\r\n            <label>\r\n              <input type=\"checkbox\" formControlName=\"flip\" class=\"nes-checkbox\" (change)=\"setFlip()\"/>\r\n              <span>Flip?</span>\r\n            </label>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Select your file</span>\r\n      <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span [innerHTML]=\"defs | safeHtml\"></span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <form [formGroup]=\"schematicForm\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div>\r\n            <h3>{{schematic.bodyType}}</h3>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n                <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n                <option value=\"\">Default</option>\r\n                <option value=\"lanky\">Lanky</option>\r\n                <option value=\"thin\">Thin</option>\r\n                <option value=\"stocky\">Stocky</option>\r\n                <option value=\"petite\">Petite</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label>Background Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.bgColor\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"bgPattern\">Background Pattern</label>\r\n              <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setBGPattern()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n                <option value=\"\" disabled selected hidden>Select Layer</option>\r\n                <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                  <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n                </ng-container>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button *ngIf=\"selectedIndex>=0\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><i class='fas fa-fast-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><i class='fas fa-step-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><i class='fas fa-step-forward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><i class='fas fa-fast-forward'></i></button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <select class=\"nes-input p-2\" id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n              <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n              <ng-container *ngFor=\"let partType of partTypes\">\r\n                <option [value]=\"partType\">{{partType}}</option>\r\n              </ng-container>\r\n            </select>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"partIndex\">Part Index</label>\r\n              <input type=\"number\" min=\"0\" [max]=\"maxPartIndex\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label>Base Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.base\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Detail Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.detail\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Outline Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.outline\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"opacity\">Opacity</label>\r\n              <input type=\"number\" min=\"0.00\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"pattern\">Pattern</label>\r\n              <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setPattern()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"shading\">Shading</label>\r\n              <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" [max]=\"meta.shadingCount\" (change)=\"setShading()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Resize</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_x\">X</label>\r\n              <input type=\"number\" id=\"resize_x\" step=\"0.01\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_y\">Y</label>\r\n              <input type=\"number\" id=\"resize_y\" step=\"0.01\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_x\">X</label>\r\n              <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_y\">Y</label>\r\n              <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n            </div>\r\n          </div>\r\n          <div *ngIf=\"selectedIndex>=0\" >\r\n            <button class=\"nes-btn {{schematicForm.value.flip?'flipH':''}}\" (click)=\"toggleFlip()\">Flip?</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2245,7 +2245,7 @@ module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".flipH {\n  color: #1c87c9;\n  transform: scale(-1, 1); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3V0Zml0dGVyL0M6XFxwcmFjdGljZVxcY29kZVxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcb3V0Zml0dGVyXFxvdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBS2QsdUJBQXVCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9vdXRmaXR0ZXIvb3V0Zml0dGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZsaXBIIHtcclxuICBjb2xvcjogIzFjODdjOTtcclxuICAtbW96LXRyYW5zZm9ybTogc2NhbGUoLTEsIDEpO1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLW8tdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLW1zLXRyYW5zZm9ybTogc2NhbGUoLTEsIDEpO1xyXG4gIHRyYW5zZm9ybTogc2NhbGUoLTEsIDEpO1xyXG59XHJcbiJdfQ== */"
+module.exports = ".flipH {\n  transform: scale(-1, 1); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3V0Zml0dGVyL0M6XFxwcmFjdGljZVxcY29kZVxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcb3V0Zml0dGVyXFxvdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFLRSx1QkFBdUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9vdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmxpcEgge1xyXG4gIC1tb3otdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKC0xLCAxKTtcclxuICAtby10cmFuc2Zvcm06IHNjYWxlKC0xLCAxKTtcclxuICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -2266,11 +2266,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dataset_meta__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dataset-meta */ "./src/app/outfitter/dataset-meta.ts");
 /* harmony import */ var _schematic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./schematic */ "./src/app/outfitter/schematic.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! util */ "./node_modules/util/util.js");
-/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _schematic_layer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./schematic-layer */ "./src/app/outfitter/schematic-layer.ts");
-/* harmony import */ var _part_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./part-types */ "./src/app/outfitter/part-types.ts");
-
+/* harmony import */ var _schematic_layer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./schematic-layer */ "./src/app/outfitter/schematic-layer.ts");
+/* harmony import */ var _part_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./part-types */ "./src/app/outfitter/part-types.ts");
 
 
 
@@ -2307,7 +2304,8 @@ var OutfitterComponent = /** @class */ (function () {
         this.step = 0;
         this.maxStep = 5;
         this.ellipse = "";
-        this.partTypes = _part_types__WEBPACK_IMPORTED_MODULE_9__["PART_TYPES"];
+        this.partTypes = _part_types__WEBPACK_IMPORTED_MODULE_8__["PART_TYPES"];
+        this.selectedIndex = -1;
     }
     OutfitterComponent.prototype.ngOnInit = function () {
     };
@@ -2365,49 +2363,65 @@ var OutfitterComponent = /** @class */ (function () {
     };
     OutfitterComponent.prototype.setBackgroundColor = function (selectedColor) {
         this.schematic.bgColor = selectedColor;
+        this.schematicForm.patchValue({ bgColor: selectedColor });
     };
     OutfitterComponent.prototype.setBGPattern = function () {
         this.schematic.bgPattern = this.schematicForm.value.bgPattern;
     };
     OutfitterComponent.prototype.loadSelectedLayer = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematicForm.patchValue(this.schematic.layers[selectedIndex].formValue());
+        this.selectedIndex = ((typeof this.schematicForm.value.selectedLayer) === "string") ? parseInt(this.schematicForm.value.selectedLayer) : this.schematicForm.value.selectedLayer;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematicForm.patchValue(this.schematic.layers[this.selectedIndex].formValue());
+            var partType = this.schematicForm.value.partType;
+            this.maxPartIndex = this.meta.parts.get(partType).length;
         }
     };
     OutfitterComponent.prototype.addLayer = function () {
-        this.schematic.layers.push(new _schematic_layer__WEBPACK_IMPORTED_MODULE_8__["SchematicLayer"]());
+        this.schematic.layers.push(new _schematic_layer__WEBPACK_IMPORTED_MODULE_7__["SchematicLayer"]());
         this.schematicForm.patchValue({ selectedLayer: this.schematic.layers.length - 1 });
         this.maxPartIndex = 0;
+        this.loadSelectedLayer();
     };
     OutfitterComponent.prototype.removeCurrentLayer = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers.splice(selectedIndex, 1);
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers.splice(this.selectedIndex, 1);
+            if (this.selectedIndex === this.schematic.layers.length) {
+                this.selectedIndex--;
+                this.schematicForm.patchValue({ selectedLayer: this.selectedIndex });
+            }
+            this.loadSelectedLayer();
         }
     };
     OutfitterComponent.prototype.moveToBack = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
-            this.swapLayers(0, selectedIndex);
+        if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.swapLayers(0, this.selectedIndex);
+            this.selectedIndex = 0;
+            this.schematicForm.patchValue({ selectedLayer: this.selectedIndex });
+            this.loadSelectedLayer();
         }
     };
     OutfitterComponent.prototype.moveBack = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex > 0 && selectedIndex < this.schematic.layers.length) {
-            this.swapLayers(selectedIndex - 1, selectedIndex);
+        if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.swapLayers(this.selectedIndex - 1, this.selectedIndex);
+            this.selectedIndex--;
+            this.schematicForm.patchValue({ selectedLayer: this.selectedIndex });
+            this.loadSelectedLayer();
         }
     };
     OutfitterComponent.prototype.moveForward = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length - 1) {
-            this.swapLayers(selectedIndex, selectedIndex + 1);
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length - 1) {
+            this.swapLayers(this.selectedIndex, this.selectedIndex + 1);
+            this.selectedIndex++;
+            this.schematicForm.patchValue({ selectedLayer: this.selectedIndex });
+            this.loadSelectedLayer();
         }
     };
     OutfitterComponent.prototype.moveToFront = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length - 1) {
-            this.swapLayers(selectedIndex, this.schematic.layers.length - 1);
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length - 1) {
+            this.swapLayers(this.selectedIndex, this.schematic.layers.length - 1);
+            this.selectedIndex = this.schematic.layers.length - 1;
+            this.schematicForm.patchValue({ selectedLayer: this.selectedIndex });
+            this.loadSelectedLayer();
         }
     };
     OutfitterComponent.prototype.swapLayers = function (a, b) {
@@ -2416,86 +2430,75 @@ var OutfitterComponent = /** @class */ (function () {
         this.schematic.layers[b] = temp;
     };
     OutfitterComponent.prototype.setPartType = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
             var partType = this.schematicForm.value.partType;
-            this.schematic.layers[selectedIndex].part = partType;
+            this.schematic.layers[this.selectedIndex].part = partType;
             this.maxPartIndex = this.meta.parts.get(partType).length;
         }
     };
     OutfitterComponent.prototype.setPartIndex = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].index = this.schematicForm.value.partIndex;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].index = this.schematicForm.value.partIndex;
         }
     };
     OutfitterComponent.prototype.setBaseColor = function (color) {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
             this.schematicForm.patchValue({ base: color });
-            this.schematic.layers[selectedIndex].base = color;
+            this.schematic.layers[this.selectedIndex].base = color;
         }
     };
     OutfitterComponent.prototype.setDetailColor = function (color) {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
             this.schematicForm.patchValue({ detail: color });
-            this.schematic.layers[selectedIndex].detail = color;
+            this.schematic.layers[this.selectedIndex].detail = color;
         }
     };
     OutfitterComponent.prototype.setOutlineColor = function (color) {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
             this.schematicForm.patchValue({ outline: color });
-            this.schematic.layers[selectedIndex].outline = color;
+            this.schematic.layers[this.selectedIndex].outline = color;
         }
     };
     OutfitterComponent.prototype.setOpacity = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].opacity = this.schematicForm.value.opacity;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].opacity = this.schematicForm.value.opacity;
         }
     };
     OutfitterComponent.prototype.setPattern = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].pattern = this.schematicForm.value.pattern;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].pattern = this.schematicForm.value.pattern;
         }
     };
     OutfitterComponent.prototype.setShading = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].shading = this.schematicForm.value.shading;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].shading = this.schematicForm.value.shading;
         }
     };
     OutfitterComponent.prototype.setResizeX = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].resize.x = this.schematicForm.value.resize_x;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].resize.x = this.schematicForm.value.resize_x;
         }
     };
     OutfitterComponent.prototype.setResizeY = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].resize.y = this.schematicForm.value.resize_y;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].resize.y = this.schematicForm.value.resize_y;
         }
     };
     OutfitterComponent.prototype.setMoveX = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].move.x = this.schematicForm.value.move_x;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].move.x = this.schematicForm.value.move_x;
         }
     };
     OutfitterComponent.prototype.setMoveY = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].move.y = this.schematicForm.value.move_y;
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            this.schematic.layers[this.selectedIndex].move.y = this.schematicForm.value.move_y;
         }
     };
-    OutfitterComponent.prototype.setFlip = function () {
-        var selectedIndex = this.schematicForm.value.selectedLayer;
-        if (Object(util__WEBPACK_IMPORTED_MODULE_7__["isNumber"])(selectedIndex) && selectedIndex >= 0 && selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[selectedIndex].flip = this.schematicForm.value.flip;
+    OutfitterComponent.prototype.toggleFlip = function () {
+        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+            var flip = !this.schematicForm.value.flip;
+            this.schematicForm.patchValue({ flip: flip });
+            this.schematic.layers[this.selectedIndex].flip = flip;
         }
     };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -3328,7 +3331,7 @@ var AccordianComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" class=\"nes-btn is-success\" [ngStyle]=\"{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}\" (click)=\"open()\">_</button>\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\n  <form [formGroup]=\"colorForm\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div *ngIf=\"selectedValue\" [innerHTML]=\"paintSelectedValue() | safeHtml\">\n          <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 100 10\">\n            <rect [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"100\" [attr.height]=\"10\" [attr.fill]=\"selectedValue\" [attr.stroke]=\"'black'\" [attr.stroke-width]=\"1\"/>\n          </svg>\n        </div>\n      </div>\n    </div>\n    <br>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"d-flex flex-column\">\n          <div class=\"nes-field\">\n            <label for=\"colorValue\">Color Value</label>\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\n          </div>\n          <hr>\n          <div>\n            <label for=\"colorByName\">Color by Name</label>\n            <div class=\"nes-select\">\n              <select required id=\"colorByName\" formControlName=\"name\" (change)=\"setNamed()\">\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\n                <option *ngFor=\"let pair of colors | keyvalue\"\n                        [ngStyle]=\"{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}\"\n                        [value]=\"pair.key\">{{pair.key}}</option>\n              </select>\n            </div>\n          </div>\n          <hr>\n          <div class=\"nes-field\">\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n        </div>\n      </div>\n      <div class=\"col\">\n        <table style=\"padding: 0; margin: 0;\">\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\n              <button [ngStyle]=\"{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\n            </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n  </form>\n  <menu class=\"dialog-menu text-right\">\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\n  </menu>\n</dialog>\n"
+module.exports = "<button type=\"button\" class=\"nes-btn\" [ngStyle]=\"{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}\" (click)=\"open()\">________</button>\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\n  <form [formGroup]=\"colorForm\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div *ngIf=\"selectedValue\" [innerHTML]=\"paintSelectedValue() | safeHtml\"></div>\n      </div>\n    </div>\n    <br>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"d-flex flex-column\">\n          <div class=\"nes-field\">\n            <label for=\"colorValue\">Color Value</label>\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\n          </div>\n          <hr>\n          <div>\n            <label for=\"colorByName\">Color by Name</label>\n            <div class=\"nes-select\">\n              <select required id=\"colorByName\" formControlName=\"name\" (change)=\"setNamed()\">\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\n                <option *ngFor=\"let pair of colors | keyvalue\"\n                        [ngStyle]=\"{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}\"\n                        [value]=\"pair.key\">{{pair.key}}</option>\n              </select>\n            </div>\n          </div>\n          <hr>\n          <div class=\"nes-field\">\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n        </div>\n      </div>\n      <div class=\"col\">\n        <table style=\"padding: 0; margin: 0;\">\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\n              <button [ngStyle]=\"{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\n            </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n  </form>\n  <menu class=\"dialog-menu text-right\">\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\n  </menu>\n</dialog>\n"
 
 /***/ }),
 
@@ -3357,6 +3360,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../colors */ "./src/app/util/colors.ts");
+/* harmony import */ var _svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../svg */ "./src/app/util/svg.ts");
+
 
 
 
@@ -3396,17 +3401,24 @@ var ColorPickerComponent = /** @class */ (function () {
         }).join('');
     };
     ColorPickerComponent.prototype.rgbFromHex = function (hex) {
-        var rgb = [1, 3, 5].map(function (i) { return parseInt(hex.substr(i, 2), 16); });
-        return {
-            red: rgb[0],
-            green: rgb[1],
-            blue: rgb[2]
-        };
+        if (hex) {
+            var rgb = [1, 3, 5].map(function (i) { return parseInt(hex.substr(i, 2), 16); });
+            return {
+                red: rgb[0],
+                green: rgb[1],
+                blue: rgb[2]
+            };
+        }
     };
     ColorPickerComponent.prototype.hexFromXY = function (x, y) {
-        var r = ((3 * Math.floor(y / 6)) + Math.floor(x / 6)) * 3;
-        var g = (x % 6) * 3;
-        var b = (y % 6) * 3;
+        var _a;
+        var r = ((3 * Math.floor(y / 6)) + Math.floor(x / 6));
+        var g = (x % 6);
+        var b = (y % 6);
+        _a = [r, g, b].map(function (c) {
+            c *= 3;
+            return c + (c * 16);
+        }), r = _a[0], g = _a[1], b = _a[2];
         return this.hexFromRGB(r, g, b);
     };
     ColorPickerComponent.prototype.getColorType = function (color) {
@@ -3426,11 +3438,13 @@ var ColorPickerComponent = /** @class */ (function () {
         this.selectedValue = name;
     };
     ColorPickerComponent.prototype.applyHex = function (hex) {
-        var rgb = this.rgbFromHex(hex);
-        var name = this.invertedColors[hex];
-        this.colorForm.patchValue({ name: name, value: hex });
-        this.colorForm.patchValue(rgb);
-        this.selectedValue = hex;
+        if (hex) {
+            var rgb = this.rgbFromHex(hex);
+            var name_1 = this.invertedColors[hex];
+            this.colorForm.patchValue({ name: name_1, value: hex });
+            this.colorForm.patchValue(rgb);
+            this.selectedValue = hex;
+        }
     };
     ColorPickerComponent.prototype.applyColor = function (color) {
         switch (this.getColorType(color)) {
@@ -3471,6 +3485,15 @@ var ColorPickerComponent = /** @class */ (function () {
         return luminosity > 186 ? "black" : "white";
     };
     ColorPickerComponent.prototype.paintSelectedValue = function () {
+        return _svg__WEBPACK_IMPORTED_MODULE_4__["SVG"].svg("100%", "100%", {
+            viewBox: "0 0 100 10"
+        }, [
+            _svg__WEBPACK_IMPORTED_MODULE_4__["SVG"].rect(0, 0, 100, 10, {
+                fill: this.selectedValue,
+                stroke: 'black',
+                "stroke-width": '1'
+            })
+        ]);
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('myDialog'),

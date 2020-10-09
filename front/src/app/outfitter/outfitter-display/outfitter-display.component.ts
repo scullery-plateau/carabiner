@@ -106,7 +106,7 @@ export class OutfitterDisplayComponent implements OnInit {
     frame.push(SVG.group({
       transform:`matrix(${bodyScale.x},0.0,0.0,${bodyScale.y},0.0,0.0)`
     },contents))
-    return SVG.svg("100%","100%",{
+    return SVG.svg("" + (1.5 * width),"" + (1.5 * height),{
       viewBox:[min.x,min.y,width,height].join(" ")
     },frame);
   }
