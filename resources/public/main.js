@@ -2172,7 +2172,9 @@ var OutfitterDisplayComponent = /** @class */ (function () {
                 transform: "matrix(" + flip.x + ",0.0,0.0," + flip.y + "," + layer.move.x + "," + layer.move.y + ")",
                 opacity: "" + (layer.opacity || 1.0)
             }, group);
-            var anchor = _util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].anchor("#", "selectOutfitterLayer($event,'selectedLayer'," + index + ")", [elem]);
+            var anchor = _util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].anchor("#", {
+                onclick: "selectOutfitterLayer(event,'selectedLayer'," + index + ")"
+            }, [elem]);
             contents.push(anchor);
         });
         var bodyScale = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"](_scales__WEBPACK_IMPORTED_MODULE_5__["SCALES"][schematic.bodyScale] || [1.0, 1.0]);
@@ -4773,8 +4775,8 @@ var SVG = /** @class */ (function () {
     SVG.group = function (style, contents) {
         return "<g " + SVG.attrs(style) + ">" + contents.join('\n') + "</g>";
     };
-    SVG.anchor = function (href, onclick, contents) {
-        return "<a href=\"" + href + "\" onclick=\"" + onclick + "\">" + contents.join('\n') + "</a>";
+    SVG.anchor = function (href, style, contents) {
+        return "<a href=\"" + href + "\" " + SVG.attrs(style) + ">" + contents.join('\n') + "</a>";
     };
     SVG.use = function (ref, style) {
         return "<use xlink:href=\"" + ref + "\" " + SVG.attrs(style) + "></use>";
