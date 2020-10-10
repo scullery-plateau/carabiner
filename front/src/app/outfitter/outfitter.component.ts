@@ -52,6 +52,7 @@ export class OutfitterComponent implements OnInit {
   partTypes: string[] = PART_TYPES;
 
   selectedIndex: number = -1;
+  selectedLayer: SchematicLayer;
 
   ngOnInit() {
   }
@@ -70,29 +71,6 @@ export class OutfitterComponent implements OnInit {
     return animateStep;
   }
 
-  loadSchematic(e) {
-    let files = Array.from(e.target.files);
-    if (files.length > 0) {
-      let file : File = <File>files[0];
-      this.fileName = file.name;
-      this.base64 = undefined;
-      let me = this;
-      let reader = new FileReader();
-      reader.onload = function() {
-        me.processing = setTimeout(me.stepAnimate(), 1000);
-        let data = reader.result.toString();
-        console.log(data);
-        me.os.loadSchematic(data).subscribe((base64) => {
-          me.base64 = base64;
-          clearTimeout(me.processing);
-          me.processing = undefined;
-          me.ellipse = "";
-        });
-      };
-      reader.readAsText(file);
-    }
-  }
-
   loadBodyType(bodyType: string) {
     this.os.getDatasetDefs(bodyType).subscribe((defs) => {
       console.log("defs");
@@ -103,9 +81,48 @@ export class OutfitterComponent implements OnInit {
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
       this.meta = new DatasetMeta(meta);
     });
+  }
+
+  loadNew(bodyType: string) {
+    this.loadBodyType(bodyType);
     this.schematic = new Schematic(bodyType);
     this.schematic.bodyType = bodyType;
     this.schematic.layers = [];
+  }
+
+  loadSchematic(e) {
+    let files = Array.from(e.target.files);
+    if (files.length > 0) {
+      let file : File = <File>files[0];
+      this.fileName = file.name;
+      this.base64 = undefined;
+      let me = this;
+      let reader = new FileReader();
+      reader.onload = function() {
+        let data:string = reader.result.toString();
+        me.schematic = Schematic.fromJSON(JSON.parse(data));
+        me.loadBodyType(me.schematic.bodyType);
+      };
+      reader.readAsText(file);
+    }
+  }
+
+  compileSchematic(e) {
+    let files = Array.from(e.target.files);
+    if (files.length > 0) {
+      let file : File = <File>files[0];
+      this.fileName = file.name;
+      this.base64 = undefined;
+      let me = this;
+      let reader = new FileReader();
+      reader.onload = function() {
+        let data = reader.result.toString();
+        me.os.loadSchematic(data).subscribe((base64) => {
+          me.base64 = base64;
+        });
+      };
+      reader.readAsText(file);
+    }
   }
 
   setBodyScale() {
@@ -124,10 +141,16 @@ export class OutfitterComponent implements OnInit {
   loadSelectedLayer() {
     this.selectedIndex = ((typeof this.schematicForm.value.selectedLayer) === "string")?parseInt(this.schematicForm.value.selectedLayer):(this.schematicForm.value.selectedLayer as number);
     if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematicForm.patchValue(this.schematic.layers[this.selectedIndex].formValue());
+      this.selectedLayer = this.schematic.layers[this.selectedIndex];
+      this.schematicForm.patchValue(this.selectedLayer.formValue());
       let partType = this.schematicForm.value.partType;
       this.maxPartIndex = this.meta.parts.get(partType).length;
     }
+  }
+
+  private clearSelectedLayer() {
+    this.selectedIndex = -1;
+    this.selectedLayer = undefined;
   }
 
   addLayer() {
@@ -144,7 +167,11 @@ export class OutfitterComponent implements OnInit {
         this.selectedIndex--;
         this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
       }
-      this.loadSelectedLayer();
+      if (this.schematic.layers.length > 0) {
+        this.loadSelectedLayer();
+      } else {
+        this.clearSelectedLayer();
+      }
     }
   }
 
@@ -191,87 +218,95 @@ export class OutfitterComponent implements OnInit {
   }
 
   setPartType() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+    if (this.selectedLayer) {
       let partType = this.schematicForm.value.partType;
-      this.schematic.layers[this.selectedIndex].part = partType;
+      this.selectedLayer.part = partType;
       this.maxPartIndex = this.meta.parts.get(partType).length;
     }
   }
 
   setPartIndex() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].index = this.schematicForm.value.partIndex;
+    if (this.selectedLayer) {
+      this.selectedLayer.index = this.schematicForm.value.partIndex;
     }
   }
 
   setBaseColor(color: string) {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+    if (this.selectedLayer) {
       this.schematicForm.patchValue({base:color});
-      this.schematic.layers[this.selectedIndex].base = color;
+      this.selectedLayer.base = color;
     }
   }
 
   setDetailColor(color: string) {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+    if (this.selectedLayer) {
       this.schematicForm.patchValue({detail:color});
-      this.schematic.layers[this.selectedIndex].detail = color;
+      this.selectedLayer.detail = color;
     }
   }
 
   setOutlineColor(color: string) {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+    if (this.selectedLayer) {
       this.schematicForm.patchValue({outline:color});
-      this.schematic.layers[this.selectedIndex].outline = color;
+      this.selectedLayer.outline = color;
     }
   }
 
   setOpacity() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].opacity = this.schematicForm.value.opacity;
+    if (this.selectedLayer) {
+      this.selectedLayer.opacity = this.schematicForm.value.opacity;
     }
   }
 
   setPattern() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].pattern = this.schematicForm.value.pattern;
+    if (this.selectedLayer) {
+      this.selectedLayer.pattern = this.schematicForm.value.pattern;
     }
   }
 
   setShading() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].shading = this.schematicForm.value.shading;
+    if (this.selectedLayer) {
+      this.selectedLayer.shading = this.schematicForm.value.shading;
     }
   }
 
   setResizeX() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].resize.x = this.schematicForm.value.resize_x;
+    if (this.selectedLayer) {
+      this.selectedLayer.resize.x = this.schematicForm.value.resize_x;
     }
   }
 
   setResizeY() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].resize.y = this.schematicForm.value.resize_y;
+    if (this.selectedLayer) {
+      this.selectedLayer.resize.y = this.schematicForm.value.resize_y;
     }
   }
 
   setMoveX() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].move.x = this.schematicForm.value.move_x;
+    if (this.selectedLayer) {
+      this.selectedLayer.move.x = this.schematicForm.value.move_x;
     }
   }
 
   setMoveY() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.schematic.layers[this.selectedIndex].move.y = this.schematicForm.value.move_y;
+    if (this.selectedLayer) {
+      this.selectedLayer.move.y = this.schematicForm.value.move_y;
     }
   }
 
   toggleFlip() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+    if (this.selectedLayer) {
       let flip = !this.schematicForm.value.flip;
       this.schematicForm.patchValue({flip:flip});
-      this.schematic.layers[this.selectedIndex].flip = flip;
+      this.selectedLayer.flip = flip;
     }
+  }
+
+  saveData() {
+    this.os.downloadSchematic(this.schematic);
+  }
+
+  saveImage() {
+
   }
 }

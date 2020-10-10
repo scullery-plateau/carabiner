@@ -29,6 +29,12 @@ export class SVG {
     return `<g ${SVG.attrs(style)}>${contents.join('\n')}</g>`;
   }
 
+  public static anchor(href:string, style:{
+    onclick?:string
+  },contents:string[]): string {
+    return `<a href="${href}" ${SVG.attrs(style)}>${contents.join('\n')}</a>`;
+  }
+
   public static use(ref:string, style:{
     fill?:string,
     stroke?:string,

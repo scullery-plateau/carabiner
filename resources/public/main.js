@@ -382,7 +382,7 @@ module.exports = "<tf-tile-def\r\n  [state]=\"state\"\r\n  [transformTrigger]=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "map-frame {\n  overflow: scroll;\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvY29iYmxlc3RvbmUtbWFwL0M6XFxwcmFjdGljZVxcY29kZVxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcY29iYmxlc3RvbmVcXGNvYmJsZXN0b25lLW1hcFxcY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS1tYXAvY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWFwLWZyYW1lIHtcclxuICBvdmVyZmxvdzogc2Nyb2xsO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4iXX0= */"
+module.exports = "map-frame {\n  overflow: scroll;\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvY29iYmxlc3RvbmUtbWFwL0M6XFxVc2Vyc1xccG9zc2xfMDAwXFxEb2N1bWVudHNcXEdpdEh1YlxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcY29iYmxlc3RvbmVcXGNvYmJsZXN0b25lLW1hcFxcY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS1tYXAvY29iYmxlc3RvbmUtbWFwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWFwLWZyYW1lIHtcclxuICBvdmVyZmxvdzogc2Nyb2xsO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -497,7 +497,7 @@ module.exports = "<div class=\"row\"><div class=\"col-1\"><p></p></div></div>\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@media screen {\n  .print-cobblestone {\n    display: none; } }\n\n@media print {\n  footer {\n    display: none; }\n  .print-cobblestone {\n    display: block; }\n  tabbed-panel {\n    display: none; }\n  header {\n    display: none; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvQzpcXHByYWN0aWNlXFxjb2RlXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxjb2JibGVzdG9uZVxcY29iYmxlc3RvbmUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtJQUNFLGFBQWEsRUFBQSxFQUNkOztBQUdIO0VBQ0U7SUFDRSxhQUFhLEVBQUE7RUFFZjtJQUNFLGNBQWMsRUFBQTtFQUVoQjtJQUNFLGFBQWEsRUFBQTtFQUVmO0lBQ0UsYUFBYSxFQUFBLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4ge1xyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG5cclxuQG1lZGlhIHByaW50IHtcclxuICBmb290ZXIgIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICB9XHJcbiAgdGFiYmVkLXBhbmVsIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIGhlYWRlciB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG4iXX0= */"
+module.exports = "@media screen {\n  .print-cobblestone {\n    display: none; } }\n\n@media print {\n  footer {\n    display: none; }\n  .print-cobblestone {\n    display: block; }\n  tabbed-panel {\n    display: none; }\n  header {\n    display: none; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29iYmxlc3RvbmUvQzpcXFVzZXJzXFxwb3NzbF8wMDBcXERvY3VtZW50c1xcR2l0SHViXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxjb2JibGVzdG9uZVxcY29iYmxlc3RvbmUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtJQUNFLGFBQWEsRUFBQSxFQUNkOztBQUdIO0VBQ0U7SUFDRSxhQUFhLEVBQUE7RUFFZjtJQUNFLGNBQWMsRUFBQTtFQUVoQjtJQUNFLGFBQWEsRUFBQTtFQUVmO0lBQ0UsYUFBYSxFQUFBLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9jb2JibGVzdG9uZS9jb2JibGVzdG9uZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4ge1xyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG5cclxuQG1lZGlhIHByaW50IHtcclxuICBmb290ZXIgIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIC5wcmludC1jb2JibGVzdG9uZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICB9XHJcbiAgdGFiYmVkLXBhbmVsIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIGhlYWRlciB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -582,7 +582,7 @@ var CobblestoneComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  map-page-picker works!\n</p>\n"
+module.exports = "<p>\r\n  map-page-picker works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1140,7 +1140,7 @@ var TileTransformerService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"0\" height=\"0\">\n  <defs>\n    <ng-container *ngFor=\"let tf of currentTransforms\">\n      <pattern [attr.id]=\"tf.key\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n        <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\n              [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\n        <ng-container *ngFor=\"let pixel of tf.pixels\">\n          <rect\n            [attr.alt]=\"pixel.x + 'x' + pixel.y\"\n            [attr.x]=\"pixel.x\"\n            [attr.y]=\"pixel.y\"\n            [attr.width]=\"1\"\n            [attr.height]=\"1\"\n            [attr.fill]=\"pixel.fill\"\n            style=\"stroke:none;stroke-width:0;\"></rect>\n        </ng-container>\n      </pattern>\n    </ng-container>\n  </defs>\n</svg>\n"
+module.exports = "<svg width=\"0\" height=\"0\">\r\n  <defs>\r\n    <ng-container *ngFor=\"let tf of currentTransforms\">\r\n      <pattern [attr.id]=\"tf.key\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\r\n        <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\r\n              [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\r\n        <ng-container *ngFor=\"let pixel of tf.pixels\">\r\n          <rect\r\n            [attr.alt]=\"pixel.x + 'x' + pixel.y\"\r\n            [attr.x]=\"pixel.x\"\r\n            [attr.y]=\"pixel.y\"\r\n            [attr.width]=\"1\"\r\n            [attr.height]=\"1\"\r\n            [attr.fill]=\"pixel.fill\"\r\n            style=\"stroke:none;stroke-width:0;\"></rect>\r\n        </ng-container>\r\n      </pattern>\r\n    </ng-container>\r\n  </defs>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -1224,7 +1224,7 @@ var TransformedTileDefComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg *ngIf=\"tf\" width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\n  <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\n        [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\n  <ng-container *ngFor=\"let pixel of tf.pixels\">\n    <rect\n      [attr.alt]=\"pixel.x + 'x' + pixel.y\"\n      [attr.x]=\"pixel.x\"\n      [attr.y]=\"pixel.y\"\n      [attr.width]=\"1\"\n      [attr.height]=\"1\"\n      [attr.fill]=\"pixel.fill\"\n      style=\"stroke:none;stroke-width:0;\"></rect>\n  </ng-container>\n</svg>\n"
+module.exports = "<svg *ngIf=\"tf\" width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <rect *ngIf=\"tf.bg\" width=\"16\" height=\"16\"\r\n        [attr.fill]=\"tf.bg\" stroke=\"none\" stroke-width=\"0\"></rect>\r\n  <ng-container *ngFor=\"let pixel of tf.pixels\">\r\n    <rect\r\n      [attr.alt]=\"pixel.x + 'x' + pixel.y\"\r\n      [attr.x]=\"pixel.x\"\r\n      [attr.y]=\"pixel.y\"\r\n      [attr.width]=\"1\"\r\n      [attr.height]=\"1\"\r\n      [attr.fill]=\"pixel.fill\"\r\n      style=\"stroke:none;stroke-width:0;\"></rect>\r\n  </ng-container>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -1284,7 +1284,7 @@ var TransformedTileDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\n  <rect height=\"16\" width=\"16\" stroke=\"none\" [attr.fill]=\"'url(#' + key + ')'\"></rect>\n</svg>\n"
+module.exports = "<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\">\r\n  <rect height=\"16\" width=\"16\" stroke=\"none\" [attr.fill]=\"'url(#' + key + ')'\"></rect>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -1517,7 +1517,7 @@ var CountUpdate = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\n  <ng-container *ngFor=\"let mini of data\">\n    <div class=\"d-flex\">\n      <div class=\"p-2 w-100 text-right\">{{mini.filename}}</div>\n      <div class=\"p-2\"><input type=\"number\" min=\"1\" value=\"1\" class=\"nes-input\" (change)=\"updateCount($event,mini.filename)\"/></div>\n      <div class=\"p-2\"><button class=\"nes-btn is-error\" (click)=\"removeImage(mini.filename)\">X</button></div>\n    </div>\n  </ng-container>\n</div>\n"
+module.exports = "<div class=\"d-flex flex-column\">\r\n  <ng-container *ngFor=\"let mini of data\">\r\n    <div class=\"d-flex\">\r\n      <div class=\"p-2 w-100 text-right\">{{mini.filename}}</div>\r\n      <div class=\"p-2\"><input type=\"number\" min=\"1\" value=\"1\" class=\"nes-input\" (change)=\"updateCount($event,mini.filename)\"/></div>\r\n      <div class=\"p-2\"><button class=\"nes-btn is-error\" (click)=\"removeImage(mini.filename)\">X</button></div>\r\n    </div>\r\n  </ng-container>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1599,7 +1599,7 @@ var ImageListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column\">\n  <label class=\"nes-btn\">\n    <span>Select your file</span>\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"addImage($event)\">\n  </label>\n  <div class=\"row\" *ngIf=\"data\">\n    <div class=\"col-md-5 showcase\" id=\"ctrl\">\n      <div class=\"nes-container\">\n        <image-list\n          [data]=\"data\"\n          (countUpdated)=\"updateCount($event)\"\n          (imageRemoved)=\"deleteImage($event)\"></image-list>\n      </div>\n    </div>\n    <div class=\"col-md-7 showcase h-100\">\n      <div class=\"nes-container h-100\">\n        <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\n        <p></p>\n        <mini-gallery [data]=\"data\"></mini-gallery>\n        <p></p>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"d-flex flex-column\">\r\n  <label class=\"nes-btn\">\r\n    <span>Select your file</span>\r\n    <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"addImage($event)\">\r\n  </label>\r\n  <div class=\"row\" *ngIf=\"data\">\r\n    <div class=\"col-md-5 showcase\" id=\"ctrl\">\r\n      <div class=\"nes-container\">\r\n        <image-list\r\n          [data]=\"data\"\r\n          (countUpdated)=\"updateCount($event)\"\r\n          (imageRemoved)=\"deleteImage($event)\"></image-list>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-7 showcase h-100\">\r\n      <div class=\"nes-container h-100\">\r\n        <button class=\"nes-btn\" (click)=\"publish()\">Publish</button>\r\n        <p></p>\r\n        <mini-gallery [data]=\"data\"></mini-gallery>\r\n        <p></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1707,7 +1707,7 @@ var MastermoldComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-container *ngFor=\"let image of data\">\n  <ng-container *ngFor=\"let mini of repeat(image)\">\n    <span title=\"{{mini.filename}}\">\n      <svg [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\n        <rect x=\"0\" y=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n        <image [attr.href]=\"mini.url\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\n      </svg>\n    </span>\n  </ng-container>\n</ng-container>\n"
+module.exports = "<ng-container *ngFor=\"let image of data\">\r\n  <ng-container *ngFor=\"let mini of repeat(image)\">\r\n    <span title=\"{{mini.filename}}\">\r\n      <svg [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" [attr.viewBox]=\"'0 0 ' + (20 * scale) + ' ' + (30 * scale)\">\r\n        <rect x=\"0\" y=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\r\n        <image [attr.href]=\"mini.url\" [attr.x]=\"0\" [attr.y]=\"0\" [attr.width]=\"20 * scale\" [attr.height]=\"30 * scale\"/>\r\n      </svg>\r\n    </span>\r\n  </ng-container>\r\n</ng-container>\r\n"
 
 /***/ }),
 
@@ -2002,7 +2002,7 @@ var DatasetMeta = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<svg:g [attr.transform]=\"matrix()\" [attr.opacity]=\"layer.opacity || 1.0\">\n  <svg:use *ngIf=\"part.layers.base\" [attr.xlink:href]=\"'#'+part.layers.base\" [attr.fill]=\"layer.base || 'white'\"></svg:use>\n  <svg:use *ngIf=\"part.layers.detail\" [attr.xlink:href]=\"'#'+part.layers.detail\" [attr.fill]=\"layer.detail || 'white'\"></svg:use>\n  <svg:g *ngIf=\"layer.pattern && layer.pattern >= 0\">\n    <svg:use *ngIf=\"part.layers.base\" [attr.xlink:href]=\"'#'+part.layers.base\" [attr.fill]=\"'url(#pattern_' + (layer.pattern>=10?'':'0') + layer.pattern+')'\"></svg:use>\n    <svg:use *ngIf=\"part.layers.detail\" [attr.xlink:href]=\"'#'+part.layers.detail\" [attr.fill]=\"'url(#pattern_' + (layer.pattern>=10?'':'0') + layer.pattern+')'\"></svg:use>\n  </svg:g>\n  <svg:g *ngIf=\"layer.shading && layer.shading >= 0\">\n    <svg:use *ngIf=\"part.layers.base\" [attr.xlink:href]=\"'#'+part.layers.base\" [attr.fill]=\"'url(#shading_' + (layer.shading>=10?'':'0') + layer.shading+')'\"></svg:use>\n    <svg:use *ngIf=\"part.layers.detail\" [attr.xlink:href]=\"'#'+part.layers.detail\" [attr.fill]=\"'url(#shading_' + (layer.shading>=10?'':'0') + layer.shading+')'\"></svg:use>\n  </svg:g>\n  <svg:use *ngIf=\"part.layers.outline\" [attr.xlink:href]=\"'#'+part.layers.outline\" [attr.stroke]=\"layer.outline || 'black'\"></svg:use>\n  <svg:use *ngIf=\"part.layers.shadow\" [attr.xlink:href]=\"'#'+part.layers.shadow\"></svg:use>\n</svg:g>\n"
+module.exports = "<svg:g [attr.transform]=\"matrix()\" [attr.opacity]=\"layer.opacity || 1.0\">\r\n  <svg:use *ngIf=\"part.layers.base\" [attr.xlink:href]=\"'#'+part.layers.base\" [attr.fill]=\"layer.base || 'white'\"></svg:use>\r\n  <svg:use *ngIf=\"part.layers.detail\" [attr.xlink:href]=\"'#'+part.layers.detail\" [attr.fill]=\"layer.detail || 'white'\"></svg:use>\r\n  <svg:g *ngIf=\"layer.pattern && layer.pattern >= 0\">\r\n    <svg:use *ngIf=\"part.layers.base\" [attr.xlink:href]=\"'#'+part.layers.base\" [attr.fill]=\"'url(#pattern_' + (layer.pattern>=10?'':'0') + layer.pattern+')'\"></svg:use>\r\n    <svg:use *ngIf=\"part.layers.detail\" [attr.xlink:href]=\"'#'+part.layers.detail\" [attr.fill]=\"'url(#pattern_' + (layer.pattern>=10?'':'0') + layer.pattern+')'\"></svg:use>\r\n  </svg:g>\r\n  <svg:g *ngIf=\"layer.shading && layer.shading >= 0\">\r\n    <svg:use *ngIf=\"part.layers.base\" [attr.xlink:href]=\"'#'+part.layers.base\" [attr.fill]=\"'url(#shading_' + (layer.shading>=10?'':'0') + layer.shading+')'\"></svg:use>\r\n    <svg:use *ngIf=\"part.layers.detail\" [attr.xlink:href]=\"'#'+part.layers.detail\" [attr.fill]=\"'url(#shading_' + (layer.shading>=10?'':'0') + layer.shading+')'\"></svg:use>\r\n  </svg:g>\r\n  <svg:use *ngIf=\"part.layers.outline\" [attr.xlink:href]=\"'#'+part.layers.outline\" [attr.stroke]=\"layer.outline || 'black'\"></svg:use>\r\n  <svg:use *ngIf=\"part.layers.shadow\" [attr.xlink:href]=\"'#'+part.layers.shadow\"></svg:use>\r\n</svg:g>\r\n"
 
 /***/ }),
 
@@ -2073,7 +2073,7 @@ var DisplayLayerComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div [innerHTML]=\"buildSVG(schematic,meta) | safeHtml\"></div>\n"
+module.exports = "<div [innerHTML]=\"buildSVG(schematic,meta) | safeHtml\"></div>\r\n"
 
 /***/ }),
 
@@ -2124,7 +2124,7 @@ var OutfitterDisplayComponent = /** @class */ (function () {
         var min = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([0, 0]);
         var max = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([0, 0]);
         var contents = [];
-        schematic.layers.forEach(function (layer) {
+        schematic.layers.forEach(function (layer, index) {
             var part = meta.parts.get(layer.part)[layer.index];
             var flip = layer.resize.times(new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"]([(layer.flip ? -1.0 : 1.0), 1.0]));
             min = min.min(part.min.times(flip).plus(layer.move));
@@ -2168,10 +2168,12 @@ var OutfitterDisplayComponent = /** @class */ (function () {
             if (part.layers.shadow) {
                 group.push(_util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].use('#' + part.layers.shadow, {}));
             }
-            contents.push(_util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].group({
+            var elem = _util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].group({
                 transform: "matrix(" + flip.x + ",0.0,0.0," + flip.y + "," + layer.move.x + "," + layer.move.y + ")",
                 opacity: "" + (layer.opacity || 1.0)
-            }, group));
+            }, group);
+            var anchor = _util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].anchor("#", "selectOutfitterLayer($event,'selectedLayer'," + index + ")", [elem]);
+            contents.push(anchor);
         });
         var bodyScale = new _xy__WEBPACK_IMPORTED_MODULE_4__["XY"](_scales__WEBPACK_IMPORTED_MODULE_5__["SCALES"][schematic.bodyScale] || [1.0, 1.0]);
         min = min.times(bodyScale);
@@ -2234,7 +2236,7 @@ var OutfitterDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadBodyType('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Select your file</span>\r\n      <input type=\"file\" id=\"fileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span [innerHTML]=\"defs | safeHtml\"></span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <form [formGroup]=\"schematicForm\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div>\r\n            <h3>{{schematic.bodyType}}</h3>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n                <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n                <option value=\"\">Default</option>\r\n                <option value=\"lanky\">Lanky</option>\r\n                <option value=\"thin\">Thin</option>\r\n                <option value=\"stocky\">Stocky</option>\r\n                <option value=\"petite\">Petite</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label>Background Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.bgColor\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"bgPattern\">Background Pattern</label>\r\n              <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setBGPattern()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n                <option value=\"\" disabled selected hidden>Select Layer</option>\r\n                <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                  <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n                </ng-container>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button *ngIf=\"selectedIndex>=0\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><i class='fas fa-fast-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><i class='fas fa-step-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><i class='fas fa-step-forward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><i class='fas fa-fast-forward'></i></button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <select class=\"nes-input p-2\" id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n              <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n              <ng-container *ngFor=\"let partType of partTypes\">\r\n                <option [value]=\"partType\">{{partType}}</option>\r\n              </ng-container>\r\n            </select>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"partIndex\">Part Index</label>\r\n              <input type=\"number\" min=\"0\" [max]=\"maxPartIndex\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label>Base Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.base\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Detail Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.detail\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Outline Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.outline\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"opacity\">Opacity</label>\r\n              <input type=\"number\" min=\"0.00\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"pattern\">Pattern</label>\r\n              <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setPattern()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"shading\">Shading</label>\r\n              <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" [max]=\"meta.shadingCount\" (change)=\"setShading()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Resize</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_x\">X</label>\r\n              <input type=\"number\" id=\"resize_x\" step=\"0.01\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_y\">Y</label>\r\n              <input type=\"number\" id=\"resize_y\" step=\"0.01\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_x\">X</label>\r\n              <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_y\">Y</label>\r\n              <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n            </div>\r\n          </div>\r\n          <div *ngIf=\"selectedIndex>=0\" >\r\n            <button class=\"nes-btn {{schematicForm.value.flip?'flipH':''}}\" (click)=\"toggleFlip()\">Flip?</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Load json schematic</span>\r\n      <input type=\"file\" id=\"loadFileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Compile edn schematic</span>\r\n      <input type=\"file\" id=\"compileFileInput\" style=\"display: none;\" (change)=\"compileSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span [innerHTML]=\"defs | safeHtml\"></span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <form [formGroup]=\"schematicForm\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div>\r\n            <h3>{{schematic.bodyType}}</h3>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n                <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n                <option value=\"\">Default</option>\r\n                <option value=\"lanky\">Lanky</option>\r\n                <option value=\"thin\">Thin</option>\r\n                <option value=\"stocky\">Stocky</option>\r\n                <option value=\"petite\">Petite</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label>Background Color</label>\r\n              <color-picker [initValue]=\"schematicForm.value.bgColor\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"bgPattern\">Background Pattern</label>\r\n              <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setBGPattern()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n                <option value=\"\" disabled selected hidden>Select Layer</option>\r\n                <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                  <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n                </ng-container>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button *ngIf=\"selectedLayer\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><i class='fas fa-fast-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><i class='fas fa-step-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><i class='fas fa-step-forward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><i class='fas fa-fast-forward'></i></button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <select class=\"nes-input p-2\" id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n              <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n              <ng-container *ngFor=\"let partType of partTypes\">\r\n                <option [value]=\"partType\">{{partType}}</option>\r\n              </ng-container>\r\n            </select>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"partIndex\">Part Index</label>\r\n              <input type=\"number\" min=\"0\" [max]=\"maxPartIndex\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label>Base Color</label>\r\n              <color-picker [initValue]=\"selectedLayer.base\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Detail Color</label>\r\n              <color-picker [initValue]=\"selectedLayer.detail\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Outline Color</label>\r\n              <color-picker [initValue]=\"selectedLayer.outline\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"opacity\">Opacity</label>\r\n              <input type=\"number\" min=\"0.00\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"pattern\">Pattern</label>\r\n              <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" [max]=\"meta.patternCount\" (change)=\"setPattern()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"shading\">Shading</label>\r\n              <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" [max]=\"meta.shadingCount\" (change)=\"setShading()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Resize</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_x\">X</label>\r\n              <input type=\"number\" id=\"resize_x\" step=\"0.01\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_y\">Y</label>\r\n              <input type=\"number\" id=\"resize_y\" step=\"0.01\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_x\">X</label>\r\n              <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_y\">Y</label>\r\n              <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n            </div>\r\n          </div>\r\n          <div *ngIf=\"selectedIndex>=0\" >\r\n            <button class=\"nes-btn {{schematicForm.value.flip?'flipH':''}}\" (click)=\"toggleFlip()\">Flip?</button>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" (click)=\"saveData()\">Save Data</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" (click)=\"saveImage()\">Save Image</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2245,7 +2247,7 @@ module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".flipH {\n  transform: scale(-1, 1); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3V0Zml0dGVyL0M6XFxwcmFjdGljZVxcY29kZVxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcb3V0Zml0dGVyXFxvdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFLRSx1QkFBdUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9vdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmxpcEgge1xyXG4gIC1tb3otdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKC0xLCAxKTtcclxuICAtby10cmFuc2Zvcm06IHNjYWxlKC0xLCAxKTtcclxuICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbn1cclxuIl19 */"
+module.exports = ".flipH {\n  transform: scale(-1, 1); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3V0Zml0dGVyL0M6XFxVc2Vyc1xccG9zc2xfMDAwXFxEb2N1bWVudHNcXEdpdEh1YlxcY2FyYWJpbmVyXFxmcm9udC9zcmNcXGFwcFxcb3V0Zml0dGVyXFxvdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFLRSx1QkFBdUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL291dGZpdHRlci9vdXRmaXR0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmxpcEgge1xyXG4gIC1tb3otdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKC0xLCAxKTtcclxuICAtby10cmFuc2Zvcm06IHNjYWxlKC0xLCAxKTtcclxuICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgtMSwgMSk7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -2321,28 +2323,6 @@ var OutfitterComponent = /** @class */ (function () {
         };
         return animateStep;
     };
-    OutfitterComponent.prototype.loadSchematic = function (e) {
-        var files = Array.from(e.target.files);
-        if (files.length > 0) {
-            var file = files[0];
-            this.fileName = file.name;
-            this.base64 = undefined;
-            var me_1 = this;
-            var reader_1 = new FileReader();
-            reader_1.onload = function () {
-                me_1.processing = setTimeout(me_1.stepAnimate(), 1000);
-                var data = reader_1.result.toString();
-                console.log(data);
-                me_1.os.loadSchematic(data).subscribe(function (base64) {
-                    me_1.base64 = base64;
-                    clearTimeout(me_1.processing);
-                    me_1.processing = undefined;
-                    me_1.ellipse = "";
-                });
-            };
-            reader_1.readAsText(file);
-        }
-    };
     OutfitterComponent.prototype.loadBodyType = function (bodyType) {
         var _this = this;
         this.os.getDatasetDefs(bodyType).subscribe(function (defs) {
@@ -2354,9 +2334,45 @@ var OutfitterComponent = /** @class */ (function () {
         this.os.getDatasetMeta(bodyType).subscribe(function (meta) {
             _this.meta = new _dataset_meta__WEBPACK_IMPORTED_MODULE_4__["DatasetMeta"](meta);
         });
+    };
+    OutfitterComponent.prototype.loadNew = function (bodyType) {
+        this.loadBodyType(bodyType);
         this.schematic = new _schematic__WEBPACK_IMPORTED_MODULE_5__["Schematic"](bodyType);
         this.schematic.bodyType = bodyType;
         this.schematic.layers = [];
+    };
+    OutfitterComponent.prototype.loadSchematic = function (e) {
+        var files = Array.from(e.target.files);
+        if (files.length > 0) {
+            var file = files[0];
+            this.fileName = file.name;
+            this.base64 = undefined;
+            var me_1 = this;
+            var reader_1 = new FileReader();
+            reader_1.onload = function () {
+                var data = reader_1.result.toString();
+                me_1.schematic = _schematic__WEBPACK_IMPORTED_MODULE_5__["Schematic"].fromJSON(JSON.parse(data));
+                me_1.loadBodyType(me_1.schematic.bodyType);
+            };
+            reader_1.readAsText(file);
+        }
+    };
+    OutfitterComponent.prototype.compileSchematic = function (e) {
+        var files = Array.from(e.target.files);
+        if (files.length > 0) {
+            var file = files[0];
+            this.fileName = file.name;
+            this.base64 = undefined;
+            var me_2 = this;
+            var reader_2 = new FileReader();
+            reader_2.onload = function () {
+                var data = reader_2.result.toString();
+                me_2.os.loadSchematic(data).subscribe(function (base64) {
+                    me_2.base64 = base64;
+                });
+            };
+            reader_2.readAsText(file);
+        }
     };
     OutfitterComponent.prototype.setBodyScale = function () {
         this.schematic.bodyScale = this.schematicForm.value.bodyScale;
@@ -2371,10 +2387,15 @@ var OutfitterComponent = /** @class */ (function () {
     OutfitterComponent.prototype.loadSelectedLayer = function () {
         this.selectedIndex = ((typeof this.schematicForm.value.selectedLayer) === "string") ? parseInt(this.schematicForm.value.selectedLayer) : this.schematicForm.value.selectedLayer;
         if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematicForm.patchValue(this.schematic.layers[this.selectedIndex].formValue());
+            this.selectedLayer = this.schematic.layers[this.selectedIndex];
+            this.schematicForm.patchValue(this.selectedLayer.formValue());
             var partType = this.schematicForm.value.partType;
             this.maxPartIndex = this.meta.parts.get(partType).length;
         }
+    };
+    OutfitterComponent.prototype.clearSelectedLayer = function () {
+        this.selectedIndex = -1;
+        this.selectedLayer = undefined;
     };
     OutfitterComponent.prototype.addLayer = function () {
         this.schematic.layers.push(new _schematic_layer__WEBPACK_IMPORTED_MODULE_7__["SchematicLayer"]());
@@ -2389,7 +2410,12 @@ var OutfitterComponent = /** @class */ (function () {
                 this.selectedIndex--;
                 this.schematicForm.patchValue({ selectedLayer: this.selectedIndex });
             }
-            this.loadSelectedLayer();
+            if (this.schematic.layers.length > 0) {
+                this.loadSelectedLayer();
+            }
+            else {
+                this.clearSelectedLayer();
+            }
         }
     };
     OutfitterComponent.prototype.moveToBack = function () {
@@ -2430,76 +2456,81 @@ var OutfitterComponent = /** @class */ (function () {
         this.schematic.layers[b] = temp;
     };
     OutfitterComponent.prototype.setPartType = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+        if (this.selectedLayer) {
             var partType = this.schematicForm.value.partType;
-            this.schematic.layers[this.selectedIndex].part = partType;
+            this.selectedLayer.part = partType;
             this.maxPartIndex = this.meta.parts.get(partType).length;
         }
     };
     OutfitterComponent.prototype.setPartIndex = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].index = this.schematicForm.value.partIndex;
+        if (this.selectedLayer) {
+            this.selectedLayer.index = this.schematicForm.value.partIndex;
         }
     };
     OutfitterComponent.prototype.setBaseColor = function (color) {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+        if (this.selectedLayer) {
             this.schematicForm.patchValue({ base: color });
-            this.schematic.layers[this.selectedIndex].base = color;
+            this.selectedLayer.base = color;
         }
     };
     OutfitterComponent.prototype.setDetailColor = function (color) {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+        if (this.selectedLayer) {
             this.schematicForm.patchValue({ detail: color });
-            this.schematic.layers[this.selectedIndex].detail = color;
+            this.selectedLayer.detail = color;
         }
     };
     OutfitterComponent.prototype.setOutlineColor = function (color) {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+        if (this.selectedLayer) {
             this.schematicForm.patchValue({ outline: color });
-            this.schematic.layers[this.selectedIndex].outline = color;
+            this.selectedLayer.outline = color;
         }
     };
     OutfitterComponent.prototype.setOpacity = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].opacity = this.schematicForm.value.opacity;
+        if (this.selectedLayer) {
+            this.selectedLayer.opacity = this.schematicForm.value.opacity;
         }
     };
     OutfitterComponent.prototype.setPattern = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].pattern = this.schematicForm.value.pattern;
+        if (this.selectedLayer) {
+            this.selectedLayer.pattern = this.schematicForm.value.pattern;
         }
     };
     OutfitterComponent.prototype.setShading = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].shading = this.schematicForm.value.shading;
+        if (this.selectedLayer) {
+            this.selectedLayer.shading = this.schematicForm.value.shading;
         }
     };
     OutfitterComponent.prototype.setResizeX = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].resize.x = this.schematicForm.value.resize_x;
+        if (this.selectedLayer) {
+            this.selectedLayer.resize.x = this.schematicForm.value.resize_x;
         }
     };
     OutfitterComponent.prototype.setResizeY = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].resize.y = this.schematicForm.value.resize_y;
+        if (this.selectedLayer) {
+            this.selectedLayer.resize.y = this.schematicForm.value.resize_y;
         }
     };
     OutfitterComponent.prototype.setMoveX = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].move.x = this.schematicForm.value.move_x;
+        if (this.selectedLayer) {
+            this.selectedLayer.move.x = this.schematicForm.value.move_x;
         }
     };
     OutfitterComponent.prototype.setMoveY = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
-            this.schematic.layers[this.selectedIndex].move.y = this.schematicForm.value.move_y;
+        if (this.selectedLayer) {
+            this.selectedLayer.move.y = this.schematicForm.value.move_y;
         }
     };
     OutfitterComponent.prototype.toggleFlip = function () {
-        if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length) {
+        if (this.selectedLayer) {
             var flip = !this.schematicForm.value.flip;
             this.schematicForm.patchValue({ flip: flip });
-            this.schematic.layers[this.selectedIndex].flip = flip;
+            this.selectedLayer.flip = flip;
         }
+    };
+    OutfitterComponent.prototype.saveData = function () {
+        this.os.downloadSchematic(this.schematic);
+    };
+    OutfitterComponent.prototype.saveImage = function () {
     };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2529,12 +2560,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _util_download_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/download-link */ "./src/app/util/download-link.ts");
+
 
 
 
 var OutfitterService = /** @class */ (function () {
     function OutfitterService(client) {
         this.client = client;
+        this.downloader = new _util_download_link__WEBPACK_IMPORTED_MODULE_3__["DownloadLink"]();
     }
     OutfitterService.prototype.loadSchematic = function (schematic) {
         return this.client.post("/outfitter/publish", schematic);
@@ -2544,6 +2578,11 @@ var OutfitterService = /** @class */ (function () {
     };
     OutfitterService.prototype.getDatasetMeta = function (bodyType) {
         return this.client.get("/outfitter/datasets/" + bodyType + ".json");
+    };
+    OutfitterService.prototype.downloadSchematic = function (schematic) {
+        this.downloader.setFileName("outfit.json");
+        this.downloader.setPath("data:text/plain;," + JSON.stringify(schematic.toJSON()));
+        this.downloader.invokeDownload();
     };
     OutfitterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -2659,6 +2698,73 @@ var SchematicLayer = /** @class */ (function () {
             flip: this.flip
         };
     };
+    SchematicLayer.fromJSON = function (args) {
+        var out = new SchematicLayer();
+        out.part = args.part;
+        out.index = args.index;
+        if (args.base) {
+            out.base = args.base;
+        }
+        if (args.detail) {
+            out.detail = args.detail;
+        }
+        if (args.outline) {
+            out.outline = args.outline;
+        }
+        if (args.opacity) {
+            out.opacity = args.opacity;
+        }
+        if (args.pattern) {
+            out.pattern = args.pattern;
+        }
+        if (args.shading) {
+            out.shading = args.shading;
+        }
+        if (args.resize) {
+            out.resize = new _xy__WEBPACK_IMPORTED_MODULE_0__["XY"](args.resize);
+        }
+        if (args.move) {
+            out.move = new _xy__WEBPACK_IMPORTED_MODULE_0__["XY"](args.move);
+        }
+        if (args.flip) {
+            out.flip = args.flip;
+        }
+        return out;
+    };
+    SchematicLayer.prototype.toJSON = function () {
+        var out = {
+            part: this.part,
+            index: this.index
+        };
+        if (this.base) {
+            out.base = this.base;
+        }
+        if (this.detail) {
+            out.detail = this.detail;
+        }
+        if (this.outline) {
+            out.outline = this.outline;
+        }
+        if (this.opacity) {
+            out.opacity = this.opacity;
+        }
+        if (this.pattern) {
+            out.pattern = this.pattern;
+        }
+        if (this.shading) {
+            out.shading = this.shading;
+        }
+        if (this.resize) {
+            out.resize = [this.resize.x, this.resize.y];
+        }
+        if (this.move) {
+            out.move = [this.move.x, this.move.y];
+        }
+        if (this.flip) {
+            out.flip = this.flip || false;
+        }
+        return out;
+    };
     return SchematicLayer;
 }());
 
@@ -2676,11 +2782,43 @@ var SchematicLayer = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Schematic", function() { return Schematic; });
+/* harmony import */ var _schematic_layer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./schematic-layer */ "./src/app/outfitter/schematic-layer.ts");
+
 var Schematic = /** @class */ (function () {
     function Schematic(bodyType) {
         this.bodyType = bodyType;
         this.layers = [];
     }
+    Schematic.fromJSON = function (args) {
+        var out = new Schematic(args.bodyType);
+        if (args.bgColor) {
+            out.bgColor = args.bgColor;
+        }
+        if (args.bgPattern) {
+            out.bgPattern = args.bgPattern;
+        }
+        if (args.bodyScale) {
+            out.bodyScale = args.bodyScale;
+        }
+        out.layers = args.layers.map(function (l) { return _schematic_layer__WEBPACK_IMPORTED_MODULE_0__["SchematicLayer"].fromJSON(l); });
+        return out;
+    };
+    Schematic.prototype.toJSON = function () {
+        var out = {
+            bodyType: this.bodyType,
+            layers: this.layers.map(function (layer) { return layer.toJSON(); })
+        };
+        if (this.bgColor) {
+            out['bgColor'] = this.bgColor;
+        }
+        if (this.bgPattern) {
+            out['bgPattern'] = this.bgPattern;
+        }
+        if (this.bodyScale) {
+            out['bodyScale'] = this.bodyScale;
+        }
+        return out;
+    };
     return Schematic;
 }());
 
@@ -3032,7 +3170,7 @@ module.exports = "<form [formGroup]=\"spritelyForm\" class=\"topic\">\r\n  <div 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "textarea.pixel-canvas:before {\n  counter-increment: line;\n  content: counter(line);\n  display: inline-block;\n  border-right: 1px solid #ddd;\n  padding: 0 .5em;\n  margin-right: .5em;\n  color: #888; }\n\nhr {\n  border-top: 4px solid black; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3ByaXRlbHkvQzpcXHByYWN0aWNlXFxjb2RlXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxzcHJpdGVseVxcc3ByaXRlbHkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHSSx1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLHFCQUFxQjtFQUNyQiw0QkFBNEI7RUFDNUIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixXQUNGLEVBQUE7O0FBR0Y7RUFDRSwyQkFBMkIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3Nwcml0ZWx5L3Nwcml0ZWx5LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGV4dGFyZWEucGl4ZWwtY2FudmFzIHtcclxuXHJcbiAgJjpiZWZvcmUge1xyXG4gICAgY291bnRlci1pbmNyZW1lbnQ6IGxpbmU7XHJcbiAgICBjb250ZW50OiBjb3VudGVyKGxpbmUpO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2RkZDtcclxuICAgIHBhZGRpbmc6IDAgLjVlbTtcclxuICAgIG1hcmdpbi1yaWdodDogLjVlbTtcclxuICAgIGNvbG9yOiAjODg4XHJcbiAgfVxyXG59XHJcblxyXG5ociB7XHJcbiAgYm9yZGVyLXRvcDogNHB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"
+module.exports = "textarea.pixel-canvas:before {\n  counter-increment: line;\n  content: counter(line);\n  display: inline-block;\n  border-right: 1px solid #ddd;\n  padding: 0 .5em;\n  margin-right: .5em;\n  color: #888; }\n\nhr {\n  border-top: 4px solid black; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3ByaXRlbHkvQzpcXFVzZXJzXFxwb3NzbF8wMDBcXERvY3VtZW50c1xcR2l0SHViXFxjYXJhYmluZXJcXGZyb250L3NyY1xcYXBwXFxzcHJpdGVseVxcc3ByaXRlbHkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHSSx1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLHFCQUFxQjtFQUNyQiw0QkFBNEI7RUFDNUIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixXQUNGLEVBQUE7O0FBR0Y7RUFDRSwyQkFBMkIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3Nwcml0ZWx5L3Nwcml0ZWx5LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGV4dGFyZWEucGl4ZWwtY2FudmFzIHtcclxuXHJcbiAgJjpiZWZvcmUge1xyXG4gICAgY291bnRlci1pbmNyZW1lbnQ6IGxpbmU7XHJcbiAgICBjb250ZW50OiBjb3VudGVyKGxpbmUpO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2RkZDtcclxuICAgIHBhZGRpbmc6IDAgLjVlbTtcclxuICAgIG1hcmdpbi1yaWdodDogLjVlbTtcclxuICAgIGNvbG9yOiAjODg4XHJcbiAgfVxyXG59XHJcblxyXG5ociB7XHJcbiAgYm9yZGVyLXRvcDogNHB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -3331,7 +3469,7 @@ var AccordianComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" class=\"nes-btn\" [ngStyle]=\"{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}\" (click)=\"open()\">________</button>\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\n  <form [formGroup]=\"colorForm\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div *ngIf=\"selectedValue\" [innerHTML]=\"paintSelectedValue() | safeHtml\"></div>\n      </div>\n    </div>\n    <br>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"d-flex flex-column\">\n          <div class=\"nes-field\">\n            <label for=\"colorValue\">Color Value</label>\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\n          </div>\n          <hr>\n          <div>\n            <label for=\"colorByName\">Color by Name</label>\n            <div class=\"nes-select\">\n              <select required id=\"colorByName\" formControlName=\"name\" (change)=\"setNamed()\">\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\n                <option *ngFor=\"let pair of colors | keyvalue\"\n                        [ngStyle]=\"{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}\"\n                        [value]=\"pair.key\">{{pair.key}}</option>\n              </select>\n            </div>\n          </div>\n          <hr>\n          <div class=\"nes-field\">\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n          <div class=\"nes-field\">\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\n          </div>\n        </div>\n      </div>\n      <div class=\"col\">\n        <table style=\"padding: 0; margin: 0;\">\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\n              <button [ngStyle]=\"{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\n            </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n  </form>\n  <menu class=\"dialog-menu text-right\">\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\n  </menu>\n</dialog>\n"
+module.exports = "<button type=\"button\" class=\"nes-btn\" [ngStyle]=\"{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}\" (click)=\"open()\">________</button>\r\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\r\n  <form [formGroup]=\"colorForm\">\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div *ngIf=\"selectedValue\" [innerHTML]=\"paintSelectedValue() | safeHtml\"></div>\r\n      </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div class=\"nes-field\">\r\n            <label for=\"colorValue\">Color Value</label>\r\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\r\n          </div>\r\n          <hr>\r\n          <div>\r\n            <label for=\"colorByName\">Color by Name</label>\r\n            <div class=\"nes-select\">\r\n              <select required id=\"colorByName\" formControlName=\"name\" (change)=\"setNamed()\">\r\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\r\n                <option *ngFor=\"let pair of colors | keyvalue\"\r\n                        [ngStyle]=\"{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}\"\r\n                        [value]=\"pair.key\">{{pair.key}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <hr>\r\n          <div class=\"nes-field\">\r\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\r\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\r\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\r\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col\">\r\n        <table style=\"padding: 0; margin: 0;\">\r\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\r\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\r\n              <button [ngStyle]=\"{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\r\n            </td>\r\n          </tr>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </form>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
 
 /***/ }),
 
@@ -3693,7 +3831,7 @@ var COLORS = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  confirm-cancel-dialog works!\n</p>\n"
+module.exports = "<p>\r\n  confirm-cancel-dialog works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -4029,7 +4167,7 @@ var FileFormComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<label class=\"nes-btn\">\n  <span>Select your file</span>\n  <input type=\"file\" style=\"display: none;\" (change)=\"loadFile($event)\">\n</label>\n"
+module.exports = "<label class=\"nes-btn\">\r\n  <span>Select your file</span>\r\n  <input type=\"file\" style=\"display: none;\" (change)=\"loadFile($event)\">\r\n</label>\r\n"
 
 /***/ }),
 
@@ -4111,7 +4249,7 @@ var FileLoadInputComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"show\" class=\"showcase nes-tab-body\">\n  <div class=\"nes-container with-title\">\n    <div class=\"title\">\n      <h5>{{label}}</h5>\n    </div>\n    <ng-content></ng-content>\n  </div>\n</div>\n"
+module.exports = "<div *ngIf=\"show\" class=\"showcase nes-tab-body\">\r\n  <div class=\"nes-container with-title\">\r\n    <div class=\"title\">\r\n      <h5>{{label}}</h5>\r\n    </div>\r\n    <ng-content></ng-content>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4172,7 +4310,7 @@ var ChildPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"col-12\">\n    <div class=\"showcase\">\n      <div class=\"nes-container with-title\">\n        <div class=\"title\">\n          <h4 style=\"display: inline;\">&nbsp;{{title}}&nbsp;</h4>\n          <ng-container *ngFor=\"let child of children; index as i\">\n            <button class=\"nes-btn nes-tab-btn {{(activeIndex == i) ? activeClass : ''}}\" (click)=\"select(i)\">{{child.label}}</button>\n          </ng-container>\n        </div>\n        <ng-content></ng-content>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <div class=\"showcase\">\r\n      <div class=\"nes-container with-title\">\r\n        <div class=\"title\">\r\n          <h4 style=\"display: inline;\">&nbsp;{{title}}&nbsp;</h4>\r\n          <ng-container *ngFor=\"let child of children; index as i\">\r\n            <button class=\"nes-btn nes-tab-btn {{(activeIndex == i) ? activeClass : ''}}\" (click)=\"select(i)\">{{child.label}}</button>\r\n          </ng-container>\r\n        </div>\r\n        <ng-content></ng-content>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4256,7 +4394,7 @@ var TabbedPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  okay-dialog works!\n</p>\n"
+module.exports = "<p>\r\n  okay-dialog works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -4396,7 +4534,7 @@ var PaletteDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<dialog #pendingDialog  class=\"nes-dialog is-dark is-rounded\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      {{label}} pending ...\n    </div>\n    <div class=\"col-12\">\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim1\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"black\" begin=\"0s; anim2.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim2\" attributeType=\"XML\" attributeName=\"fill\" from=\"black\" to=\"white\" begin=\"anim1.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\"\n           xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim3\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"red\" begin=\"0.5s; anim4.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim4\" attributeType=\"XML\" attributeName=\"fill\" from=\"red\" to=\"white\" begin=\"anim3.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim5\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"green\" begin=\"1s; anim6.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim6\" attributeType=\"XML\" attributeName=\"fill\" from=\"green\" to=\"white\" begin=\"anim5.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\n          <animate id=\"anim7\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"blue\" begin=\"1.5s; anim8.end\" dur=\"1s\" repeatCount=\"\"/>\n          <animate id=\"anim8\" attributeType=\"XML\" attributeName=\"fill\" from=\"blue\" to=\"white\" begin=\"anim7.end\" dur=\"1s\" repeatCount=\"\"/>\n        </rect>\n      </svg>\n    </div>\n  </div>\n</dialog>\n"
+module.exports = "<dialog #pendingDialog  class=\"nes-dialog is-dark is-rounded\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12\">\r\n      {{label}} pending ...\r\n    </div>\r\n    <div class=\"col-12\">\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim1\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"black\" begin=\"0s; anim2.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim2\" attributeType=\"XML\" attributeName=\"fill\" from=\"black\" to=\"white\" begin=\"anim1.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\"\r\n           xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim3\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"red\" begin=\"0.5s; anim4.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim4\" attributeType=\"XML\" attributeName=\"fill\" from=\"red\" to=\"white\" begin=\"anim3.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim5\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"green\" begin=\"1s; anim6.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim6\" attributeType=\"XML\" attributeName=\"fill\" from=\"green\" to=\"white\" begin=\"anim5.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n        <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"white\">\r\n          <animate id=\"anim7\" attributeType=\"XML\" attributeName=\"fill\" from=\"white\" to=\"blue\" begin=\"1.5s; anim8.end\" dur=\"1s\" repeatCount=\"\"/>\r\n          <animate id=\"anim8\" attributeType=\"XML\" attributeName=\"fill\" from=\"blue\" to=\"white\" begin=\"anim7.end\" dur=\"1s\" repeatCount=\"\"/>\r\n        </rect>\r\n      </svg>\r\n    </div>\r\n  </div>\r\n</dialog>\r\n"
 
 /***/ }),
 
@@ -4635,6 +4773,9 @@ var SVG = /** @class */ (function () {
     SVG.group = function (style, contents) {
         return "<g " + SVG.attrs(style) + ">" + contents.join('\n') + "</g>";
     };
+    SVG.anchor = function (href, onclick, contents) {
+        return "<a href=\"" + href + "\" onclick=\"" + onclick + "\">" + contents.join('\n') + "</a>";
+    };
     SVG.use = function (ref, style) {
         return "<use xlink:href=\"" + ref + "\" " + SVG.attrs(style) + "></use>";
     };
@@ -4742,7 +4883,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\practice\code\carabiner\front\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\possl_000\Documents\GitHub\carabiner\front\src\main.ts */"./src/main.ts");
 
 
 /***/ })

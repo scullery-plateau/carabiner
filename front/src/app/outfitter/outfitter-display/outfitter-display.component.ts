@@ -30,7 +30,7 @@ export class OutfitterDisplayComponent implements OnInit {
     let min = new XY([0,0]);
     let max = new XY([0,0]);
     let contents: string[] = [];
-    schematic.layers.forEach((layer) => {
+    schematic.layers.forEach((layer, index) => {
       let part: DatasetMetaPart = meta.parts.get(layer.part)[layer.index];
       let flip: XY = layer.resize.times(new XY([(layer.flip?-1.0:1.0),1.0]));
       min = min.min(part.min.times(flip).plus(layer.move));
@@ -74,10 +74,14 @@ export class OutfitterDisplayComponent implements OnInit {
       if (part.layers.shadow) {
         group.push(SVG.use('#'+part.layers.shadow,{}))
       }
-      contents.push(SVG.group({
+      let elem = SVG.group({
         transform:`matrix(${flip.x},0.0,0.0,${flip.y},${layer.move.x},${layer.move.y})`,
         opacity:`${layer.opacity || 1.0}`
-      },group))
+      },group);
+      let anchor = SVG.anchor(`#`,{
+        onclick:`selectOutfitterLayer(event,'selectedLayer',${index})`
+      },[elem]);
+      contents.push(anchor);
     });
     let bodyScale = new XY(SCALES[schematic.bodyScale] || [1.0, 1.0]);
     min = min.times(bodyScale);

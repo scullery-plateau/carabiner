@@ -9,6 +9,20 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript">
+    function selectOutfitterLayer(e,selectorId,index) {
+      e.preventDefault();
+      let selector = document.getElementById(selectorId);
+      selector.value = index;
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("change", false, true);
+        selector.dispatchEvent(evt);
+      } else {
+        selector.fireEvent("onchange");
+      }
+    }
+  </script>
 </head>
 <body>
   <app-root></app-root>
