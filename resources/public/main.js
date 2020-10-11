@@ -2316,7 +2316,7 @@ var OutfitterComponent = /** @class */ (function () {
     OutfitterComponent.prototype.safeURL = function (base64) {
         return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
     };
-    OutfitterComponent.prototype.loadBodyType = function (bodyType) {
+    OutfitterComponent.prototype.loadBodyType = function (bodyType, onMetaLoad) {
         var _this = this;
         this.os.getDatasetDefs(bodyType).subscribe(function (defs) {
             var start = defs.indexOf("<svg");
@@ -2324,6 +2324,9 @@ var OutfitterComponent = /** @class */ (function () {
         });
         this.os.getDatasetMeta(bodyType).subscribe(function (meta) {
             _this.meta = new _dataset_meta__WEBPACK_IMPORTED_MODULE_4__["DatasetMeta"](meta);
+            if (onMetaLoad) {
+                onMetaLoad();
+            }
         });
     };
     OutfitterComponent.prototype.loadNew = function (bodyType) {
@@ -2343,7 +2346,12 @@ var OutfitterComponent = /** @class */ (function () {
             reader_1.onload = function () {
                 var data = reader_1.result.toString();
                 me_1.schematic = _schematic__WEBPACK_IMPORTED_MODULE_5__["Schematic"].fromJSON(JSON.parse(data));
-                me_1.loadBodyType(me_1.schematic.bodyType);
+                me_1.loadBodyType(me_1.schematic.bodyType, function () {
+                    if (me_1.schematic.layers.length > 0) {
+                        me_1.schematicForm.patchValue({ selectedLayer: 0 });
+                        me_1.loadSelectedLayer();
+                    }
+                });
             };
             reader_1.readAsText(file);
         }
@@ -2815,10 +2823,10 @@ var SchematicLayer = /** @class */ (function () {
         if (this.opacity) {
             out.opacity = this.opacity;
         }
-        if (this.pattern) {
+        if (this.pattern && this.pattern >= 0) {
             out.pattern = this.pattern;
         }
-        if (this.shading) {
+        if (this.shading && this.shading >= 0) {
             out.shading = this.shading;
         }
         if (this.resize) {
@@ -2878,10 +2886,10 @@ var Schematic = /** @class */ (function () {
         if (this.bgColor) {
             out['bgColor'] = this.bgColor;
         }
-        if (this.bgPattern) {
+        if (this.bgPattern && this.bgPattern >= 0) {
             out['bgPattern'] = this.bgPattern;
         }
-        if (this.bodyScale) {
+        if (this.bodyScale && this.bodyScale.length > 0) {
             out['bodyScale'] = this.bodyScale;
         }
         return out;

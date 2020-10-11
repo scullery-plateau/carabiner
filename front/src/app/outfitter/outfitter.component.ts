@@ -4,7 +4,6 @@ import {DomSanitizer} from "@angular/platform-browser";
 import {DatasetMeta} from "./dataset-meta";
 import {Schematic} from "./schematic";
 import {FormBuilder, FormGroup} from "@angular/forms";
-import {isNumber} from "util";
 import {SchematicLayer} from "./schematic-layer";
 import {PART_TYPES} from "./part-types";
 import {PartType} from "./part-type";
@@ -62,13 +61,16 @@ export class OutfitterComponent implements OnInit {
     return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
   }
 
-  loadBodyType(bodyType: string) {
+  loadBodyType(bodyType: string,onMetaLoad?:()=>void) {
     this.os.getDatasetDefs(bodyType).subscribe((defs) => {
       let start = defs.indexOf("<svg");
       this.defs = defs.substr(start);
     });
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
       this.meta = new DatasetMeta(meta);
+      if (onMetaLoad) {
+        onMetaLoad();
+      }
     });
   }
 
@@ -90,7 +92,12 @@ export class OutfitterComponent implements OnInit {
       reader.onload = function() {
         let data:string = reader.result.toString();
         me.schematic = Schematic.fromJSON(JSON.parse(data));
-        me.loadBodyType(me.schematic.bodyType);
+        me.loadBodyType(me.schematic.bodyType,()=>{
+          if (me.schematic.layers.length > 0) {
+            me.schematicForm.patchValue({selectedLayer:0});
+            me.loadSelectedLayer();
+          }
+        });
       };
       reader.readAsText(file);
     }

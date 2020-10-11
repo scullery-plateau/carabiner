@@ -118,10 +118,10 @@ export class SchematicLayer {
     if (this.opacity) {
       out.opacity = this.opacity;
     }
-    if (this.pattern) {
+    if (this.pattern && this.pattern >= 0) {
       out.pattern = this.pattern;
     }
-    if (this.shading) {
+    if (this.shading && this.shading >= 0) {
       out.shading = this.shading;
     }
     if (this.resize) {

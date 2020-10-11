@@ -3,7 +3,7 @@ import {SchematicLayer} from "./schematic-layer";
 export class Schematic {
   bodyType: string;
   bgColor?: string;
-  bgPattern?: number
+  bgPattern?: number;
   bodyScale?: string;
   layers: SchematicLayer[];
 
@@ -89,10 +89,10 @@ export class Schematic {
     if (this.bgColor) {
       out['bgColor'] = this.bgColor;
     }
-    if (this.bgPattern) {
+    if (this.bgPattern && this.bgPattern >= 0) {
       out['bgPattern'] = this.bgPattern;
     }
-    if (this.bodyScale) {
+    if (this.bodyScale && this.bodyScale.length > 0) {
       out['bodyScale'] = this.bodyScale;
     }
     return out;

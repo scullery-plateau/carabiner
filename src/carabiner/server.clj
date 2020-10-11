@@ -150,9 +150,12 @@
           :tags ["outfitter"]
           (build-compressor
             "/json"
-            #(-> (tr/json->svg %)
-                 (hml/to-text)
-                 (img/svg-to-64))
+            #(let [start (System/currentTimeMillis)
+                   result (-> (tr/json->svg %)
+                              (hml/to-text)
+                              (img/svg-to-64))]
+               (println "run time: " (- (System/currentTimeMillis) start))
+               result)
             ojs/JsonSchematic)
           (api/context
             "/edn" []
