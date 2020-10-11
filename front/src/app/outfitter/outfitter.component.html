@@ -98,9 +98,9 @@
           <div class="d-flex" *ngIf="selectedLayer" >
             <select class="nes-input p-2" id="partType" formControlName="partType" (change)="setPartType()">
               <option value="" disabled selected hidden>Select Part Type</option>
-              <ng-container *ngFor="let partType of partTypes">
-                <option [value]="partType">{{partType}}</option>
-              </ng-container>
+              <optgroup *ngFor="let group of partGroups" label="{{group}}">
+                <option *ngFor="let part of partTypes.get(group)" [value]="part.part">{{part.label}}</option>
+              </optgroup>
             </select>
             <div class="nes-field is-inline p-2">
               <label for="partIndex">Part Index</label>

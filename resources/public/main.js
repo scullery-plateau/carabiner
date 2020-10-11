@@ -1975,8 +1975,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var DatasetMeta = /** @class */ (function () {
     function DatasetMeta(args) {
-        this.patternCount = args.patternCount;
-        this.shadingCount = args.shadingCount;
+        this.patternCount = args['pattern-count'];
+        this.shadingCount = args['shading-count'];
         this.parts = new Map();
         var me = this;
         Object.entries(args.parts).forEach(function (_a) {
@@ -2198,7 +2198,7 @@ var OutfitterDisplayComponent = /** @class */ (function () {
         if (schematic.bgPattern) {
             frame.push(_util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].rect(min.x, min.y, width, height, {
                 stroke: 'none',
-                fill: "url(#pattern_" + (schematic.bgPattern >= 10 ? '' : '0') + schematic.bgPattern + ")"
+                fill: "url(#patterns-" + (schematic.bgPattern >= 10 ? '' : '0') + schematic.bgPattern + ")"
             }));
         }
         frame.push(_util_svg__WEBPACK_IMPORTED_MODULE_6__["SVG"].group({
@@ -2238,7 +2238,7 @@ var OutfitterDisplayComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Load json schematic</span>\r\n      <input type=\"file\" id=\"loadFileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Compile edn schematic</span>\r\n      <input type=\"file\" id=\"compileFileInput\" style=\"display: none;\" (change)=\"compileSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span [innerHTML]=\"defs | safeHtml\"></span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <form [formGroup]=\"schematicForm\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div>\r\n            <h3>{{schematic.bodyType}}</h3>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n                <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n                <option value=\"\">Default</option>\r\n                <option value=\"lanky\">Lanky</option>\r\n                <option value=\"thin\">Thin</option>\r\n                <option value=\"stocky\">Stocky</option>\r\n                <option value=\"petite\">Petite</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label>Background Color</label>\r\n              <color-picker [selectedValue]=\"schematicForm.value.bgColor||'white'\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"bgPattern\">Background Pattern</label>\r\n              <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" max=\"{{meta.patternCount - 1}}\" (change)=\"setBGPattern()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n                <option value=\"\" disabled selected hidden>Select Layer</option>\r\n                <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                  <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n                </ng-container>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button *ngIf=\"selectedLayer\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><i class='fas fa-fast-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><i class='fas fa-step-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><i class='fas fa-step-forward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><i class='fas fa-fast-forward'></i></button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <select class=\"nes-input p-2\" id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n              <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n              <ng-container *ngFor=\"let partType of partTypes\">\r\n                <option [value]=\"partType\">{{partType}}</option>\r\n              </ng-container>\r\n            </select>\r\n            <div class=\"nes-field is-inline p-2\">\r\n              <label for=\"partIndex\">Part Index</label>\r\n              <input type=\"number\" min=\"0\" max=\"{{(meta.parts.get(schematicForm.value.partType)||[]).length -1}}\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label>Base Color</label>\r\n              <color-picker [selectedValue]=\"selectedLayer.base||'white'\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Detail Color</label>\r\n              <color-picker [selectedValue]=\"selectedLayer.detail||'white'\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Outline Color</label>\r\n              <color-picker [selectedValue]=\"selectedLayer.outline||'white'\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"opacity\">Opacity</label>\r\n              <input type=\"number\" min=\"0.00\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"pattern\">Pattern</label>\r\n              <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" max=\"{{meta.patternCount - 1}}\" (change)=\"setPattern()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"shading\">Shading</label>\r\n              <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" max=\"{{meta.shadingCount - 1}}\" (change)=\"setShading()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Resize</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_x\">X</label>\r\n              <input type=\"number\" id=\"resize_x\" step=\"0.01\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_y\">Y</label>\r\n              <input type=\"number\" id=\"resize_y\" step=\"0.01\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_x\">X</label>\r\n              <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_y\">Y</label>\r\n              <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n            </div>\r\n          </div>\r\n          <div *ngIf=\"selectedIndex>=0\" >\r\n            <button class=\"nes-btn {{schematicForm.value.flip?'flipH':''}}\" (click)=\"toggleFlip()\">Flip?</button>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" (click)=\"saveData()\">Save Data</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" (click)=\"saveImage()\">Save Image</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"!defs && !meta\" class=\"d-flex flex-column\">\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('fit')\">Fit</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('hulk')\">Hulk</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('superman')\">Superman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <button class=\"nes-btn btn-primary\" (click)=\"loadNew('woman')\">Woman</button>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Load json schematic</span>\r\n      <input type=\"file\" id=\"loadFileInput\" style=\"display: none;\" (change)=\"loadSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div class=\"text-center\">\r\n    <label class=\"nes-btn\" *ngIf=\"!processing\">\r\n      <span>Compile edn schematic</span>\r\n      <input type=\"file\" id=\"compileFileInput\" style=\"display: none;\" (change)=\"compileSchematic($event)\">\r\n    </label>\r\n  </div>\r\n  <div *ngIf=\"processing\">\r\n    <h3>\"{{fileName}}\" currently loading {{ellipse}}</h3>\r\n  </div>\r\n  <div *ngIf=\"base64\" class=\"text-center\">\r\n    <img [alt]=\"fileName\" [src]=\"safeURL(base64)\"/>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"defs && meta\">\r\n  <span [innerHTML]=\"defs | safeHtml\"></span>\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <form [formGroup]=\"schematicForm\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div>\r\n            <h3>{{schematic.bodyType}}</h3>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" required id=\"bodyScale\" formControlName=\"bodyScale\" (change)=\"setBodyScale()\">\r\n                <option value=\"\" disabled selected hidden>Select Body Scale</option>\r\n                <option value=\"\">Default</option>\r\n                <option value=\"lanky\">Lanky</option>\r\n                <option value=\"thin\">Thin</option>\r\n                <option value=\"stocky\">Stocky</option>\r\n                <option value=\"petite\">Petite</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label>Background Color</label>\r\n              <color-picker [selectedValue]=\"schematicForm.value.bgColor||'white'\" (retVal)=\"setBackgroundColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"bgPattern\">Background Pattern</label>\r\n              <input type=\"number\" id=\"bgPattern\" formControlName=\"bgPattern\" class=\"nes-input\" min=\"-1\" max=\"{{meta.patternCount - 1}}\" (change)=\"setBGPattern()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"p-2\">\r\n            <div class=\"nes-select\">\r\n              <select class=\"nes-input\" id=\"selectedLayer\" formControlName=\"selectedLayer\" (change)=\"loadSelectedLayer()\">\r\n                <option value=\"\" disabled selected hidden>Select Layer</option>\r\n                <ng-container *ngFor=\"let layer of schematic.layers; index as i\">\r\n                  <option [value]=\"i\">{{i}}: {{layer.part}} {{layer.index}}</option>\r\n                </ng-container>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn is-success\" (click)=\"addLayer()\">Add Layer</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button *ngIf=\"selectedLayer\" class=\"nes-btn is-error\" (click)=\"removeCurrentLayer()\">Remove Layer</button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Back\" (click)=\"moveToBack()\"><i class='fas fa-fast-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Back\" (click)=\"moveBack()\"><i class='fas fa-step-backward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move Forward\" (click)=\"moveForward()\"><i class='fas fa-step-forward'></i></button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" title=\"Move To Front\" (click)=\"moveToFront()\"><i class='fas fa-fast-forward'></i></button>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <select class=\"nes-input p-2\" id=\"partType\" formControlName=\"partType\" (change)=\"setPartType()\">\r\n              <option value=\"\" disabled selected hidden>Select Part Type</option>\r\n              <optgroup *ngFor=\"let group of partGroups\" label=\"{{group}}\">\r\n                <option *ngFor=\"let part of partTypes.get(group)\" [value]=\"part.part\">{{part.label}}</option>\r\n              </optgroup>\r\n            </select>\r\n            <div class=\"nes-field is-inline p-2\">\r\n              <label for=\"partIndex\">Part Index</label>\r\n              <input type=\"number\" min=\"0\" max=\"{{(meta.parts.get(schematicForm.value.partType)||[]).length -1}}\" id=\"partIndex\" formControlName=\"partIndex\" class=\"nes-input\" (change)=\"setPartIndex()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedLayer\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label>Base Color</label>\r\n              <color-picker [selectedValue]=\"selectedLayer.base||'white'\" (retVal)=\"setBaseColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Detail Color</label>\r\n              <color-picker [selectedValue]=\"selectedLayer.detail||'white'\" (retVal)=\"setDetailColor($event)\"></color-picker>\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label>Outline Color</label>\r\n              <color-picker [selectedValue]=\"selectedLayer.outline||'white'\" (retVal)=\"setOutlineColor($event)\"></color-picker>\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"opacity\">Opacity</label>\r\n              <input type=\"number\" min=\"0.00\" max=\"1.00\" step=\"0.05\" id=\"opacity\" formControlName=\"opacity\" class=\"nes-input\" (change)=\"setOpacity()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"pattern\">Pattern</label>\r\n              <input type=\"number\" id=\"pattern\" formControlName=\"pattern\" class=\"nes-input\" min=\"-1\" max=\"{{meta.patternCount - 1}}\" (change)=\"setPattern()\">\r\n            </div>\r\n            <div class=\"nes-field p-2\">\r\n              <label for=\"shading\">Shading</label>\r\n              <input type=\"number\" id=\"shading\" formControlName=\"shading\" class=\"nes-input\" min=\"-1\" max=\"{{meta.shadingCount - 1}}\" (change)=\"setShading()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Resize</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_x\">X</label>\r\n              <input type=\"number\" id=\"resize_x\" step=\"0.01\" formControlName=\"resize_x\" class=\"nes-input\" (change)=\"setResizeX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"resize_y\">Y</label>\r\n              <input type=\"number\" id=\"resize_y\" step=\"0.01\" formControlName=\"resize_y\" class=\"nes-input\" (change)=\"setResizeY()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"d-flex\" *ngIf=\"selectedIndex>=0\" >\r\n            <div>Move</div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_x\">X</label>\r\n              <input type=\"number\" id=\"move_x\" formControlName=\"move_x\" class=\"nes-input\" (change)=\"setMoveX()\">\r\n            </div>\r\n            <div class=\"nes-field is-inline\">\r\n              <label for=\"move_y\">Y</label>\r\n              <input type=\"number\" id=\"move_y\" formControlName=\"move_y\" class=\"nes-input\" (change)=\"setMoveY()\">\r\n            </div>\r\n          </div>\r\n          <div *ngIf=\"selectedIndex>=0\" >\r\n            <button class=\"nes-btn {{schematicForm.value.flip?'flipH':''}}\" (click)=\"toggleFlip()\">Flip?</button>\r\n          </div>\r\n          <div class=\"d-flex\">\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" (click)=\"saveData()\">Save Data</button>\r\n            </div>\r\n            <div class=\"p-2\">\r\n              <button class=\"nes-btn\" (click)=\"saveImage()\">Save Image</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n    <div class=\"col\">\r\n      <outfitter-display [schematic]=\"schematic\" [meta]=\"meta\"></outfitter-display>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2272,6 +2272,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _schematic_layer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./schematic-layer */ "./src/app/outfitter/schematic-layer.ts");
 /* harmony import */ var _part_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./part-types */ "./src/app/outfitter/part-types.ts");
+/* harmony import */ var _part_groups__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./part-groups */ "./src/app/outfitter/part-groups.ts");
+
 
 
 
@@ -2308,6 +2310,7 @@ var OutfitterComponent = /** @class */ (function () {
         this.step = 0;
         this.maxStep = 5;
         this.ellipse = "";
+        this.partGroups = _part_groups__WEBPACK_IMPORTED_MODULE_9__["PART_GROUPS"];
         this.partTypes = _part_types__WEBPACK_IMPORTED_MODULE_8__["PART_TYPES"];
         this.selectedIndex = -1;
     }
@@ -2334,6 +2337,7 @@ var OutfitterComponent = /** @class */ (function () {
             _this.defs = defs.substr(start);
         });
         this.os.getDatasetMeta(bodyType).subscribe(function (meta) {
+            console.log(meta);
             _this.meta = new _dataset_meta__WEBPACK_IMPORTED_MODULE_4__["DatasetMeta"](meta);
         });
     };
@@ -2593,7 +2597,7 @@ var OutfitterService = /** @class */ (function () {
     };
     OutfitterService.prototype.downloadSchematic = function (schematic) {
         this.downloader.setFileName("outfit.json");
-        this.downloader.setPath("data:text/plain;," + JSON.stringify(schematic.toJSON()));
+        this.downloader.setPath("data:text/plain;," + encodeURIComponent(JSON.stringify(schematic.toJSON())));
         this.downloader.invokeDownload();
     };
     OutfitterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2603,6 +2607,52 @@ var OutfitterService = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], OutfitterService);
     return OutfitterService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/part-groups.ts":
+/*!******************************************!*\
+  !*** ./src/app/outfitter/part-groups.ts ***!
+  \******************************************/
+/*! exports provided: PART_GROUPS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PART_GROUPS", function() { return PART_GROUPS; });
+var PART_GROUPS = [
+    "Body",
+    "Face",
+    "Tights",
+    "Clothing",
+    "Back",
+    "Accessories",
+];
+
+
+/***/ }),
+
+/***/ "./src/app/outfitter/part-type.ts":
+/*!****************************************!*\
+  !*** ./src/app/outfitter/part-type.ts ***!
+  \****************************************/
+/*! exports provided: PartType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PartType", function() { return PartType; });
+var PartType = /** @class */ (function () {
+    function PartType(_a) {
+        var part = _a[0], group = _a[1], label = _a[2];
+        this.part = part;
+        this.group = group;
+        this.label = label || (part.charAt(0).toUpperCase() + part.substr(1).toLowerCase());
+    }
+    return PartType;
 }());
 
 
@@ -2619,36 +2669,47 @@ var OutfitterService = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PART_TYPES", function() { return PART_TYPES; });
+/* harmony import */ var _part_type__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./part-type */ "./src/app/outfitter/part-type.ts");
+
 var PART_TYPES = [
-    "arm",
-    "back",
-    "beard",
-    "belt",
-    "boots",
-    "chest",
-    "collar",
-    "ears",
-    "eyebrows",
-    "eyes",
-    "gauntlets",
-    "gloves",
-    "hair",
-    "hat",
-    "head",
-    "legs",
-    "mask",
-    "mouth",
-    "nose",
-    "pants",
-    "shirt",
-    "sholders",
-    "stockings",
-    "symbol_A",
-    "symbol_B",
-    "tights",
-    "torso",
-    "wings_and_tail"
-];
+    ["arm", "Body"],
+    ["back", "Back"],
+    ["beard", "Face"],
+    ["belt", "Clothing"],
+    ["boots", "Clothing"],
+    ["chest", "Clothing"],
+    ["collar", "Clothing"],
+    ["ears", "Face"],
+    ["eyebrows", "Face"],
+    ["eyes", "Face"],
+    ["gauntlets", "Clothing"],
+    ["gloves", "Tights"],
+    ["hair", "Face"],
+    ["hat", "Clothing"],
+    ["head", "Body"],
+    ["legs", "Body"],
+    ["mask", "Tights"],
+    ["mouth", "Face"],
+    ["nose", "Face"],
+    ["pants", "Clothing"],
+    ["shirt", "Tights"],
+    ["sholders", "Clothing", "Shoulders"],
+    ["stockings", "Tights"],
+    ["symbol_A", "Accessories", "Symbol A"],
+    ["symbol_B", "Accessories", "Symbol B"],
+    ["tights", "Tights", "Leggings"],
+    ["torso", "Body"],
+    ["wings_and_tail", "Back", "Wings And Tails"]
+].reduce(function (out, args) {
+    var temp = new _part_type__WEBPACK_IMPORTED_MODULE_0__["PartType"](args);
+    if (out.has(temp.group)) {
+        out.get(temp.group).push(temp);
+    }
+    else {
+        out.set(temp.group, [temp]);
+    }
+    return out;
+}, new Map());
 
 
 /***/ }),
@@ -3481,7 +3542,7 @@ var AccordianComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" class=\"nes-btn\" [ngStyle]=\"{'background-color': (selectedValue||'white'), color:(selectedValue||'white')}\" (click)=\"open()\">________</button>\r\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\r\n  <form [formGroup]=\"colorForm\">\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div *ngIf=\"selectedValue\" [innerHTML]=\"paintSelectedValue() | safeHtml\"></div>\r\n      </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div class=\"nes-field\">\r\n            <label for=\"colorValue\">Color Value</label>\r\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\r\n          </div>\r\n          <hr>\r\n          <div>\r\n            <label for=\"colorByName\">Color by Name</label>\r\n            <div class=\"nes-select\">\r\n              <select required id=\"colorByName\" formControlName=\"name\" (change)=\"setNamed()\">\r\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\r\n                <option *ngFor=\"let pair of colors | keyvalue\"\r\n                        [ngStyle]=\"{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}\"\r\n                        [value]=\"pair.key\">{{pair.key}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <hr>\r\n          <div class=\"nes-field\">\r\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\r\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\r\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\r\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col\">\r\n        <table style=\"padding: 0; margin: 0;\">\r\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\r\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\r\n              <button [ngStyle]=\"{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\r\n            </td>\r\n          </tr>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </form>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
+module.exports = "<button type=\"button\" class=\"nes-btn\" [ngStyle]=\"{'background-color': (selectedValue||'white'), color:(selectedValue||'white')}\" (click)=\"open()\">________</button>\r\n<dialog #myDialog id=\"myDialog\" class=\"nes-dialog is-dark is-rounded\">\r\n  <form [formGroup]=\"colorForm\">\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div *ngIf=\"selectedValue\" [innerHTML]=\"paintSelectedValue() | safeHtml\"></div>\r\n      </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"d-flex flex-column\">\r\n          <div class=\"nes-field\">\r\n            <label for=\"colorValue\">Color Value</label>\r\n            <input type=\"text\" id=\"colorValue\" formControlName=\"value\" class=\"nes-input\" (change)=\"setColor()\">\r\n          </div>\r\n          <hr>\r\n          <div>\r\n            <label for=\"colorByName\">Color by Name</label>\r\n            <div class=\"nes-select\">\r\n              <select required id=\"colorByName\" class=\"nes-input\" formControlName=\"name\" (change)=\"setNamed()\">\r\n                <option value=\"\" disabled selected hidden>Select Color By Name</option>\r\n                <option *ngFor=\"let pair of colors | keyvalue\"\r\n                        [ngStyle]=\"{margin:'1em','background-color':pair.key,color:getForegroundColor(pair.value.toString())}\"\r\n                        [value]=\"pair.key\">{{pair.key}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n          <hr>\r\n          <div class=\"nes-field\">\r\n            <label for=\"red\">Red: {{colorForm.value.red}}</label>\r\n            <input type=\"range\" id=\"red\" formControlName=\"red\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"green\">Green: {{colorForm.value.green}}</label>\r\n            <input type=\"range\" id=\"green\" formControlName=\"green\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n          <div class=\"nes-field\">\r\n            <label for=\"blue\">Blue: {{colorForm.value.blue}}</label>\r\n            <input type=\"range\" id=\"blue\" formControlName=\"blue\" min=\"0\" max=\"255\" class=\"nes-input\" (change)=\"setColorFromRGB()\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col\">\r\n        <table style=\"padding: 0; margin: 0;\">\r\n          <tr *ngFor=\"let y of range(12)\" style=\"padding: 0; margin: 0;\">\r\n            <td *ngFor=\"let x of range(18)\" style=\"padding: 0; margin: 0;\">\r\n              <button [ngStyle]=\"{'background-color':hexFromXY(x,y),color:hexFromXY(x,y)}\" (click)=\"setRGB(hexFromXY(x,y))\">_</button>\r\n            </td>\r\n          </tr>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </form>\r\n  <menu class=\"dialog-menu text-right\">\r\n    <button class=\"nes-btn\" (click)=\"cancel()\">Cancel</button>\r\n    <button class=\"nes-btn is-primary\" (click)=\"confirm()\">Confirm</button>\r\n  </menu>\r\n</dialog>\r\n"
 
 /***/ }),
 

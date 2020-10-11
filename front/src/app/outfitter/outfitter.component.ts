@@ -7,6 +7,8 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 import {isNumber} from "util";
 import {SchematicLayer} from "./schematic-layer";
 import {PART_TYPES} from "./part-types";
+import {PartType} from "./part-type";
+import {PART_GROUPS} from "./part-groups";
 
 @Component({
   selector: 'app-outfitter',
@@ -49,7 +51,9 @@ export class OutfitterComponent implements OnInit {
   schematic: Schematic;
 
   maxPartIndex: number;
-  partTypes: string[] = PART_TYPES;
+  partGroups: string[] = PART_GROUPS;
+
+  partTypes: Map<string,PartType[]> = PART_TYPES;
 
   selectedIndex: number = -1;
   selectedLayer: SchematicLayer;
@@ -79,6 +83,7 @@ export class OutfitterComponent implements OnInit {
       this.defs = defs.substr(start);
     });
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
+      console.log(meta);
       this.meta = new DatasetMeta(meta);
     });
   }

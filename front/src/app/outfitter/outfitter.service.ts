@@ -30,13 +30,13 @@ export class OutfitterService {
     return this.client.get("/outfitter/datasets/" + bodyType + ".svg",{responseType:"text"});
   }
 
-  getDatasetMeta(bodyType: string): Observable<DatasetMeta> {
-    return this.client.get<DatasetMeta>("/outfitter/datasets/" + bodyType + ".json");
+  getDatasetMeta(bodyType: string): Observable<any> {
+    return this.client.get<any>("/outfitter/datasets/" + bodyType + ".json");
   }
 
   downloadSchematic(schematic:Schematic) {
     this.downloader.setFileName("outfit.json");
-    this.downloader.setPath("data:text/plain;," + JSON.stringify(schematic.toJSON()));
+    this.downloader.setPath("data:text/plain;," + encodeURIComponent(JSON.stringify(schematic.toJSON())));
     this.downloader.invokeDownload();
   }
 }

@@ -7,11 +7,11 @@ export class DatasetMeta {
 
   constructor(args: {
     parts:{},
-    patternCount:number,
-    shadingCount:number
+    'pattern-count':number,
+    'shading-count':number
   }) {
-    this.patternCount = args.patternCount;
-    this.shadingCount = args.shadingCount;
+    this.patternCount = args['pattern-count'];
+    this.shadingCount = args['shading-count'];
     this.parts = new Map<string, DatasetMetaPart[]>();
     let me = this;
     Object.entries(args.parts).forEach(([key, value]) => {

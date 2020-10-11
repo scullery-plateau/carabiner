@@ -104,7 +104,7 @@ export class OutfitterDisplayComponent implements OnInit {
     if (schematic.bgPattern) {
       frame.push(SVG.rect(min.x,min.y,width,height,{
         stroke:'none',
-        fill:`url(#pattern_${schematic.bgPattern>=10?'':'0'}${schematic.bgPattern})`
+        fill:`url(#patterns-${schematic.bgPattern>=10?'':'0'}${schematic.bgPattern})`
       }));
     }
     frame.push(SVG.group({

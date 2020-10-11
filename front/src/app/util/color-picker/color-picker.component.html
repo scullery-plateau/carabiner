@@ -18,10 +18,10 @@
           <div>
             <label for="colorByName">Color by Name</label>
             <div class="nes-select">
-              <select required id="colorByName" formControlName="name" (change)="setNamed()">
+              <select required id="colorByName" class="nes-input" formControlName="name" (change)="setNamed()">
                 <option value="" disabled selected hidden>Select Color By Name</option>
                 <option *ngFor="let pair of colors | keyvalue"
-                        [ngStyle]="{'background-color':pair.key,color:getForegroundColor(pair.value.toString())}"
+                        [ngStyle]="{margin:'1em','background-color':pair.key,color:getForegroundColor(pair.value.toString())}"
                         [value]="pair.key">{{pair.key}}</option>
               </select>
             </div>
