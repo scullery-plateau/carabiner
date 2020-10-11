@@ -13,12 +13,13 @@ export class ColorPickerComponent implements OnInit {
   @ViewChild('myDialog') dialogRef: ElementRef;
 
   @Input()
-  initValue: string;
+  selectedValue: string;
 
   @Output()
   retVal: EventEmitter<string> = new EventEmitter<string>();
 
   colors:{} = COLORS;
+
   invertedColors:{};
 
   dialog: HTMLDialogElement;
@@ -38,11 +39,8 @@ export class ColorPickerComponent implements OnInit {
     blue:[127]
   });
 
-  selectedValue: string;
-
   ngOnInit() {
     this.dialog = this.dialogRef.nativeElement as HTMLDialogElement;
-    this.applyColor(this.initValue);
   }
 
   range(n: number) {
@@ -138,6 +136,7 @@ export class ColorPickerComponent implements OnInit {
   }
 
   open() {
+    this.applyColor(this.selectedValue);
     this.dialog.showModal();
   }
 

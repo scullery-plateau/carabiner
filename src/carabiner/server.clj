@@ -18,6 +18,7 @@
             [carabiner.mastermold.core :as mm]
             [carabiner.mastermold.schema :as ms]
             [carabiner.outfitter.translate :as tr]
+            [carabiner.outfitter.json-schematic :as ojs]
             [clojure.pprint :as pp]
             [clojure.data.json :as json]
             [clojure.edn :as edn]
@@ -147,22 +148,30 @@
         (api/context
           "/outfitter/publish" []
           :tags ["outfitter"]
-          (sweet/resource
-            {:description ""
-             :post        {:summary    ""
-                           :parameters {:body s/Str}
-                           :consumes   ["text/plain"]
-                           :produces   ["text/plain"]
-                           :responses  {200 {:schema s/Str}}
-                           :handler    (fn [{:keys [body]}]
-                                         (let [text (slurp ^ByteArrayInputStream body)
-                                               _ (println text)
-                                               result (-> (edn/read-string text)
-                                                          (tr/schematic->svg)
-                                                          (hml/to-text)
-                                                          (img/svg-to-64))]
-                                           (-> (http/ok result)
-                                               (http/content-type "text/plain"))))}}))
+          (build-compressor
+            "/json"
+            #(-> (tr/json->svg %)
+                 (hml/to-text)
+                 (img/svg-to-64))
+            ojs/JsonSchematic)
+          (api/context
+            "/edn" []
+            (sweet/resource
+              {:description ""
+               :post        {:summary    ""
+                             :parameters {:body s/Str}
+                             :consumes   ["text/plain"]
+                             :produces   ["text/plain"]
+                             :responses  {200 {:schema s/Str}}
+                             :handler    (fn [{:keys [body]}]
+                                           (let [text (slurp ^ByteArrayInputStream body)
+                                                 _ (println text)
+                                                 result (-> (edn/read-string text)
+                                                            (tr/schematic->svg)
+                                                            (hml/to-text)
+                                                            (img/svg-to-64))]
+                                             (-> (http/ok result)
+                                                 (http/content-type "text/plain"))))}})))
         (api/context
           "/rogue94/charnames" []
           (sweet/resource

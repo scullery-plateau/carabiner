@@ -15,7 +15,15 @@ export class OutfitterService {
   constructor(private client: HttpClient) { }
 
   loadSchematic(schematic: string): Observable<string> {
-    return this.client.post<string>("/outfitter/publish",schematic);
+    return this.client.post<string>("/outfitter/publish/edn",schematic);
+  }
+
+  downloadImage(schematic: Schematic) {
+    return this.client.post<string>("/outfitter/publish/json",schematic.toJSON()).subscribe((base64) => {
+      this.downloader.setFileName("outfit.png");
+      this.downloader.setPath("data:image/png;base64," + base64);
+      this.downloader.invokeDownload();
+    });
   }
 
   getDatasetDefs(bodyType: string): Observable<string> {

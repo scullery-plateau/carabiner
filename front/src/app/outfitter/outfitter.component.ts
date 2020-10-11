@@ -175,15 +175,6 @@ export class OutfitterComponent implements OnInit {
     }
   }
 
-  moveToBack() {
-    if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
-      this.swapLayers(0,this.selectedIndex);
-      this.selectedIndex = 0;
-      this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
-      this.loadSelectedLayer();
-    }
-  }
-
   moveBack() {
     if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
       this.swapLayers(this.selectedIndex-1,this.selectedIndex);
@@ -202,9 +193,20 @@ export class OutfitterComponent implements OnInit {
     }
   }
 
+  moveToBack() {
+    if (this.selectedIndex > 0 && this.selectedIndex < this.schematic.layers.length) {
+      let temp = this.schematic.layers.splice(this.selectedIndex,1)[0];
+      this.schematic.layers.unshift(temp);
+      this.selectedIndex = 0;
+      this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
+      this.loadSelectedLayer();
+    }
+  }
+
   moveToFront() {
     if (this.selectedIndex >= 0 && this.selectedIndex < this.schematic.layers.length-1) {
-      this.swapLayers(this.selectedIndex,this.schematic.layers.length - 1);
+      let temp = this.schematic.layers.splice(this.selectedIndex,1)[0];
+      this.schematic.layers.push(temp);
       this.selectedIndex = this.schematic.layers.length - 1;
       this.schematicForm.patchValue({selectedLayer:this.selectedIndex});
       this.loadSelectedLayer();

@@ -54,13 +54,13 @@
           <div class="p-2">
             <div class="nes-field is-inline">
               <label>Background Color</label>
-              <color-picker [initValue]="schematicForm.value.bgColor" (retVal)="setBackgroundColor($event)"></color-picker>
+              <color-picker [selectedValue]="schematicForm.value.bgColor||'white'" (retVal)="setBackgroundColor($event)"></color-picker>
             </div>
           </div>
           <div class="p-2">
             <div class="nes-field is-inline">
               <label for="bgPattern">Background Pattern</label>
-              <input type="number" id="bgPattern" formControlName="bgPattern" class="nes-input" min="-1" [max]="meta.patternCount" (change)="setBGPattern()">
+              <input type="number" id="bgPattern" formControlName="bgPattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setBGPattern()">
             </div>
           </div>
           <div class="p-2">
@@ -102,23 +102,23 @@
                 <option [value]="partType">{{partType}}</option>
               </ng-container>
             </select>
-            <div class="nes-field p-2">
+            <div class="nes-field is-inline p-2">
               <label for="partIndex">Part Index</label>
-              <input type="number" min="0" [max]="maxPartIndex" id="partIndex" formControlName="partIndex" class="nes-input" (change)="setPartIndex()">
+              <input type="number" min="0" max="{{(meta.parts.get(schematicForm.value.partType)||[]).length -1}}" id="partIndex" formControlName="partIndex" class="nes-input" (change)="setPartIndex()">
             </div>
           </div>
           <div class="d-flex" *ngIf="selectedLayer" >
             <div class="nes-field p-2">
               <label>Base Color</label>
-              <color-picker [initValue]="selectedLayer.base" (retVal)="setBaseColor($event)"></color-picker>
+              <color-picker [selectedValue]="selectedLayer.base||'white'" (retVal)="setBaseColor($event)"></color-picker>
             </div>
             <div class="nes-field p-2">
               <label>Detail Color</label>
-              <color-picker [initValue]="selectedLayer.detail" (retVal)="setDetailColor($event)"></color-picker>
+              <color-picker [selectedValue]="selectedLayer.detail||'white'" (retVal)="setDetailColor($event)"></color-picker>
             </div>
             <div class="nes-field p-2">
               <label>Outline Color</label>
-              <color-picker [initValue]="selectedLayer.outline" (retVal)="setOutlineColor($event)"></color-picker>
+              <color-picker [selectedValue]="selectedLayer.outline||'white'" (retVal)="setOutlineColor($event)"></color-picker>
             </div>
           </div>
           <div class="d-flex" *ngIf="selectedIndex>=0" >
@@ -128,11 +128,11 @@
             </div>
             <div class="nes-field p-2">
               <label for="pattern">Pattern</label>
-              <input type="number" id="pattern" formControlName="pattern" class="nes-input" min="-1" [max]="meta.patternCount" (change)="setPattern()">
+              <input type="number" id="pattern" formControlName="pattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setPattern()">
             </div>
             <div class="nes-field p-2">
               <label for="shading">Shading</label>
-              <input type="number" id="shading" formControlName="shading" class="nes-input" min="-1" [max]="meta.shadingCount" (change)="setShading()">
+              <input type="number" id="shading" formControlName="shading" class="nes-input" min="-1" max="{{meta.shadingCount - 1}}" (change)="setShading()">
             </div>
           </div>
           <div class="d-flex" *ngIf="selectedIndex>=0" >

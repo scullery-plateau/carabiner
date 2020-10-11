@@ -1,4 +1,4 @@
-<button type="button" class="nes-btn" [ngStyle]="{padding: '0', margin: '0', 'background-color': (selectedValue||'white'), color:(selectedValue||'white')}" (click)="open()">________</button>
+<button type="button" class="nes-btn" [ngStyle]="{'background-color': (selectedValue||'white'), color:(selectedValue||'white')}" (click)="open()">________</button>
 <dialog #myDialog id="myDialog" class="nes-dialog is-dark is-rounded">
   <form [formGroup]="colorForm">
     <div class="row">
