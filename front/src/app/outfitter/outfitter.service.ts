@@ -18,11 +18,12 @@ export class OutfitterService {
     return this.client.post<string>("/outfitter/publish/edn",schematic);
   }
 
-  downloadImage(schematic: Schematic) {
+  downloadImage(schematic: Schematic, onload:()=>void) {
     return this.client.post<string>("/outfitter/publish/json",schematic.toJSON()).subscribe((base64) => {
       this.downloader.setFileName("outfit.png");
       this.downloader.setPath("data:image/png;base64," + base64);
       this.downloader.invokeDownload();
+      onload();
     });
   }
 

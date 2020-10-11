@@ -24,7 +24,7 @@
     </label>
   </div>
   <div *ngIf="processing">
-    <h3>"{{fileName}}" currently loading {{ellipse}}</h3>
+    <h3>"{{fileName}}" currently loading</h3>
   </div>
   <div *ngIf="base64" class="text-center">
     <img [alt]="fileName" [src]="safeURL(base64)"/>
@@ -165,7 +165,7 @@
               <button class="nes-btn" (click)="saveData()">Save Data</button>
             </div>
             <div class="p-2">
-              <button class="nes-btn" (click)="saveImage()">Save Image</button>
+              <button *ngIf="!processing" class="nes-btn" (click)="saveImage()">Save Image</button>
             </div>
           </div>
         </div>

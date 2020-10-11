@@ -38,10 +38,7 @@ export class OutfitterComponent implements OnInit {
     move_y:[0],
     flip:[false]
   });
-  processing: any;
-  step: number = 0;
-  maxStep: number = 5;
-  ellipse: string = "";
+  processing: boolean;
   base64: string;
 
   fileName: string;
@@ -65,25 +62,12 @@ export class OutfitterComponent implements OnInit {
     return this.sanitizer.bypassSecurityTrustResourceUrl("data:image/png;base64, " + base64);
   }
 
-  stepAnimate() {
-    let me = this;
-    let animateStep = () => {
-      me.step = (me.step + 1) % me.maxStep;
-      me.ellipse = ".".repeat(me.step + 1);
-      animateStep();
-    };
-    return animateStep;
-  }
-
   loadBodyType(bodyType: string) {
     this.os.getDatasetDefs(bodyType).subscribe((defs) => {
-      console.log("defs");
       let start = defs.indexOf("<svg");
-      console.log(start);
       this.defs = defs.substr(start);
     });
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
-      console.log(meta);
       this.meta = new DatasetMeta(meta);
     });
   }
@@ -122,8 +106,10 @@ export class OutfitterComponent implements OnInit {
       let reader = new FileReader();
       reader.onload = function() {
         let data = reader.result.toString();
+        me.processing = true;
         me.os.loadSchematic(data).subscribe((base64) => {
           me.base64 = base64;
+          me.processing = false;
         });
       };
       reader.readAsText(file);
@@ -314,6 +300,11 @@ export class OutfitterComponent implements OnInit {
   }
 
   saveImage() {
-
+    let me = this;
+    me.processing = true;
+    me.fileName = "outfit.png";
+    this.os.downloadImage(this.schematic,()=>{
+      me.processing = false;
+    });
   }
 }
