@@ -6,6 +6,8 @@ import {SCALES} from "../scales";
 import {DatasetMetaPart} from "../dataset-meta-part";
 import {SVG} from "../../util/svg";
 import {isNumber} from "util";
+import {TORSO_TOPS} from "../torso-tops";
+import {HEAD_PARTS} from "../head-parts";
 
 @Component({
   selector: 'outfitter-display',
@@ -30,11 +32,19 @@ export class OutfitterDisplayComponent implements OnInit {
     let min = new XY([0,0]);
     let max = new XY([0,0]);
     let contents: string[] = [];
+    let bodyScale = new XY(SCALES[schematic.bodyScale] || [1.0, 1.0]);
+    let headShift = new XY([0.0, TORSO_TOPS[schematic.bodyType] * 0.8 * (1 - bodyScale.y)]);
     schematic.layers.forEach((layer, index) => {
       let part: DatasetMetaPart = meta.parts.get(layer.part)[layer.index];
       let flip: XY = layer.resize.times(new XY([(layer.flip?-1.0:1.0),1.0]));
-      min = min.min(part.min.times(flip).plus(layer.move));
-      max = max.max(part.max.times(flip).plus(layer.move));
+      let move = layer.move;
+      if (HEAD_PARTS[layer.part]) {
+        move = move.plus(headShift);
+      } else {
+        flip = flip.times(bodyScale);
+      }
+      min = min.min(part.min.times(flip).plus(move));
+      max = max.max(part.max.times(flip).plus(move));
       let group: string[] = [];
       if (part.layers.base) {
         group.push(SVG.use('#'+part.layers.base,{fill:(layer.base || 'white')}))
@@ -83,9 +93,6 @@ export class OutfitterDisplayComponent implements OnInit {
       },[elem]);
       contents.push(anchor);
     });
-    let bodyScale = new XY(SCALES[schematic.bodyScale] || [1.0, 1.0]);
-    min = min.times(bodyScale);
-    max = max.times(bodyScale);
     let halfWidth = Math.max(Math.abs(max.x), Math.abs(min.x));
     min = new XY([-1*halfWidth,min.y]);
     max = new XY([halfWidth,max.y]);
@@ -107,9 +114,7 @@ export class OutfitterDisplayComponent implements OnInit {
         fill:`url(#patterns-${schematic.bgPattern>=10?'':'0'}${schematic.bgPattern})`
       }));
     }
-    frame.push(SVG.group({
-      transform:`matrix(${bodyScale.x},0.0,0.0,${bodyScale.y},0.0,0.0)`
-    },contents))
+    frame.push(SVG.group({},contents))
     return SVG.svg("" + (1.5 * width),"" + (1.5 * height),{
       viewBox:[min.x,min.y,width,height].join(" ")
     },frame);

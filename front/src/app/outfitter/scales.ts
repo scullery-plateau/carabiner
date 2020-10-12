@@ -1,5 +1,3 @@
-import {XY} from "./xy";
-
 export const SCALES: {} = {
   "lanky":  [0.85, 1.15],
   "thin":   [0.85, 1.0],
