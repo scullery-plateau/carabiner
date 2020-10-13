@@ -7,6 +7,14 @@ export class XY {
     this.y = y;
   }
 
+  static identityMultiplier(): XY {
+    return new XY([1,1]);
+  }
+
+  static origin(): XY {
+    return new XY([0,0]);
+  }
+
   toJSON() {
     return [this.x, this.y];
   }

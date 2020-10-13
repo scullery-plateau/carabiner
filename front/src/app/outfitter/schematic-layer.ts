@@ -56,21 +56,17 @@ export class SchematicLayer {
     if (args.outline) {
       out.outline = args.outline;
     }
-    if (args.opacity) {
+    if ((typeof args.opacity) === "number") {
       out.opacity = args.opacity;
     }
-    if (args.pattern) {
+    if ((typeof args.pattern) === "number") {
       out.pattern = args.pattern;
     }
-    if (args.shading) {
+    if ((typeof args.shading) === "number") {
       out.shading = args.shading;
     }
-    if (args.resize) {
-      out.resize = new XY(args.resize);
-    }
-    if (args.move) {
-      out.move = new XY(args.move);
-    }
+    out.resize = new XY(args.resize||[1,1]);
+    out.move = new XY(args.move||[0,0]);
     if (args.flip) {
       out.flip = args.flip;
     }

@@ -32,14 +32,21 @@
 </div>
 <div *ngIf="defs && meta">
   <span [innerHTML]="defs | safeHtml"></span>
-  <div class="row">
-    <div class="col">
-      <form [formGroup]="schematicForm">
-        <div class="d-flex flex-column">
-          <div>
-            <h3>{{schematic.bodyType}}</h3>
-          </div>
-          <div class="p-2">
+  <form [formGroup]="schematicForm">
+    <h3>{{schematic.bodyType}}</h3>
+    <div class="row">
+      <div class="col-3 d-flex">
+        <div class="p-2">
+          <button class="nes-btn" (click)="saveData()">Save Data</button>
+        </div>
+        <div class="p-2">
+          <button *ngIf="!processing" class="nes-btn" (click)="saveImage()">Save Image</button>
+        </div>
+      </div>
+      <div class="col-7 nes-container is-rounded m-1">
+        <div class="row">
+          <div class="col p-2 nes-field is-inline">
+            <label for="bodyScale">Body Scale</label>
             <div class="nes-select">
               <select class="nes-input" required id="bodyScale" formControlName="bodyScale" (change)="setBodyScale()">
                 <option value="" disabled selected hidden>Select Body Scale</option>
@@ -51,128 +58,139 @@
               </select>
             </div>
           </div>
-          <div class="p-2">
+          <div class="col p-2">
             <div class="nes-field is-inline">
-              <label>Background Color</label>
+              <label>BG Color</label>
               <color-picker [selectedValue]="schematicForm.value.bgColor||'white'" (retVal)="setBackgroundColor($event)"></color-picker>
             </div>
           </div>
-          <div class="p-2">
+          <div class="col p-2">
             <div class="nes-field is-inline">
-              <label for="bgPattern">Background Pattern</label>
+              <label for="bgPattern">BG Pattern</label>
               <input type="number" id="bgPattern" formControlName="bgPattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setBGPattern()">
             </div>
           </div>
-          <div class="p-2">
-            <div class="nes-select">
-              <select class="nes-input" id="selectedLayer" formControlName="selectedLayer" (change)="loadSelectedLayer()">
-                <option value="" disabled selected hidden>Select Layer</option>
-                <ng-container *ngFor="let layer of schematic.layers; index as i">
-                  <option [value]="i">{{i}}: {{layer.part}} {{layer.index}}</option>
-                </ng-container>
-              </select>
-            </div>
-          </div>
-          <div class="d-flex">
-            <div class="p-2">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="d-flex flex-column">
+          <div class="row">
+            <div class="col p-2">
               <button class="nes-btn is-success" (click)="addLayer()">Add Layer</button>
             </div>
-            <div class="p-2">
+            <div class="col p-2">
               <button *ngIf="selectedLayer" class="nes-btn is-error" (click)="removeCurrentLayer()">Remove Layer</button>
             </div>
           </div>
-          <div class="d-flex" *ngIf="selectedLayer" >
-            <div class="p-2">
-              <button class="nes-btn" title="Move To Back" (click)="moveToBack()"><i class='fas fa-fast-backward'></i></button>
+          <div class="row">
+            <div class="col-4 p-2">
+              <div class="nes-field is-inline">
+                <label for="selectedLayer">Active Layer</label>
+                <div class="nes-select">
+                  <select class="nes-input" id="selectedLayer" formControlName="selectedLayer" (change)="loadSelectedLayer()">
+                    <option value="" disabled selected hidden>Select Layer</option>
+                    <ng-container *ngFor="let layer of schematic.layers; index as i">
+                      <option [value]="i">{{i}}: {{layer.part}} {{layer.index}}</option>
+                    </ng-container>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div class="p-2">
-              <button class="nes-btn" title="Move Back" (click)="moveBack()"><i class='fas fa-step-backward'></i></button>
-            </div>
-            <div class="p-2">
-              <button class="nes-btn" title="Move Forward" (click)="moveForward()"><i class='fas fa-step-forward'></i></button>
-            </div>
-            <div class="p-2">
-              <button class="nes-btn" title="Move To Front" (click)="moveToFront()"><i class='fas fa-fast-forward'></i></button>
+            <div class="col d-flex" *ngIf="selectedLayer" >
+              <div class="p-2">
+                <button class="nes-btn" title="Move To Back" (click)="moveToBack()"><i class='fas fa-fast-backward'></i></button>
+              </div>
+              <div class="p-2">
+                <button class="nes-btn" title="Move Back" (click)="moveBack()"><i class='fas fa-step-backward'></i></button>
+              </div>
+              <div class="p-2">
+                <button class="nes-btn" title="Move Forward" (click)="moveForward()"><i class='fas fa-step-forward'></i></button>
+              </div>
+              <div class="p-2">
+                <button class="nes-btn" title="Move To Front" (click)="moveToFront()"><i class='fas fa-fast-forward'></i></button>
+              </div>
+              <div class="p-2">
+                <button class="nes-btn {{schematicForm.value.flip?'flipH':''}}" (click)="toggleFlip()">Flip?</button>
+              </div>
             </div>
           </div>
-          <div class="d-flex" *ngIf="selectedLayer" >
-            <select class="nes-input p-2" id="partType" formControlName="partType" (change)="setPartType()">
-              <option value="" disabled selected hidden>Select Part Type</option>
-              <optgroup *ngFor="let group of partGroups" label="{{group}}">
-                <option *ngFor="let part of partTypes.get(group)" [value]="part.part">{{part.label}}</option>
-              </optgroup>
-            </select>
-            <div class="nes-field is-inline p-2">
+          <div class="row" *ngIf="selectedLayer">
+            <div class="col nes-field is-inline p-2">
+              <label for="partType">Part: </label>
+              <select class="nes-input p-2" id="partType" formControlName="partType" (change)="setPartType()">
+                <option value="" disabled selected hidden>Select Part Type</option>
+                <optgroup *ngFor="let group of partGroups" label="{{group}}">
+                  <option *ngFor="let part of partTypes.get(group)" [value]="part.part">{{part.label}}</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="col nes-field is-inline p-2">
               <label for="partIndex">Part Index</label>
               <input type="number" min="0" max="{{(meta.parts.get(schematicForm.value.partType)||[]).length -1}}" id="partIndex" formControlName="partIndex" class="nes-input" (change)="setPartIndex()">
             </div>
           </div>
-          <div class="d-flex" *ngIf="selectedLayer" >
-            <div class="nes-field p-2">
-              <label>Base Color</label>
-              <color-picker [selectedValue]="selectedLayer.base||'white'" (retVal)="setBaseColor($event)"></color-picker>
+          <div class="row">
+            <div class="col d-flex flex-column nes-container is-rounded m-1 with-title" *ngIf="selectedLayer" >
+              <span class="title">Colors</span>
+              <div class="nes-field is-inline p-2">
+                <label>Base</label>
+                <color-picker [selectedValue]="selectedLayer.base||'white'" (retVal)="setBaseColor($event)"></color-picker>
+              </div>
+              <div class="nes-field is-inline p-2">
+                <label>Detail</label>
+                <color-picker [selectedValue]="selectedLayer.detail||'white'" (retVal)="setDetailColor($event)"></color-picker>
+              </div>
+              <div class="nes-field is-inline p-2">
+                <label>Outline</label>
+                <color-picker [selectedValue]="selectedLayer.outline||'white'" (retVal)="setOutlineColor($event)"></color-picker>
+              </div>
             </div>
-            <div class="nes-field p-2">
-              <label>Detail Color</label>
-              <color-picker [selectedValue]="selectedLayer.detail||'white'" (retVal)="setDetailColor($event)"></color-picker>
-            </div>
-            <div class="nes-field p-2">
-              <label>Outline Color</label>
-              <color-picker [selectedValue]="selectedLayer.outline||'white'" (retVal)="setOutlineColor($event)"></color-picker>
-            </div>
-          </div>
-          <div class="d-flex" *ngIf="selectedIndex>=0" >
-            <div class="nes-field p-2">
-              <label for="opacity">Opacity</label>
-              <input type="number" min="0.00" max="1.00" step="0.05" id="opacity" formControlName="opacity" class="nes-input" (change)="setOpacity()">
-            </div>
-            <div class="nes-field p-2">
-              <label for="pattern">Pattern</label>
-              <input type="number" id="pattern" formControlName="pattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setPattern()">
-            </div>
-            <div class="nes-field p-2">
-              <label for="shading">Shading</label>
-              <input type="number" id="shading" formControlName="shading" class="nes-input" min="-1" max="{{meta.shadingCount - 1}}" (change)="setShading()">
-            </div>
-          </div>
-          <div class="d-flex" *ngIf="selectedIndex>=0" >
-            <div>Resize</div>
-            <div class="nes-field is-inline">
-              <label for="resize_x">X</label>
-              <input type="number" id="resize_x" step="0.01" formControlName="resize_x" class="nes-input" (change)="setResizeX()">
-            </div>
-            <div class="nes-field is-inline">
-              <label for="resize_y">Y</label>
-              <input type="number" id="resize_y" step="0.01" formControlName="resize_y" class="nes-input" (change)="setResizeY()">
+            <div class="col d-flex flex-column nes-container is-rounded m-1" *ngIf="selectedIndex>=0" >
+              <div class="nes-field is-inline p-2">
+                <label for="opacity">Opacity</label>
+                <input type="number" min="0.00" max="1.00" step="0.05" id="opacity" formControlName="opacity" class="nes-input" (change)="setOpacity()">
+              </div>
+              <div class="nes-field is-inline p-2">
+                <label for="pattern">Pattern</label>
+                <input type="number" id="pattern" formControlName="pattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setPattern()">
+              </div>
+              <div class="nes-field is-inline p-2">
+                <label for="shading">Shading</label>
+                <input type="number" id="shading" formControlName="shading" class="nes-input" min="-1" max="{{meta.shadingCount - 1}}" (change)="setShading()">
+              </div>
             </div>
           </div>
-          <div class="d-flex" *ngIf="selectedIndex>=0" >
-            <div>Move</div>
-            <div class="nes-field is-inline">
-              <label for="move_x">X</label>
-              <input type="number" id="move_x" formControlName="move_x" class="nes-input" (change)="setMoveX()">
+          <div class="row">
+            <div class="col d-flex flex-column nes-container is-rounded with-title m-1" *ngIf="selectedIndex>=0" >
+              <span class="title">Resize</span>
+              <div class="nes-field is-inline">
+                <label for="resize_x">X</label>
+                <input type="number" id="resize_x" step="0.01" formControlName="resize_x" class="nes-input" (change)="setResizeX()">
+              </div>
+              <div class="nes-field is-inline">
+                <label for="resize_y">Y</label>
+                <input type="number" id="resize_y" step="0.01" formControlName="resize_y" class="nes-input" (change)="setResizeY()">
+              </div>
             </div>
-            <div class="nes-field is-inline">
-              <label for="move_y">Y</label>
-              <input type="number" id="move_y" formControlName="move_y" class="nes-input" (change)="setMoveY()">
-            </div>
-          </div>
-          <div *ngIf="selectedIndex>=0" >
-            <button class="nes-btn {{schematicForm.value.flip?'flipH':''}}" (click)="toggleFlip()">Flip?</button>
-          </div>
-          <div class="d-flex">
-            <div class="p-2">
-              <button class="nes-btn" (click)="saveData()">Save Data</button>
-            </div>
-            <div class="p-2">
-              <button *ngIf="!processing" class="nes-btn" (click)="saveImage()">Save Image</button>
+            <div class="col d-flex flex-column nes-container is-rounded with-title m-1" *ngIf="selectedIndex>=0" >
+              <span class="title">Move</span>
+              <div class="nes-field is-inline">
+                <label for="move_x">X</label>
+                <input type="number" id="move_x" formControlName="move_x" class="nes-input" (change)="setMoveX()">
+              </div>
+              <div class="nes-field is-inline">
+                <label for="move_y">Y</label>
+                <input type="number" id="move_y" formControlName="move_y" class="nes-input" (change)="setMoveY()">
+              </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
+      <div class="col-3">
+        <outfitter-display [schematic]="schematic" [meta]="meta"></outfitter-display>
+      </div>
     </div>
-    <div class="col">
-      <outfitter-display [schematic]="schematic" [meta]="meta"></outfitter-display>
-    </div>
-  </div>
+  </form>
 </div>

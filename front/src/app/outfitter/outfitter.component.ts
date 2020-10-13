@@ -75,10 +75,23 @@ export class OutfitterComponent implements OnInit {
   }
 
   loadNew(bodyType: string) {
-    this.loadBodyType(bodyType);
     this.schematic = new Schematic(bodyType);
     this.schematic.bodyType = bodyType;
-    this.schematic.layers = [];
+    this.schematic.bgColor = "#cccccc";
+    this.schematic.layers = [
+      {"part":"torso","index":0,"shading":0},
+      {"part":"legs","index":0,"shading":0},
+      {"part":"arm","index":0,"shading":0},
+      {"part":"arm","index":0,"shading":0,"flip":true},
+      {"part":"head","index":0,"shading":0},
+    ].map(SchematicLayer.fromJSON);
+    this.schematicForm.patchValue({
+      bgColor:this.schematic.bgColor,
+      selectedLayer:4
+    });
+    this.loadBodyType(bodyType,()=>{
+      this.loadSelectedLayer();
+    });
   }
 
   loadSchematic(e) {
