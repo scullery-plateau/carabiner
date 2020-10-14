@@ -45,7 +45,7 @@
                     (let []
                       [:div
                        {:alt index :title index :style "display: inline;"}
-                       (into [:svg (tr/build-svg-args (tr/build-dim [[part-option {}]] 5 1 [1 1]))]
+                       (into [:svg (tr/build-svg-args (tr/build-dim [[part-option {}]] 5 1 [1 1] [0 0]))]
                              [(tr/build-layer [] [] [1 1] [0 0] [part-option colors])])]))
                   (range)
                   (edn/read-string (slurp (io/file parts-folder (str part ".edn")))))))))
@@ -134,7 +134,7 @@
 
 (deftest test-json->svg
   (let [json-parser #(tr/json->svg (json/read-str % :key-fn keyword))
-        demos ["night-phantom.json"]]
+        demos ["demo-fit-lanky.json"]]
     (spit (io/file json-folder "times-out.edn")
           (reduce (partial demo-reducer json-folder json-parser) {} demos))))
 

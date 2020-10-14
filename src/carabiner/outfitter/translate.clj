@@ -101,19 +101,28 @@
     {:min [min-x min-y]
      :max [max-x max-y]}))
 
-(defn build-part-dim [[part {:keys [resize move]}]]
+(def head-parts #{:beard :ears :eyebrows :eyes :hair :hat :head :mask :mouth :nose})
+
+(defn apply-body-scale [part-type resize move body-resize head-shift]
+  (if (and part-type (head-parts part-type))
+    [resize (mapv + move head-shift)]
+    [(mapv * body-resize resize) move]))
+
+(defn build-part-dim [body-resize head-shift [part {:keys [resize move flip?]} part-type]]
   (let [dims (mapv :dim (vals part))
-        {[min-x min-y] :min [max-x max-y] :max} (rollup-min-max dims)
-        [scale-x _ _ scale-y move-x move-y] (build-layer-matrix resize move false)
+        {[min-x min-y] :min [max-x max-y] :max :as part-dim-pre} (rollup-min-max dims)
+        body-scale (apply-body-scale part-type (or resize [1 1]) (or move [0 0]) body-resize head-shift)
+        [resize move] body-scale
+        [scale-x _ _ scale-y move-x move-y] (build-layer-matrix resize move flip?)
         [min-x max-x] (mapv #(->> % (* scale-x) (+ move-x)) [min-x max-x])
-        [min-y max-y] (mapv #(->> % (* scale-y) (+ move-y)) [min-y max-y])]
-    {:min [min-x min-y]
-     :max [max-x max-y]}))
+        [min-y max-y] (mapv #(->> % (* scale-y) (+ move-y)) [min-y max-y])
+        results {:min [min-x min-y]
+                 :max [max-x max-y]}]
+    results))
 
-(defn build-dim [good-parts padding scale-image [body-resize-x body-resize-y]]
-  (let [dims (mapv build-part-dim good-parts)
-
-        {[min-x min-y] :min [max-x max-y] :max} (rollup-min-max dims)
+(defn build-dim [good-parts padding scale-image body-resize head-shift]
+  (let [dims (mapv (partial build-part-dim body-resize head-shift) good-parts)
+        {[min-x min-y] :min [max-x max-y] :max :as minmax} (rollup-min-max dims)
 
         diff-x (+ padding (max (Math/abs ^double min-x) (Math/abs ^double max-x)))
         min-x (- diff-x)
@@ -121,7 +130,8 @@
         max-y (+ max-y padding)
         width (* 2 diff-x)
         height (- max-y min-y)
-        [min-x min-y width height] (mapv (partial * scale-image) [min-x min-y width height] [body-resize-x body-resize-y body-resize-x body-resize-y])]
+        dim (mapv (partial * scale-image) [min-x min-y width height])
+        [min-x min-y width height] dim]
     {:min-x  min-x
      :min-y  min-y
      :width  width
@@ -144,9 +154,7 @@
         resize (or resize [1 1])
         move (or move [0 0])
         opacity (if (string? opacity) (/ (Integer/parseInt (str/replace opacity "%" "")) 100.0) opacity)
-        [resize move] (if (and part-type (#{:beard :ears :eyebrows :eyes :hair :hat :head :mask :mouth :nose} part-type))
-                        [resize [(+ (first head-shift) (first move)) (+ (second head-shift) (second move))]]
-                        [[(* (first body-resize) (first resize)) (* (second body-resize) (second resize))] move])
+        [resize move] (apply-body-scale part-type resize move body-resize head-shift)
         pattern-label (get pattern-labels pattern)
         shading-label (get shading-labels shading)
         label-ref #(str "url(#" % ")")
@@ -204,8 +212,8 @@
 (defn gradient-defs [acc defs]
   (into acc (mapv build-gradient defs)))
 
-(defn scale-matrix [scale-image body-resize]
-  (str "matrix(" (* scale-image (first body-resize)) ", 0.0, 0.0, " (* scale-image (second body-resize)) ", 0.0, 0.0)"))
+(defn scale-matrix [scale-image]
+  (str "matrix(" scale-image ", 0.0, 0.0, " scale-image ", 0.0, 0.0)"))
 
 (defn get-body-scale [body-type body-scale]
   (let [body-resize (get body-scales body-scale [1.0 1.0])
@@ -215,8 +223,6 @@
      :head-shift [0.0 y-shift]}))
 
 (def scale-image 2)
-
-(def req-layer-keys [:part :index])
 
 (defn to-svg [{:keys [body-type bg-color bg-pattern padding body-scale] :or {padding 10}} layers]
   (let [{:keys [body-resize head-shift]} (get-body-scale body-type body-scale)
@@ -237,8 +243,8 @@
           bg-pattern-label (:label (first bg-patterns))
           bg-pattern-ref (when bg-pattern-label (label-ref bg-pattern-label))
           full-layers (mapv (partial build-layer pattern-labels shading-labels body-resize head-shift) good-parts)
-          {:keys [min-x min-y width height] :as dim} (build-dim good-parts padding scale-image body-resize)
-          group-args (if-let [matrix (scale-matrix scale-image body-resize)] {:transform matrix} {})
+          {:keys [min-x min-y width height] :as dim} (build-dim good-parts padding scale-image body-resize head-shift)
+          group-args (if-let [matrix (scale-matrix scale-image)] {:transform matrix} {})
           bg-group (reduce
                      #(if-not (empty? %2)
                         (conj %1 [:rect {:x min-x :y min-y :width width :height height :fill %2}])
@@ -262,6 +268,8 @@
        bg-group
        (into [:g group-args] full-layers)])))
 
+(def req-layer-keys [:part :index])
+
 (defn json->svg [{:keys [layers] :as json}]
   (s/validate sj/JsonSchematic json)
   (let [header (reduce
@@ -274,7 +282,7 @@
                  #(vector
                     (mapv (partial get %) req-layer-keys)
                     (apply dissoc (set/rename-keys % {:flip :flip?}) req-layer-keys))
-                 layers)]
+                 (mapv #(update % :part keyword) layers))]
     (to-svg header layers)))
 
 (defn schematic->svg [schematic]

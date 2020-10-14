@@ -1,0 +1,41 @@
+{
+"bodyType" : "woman",
+  "bgColor" : "#ccf",
+  "bodyScale": "stocky",
+  "layers" : [ {
+    "part" : "torso",
+    "index" : 0,
+    "resize" : [ 1.1, 1.0 ],
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "legs",
+    "index" : 0,
+    "resize" : [ 1.1, 1.0 ],
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "arm",
+    "index" : 3,
+    "resize" : [ 1.1, 1.0 ],
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "arm",
+    "index" : 0,
+    "resize" : [ 1.1, 1.0 ],
+    "shading" : 0,
+    "flip" : true,
+    "base" : "blue",
+    "pattern" : 42
+  }, {
+    "part" : "head",
+    "index" : 0,
+    "shading" : 0,
+    "base" : "blue",
+    "pattern" : 42
+  } ]
+}
