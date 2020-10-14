@@ -8,6 +8,7 @@ import {SchematicLayer} from "./schematic-layer";
 import {PART_TYPES} from "./part-types";
 import {PartType} from "./part-type";
 import {PART_GROUPS} from "./part-groups";
+import {SCALES} from "./scales";
 
 @Component({
   selector: 'app-outfitter',
@@ -53,6 +54,8 @@ export class OutfitterComponent implements OnInit {
 
   selectedIndex: number = -1;
   selectedLayer: SchematicLayer;
+
+  bodyScaleNames: string[] = Object.keys(SCALES);
 
   ngOnInit() {
   }

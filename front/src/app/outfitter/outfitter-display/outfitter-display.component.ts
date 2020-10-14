@@ -33,7 +33,7 @@ export class OutfitterDisplayComponent implements OnInit {
     let max = new XY([0,0]);
     let contents: string[] = [];
     let bodyScale = new XY(SCALES[schematic.bodyScale] || [1.0, 1.0]);
-    let headShift = new XY([0.0, TORSO_TOPS[schematic.bodyType] * 0.8 * (1 - bodyScale.y)]);
+    let headShift = new XY([0.0, TORSO_TOPS[schematic.bodyType] * 0.99 * (1 - bodyScale.y)]);
     schematic.layers.forEach((layer, index) => {
       let part: DatasetMetaPart = meta.parts.get(layer.part)[layer.index];
       let flip: XY = layer.resize.times(new XY([(layer.flip?-1.0:1.0),1.0]));
@@ -85,7 +85,7 @@ export class OutfitterDisplayComponent implements OnInit {
         group.push(SVG.use('#'+part.layers.shadow,{}))
       }
       let elem = SVG.group({
-        transform:`matrix(${flip.x},0.0,0.0,${flip.y},${layer.move.x},${layer.move.y})`,
+        transform:`matrix(${flip.x},0.0,0.0,${flip.y},${move.x},${move.y})`,
         opacity:`${layer.opacity || 1.0}`
       },group);
       let anchor = SVG.anchor(`#`,{

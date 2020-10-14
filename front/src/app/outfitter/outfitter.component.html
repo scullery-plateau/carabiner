@@ -50,11 +50,8 @@
             <div class="nes-select">
               <select class="nes-input" required id="bodyScale" formControlName="bodyScale" (change)="setBodyScale()">
                 <option value="" disabled selected hidden>Select Body Scale</option>
-                <option value="">Default</option>
-                <option value="lanky">Lanky</option>
-                <option value="thin">Thin</option>
-                <option value="stocky">Stocky</option>
-                <option value="petite">Petite</option>
+                <option value="">default</option>
+                <option *ngFor="let name of bodyScaleNames" [value]="name">{{name}}</option>
               </select>
             </div>
           </div>
