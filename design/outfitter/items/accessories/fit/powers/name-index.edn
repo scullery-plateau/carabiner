@@ -1,0 +1,32 @@
+{"earthbender-body" {:base 38, :outline 100, :shadow 140}
+ "star-fist" {:base 16, :outline 59, :shadow 118}
+ "snowflake-body" {:base 35, :shadow 137}
+ "inferno-body" {:base 33, :detail 50, :outline 91, :shadow 136}
+ "lightning-body" {:base 34, :outline 93}
+ "tk-base" {:base 42, :shadow 144}
+ "lightning-bolt" {:base 41, :outline 106, :shadow 143}
+ "earthbender-fist" {:base 18, :outline 63, :shadow 120}
+ "energy-sphere-fist" {:base 22, :shadow 125}
+ "bubble-fist" {:base 17, :outline 61, :shadow 119}
+ "smoke-eyes" {:base 28, :outline 81, :shadow 131}
+ "daemon" {:base 43, :detail 51, :shadow 145}
+ "energy-eye" {:base 31, :outline 87, :shadow 134}
+ "star-body" {:base 36, :outline 96, :shadow 138}
+ "smoke-fist" {:base 23, :outline 75, :shadow 126}
+ "stoneshape-fist" {:base 19, :outline 65, :shadow 122}
+ "flame-fist" {:base 12, :detail 47, :shadow 115}
+ "whirlwind" {:base 40, :outline 104, :shadow 142}
+ "lightning-fist" {:base 14, :outline 56}
+ "lightning-eye" {:base 27, :shadow 130}
+ "ooze-fist" {:base 20, :outline 69, :shadow 123}
+ "inferno-fist" {:base 13, :detail 54, :shadow 116}
+ "star-eyes" {:base 24, :shadow 127}
+ "inferno-head" {:base 32, :detail 49, :outline 89, :shadow 135}
+ "lightning-eyes" {:base 26, :shadow 129}
+ "snowflake-fist" {:base 15, :shadow 117}
+ "bubbles-body" {:base 37, :outline 98, :shadow 139}
+ "plasma-legs" {:base 39, :outline 102, :shadow 141}
+ "radiation-fist" {:base 21, :detail 48, :outline 71, :shadow 124}
+ "star-eye" {:base 25, :shadow 128}
+ "energy-eyes" {:base 30, :outline 85, :shadow 133}
+ "smoke-eye" {:base 29, :outline 83, :shadow 132}}

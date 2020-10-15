@@ -149,7 +149,7 @@
     (group-by first names)))
 
 (deftest build-name-index
-  (let [root (io/file "design/outfitter/items/body/fit/arm")
+  (let [root (io/file "design/outfitter/items/accessories/fit/powers")
         names (edn/read-string (slurp (io/file root "names.edn")))
         index (index-names names)]
     (spit (io/file root "name-index.edn") index)))
@@ -445,16 +445,16 @@
 
 (defmulti assign-ranges count)
 
-(defmethod assign-ranges 3 [[base _ outline]]
+(defmethod assign-ranges 3 [[_ base outline]]
   {:base    (vec base)
    :outline (vec outline)})
 
-(defmethod assign-ranges 4 [[base _ detail outline]]
+(defmethod assign-ranges 4 [[_ base detail outline]]
   {:base    (vec base)
    :detail  (vec detail)
    :outline (vec outline)})
 
-(defmethod assign-ranges 5 [[base _ detail outline shadow]]
+(defmethod assign-ranges 5 [[_ base detail outline shadow]]
   {:base    (vec base)
    :detail  (vec detail)
    :outline (vec outline)
@@ -489,6 +489,7 @@
                                 [min-file]
                                 markers)
                               max-file)))]
+    (pp/pprint ranges)
     (assign-ranges ranges)))
 
 (def layers [:outline :base :detail :shadow])
@@ -592,9 +593,12 @@
     (spit (io/file root "weird-shadows.edn") (with-out-str (pp/pprint weird)))
     (pp/pprint (into (sorted-set) (keys weird)))))
 
-#_(deftest test-build-columns-file
-    (let [root (io/file "design/outfitter/items/body/hulk")]
-      (build-columns-file (io/file root "chest"))))
+(deftest test-build-columns-file
+    (let [root (io/file "design/outfitter/items/accessories/woman")
+          folders ["accessories_and_shields" "guns" "melee_weapons" "ranged_weapons" "swords"]]
+      (doseq [folder folders]
+        (println folder)
+        (build-columns-file (io/file root folder)))))
 
 #_(deftest test-build-columns-file-for-folder
     (let [folder (io/file "design/outfitter/items/accessories/fit")]
@@ -603,31 +607,32 @@
         (build-columns-file file))))
 
 (deftest test-read-columns-to-html
-  (let [root (io/file "design/outfitter/items/body/superman")]
-    (read-columns-to-html (io/file root "boots"))))
+  (let [root (io/file "design/outfitter/items/accessories/fit")]
+    (doseq [folder ["ranged_weapons"]]
+      (read-columns-to-html (io/file root folder)))))
 
 (deftest test-read-columns-to-html-for-folder
-  (let [folder (io/file "design/outfitter/items/body")]
-    (doseq [_type ["hulk" "superman" "woman"]]
+  (let [folder (io/file "design/outfitter/items/accessories")]
+    (doseq [_type ["fit" "hulk" "superman" "woman"]]
       (doseq [file (filter #(.isDirectory %) (.listFiles (io/file folder _type)))]
        (println (.getName file))
        (read-columns-to-html file)))))
 
 (deftest test-build-columns-from-names
-  (let [root (io/file "design/outfitter/items/body/fit")]
-    (doseq [folder (.listFiles root)]
-      (let [names-file (io/file folder "names.edn")]
-        (when (.exists names-file)
-          (pp/pprint (.getName folder))
-          (let [name-index-file (io/file folder "name-index.edn")]
-            (when-not (.exists name-index-file)
-              (->> names-file
-                   (slurp)
-                   (edn/read-string)
-                   (index-names)
-                   #(with-out-str (pp/pprint %))
-                   (spit name-index-file)))
-            (build-columns-from-names folder)))))))
+  (let [root (io/file "design/outfitter/items/accessories/fit")
+        folder (io/file root "powers")
+        names-file (io/file folder "names.edn")]
+    (when (.exists names-file)
+      (pp/pprint (.getName folder))
+      (let [name-index-file (io/file folder "name-index.edn")]
+        (when-not (.exists name-index-file)
+          (->> names-file
+               (slurp)
+               (edn/read-string)
+               (index-names)
+               #(with-out-str (pp/pprint %))
+               (spit name-index-file)))
+        (build-columns-from-names folder)))))
 
 (deftest build-part-menu
   (let [root (io/file "design/outfitter/items/body")]
