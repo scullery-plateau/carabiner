@@ -593,12 +593,12 @@
     (spit (io/file root "weird-shadows.edn") (with-out-str (pp/pprint weird)))
     (pp/pprint (into (sorted-set) (keys weird)))))
 
-(deftest test-build-columns-file
-    (let [root (io/file "design/outfitter/items/accessories/woman")
-          folders ["accessories_and_shields" "guns" "melee_weapons" "ranged_weapons" "swords"]]
-      (doseq [folder folders]
-        (println folder)
-        (build-columns-file (io/file root folder)))))
+#_(deftest test-build-columns-file
+      (let [root (io/file "design/outfitter/items/accessories/woman")
+            folders ["accessories_and_shields" "guns" "melee_weapons" "ranged_weapons" "swords"]]
+        (doseq [folder folders]
+          (println folder)
+          (build-columns-file (io/file root folder)))))
 
 #_(deftest test-build-columns-file-for-folder
     (let [folder (io/file "design/outfitter/items/accessories/fit")]
@@ -607,8 +607,8 @@
         (build-columns-file file))))
 
 (deftest test-read-columns-to-html
-  (let [root (io/file "design/outfitter/items/accessories/fit")]
-    (doseq [folder ["ranged_weapons"]]
+  (let [root (io/file "design/outfitter/items/accessories/woman")]
+    (doseq [folder ["accessories_and_shields" "guns" "melee_weapons" "ranged_weapons" "swords"]]
       (read-columns-to-html (io/file root folder)))))
 
 (deftest test-read-columns-to-html-for-folder
