@@ -6,8 +6,8 @@ export class SchematicLayer {
   base?: string;
   detail?: string;
   outline?: string;
-  opacity?: number;
-  pattern?: number;
+  opacity?: number = 1;
+  pattern?: number = -1;
   shading?: number = 0;
   resize?: XY = new XY([1,1]);
   move?: XY = new XY([0,0]);
@@ -111,13 +111,13 @@ export class SchematicLayer {
     if (this.outline) {
       out.outline = this.outline;
     }
-    if (this.opacity) {
+    if (this.opacity && this.opacity < 1) {
       out.opacity = this.opacity;
     }
-    if (this.pattern && this.pattern >= 0) {
+    if (!isNaN(this.pattern) && this.pattern >= 0) {
       out.pattern = this.pattern;
     }
-    if (this.shading && this.shading >= 0) {
+    if (!isNaN(this.shading) && this.shading >= 0) {
       out.shading = this.shading;
     }
     if (this.resize) {

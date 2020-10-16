@@ -241,7 +241,11 @@ export class OutfitterComponent implements OnInit {
       this.selectedLayer.part = partType;
       console.log("meta keys: ");
       console.log(this.meta.parts);
-      this.maxPartIndex = this.meta.parts.get(partType).length;
+      this.maxPartIndex = this.meta.parts.get(partType).length - 1;
+      if(this.schematicForm.value.partIndex > this.maxPartIndex) {
+        this.schematicForm.patchValue({partIndex:this.maxPartIndex});
+        this.selectedLayer.index = this.maxPartIndex;
+      }
     }
   }
 

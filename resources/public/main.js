@@ -2523,7 +2523,11 @@ var OutfitterComponent = /** @class */ (function () {
             this.selectedLayer.part = partType;
             console.log("meta keys: ");
             console.log(this.meta.parts);
-            this.maxPartIndex = this.meta.parts.get(partType).length;
+            this.maxPartIndex = this.meta.parts.get(partType).length - 1;
+            if (this.schematicForm.value.partIndex > this.maxPartIndex) {
+                this.schematicForm.patchValue({ partIndex: this.maxPartIndex });
+                this.selectedLayer.index = this.maxPartIndex;
+            }
         }
     };
     OutfitterComponent.prototype.setPartIndex = function () {
@@ -2819,6 +2823,8 @@ var SchematicLayer = /** @class */ (function () {
     function SchematicLayer() {
         this.part = 'arm';
         this.index = 0;
+        this.opacity = 1;
+        this.pattern = -1;
         this.shading = 0;
         this.resize = new _xy__WEBPACK_IMPORTED_MODULE_0__["XY"]([1, 1]);
         this.move = new _xy__WEBPACK_IMPORTED_MODULE_0__["XY"]([0, 0]);
@@ -2883,13 +2889,13 @@ var SchematicLayer = /** @class */ (function () {
         if (this.outline) {
             out.outline = this.outline;
         }
-        if (this.opacity) {
+        if (this.opacity && this.opacity < 1) {
             out.opacity = this.opacity;
         }
-        if (this.pattern && this.pattern >= 0) {
+        if (!isNaN(this.pattern) && this.pattern >= 0) {
             out.pattern = this.pattern;
         }
-        if (this.shading && this.shading >= 0) {
+        if (!isNaN(this.shading) && this.shading >= 0) {
             out.shading = this.shading;
         }
         if (this.resize) {
