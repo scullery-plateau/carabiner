@@ -8,7 +8,7 @@ export class SchematicLayer {
   outline?: string;
   opacity?: number;
   pattern?: number;
-  shading?: number = 1;
+  shading?: number = 0;
   resize?: XY = new XY([1,1]);
   move?: XY = new XY([0,0]);
   flip?: boolean;

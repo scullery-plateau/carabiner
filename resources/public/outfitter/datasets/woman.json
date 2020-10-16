@@ -4113,6 +4113,319 @@
       "min" : [ -35.5, 8.5 ],
       "max" : [ 35.30000000000001, 96.64999999999998 ]
     } ],
+    "accessories_and_shields" : [ {
+      "layers" : {
+        "outline" : "accessories_and_shields-96",
+        "base" : "accessories_and_shields-17",
+        "detail" : "accessories_and_shields-58",
+        "shadow" : "accessories_and_shields-95"
+      },
+      "min" : [ -86.85000000000002, 5.399999999999977 ],
+      "max" : [ -15.6, 80.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-97",
+        "base" : "accessories_and_shields-18",
+        "detail" : "accessories_and_shields-59",
+        "shadow" : "accessories_and_shields-137"
+      },
+      "min" : [ -97.0, 44.89999999999998 ],
+      "max" : [ -36.19999999999999, 75.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-98",
+        "base" : "accessories_and_shields-19",
+        "detail" : "accessories_and_shields-60",
+        "shadow" : "accessories_and_shields-139"
+      },
+      "min" : [ -64.44999999999999, 60.05 ],
+      "max" : [ -8.6, 88.60000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-99",
+        "base" : "accessories_and_shields-20",
+        "detail" : "accessories_and_shields-61",
+        "shadow" : "accessories_and_shields-141"
+      },
+      "min" : [ -98.60000000000002, 50.05 ],
+      "max" : [ 73.5, 150.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-100",
+        "base" : "accessories_and_shields-21",
+        "detail" : "accessories_and_shields-62",
+        "shadow" : "accessories_and_shields-143"
+      },
+      "min" : [ -116.25, 38.75 ],
+      "max" : [ 72.75, 132.9 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-101",
+        "base" : "accessories_and_shields-22",
+        "detail" : "accessories_and_shields-63",
+        "shadow" : "accessories_and_shields-145"
+      },
+      "min" : [ -101.25, 45.44999999999999 ],
+      "max" : [ 99.1, 116.25 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-102",
+        "base" : "accessories_and_shields-23",
+        "detail" : "accessories_and_shields-64",
+        "shadow" : "accessories_and_shields-147"
+      },
+      "min" : [ -95.64999999999998, 49.44999999999999 ],
+      "max" : [ 101.3, 113.55000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-103",
+        "base" : "accessories_and_shields-24",
+        "detail" : "accessories_and_shields-65",
+        "shadow" : "accessories_and_shields-149"
+      },
+      "min" : [ -91.39999999999998, 49.19999999999999 ],
+      "max" : [ 63.8, 115.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-104",
+        "base" : "accessories_and_shields-25",
+        "detail" : "accessories_and_shields-66",
+        "shadow" : "accessories_and_shields-151"
+      },
+      "min" : [ -78.69999999999999, 28.0 ],
+      "max" : [ -30.65, 76.0 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-105",
+        "base" : "accessories_and_shields-26",
+        "detail" : "accessories_and_shields-67",
+        "shadow" : "accessories_and_shields-152"
+      },
+      "min" : [ -81.10000000000002, 35.35 ],
+      "max" : [ -27.8, 76.7 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-106",
+        "base" : "accessories_and_shields-27",
+        "detail" : "accessories_and_shields-68",
+        "shadow" : "accessories_and_shields-153"
+      },
+      "min" : [ -78.69999999999999, 28.0 ],
+      "max" : [ -30.65, 76.0 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-107",
+        "base" : "accessories_and_shields-28",
+        "detail" : "accessories_and_shields-69",
+        "shadow" : "accessories_and_shields-154"
+      },
+      "min" : [ -78.69999999999999, 28.0 ],
+      "max" : [ -29.7, 76.0 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-108",
+        "base" : "accessories_and_shields-29",
+        "shadow" : "accessories_and_shields-155"
+      },
+      "min" : [ -78.39999999999998, 52.89999999999998 ],
+      "max" : [ -25.85, 127.25 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-109",
+        "base" : "accessories_and_shields-30",
+        "detail" : "accessories_and_shields-70",
+        "shadow" : "accessories_and_shields-157"
+      },
+      "min" : [ -95.89999999999998, 51.85 ],
+      "max" : [ -12.1, 141.60000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-110",
+        "base" : "accessories_and_shields-31",
+        "detail" : "accessories_and_shields-71",
+        "shadow" : "accessories_and_shields-159"
+      },
+      "min" : [ -196.7, 13.449999999999989 ],
+      "max" : [ 107.85, 138.05 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-111",
+        "base" : "accessories_and_shields-32",
+        "detail" : "accessories_and_shields-72",
+        "shadow" : "accessories_and_shields-161"
+      },
+      "min" : [ -56.05000000000001, 63.64999999999998 ],
+      "max" : [ -21.85, 93.2 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-112",
+        "base" : "accessories_and_shields-33",
+        "detail" : "accessories_and_shields-73"
+      },
+      "min" : [ -72.30000000000001, 11.0 ],
+      "max" : [ -47.0, 58.5 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-113",
+        "base" : "accessories_and_shields-34",
+        "detail" : "accessories_and_shields-74"
+      },
+      "min" : [ -45.89999999999998, 72.85000000000002 ],
+      "max" : [ -38.64999999999998, 224.60000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-114",
+        "base" : "accessories_and_shields-35",
+        "detail" : "accessories_and_shields-75",
+        "shadow" : "accessories_and_shields-163"
+      },
+      "min" : [ -80.85000000000002, 57.85 ],
+      "max" : [ 106.60000000000002, 207.14999999999998 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-115",
+        "base" : "accessories_and_shields-36",
+        "detail" : "accessories_and_shields-76",
+        "shadow" : "accessories_and_shields-165"
+      },
+      "min" : [ -132.8, 30.85 ],
+      "max" : [ 11.95, 99.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-116",
+        "base" : "accessories_and_shields-37",
+        "detail" : "accessories_and_shields-77",
+        "shadow" : "accessories_and_shields-167"
+      },
+      "min" : [ -103.05000000000001, 47.19999999999999 ],
+      "max" : [ -8.5, 89.9 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-117",
+        "base" : "accessories_and_shields-38",
+        "detail" : "accessories_and_shields-78",
+        "shadow" : "accessories_and_shields-169"
+      },
+      "min" : [ -143.55, -45.95 ],
+      "max" : [ 4.8, 104.4 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-118",
+        "base" : "accessories_and_shields-39",
+        "detail" : "accessories_and_shields-79",
+        "shadow" : "accessories_and_shields-170"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-119",
+        "base" : "accessories_and_shields-40",
+        "detail" : "accessories_and_shields-80",
+        "shadow" : "accessories_and_shields-171"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-120",
+        "base" : "accessories_and_shields-41",
+        "detail" : "accessories_and_shields-81",
+        "shadow" : "accessories_and_shields-172"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-121",
+        "base" : "accessories_and_shields-42",
+        "detail" : "accessories_and_shields-82",
+        "shadow" : "accessories_and_shields-173"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-122",
+        "base" : "accessories_and_shields-43",
+        "detail" : "accessories_and_shields-83",
+        "shadow" : "accessories_and_shields-174"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-123",
+        "base" : "accessories_and_shields-44",
+        "detail" : "accessories_and_shields-84",
+        "shadow" : "accessories_and_shields-175"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-124",
+        "base" : "accessories_and_shields-45",
+        "detail" : "accessories_and_shields-85",
+        "shadow" : "accessories_and_shields-176"
+      },
+      "min" : [ -131.14999999999998, -51.55000000000001 ],
+      "max" : [ -13.0, 98.45 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-125",
+        "base" : "accessories_and_shields-46",
+        "detail" : "accessories_and_shields-86",
+        "shadow" : "accessories_and_shields-177"
+      },
+      "min" : [ -127.2, -96.55000000000001 ],
+      "max" : [ -23.5, 168.7 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-126",
+        "base" : "accessories_and_shields-47",
+        "detail" : "accessories_and_shields-87",
+        "shadow" : "accessories_and_shields-178"
+      },
+      "min" : [ -147.05, -84.0 ],
+      "max" : [ -2.7, 136.85 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-127",
+        "base" : "accessories_and_shields-48",
+        "detail" : "accessories_and_shields-88",
+        "shadow" : "accessories_and_shields-179"
+      },
+      "min" : [ -134.4, 6.25 ],
+      "max" : [ 39.25, 97.65 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-128",
+        "base" : "accessories_and_shields-49",
+        "detail" : "accessories_and_shields-89",
+        "shadow" : "accessories_and_shields-180"
+      },
+      "min" : [ -114.35000000000002, -0.15 ],
+      "max" : [ 105.9, 114.15 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-129",
+        "base" : "accessories_and_shields-50",
+        "detail" : "accessories_and_shields-90",
+        "shadow" : "accessories_and_shields-181"
+      },
+      "min" : [ -155.7, -25.75 ],
+      "max" : [ 97.7, 114.30000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "accessories_and_shields-130",
+        "base" : "accessories_and_shields-51",
+        "detail" : "accessories_and_shields-91",
+        "shadow" : "accessories_and_shields-182"
+      },
+      "min" : [ -108.95, -5.550000000000011 ],
+      "max" : [ 147.25, 121.2 ]
+    } ],
     "shirt" : [ {
       "layers" : {
         "outline" : "shirt-116",
@@ -5908,6 +6221,554 @@
       },
       "min" : [ -39.75, -143.95 ],
       "max" : [ 39.85000000000002, -69.35 ]
+    } ],
+    "melee_weapons" : [ {
+      "layers" : {
+        "outline" : "melee_weapons-45",
+        "base" : "melee_weapons-16",
+        "detail" : "melee_weapons-31",
+        "shadow" : "melee_weapons-44"
+      },
+      "min" : [ -101.8, 49.64999999999998 ],
+      "max" : [ -15.449999999999989, 96.60000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-46",
+        "base" : "melee_weapons-17",
+        "detail" : "melee_weapons-32",
+        "shadow" : "melee_weapons-64"
+      },
+      "min" : [ -138.15, 37.05 ],
+      "max" : [ 42.5, 124.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-47",
+        "base" : "melee_weapons-18",
+        "detail" : "melee_weapons-33",
+        "shadow" : "melee_weapons-65"
+      },
+      "min" : [ -125.2, 41.64999999999998 ],
+      "max" : [ 22.649999999999977, 126.9 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-48",
+        "base" : "melee_weapons-19",
+        "detail" : "melee_weapons-34",
+        "shadow" : "melee_weapons-66"
+      },
+      "min" : [ -142.5, 34.19999999999999 ],
+      "max" : [ 53.8, 133.4 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-49",
+        "base" : "melee_weapons-20",
+        "detail" : "melee_weapons-35",
+        "shadow" : "melee_weapons-67"
+      },
+      "min" : [ -100.35000000000002, 49.64999999999998 ],
+      "max" : [ 65.94999999999999, 120.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-50",
+        "base" : "melee_weapons-21",
+        "detail" : "melee_weapons-36",
+        "shadow" : "melee_weapons-68"
+      },
+      "min" : [ -94.85000000000002, 50.85 ],
+      "max" : [ 94.15, 128.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-51",
+        "base" : "melee_weapons-22",
+        "detail" : "melee_weapons-37",
+        "shadow" : "melee_weapons-69"
+      },
+      "min" : [ -101.0, 49.19999999999999 ],
+      "max" : [ 57.85000000000002, 122.60000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-52",
+        "base" : "melee_weapons-23",
+        "detail" : "melee_weapons-38",
+        "shadow" : "melee_weapons-70"
+      },
+      "min" : [ -81.15, 56.5 ],
+      "max" : [ 5.25, 157.65 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-53",
+        "base" : "melee_weapons-24",
+        "shadow" : "melee_weapons-71"
+      },
+      "min" : [ -179.35, 21.899999999999977 ],
+      "max" : [ 62.80000000000001, 115.55000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-54",
+        "base" : "melee_weapons-25",
+        "shadow" : "melee_weapons-72"
+      },
+      "min" : [ -78.35000000000002, 55.0 ],
+      "max" : [ 49.80000000000001, 116.75 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-55",
+        "base" : "melee_weapons-26",
+        "detail" : "melee_weapons-39",
+        "shadow" : "melee_weapons-73"
+      },
+      "min" : [ -102.10000000000002, 47.05 ],
+      "max" : [ -22.350000000000023, 91.19999999999999 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-56",
+        "base" : "melee_weapons-27",
+        "detail" : "melee_weapons-40",
+        "shadow" : "melee_weapons-74"
+      },
+      "min" : [ -81.15, 56.5 ],
+      "max" : [ -14.25, 181.4 ]
+    }, {
+      "layers" : {
+        "outline" : "melee_weapons-57",
+        "base" : "melee_weapons-28",
+        "detail" : "melee_weapons-41",
+        "shadow" : "melee_weapons-75"
+      },
+      "min" : [ -94.05000000000001, -12.100000000000023 ],
+      "max" : [ -38.3, 113.4 ]
+    } ],
+    "swords" : [ {
+      "layers" : {
+        "outline" : "swords-104",
+        "base" : "swords-18",
+        "detail" : "swords-63",
+        "shadow" : "swords-103"
+      },
+      "min" : [ -79.05000000000001, 57.05 ],
+      "max" : [ 21.100000000000023, 96.5 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-105",
+        "base" : "swords-19",
+        "detail" : "swords-64",
+        "shadow" : "swords-148"
+      },
+      "min" : [ -80.05000000000001, 56.1 ],
+      "max" : [ 8.65, 92.5 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-106",
+        "base" : "swords-20",
+        "detail" : "swords-65",
+        "shadow" : "swords-150"
+      },
+      "min" : [ -72.05000000000001, 59.05 ],
+      "max" : [ 17.0, 98.65 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-107",
+        "base" : "swords-21",
+        "detail" : "swords-66",
+        "shadow" : "swords-152"
+      },
+      "min" : [ -85.95, 56.1 ],
+      "max" : [ -32.39999999999998, 124.30000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-108",
+        "base" : "swords-22",
+        "detail" : "swords-67",
+        "shadow" : "swords-154"
+      },
+      "min" : [ -73.35000000000002, 62.05 ],
+      "max" : [ 21.4, 110.65 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-109",
+        "base" : "swords-23",
+        "detail" : "swords-68",
+        "shadow" : "swords-156"
+      },
+      "min" : [ -74.45, 59.75 ],
+      "max" : [ 34.85000000000002, 105.25 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-110",
+        "base" : "swords-24",
+        "detail" : "swords-69",
+        "shadow" : "swords-158"
+      },
+      "min" : [ -73.44999999999999, 60.39999999999998 ],
+      "max" : [ 53.35000000000002, 112.9 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-111",
+        "base" : "swords-25",
+        "detail" : "swords-70",
+        "shadow" : "swords-160"
+      },
+      "min" : [ -72.5, 60.35 ],
+      "max" : [ 87.80000000000001, 109.75 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-112",
+        "base" : "swords-26",
+        "detail" : "swords-71",
+        "shadow" : "swords-162"
+      },
+      "min" : [ -76.9, 54.89999999999998 ],
+      "max" : [ 76.0, 115.5 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-113",
+        "base" : "swords-27",
+        "detail" : "swords-72",
+        "shadow" : "swords-164"
+      },
+      "min" : [ -83.45, 49.75 ],
+      "max" : [ 99.7, 128.65 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-114",
+        "base" : "swords-28",
+        "detail" : "swords-73",
+        "shadow" : "swords-166"
+      },
+      "min" : [ -79.0, 57.55 ],
+      "max" : [ 109.60000000000002, 129.65 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-115",
+        "base" : "swords-29",
+        "detail" : "swords-74",
+        "shadow" : "swords-168"
+      },
+      "min" : [ -78.45, 56.0 ],
+      "max" : [ 100.95, 109.65 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-116",
+        "base" : "swords-30",
+        "detail" : "swords-75",
+        "shadow" : "swords-170"
+      },
+      "min" : [ -77.55000000000001, 62.5 ],
+      "max" : [ 110.60000000000002, 125.30000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-117",
+        "base" : "swords-31",
+        "detail" : "swords-76",
+        "shadow" : "swords-172"
+      },
+      "min" : [ -74.80000000000001, 59.64999999999998 ],
+      "max" : [ 92.2, 143.05 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-118",
+        "base" : "swords-32",
+        "detail" : "swords-77",
+        "shadow" : "swords-174"
+      },
+      "min" : [ -70.85000000000002, 50.85 ],
+      "max" : [ 92.55000000000001, 121.9 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-119",
+        "base" : "swords-33",
+        "detail" : "swords-78",
+        "shadow" : "swords-176"
+      },
+      "min" : [ -72.35000000000002, 61.0 ],
+      "max" : [ 106.60000000000002, 129.4 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-120",
+        "base" : "swords-34",
+        "detail" : "swords-79",
+        "shadow" : "swords-178"
+      },
+      "min" : [ -77.10000000000002, 54.14999999999998 ],
+      "max" : [ 138.70000000000005, 141.9 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-121",
+        "base" : "swords-35",
+        "detail" : "swords-80",
+        "shadow" : "swords-180"
+      },
+      "min" : [ -78.75, 55.44999999999999 ],
+      "max" : [ 121.0, 133.25 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-122",
+        "base" : "swords-36",
+        "detail" : "swords-81",
+        "shadow" : "swords-182"
+      },
+      "min" : [ -83.35000000000002, 51.1 ],
+      "max" : [ 139.6, 139.6 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-123",
+        "base" : "swords-37",
+        "detail" : "swords-82"
+      },
+      "min" : [ -102.80000000000001, 46.05000000000001 ],
+      "max" : [ 138.79999999999995, 137.89999999999998 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-124",
+        "base" : "swords-38",
+        "detail" : "swords-83",
+        "shadow" : "swords-186"
+      },
+      "min" : [ -85.2, 44.94999999999999 ],
+      "max" : [ 112.3, 127.75 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-125",
+        "base" : "swords-39",
+        "detail" : "swords-84",
+        "shadow" : "swords-188"
+      },
+      "min" : [ -104.4, 44.55 ],
+      "max" : [ 183.85000000000002, 149.45 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-126",
+        "base" : "swords-40",
+        "detail" : "swords-85",
+        "shadow" : "swords-190"
+      },
+      "min" : [ -80.80000000000001, 49.19999999999999 ],
+      "max" : [ 124.4, 125.8 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-127",
+        "base" : "swords-41",
+        "detail" : "swords-86",
+        "shadow" : "swords-192"
+      },
+      "min" : [ -87.35000000000002, 49.75 ],
+      "max" : [ 137.55, 139.8 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-128",
+        "base" : "swords-42",
+        "detail" : "swords-87",
+        "shadow" : "swords-194"
+      },
+      "min" : [ -97.35000000000002, 47.64999999999998 ],
+      "max" : [ 126.14999999999998, 127.15 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-129",
+        "base" : "swords-43",
+        "detail" : "swords-88",
+        "shadow" : "swords-196"
+      },
+      "min" : [ -132.60000000000002, 35.89999999999998 ],
+      "max" : [ 170.20000000000005, 148.7 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-130",
+        "base" : "swords-44",
+        "detail" : "swords-89",
+        "shadow" : "swords-198"
+      },
+      "min" : [ -76.4, 56.35 ],
+      "max" : [ 14.95, 109.95 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-131",
+        "base" : "swords-45",
+        "detail" : "swords-90",
+        "shadow" : "swords-200"
+      },
+      "min" : [ -75.75, 54.69999999999999 ],
+      "max" : [ 91.0, 128.5 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-132",
+        "base" : "swords-46",
+        "detail" : "swords-91",
+        "shadow" : "swords-202"
+      },
+      "min" : [ -128.25, 38.6 ],
+      "max" : [ 22.55000000000001, 128.95 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-133",
+        "base" : "swords-47",
+        "detail" : "swords-92",
+        "shadow" : "swords-204"
+      },
+      "min" : [ -120.6, 40.8 ],
+      "max" : [ 95.89999999999998, 160.7 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-134",
+        "base" : "swords-48",
+        "detail" : "swords-93",
+        "shadow" : "swords-206"
+      },
+      "min" : [ -120.65, 40.8 ],
+      "max" : [ 96.30000000000001, 167.3 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-135",
+        "base" : "swords-49",
+        "detail" : "swords-94",
+        "shadow" : "swords-208"
+      },
+      "min" : [ -124.35000000000002, 43.0 ],
+      "max" : [ 83.45, 136.65 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-136",
+        "base" : "swords-50",
+        "detail" : "swords-95",
+        "shadow" : "swords-210"
+      },
+      "min" : [ -98.15, 48.5 ],
+      "max" : [ 10.050000000000011, 149.95 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-137",
+        "base" : "swords-51",
+        "detail" : "swords-96",
+        "shadow" : "swords-212"
+      },
+      "min" : [ -158.05, 27.94999999999999 ],
+      "max" : [ 79.75, 207.5 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-138",
+        "base" : "swords-52",
+        "detail" : "swords-97",
+        "shadow" : "swords-214"
+      },
+      "min" : [ -203.55, 12.3 ],
+      "max" : [ 34.35000000000002, 173.10000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-139",
+        "base" : "swords-53",
+        "detail" : "swords-98",
+        "shadow" : "swords-216"
+      },
+      "min" : [ -97.45, 46.85 ],
+      "max" : [ -4.35, 146.9 ]
+    }, {
+      "layers" : {
+        "outline" : "swords-140",
+        "base" : "swords-54",
+        "detail" : "swords-99",
+        "shadow" : "swords-217"
+      },
+      "min" : [ -61.5, 66.64999999999998 ],
+      "max" : [ -31.899999999999977, 120.0 ]
+    } ],
+    "ranged_weapons" : [ {
+      "layers" : {
+        "outline" : "ranged_weapons-44",
+        "base" : "ranged_weapons-17",
+        "detail" : "ranged_weapons-31",
+        "shadow" : "ranged_weapons-43"
+      },
+      "min" : [ -179.2, 20.6 ],
+      "max" : [ 144.60000000000002, 141.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-45",
+        "base" : "ranged_weapons-18",
+        "detail" : "ranged_weapons-32",
+        "shadow" : "ranged_weapons-58"
+      },
+      "min" : [ -188.6, 17.899999999999977 ],
+      "max" : [ 206.3, 162.75 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-46",
+        "base" : "ranged_weapons-19",
+        "detail" : "ranged_weapons-33",
+        "shadow" : "ranged_weapons-60"
+      },
+      "min" : [ -210.95, 11.0 ],
+      "max" : [ 189.65, 163.5 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-47",
+        "base" : "ranged_weapons-20",
+        "detail" : "ranged_weapons-34",
+        "shadow" : "ranged_weapons-62"
+      },
+      "min" : [ -236.2, -1.3 ],
+      "max" : [ 187.60000000000002, 152.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-48",
+        "base" : "ranged_weapons-21",
+        "detail" : "ranged_weapons-35",
+        "shadow" : "ranged_weapons-64"
+      },
+      "min" : [ -193.55, 17.149999999999977 ],
+      "max" : [ 249.4, 180.45 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-49",
+        "base" : "ranged_weapons-22",
+        "shadow" : "ranged_weapons-66"
+      },
+      "min" : [ -159.1, -8.15 ],
+      "max" : [ 74.55000000000001, 89.05 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-50",
+        "base" : "ranged_weapons-23",
+        "detail" : "ranged_weapons-36",
+        "shadow" : "ranged_weapons-68"
+      },
+      "min" : [ -146.2, 7.05 ],
+      "max" : [ 56.65, 89.85000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-51",
+        "base" : "ranged_weapons-24",
+        "detail" : "ranged_weapons-37",
+        "shadow" : "ranged_weapons-70"
+      },
+      "min" : [ -199.45, -36.55000000000001 ],
+      "max" : [ 127.29999999999995, 95.45 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-52",
+        "base" : "ranged_weapons-25",
+        "detail" : "ranged_weapons-38",
+        "shadow" : "ranged_weapons-72"
+      },
+      "min" : [ -225.95, -88.35 ],
+      "max" : [ 92.64999999999998, 136.95 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-53",
+        "base" : "ranged_weapons-26",
+        "detail" : "ranged_weapons-39",
+        "shadow" : "ranged_weapons-74"
+      },
+      "min" : [ -55.9, 61.44999999999999 ],
+      "max" : [ -11.100000000000023, 135.55 ]
+    }, {
+      "layers" : {
+        "outline" : "ranged_weapons-54",
+        "base" : "ranged_weapons-27",
+        "detail" : "ranged_weapons-40",
+        "shadow" : "ranged_weapons-76"
+      },
+      "min" : [ -76.30000000000001, 58.25 ],
+      "max" : [ 42.05000000000001, 103.30000000000001 ]
     } ],
     "arm" : [ {
       "layers" : {
@@ -8033,6 +8894,214 @@
       },
       "min" : [ -15.899999999999977, -142.55 ],
       "max" : [ -6.399999999999977, -120.44999999999999 ]
+    } ],
+    "guns" : [ {
+      "layers" : {
+        "outline" : "guns-75",
+        "base" : "guns-16",
+        "detail" : "guns-47",
+        "shadow" : "guns-74"
+      },
+      "min" : [ -61.85000000000002, 58.5 ],
+      "max" : [ -23.45, 110.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-76",
+        "base" : "guns-17",
+        "detail" : "guns-48",
+        "shadow" : "guns-113"
+      },
+      "min" : [ -62.35000000000002, 53.14999999999998 ],
+      "max" : [ -24.65, 104.55000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-77",
+        "base" : "guns-18",
+        "detail" : "guns-49",
+        "shadow" : "guns-114"
+      },
+      "min" : [ -59.10000000000002, 65.05 ],
+      "max" : [ -20.6, 124.80000000000001 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-78",
+        "base" : "guns-19",
+        "detail" : "guns-50",
+        "shadow" : "guns-115"
+      },
+      "min" : [ -62.85000000000002, 60.8 ],
+      "max" : [ -26.55000000000001, 112.75 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-79",
+        "base" : "guns-20",
+        "detail" : "guns-51",
+        "shadow" : "guns-116"
+      },
+      "min" : [ -55.44999999999999, 63.0 ],
+      "max" : [ -21.8, 135.39999999999998 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-80",
+        "base" : "guns-21",
+        "detail" : "guns-52",
+        "shadow" : "guns-117"
+      },
+      "min" : [ -56.55000000000001, 64.75 ],
+      "max" : [ -20.65, 129.3 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-81",
+        "base" : "guns-22",
+        "detail" : "guns-53",
+        "shadow" : "guns-118"
+      },
+      "min" : [ -58.94999999999999, 59.39999999999998 ],
+      "max" : [ -12.4, 145.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-82",
+        "base" : "guns-23",
+        "detail" : "guns-54",
+        "shadow" : "guns-119"
+      },
+      "min" : [ -60.60000000000002, 62.3 ],
+      "max" : [ -19.65, 125.25 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-83",
+        "base" : "guns-24",
+        "detail" : "guns-55",
+        "shadow" : "guns-120"
+      },
+      "min" : [ -61.64999999999998, 62.5 ],
+      "max" : [ -10.55, 202.65 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-84",
+        "base" : "guns-25",
+        "detail" : "guns-56",
+        "shadow" : "guns-121"
+      },
+      "min" : [ -52.69999999999999, 64.25 ],
+      "max" : [ -8.35, 170.3 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-85",
+        "base" : "guns-26",
+        "detail" : "guns-57",
+        "shadow" : "guns-122"
+      },
+      "min" : [ -97.75, 25.5 ],
+      "max" : [ 35.95, 194.75 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-86",
+        "base" : "guns-27",
+        "detail" : "guns-58",
+        "shadow" : "guns-123"
+      },
+      "min" : [ -83.75, 45.44999999999999 ],
+      "max" : [ -22.4, 106.45 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-87",
+        "base" : "guns-28",
+        "detail" : "guns-59",
+        "shadow" : "guns-124"
+      },
+      "min" : [ -71.19999999999999, 25.44999999999999 ],
+      "max" : [ -15.0, 134.55 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-88",
+        "base" : "guns-29",
+        "detail" : "guns-60",
+        "shadow" : "guns-125"
+      },
+      "min" : [ -61.60000000000002, 49.55 ],
+      "max" : [ -9.7, 143.8 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-89",
+        "base" : "guns-30",
+        "detail" : "guns-61",
+        "shadow" : "guns-126"
+      },
+      "min" : [ -65.10000000000002, 18.0 ],
+      "max" : [ -2.55, 138.9 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-90",
+        "base" : "guns-31",
+        "detail" : "guns-62",
+        "shadow" : "guns-127"
+      },
+      "min" : [ -66.75, 22.8 ],
+      "max" : [ -1.7, 186.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-91",
+        "base" : "guns-32",
+        "detail" : "guns-63",
+        "shadow" : "guns-128"
+      },
+      "min" : [ -85.25, -1.0500000000000114 ],
+      "max" : [ -11.45, 165.25 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-92",
+        "base" : "guns-33",
+        "detail" : "guns-64",
+        "shadow" : "guns-129"
+      },
+      "min" : [ -58.94999999999999, 11.25 ],
+      "max" : [ 1.15, 198.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-93",
+        "base" : "guns-34",
+        "detail" : "guns-65",
+        "shadow" : "guns-130"
+      },
+      "min" : [ -73.0, 9.449999999999989 ],
+      "max" : [ -19.0, 166.35000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-94",
+        "base" : "guns-35",
+        "detail" : "guns-66",
+        "shadow" : "guns-131"
+      },
+      "min" : [ -65.55000000000001, 22.5 ],
+      "max" : [ -5.6, 174.35 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-95",
+        "base" : "guns-36",
+        "detail" : "guns-67",
+        "shadow" : "guns-132"
+      },
+      "min" : [ -63.30000000000001, 15.8 ],
+      "max" : [ -10.5, 210.60000000000002 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-96",
+        "base" : "guns-37",
+        "detail" : "guns-68",
+        "shadow" : "guns-133"
+      },
+      "min" : [ -68.10000000000002, -26.15 ],
+      "max" : [ -8.75, 138.45 ]
+    }, {
+      "layers" : {
+        "outline" : "guns-97",
+        "base" : "guns-38",
+        "detail" : "guns-69",
+        "shadow" : "guns-134"
+      },
+      "min" : [ -62.10000000000002, -90.5 ],
+      "max" : [ -10.25, 187.5 ]
     } ],
     "wings_and_tails" : [ {
       "layers" : {

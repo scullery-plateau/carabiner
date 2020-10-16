@@ -116,6 +116,7 @@
         [scale-x _ _ scale-y move-x move-y] (build-layer-matrix resize move flip?)
         [min-x max-x] (mapv #(->> % (* scale-x) (+ move-x)) [min-x max-x])
         [min-y max-y] (mapv #(->> % (* scale-y) (+ move-y)) [min-y max-y])
+        [min-x max-x] (mapv #(apply % [min-x max-x]) [min max])
         results {:min [min-x min-y]
                  :max [max-x max-y]}]
     results))

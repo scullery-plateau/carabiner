@@ -43,8 +43,14 @@ export class OutfitterDisplayComponent implements OnInit {
       } else {
         flip = flip.times(bodyScale);
       }
-      min = min.min(part.min.times(flip).plus(move));
-      max = max.max(part.max.times(flip).plus(move));
+      let partMin = part.min.times(flip).plus(move);
+      let partMax = part.max.times(flip).plus(move);
+      let minX = Math.min(partMin.x,partMax.x);
+      let maxX = Math.max(partMin.x,partMax.x);
+      partMin = new XY([minX,partMin.y]);
+      partMax = new XY([maxX,partMax.y]);
+      min = min.min(partMin);
+      max = max.max(partMax);
       let group: string[] = [];
       if (part.layers.base) {
         group.push(SVG.use('#'+part.layers.base,{fill:(layer.base || 'white')}))

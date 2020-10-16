@@ -38,4 +38,8 @@ export class XY {
   max(p: XY): XY {
     return new XY([Math.max(this.x,p.x),Math.max(this.y,p.y)]);
   }
+
+  toString() {
+    return `(${this.x},${this.y})`;
+  }
 }

@@ -5,14 +5,14 @@
             [carabiner.outfitter.constants :as oc]))
 
 (spec/def ::meta-keys #{:fill-rule
-                     :stroke
-                     :stroke-opacity
-                     :fill
-                     :stroke-linejoin
-                     :stroke-linecap
-                     :stroke-width
-                     :stroke-miterlimit
-                     :fill-opacity})
+                        :stroke
+                        :stroke-opacity
+                        :fill
+                        :stroke-linejoin
+                        :stroke-linecap
+                        :stroke-width
+                        :stroke-miterlimit
+                        :fill-opacity})
 
 (spec/def ::meta (spec/map-of ::meta-keys string?))
 

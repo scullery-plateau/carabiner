@@ -11,9 +11,10 @@
                              :double double?))
 
 (spec/def ::double-xy (spec/and
-                     vector?
-                     (spec/cat :x ::int-or-double
-                            :y ::int-or-double)))
+                        vector?
+                        (spec/cat
+                          :x ::int-or-double
+                          :y ::int-or-double)))
 
 (spec/def ::color (spec/or :rcs-color ::rcs/color
                      :id-ref (partial re-matches r/id-ref)))

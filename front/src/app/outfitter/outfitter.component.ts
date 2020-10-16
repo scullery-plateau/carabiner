@@ -70,6 +70,7 @@ export class OutfitterComponent implements OnInit {
       this.defs = defs.substr(start);
     });
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
+      console.log(meta);
       this.meta = new DatasetMeta(meta);
       if (onMetaLoad) {
         onMetaLoad();
@@ -236,7 +237,10 @@ export class OutfitterComponent implements OnInit {
   setPartType() {
     if (this.selectedLayer) {
       let partType = this.schematicForm.value.partType;
+      console.log("setting part type: " + partType);
       this.selectedLayer.part = partType;
+      console.log("meta keys: ");
+      console.log(this.meta.parts);
       this.maxPartIndex = this.meta.parts.get(partType).length;
     }
   }

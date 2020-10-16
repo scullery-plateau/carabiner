@@ -607,8 +607,8 @@
         (build-columns-file file))))
 
 (deftest test-read-columns-to-html
-  (let [root (io/file "design/outfitter/items/accessories/superman")]
-    (doseq [folder ["accessories_and_shields"]]
+  (let [root (io/file "design/outfitter/items/accessories/woman")]
+    (doseq [folder ["ranged_weapons" "swords"]]
       (read-columns-to-html (io/file root folder)))))
 
 (deftest test-read-columns-to-html-for-folder
