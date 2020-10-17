@@ -120,6 +120,11 @@ export class OutfitterDisplayComponent implements OnInit {
         fill:`url(#patterns-${schematic.bgPattern>=10?'':'0'}${schematic.bgPattern})`
       }));
     }
+    frame.push(SVG.rect(min.x,min.y,width,height,{
+      stroke:'black',
+      'stroke-width':"2",
+      fill:'none'
+    }));
     frame.push(SVG.group({},contents))
     return SVG.svg("" + (1.5 * width),"" + (1.5 * height),{
       viewBox:[min.x,min.y,width,height].join(" ")

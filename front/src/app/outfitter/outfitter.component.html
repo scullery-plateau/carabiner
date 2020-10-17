@@ -1,27 +1,43 @@
-<div *ngIf="!defs && !meta" class="d-flex flex-column">
-  <div class="text-center">
-    <button class="nes-btn btn-primary" (click)="loadNew('fit')">Fit</button>
+<div *ngIf="!defs && !meta">
+  <div class="row">
+    <div class="col">
+      <div class="text-center p-4">
+        <label class="nes-btn" *ngIf="!processing">
+          <span>Load save file</span>
+          <input type="file" id="loadFileInput" style="display: none;" (change)="loadSchematic($event)">
+        </label>
+      </div>
+    </div>
   </div>
-  <div class="text-center">
-    <button class="nes-btn btn-primary" (click)="loadNew('hulk')">Hulk</button>
-  </div>
-  <div class="text-center">
-    <button class="nes-btn btn-primary" (click)="loadNew('superman')">Superman</button>
-  </div>
-  <div class="text-center">
-    <button class="nes-btn btn-primary" (click)="loadNew('woman')">Woman</button>
-  </div>
-  <div class="text-center">
-    <label class="nes-btn" *ngIf="!processing">
-      <span>Load json schematic</span>
-      <input type="file" id="loadFileInput" style="display: none;" (change)="loadSchematic($event)">
-    </label>
-  </div>
-  <div class="text-center">
-    <label class="nes-btn" *ngIf="!processing">
-      <span>Compile edn schematic</span>
-      <input type="file" id="compileFileInput" style="display: none;" (change)="compileSchematic($event)">
-    </label>
+  <div class="row">
+    <div class="col">
+      <div class="text-center">
+        <button class="nes-btn btn-primary" (click)="loadNew('fit')">
+          <img alt="fit" src="assets/fit.png" width="{{413 * buttonScale}}" height="{{833 * buttonScale}}"/>
+        </button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="text-center">
+        <button class="nes-btn btn-primary" (click)="loadNew('hulk')">
+          <img alt="hulk" src="assets/bulk.png" width="{{824 * buttonScale}}" height="{{960 * buttonScale}}"/>
+        </button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="text-center">
+        <button class="nes-btn btn-primary" (click)="loadNew('superman')">
+          <img alt="superman" src="assets/muscled.png" width="{{509 * buttonScale}}" height="{{887 * buttonScale}}"/>
+        </button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="text-center">
+        <button class="nes-btn btn-primary" (click)="loadNew('woman')">
+          <img alt="woman" src="assets/woman.png" width="{{320 * buttonScale}}" height="{{802 * buttonScale}}"/>
+        </button>
+      </div>
+    </div>
   </div>
   <div *ngIf="processing">
     <h3>"{{fileName}}" currently loading</h3>
@@ -129,64 +145,82 @@
             </div>
           </div>
           <div class="row">
-            <div class="col d-flex flex-column nes-container is-rounded m-1 with-title" *ngIf="selectedLayer" >
-              <span class="title">Colors</span>
-              <div class="nes-field is-inline p-2">
-                <label>Base</label>
-                <color-picker [selectedValue]="selectedLayer.base||'white'" (retVal)="setBaseColor($event)"></color-picker>
-              </div>
-              <div class="nes-field is-inline p-2">
-                <label>Detail</label>
-                <color-picker [selectedValue]="selectedLayer.detail||'white'" (retVal)="setDetailColor($event)"></color-picker>
-              </div>
-              <div class="nes-field is-inline p-2">
-                <label>Outline</label>
-                <color-picker [selectedValue]="selectedLayer.outline||'white'" (retVal)="setOutlineColor($event)"></color-picker>
+            <div class="col">
+              <div class="nes-container is-rounded with-title">
+                <span class="title">Colors</span>
+                <div class="d-flex flex-column">
+                  <div class="nes-field is-inline p-2">
+                    <label>Base</label>
+                    <color-picker [selectedValue]="selectedLayer.base||'white'" (retVal)="setBaseColor($event)"></color-picker>
+                  </div>
+                  <div class="nes-field is-inline p-2">
+                    <label>Detail</label>
+                    <color-picker [selectedValue]="selectedLayer.detail||'white'" (retVal)="setDetailColor($event)"></color-picker>
+                  </div>
+                  <div class="nes-field is-inline p-2">
+                    <label>Outline</label>
+                    <color-picker [selectedValue]="selectedLayer.outline||'white'" (retVal)="setOutlineColor($event)"></color-picker>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col d-flex flex-column nes-container is-rounded m-1" *ngIf="selectedIndex>=0" >
-              <div class="nes-field is-inline p-2">
-                <label for="opacity">Opacity</label>
-                <input type="number" min="0.00" max="1.00" step="0.05" id="opacity" formControlName="opacity" class="nes-input" (change)="setOpacity()">
-              </div>
-              <div class="nes-field is-inline p-2">
-                <label for="pattern">Pattern</label>
-                <input type="number" id="pattern" formControlName="pattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setPattern()">
-              </div>
-              <div class="nes-field is-inline p-2">
-                <label for="shading">Shading</label>
-                <input type="number" id="shading" formControlName="shading" class="nes-input" min="-1" max="{{meta.shadingCount - 1}}" (change)="setShading()">
+            <div class="col">
+              <div class="nes-container is-rounded">
+                <div class="d-flex flex-column">
+                  <div class="nes-field is-inline p-2">
+                    <label for="opacity">Opacity</label>
+                    <input type="number" min="0.00" max="1.00" step="0.05" id="opacity" formControlName="opacity" class="nes-input" (change)="setOpacity()">
+                  </div>
+                  <div class="nes-field is-inline p-2">
+                    <label for="pattern">Pattern</label>
+                    <input type="number" id="pattern" formControlName="pattern" class="nes-input" min="-1" max="{{meta.patternCount - 1}}" (change)="setPattern()">
+                  </div>
+                  <div class="nes-field is-inline p-2">
+                    <label for="shading">Shading</label>
+                    <input type="number" id="shading" formControlName="shading" class="nes-input" min="-1" max="{{meta.shadingCount - 1}}" (change)="setShading()">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col d-flex flex-column nes-container is-rounded with-title m-1" *ngIf="selectedIndex>=0" >
-              <span class="title">Resize</span>
-              <div class="nes-field is-inline">
-                <label for="resize_x">X</label>
-                <input type="number" id="resize_x" step="0.01" formControlName="resize_x" class="nes-input" (change)="setResizeX()">
-              </div>
-              <div class="nes-field is-inline">
-                <label for="resize_y">Y</label>
-                <input type="number" id="resize_y" step="0.01" formControlName="resize_y" class="nes-input" (change)="setResizeY()">
+            <div class="col">
+              <div class="nes-container is-rounded with-title">
+                <span class="title">Resize</span>
+                <div class="d-flex flex-column">
+                  <div class="nes-field is-inline">
+                    <label for="resize_x">X</label>
+                    <input type="number" id="resize_x" step="0.01" formControlName="resize_x" class="nes-input" (change)="setResizeX()">
+                  </div>
+                  <div class="nes-field is-inline">
+                    <label for="resize_y">Y</label>
+                    <input type="number" id="resize_y" step="0.01" formControlName="resize_y" class="nes-input" (change)="setResizeY()">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col d-flex flex-column nes-container is-rounded with-title m-1" *ngIf="selectedIndex>=0" >
-              <span class="title">Move</span>
-              <div class="nes-field is-inline">
-                <label for="move_x">X</label>
-                <input type="number" id="move_x" formControlName="move_x" class="nes-input" (change)="setMoveX()">
-              </div>
-              <div class="nes-field is-inline">
-                <label for="move_y">Y</label>
-                <input type="number" id="move_y" formControlName="move_y" class="nes-input" (change)="setMoveY()">
+            <div class="col">
+              <div class="nes-container is-rounded with-title">
+                <span class="title">Move</span>
+                <div class="d-flex flex-column">
+                  <div class="nes-field is-inline">
+                    <label for="move_x">X</label>
+                    <input type="number" id="move_x" formControlName="move_x" class="nes-input" (change)="setMoveX()">
+                  </div>
+                  <div class="nes-field is-inline">
+                    <label for="move_y">Y</label>
+                    <input type="number" id="move_y" formControlName="move_y" class="nes-input" (change)="setMoveY()">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-3">
-        <outfitter-display [schematic]="schematic" [meta]="meta"></outfitter-display>
+        <div class="p-3">
+          <outfitter-display [schematic]="schematic" [meta]="meta"></outfitter-display>
+        </div>
       </div>
     </div>
   </form>

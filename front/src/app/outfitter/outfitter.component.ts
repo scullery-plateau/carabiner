@@ -56,6 +56,7 @@ export class OutfitterComponent implements OnInit {
   selectedLayer: SchematicLayer;
 
   bodyScaleNames: string[] = Object.keys(SCALES);
+  buttonScale: number = 1 / 3;
 
   ngOnInit() {
   }
@@ -65,9 +66,11 @@ export class OutfitterComponent implements OnInit {
   }
 
   loadBodyType(bodyType: string,onMetaLoad?:()=>void) {
+    this.processing = true;
     this.os.getDatasetDefs(bodyType).subscribe((defs) => {
       let start = defs.indexOf("<svg");
       this.defs = defs.substr(start);
+      this.processing = false;
     });
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
       console.log(meta);
