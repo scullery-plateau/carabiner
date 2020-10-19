@@ -1,17 +1,28 @@
 (ns carabiner.common.xml
   (:require [clojure.string :as str]
             [clojure.xml :as xml]
-            [clojure.zip :as zip])
+            [clojure.zip :as zip]
+            [clojure.pprint :as pp])
   (:import (java.io ByteArrayInputStream)))
 
-(defn compress [{:keys [tag attrs content]}]
-  (let [content (or content [])
-        content (map compress content)
-        content (if attrs (cons attrs content) content)]
-    (into [tag] content)))
+(defn compress [{:keys [tag attrs content] :as value}]
+  (if (map? value)
+    (let [content (or content [])
+          content (map compress content)
+          content (if attrs (cons attrs content) content)]
+      (into [tag] content))
+    (str/trim value)))
+
+(defn encode-entities [text]
+  (let [chars (into (sorted-set) text)
+        ints (mapv int chars)
+        selected (filterv (partial <= 128) ints)
+        c-map (reduce #(assoc %1 (char %2) (str "&#" %2 ";")) {} selected)]
+    (str/escape text c-map)))
 
 (defn from-xml [xml-str]
   (-> xml-str
+      (encode-entities)
       (.getBytes)
       (ByteArrayInputStream.)
       (xml/parse)

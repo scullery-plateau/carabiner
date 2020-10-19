@@ -116,8 +116,8 @@
                                  (cond
                                    (and (= name ::CONTENT) (nil? prop-type)) (dissoc props name)
                                    (contains? primitives prop-type) (update-in props [name 0] (constantly (get primitives prop-type)))
-                                   :else props
-                                   )))
+                                   :else props)))
+
                              obj (keys obj)))))
                      objects (keys objects))
         objects (reduce-kv #(assoc %1 %2 (into (sorted-map) %3)) (sorted-map) objects)]
