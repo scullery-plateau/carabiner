@@ -73,7 +73,6 @@ export class OutfitterComponent implements OnInit {
       this.processing = false;
     });
     this.os.getDatasetMeta(bodyType).subscribe((meta) => {
-      console.log(meta);
       this.meta = new DatasetMeta(meta);
       if (onMetaLoad) {
         onMetaLoad();
@@ -339,6 +338,9 @@ export class OutfitterComponent implements OnInit {
     me.fileName = "outfit.png";
     this.os.downloadImage(this.schematic,()=>{
       me.processing = false;
+    },()=>{
+      me.processing = false;
+      alert("Download could not be completed at this time. Please save your data and try again later.");
     });
   }
 }

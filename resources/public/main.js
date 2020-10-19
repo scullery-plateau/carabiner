@@ -2374,7 +2374,6 @@ var OutfitterComponent = /** @class */ (function () {
             _this.processing = false;
         });
         this.os.getDatasetMeta(bodyType).subscribe(function (meta) {
-            console.log(meta);
             _this.meta = new _dataset_meta__WEBPACK_IMPORTED_MODULE_4__["DatasetMeta"](meta);
             if (onMetaLoad) {
                 onMetaLoad();
@@ -2612,6 +2611,9 @@ var OutfitterComponent = /** @class */ (function () {
         me.fileName = "outfit.png";
         this.os.downloadImage(this.schematic, function () {
             me.processing = false;
+        }, function () {
+            me.processing = false;
+            alert("Download could not be completed at this time. Please save your data and try again later.");
         });
     };
     OutfitterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2655,13 +2657,27 @@ var OutfitterService = /** @class */ (function () {
     OutfitterService.prototype.loadSchematic = function (schematic) {
         return this.client.post("/outfitter/publish/edn", schematic);
     };
-    OutfitterService.prototype.downloadImage = function (schematic, onload) {
-        var _this = this;
-        return this.client.post("/outfitter/publish/json", schematic.toJSON()).subscribe(function (base64) {
-            _this.downloader.setFileName("outfit.png");
-            _this.downloader.setPath("data:image/png;base64," + base64);
-            _this.downloader.invokeDownload();
-            onload();
+    OutfitterService.prototype.imageLoader = function (me, onLoad) {
+        return function (base64) {
+            me.downloader.setFileName("outfit.png");
+            me.downloader.setPath("data:image/png;base64," + base64);
+            me.downloader.invokeDownload();
+            onLoad();
+        };
+    };
+    OutfitterService.prototype.downloadImage = function (schematic, onLoad, onError, retries) {
+        retries = retries || 0;
+        var me = this;
+        return this.client.post("/outfitter/publish/json", schematic.toJSON())
+            .subscribe(this.imageLoader(me, onLoad), function (error) {
+            if (error.status === 503 && retries < 3) {
+                setTimeout(function () {
+                    me.downloadImage(schematic, onLoad, onError, retries + 1);
+                }, 1000);
+            }
+            else {
+                onError();
+            }
         });
     };
     OutfitterService.prototype.getDatasetDefs = function (bodyType) {

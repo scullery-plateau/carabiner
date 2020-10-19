@@ -18,13 +18,28 @@ export class OutfitterService {
     return this.client.post<string>("/outfitter/publish/edn",schematic);
   }
 
-  downloadImage(schematic: Schematic, onload:()=>void) {
-    return this.client.post<string>("/outfitter/publish/json",schematic.toJSON()).subscribe((base64) => {
-      this.downloader.setFileName("outfit.png");
-      this.downloader.setPath("data:image/png;base64," + base64);
-      this.downloader.invokeDownload();
-      onload();
-    });
+  private imageLoader(me: OutfitterService, onLoad:() => void) {
+    return function(base64:string) {
+      me.downloader.setFileName("outfit.png");
+      me.downloader.setPath("data:image/png;base64," + base64);
+      me.downloader.invokeDownload();
+      onLoad();
+    }
+  }
+
+  downloadImage(schematic: Schematic, onLoad:()=>void,onError:()=>void,retries?:number) {
+    retries = retries || 0;
+    let me = this;
+    return this.client.post<string>("/outfitter/publish/json",schematic.toJSON())
+      .subscribe(this.imageLoader(me,onLoad),(error) => {
+        if(error.status === 503 && retries < 3) {
+          setTimeout(()=>{
+            me.downloadImage(schematic,onLoad,onError,retries + 1);
+          },1000);
+        } else {
+          onError();
+        }
+      });
   }
 
   getDatasetDefs(bodyType: string): Observable<string> {
