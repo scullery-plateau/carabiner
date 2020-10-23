@@ -2,7 +2,7 @@
 
 (def body-types #{"fit" "hulk" "superman" "woman"})
 
-(def body-scale #{"lanky" "thin" "stocky" "petite"})
+(def body-scale #{"lanky" "thin" "teen" "stocky" "petite"})
 
 (def part-types
   #{"accessories_and_shields" "arm" "back" "beard" "belt" "boots" "chest" "collar"
