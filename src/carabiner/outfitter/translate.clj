@@ -12,7 +12,7 @@
             [schema.core :as s])
   (:import (clojure.lang ExceptionInfo)))
 
-(def datasets-path "resources/outfitter/data")
+(def datasets-path "resources/outfitter")
 
 (def torso-tops
   {:fit      106.35

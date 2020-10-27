@@ -3,7 +3,8 @@
             [clojure.java.io :as io]
             [clojure.edn :as edn]
             [clojure.string :as str]
-            [clojure.pprint :as pp])
+            [clojure.pprint :as pp]
+            [carabiner.outfitter.pattern-test :as pt])
   (:import (java.io File)))
 
 (defn parse-px [numstr]
@@ -42,6 +43,9 @@
 (defn map-layer-file [file]
   (mapv (partial map-layer nil) (edn/read-string (slurp file))))
 
+(defn reindex [labeled offset]
+  (mapv #(assoc %2 :label (str "patterns-" (pt/digits (+ offset %1) 2))) (range) labeled))
+
 (defn build-dataset-folder [body-type]
   (let [items-folder (io/file "design/outfitter/items")
         body-folder (io/file items-folder "body" body-type)
@@ -53,7 +57,8 @@
         patterns-b-file (io/file p&s-folder "patterns-B/patterns.edn")
         shading-file (io/file p&s-folder "shading/shading.edn")
         [shading patterns patterns-b] (mapv map-layer-file [shading-file patterns-file patterns-b-file])
-        patterns (into patterns patterns-b)]
+        patterns-count (count patterns)
+        patterns (into patterns (reindex patterns-b patterns-count))]
     (.mkdir dest-folder)
     (.mkdir parts-dest)
     (spit
