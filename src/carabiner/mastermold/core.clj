@@ -40,8 +40,8 @@
         x2 (* scale (+ x 41))
         width (* scale 18)
         height (* scale 28)
-        tf1 (str "rotate(90 " (* scale (+ x 20)) " " (* scale (+ y 10)) ")")
-        tf2 (str "rotate(-90 " (* scale (+ x 50)) " " (* scale (+ y 10)) ")")]
+        tf1 (str "matrix(0,1,-1,0," (* scale (+ x 20)) "," (* scale (+ y 10)) ")")
+        tf2 (str "matrix(0,1,1,0," (* scale (+ x 50)) "," (* scale (+ y 10)) ")")]
     (conj out
           [:image {:href url :x x1 :y y1 :width width :height height :transform tf1}]
           [:image {:href url :x x2 :y y1 :width width :height height :transform tf2}])))
