@@ -18,7 +18,7 @@
 }
 @media print {
     svg {
-        margin: 0.48in 0.73in 0in 0.73in;
+        margin: 0.24in 0.73in 0.0in 0.73in;
         border: 1px solid black;
     }
     .firstPage {
