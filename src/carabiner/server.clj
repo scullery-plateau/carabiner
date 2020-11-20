@@ -192,6 +192,7 @@
 (defn -main [& [port]]
   (let [my-app (build-app)
         port (Integer/parseInt (str (or port (env :port) 5000)))]
+    (println port)
     (server/run-server my-app
       {:port     port
        :join?    false
