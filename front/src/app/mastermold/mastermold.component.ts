@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Mini} from "./mini";
 import {PublishMinisService} from "./publish-minis.service";
 import {CountUpdate} from "./count-update";
+import {MiniSVG} from "./mini-svg";
 
 @Component({
   selector: 'app-mastermold',
@@ -61,9 +62,8 @@ export class MastermoldComponent implements OnInit {
   }
 
   publish() {
-    this.pubService.buildMinis(Array.from(this.images.values())).subscribe((resp) => {
-      let html : string = resp.body;
-      console.log(html);
+    this.pubService.getPrintableTemplate().subscribe((resp) => {
+      let html : string = resp.replace("<!-- content here -->",MiniSVG.buildPageContents(Array.from(this.images.values())).join("\n"));
       let w = window.open("", "_blank");
       w.document.write(html);
     });

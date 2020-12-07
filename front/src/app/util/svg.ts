@@ -11,9 +11,14 @@ export class SVG {
     return `<svg width="${width}" height="${height}" ${SVG.attrs(args)}>${contents.join('\n')}</svg>`;
   }
 
+  public static defs(contents:string[]): string {
+    return `<defs>${contents.join('\n')}</defs>`;
+  }
+
   public static rect(x:number,y:number,width:number,height:number,style:{
     fill?:string,
     stroke?:string,
+    transform?:string
     "stroke-width"?:string
   }): string {
     return `<rect x="${x}" y="${y}" width="${width}" height="${height}" ${SVG.attrs(style)}></rect>`;
@@ -35,10 +40,18 @@ export class SVG {
     return `<a href="${href}" ${SVG.attrs(style)}>${contents.join('\n')}</a>`;
   }
 
+  public static image(href:string,width:number,height:number,style:{
+    id?:string,
+    transform?:string
+  }): string {
+    return `<image href="${href}" width="${width}" height="${height}" ${SVG.attrs(style)}></image>`;
+  }
+
   public static use(ref:string, style:{
     fill?:string,
     stroke?:string,
-    "stroke-width"?:string
+    "stroke-width"?:string,
+    transform?:string,
   }): string {
     return `<use xlink:href="${ref}" ${SVG.attrs(style)}></use>`;
   }

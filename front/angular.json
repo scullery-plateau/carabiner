@@ -21,7 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/outfitter"
+              "src/outfitter",
+              "src/mastermold"
             ],
             "styles": [
               "src/styles.scss"

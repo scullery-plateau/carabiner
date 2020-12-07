@@ -127,25 +127,6 @@
           (build-download "/map" cb/build-map-image "image/png" cs/ImgDownloadArgs download-file-headers)
           (build-download "/print" cb/build-printable "text/html" cs/DownloadArgs download-file-headers))
         (api/context
-          "/mastermold/publish" []
-          :tags ["mastermold"]
-          (sweet/resource
-            {:description ""
-             :post        {:summary    ""
-                           :parameters {:body ms/Minis}
-                           :consumes   ["application/json"]
-                           :produces   ["text/html"]
-                           :responses  {200 {}}
-                           :handler    (fn [{:keys [body]}]
-                                         (let [minis (json/read-json (slurp ^ByteArrayInputStream body) true)]
-                                           (println "Hello")
-                                           (println "minis")
-                                           (pp/pprint minis)
-                                           (println "minis type: " (type minis))
-                                           (let [result (h/to-html (mm/build-printable minis))]
-                                             (-> (http/ok (ByteArrayInputStream. (.getBytes result)))
-                                                 (apply-headers (download-file-headers "text/html" {} result))))))}}))
-        (api/context
           "/outfitter/publish" []
           :tags ["outfitter"]
           (build-compressor
