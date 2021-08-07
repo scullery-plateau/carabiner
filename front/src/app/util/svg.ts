@@ -42,4 +42,8 @@ export class SVG {
   }): string {
     return `<use xlink:href="${ref}" ${SVG.attrs(style)}></use>`;
   }
+
+  public static image(href:string, width: string, height: string) {
+    return `<image href="${href}" width="${width}" height="${height}"></image>`;
+  }
 }
