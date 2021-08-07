@@ -10,17 +10,12 @@
             [schema.core :as s]
             [carabiner.schema :as cs]
             [carabiner.common.schema :as ccs]
-            [carabiner.common.hiccup :as h]
             [carabiner.spritely.core :as sp]
             [carabiner.cobblestone.core :as cb]
             [carabiner.cobblestone.schema :as cbs]
             [carabiner.rogue94.char-index :as ch]
-            [carabiner.mastermold.core :as mm]
-            [carabiner.mastermold.schema :as ms]
             [carabiner.outfitter.translate :as tr]
             [carabiner.outfitter.json-schematic :as ojs]
-            [clojure.pprint :as pp]
-            [clojure.data.json :as json]
             [clojure.edn :as edn]
             [carabiner.common.img :as img]
             [carabiner.common.hiccup :as hml])
@@ -126,25 +121,6 @@
           (build-download "/data" cb/build-save-file "text/plain" cs/DownloadArgs download-file-headers)
           (build-download "/map" cb/build-map-image "image/png" cs/ImgDownloadArgs download-file-headers)
           (build-download "/print" cb/build-printable "text/html" cs/DownloadArgs download-file-headers))
-        (api/context
-          "/mastermold/publish" []
-          :tags ["mastermold"]
-          (sweet/resource
-            {:description ""
-             :post        {:summary    ""
-                           :parameters {:body ms/Minis}
-                           :consumes   ["application/json"]
-                           :produces   ["text/html"]
-                           :responses  {200 {}}
-                           :handler    (fn [{:keys [body]}]
-                                         (let [minis (json/read-json (slurp ^ByteArrayInputStream body) true)]
-                                           (println "Hello")
-                                           (println "minis")
-                                           (pp/pprint minis)
-                                           (println "minis type: " (type minis))
-                                           (let [result (h/to-html (mm/build-printable minis))]
-                                             (-> (http/ok (ByteArrayInputStream. (.getBytes result)))
-                                                 (apply-headers (download-file-headers "text/html" {} result))))))}}))
         (api/context
           "/outfitter/publish" []
           :tags ["outfitter"]

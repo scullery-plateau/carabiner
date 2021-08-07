@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mastermold</title>
+        <style>
+            @media screen {
+                svg {
+                    margin: 0.25in 0.75in 0.75in 0.75in;
+                    border: 1px solid black;
+                }
+                .page, .firstPage {
+                    width: 816px;
+                    height: 1056px;
+                    padding: 0;
+                    background-color: white;
+                    margin: 0.25in;
+                    float: left;
+                }
+                body {
+                    text-align: center;
+                    background-color: gray;
+                }
+            }
+            @media print {
+                svg {
+                    margin: 0.24in 0.73in 0.0in 0.73in;
+                    border: 1px solid black;
+                }
+                .firstPage {
+                    max-width: 8.5in;
+                    max-height: 11in;
+                    padding: 0;
+                    margin: 0;
+                }
+                .page {
+                    max-width: 8.5in;
+                    max-height: 11in;
+                    padding: 0;
+                    margin: 0;
+                    page-break-before: always;
+                }
+                body {
+                    padding: 0;
+                    margin: 0;
+                    background-color: white;
+                }
+                @page {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <!-- content here -->
+    </body>
+</html>

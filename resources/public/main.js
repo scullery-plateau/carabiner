@@ -1628,6 +1628,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mini */ "./src/app/mastermold/mini.ts");
 /* harmony import */ var _publish_minis_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./publish-minis.service */ "./src/app/mastermold/publish-minis.service.ts");
+/* harmony import */ var _mini_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mini-svg */ "./src/app/mastermold/mini-svg.ts");
+
 
 
 
@@ -1678,9 +1680,9 @@ var MastermoldComponent = /** @class */ (function () {
         }
     };
     MastermoldComponent.prototype.publish = function () {
-        this.pubService.buildMinis(Array.from(this.images.values())).subscribe(function (resp) {
-            var html = resp.body;
-            console.log(html);
+        var _this = this;
+        this.pubService.getPrintableTemplate().subscribe(function (resp) {
+            var html = resp.replace("<!-- content here -->", _mini_svg__WEBPACK_IMPORTED_MODULE_4__["MiniSVG"].buildPageContents(Array.from(_this.images.values())).join("\n"));
             var w = window.open("", "_blank");
             w.document.write(html);
         });
@@ -1764,6 +1766,74 @@ var MiniGalleryComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/mastermold/mini-svg.ts":
+/*!****************************************!*\
+  !*** ./src/app/mastermold/mini-svg.ts ***!
+  \****************************************/
+/*! exports provided: MiniSVG */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MiniSVG", function() { return MiniSVG; });
+/* harmony import */ var _util_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/svg */ "./src/app/util/svg.ts");
+
+var MiniSVG = /** @class */ (function () {
+    function MiniSVG() {
+    }
+    MiniSVG.getXYoffset = function (index) {
+        var p = index % 20;
+        return [490 * (p % 2), 140 * Math.floor(p / 2)];
+    };
+    MiniSVG.frame = function (index) {
+        var _a = MiniSVG.getXYoffset(index), xOff = _a[0], yOff = _a[1];
+        return [
+            _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].rect(xOff, yOff, 35, 140, { fill: "white", stroke: "black", "stroke-width": "2" }),
+            _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].rect(xOff + 455, yOff, 35, 140, { fill: "white", stroke: "black", "stroke-width": "2" }),
+            _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].rect(xOff + 35, yOff, 210, 140, { fill: "white", stroke: "black", "stroke-width": "2" }),
+            _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].rect(xOff + 245, yOff, 210, 140, { fill: "white", stroke: "black", "stroke-width": "2" }),
+        ];
+    };
+    MiniSVG.pageFrames = function () {
+        return "?".repeat(20).split("").reduce(function (acc, q, i) {
+            return acc.concat(MiniSVG.frame(i));
+        }, []);
+    };
+    MiniSVG.useImage = function (image, index) {
+        var _a = MiniSVG.getXYoffset(index), xOff = _a[0], yOff = _a[1];
+        return [
+            _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].use("#" + image, { transform: "matrix(" + [0, -1, 1, 0, 252 + xOff, 133 + yOff].join(",") + ")" }),
+            _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].use("#" + image, { transform: "matrix(" + [0, -1, -1, 0, 238 + xOff, 133 + yOff].join(",") + ")" }),
+        ];
+    };
+    MiniSVG.page = function (isFirst, images) {
+        return "<div class=\"" + (isFirst ? 'firstPage' : 'page') + "\">" + _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].svg('7in', '10in', {
+            viewBox: "0 0 980 1400"
+        }, images.reduce(function (out, g, i) {
+            return out.concat(MiniSVG.useImage(g, i));
+        }, MiniSVG.pageFrames())) + "</div>";
+    };
+    MiniSVG.nameImage = function (index) {
+        return "image" + (index < 100 ? "0" : "") + (index < 10 ? "0" : "") + index;
+    };
+    MiniSVG.buildPageContents = function (minis) {
+        var refs = minis.reduce(function (acc, mini, i) {
+            return acc.concat("?".repeat(mini.count).split("").fill(MiniSVG.nameImage(i)));
+        }, []);
+        return "?".repeat(Math.ceil(refs.length / 20)).split("").reduce(function (acc, q, i) {
+            acc.push(MiniSVG.page(i == 0, refs.slice(i * 20, (i + 1) * 20)));
+            return acc;
+        }, [_util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].svg("0", "0", {}, [_util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].defs(minis.map(function (mini, i) {
+                    return _util_svg__WEBPACK_IMPORTED_MODULE_0__["SVG"].image(mini.url, 126, 189, { id: MiniSVG.nameImage(i) });
+                }))])]);
+    };
+    return MiniSVG;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/mastermold/mini.ts":
 /*!************************************!*\
   !*** ./src/app/mastermold/mini.ts ***!
@@ -1804,10 +1874,8 @@ var PublishMinisService = /** @class */ (function () {
     function PublishMinisService(client) {
         this.client = client;
     }
-    PublishMinisService.prototype.buildMinis = function (minis) {
-        console.log(minis);
-        console.log(JSON.stringify(minis));
-        return this.client.post("/mastermold/publish", minis, { observe: 'response', responseType: 'text' });
+    PublishMinisService.prototype.getPrintableTemplate = function () {
+        return this.client.get("/mastermold/template.html", { responseType: "text" });
     };
     PublishMinisService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -4964,6 +5032,9 @@ var SVG = /** @class */ (function () {
     SVG.svg = function (width, height, args, contents) {
         return "<svg width=\"" + width + "\" height=\"" + height + "\" " + SVG.attrs(args) + ">" + contents.join('\n') + "</svg>";
     };
+    SVG.defs = function (contents) {
+        return "<defs>" + contents.join('\n') + "</defs>";
+    };
     SVG.rect = function (x, y, width, height, style) {
         return "<rect x=\"" + x + "\" y=\"" + y + "\" width=\"" + width + "\" height=\"" + height + "\" " + SVG.attrs(style) + "></rect>";
     };
@@ -4972,6 +5043,9 @@ var SVG = /** @class */ (function () {
     };
     SVG.anchor = function (href, style, contents) {
         return "<a href=\"" + href + "\" " + SVG.attrs(style) + ">" + contents.join('\n') + "</a>";
+    };
+    SVG.image = function (href, width, height, style) {
+        return "<image href=\"" + href + "\" width=\"" + width + "\" height=\"" + height + "\" " + SVG.attrs(style) + "></image>";
     };
     SVG.use = function (ref, style) {
         return "<use xlink:href=\"" + ref + "\" " + SVG.attrs(style) + "></use>";

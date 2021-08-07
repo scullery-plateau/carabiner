@@ -11,9 +11,7 @@ export class PublishMinisService {
 
   constructor(private client: HttpClient) { }
 
-  buildMinis(minis: Mini[]) : Observable<HttpResponse<string>> {
-    console.log(minis);
-    console.log(JSON.stringify(minis));
-    return this.client.post("/mastermold/publish",minis,{ observe: 'response', responseType: 'text' });
+  getPrintableTemplate(): Observable<string> {
+    return this.client.get("/mastermold/template.html",{responseType:"text"});
   }
 }
