@@ -1,0 +1,101 @@
+<!DOCTYPE slydini [
+<!ELEMENT slydini (import-data*,card+,template+)>
+<!ELEMENT import-data EMPTY>
+<!ATTLIST import-data src CDATA #REQUIRED variable CDATA #REQUIRED lang (XML|JSON|CSV|YAML|EDN) #REQUIRED>
+<!ELEMENT card (use-tpl+)>
+<!ATTLIST card for-each CDATA #REQUIRED as CDATA #REQUIRED index CDATA #IMPLIED>
+<!ELEMENT use-tpl (with-arg*)>
+<!ATTLIST use-tpl name CDATA #REQUIRED>
+<!ELEMENT with-arg EMPTY>
+<!ATTLIST with-arg label CDATA #REQUIRED value CDATA #REQUIRED>
+<!ELEMENT template (arg*,(use-tpl|text-box|border-box|image-box|ellipse|polygon|path|for|for-each|cond|switch)*)>
+<!ATTLIST template name CDATA #REQUIRED>
+<!ELEMENT arg EMPTY>
+<!ATTLIST arg label CDATA #REQUIRED>
+<!ELEMENT for-each (use-tpl|text-box|border-box|image-box|ellipse|polygon|path|for|for-each|cond|switch)*>
+<!ATTLIST for-each of CDATA #REQUIRED as CDATA #REQUIRED index CDATA #IMPLIED keyvalue (true) #IMPLIED>
+<!ELEMENT for (use-tpl|text-box|border-box|image-box|ellipse|polygon|path|for|for-each|cond|switch)*>
+<!ATTLIST for label CDATA #REQUIRED init CDATA #REQUIRED while CDATA #REQUIRED step CDATA #REQUIRED>
+<!ELEMENT cond (when*)>
+<!ELEMENT when (use-tpl|text-box|border-box|image-box|ellipse|polygon|path|for|for-each|cond|switch)*>
+<!ATTLIST when test CDATA #REQUIRED>
+<!ELEMENT switch (case*)>
+<!ATTLIST switch match CDATA #REQUIRED>
+<!ELEMENT case (use-tpl|text-box|border-box|image-box|ellipse|polygon|path|for|for-each|cond|switch)*>
+<!ATTLIST case test CDATA #REQUIRED>
+<!ELEMENT text-box (frame,font?,fill?,border?)>
+<!ATTLIST text-box text CDATA #REQUIRED>
+<!ELEMENT border-box (frame,fill?,border?)>
+<!ELEMENT image-box (frame,fill?,border?)>
+<!ATTLIST image-box src CDATA #REQUIRED>
+<!ELEMENT ellipse (fill?,border?,transform?)>
+<!ATTLIST ellipse x CDATA #REQUIRED y CDATA #REQUIRED rx CDATA #REQUIRED ry CDATA #REQUIRED rotate CDATA #IMPLIED>
+<!ELEMENT polygon (point,point,point+,fill?,border?)>
+<!ELEMENT point EMPTY>
+<!ATTLIST point x CDATA #REQUIRED y CDATA #REQUIRED>
+<!ELEMENT path ((line-to|curve-to|quad-bezier-curve-to|elliptical-arc-to)+,fill?,border?,transform?)>
+<!ATTLIST path x CDATA #REQUIRED y CDATA #REQUIRED>
+<!ELEMENT line-to EMPTY>
+<!ATTLIST line-to x CDATA #REQUIRED y CDATA #REQUIRED pos (absolute|relative) #REQUIRED>
+<!ELEMENT curve-to EMPTY>
+<!ATTLIST curve-to x1 CDATA #REQUIRED y1 CDATA #REQUIRED x2 CDATA #REQUIRED y2 CDATA #REQUIRED x CDATA #REQUIRED y CDATA #REQUIRED pos (absolute|relative) #REQUIRED>
+<!ELEMENT smooth-curve-to EMPTY>
+<!ATTLIST smooth-curve-to x2 CDATA #REQUIRED y2 CDATA #REQUIRED x CDATA #REQUIRED y CDATA #REQUIRED pos (absolute|relative) #REQUIRED>
+<!ELEMENT quad-bezier-curve-to EMPTY>
+<!ATTLIST quad-bezier-curve-to x1 CDATA #REQUIRED y1 CDATA #REQUIRED x CDATA #REQUIRED y CDATA #REQUIRED pos (absolute|relative) #REQUIRED>
+<!ELEMENT smooth-quad-bezier-curve-to EMPTY>
+<!ATTLIST smooth-quad-bezier-curve-to x CDATA #REQUIRED y CDATA #REQUIRED pos (absolute|relative) #REQUIRED>
+<!ELEMENT elliptical-arc-to EMPTY>
+<!ATTLIST elliptical-arc-to 
+rx CDATA #REQUIRED
+ry CDATA #REQUIRED
+x-axis-rotation CDATA #REQUIRED
+large-arc-flag CDATA #REQUIRED
+sweep-flag CDATA #REQUIRED
+x CDATA #REQUIRED
+y CDATA #REQUIRED>
+<!ELEMENT frame EMPTY>
+<!ATTLIST frame x CDATA #REQUIRED y CDATA #REQUIRED width CDATA #REQUIRED height CDATA #REQUIRED>
+<!ELEMENT fill EMPTY>
+<!ATTLIST fill color CDATA #REQUIRED>
+<!ELEMENT font EMPTY>
+<!ATTLIST font 
+family CDATA #REQUIRED
+size CDATA #REQUIRED
+style (italic|oblique) #IMPLIED
+weight (bold) #IMPLIED
+varient (smallcaps) #IMPLIED
+>
+<!ELEMENT border (left?,right?,top?,bottom?)>
+<!ATTLIST border 
+color CDATA #IMPLIED
+width CDATA #IMPLIED
+style (dotted|dashed|solid|double|groove|ridge|inset|outset|none|hidden) #IMPLIED
+>
+<!ELEMENT left EMPTY>
+<!ATTLIST left 
+color CDATA #IMPLIED
+width CDATA #IMPLIED
+style (dotted|dashed|solid|double|groove|ridge|inset|outset|none|hidden) #IMPLIED
+>
+<!ELEMENT right EMPTY>
+<!ATTLIST right 
+color CDATA #IMPLIED
+width CDATA #IMPLIED
+style (dotted|dashed|solid|double|groove|ridge|inset|outset|none|hidden) #IMPLIED
+>
+<!ELEMENT top EMPTY>
+<!ATTLIST top 
+color CDATA #IMPLIED
+width CDATA #IMPLIED
+style (dotted|dashed|solid|double|groove|ridge|inset|outset|none|hidden) #IMPLIED
+>
+<!ELEMENT bottom EMPTY>
+<!ATTLIST bottom 
+color CDATA #IMPLIED
+width CDATA #IMPLIED
+style (dotted|dashed|solid|double|groove|ridge|inset|outset|none|hidden) #IMPLIED
+>
+]>
+<slydini>
+</slydini>
