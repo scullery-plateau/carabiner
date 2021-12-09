@@ -1,10 +1,29 @@
 (ns carabiner.slydini.expression
   (:require [schema.core :as s]
             [clojure.string :as str]
-            [clojure.pprint :as pp])
+            [clojure.pprint :as pp]
+            [clojure.spec.alpha :as spec])
   (:import (clojure.lang ExceptionInfo)))
 
+(defn build-resolve-error [throwable expression]
+  (ExceptionInfo. ""
+                  {:expression    expression
+                   :error-message (.getMessage throwable)
+                   :error-type    (str (.getSimpleName (type throwable)))
+                   :stacktrace    (.getStackTrace throwable)}))
+
+(defn format-resolve-error [{:keys [expression error-message error-type stacktrace]}]
+  #_(when (= error-type "ClassCastException")
+    (pp/pprint stacktrace))
+  (str "ERROR: " error-type " - " error-message ": " expression))
+
 (defprotocol Any)
+
+(defn safe-compare [a b]
+  (try
+    (.compareTo (bigdec a) (bigdec b))
+    (catch NumberFormatException e
+      (.compareTo (str a) (str b)))))
 
 (def binary-operations
   {'+           [{:left-operand Number :right-operand Number} Number +]
@@ -15,10 +34,10 @@
    '%           [{:left-operand Number :right-operand Number} Number #(mod %1 %2)]
    '=           [{:left-operand Any :right-operand Any} Boolean =]
    '<>          [{:left-operand Any :right-operand Any} Boolean not=]
-   '<           [{:left-operand Comparable :right-operand Comparable} Boolean #(< (.compareTo %1 %2) 0)]
-   '>           [{:left-operand Comparable :right-operand Comparable} Boolean #(> (.compareTo %1 %2) 0)]
-   '<=          [{:left-operand Comparable :right-operand Comparable} Boolean #(<= (.compareTo %1 %2) 0)]
-   '>=          [{:left-operand Comparable :right-operand Comparable} Boolean #(>= (.compareTo %1 %2) 0)]
+   '<           [{:left-operand Comparable :right-operand Comparable} Boolean #(< (safe-compare %1 %2) 0)]
+   '>           [{:left-operand Comparable :right-operand Comparable} Boolean #(> (safe-compare %1 %2) 0)]
+   '<=          [{:left-operand Comparable :right-operand Comparable} Boolean #(<= (safe-compare %1 %2) 0)]
+   '>=          [{:left-operand Comparable :right-operand Comparable} Boolean #(>= (safe-compare %1 %2) 0)]
    'or          [{:left-operand Any :right-operand Any} Any :macro]
    'and         [{:left-operand Any :right-operand Any} Any :macro]
    })
@@ -30,117 +49,100 @@
    'ceil [{:args [Number]} Number #(Math/ceil %)]})
 
 (def binary-operators (set (keys binary-operations)))
-(s/defschema BinaryOperator (s/pred binary-operators "binary-operators"))
-(def function-names (set (keys functions)))
-(s/defschema FunctionName (s/pred function-names "function-names"))
 
-(defn is-operand? [obj]
+(def function-names (set (keys functions)))
+
+(defn is-literal? [obj]
   (or
     (boolean? obj)
     (string? obj)
-    (number? obj)
-    (symbol? obj)))
+    (number? obj)))
 
-(s/defschema Operand
-  (s/pred is-operand? "is-operand?"))
+(spec/def ::operand
+  (spec/or :literal is-literal?
+           :variable symbol?
+           :expression (spec/and list?
+                         (spec/or
+                           :binary-operation (spec/cat
+                                               :left-operand ::operand
+                                               :operator binary-operators
+                                               :right-operand ::operand)
+                           :function (spec/cat
+                                       :function-name function-names
+                                       :args (spec/* ::operand))))))
 
-(s/defschema Expression
-  (s/constrained
-    (s/if
-      #(and (= 3 (count %)) (binary-operators (second %)))
+(spec/def ::expression
+  (let [operand (spec/or :literal is-literal? :variable symbol? :expression ::expression)]
+    (spec/and list?
+      (spec/or
+        :binary-operation (spec/cat :left-operand operand
+                                    :operator binary-operators
+                                    :right-operand operand)
+        :function (spec/cat :function-name function-names
+                            :args (spec/* operand))))))
 
-      (vector
-        (s/one (s/if list? (s/recursive #'Expression) Operand) "left-operand")
-        (s/one BinaryOperator "operator")
-        (s/one (s/if list? (s/recursive #'Expression) Operand) "right-operand"))
+(defmulti resolve-conformed #(first %2))
 
-      (vector
-        (s/one FunctionName "function-name")
-        (s/if list? (s/recursive #'Expression) Operand)))
+(defmulti resolve-operand #(first %2))
 
-    list?))
+(defmulti resolve-conformed-macro (fn [_ func-name & _] (keyword (name func-name))))
 
-(s/defschema BinaryExpression
-  (vector
-    (s/one (s/if list? Expression Operand) "left-operand")
-    (s/one BinaryOperator "operator")
-    (s/one (s/if list? Expression Operand) "right-operand")))
-
-(s/defschema Function
-  (vector
-    (s/one FunctionName "function-name")
-    (s/if list? Expression Operand)))
-
-(defmulti resolve-macro (fn [_ func-name _] (keyword (name func-name))))
-
-(defn build-resolve-error [throwable expression]
-  (ExceptionInfo. ""
-    {:expression expression
-     :error-message (.getMessage throwable)
-     :error-type (str (.getSimpleName (type throwable)))
-     :stacktrace (.getStackTrace throwable)}))
-
-(defn resolve-recursive [context expression]
-  (cond
+(defmethod resolve-conformed :binary-operation
+  [context [_ {:keys [operator left-operand right-operand] :as expression}]]
+  (let [function (last (get binary-operations operator))]
     (try
-      (s/validate BinaryExpression expression)
-      true
-      (catch Throwable _ false))
-    (let [[left-operand operator right-operand] expression
-          function (last (get binary-operations operator))]
-      (try
-        (if (= :macro function)
-          (resolve-macro context operator [left-operand right-operand])
-          (function (resolve-recursive context left-operand) (resolve-recursive context right-operand)))
-        (catch ExceptionInfo e
-          (throw e))
-        (catch Throwable t
-          (throw (build-resolve-error t expression)))))
+      (if (= :macro function)
+        (resolve-conformed-macro context operator left-operand right-operand)
+        (function
+          (resolve-operand context left-operand)
+          (resolve-operand context right-operand)))
+      (catch ExceptionInfo e
+        (throw e))
+      (catch Throwable t
+        (throw (build-resolve-error t expression))))))
 
+(defmethod resolve-conformed :function
+  [context [_ {:keys [function-name args] :as expression}]]
+  (let [function (last (get functions function-name))]
     (try
-      (s/validate Function expression)
-      true
-      (catch Throwable _ false))
-    (let [[function-name & args] expression
-          function (last (get functions function-name))]
-      (try
-        (if (= :macro function)
-          (resolve-macro context function-name args)
-          (apply function (mapv (partial resolve-recursive context) args)))
-        (catch ExceptionInfo e
-          (throw e))
-        (catch Throwable t
-          (throw (build-resolve-error t expression)))))
+      (if (= :macro function)
+        (apply resolve-conformed-macro context function-name args)
+        (apply function (mapv (partial resolve-operand context) args)))
+      (catch ExceptionInfo e
+        (throw e))
+      (catch Throwable t
+        (throw (build-resolve-error t expression))))))
 
-    (symbol? expression) (select-keys context (str/split (name expression) #"\."))
+(defmethod resolve-operand :literal [_ [_ operand]] operand)
 
-    :else expression))
+(defmethod resolve-operand :variable [context [_ operand]]
+  (get-in context (str/split (name operand) #"\.")))
 
-(defmethod resolve-macro :or [context _ [left-operand right-operand]]
-  (or (resolve-recursive context left-operand) (resolve-recursive context right-operand)))
+(defmethod resolve-operand :expression [context [_ operand]]
+  (resolve-conformed context operand))
 
-(defmethod resolve-macro :and [context _ [left-operand right-operand]]
-  (and (resolve-recursive context left-operand) (resolve-recursive context right-operand)))
+(defmethod resolve-conformed-macro :or [context _ left-operand right-operand]
+  (or (resolve-operand context left-operand) (resolve-operand context right-operand)))
 
-(defmethod resolve-macro :if [context _ [check then-do else-do]]
-  (if (resolve-recursive context check) (resolve-recursive context then-do) (resolve-recursive context else-do)))
+(defmethod resolve-conformed-macro :and [context _ left-operand right-operand]
+  (and (resolve-operand context left-operand) (resolve-operand context right-operand)))
 
-(defmethod resolve-macro :default [_ operator expression]
+(defmethod resolve-conformed-macro :if [context _ check then-do else-do]
+  (if (resolve-operand context check)
+    (resolve-operand context then-do)
+    (resolve-operand context else-do)))
+
+(defmethod resolve-conformed-macro :default [_ operator & args]
   (throw
     (ExceptionInfo. ""
-      {:expression expression
+      {:expression (into [operator] args)
        :error-type "BAD-MACRO"
        :error-message (str "No Implementation of 'resolve-macro' for operator:'" operator "'")})))
 
-(defn format-resolve-error [{:keys [expression error-message error-type stacktrace]}]
-  #_(when (= error-type "ClassCastException")
-    (pp/pprint stacktrace))
-  (str "ERROR: " error-type " - " error-message ": " expression))
-
-(defn resolve-expression [context expression]
+(defn resolve-conformed-expression [context conformed]
   (try
-    (resolve-recursive context expression)
+    (resolve-operand context conformed)
     (catch ExceptionInfo e
       (format-resolve-error (ex-data e)))
     (catch Throwable t
-      (format-resolve-error (ex-data (build-resolve-error t expression))))))
+      (format-resolve-error (ex-data (build-resolve-error t conformed))))))

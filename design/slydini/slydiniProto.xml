@@ -1,5 +1,5 @@
 <!DOCTYPE slydini [
-<!ELEMENT slydini (import-data*,card+,template+)>
+<!ELEMENT slydini (import-data*,card,template,(card|template)*)>
 <!ELEMENT import-data EMPTY>
 <!ATTLIST import-data src CDATA #REQUIRED variable CDATA #REQUIRED lang (XML|JSON|CSV|YAML|EDN) #REQUIRED>
 <!ELEMENT card (use-tpl+)>
@@ -28,12 +28,12 @@
 <!ELEMENT border-box (frame,fill?,border?)>
 <!ELEMENT image-box (frame,fill?,border?)>
 <!ATTLIST image-box src CDATA #REQUIRED>
-<!ELEMENT ellipse (fill?,border?,transform?)>
+<!ELEMENT ellipse (fill?,border?)>
 <!ATTLIST ellipse x CDATA #REQUIRED y CDATA #REQUIRED rx CDATA #REQUIRED ry CDATA #REQUIRED rotate CDATA #IMPLIED>
 <!ELEMENT polygon (point,point,point+,fill?,border?)>
 <!ELEMENT point EMPTY>
 <!ATTLIST point x CDATA #REQUIRED y CDATA #REQUIRED>
-<!ELEMENT path ((line-to|curve-to|quad-bezier-curve-to|elliptical-arc-to)+,fill?,border?,transform?)>
+<!ELEMENT path ((line-to|curve-to|quad-bezier-curve-to|elliptical-arc-to)+,fill?,border?)>
 <!ATTLIST path x CDATA #REQUIRED y CDATA #REQUIRED>
 <!ELEMENT line-to EMPTY>
 <!ATTLIST line-to x CDATA #REQUIRED y CDATA #REQUIRED pos (absolute|relative) #REQUIRED>
