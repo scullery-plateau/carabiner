@@ -3,7 +3,6 @@
             [clojure.data.json :as json]
             [clojure.xml :as xml]
             [clojure.zip :as zip]
-            [clojure.set :as set]
             [clojure.string :as str]
             [cheshire.core :as cheshire]
             [clojure.pprint :as pp])
@@ -56,24 +55,30 @@
                          (map #(str "shading-" (if (> 10 %) "0" "") %)))
         shadings (reduce
                    (fn [out id]
-                      (let [shading-gradient-ids (keys (select-keys ids-to-gradients [id]))
+                      (let [shading-gradient-ids (get ids-to-gradients id)
                             shading-gradients (select-keys linearGradients shading-gradient-ids)
                             shading-part (get pattern-defs id)
-                            defs (apply str (map #(with-out-str (xml/emit-element %)) (concat [shading-part] (vals shading-gradients))))]
+                            all-xml (concat [shading-part] (vals shading-gradients))
+                            all-xml-map (reduce
+                                          #(assoc %1
+                                             (-> %2 :attrs :id)
+                                             (with-out-str (xml/emit-element %2)))
+                                          {} all-xml)
+                            defs (reduce str "" (vals all-xml-map))
+                            ]
                         (assoc out id defs)))
                    (sorted-map)
                    shading-ids)
         pattern-ids (->> pattern-count
                          range
                          (map #(str "patterns-" (if (> 10 %) "0" "") %)))
-        _ (pp/pprint {:pattern-ids pattern-ids})
         patterns (reduce
                    (fn [out id]
                      (let [pattern-gradient-ids (get ids-to-gradients id)
                            pattern-gradients (select-keys linearGradients pattern-gradient-ids)
                            pattern-part (get pattern-defs id)
-                           _ (pp/pprint {:id id})
-                           defs (apply str (map #(with-out-str (xml/emit-element %)) (concat [pattern-part] (vals pattern-gradients))))]
+                           all-xml (concat [pattern-part] (vals pattern-gradients))
+                           defs (apply str (map #(with-out-str (xml/emit-element %)) all-xml))]
                        (assoc out id defs)))
                    (sorted-map)
                    pattern-ids)]
@@ -84,7 +89,7 @@
          :shadings shadings
          :parts parts}))))
 
-(defn -main [& args]
+(defn -main [& _]
   (doseq [body-type body-types]
     (println body-type)
     (transform-metadata body-type))
