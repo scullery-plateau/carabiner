@@ -1,9 +1,0 @@
-<div class="d-flex flex-column">
-  <ng-container *ngFor="let mini of data">
-    <div class="d-flex">
-      <div class="p-2 w-100 text-right">{{mini.filename}}</div>
-      <div class="p-2"><input type="number" min="1" value="1" class="nes-input" (change)="updateCount($event,mini.filename)"/></div>
-      <div class="p-2"><button class="nes-btn is-error" (click)="removeImage(mini.filename)">X</button></div>
-    </div>
-  </ng-container>
-</div>
