@@ -1,4 +1,4 @@
-(ns carabiner.outfitter.metadata2
+(ns carabiner.outfitter-old.metadata2
   (:require [clojure.java.io :as io]
             [clojure.data.json :as json]
             [clojure.xml :as xml]

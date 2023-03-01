@@ -1,8 +1,8 @@
-(ns carabiner.outfitter.schematic
+(ns carabiner.outfitter-old.schematic
   (:require [clojure.spec.alpha :as s]
             [carabiner.rogue94.common-schema :as rcs]
-            [carabiner.outfitter.common-schema :as cs]
-            [carabiner.outfitter.constants :as oc]
+            [carabiner.outfitter-old.common-schema :as cs]
+            [carabiner.outfitter-old.constants :as oc]
             [carabiner.common.regex :as r]
             [carabiner.common.schema :as ccs]))
 

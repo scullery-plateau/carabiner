@@ -1,8 +1,8 @@
-(ns carabiner.outfitter.common-schema
+(ns carabiner.outfitter-old.common-schema
   (:require [clojure.spec.alpha :as spec]
             [carabiner.common.regex :as r]
             [carabiner.rogue94.common-schema :as rcs]
-            [carabiner.outfitter.constants :as oc]
+            [carabiner.outfitter-old.constants :as oc]
             [schema.core :as s]))
 
 (spec/def ::part-types (into (sorted-set) (mapv keyword oc/part-types)))

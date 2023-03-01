@@ -1,6 +1,6 @@
-(ns carabiner.outfitter.pattern-test
+(ns carabiner.outfitter-old.pattern-test
   (:require [clojure.test :refer :all]
-            [carabiner.outfitter.shapes-test :as shapes]
+            [carabiner.outfitter-old.shapes-test :as shapes]
             [clojure.java.io :as io]
             [clojure.pprint :as pp]))
 

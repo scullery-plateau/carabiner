@@ -1,8 +1,8 @@
-(ns carabiner.outfitter.dataset
+(ns carabiner.outfitter-old.dataset
   (:require [clojure.spec.alpha :as spec]
-            [carabiner.outfitter.common-schema :as cs]
+            [carabiner.outfitter-old.common-schema :as cs]
             [schema.core :as s]
-            [carabiner.outfitter.constants :as oc]))
+            [carabiner.outfitter-old.constants :as oc]))
 
 (spec/def ::meta-keys #{:fill-rule
                         :stroke

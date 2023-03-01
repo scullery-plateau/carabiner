@@ -1,7 +1,7 @@
-(ns carabiner.outfitter.json-schematic
+(ns carabiner.outfitter-old.json-schematic
   (:require [schema.core :as s]
-            [carabiner.outfitter.constants :as oc]
-            [carabiner.outfitter.common-schema :as ocs]
+            [carabiner.outfitter-old.constants :as oc]
+            [carabiner.outfitter-old.common-schema :as ocs]
             [carabiner.common.schema :as cs]))
 
 (s/defschema JsonSchematic

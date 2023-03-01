@@ -1,11 +1,11 @@
-(ns carabiner.outfitter.parser-test
+(ns carabiner.outfitter-old.parser-test
   (:require [clojure.test :refer :all]
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.pprint :as pp]
-            [carabiner.outfitter.parser :as p]
+            [carabiner.outfitter-old.parser :as p]
             [clojure.edn :as edn]
-            [carabiner.outfitter.translate :as tr]
+            [carabiner.outfitter-old.translate :as tr]
             [cheshire.core :as cheshire])
   (:import (java.io File)
            (clojure.lang ExceptionInfo)))

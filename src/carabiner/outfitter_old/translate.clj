@@ -1,9 +1,9 @@
-(ns carabiner.outfitter.translate
+(ns carabiner.outfitter-old.translate
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.spec.alpha :as spec]
-            [carabiner.outfitter.schematic :as sc]
-            [carabiner.outfitter.json-schematic :as sj]
+            [carabiner.outfitter-old.schematic :as sc]
+            [carabiner.outfitter-old.json-schematic :as sj]
             [clojure.string :as str]
             [clojure.pprint :as pp]
             [clojure.set :as set]

@@ -1,4 +1,4 @@
-(ns carabiner.outfitter.constants)
+(ns carabiner.outfitter-old.constants)
 
 (def body-types #{"fit" "hulk" "superman" "woman"})
 

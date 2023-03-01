@@ -1,8 +1,8 @@
-(ns carabiner.outfitter.parser
+(ns carabiner.outfitter-old.parser
   (:require [clojure.string :as str]
             [clojure.edn :as edn]
             [clojure.spec.alpha :as s]
-            [carabiner.outfitter.schematic :as st])
+            [carabiner.outfitter-old.schematic :as st])
   (:import (clojure.lang ExceptionInfo)))
 
 (defn parse [text]

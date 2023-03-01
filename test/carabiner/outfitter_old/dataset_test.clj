@@ -1,10 +1,10 @@
-(ns carabiner.outfitter.dataset-test
+(ns carabiner.outfitter-old.dataset-test
   (:require [clojure.test :refer :all]
             [clojure.java.io :as io]
             [clojure.edn :as edn]
             [clojure.string :as str]
             [clojure.pprint :as pp]
-            [carabiner.outfitter.pattern-test :as pt])
+            [carabiner.outfitter-old.pattern-test :as pt])
   (:import (java.io File)))
 
 (defn parse-px [numstr]

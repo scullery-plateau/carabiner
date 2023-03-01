@@ -1,4 +1,4 @@
-(ns carabiner.outfitter.shapes-test
+(ns carabiner.outfitter-old.shapes-test
   (:require [clojure.test :refer :all]
             [clojure.string :as str]
             [clojure.set :as set]
@@ -9,7 +9,7 @@
             [carabiner.common.hiccup :as h]
             [carabiner.common.xml :as x]
             [carabiner.common.img :as img]
-            [carabiner.outfitter.translate :as tr])
+            [carabiner.outfitter-old.translate :as tr])
   (:import (java.io File)))
 
 (defn wrap-svg [[id svg]]

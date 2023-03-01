@@ -1,10 +1,10 @@
-(ns carabiner.outfitter.translate-test
+(ns carabiner.outfitter-old.translate-test
   (:require [clojure.test :refer :all]
             [clojure.java.io :as io]
             [clojure.pprint :as pp]
             [clojure.edn :as edn]
-            [carabiner.outfitter.translate :as tr]
-            [carabiner.outfitter.shapes-test :as shapes]
+            [carabiner.outfitter-old.translate :as tr]
+            [carabiner.outfitter-old.shapes-test :as shapes]
             [carabiner.common.img :as img]
             [carabiner.common.hiccup :as h]
             [clojure.string :as str]

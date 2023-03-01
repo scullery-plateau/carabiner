@@ -1,10 +1,10 @@
-(ns carabiner.outfitter.clone-test
+(ns carabiner.outfitter-old.clone-test
   (:require [clojure.test :refer :all]
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.set :as set]
             [clojure.pprint :as pp]
-            [carabiner.outfitter.shapes-test :as shapes])
+            [carabiner.outfitter-old.shapes-test :as shapes])
   (:import (java.io File)))
 
 (deftest test-parallels
