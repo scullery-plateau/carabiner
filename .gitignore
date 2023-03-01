@@ -19,3 +19,7 @@ resources/cobblestone_sample/colvillesimple.json
 resources/cobblestone_sample/printable.edn
 resources/cobblestone_sample/printable.html
 resources/cobblestone_sample/printable.html
+/.calva
+/.clj-kondo
+/.lsp
+.lsp/.cache/db.transit.json
