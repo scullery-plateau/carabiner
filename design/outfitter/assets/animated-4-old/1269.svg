@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="192.4px" width="72.85px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, -134.3, -66.35)">
+    <path d="M149.75 90.2 Q156.35 75.05 167.35 68.35 171.1 66.4 174.65 68.35 L175.3 68.75 Q185.8 75.4 192.2 90.1 L149.75 90.2" fill="url(#gradient0)" fill-rule="evenodd" stroke="none"/>
+    <path d="M192.2 90.1 Q218.0 121.3 196.0 231.2 194.2 232.55 191.5 233.5 183.85 236.35 170.5 236.3 L156.7 235.4 Q152.65 234.65 149.75 233.6 147.05 232.6 145.0 231.25 123.5 121.45 149.75 90.2 L192.2 90.1" fill="url(#gradient1)" fill-rule="evenodd" stroke="none"/>
+    <path d="M191.5 233.5 L184.7 254.6 Q177.95 257.75 170.45 257.75 163.15 257.65 156.4 254.6 L149.75 233.6 Q152.65 234.65 156.7 235.4 L170.5 236.3 Q183.85 236.35 191.5 233.5" fill="url(#gradient2)" fill-rule="evenodd" stroke="none"/>
+    <path d="M149.75 90.2 Q156.35 75.05 167.35 68.35 171.1 66.4 174.65 68.35 L175.3 68.75 Q185.8 75.4 192.2 90.1 218.0 121.3 196.0 231.2 194.2 232.55 191.5 233.5 L184.7 254.6 Q177.95 257.75 170.45 257.75 163.15 257.65 156.4 254.6 L149.75 233.6 Q147.05 232.6 145.0 231.25 123.5 121.45 149.75 90.2" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.0"/>
+    <path d="M149.75 90.2 L192.2 90.1 M191.5 233.5 Q183.85 236.35 170.5 236.3 L156.7 235.4 Q152.65 234.65 149.75 233.6" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <path d="M179.5 90.2 L179.05 88.6 Q177.85 81.2 171.5 73.75 183.25 79.55 186.1 89.35 L186.55 90.1 179.5 90.2 186.55 90.1 Q204.4 122.05 189.7 224.45 195.35 152.35 179.8 91.55 L179.5 90.2" fill="#ffffff" fill-opacity="0.2509804" fill-rule="evenodd" stroke="none"/>
+    <path d="M186.55 90.1 L192.2 90.1 M149.75 90.2 L179.5 90.2 186.55 90.1 M191.5 233.5 Q183.85 236.35 170.5 236.3 L156.7 235.4 Q152.65 234.65 149.75 233.6" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <path d="M192.2 90.1 Q185.8 75.4 175.3 68.75 L174.65 68.35 Q171.1 66.4 167.35 68.35 156.35 75.05 149.75 90.2 123.5 121.45 145.0 231.25 147.05 232.6 149.75 233.6 L156.4 254.6 Q163.15 257.65 170.45 257.75 177.95 257.75 184.7 254.6 L191.5 233.5 Q194.2 232.55 196.0 231.2 218.0 121.3 192.2 90.1 Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.0"/>
+  </g>
+  <defs>
+    <linearGradient gradientTransform="matrix(0.0259, 0.0, 0.0, 0.0139, 170.95, 78.8)" gradientUnits="userSpaceOnUse" id="gradient0" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.0"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.2509804"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0432, 0.0, 0.0, 0.0892, 170.75, 163.15)" gradientUnits="userSpaceOnUse" id="gradient1" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.0"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.2509804"/>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0255, 0.0, 0.0, 0.0148, 170.6, 245.6)" gradientUnits="userSpaceOnUse" id="gradient2" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#000000" stop-opacity="0.0"/>
+      <stop offset="1.0" stop-color="#000000" stop-opacity="0.2509804"/>
+    </linearGradient>
+  </defs>
+</svg>

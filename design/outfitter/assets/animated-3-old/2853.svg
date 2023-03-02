@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="5.55px" width="11.8px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, -197.4, -108.2)">
+    <path d="M205.05 111.5 L206.05 111.6 207.05 112.6 204.65 113.35 204.9 113.15 205.25 112.25 205.05 111.5 M200.0 112.65 L201.4 111.6 202.9 111.5 Q202.65 111.8 202.65 112.25 L203.05 113.15 203.3 113.4 Q201.75 113.3 200.0 112.65" fill="#ffffff" fill-rule="evenodd" stroke="none"/>
+    <path d="M205.05 111.5 L205.25 112.25 204.9 113.15 204.65 113.35 203.95 113.5 203.3 113.4 203.05 113.15 202.65 112.25 Q202.65 111.8 202.9 111.5 L205.05 111.5" fill="#ffffff" fill-opacity="0.0" fill-rule="evenodd" stroke="none"/>
+    <path d="M205.05 111.5 L205.25 112.25 204.9 113.15 204.65 113.35 203.95 113.5 203.3 113.4 203.05 113.15 202.65 112.25 Q202.65 111.8 202.9 111.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    <path d="M207.05 112.6 L206.05 111.6 205.05 111.5 202.9 111.5 201.4 111.6 200.0 112.65" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <path d="M208.45 111.5 Q206.0 111.45 203.95 109.9 201.45 108.0 198.15 110.0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

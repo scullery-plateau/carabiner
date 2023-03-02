@@ -13,7 +13,7 @@
                  [hiccup "1.0.5"]
                  [org.clojars.pallix/batik "1.7.0"]]
   :min-lein-version "2.0.0"
-  :main carabiner.server
+  :main carabiner.outfitter-new.assets
   :plugins [[environ/environ.lein "0.3.1"]
             [lein-ancient "0.6.15"]]
   :hooks [environ.leiningen.hooks]
